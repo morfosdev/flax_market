@@ -458,6 +458,7 @@ console.log({item});
 
             styles:[`{ 
   maxWidth: 80,
+  borderRadius: 6,
   alignItems: "center",
 shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -474,9 +475,7 @@ shadowColor: '#000',
             styles:[`{
   width: "100%",
   height: 25,
-  backgroundColor: "$var_all.colors.primary",
-borderTopRightRadius: 6,
-borderTopLeftRadius: 6,
+  backgroundColor: "$var_all.colors.primary"
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -489,7 +488,7 @@ borderTopLeftRadius: 6,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ padding: 5 }`
           ],
 
           children: [
