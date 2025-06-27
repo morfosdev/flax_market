@@ -107,7 +107,8 @@
 
           args,
 
-        }}/>, (...args:any) => <Elements.Text pass={{
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -118,6 +119,21 @@
 
           children: [
             `Aa —  Explore the world.`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            "Escreva..."
           ],
 
           args,
