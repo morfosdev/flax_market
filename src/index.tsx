@@ -459,10 +459,66 @@ console.log({item});
             styles:[`{ 
   flexDirection: "row",
   alignItems: "center",
-  flexWrap: "wrap"
+  flexWrap: "wrap",
+  padding: 10
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+  maxWidth: 75,
+  borderRadius: 6,
+  alignItems: "center",
+  shadowColor: '#000',
+  overflow: "hidden",
+  shadowOffset: { 
+     width: 0,
+     height: 2
+  },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "100%",
+  height: 30,
+  backgroundColor: "$var_all.colors.primary"
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ padding: 5 }`
+          ],
+
+          children: [
+            `primary`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
