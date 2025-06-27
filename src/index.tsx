@@ -552,7 +552,11 @@ console.log({item});
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"admLogin",
 
-          styles:[`{ backgroundColor: "red" }`],
+          styles:[`{ 
+width: '100%',
+height: '100%',
+alignItems: '100%',
+ }`],
 
           screenElements:[() => {
                   const textStyle = {
