@@ -48,7 +48,7 @@
 
             styles:[`{
   flexDirection: "row",
-  backgroundColor: "#0064fe",
+  backgroundColor: "green",
   alignItems: "center",
   width: "100%",
 }`],
