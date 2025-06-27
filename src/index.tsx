@@ -129,11 +129,11 @@
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ fontSize: 14, fontWeight: 400 }`
           ],
 
           children: [
-            "Escreva..."
+            `Aa —  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in neque in massa rhoncus suscipit. `
           ],
 
           args,
