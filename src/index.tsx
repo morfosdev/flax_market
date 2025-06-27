@@ -66,7 +66,7 @@
           ],
 
           arrStyles: [
-            `{ fontSize: 40, fontWeight: 600, fontFamily: "Cochin" }`
+            `{ fontSize: 40, fontWeight: 600, fontFamily: "Cursive" }`
           ],
 
           children: [
