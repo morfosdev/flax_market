@@ -456,7 +456,18 @@ console.log({item});
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ maxWidth: 90 }`],
+            styles:[`{ 
+  maxWidth: 80,
+  alignItems: "center",
+  boxShadow: {
+  offsetX: 10,
+  offsetY: -3,
+  blurRadius: '15px',
+  spreadDistance: '10px',
+  color: 'red',
+  inset: true,
+}
+}`],
 
             functions:[()=>{}],            childrenItems:[
         
