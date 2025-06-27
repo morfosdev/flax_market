@@ -472,9 +472,11 @@ console.log({item});
             elementsProperties:['{}'],
 
             styles:[`{
-  width: 25,
+  width: "100%",
   height: 25,
-  backgroundColor: "$var_all.colors.primary"
+  backgroundColor: "$var_all.colors.primary",
+borderRightTopRadius: 4,
+borderLeftTopRadius: 4,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
