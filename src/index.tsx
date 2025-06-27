@@ -65,11 +65,11 @@
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ fontSize: 40 }`
           ],
 
           children: [
-            "Escreva..."
+            `Aa —  Explore the world.`
           ],
 
           args,
