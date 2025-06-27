@@ -82,7 +82,7 @@
           ],
 
           arrStyles: [
-            `{ fontSize: 32, fontWeight: 600 }`
+            `{ fontSize: 30, fontWeight: 600 }`
           ],
 
           children: [
