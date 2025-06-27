@@ -609,7 +609,7 @@ console.log({item});
         }}/>, 
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"home",
+          pathScreen:"admProducts",
 
           styles:[
               {
