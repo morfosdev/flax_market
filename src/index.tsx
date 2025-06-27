@@ -546,7 +546,7 @@ console.log({item});
             styles:[`{
   width: "100%",
   height: 30,
-  backgroundColor: "$var_all.colors.primary"
+  backgroundColor: "$var_all.colors.secondary"
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -563,7 +563,7 @@ console.log({item});
           ],
 
           children: [
-            `primary`
+            `secondary`
           ],
 
           args,
