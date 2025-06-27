@@ -457,6 +457,17 @@ console.log({item});
             elementsProperties:['{}'],
 
             styles:[`{ 
+  flexDirection: "row",
+  alignItems: "center",
+  flexWrap: "wrap"
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
   maxWidth: 75,
   borderRadius: 6,
   alignItems: "center",
@@ -502,6 +513,10 @@ console.log({item});
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
