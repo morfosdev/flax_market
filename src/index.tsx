@@ -790,7 +790,7 @@ backgroundColor: '#000',
 
             styles:[`{
 width: '400px',
-backgroundColor: '#000',
+backgroundColor: '#FFF',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
