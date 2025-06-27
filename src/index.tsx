@@ -457,7 +457,22 @@ console.log({item});
 
             styles:[`{ backgroundColor: "blue"}`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `IR PRA TELA WEB`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
