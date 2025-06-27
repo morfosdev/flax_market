@@ -466,7 +466,7 @@ console.log({item});
           return tools.goTo("admLogin");
         }
         ]
- , trigger: 'pressable'
+ , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -503,7 +503,7 @@ console.log({item});
           return tools.goTo("admLogin");
         }
         ]
- , trigger: 'pressable'
+ , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
