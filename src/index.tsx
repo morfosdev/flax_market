@@ -475,8 +475,8 @@ console.log({item});
   width: "100%",
   height: 25,
   backgroundColor: "$var_all.colors.primary",
-borderRightTopRadius: 4,
-borderLeftTopRadius: 4,
+borderTopRightRadius: 4,
+borderTopLeftRadius: 4,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
