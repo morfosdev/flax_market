@@ -576,6 +576,7 @@ console.log({item});
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -622,6 +623,61 @@ console.log({item});
 
           children: [
             `success`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+  flex: 1,
+  maxWidth: 75,
+  borderRadius: 6,
+  alignItems: "center",
+  shadowColor: '#000',
+  overflow: "hidden",
+  shadowOffset: { 
+     width: 0,
+     height: 2
+  },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "100%",
+  height: 30,
+  backgroundColor: "$var_all.colors.error"
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ padding: 5 }`
+          ],
+
+          children: [
+            `error`
           ],
 
           args,
