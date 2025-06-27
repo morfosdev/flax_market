@@ -1092,19 +1092,11 @@ backgroundColor: '#FFF',
           // console.log(initObj);
 
           const arrInitFuncs = [
-            
-        async (...args) =>
+            async (...args) =>
   functions.firebase.fireInit({ args, pass:{
    fbConfig: `all.firebaseConfig`,
 
-        }}), () => {
-  console.log("Init Project");
-    const script = document.createElement('script');
-    script.src = 'https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap';
-    script.async = true;
-
-    document.head.appendChild(script);
-}
+        }})
           ];
 
           export const useRoutes = create(() => ({ currRoute }));
