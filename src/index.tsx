@@ -654,7 +654,7 @@ console.log({item});
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"home",
 
-          styles:[`{ backgroundColor: "green" }`],
+          styles:[`{ backgroundColor: "red" }`],
 
           screenElements:[() => {
                   const textStyle = {
