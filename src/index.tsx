@@ -460,7 +460,7 @@ console.log({item});
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"home",
+          pathScreen:"admLogin",
 
           styles:[`{ backgroundColor: "red" }`],
 
@@ -485,7 +485,7 @@ console.log({item});
         }}/>, 
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"home",
+          pathScreen:"admDash",
 
           styles:[
               {
