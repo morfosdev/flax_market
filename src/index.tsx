@@ -470,6 +470,7 @@ console.log({item});
             elementsProperties:['{}'],
 
             styles:[`{ 
+  flex: 1,
   maxWidth: 75,
   borderRadius: 6,
   alignItems: "center",
