@@ -564,9 +564,14 @@ justifyContent: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ 
-width: 300,
- }`],
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
