@@ -459,14 +459,10 @@ console.log({item});
             styles:[`{ 
   maxWidth: 80,
   alignItems: "center",
-  boxShadow: {
-  offsetX: 10,
-  offsetY: -3,
-  blurRadius: '15px',
-  spreadDistance: '10px',
-  color: 'red',
-  inset: true,
-}
+shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84
 }`],
 
             functions:[()=>{}],            childrenItems:[
