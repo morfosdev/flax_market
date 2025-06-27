@@ -65,7 +65,7 @@
           ],
 
           arrStyles: [
-            `{ fontSize: 40 }`
+            `{ fontSize: 40, fontWeight: 600 }`
           ],
 
           children: [
