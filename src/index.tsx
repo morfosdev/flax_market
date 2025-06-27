@@ -565,7 +565,7 @@ justifyContent: 'center',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '300px',
+width: 300,
  }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
