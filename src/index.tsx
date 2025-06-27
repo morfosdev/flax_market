@@ -457,11 +457,15 @@ console.log({item});
             elementsProperties:['{}'],
 
             styles:[`{ 
-  maxWidth: 80,
+  maxWidth: 75,
   borderRadius: 6,
   alignItems: "center",
-shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
+  shadowColor: '#000',
+  overflow: "hidden",
+  shadowOffset: { 
+     width: 0,
+     height: 2
+  },
     shadowOpacity: 0.25,
     shadowRadius: 3.84
 }`],
@@ -492,7 +496,7 @@ shadowColor: '#000',
           ],
 
           children: [
-            `primary`
+            `Color Name`
           ],
 
           args,
