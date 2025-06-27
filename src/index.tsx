@@ -822,7 +822,9 @@ backgroundColor: '#000',
  {
  'all': { 
 'colors': { 
-'primary': "#fff", 'secondary': "#0064fe" } 
+'primary': "#fff", 
+'secondary': "#0064fe", 
+'success': #D5E5D7, 'error': #DC3545 } 
 , 
 'func1': (nativeEvent)=>console.log(nativeEvent), 
 'Comp1': <RN.Text style={{color: "darkred"}}>---</RN.Text>, 
