@@ -467,7 +467,7 @@ console.log({item});
           ],
 
           children: [
-            `IR PRA TELA WEB`
+            `TESTE`
           ],
 
           args,
