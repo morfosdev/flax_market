@@ -466,6 +466,7 @@ console.log({item});
               ],
 
             functions:[()=>{}],            childrenItems:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -480,7 +481,22 @@ console.log({item});
 
             args,
           }}/>
-        ],
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `primary`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
