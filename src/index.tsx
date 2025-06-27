@@ -566,8 +566,6 @@ justifyContent: 'center',
 
             styles:[`{ 
 width: '300px',
-alignItems: 'center',
-backgroundColor: 'EEE',
  }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
