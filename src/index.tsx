@@ -478,7 +478,7 @@ console.log({item});
 
             styles:[`{
   width: "100%",
-  height: 25,
+  height: 30,
   backgroundColor: "$var_all.colors.primary"
 }`],
 
@@ -496,7 +496,7 @@ console.log({item});
           ],
 
           children: [
-            `Color Name`
+            `primary`
           ],
 
           args,
