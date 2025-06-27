@@ -456,7 +456,7 @@ console.log({item});
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ backgroundColor: "blue"}`],
+            styles:[`{ backgroundColor: "blue", }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -493,7 +493,7 @@ console.log({item});
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ backgroundColor: "blue"}`],
+            styles:[`{ backgroundColor: "blue", }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
