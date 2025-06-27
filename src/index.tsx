@@ -473,7 +473,7 @@ console.log({item});
             styles:[`{
   width: 25px,
   height: 25px,
-  backgroundColor: $var_all.colors.primary
+  backgroundColor: "$var_all.colors.primary"
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
