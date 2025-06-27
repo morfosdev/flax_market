@@ -456,14 +456,7 @@ console.log({item});
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{ maxWidth: 90 }`],
 
             functions:[()=>{}],            childrenItems:[
         
@@ -475,8 +468,8 @@ console.log({item});
   width: "100%",
   height: 25,
   backgroundColor: "$var_all.colors.primary",
-borderTopRightRadius: 4,
-borderTopLeftRadius: 4,
+borderTopRightRadius: 6,
+borderTopLeftRadius: 6,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
