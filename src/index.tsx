@@ -59,13 +59,61 @@
               }
               ],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
 
           arrStyles: [
             `{ fontSize: 40, fontWeight: 600 }`
+          ],
+
+          children: [
+            `Aa —  Explore the world.`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ fontSize: 32, fontWeight: 600 }`
+          ],
+
+          children: [
+            `Aa —  Explore the world.`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ fontSize: 24, fontWeight: 600 }`
+          ],
+
+          children: [
+            `Aa —  Explore the world.`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ fontSize: 18, fontWeight: 600 }`
           ],
 
           children: [
