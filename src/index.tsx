@@ -856,7 +856,7 @@ backgroundColor: '#000',
  {
  'all': { 
 'colors': { 
-'primary': "#fff", 
+'primary': "#000", 
 'secondary': "#0064fe", 
 'success': "#D5E5D7", 'error': "#DC3545" } 
 , 
