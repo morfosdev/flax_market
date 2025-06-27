@@ -40,7 +40,8 @@
               }
               ],
 
-          screenElements:[(...args:any) => <Elements.ScrollBar pass={{
+          screenElements:[
+        (...args:any) => <Elements.ScrollBar pass={{
             styles: [`{ backgroundColor: "#EFEFEF", width: "100%", padding: 20 }`],
             arrProps: [],
             arrItems: [
@@ -409,7 +410,6 @@ xmlns="http://www.w3.org/2000/svg"
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -450,7 +450,9 @@ console.log({item});
 
             args,
           }}/>
-        , 
+        ],
+            args,
+        }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -486,8 +488,6 @@ console.log({item});
             args,
           }}/>
         ],
-            args,
-        }}/>],
 
           functions:[()=>{}],
 
