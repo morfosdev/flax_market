@@ -1087,7 +1087,6 @@ backgroundColor: '#FFF',
             styles:[`{ 
 width: '80%',
 height: '100%',
-backgroundColor: 'red',
  }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
