@@ -863,6 +863,7 @@ margimBottom: 10,
           stylesArray: [`{
 borderRadius: 5,
 borderWidth: 1,
+padding: 10,
 }`],
 
           path: [`sc.adm.login.forms.email`],
@@ -909,11 +910,11 @@ margimBottom: 10,
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
+          stylesArray: [`{
+borderRadius: 5,
+borderWidth: 1,
+padding: 10,
+}`],
 
           path: [`sc.adm.login.forms.password`],
 
