@@ -800,8 +800,8 @@ width: '100%',
       elementsProperties:[{}],
 
       styles:[{
-width: '120px',
-height: '70px',
+width: '116px',
+height: '40px',
 }],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FAdmin.png?alt=media&token=94ebd672-5bdd-4e25-81b7-a1b36e29e6e0`],
