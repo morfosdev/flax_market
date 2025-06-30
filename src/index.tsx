@@ -836,10 +836,9 @@ height: '30px',
             elementsProperties:['{}'],
 
             styles:[`{
-margimBottom: 10,
 width: '100%',
 padding: 10,
-borderRadius: 10,
+borderRadius: 5,
 borderWidth: 1,
 }`],
 
@@ -888,10 +887,9 @@ borderWidth: 1,
             elementsProperties:['{}'],
 
             styles:[`{
-margimBottom: 10,
 width: '100%',
 padding: 10,
-borderRadius: 10,
+borderRadius: 5,
 borderWidth: 1,
 }`],
 
