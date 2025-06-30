@@ -1780,15 +1780,7 @@ marginBottom: 10,
       preenchimento: [`#FFF`],
 
       args,
-    }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{flex: 1, alignItems: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+    }}/>, (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -1804,10 +1796,6 @@ marginBottom: 10,
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
