@@ -1058,7 +1058,8 @@ flexDirection: 'row',
             styles:[`{ 
 width: '20%',
 backgroundColor: '#FFF',
- }`],
+alignItems: 'center',
+}`],
 
             functions:[()=>{}],            childrenItems:[
         
