@@ -794,22 +794,6 @@ backgroundColor: '#FFF',
 }`],
 
             functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `Teste`
-          ],
-
-          args,
-
-        }}/>, 
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
