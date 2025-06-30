@@ -800,7 +800,7 @@ width: '100%',
       elementsProperties:[{}],
 
       styles:[{
-width: '100px',
+width: '120px',
 height: '70px',
 }],
 
