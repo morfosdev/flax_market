@@ -1098,20 +1098,6 @@ height: '40px',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '30px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
 width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
@@ -1661,20 +1647,6 @@ height: '40px',
 
       args,
     }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: '30px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
@@ -2274,20 +2246,6 @@ height: '40px',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '30px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
 width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
@@ -2837,20 +2795,6 @@ height: '40px',
 
       args,
     }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: '30px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
@@ -3420,20 +3364,6 @@ height: '40px',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '30px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
 width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
@@ -3982,20 +3912,6 @@ height: '40px',
 
       args,
     }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: '30px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
