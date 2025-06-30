@@ -822,7 +822,7 @@ height: '40px',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '50px',
+height: '30px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
