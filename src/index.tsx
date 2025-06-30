@@ -937,12 +937,13 @@ padding: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-margimBottom: 10,
 width: '95%',
 padding: 10,
 backgroundColor: '#000',
 borderRadius: 10,
 alignItems: 'center',
+margimBottom: 30,
+margimTop: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
