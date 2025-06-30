@@ -2279,6 +2279,10 @@ color: '#FFF',
 width: '100px',
 justifyContent: 'center',
 height: '100px',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
