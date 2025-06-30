@@ -952,47 +952,6 @@ height: '30px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
-backgroundColor: '#000',
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#FFF',
-}`
-          ],
-
-          children: [
-            `Login`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
 width: '95%',
 padding: 10,
 backgroundColor: '#000',
