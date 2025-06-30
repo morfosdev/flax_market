@@ -951,14 +951,10 @@ height: '30px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+flex: 1,
+backgroundColor: '#000',
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -1009,14 +1005,10 @@ alignItems: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+flex: 1,
+backgroundColor: '#000',
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
