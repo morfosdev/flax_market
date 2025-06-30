@@ -783,6 +783,7 @@ backgroundColor: '#eee',
 width: '400px',
 backgroundColor: '#FFF',
 alignItems: 'center',
+padding: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
