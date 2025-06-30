@@ -833,14 +833,9 @@ height: '50px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+padding: 20,
+}`],
 
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
