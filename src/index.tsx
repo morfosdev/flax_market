@@ -1110,10 +1110,10 @@ height: '30px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 10,
 }`],
 
             functions:[async (...args) =>
@@ -1188,10 +1188,10 @@ margimBottom: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 10,
 }`],
 
             functions:[async (...args) =>
@@ -1263,10 +1263,10 @@ margimBottom: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 10,
 }`],
 
             functions:[async (...args) =>
@@ -1339,10 +1339,10 @@ margimBottom: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 10,
 }`],
 
             functions:[async (...args) =>
@@ -1414,10 +1414,10 @@ margimBottom: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 10,
 }`],
 
             functions:[async (...args) =>
@@ -1489,10 +1489,10 @@ margimBottom: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 10,
 }`],
 
             functions:[async (...args) =>
