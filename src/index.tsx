@@ -837,7 +837,7 @@ height: '50px',
 
             styles:[`{
 margimBottom: 10,
-width: '100%'.
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -885,7 +885,7 @@ width: '100%'.
 
             styles:[`{
 margimBottom: 10,
-width: '100%'.
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
