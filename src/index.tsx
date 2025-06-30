@@ -2281,7 +2281,7 @@ justifyContent: 'center',
 borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
-padding: 10,
+padding: 5,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
