@@ -863,6 +863,7 @@ margimBottom: 10,
           stylesArray: [`{
 borderRadius: 5,
 borderWidth: 1,
+borderColor: '#eee',
 padding: 10,
 }`],
 
@@ -913,6 +914,7 @@ margimBottom: 10,
           stylesArray: [`{
 borderRadius: 5,
 borderWidth: 1,
+borderColor: '#eee',
 padding: 10,
 }`],
 
