@@ -2350,6 +2350,7 @@ height: '60px',
 flexDirection: 'row',
 borderTopWidth: 1,
 borderBottomWidth: 1,
+borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
