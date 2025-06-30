@@ -1070,6 +1070,7 @@ alignItems: 'center',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 height: '100px',
 }`],
 
@@ -1642,6 +1643,7 @@ alignItems: 'center',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 height: '100px',
 }`],
 
@@ -2244,6 +2246,7 @@ alignItems: 'center',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 height: '100px',
 }`],
 
@@ -2816,6 +2819,7 @@ alignItems: 'center',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 height: '100px',
 }`],
 
@@ -3388,6 +3392,7 @@ alignItems: 'center',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 height: '100px',
 }`],
 
@@ -3959,6 +3964,7 @@ alignItems: 'center',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 height: '100px',
 }`],
 
