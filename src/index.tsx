@@ -1032,15 +1032,11 @@ height: '30px',
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"admDash",
 
-          styles:[
-              {
-                backgroundColor: '#101',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100%',
-                width: '100%',
-              }
-              ],
+          styles:[`{ 
+width: '100%',
+height: '100%',
+backgroundColor: '#eee', 
+ }`],
 
           screenElements:[() => {
                   const textStyle = {
