@@ -1169,14 +1169,7 @@ height: '20px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{flex: 1,}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
