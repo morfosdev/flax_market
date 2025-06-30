@@ -782,7 +782,6 @@ backgroundColor: '#eee',
             styles:[`{
 width: '400px',
 backgroundColor: '#FFF',
-padding: 30,
 alignItems: 'center',
 }`],
 
