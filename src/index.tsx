@@ -939,6 +939,8 @@ margimBottom: 10,
 width: '100%',
 padding: 10,
 backgroundColor: '#000',
+borderRadius: 10,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
