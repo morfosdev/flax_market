@@ -840,7 +840,7 @@ margimBottom: 10,
 width: '100%',
 padding: 10,
 borderRadius: 10,
-borderize: 1,
+bordersize: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -892,7 +892,7 @@ margimBottom: 10,
 width: '100%',
 padding: 10,
 borderRadius: 10,
-borderize: 1,
+bordersize: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
