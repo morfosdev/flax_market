@@ -1084,14 +1084,11 @@ backgroundColor: '#FFF',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{ 
+width: '80%',
+height: '100%',
+backgroundColor: 'red',
+ }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
