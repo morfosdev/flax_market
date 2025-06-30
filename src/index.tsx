@@ -952,7 +952,7 @@ height: '30px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+width: '100%',
 backgroundColor: '#000',
 }`],
 
@@ -1006,7 +1006,7 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+width: '100%',
 backgroundColor: '#000',
 }`],
 
