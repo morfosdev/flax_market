@@ -938,7 +938,7 @@ padding: 10,
 
             styles:[`{
 margimBottom: 10,
-width: '100%',
+width: '90%',
 padding: 10,
 backgroundColor: '#000',
 borderRadius: 10,
