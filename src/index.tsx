@@ -1120,7 +1120,7 @@ flexDirection: 'row',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("admDash");
         }
         ]
  , trigger: 'on press'
@@ -1216,7 +1216,16 @@ alignItems: 'center',
 flexDirection: 'row',
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("admProducts");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
