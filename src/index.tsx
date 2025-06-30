@@ -1060,22 +1060,34 @@ width: '20%',
 backgroundColor: '#FFF',
  }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+            functions:[()=>{}],            childrenItems:[
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
 
-          children: [
-            `Menu Equerdo`
-          ],
+            styles:[`{
+width: '100%',
+alignItems: 'center',
+}`],
 
-          args,
+            functions:[()=>{}],            childrenItems:[
 
-        }}/>],
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '116px',
+height: '40px',
+}],
+
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FAdmin.png?alt=media&token=94ebd672-5bdd-4e25-81b7-a1b36e29e6e0`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
