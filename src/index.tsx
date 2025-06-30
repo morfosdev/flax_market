@@ -1114,6 +1114,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
@@ -1217,6 +1218,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
@@ -1317,6 +1319,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
@@ -1418,6 +1421,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
@@ -1518,6 +1522,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
@@ -1618,6 +1623,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
