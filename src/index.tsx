@@ -815,7 +815,7 @@ backgroundColor: '#FFF',
       elementsProperties:[{}],
 
       styles:[{
-width: '150px',
+width: '100px',
 height: '70px',
 }],
 
