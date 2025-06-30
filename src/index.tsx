@@ -2221,7 +2221,88 @@ height: '100px',
 flexDirection: 'row',
 }`],
 
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
             functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100px',
+padding: 10,
+backgroundColor: '#000',
+borderRadius: 5,
+alignItems: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Add product`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100px',
+justifyContent: 'center',
+height: '100px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
