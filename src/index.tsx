@@ -1112,8 +1112,9 @@ height: '30px',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
@@ -1190,8 +1191,9 @@ marginBottom: 10,
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
@@ -1265,8 +1267,9 @@ marginBottom: 10,
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
@@ -1341,8 +1344,9 @@ marginBottom: 10,
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
@@ -1416,8 +1420,9 @@ marginBottom: 10,
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
@@ -1491,8 +1496,9 @@ marginBottom: 10,
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+margimBottom: 20,
 }`],
 
             functions:[async (...args) =>
