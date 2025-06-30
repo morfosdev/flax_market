@@ -1629,6 +1629,7 @@ backgroundColor: '#eee',
  }`],
 
           screenElements:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -2198,6 +2199,24 @@ height: '100px',
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flex: 1,
+margin: 10,
+backgroundColor: '#FFF',
+alignItems: 'center',
+padding: 10,
+borderRadius: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
