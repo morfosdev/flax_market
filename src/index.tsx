@@ -1110,7 +1110,7 @@ height: '30px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
@@ -1189,7 +1189,7 @@ margimBottom: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
@@ -1265,7 +1265,7 @@ margimBottom: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
@@ -1342,7 +1342,7 @@ margimBottom: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
@@ -1418,7 +1418,7 @@ margimBottom: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
@@ -1494,7 +1494,7 @@ margimBottom: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
