@@ -1570,7 +1570,8 @@ fontSize: 14,
             styles:[`{ 
 width: '80%',
 height: '100%',
- }`],
+paddingHorizontal: 20,
+}`],
 
             functions:[()=>{}],            childrenItems:[
 
@@ -2159,7 +2160,8 @@ fontSize: 14,
             styles:[`{ 
 width: '80%',
 height: '100%',
- }`],
+paddingHorizontal: 20,
+}`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
@@ -2748,7 +2750,8 @@ fontSize: 14,
             styles:[`{ 
 width: '80%',
 height: '100%',
- }`],
+paddingHorizontal: 20,
+}`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
@@ -3307,7 +3310,8 @@ fontSize: 14,
             styles:[`{ 
 width: '80%',
 height: '100%',
- }`],
+paddingHorizontal: 20,
+}`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
@@ -3866,7 +3870,8 @@ fontSize: 14,
             styles:[`{ 
 width: '80%',
 height: '100%',
- }`],
+paddingHorizontal: 20,
+}`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
@@ -4424,7 +4429,8 @@ fontSize: 14,
             styles:[`{ 
 width: '80%',
 height: '100%',
- }`],
+paddingHorizontal: 20,
+}`],
 
             functions:[()=>{}],            childrenItems:[
 
