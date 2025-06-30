@@ -2255,7 +2255,9 @@ alignItems: 'center',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#FFF',
+}`
           ],
 
           children: [
