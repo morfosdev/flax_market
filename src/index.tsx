@@ -791,8 +791,7 @@ padding: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
-height: '70px',
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
