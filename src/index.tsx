@@ -771,7 +771,7 @@ width: '100%',
 height: '100%',
 alignItems: 'center',
 justifyContent: 'center',
-backgroundColor: 'red', 
+backgroundColor: '#eee', 
  }`],
 
           screenElements:[
@@ -796,6 +796,20 @@ padding: 10,
 
             functions:[()=>{}],            childrenItems:[
 
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
 
@@ -808,6 +822,10 @@ height: '70px',
 
       args,
     }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
