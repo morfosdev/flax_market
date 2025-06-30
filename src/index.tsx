@@ -784,6 +784,7 @@ width: '400px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 10,
+borderRadius: 15,
 }`],
 
             functions:[()=>{}],            childrenItems:[
