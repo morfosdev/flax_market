@@ -955,7 +955,7 @@ height: '30px',
 width: '95%',
 padding: 10,
 backgroundColor: '#000',
-borderRadius: 10,
+borderRadius: 5,
 alignItems: 'center',
 }`],
 
