@@ -967,6 +967,7 @@ alignItems: 'center',
             styles:[`{
 width: '100%',
 backgroundColor: '#000',
+alignItems: 'center',
 }`],
 
             functions:[async (...args) =>
