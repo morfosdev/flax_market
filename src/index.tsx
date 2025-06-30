@@ -782,7 +782,7 @@ backgroundColor: '#eee',
             styles:[`{
 width: '400px',
 backgroundColor: '#FFF',
-padding: 10,
+padding: 30,
 alignItems: 'center',
 }`],
 
@@ -833,14 +833,7 @@ height: '50px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
