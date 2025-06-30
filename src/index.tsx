@@ -783,6 +783,7 @@ backgroundColor: '#eee',
 width: '400px',
 backgroundColor: '#FFF',
 padding: 10,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -868,7 +869,11 @@ height: '50px',
 
           path: [" "],
 
-          funcsArray: [() => {}],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.adm.login.forms.email`],
+          value: [`$arg_callback`]
+        }})],
 
           args,
         }}/>],
