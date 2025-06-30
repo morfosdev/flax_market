@@ -1119,14 +1119,10 @@ flexDirection: 'row',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+width: '20px',
+height: '20px',
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
@@ -1157,9 +1153,9 @@ flexDirection: 'row',
 </svg>
       `,
 
-      altura: "30px",
+      altura: "20px",
 
-      largura: "30px",
+      largura: "20px",
 
       preenchimento: ['black'],
 
