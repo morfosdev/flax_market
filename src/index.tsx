@@ -1340,12 +1340,19 @@ height: '20px',
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
     xmlns="http://www.w3.org/2000/svg"
-    width={48}
-    height={1}
-    viewBox="0 0 48 1"
+    width={24}
+    height={25}
+    fill="red"
+    viewBox="0 0 24 25"
     {...props}
   >
-    <Path fill="#063855" fillRule="evenodd" d="M0 0h48v1H0z" />
+    <Path
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.429}
+      d="M3 3.5h3.383L7.59 15.477a1.384 1.384 0 0 0 1.385 1.177h8.728a1.386 1.386 0 0 0 1.385-.942l1.843-5.538a1.383 1.383 0 0 0-.194-1.246 1.385 1.385 0 0 0-1.191-.582H6.868m4.694 2.77v2.769m4.156-2.77v2.77m1.749 7.615a.693.693 0 1 1 0-1.385.693.693 0 0 1 0 1.385Zm-9.006 0a.693.693 0 1 1 0-1.385.693.693 0 0 1 0 1.385Z"
+    />
   </Svg>)
       },
 
@@ -1359,7 +1366,7 @@ height: '20px',
 
       largura: "20px",
 
-      preenchimento: [`#FFF`],
+      preenchimento: ['black'],
 
       args,
     }}/>],
