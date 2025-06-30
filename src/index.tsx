@@ -836,7 +836,8 @@ height: '50px',
             elementsProperties:['{}'],
 
             styles:[`{
-margimBottom: 10.
+margimBottom: 10,
+width: '100%'.
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -883,7 +884,8 @@ margimBottom: 10.
             elementsProperties:['{}'],
 
             styles:[`{
-margimBottom: 10.
+margimBottom: 10,
+width: '100%'.
 }`],
 
             functions:[()=>{}],            childrenItems:[
