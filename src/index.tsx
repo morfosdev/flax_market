@@ -2278,7 +2278,6 @@ color: '#FFF',
             styles:[`{
 width: '100px',
 justifyContent: 'center',
-height: '100px',
 borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
