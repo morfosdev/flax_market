@@ -839,6 +839,8 @@ height: '30px',
 margimBottom: 10,
 width: '100%',
 padding: 10,
+borderRadius: 10,
+borderize: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -889,6 +891,8 @@ padding: 10,
 margimBottom: 10,
 width: '100%',
 padding: 10,
+borderRadius: 10,
+borderize: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
