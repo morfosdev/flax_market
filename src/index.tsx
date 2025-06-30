@@ -1112,6 +1112,7 @@ height: '30px',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
 }`],
 
@@ -1214,6 +1215,7 @@ height: '20px',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
 }`],
 
@@ -1313,6 +1315,7 @@ height: '20px',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
 }`],
 
@@ -1413,6 +1416,7 @@ height: '20px',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
 }`],
 
@@ -1512,6 +1516,7 @@ height: '20px',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
 }`],
 
@@ -1611,6 +1616,7 @@ height: '20px',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
 flexDirection: 'row',
 }`],
 
