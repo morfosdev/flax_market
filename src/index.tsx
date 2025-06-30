@@ -838,8 +838,7 @@ height: '30px',
             styles:[`{
 width: '100%',
 padding: 10,
-borderRadius: 5,
-borderWidth: 1,
+margimBottom: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -861,11 +860,10 @@ borderWidth: 1,
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
+          stylesArray: [`{
+borderRadius: 5,
+borderWidth: 1,
+}`],
 
           path: [`sc.adm.login.forms.email`],
 
@@ -889,8 +887,7 @@ borderWidth: 1,
             styles:[`{
 width: '100%',
 padding: 10,
-borderRadius: 5,
-borderWidth: 1,
+margimBottom: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
