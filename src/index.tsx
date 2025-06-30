@@ -780,15 +780,6 @@ backgroundColor: '#eee',
             elementsProperties:['{}'],
 
             styles:[`{
-backgroundColor: '#000',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
 width: '400px',
 backgroundColor: '#FFF',
 padding: 10,
@@ -822,10 +813,6 @@ height: '70px',
 
       args,
     }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
