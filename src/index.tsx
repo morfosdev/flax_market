@@ -2239,6 +2239,7 @@ flex: 1,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '700',
 }`
           ],
 
