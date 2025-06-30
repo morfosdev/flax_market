@@ -2243,7 +2243,7 @@ flex: 1,
 
             styles:[`{
 width: '100px',
-padding: 10,
+padding: 5,
 backgroundColor: '#000',
 borderRadius: 5,
 alignItems: 'center',
