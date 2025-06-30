@@ -1110,7 +1110,7 @@ height: '30px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '90%',
+width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
 }`],
@@ -1212,7 +1212,7 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '90%',
+width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
 }`],
@@ -1311,7 +1311,7 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '90%',
+width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
 }`],
@@ -1411,7 +1411,7 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '90%',
+width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
 }`],
@@ -1510,7 +1510,7 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '90%',
+width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
 }`],
@@ -1609,7 +1609,7 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '90%',
+width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
 }`],
