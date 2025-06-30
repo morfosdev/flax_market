@@ -1168,7 +1168,9 @@ marginBottom: 10,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 14,
+}`
           ],
 
           children: [
