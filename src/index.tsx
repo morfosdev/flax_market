@@ -1110,7 +1110,7 @@ height: '30px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '90%',
 alignItems: 'center',
 flexDirection: 'row',
 }`],
@@ -1211,7 +1211,7 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '90%',
 alignItems: 'center',
 flexDirection: 'row',
 }`],
