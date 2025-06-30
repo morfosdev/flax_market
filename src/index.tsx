@@ -1114,7 +1114,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 40,
 }`],
 
             functions:[async (...args) =>
@@ -1218,7 +1218,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 40,
 }`],
 
             functions:[async (...args) =>
@@ -1319,7 +1319,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 40,
 }`],
 
             functions:[async (...args) =>
@@ -1421,7 +1421,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 40,
 }`],
 
             functions:[async (...args) =>
@@ -1522,7 +1522,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 40,
 }`],
 
             functions:[async (...args) =>
@@ -1623,7 +1623,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 flexDirection: 'row',
-margimBottom: 20,
+marginBottom: 40,
 }`],
 
             functions:[async (...args) =>
