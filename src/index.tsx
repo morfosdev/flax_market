@@ -2208,22 +2208,24 @@ padding: 10,
 borderRadius: 10,
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+            functions:[()=>{}],            childrenItems:[
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
 
-          children: [
-            `Teste`
-          ],
+            styles:[`{
+width: '100%',
+justifyContent: 'center',
+alignItems: 'center',
+height: '100px',
+flexDirection: 'row',
+}`],
 
-          args,
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
-        }}/>],
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
