@@ -792,6 +792,7 @@ padding: 10,
 
             styles:[`{
 width: '100%',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
