@@ -1421,7 +1421,7 @@ flexDirection: 'row',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("admCustomers");
         }
         ]
  , trigger: 'on press'
@@ -1520,7 +1520,7 @@ flexDirection: 'row',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("admReviews");
         }
         ]
  , trigger: 'on press'
@@ -1619,7 +1619,7 @@ flexDirection: 'row',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("admSettings");
         }
         ]
  , trigger: 'on press'
