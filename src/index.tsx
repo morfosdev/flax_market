@@ -822,7 +822,7 @@ color: '#FFF',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ backgroundColor: "green", }`],
+            styles:[`{ backgroundColor: "purple", }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -843,7 +843,7 @@ color: '#FFF',
           ],
 
           children: [
-            `ADM - Login TESTE RENAN2`
+            `ADM - Login TESTE RENAN3`
           ],
 
           args,
