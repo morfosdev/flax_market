@@ -880,7 +880,7 @@ color: '#000',
 width: '110px',
 paddingHorizontal: 20,
 paddingVertical: 10,
-backgroundColor: '#fff',
+backgroundColor: '#000',
 borderRadius: 5,
 alignItems: 'center',
 borderWidth: 1,
@@ -894,7 +894,7 @@ borderColor: '#000',
 
           arrStyles: [
             `{
-color: '#000',
+color: '#fff',
 fontSize: 12,
 }`
           ],
