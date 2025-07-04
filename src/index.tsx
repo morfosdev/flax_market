@@ -2784,7 +2784,7 @@ flex: 1,
           ],
 
           children: [
-            `Name`
+            `$arg_name`
           ],
 
           args,
@@ -2813,7 +2813,7 @@ flex: 1,
           ],
 
           children: [
-            `SKU`
+            `$arg_sku`
           ],
 
           args,
@@ -2842,7 +2842,7 @@ flex: 1,
           ],
 
           children: [
-            `Price`
+            `$arg_price`
           ],
 
           args,
