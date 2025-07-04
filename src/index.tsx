@@ -726,7 +726,7 @@ color: '#FFF',
             elementsProperties:['{}'],
 
             styles:[`{
-height: 10px,
+height: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
