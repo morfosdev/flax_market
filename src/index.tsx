@@ -2871,7 +2871,7 @@ flex: 1,
           ],
 
           children: [
-            `Stock`
+            `$arg_stock`
           ],
 
           args,
@@ -2900,7 +2900,7 @@ flex: 1,
           ],
 
           children: [
-            `Categories`
+            `$arg_category`
           ],
 
           args,
@@ -2928,7 +2928,7 @@ flex: 1,
           ],
 
           children: [
-            `Action`
+            `...`
           ],
 
           args,
