@@ -686,7 +686,7 @@ console.log({item});
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
+width: '122px',
 paddingHorizontal: 20,
 paddingVertical: 10,
 backgroundColor: '#000',
@@ -726,7 +726,7 @@ color: '#FFF',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
+width: '122px',
 paddingHorizontal: 20,
 paddingVertical: 10,
 backgroundColor: '#202533',
