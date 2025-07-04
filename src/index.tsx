@@ -3184,7 +3184,7 @@ flex: 1,
           ],
 
           children: [
-            `Stock`
+            `$arg_stock`
           ],
 
           args,
