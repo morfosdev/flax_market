@@ -1730,7 +1730,7 @@ height: '100px',
           ],
 
           children: [
-            `Admin > Dashboard 2`
+            `Admin > Dashboard 3`
           ],
 
           args,
