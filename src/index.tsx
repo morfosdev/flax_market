@@ -726,6 +726,20 @@ color: '#FFF',
             elementsProperties:['{}'],
 
             styles:[`{
+height: 10px,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 width: '122px',
 paddingHorizontal: 20,
 paddingVertical: 10,
