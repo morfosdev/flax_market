@@ -877,7 +877,7 @@ color: '#000',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '108px',
+width: '110px',
 paddingHorizontal: 20,
 paddingVertical: 10,
 backgroundColor: '#fff',
