@@ -784,7 +784,7 @@ alignItems: 'center',
 
           arrStyles: [
             `{
-color: '#FFF',
+color: '#5C5F6A',
 }`
           ],
 
