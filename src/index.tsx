@@ -671,7 +671,7 @@ console.log({item});
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ backgroundColor: '#eee', }`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[
         
