@@ -772,7 +772,7 @@ backgroundColor: '#fff',
 borderRadius: 5,
 alignItems: 'center',
 borderWidth: 1px,
-borderColor: #B6B7BC,
+borderColor: #B6B7BC
 }`],
 
             functions:[async (...args) =>
