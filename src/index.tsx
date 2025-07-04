@@ -3289,7 +3289,7 @@ flex: 1,
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.admProducts.list.products`],
-          value: [$0]
+          value: [$arg_0]
         }})],
         }})]
  , trigger: 'on init'
