@@ -772,7 +772,7 @@ backgroundColor: '#000',
 borderRadius: 5,
 alignItems: 'center',
 borderWidth: 2,
-borderColor: '#dbbc1d',
+borderColor: '#B6B7BC',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
