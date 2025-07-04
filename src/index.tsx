@@ -896,7 +896,8 @@ alignItems: 'center',
 
           arrStyles: [
             `{
-color: '#FFF',}`
+color: '#FFF',
+}`
           ],
 
           children: [
