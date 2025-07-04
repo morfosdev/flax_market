@@ -1135,7 +1135,7 @@ fontSize: 12,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ backgroundColor: "limegreen", }`],
+            styles:[`{ backgroundColor: "purple", }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
