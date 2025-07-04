@@ -765,13 +765,13 @@ color: '#FFF',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
+width: '122px',
 paddingHorizontal: 20,
 paddingVertical: 10,
 backgroundColor: '#fff',
 borderRadius: 5,
 alignItems: 'center',
-borderWidth: 2,
+borderWidth: 1,
 borderColor: '#B6B7BC',
 }`],
 
@@ -2871,7 +2871,7 @@ flex: 1,
           ],
 
           children: [
-            `$arg_stock`
+            `Stock`
           ],
 
           args,
@@ -2900,7 +2900,7 @@ flex: 1,
           ],
 
           children: [
-            `$arg_category`
+            `Categories`
           ],
 
           args,
@@ -2928,7 +2928,7 @@ flex: 1,
           ],
 
           children: [
-            `...`
+            `Action`
           ],
 
           args,
