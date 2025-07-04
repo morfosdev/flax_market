@@ -671,7 +671,14 @@ console.log({item});
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ alignItems: 'center', }`],
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
             functions:[()=>{}],            childrenItems:[
         
@@ -700,7 +707,7 @@ console.log({item});
           ],
 
           children: [
-            `ADM - Login`
+            `ADM - Login TESTE TESTE`
           ],
 
           args,
