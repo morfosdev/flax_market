@@ -66,11 +66,11 @@
           ],
 
           arrStyles: [
-            `{ fontSize: 40, fontWeight: 700, fontFamily: "Inter" }`
+            `{ fontSize: 40, fontWeight: 800, fontFamily: "Inter" }`
           ],
 
           children: [
-            `Aa —  Explore the world.1`
+            `Aa —  Explore the world.`
           ],
 
           args,
