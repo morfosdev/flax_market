@@ -895,7 +895,7 @@ borderColor: '#000',
           arrStyles: [
             `{
 color: '#000',
-fontSize: 12px
+fontSize: 12px,
 }`
           ],
 
