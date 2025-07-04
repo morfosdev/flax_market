@@ -834,6 +834,44 @@ color: '#000',
             args,
           }}/>
         , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '122px',
+paddingHorizontal: 20,
+paddingVertical: 10,
+backgroundColor: '#fff',
+borderRadius: 5,
+alignItems: 'center',
+borderWidth: 1,
+borderColor: '#000',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#000',
+}`
+          ],
+
+          children: [
+            `Button Label`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
