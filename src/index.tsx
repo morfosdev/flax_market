@@ -911,6 +911,7 @@ fontSize: 12,
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -934,6 +935,44 @@ borderColor: '#000',
           arrStyles: [
             `{
 color: '#000',
+fontSize: 12,
+}`
+          ],
+
+          children: [
+            `Button Label`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '110px',
+paddingHorizontal: 20,
+paddingVertical: 10,
+backgroundColor: '#fff',
+borderRadius: 5,
+alignItems: 'center',
+borderWidth: 1,
+borderColor: '#B6B7BC',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#B6B7BC',
 fontSize: 12,
 }`
           ],
