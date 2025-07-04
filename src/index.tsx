@@ -771,7 +771,7 @@ paddingVertical: 10,
 backgroundColor: '#fff',
 borderRadius: 5,
 alignItems: 'center',
-borderWidth: 1,
+borderWidth: 1px,
 borderColor: #B6B7BC,
 }`],
 
