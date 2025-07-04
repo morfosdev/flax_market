@@ -3970,41 +3970,6 @@ fontWeight: '700',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '100px',
-padding: 5,
-backgroundColor: '#000',
-borderRadius: 5,
-alignItems: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#FFF',
-}`
-          ],
-
-          children: [
-            `Add product`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
             styles:[`{width: '5px',}`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
