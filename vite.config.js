@@ -14,6 +14,7 @@
     },
     server: {
       hmr: true,
+     allowedHosts: ['5173-morfosdev-flaxmarket-x08mg600rsr.ws-us120.gitpod.io'],
       watch: {
         usePolling: true,
       },
