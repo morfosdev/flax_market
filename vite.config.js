@@ -7,7 +7,8 @@
     plugins: [react()],
     resolve: {
       alias: {
-        'react-native': 'react-native-web'
+        'react-native': 'react-native-web',
+        'react-native-svg': 'react-native-svg-web'
       },
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
     },
