@@ -686,7 +686,8 @@ console.log({item});
 
             styles:[`{
 width: '100px',
-padding: 5,
+paddingHorizontal: 10,
+paddingVertical: 5,
 backgroundColor: '#000',
 borderRadius: 5,
 alignItems: 'center',
@@ -704,7 +705,7 @@ color: '#FFF',
           ],
 
           children: [
-            `Add product`
+            `Button Label`
           ],
 
           args,
