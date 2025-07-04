@@ -23,8 +23,8 @@
     "firebase:login": "npx firebase-tools login",
     "firebase:login:ci:old": "npx firebase-tools login --no-localhost",
     "firebase:login:ci": "npx firebase-tools@12.9.0 login --no-localhost",
-    "deploy": "npx firebase-tools deploy --only functions",
-  }
+    "deploy": "npx firebase-tools deploy --only functions"
+  },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
     "@react-navigation/bottom-tabs": "^7.3.10",
