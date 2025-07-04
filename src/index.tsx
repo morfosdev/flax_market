@@ -66,7 +66,7 @@
           ],
 
           arrStyles: [
-            `{ fontSize: 40, fontWeight: "600px", fontFamily: "Inter" }`
+            `{ fontSize: 40, fontWeight: "semibold", fontFamily: "Inter" }`
           ],
 
           children: [
