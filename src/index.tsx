@@ -407,7 +407,7 @@
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: 100, height: 20, backgroundColor: "yellow", alignItems: "center", justifyContent: "center" }`],
+            styles:[`{ width: 100, height: 20, backgroundColor: "red", alignItems: "center", justifyContent: "center" }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
