@@ -3159,7 +3159,19 @@ flex: 1,
           }}/>
         ],
 
-          functions:[()=>{}],
+          functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.firebase.getDocsTool({ args, pass:{
+   arrRefStrings: [`products`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.admProducts.list.products`],
+          value: [$0]
+        }})],
+        }})]
+ , trigger: 'on init'
+}})],
 
           args,
         }}/>, 
