@@ -7155,7 +7155,6 @@ fontWeight: '700',
 
             styles:[`{
 flex: 1,
-alignItems: 'center',
 justifyContent: 'center',
 padding: 10,
 }`],
