@@ -7154,7 +7154,8 @@ fontWeight: '700',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+width: '100%',
+height: '400px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
