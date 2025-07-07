@@ -2654,7 +2654,6 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 10,
-paddingLeft: 10,
 borderRadius: 10,
 }`],
 
@@ -3916,7 +3915,6 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 10,
-paddingLeft: 10,
 borderRadius: 10,
 }`],
 
@@ -4874,7 +4872,6 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 10,
-paddingLeft: 10,
 borderRadius: 10,
 }`],
 
@@ -6001,7 +5998,6 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 10,
-paddingLeft: 10,
 borderRadius: 10,
 }`],
 
@@ -7098,7 +7094,6 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 10,
-paddingLeft: 10,
 borderRadius: 10,
 }`],
 
@@ -7158,14 +7153,12 @@ fontWeight: '700',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+flex: 1,
+alignItems: 'center',
+justifyContent: 'center',
+padding: 10,
+}`],
 
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
