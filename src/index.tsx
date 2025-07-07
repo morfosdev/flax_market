@@ -7185,7 +7185,7 @@ fontWeight: '700',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '200px',
 justifyContent: 'center',
 borderRadius: 5,
 borderWidth: 1,
