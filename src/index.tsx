@@ -4912,7 +4912,7 @@ fontWeight: '700',
           ],
 
           children: [
-            `Products`
+            `Cutomers`
           ],
 
           args,
