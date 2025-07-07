@@ -7109,6 +7109,8 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '100px',
 flexDirection: 'row',
+borderBottomWidth: 1,
+borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
