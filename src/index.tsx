@@ -5109,7 +5109,7 @@ flex: 1,
           ],
 
           children: [
-            `Price`
+            `Shipping Address`
           ],
 
           args,
