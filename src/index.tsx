@@ -5080,7 +5080,7 @@ flex: 1,
           ],
 
           children: [
-            `SKU`
+            `Email`
           ],
 
           args,
