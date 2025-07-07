@@ -3982,7 +3982,7 @@ fontWeight: '700',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '140px',
 justifyContent: 'center',
 borderRadius: 5,
 borderWidth: 1,
