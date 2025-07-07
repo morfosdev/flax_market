@@ -7188,6 +7188,7 @@ borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
 padding: 5,
+marginVertical: 5,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
@@ -7237,6 +7238,7 @@ borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
 padding: 5,
+marginVertical: 5,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
@@ -7285,6 +7287,7 @@ borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
 padding: 5,
+marginVertical: 5,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
