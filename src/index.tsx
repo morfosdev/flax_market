@@ -7156,6 +7156,7 @@ fontWeight: '700',
             styles:[`{
 width: '100%',
 height: '400px',
+padding: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
