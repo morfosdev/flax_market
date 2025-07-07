@@ -7155,7 +7155,6 @@ fontWeight: '700',
 
             styles:[`{
 flex: 1,
-justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
