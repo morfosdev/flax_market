@@ -174,7 +174,7 @@ height: '100px',
 
       styles:[{
 width: '116px',
-height: '23px',
+height: '52px',
 }],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Flogo%20ds.png?alt=media&token=b402882d-6d33-4e0c-bb25-ca5842d7fac6`],
@@ -2006,7 +2006,7 @@ height: '100px',
 
       styles:[{
 width: '116px',
-height: '23px',
+height: '52px',
 }],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Flogo%20ds.png?alt=media&token=b402882d-6d33-4e0c-bb25-ca5842d7fac6`],
