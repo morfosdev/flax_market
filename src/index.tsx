@@ -3775,13 +3775,20 @@ alignItems: 'center',
   const password = tools.getCtData("sc.adm.login.forms.password");
   const users = tools.getCtData("sc.adm.login.db.users") || [];
 
+  const setMessage = (msg) => {
+    tools.functions.setVar({
+      args: '',
+      pass: { keyPath: ["sc.adm.login.message"], value: [msg] }
+    });
+  };
+
   if (!email || email.trim() === "") {
-    tools.toast("Por favor, preencha o e-mail.");
+    setMessage("Por favor, preencha o e-mail.");
     return;
   }
 
   if (!password || password.trim() === "") {
-    tools.toast("Por favor, preencha a senha.");
+    setMessage("Por favor, preencha a senha.");
     return;
   }
 
@@ -3790,20 +3797,18 @@ alignItems: 'center',
   );
 
   if (!userMatch) {
-    tools.toast("E-mail ou senha incorretos.");
+    setMessage("E-mail ou senha incorretos.");
     return;
   }
 
-  // Salva o usuário logado na sessão
   const sessionPath = "sc.adm.session.user";
   const sessionData = { keyPath: [sessionPath], value: [userMatch] };
   tools.functions.setVar({ args: "", pass: sessionData });
 
-  tools.toast("Login realizado com sucesso!");
+  setMessage("Login realizado com sucesso!");
 
   tools.goTo("admDash");
-}
-]
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
