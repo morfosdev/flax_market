@@ -140,7 +140,7 @@
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"dsystem",
 
-          styles:[``],
+          styles:[`{ flexDirection: 'row', }`],
 
           screenElements:[
         
