@@ -1260,8 +1260,9 @@ paddingHorizontal: 15,
 
           arrStyles: [
             `{
-fontWeight: 500,
-}`
+    fontWeight: '500',
+    fontSize: '12',
+  }`
           ],
 
           children: [
