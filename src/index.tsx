@@ -3730,6 +3730,22 @@ padding: 10,
             args,
           }}/>
         , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ color: "red", marginTop: 8 }`
+          ],
+
+          children: [
+            `Mensagem da var`
+          ],
+
+          args,
+
+        }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
