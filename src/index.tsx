@@ -140,7 +140,15 @@
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"dsystem",
 
-          styles:[`{ flexDirection: 'row', }`],
+          styles:[
+              {
+                backgroundColor: '#101',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100%',
+                width: '100%',
+              }
+              ],
 
           screenElements:[
         
@@ -2180,8 +2188,8 @@ alignItems: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [
 () => {
-  const email = useData("sc.adm.login.forms.email");
-  const password = useData("sc.adm.login.forms.password");
+  const email = tools.getData("sc.adm.login.forms.email");
+  const password = tools.getData("sc.adm.login.forms.password");
 
   if (!email || email.trim() === "") {
     console.log("Por favor, preencha o e-mail.");
@@ -2194,7 +2202,8 @@ alignItems: 'center',
   }
 
   console.log("Login OK");
-}, 
+}
+, 
         (...args) => {
           // ---------- get Function from A_Project Scope
           return tools.goTo("admDash");
