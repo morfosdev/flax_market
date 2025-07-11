@@ -3794,10 +3794,16 @@ alignItems: 'center',
     return;
   }
 
+  // Salva o usuário logado na sessão
+  const sessionPath = "sc.adm.session.user";
+  const sessionData = { keyPath: [sessionPath], value: userMatch };
+  tools.functions.setVar({ args: "", pass: sessionData });
+
   console.log("Login OK");
 
   tools.goTo("admDash");
-}]
+}
+]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
