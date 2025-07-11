@@ -282,7 +282,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admProducts");
+          return tools.goTo("dsColors");
         }
         ]
  , trigger: 'on press'
@@ -332,7 +332,7 @@ fontSize: 14,
           ],
 
           children: [
-            `Products`
+            `Colors`
           ],
 
           args,
@@ -359,7 +359,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("dsComponents");
         }
         ]
  , trigger: 'on press'
@@ -410,7 +410,7 @@ fontSize: 14,
           ],
 
           children: [
-            `Orders`
+            `Components`
           ],
 
           args,
@@ -2193,10 +2193,9 @@ alignItems: 'center',
   }
 
   console.log("Login OK");
-  console.log(tools);
 
 // Redireciona para a tela admDash
-tools.functions.navigateTo("admDash")
+  tools.navigateTo("admDash");
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
