@@ -1323,9 +1323,9 @@ width: '8px',
 
       `,
 
-      altura: "30px",
+      altura: "15px",
 
-      largura: "30px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
