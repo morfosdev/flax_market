@@ -2192,10 +2192,9 @@ alignItems: 'center',
     return;
   }
 
-  console.log("Login OK");
+  console.log(tools);
 
-// Redireciona para a tela admDash
-  tools.navigateTo("admDash");
+
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
