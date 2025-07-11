@@ -2180,8 +2180,8 @@ alignItems: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [
 () => {
-  const email = tools.getData("sc.adm.login.forms.email");
-  const password = tools.getData("sc.adm.login.forms.password");
+  const email = tools.getCtData("sc.adm.login.forms.email");
+  const password = tools.getCtData("sc.adm.login.forms.password");
 
   if (!email || email.trim() === "") {
     console.log("Por favor, preencha o e-mail.");
