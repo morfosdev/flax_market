@@ -487,7 +487,7 @@ fontSize: 14,
           ],
 
           children: [
-            `Customers`
+            `xxx`
           ],
 
           args,
@@ -565,7 +565,7 @@ fontSize: 14,
           ],
 
           children: [
-            `Reviews`
+            `xxx`
           ],
 
           args,
@@ -642,7 +642,7 @@ fontSize: 14,
           ],
 
           children: [
-            `Settings`
+            `xxx`
           ],
 
           args,
