@@ -7145,8 +7145,7 @@ height: '100px',
 flex: 1,
 margin: 10,
 backgroundColor: '#FFF',
-alignItems: 'center',
-paddingHorizontal: 20,
+padding: 10,
 borderRadius: 10,
 }`],
 
@@ -7376,7 +7375,6 @@ padding: 5,
 backgroundColor: '#000',
 borderRadius: 5,
 alignItems: 'center',
-alignSelf: 'left',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
