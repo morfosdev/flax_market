@@ -7370,11 +7370,11 @@ marginVertical: 5,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
 padding: 5,
 backgroundColor: '#000',
 borderRadius: 5,
 alignItems: 'center',
+alignSelf: 'left',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
