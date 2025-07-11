@@ -1119,16 +1119,14 @@ fontSize: 12,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '320px',
-height: '45px',
-justifyContent: 'center',
-borderRadius: 6,
-borderWidth: 1,
-borderColor: '#B6B7BC',
-paddingHorizontal: 15,
-paddingVertical: 10,
-}`],
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
             functions:[()=>{}],            childrenItems:[
 
