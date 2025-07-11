@@ -3784,7 +3784,7 @@ alignItems: 'center',
     return;
   }
 
-  console.log(tools);
+  console.log('tools');
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
