@@ -5443,7 +5443,7 @@ flex: 1,
             {}
           ],
 
-          pData: '',
+          pData: `sc.admProducts.list.products`,
 
           itemElements: [
             
@@ -5480,7 +5480,7 @@ width: '20px',
 height: '20px',
 }],
 
-      URIvariablePath:[`$arg_thumb`],
+      URIvariablePath:[`$arg_image`],
 
       args,
     }}/>],
@@ -5507,7 +5507,7 @@ flex: 1,
           ],
 
           children: [
-            `$arg_name`
+            `$arg_label`
           ],
 
           args,
