@@ -1129,6 +1129,7 @@ fontSize: 12,
               ],
 
             functions:[()=>{}],            childrenItems:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -1140,6 +1141,40 @@ justifyContent: 'center',
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#B6B7BC',
+paddingHorizontal: 15,
+paddingVertical: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '320px',
+height: '45px',
+justifyContent: 'center',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#BE1313',
 paddingHorizontal: 15,
 paddingVertical: 10,
 }`],
