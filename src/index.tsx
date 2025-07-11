@@ -1241,14 +1241,14 @@ paddingHorizontal: 15,
             elementsProperties:['{}'],
 
             styles:[`{
-    width: 103,
-    height: 36,
+    width: '103px',
+    height: '36px',
     borderRadius: 50,
     paddingHorizontal: 16,
     paddingVertical: 2,
     backgroundColor: '#F6F6F6',
     flexDirection: 'row',
-  },`],
+  }`],
 
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
