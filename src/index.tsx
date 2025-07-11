@@ -174,7 +174,7 @@ height: '100px',
 
       styles:[{
 width: '116px',
-height: '40px',
+height: '23px',
 }],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Flogo%20ds.png?alt=media&token=d1939216-644a-4a46-bb30-b99762bc7d8a`],
