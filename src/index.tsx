@@ -1145,7 +1145,8 @@ paddingVertical: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`placeholder="First Name"
+placeholderTextColor="#ccc"`],
 
           stylesArray: [{
                 color: 'black',
