@@ -5536,7 +5536,7 @@ flex: 1,
           ],
 
           children: [
-            `$arg_sku`
+            `$arg_docId`
           ],
 
           args,
@@ -5594,7 +5594,7 @@ flex: 1,
           ],
 
           children: [
-            `$arg_stock`
+            `$arg_availability`
           ],
 
           args,
