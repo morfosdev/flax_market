@@ -177,7 +177,7 @@ width: '116px',
 height: '40px',
 }],
 
-      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Flogo%20ds.png?alt=media&token=749ab551-caac-4df3-bf9f-f5b5602451e7`],
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Flogo%20ds.png?alt=media&token=d1939216-644a-4a46-bb30-b99762bc7d8a`],
 
       args,
     }}/>],
