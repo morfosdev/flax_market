@@ -1215,11 +1215,14 @@ paddingVertical: 10,
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
+          stylesArray: [`{
+width: 320,
+height: 128,
+borderRadius: 6,
+borderWidth: 1,
+paddingVertical: 10,
+paddingHorizontal: 15,
+}`],
 
           path: [" "],
 
