@@ -1246,6 +1246,7 @@ height: '36px',
 borderRadius: 50,
 paddingHorizontal: 16,
 paddingVertical: 2,
+backgroundColor: '#F6F6F6',
 }`],
 
             functions:[()=>{}],            childrenItems:[
