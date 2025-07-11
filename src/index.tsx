@@ -1259,7 +1259,9 @@ paddingHorizontal: 15,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontWeight: 500,
+}`
           ],
 
           children: [
