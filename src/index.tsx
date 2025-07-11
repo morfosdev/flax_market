@@ -7200,6 +7200,7 @@ fontWeight: '700',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -7360,6 +7361,40 @@ marginVertical: 5,
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100px',
+padding: 5,
+backgroundColor: '#000',
+borderRadius: 5,
+alignItems: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+}`
+          ],
+
+          children: [
+            `Save Changes`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
