@@ -202,7 +202,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("dsTypo");
         }
         ]
  , trigger: 'on press'
@@ -255,7 +255,7 @@ fontSize: 14,
           ],
 
           children: [
-            `Dashboard`
+            `Typography`
           ],
 
           args,
