@@ -1247,6 +1247,7 @@ borderRadius: 50,
 paddingHorizontal: 16,
 paddingVertical: 2,
 backgroundColor: '#F6F6F6',
+flexDirection: row,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -1260,7 +1261,7 @@ backgroundColor: '#F6F6F6',
           ],
 
           children: [
-            "Escreva..."
+            `T-Shirt`
           ],
 
           args,
@@ -1279,7 +1280,22 @@ backgroundColor: '#F6F6F6',
               }
               ],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `X`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
