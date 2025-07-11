@@ -2167,6 +2167,22 @@ alignItems: 'center',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
+() => {
+  const email = useData("sc.adm.login.forms.email");
+  const password = useData("sc.adm.login.forms.password");
+
+  if (!email || email.trim() === "") {
+    console.log("Por favor, preencha o e-mail.");
+    return;
+  }
+
+  if (!password || password.trim() === "") {
+    console.log("Por favor, preencha a senha.");
+    return;
+  }
+
+  console.log("Login OK");
+}, 
         (...args) => {
           // ---------- get Function from A_Project Scope
           return tools.goTo("admDash");
