@@ -1295,22 +1295,42 @@ width: '8px',
  functions.funcGroup({ args, pass:{
  arrFunctions: [()=>{}]
  , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={16}
+    height={16}
+    fill="red"
+    viewBox="0 0 16 16"
+    {...props}
+  >
+    <Path
+      stroke="#CCC"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M14.5 1.5 8 8m0 0-6.5 6.5M8 8 1.5 1.5M8 8l6.5 6.5"
+    />
+  </Svg>)
+      },
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+      svgOriginal: `
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.5 1.5L8 8M8 8L1.5 14.5M8 8L1.5 1.5M8 8L14.5 14.5" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
-          children: [
-            `X`
-          ],
+      `,
 
-          args,
+      altura: "30px",
 
-        }}/>],
+      largura: "30px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
 
             args,
           }}/>
