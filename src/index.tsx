@@ -7371,6 +7371,7 @@ marginVertical: 5,
             elementsProperties:['{}'],
 
             styles:[`{
+width: '100px',
 padding: 5,
 backgroundColor: '#000',
 borderRadius: 5,
