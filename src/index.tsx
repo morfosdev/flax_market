@@ -3786,8 +3786,8 @@ alignItems: 'center',
 
   console.log("Login OK");
 
-  // Redireciona para a tela "admDash"
-  tools.GoTo("admDash");
+ 
+  tools.goTo("admDash");
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
