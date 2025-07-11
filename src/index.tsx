@@ -3796,8 +3796,8 @@ alignItems: 'center',
 
   // Salva o usuário logado na sessão
   const sessionPath = "sc.adm.session.user";
-  const sessionData = { keyPath: [sessionPath], value: userMatch };
-  tools.functions.setVar({ args: "", pass: sessionData });
+  const sessionData = { keyPath: [sessionPath], value: [userMatch] };
+tools.functions.setVar({ args: "", pass: sessionData });
 
   console.log("Login OK");
 
