@@ -3773,6 +3773,7 @@ alignItems: 'center',
  arrFunctions: [() => {
   const email = tools.getCtData("sc.adm.login.forms.email");
   const password = tools.getCtData("sc.adm.login.forms.password");
+  const users = tools.getCtData("sc.adm.login.db.users") || [];
 
   if (!email || email.trim() === "") {
     console.log("Por favor, preencha o e-mail.");
@@ -3784,9 +3785,17 @@ alignItems: 'center',
     return;
   }
 
+  const userMatch = users.find(
+    (user) => user.userEmail === email && user.userPassword === password
+  );
+
+  if (!userMatch) {
+    console.log("E-mail ou senha incorretos.");
+    return;
+  }
+
   console.log("Login OK");
 
- 
   tools.goTo("admDash");
 }]
  , trigger: 'on press'
