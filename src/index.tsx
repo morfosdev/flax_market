@@ -2178,8 +2178,7 @@ alignItems: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
+ arrFunctions: [() => {
   const email = tools.getCtData("sc.adm.login.forms.email");
   const password = tools.getCtData("sc.adm.login.forms.password");
 
@@ -2194,13 +2193,10 @@ alignItems: 'center',
   }
 
   console.log("Login OK");
-}
-, 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
-        }
-        ]
+
+// Redireciona para a tela admDash
+  tools.functions.goTo({ screen: "admDash" });
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
