@@ -177,7 +177,7 @@ width: '116px',
 height: '23px',
 }],
 
-      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Flogo%20ds.png?alt=media&token=d1939216-644a-4a46-bb30-b99762bc7d8a`],
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Flogo%20ds.png?alt=media&token=b402882d-6d33-4e0c-bb25-ca5842d7fac6`],
 
       args,
     }}/>],
@@ -2009,7 +2009,7 @@ width: '116px',
 height: '23px',
 }],
 
-      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Flogo%20ds.png?alt=media&token=d1939216-644a-4a46-bb30-b99762bc7d8a`],
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Flogo%20ds.png?alt=media&token=b402882d-6d33-4e0c-bb25-ca5842d7fac6`],
 
       args,
     }}/>],
