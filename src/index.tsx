@@ -3776,12 +3776,12 @@ alignItems: 'center',
   const users = tools.getCtData("sc.adm.login.db.users") || [];
 
   if (!email || email.trim() === "") {
-    console.log("Por favor, preencha o e-mail.");
+    tools.toast("Por favor, preencha o e-mail.");
     return;
   }
 
   if (!password || password.trim() === "") {
-    console.log("Por favor, preencha a senha.");
+    tools.toast("Por favor, preencha a senha.");
     return;
   }
 
@@ -3790,16 +3790,16 @@ alignItems: 'center',
   );
 
   if (!userMatch) {
-    console.log("E-mail ou senha incorretos.");
+    tools.toast("E-mail ou senha incorretos.");
     return;
   }
 
   // Salva o usuário logado na sessão
   const sessionPath = "sc.adm.session.user";
   const sessionData = { keyPath: [sessionPath], value: [userMatch] };
-tools.functions.setVar({ args: "", pass: sessionData });
+  tools.functions.setVar({ args: "", pass: sessionData });
 
-  console.log("Login OK");
+  tools.toast("Login realizado com sucesso!");
 
   tools.goTo("admDash");
 }
