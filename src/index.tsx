@@ -1147,11 +1147,11 @@ paddingVertical: 10,
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [``],
 
-          stylesArray: [`{{
+          stylesArray: [`{
 padding: 8,
 borderWidth: 1,
 borderRadius: 8,
-}}`],
+}`],
 
           path: [" "],
 
