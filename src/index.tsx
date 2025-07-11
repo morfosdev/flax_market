@@ -1138,7 +1138,7 @@ width: '100px',
 justifyContent: 'center',
 borderRadius: 5,
 borderWidth: 1,
-borderColor: '#eee',
+borderColor: '#B6B7BC',
 padding: 5,
 }`],
 
