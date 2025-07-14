@@ -4617,22 +4617,7 @@ padding: 10,
 borderRadius: 10,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '100px',
-height: '200px',
-backgroundColor: '#7c73e6',
-}`],
-
             functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
