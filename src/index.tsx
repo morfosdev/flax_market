@@ -4717,7 +4717,177 @@ padding: 10,
 borderRadius: 10,
 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'Row',
+width: '100%',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'left',
+flex: 1,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Total Customers`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `This Month`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '50px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `$ 2,571`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+width: '100%',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={265}
+    height={47}
+    viewBox="0 0 265 47"
+    {...props}
+  >
+    <Path
+      stroke="#4078FF"
+      strokeWidth={1.5}
+      d="m1.5 45.672 9.069-13.308 9.069-27.927 9.069 38.892 9.069.843 9.069-2.811L55.914 2l9.069 8.575 9.069 15.698L83.12 8.56 92.19 7.39l9.069 16.4 9.069-2.155 9.069 5.248 9.069-10.075 9.068 24.554 9.069-34.113 9.069 27.834 9.069-25.07 9.069 3.234 9.069 17.103 9.069 4.686 9.069.328 9.069 3.608 9.069-22.82 9.069 19.868 9.069-7.029 9.069-23.757 9.069 39.314L264.5 46"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="265" height="47" viewBox="0 0 265 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.5 45.672L10.569 32.3642L19.6379 4.43663L28.7069 43.3291L37.7759 44.1725L46.8448 41.361L55.9138 2L64.9828 10.5751L74.0517 26.2726L83.1207 8.56017L92.1897 7.38871L101.259 23.7891L110.328 21.6337L119.397 26.8818L128.466 16.8072L137.534 41.361L146.603 7.24814L155.672 35.082L164.741 10.0128L173.81 13.246L182.879 30.3493L191.948 35.0351L201.017 35.3632L210.086 38.9712L219.155 16.1512L228.224 36.0192L237.293 28.9904L246.362 5.23323L255.431 44.5474L264.5 46" stroke="#4078FF" stroke-width="1.5"/>
+</svg>
+      `,
+
+      altura: "46px",
+
+      largura: "200px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
