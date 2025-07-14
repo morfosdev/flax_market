@@ -4471,9 +4471,8 @@ height: '100px',
             styles:[`{
 flex: 1,
 margin: 10,
-backgroundColor: '#FFF',
 alignItems: 'center',
-paddingHorizontal: 20,
+padding: 10,
 borderRadius: 10,
 }`],
 
@@ -4488,7 +4487,108 @@ width: '100%',
 flexDirection: 'row',
 }`],
 
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flex: 1,
+margin: 5,
+backgroundColor: '#FFF',
+alignItems: 'center',
+padding: 10,
+borderRadius: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+height: '100px',
+backgroundColor: '#7c73e6',
+}`],
+
             functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flex: 1,
+margin: 5,
+backgroundColor: '#FFF',
+alignItems: 'center',
+padding: 10,
+borderRadius: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+height: '100px',
+backgroundColor: '#7c73e6',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flex: 1,
+margin: 5,
+backgroundColor: '#FFF',
+alignItems: 'center',
+padding: 10,
+borderRadius: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+height: '100px',
+backgroundColor: '#7c73e6',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
