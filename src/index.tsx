@@ -4637,6 +4637,7 @@ alignItems: 'left',
 
             styles:[`{
 alignItems: 'center',
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
@@ -4691,7 +4692,7 @@ alignItems: 'center',
 
       altura: "46px",
 
-      largura: "274px",
+      largura: "200px",
 
       preenchimento: ['black'],
 
