@@ -4686,7 +4686,7 @@ fontWeight: '700',
           ],
 
           children: [
-            `Products`
+            `Recent Orders`
           ],
 
           args,
