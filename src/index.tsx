@@ -3740,7 +3740,7 @@ padding: 10,
           ],
 
           children: [
-            `Mensagem da var`
+            `$var_sc.adm.login.message`
           ],
 
           args,
