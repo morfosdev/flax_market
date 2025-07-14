@@ -4658,6 +4658,7 @@ borderRadius: 10,
             styles:[`{
 width: '100%',
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
