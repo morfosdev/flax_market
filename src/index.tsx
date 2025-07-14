@@ -4657,9 +4657,6 @@ borderRadius: 10,
 
             styles:[`{
 width: '100%',
-justifyContent: 'center',
-alignItems: 'center',
-height: '100px',
 flexDirection: 'row',
 }`],
 
