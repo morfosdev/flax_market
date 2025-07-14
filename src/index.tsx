@@ -4510,6 +4510,7 @@ borderRadius: 10,
 
             styles:[`{
 flexDirection: 'Row',
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
