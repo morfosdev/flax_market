@@ -5097,10 +5097,7 @@ flex: 1,
           ],
 
           arrStyles: [
-            `{
-fontSize: 14,
-fontWeight: '700',
-}`
+            `{ fontSize: 40, fontWeight: 900, fontFamily: "Inter" }`
           ],
 
           children: [
