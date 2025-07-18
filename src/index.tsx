@@ -8315,9 +8315,13 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [" "],
+          path: [`sc.admAddProducts.iptsChanges.label`],
 
-          funcsArray: [() => {}],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.admAddProducts.iptsChanges.label`],
+          value: [`$arg_callback`]
+        }})],
 
           args,
         }}/>],
