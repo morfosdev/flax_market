@@ -851,7 +851,6 @@ fontSize: 14,
   flexGrow: 1,
   flexShrink: 1,
   flexBasis: 350,
-  color: '#5C5F6A',
 }`
           ],
 
