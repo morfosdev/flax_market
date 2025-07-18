@@ -7462,7 +7462,7 @@ marginVertical: 5,
           ],
 
           children: [
-            `Label`
+            `Stock Status`
           ],
 
           args,
