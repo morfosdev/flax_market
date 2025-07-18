@@ -846,7 +846,7 @@ fontSize: 14,
           arrStyles: [
             `{ 
   fontSize: 40, 
-  fontWeight: '600', 
+  fontWeight: 600, 
   fontFamily: "Inter", 
   flexGrow: 1,
   flexShrink: 1,
@@ -958,7 +958,7 @@ fontSize: 14,
           arrStyles: [
             `{ 
   fontSize: 32, 
-  fontWeight: '700', 
+  fontWeight: 700, 
   fontFamily: "Inter", 
   flexGrow: 1,
   flexShrink: 1,
@@ -7253,6 +7253,156 @@ marginVertical: 5,
 
           children: [
             `Category`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+justifyContent: 'center',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 5,
+marginVertical: 5,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Slug`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+justifyContent: 'center',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 5,
+marginVertical: 5,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `SKU`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+justifyContent: 'center',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 5,
+marginVertical: 5,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Description`
           ],
 
           args,
