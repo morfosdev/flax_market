@@ -699,14 +699,9 @@ fontSize: 14,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+  flexDirection: 'row',
+}`],
 
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
