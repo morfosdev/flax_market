@@ -656,7 +656,7 @@ fontSize: 14,
             args,
           }}/>
         , (...args:any) => <Elements.ScrollBar pass={{
-            styles: [`{ backgroundColor: "#EFEFEF", width: "100%", padding: 20 }`],
+            styles: [`{ backgroundColor: "#EFEFEF", width: "100%", padding: 20, height: "100%", }`],
             arrProps: [],
             arrItems: [
 
