@@ -6971,7 +6971,7 @@ paddingVertical: 20,
           ],
 
           children: [
-            `Site Name`
+            `Label`
           ],
 
           args,
@@ -7021,7 +7021,7 @@ marginVertical: 5,
           ],
 
           children: [
-            `Support Email`
+            `Price`
           ],
 
           args,
@@ -7071,7 +7071,7 @@ marginVertical: 5,
           ],
 
           children: [
-            `Monthly Order Goal`
+            `Category`
           ],
 
           args,
