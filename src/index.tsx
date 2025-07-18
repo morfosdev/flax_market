@@ -846,7 +846,7 @@ fontSize: 14,
           arrStyles: [
             `{ 
   fontSize: 40, 
-  fontWeight: 900, 
+  fontWeight: 600, 
   fontFamily: "Inter", 
   flexGrow: 1,
   flexShrink: 1,
@@ -911,7 +911,7 @@ fontSize: 14,
           ],
 
           children: [
-            `500`
+            `600`
           ],
 
           args,
@@ -932,6 +932,103 @@ fontSize: 14,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
+  paddingHorizontal: 10,
+  paddingVertical: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 32, 
+  fontWeight: 700, 
+  fontFamily: "Inter", 
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 350,
+}`
+          ],
+
+          children: [
+            `Aa —  Explore the world.`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  color: '#5C5F6A',
+}`
+          ],
+
+          children: [
+            `H2`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  color: '#5C5F6A',
+}`
+          ],
+
+          children: [
+            `32px`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  color: '#5C5F6A',
+}`
+          ],
+
+          children: [
+            `700`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
