@@ -6872,7 +6872,7 @@ fontWeight: '700',
           ],
 
           children: [
-            `Settings`
+            `Add Product`
           ],
 
           args,
