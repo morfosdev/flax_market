@@ -814,6 +814,8 @@ fontSize: 14,
 
             styles:[`{
   flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
