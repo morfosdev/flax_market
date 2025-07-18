@@ -1384,7 +1384,6 @@ fontSize: 14,
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -1472,50 +1471,6 @@ fontSize: 14,
 
           children: [
             `500`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  backgroundColor: 'transparent',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ fontSize: 18, fontWeight: 600 }`
-          ],
-
-          children: [
-            `Aa —  Explore the world.`
-          ],
-
-          args,
-
-        }}/>, (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ fontSize: 14, fontWeight: 400 }`
-          ],
-
-          children: [
-            `Aa —  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in neque in massa rhoncus suscipit. `
           ],
 
           args,
