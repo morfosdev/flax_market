@@ -946,7 +946,7 @@ fontSize: 14,
   alignItems: 'center',
   justifyContent: 'center',
   paddingHorizontal: 10,
-  paddingVertical: 10,
+  height: '70',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -1058,7 +1058,7 @@ fontSize: 14,
   alignItems: 'center',
   justifyContent: 'center',
   paddingHorizontal: 10,
-  paddingVertical: 10,
+  height: '70',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -1170,7 +1170,7 @@ fontSize: 14,
   alignItems: 'center',
   justifyContent: 'center',
   paddingHorizontal: 10,
-  paddingVertical: 10,
+  height: '70',
 }`],
 
             functions:[()=>{}],            childrenItems:[
