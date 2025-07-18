@@ -813,7 +813,8 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
-  height: 15,
+  height: 1,
+  backgroundColor: '#E9E9EB',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
