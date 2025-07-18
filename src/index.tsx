@@ -7105,7 +7105,7 @@ marginVertical: 5,
           ],
 
           children: [
-            `Label`
+            `Price`
           ],
 
           args,
