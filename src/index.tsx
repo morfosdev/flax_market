@@ -716,6 +716,7 @@ fontSize: 14,
             styles:[`{
   flexDirection: 'row',
   paddingVertical: 10,
+  paddingHorizontal: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -841,6 +842,7 @@ fontSize: 14,
   flexDirection: 'row',
   alignItems: 'center',
   justifyContent: 'center',
+  paddingHorizontal: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
