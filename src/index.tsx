@@ -674,6 +674,26 @@ fontSize: 14,
             styles: [`{ backgroundColor: "#EFEFEF", width: "100%", padding: 20, height: "100%", }`],
             arrProps: [],
             arrItems: [
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  fontSize: 32,
+  fontWeight: '700',
+  fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Typography`
+          ],
+
+          args,
+
+        }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
