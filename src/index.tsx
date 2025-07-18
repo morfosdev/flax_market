@@ -715,6 +715,7 @@ fontSize: 14,
 
             styles:[`{
   flexDirection: 'row',
+  paddingVertical: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
