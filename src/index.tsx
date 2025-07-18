@@ -700,6 +700,20 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
+  height: 30,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
   flexDirection: 'row',
 }`],
 
