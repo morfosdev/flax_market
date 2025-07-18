@@ -1515,7 +1515,7 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
-  height: 30,
+  height: 50,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -1523,6 +1523,7 @@ fontSize: 14,
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -1830,6 +1831,372 @@ fontSize: 14,
 
           children: [
             `14px`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  color: '#5C5F6A',
+}`
+          ],
+
+          children: [
+            `500`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: 1,
+  backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: 50,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  backgroundColor: 'transparent',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  flexDirection: 'row',
+  paddingVertical: 10,
+  paddingHorizontal: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 350,
+  fontSize: 14,
+  fontWeight: '500',
+  fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `— Body`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  fontSize: 14,
+  fontWeight: '500',
+  fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Name`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  fontSize: 14,
+  fontWeight: '500',
+  fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Size`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  fontSize: 14,
+  fontWeight: '500',
+  fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Weight`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: 1,
+  backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
+  paddingHorizontal: 10,
+  height: '70',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 12, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 350,
+}`
+          ],
+
+          children: [
+            `Aa —  Label`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  color: '#5C5F6A',
+}`
+          ],
+
+          children: [
+            `L1`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  color: '#5C5F6A',
+}`
+          ],
+
+          children: [
+            `12px`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  color: '#5C5F6A',
+}`
+          ],
+
+          children: [
+            `500`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: 1,
+  backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  flexDirection: 'row',
+  alignItems: 'center',
+  justifyContent: 'center',
+  paddingHorizontal: 10,
+  height: '70',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 12, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 350,
+}`
+          ],
+
+          children: [
+            `Aa —  Label`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  color: '#5C5F6A',
+}`
+          ],
+
+          children: [
+            `L1`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+  flex: 1,
+  color: '#5C5F6A',
+}`
+          ],
+
+          children: [
+            `12px`
           ],
 
           args,
