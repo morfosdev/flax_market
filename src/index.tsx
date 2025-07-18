@@ -1679,7 +1679,7 @@ fontSize: 14,
           ],
 
           children: [
-            `Aa —  Explore the world.`
+            `Aa —  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in neque in massa rhoncus suscipit. `
           ],
 
           args,
@@ -1791,7 +1791,7 @@ fontSize: 14,
           ],
 
           children: [
-            `Aa —  Explore the world.`
+            `Aa —  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in neque in massa rhoncus suscipit. `
           ],
 
           args,
