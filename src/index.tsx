@@ -1781,8 +1781,8 @@ fontSize: 14,
 
           arrStyles: [
             `{ 
-  fontSize: 32, 
-  fontWeight: "700", 
+  fontSize: 14, 
+  fontWeight: "500", 
   fontFamily: "Inter", 
   flexGrow: 1,
   flexShrink: 1,
@@ -1810,7 +1810,7 @@ fontSize: 14,
           ],
 
           children: [
-            `H2`
+            `P2`
           ],
 
           args,
@@ -1829,7 +1829,7 @@ fontSize: 14,
           ],
 
           children: [
-            `32px`
+            `14px`
           ],
 
           args,
@@ -1847,7 +1847,7 @@ fontSize: 14,
           ],
 
           children: [
-            `700`
+            `500`
           ],
 
           args,
