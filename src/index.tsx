@@ -787,9 +787,24 @@ fontSize: 14,
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"dsColors",
 
-          styles:[`{ flexDirection: 'row', }`],
+          styles:[`{ 
+width: '100%',
+height: '100%',
+backgroundColor: '#eee', 
+ }`],
 
           screenElements:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+width: '100%',
+height: '100%',
+flexDirection: 'row',
+ }`],
+
+            functions:[()=>{}],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -2609,6 +2624,10 @@ width: '8px',
         ],
             args,
         }}/>],
+
+            args,
+          }}/>
+        ],
 
           functions:[()=>{}],
 
