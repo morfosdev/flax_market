@@ -958,7 +958,7 @@ fontSize: 14,
           arrStyles: [
             `{ 
   fontSize: 32, 
-  fontWeight: 700, 
+  fontWeight: "700", 
   fontFamily: "Inter", 
   flexGrow: 1,
   flexShrink: 1,
@@ -7462,7 +7462,7 @@ marginVertical: 5,
           ],
 
           children: [
-            `Stock Status`
+            `Label`
           ],
 
           args,
