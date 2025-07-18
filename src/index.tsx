@@ -846,7 +846,7 @@ fontSize: 14,
           arrStyles: [
             `{ 
   fontSize: 40, 
-  fontWeight: 600, 
+  fontWeight: "600", 
   fontFamily: "Inter", 
   flexGrow: 1,
   flexShrink: 1,
