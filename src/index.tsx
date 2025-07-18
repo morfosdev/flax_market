@@ -5473,7 +5473,7 @@ flex: 1,
           ],
 
           children: [
-            `$arg_docId`
+            `$arg_sku`
           ],
 
           args,
@@ -5531,7 +5531,7 @@ flex: 1,
           ],
 
           children: [
-            `$arg_availability`
+            `$arg_stock`
           ],
 
           args,
@@ -5560,7 +5560,7 @@ flex: 1,
           ],
 
           children: [
-            `Categories`
+            `$arg_categories`
           ],
 
           args,
@@ -5632,7 +5632,7 @@ flex: 1,
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`products`],
+   arrRefStrings: [`productsEcommerce`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.admProducts.list.products`],
