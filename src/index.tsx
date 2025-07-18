@@ -714,6 +714,9 @@ fontSize: 14,
   flexGrow: 1,
   flexShrink: 1,
   flexBasis: 350,
+  fontSize: 14,
+  fontWeight: '500',
+  fontFamily: 'Inter',
 }`
           ],
 
@@ -731,7 +734,10 @@ fontSize: 14,
 
           arrStyles: [
             `{
-flex: 1,
+  flex: 1,
+  fontSize: 14,
+  fontWeight: '500',
+  fontFamily: 'Inter',
 }`
           ],
 
@@ -749,7 +755,10 @@ flex: 1,
 
           arrStyles: [
             `{
-flex: 1,
+  flex: 1,
+  fontSize: 14,
+  fontWeight: '500',
+  fontFamily: 'Inter',
 }`
           ],
 
@@ -766,7 +775,10 @@ flex: 1,
 
           arrStyles: [
             `{
-flex: 1,
+  flex: 1,
+  fontSize: 14,
+  fontWeight: '500',
+  fontFamily: 'Inter',
 }`
           ],
 
