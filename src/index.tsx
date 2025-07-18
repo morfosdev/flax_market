@@ -2158,7 +2158,7 @@ fontSize: 14,
           ],
 
           children: [
-            `Aa —  Label`
+            `AA —  LABEL`
           ],
 
           args,
@@ -2177,7 +2177,7 @@ fontSize: 14,
           ],
 
           children: [
-            `L1`
+            `L2`
           ],
 
           args,
@@ -8315,13 +8315,9 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.label`],
+          path: [" "],
 
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.label`],
-          value: [`$arg_callback`]
-        }})],
+          funcsArray: [() => {}],
 
           args,
         }}/>],
