@@ -1070,7 +1070,7 @@ fontSize: 14,
           arrStyles: [
             `{ 
   fontSize: 24, 
-  fontWeight: 'bold', 
+  fontWeight: "700", 
   fontFamily: "Inter", 
   flexGrow: 1,
   flexShrink: 1,
@@ -1135,7 +1135,7 @@ fontSize: 14,
           ],
 
           children: [
-            `Bold`
+            `700`
           ],
 
           args,
@@ -1181,8 +1181,8 @@ fontSize: 14,
 
           arrStyles: [
             `{ 
-  fontSize: 24, 
-  fontWeight: 'bold', 
+  fontSize: 18, 
+  fontWeight: '600', 
   fontFamily: "Inter", 
   flexGrow: 1,
   flexShrink: 1,
@@ -1210,7 +1210,7 @@ fontSize: 14,
           ],
 
           children: [
-            `H3`
+            `H4`
           ],
 
           args,
@@ -1229,7 +1229,7 @@ fontSize: 14,
           ],
 
           children: [
-            `24px`
+            `18px`
           ],
 
           args,
@@ -1247,12 +1247,27 @@ fontSize: 14,
           ],
 
           children: [
-            `Bold`
+            `600`
           ],
 
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: 1,
+  backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
