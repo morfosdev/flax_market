@@ -710,7 +710,9 @@ fontSize: 14,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+flex: 1,
+}`
           ],
 
           children: [
@@ -726,7 +728,9 @@ fontSize: 14,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+flex: 1,
+}`
           ],
 
           children: [
@@ -742,7 +746,9 @@ fontSize: 14,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+flex: 1,
+}`
           ],
 
           children: [
@@ -757,7 +763,9 @@ fontSize: 14,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+flex: 1,
+}`
           ],
 
           children: [
