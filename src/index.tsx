@@ -102,7 +102,7 @@
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("dsystem");
+          return tools.goTo("dsTypo");
         }
         ]
  , trigger: 'on press'
@@ -138,7 +138,7 @@
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"dsystem",
+          pathScreen:"dsTypo",
 
           styles:[`{ flexDirection: 'row', }`],
 
@@ -753,246 +753,6 @@ fontSize: 14,
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-  flexDirection: "row",
-  alignItems: "center",
-  flexWrap: "wrap",
-  padding: 10
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-  flex: 1,
-  maxWidth: 75,
-  borderRadius: 6,
-  alignItems: "center",
-  shadowColor: '#000',
-  overflow: "hidden",
-  shadowOffset: { 
-     width: 0,
-     height: 2
-  },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  width: "100%",
-  height: 30,
-  backgroundColor: "$var_all.colors.primary"
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ padding: 5 }`
-          ],
-
-          children: [
-            `primary`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-  flex: 1,
-  maxWidth: 75,
-  borderRadius: 6,
-  alignItems: "center",
-  shadowColor: '#000',
-  overflow: "hidden",
-  shadowOffset: { 
-     width: 0,
-     height: 2
-  },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  width: "100%",
-  height: 30,
-  backgroundColor: "$var_all.colors.secondary"
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ padding: 5 }`
-          ],
-
-          children: [
-            `secondary`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-  flex: 1,
-  maxWidth: 75,
-  borderRadius: 6,
-  alignItems: "center",
-  shadowColor: '#000',
-  overflow: "hidden",
-  shadowOffset: { 
-     width: 0,
-     height: 2
-  },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  width: "100%",
-  height: 30,
-  backgroundColor: "$var_all.colors.success"
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ padding: 5 }`
-          ],
-
-          children: [
-            `success`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-  flex: 1,
-  maxWidth: 75,
-  borderRadius: 6,
-  alignItems: "center",
-  shadowColor: '#000',
-  overflow: "hidden",
-  shadowOffset: { 
-     width: 0,
-     height: 2
-  },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  width: "100%",
-  height: 30,
-  backgroundColor: "$var_all.colors.error"
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ padding: 5 }`
-          ],
-
-          children: [
-            `error`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
@@ -1970,7 +1730,7 @@ width: '8px',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"dsTypo",
+          pathScreen:"dsColors",
 
           styles:[`{ flexDirection: 'row', }`],
 
@@ -2585,6 +2345,246 @@ fontSize: 14,
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+  flexDirection: "row",
+  alignItems: "center",
+  flexWrap: "wrap",
+  padding: 10
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+  flex: 1,
+  maxWidth: 75,
+  borderRadius: 6,
+  alignItems: "center",
+  shadowColor: '#000',
+  overflow: "hidden",
+  shadowOffset: { 
+     width: 0,
+     height: 2
+  },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "100%",
+  height: 30,
+  backgroundColor: "$var_all.colors.primary"
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ padding: 5 }`
+          ],
+
+          children: [
+            `primary`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+  flex: 1,
+  maxWidth: 75,
+  borderRadius: 6,
+  alignItems: "center",
+  shadowColor: '#000',
+  overflow: "hidden",
+  shadowOffset: { 
+     width: 0,
+     height: 2
+  },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "100%",
+  height: 30,
+  backgroundColor: "$var_all.colors.secondary"
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ padding: 5 }`
+          ],
+
+          children: [
+            `secondary`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+  flex: 1,
+  maxWidth: 75,
+  borderRadius: 6,
+  alignItems: "center",
+  shadowColor: '#000',
+  overflow: "hidden",
+  shadowOffset: { 
+     width: 0,
+     height: 2
+  },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "100%",
+  height: 30,
+  backgroundColor: "$var_all.colors.success"
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ padding: 5 }`
+          ],
+
+          children: [
+            `success`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+  flex: 1,
+  maxWidth: 75,
+  borderRadius: 6,
+  alignItems: "center",
+  shadowColor: '#000',
+  overflow: "hidden",
+  shadowOffset: { 
+     width: 0,
+     height: 2
+  },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "100%",
+  height: 30,
+  backgroundColor: "$var_all.colors.error"
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ padding: 5 }`
+          ],
+
+          children: [
+            `error`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
