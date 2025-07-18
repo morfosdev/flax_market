@@ -711,7 +711,7 @@ fontSize: 14,
 
           arrStyles: [
             `{
-flex: 1 1 350px,
+flex: 1 1 350,
 }`
           ],
 
