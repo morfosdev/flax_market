@@ -815,7 +815,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
-  backgroundColor: '#E9E9EB',
+  backgroundColor: '#dfdfe1',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
