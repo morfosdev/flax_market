@@ -140,9 +140,24 @@
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"dsTypo",
 
-          styles:[`{ flexDirection: 'row', }`],
+          styles:[`{ 
+width: '100%',
+height: '100%',
+backgroundColor: '#eee', 
+ }`],
 
           screenElements:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+width: '100%',
+height: '100%',
+flexDirection: 'row',
+ }`],
+
+            functions:[()=>{}],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -758,6 +773,10 @@ fontSize: 14,
         ],
             args,
         }}/>],
+
+            args,
+          }}/>
+        ],
 
           functions:[()=>{}],
 
