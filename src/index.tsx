@@ -711,7 +711,7 @@ fontSize: 14,
 
           arrStyles: [
             `{
-flex: 1,
+flex: 1 1 350px,
 }`
           ],
 
@@ -6971,7 +6971,7 @@ paddingVertical: 20,
           ],
 
           children: [
-            `Label`
+            `Site Name`
           ],
 
           args,
@@ -7021,7 +7021,7 @@ marginVertical: 5,
           ],
 
           children: [
-            `Price`
+            `Support Email`
           ],
 
           args,
@@ -7071,7 +7071,7 @@ marginVertical: 5,
           ],
 
           children: [
-            `Category`
+            `Monthly Order Goal`
           ],
 
           args,
