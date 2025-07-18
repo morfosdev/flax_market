@@ -851,6 +851,7 @@ fontSize: 14,
   flexGrow: 1,
   flexShrink: 1,
   flexBasis: 350,
+  color: '#5C5F6A',
 }`
           ],
 
@@ -868,7 +869,8 @@ fontSize: 14,
 
           arrStyles: [
             `{
-flex: 1,
+  flex: 1,
+  color: '#5C5F6A',
 }`
           ],
 
@@ -886,7 +888,8 @@ flex: 1,
 
           arrStyles: [
             `{
-flex: 1,
+  flex: 1,
+  color: '#5C5F6A',
 }`
           ],
 
@@ -903,7 +906,8 @@ flex: 1,
 
           arrStyles: [
             `{
-flex: 1,
+  flex: 1,
+  color: '#5C5F6A',
 }`
           ],
 
