@@ -6337,7 +6337,7 @@ flex: 1,
             args,
           }}/>
         , (...args:any) => <Elements.ScrollBar pass={{
-            styles: [`{ flex:1, width: 100%}`],
+            styles: [`{ flex:1, width: '100%',}`],
             arrProps: [],
             arrItems: [(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
