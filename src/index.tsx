@@ -7566,6 +7566,16 @@ justifyContent: 'center',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
+async (...args) =>
+        functions.firebase.getDocTool({ args, pass:{
+  arrRefStrings: [
+        `productsEcommerce`, `$arg_docId`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.admEditProduct.product`],
+          value: [`$arg_callback`]
+        }})],
+        }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
           return tools.goTo("admEditProducts");
