@@ -10864,20 +10864,22 @@ borderColor: '#dbbc1d',
 
             styles:[`{ width: '30px', }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
 
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
 
-      styles:[{
-width: '20px',
-height: '20px',
-}],
+          children: [
+            `$arg_initials`
+          ],
 
-      URIvariablePath:[`$arg_initials`],
+          args,
 
-      args,
-    }}/>],
+        }}/>],
 
             args,
           }}/>
