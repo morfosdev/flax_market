@@ -7559,6 +7559,8 @@ justifyContent: 'center',
             styles:[`{
 width: '30px',
 height: '30px',
+alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
@@ -7604,6 +7606,8 @@ height: '30px',
             styles:[`{
 width: '30px',
 height: '30px',
+alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
