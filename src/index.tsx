@@ -10837,7 +10837,7 @@ flex: 1,
             {}
           ],
 
-          pData: '',
+          pData: `sc.admCustomers.list.customers`,
 
           itemElements: [
             
@@ -10874,7 +10874,7 @@ width: '20px',
 height: '20px',
 }],
 
-      URIvariablePath:[`$arg_thumb`],
+      URIvariablePath:[`$arg_initials`],
 
       args,
     }}/>],
@@ -11085,7 +11085,19 @@ flex: 1,
           }}/>
         ],
 
-          functions:[()=>{}],
+          functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.firebase.getDocsTool({ args, pass:{
+   arrRefStrings: [`customersEcommerce`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.admCustomers.list.customers`],
+          value: [`$arg_callback`]
+        }})],
+        }})]
+ , trigger: 'on init'
+}})],
 
           args,
         }}/>, 
