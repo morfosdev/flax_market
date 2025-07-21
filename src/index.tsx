@@ -10001,11 +10001,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.stock`],
+          path: [`sc.admEditProduct.product.stock`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.stock`],
+          keyPath: [`sc.admEditProduct.product.stock`],
           value: [`$arg_callback`]
         }})],
 
@@ -10055,11 +10055,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.availableQuantity`],
+          path: [`sc.admEditProduct.availableQuantity`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.availableQuantity`],
+          keyPath: [`sc.admEditProduct.availableQuantity`],
           value: [`$arg_callback`]
         }})],
 
@@ -10108,11 +10108,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.image`],
+          path: [`sc.admEditProduct.image`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.image`],
+          keyPath: [`sc.admEditProduct.image`],
           value: [`$arg_callback`]
         }})],
 
