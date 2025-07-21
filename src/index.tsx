@@ -9667,11 +9667,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.label`],
+          path: [`sc.admEditProduct.product.label`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.label`],
+          keyPath: [`sc.admEditProduct.product.label`],
           value: [`$arg_callback`]
         }})],
 
@@ -10146,12 +10146,13 @@ alignItems: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [
 async (...args) =>
-        functions.firebase.setDocTool({ args, pass:{
-  arrRefStrings: [`productsEcommerce`],
-            arrPathData: [`sc.admAddProducts.iptsChanges`],
+        functions.firebase.updateDocTool({ args, pass:{
+   arrRefStrings: [
+        `productsEcommerce`, `sc.admEditProduct.product.docId`],
+            arrPathData: [`sc.admEditProduct.product`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges`],
+          keyPath: [`sc.admEditProduct.product`],
           value: [``]
         }})],
         }}), 
