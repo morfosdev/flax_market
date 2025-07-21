@@ -11890,7 +11890,7 @@ flex: 1,
             {}
           ],
 
-          pData: '',
+          pData: `sc.admCustomers.list.customers`,
 
           itemElements: [
             
