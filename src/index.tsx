@@ -8792,7 +8792,8 @@ alignItems: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
   arrRefStrings: [`productsEcommerce`],
             arrPathData: [`sc.admAddProducts.iptsChanges`],
@@ -8801,7 +8802,12 @@ alignItems: 'center',
           keyPath: [`sc.admAddProducts.iptsChanges`],
           value: [``]
         }})],
-        }})]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("admProducts");
+        }
+        ]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
