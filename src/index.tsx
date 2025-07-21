@@ -7546,6 +7546,8 @@ flex: 1,
             styles:[`{
 flex: 1,
 flexDirection: 'row',
+alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
