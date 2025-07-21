@@ -11899,14 +11899,14 @@ flex: 1,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
-paddingHorizontal: 20,
-paddingVertical: 10,
-backgroundColor: '#000',
-borderRadius: 5,
+width: '100%',
+justifyContent: 'center',
 alignItems: 'center',
-borderWidth: 2,
-borderColor: '#dbbc1d',
+height: '40px',
+flexDirection: 'row',
+borderTopWidth: 1,
+borderBottomWidth: 1,
+borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -11917,20 +11917,22 @@ borderColor: '#dbbc1d',
 
             styles:[`{ width: '30px', }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
 
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
 
-      styles:[{
-width: '20px',
-height: '20px',
-}],
+          children: [
+            `$arg_initials`
+          ],
 
-      URIvariablePath:[`$arg_thumb`],
+          args,
 
-      args,
-    }}/>],
+        }}/>],
 
             args,
           }}/>
@@ -11983,94 +11985,7 @@ flex: 1,
           ],
 
           children: [
-            `$arg_sku`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flex: 1,
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `$arg_price`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flex: 1,
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `$arg_stock`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flex: 1,
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `Categories`
+            `$arg_review`
           ],
 
           args,
@@ -12098,7 +12013,7 @@ flex: 1,
           ],
 
           children: [
-            `Action`
+            `...`
           ],
 
           args,
@@ -12138,7 +12053,19 @@ flex: 1,
           }}/>
         ],
 
-          functions:[()=>{}],
+          functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.firebase.getDocsTool({ args, pass:{
+   arrRefStrings: [`customersEcommerce`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.admCustomers.list.customers`],
+          value: [`$arg_callback`]
+        }})],
+        }})]
+ , trigger: 'on init'
+}})],
 
           args,
         }}/>, 
