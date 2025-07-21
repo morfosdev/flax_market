@@ -9721,11 +9721,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.price`],
+          path: [`sc.admEditProduct.product.price`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.price`],
+          keyPath: [`sc.admEditProduct.product.price`],
           value: [`$arg_callback`]
         }})],
 
@@ -9775,11 +9775,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.categories`],
+          path: [`sc.admEditProduct.product.categories`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.categories`],
+          keyPath: [`sc.admEditProduct.product.categories`],
           value: [`$arg_callback`]
         }})],
 
@@ -9829,11 +9829,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.slug`],
+          path: [`sc.admEditProduct.product.slug`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.slug`],
+          keyPath: [`sc.admEditProduct.product.slug`],
           value: [`$arg_callback`]
         }})],
 
@@ -9883,11 +9883,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.sku`],
+          path: [`sc.admEditProduct.product.sku`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.sku`],
+          keyPath: [`sc.admEditProduct.product.sku`],
           value: [`$arg_callback`]
         }})],
 
@@ -9936,11 +9936,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.decription`],
+          path: [`sc.admEditProduct.product.description`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.decription`],
+          keyPath: [`sc.admEditProduct.product.description`],
           value: [`$arg_callback`]
         }})],
 
