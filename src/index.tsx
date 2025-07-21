@@ -10846,14 +10846,14 @@ flex: 1,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
-paddingHorizontal: 20,
-paddingVertical: 10,
-backgroundColor: '#000',
-borderRadius: 5,
+width: '100%',
+justifyContent: 'center',
 alignItems: 'center',
-borderWidth: 2,
-borderColor: '#dbbc1d',
+height: '40px',
+flexDirection: 'row',
+borderTopWidth: 1,
+borderBottomWidth: 1,
+borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
