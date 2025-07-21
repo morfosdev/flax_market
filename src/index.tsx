@@ -8792,7 +8792,16 @@ alignItems: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [async (...args) =>
+        functions.firebase.setDocTool({ args, pass:{
+  arrRefStrings: [`productsEcommerce`],
+            arrPathData: [`sc.admAddProducts.iptsChanges`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.admAddProducts.iptsChanges`],
+          value: [``]
+        }})],
+        }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
