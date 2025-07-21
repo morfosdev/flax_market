@@ -10932,7 +10932,7 @@ flex: 1,
           ],
 
           children: [
-            `$arg_sku`
+            `$arg_email`
           ],
 
           args,
