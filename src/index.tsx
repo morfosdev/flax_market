@@ -6942,7 +6942,7 @@ paddingHorizontal: 20,
 
             styles:[`{
 width: '100%',
-justifyContent: 'center',
+justifyContent: 'initial',
 height: '100px',
 flexDirection: 'row',
 paddingHorizontal: '20px',
