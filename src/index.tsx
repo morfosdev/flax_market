@@ -7031,9 +7031,10 @@ flex: 1,
 
             styles:[`{
 width: '100px',
-padding: 5,
+paddingHorizontal: '20px',
+paddingVertical: '12px',
 backgroundColor: '#000',
-borderRadius: 5,
+borderRadius: 4,
 alignItems: 'center',
 }`],
 
@@ -7054,6 +7055,8 @@ alignItems: 'center',
           arrStyles: [
             `{
 color: '#FFF',
+fontFamily: 'Inter',
+fontSize: '14px',
 }`
           ],
 
