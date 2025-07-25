@@ -6946,19 +6946,46 @@ paddingHorizontal: 20,
 width: '100%',
 justifyContent: 'center',
 height: '100px',
+flexDirection: 'row',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
           ],
 
           children: [
-            `Admin > Products`
+            `Admin >`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#0E1422",
+}`
+          ],
+
+          children: [
+            `Products`
           ],
 
           args,
