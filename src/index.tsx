@@ -6223,9 +6223,6 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
-borderTopWidth: 1,
-borderBottomWidth: 1,
-borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -7402,7 +7399,6 @@ flex: 1,
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -7413,9 +7409,6 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
-borderTopWidth: 1,
-borderBottomWidth: 1,
-borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -7761,20 +7754,6 @@ justifyContent: 'center',
             args,
           }}/>
         ],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  height: 1,
-  backgroundColor: '#dfdfe1',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
@@ -10989,9 +10968,6 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
-borderTopWidth: 1,
-borderBottomWidth: 1,
-borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -11209,9 +11185,6 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
-borderTopWidth: 1,
-borderBottomWidth: 1,
-borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -12127,9 +12100,6 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
-borderTopWidth: 1,
-borderBottomWidth: 1,
-borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -12318,9 +12288,6 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
-borderTopWidth: 1,
-borderBottomWidth: 1,
-borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -13209,9 +13176,6 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
-borderTopWidth: 1,
-borderBottomWidth: 1,
-borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -13371,9 +13335,6 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
-borderTopWidth: 1,
-borderBottomWidth: 1,
-borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
