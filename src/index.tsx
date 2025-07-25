@@ -7127,9 +7127,9 @@ flexDirection: 'row',
 
       `,
 
-      altura: "30px",
+      altura: "17px",
 
-      largura: "30px",
+      largura: "17px",
 
       preenchimento: [`#fff`],
 
