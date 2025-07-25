@@ -4425,9 +4425,7 @@ paddingVertical: 10,
               ],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [`{
-  placeholder: 'Search products',
-}`],
+          propsArray: [{}],
 
           stylesArray: [`{
 width: 320,
@@ -6947,6 +6945,8 @@ width: '100%',
 justifyContent: 'center',
 height: '100px',
 flexDirection: 'row',
+paddingHorizontal: '20px',
+paddingVertical: '5px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -6965,7 +6965,7 @@ flexDirection: 'row',
           ],
 
           children: [
-            `Admin >`
+            `Admin > `
           ],
 
           args,
