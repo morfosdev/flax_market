@@ -7089,7 +7089,8 @@ fontSize: '14px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '242px',
+height: '40px',
 justifyContent: 'center',
 borderRadius: 5,
 borderWidth: 1,
