@@ -7370,6 +7370,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+left: '4px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -7647,7 +7648,6 @@ flex: 1,
 flex: 1,
 flexDirection: 'row',
 alignItems: 'center',
-justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
