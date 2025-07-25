@@ -7030,7 +7030,8 @@ flex: 1,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '124px',
+height: '40px',
 paddingHorizontal: '20px',
 paddingVertical: '12px',
 backgroundColor: '#000',
