@@ -10324,15 +10324,9 @@ alignItems: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [
 async (...args) =>
-        functions.firebase.updateDocTool({ args, pass:{
-   arrRefStrings: [
-        `productsEcommerce`, `sc.admEditProduct.product.docId`],
-            arrPathData: [`sc.admEditProduct.product`],
-            arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.admEditProduct.product`],
           value: [``]
-        }})],
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
