@@ -7114,7 +7114,7 @@ padding: 5,
 width: '100%',
 justifyContent: 'center',
 alignItems: 'center',
-height: '80px',
+height: '44px',
 flexDirection: 'row',
 borderTopWidth: 1,
 borderBottomWidth: 1,
@@ -7375,20 +7375,6 @@ flex: 1,
 
             args,
           }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  height: 30,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
         , (...args:any) => <Elements.ScrollBar pass={{
             styles: [`{ flex:1, width: '100%',}`],
             arrProps: [],
@@ -7401,6 +7387,22 @@ flex: 1,
 
           itemElements: [
             
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: 1,
+  backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -7759,6 +7761,20 @@ justifyContent: 'center',
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: 1,
+  backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
