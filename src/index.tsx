@@ -14817,6 +14817,7 @@ height: '40px',
             styles:[`{
 width: '400px',
 alignItems: 'center',
+flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
