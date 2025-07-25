@@ -7713,7 +7713,7 @@ async (...args) =>
 
       largura: "15px",
 
-      preenchimento: ['black'],
+      preenchimento: [`{color: 'transparent',}`],
 
       args,
     }}/>],
