@@ -11251,6 +11251,22 @@ padding: 5,
             elementsProperties:['{}'],
 
             styles:[`{
+  height: 1,
+  width: '100%',
+  backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 width: '100%',
 justifyContent: 'center',
 alignItems: 'center',
@@ -11464,6 +11480,22 @@ flex: 1,
 
           itemElements: [
             
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: 1,
+  width: '100%',
+  backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
