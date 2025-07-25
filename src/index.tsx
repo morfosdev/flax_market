@@ -7187,6 +7187,9 @@ flex: 1,
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#5C5F6A",
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`
           ],
 
