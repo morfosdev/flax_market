@@ -7151,7 +7151,10 @@ flexDirection: 'row',
             args,
           }}/>
         , (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [`< placeholder="Digite seu nome" />`],
+          propsArray: [`<TextInput
+        placeholder="Digite seu nome"
+        placeholderTextColor="#999"
+      />`],
 
           stylesArray: [{
                 color: 'black',
