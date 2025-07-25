@@ -14779,7 +14779,8 @@ height: '100%',
 backgroundColor: '#fff', 
 padding: 20,
 flexDirection: 'row',
-height: '60px',
+height: '40px',
+alignItems: 'center',
  }`],
 
             functions:[()=>{}],            childrenItems:[
