@@ -7098,7 +7098,42 @@ borderColor: '#eee',
 padding: 5,
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={15}
+    height={14}
+    fill="red"
+    viewBox="0 0 15 14"
+    {...props}
+  >
+    <Path
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m14.02 13.5-3.75-3.75m1.59-3.83a5.42 5.42 0 1 1-10.84 0 5.42 5.42 0 0 1 10.84 0Z"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.02 13.5L10.27 9.75M11.86 5.92C11.86 8.91338 9.43334 11.34 6.43996 11.34C3.44658 11.34 1.01996 8.91338 1.01996 5.92C1.01996 2.92662 3.44658 0.5 6.43996 0.5C9.43334 0.5 11.86 2.92662 11.86 5.92Z" stroke="#5C5F6A" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      `,
+
+      altura: "30px",
+
+      largura: "30px",
+
+      preenchimento: [`#fff`],
+
+      args,
+    }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
           stylesArray: [{
