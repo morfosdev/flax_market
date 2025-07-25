@@ -7096,6 +7096,7 @@ borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
 padding: 5,
+flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
