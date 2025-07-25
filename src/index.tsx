@@ -7077,7 +7077,7 @@ fontSize: '14px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{width: '5px',}`],
+            styles:[`{ width: '16px', }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
