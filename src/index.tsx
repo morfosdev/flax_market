@@ -14825,7 +14825,9 @@ alignItems: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[``],
+            styles:[`{
+flex: 1,
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -14852,7 +14854,9 @@ alignItems: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[``],
+            styles:[`{
+flex: 1,
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -14879,7 +14883,9 @@ alignItems: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[``],
+            styles:[`{
+flex: 1,
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -14905,7 +14911,9 @@ alignItems: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[``],
+            styles:[`{
+flex: 1,
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
