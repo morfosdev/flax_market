@@ -14815,7 +14815,7 @@ height: '40px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+width: '400px',
 alignItems: 'center',
 }`],
 
