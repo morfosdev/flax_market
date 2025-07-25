@@ -12391,7 +12391,9 @@ padding: 5,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`{
+placeholder: 'Search customers',
+}`],
 
           stylesArray: [{
                 color: 'black',
