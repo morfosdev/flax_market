@@ -6236,6 +6236,7 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
+paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -7437,6 +7438,7 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
+paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -11064,6 +11066,7 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
+paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -11281,6 +11284,7 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
+paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -12196,6 +12200,7 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
+paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -12384,6 +12389,7 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
+paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -13272,6 +13278,7 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
+paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -13431,6 +13438,7 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '80px',
 flexDirection: 'row',
+paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
