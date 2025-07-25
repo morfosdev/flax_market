@@ -6945,8 +6945,8 @@ width: '100%',
 justifyContent: 'initial',
 height: '100px',
 flexDirection: 'row',
-paddingHorizontal: '20px',
-paddingVertical: '5px',
+paddingHorizontal: '5px',
+paddingVertical: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
