@@ -14782,12 +14782,13 @@ flexDirection: 'row',
  }`],
 
             functions:[()=>{}],            childrenItems:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+flex: 1,
 alignItems: 'center',
 }`],
 
@@ -14805,6 +14806,20 @@ height: '40px',
 
       args,
     }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flex: 1,
+alignItems: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
