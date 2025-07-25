@@ -7434,7 +7434,9 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
