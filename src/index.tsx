@@ -9675,7 +9675,7 @@ fontWeight: '700',
           ],
 
           children: [
-            `Add Product`
+            `Edit Product`
           ],
 
           args,
