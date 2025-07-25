@@ -7455,8 +7455,8 @@ paddingHorizontal: '10px',
       elementsProperties:[{}],
 
       styles:[{
-width: '20px',
-height: '20px',
+width: '48px',
+height: '48px',
 }],
 
       URIvariablePath:[`$arg_image`],
