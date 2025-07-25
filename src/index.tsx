@@ -7155,7 +7155,9 @@ flexDirection: 'row',
             args,
           }}/>
         , (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`{
+ placeholder: 'Search products',
+}`],
 
           stylesArray: [{
                 color: 'black',
