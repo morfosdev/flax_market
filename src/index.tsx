@@ -7184,7 +7184,7 @@ flex: 1,
   fontSize: 14, 
   fontWeight: "500", 
   fontFamily: "Inter", 
-  backgroundColor: "#5C5F6A",
+  color: "#5C5F6A",
 }`
           ],
 
