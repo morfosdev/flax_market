@@ -4666,7 +4666,7 @@ margimBottom: 10,
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
-placeholder: Digite um Email válido
+placeholder: 'Digite um Email válido',
 }`],
 
           stylesArray: [`{
