@@ -14744,7 +14744,7 @@ width: '100%',
 backgroundColor: '#000',
 alignItems: 'center',
 justifyContent: 'center',
-padding: '10px',
+padding: '5px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
