@@ -7142,6 +7142,7 @@ justifyContent: 'center',
 alignItems: 'center',
 height: '44px',
 flexDirection: 'row',
+paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
