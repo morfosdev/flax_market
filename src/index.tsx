@@ -826,6 +826,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -938,6 +939,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -1050,6 +1052,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -1162,6 +1165,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -1274,6 +1278,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -1386,6 +1391,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -1497,6 +1503,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -1641,6 +1648,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -1753,6 +1761,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -1864,6 +1873,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -2007,6 +2017,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -2119,6 +2130,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -2230,6 +2242,7 @@ fontSize: 14,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -7109,6 +7122,7 @@ padding: 5,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
@@ -7403,6 +7417,7 @@ flex: 1,
 
             styles:[`{
   height: 1,
+  width: '100%',
   backgroundColor: '#dfdfe1',
 }`],
 
