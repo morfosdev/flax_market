@@ -4720,7 +4720,9 @@ margimBottom: 10,
           args,
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`{
+placeholder: 'Digite sua senha',
+}`],
 
           stylesArray: [`{
 borderRadius: 5,
