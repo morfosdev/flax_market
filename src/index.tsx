@@ -7152,7 +7152,7 @@ paddingHorizontal: '10px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: '30px', }`],
+            styles:[`{ width: '70px', left: '14px', }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
@@ -7447,7 +7447,7 @@ paddingHorizontal: '10px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: '70px', left: '14px', }`],
+            styles:[`{ width: '30px', }`],
 
             functions:[()=>{}],            childrenItems:[
 
