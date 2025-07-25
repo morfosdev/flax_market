@@ -11224,7 +11224,7 @@ padding: 5,
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
-placeholder: 'Search Order',
+placeholder: 'Search orders',
 }`],
 
           stylesArray: [{
