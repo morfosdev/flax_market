@@ -9372,9 +9372,9 @@ flexDirection: 'row',
 </svg>
       `,
 
-      altura: "24px",
+      altura: "12px",
 
-      largura: "24px",
+      largura: "12px",
 
       preenchimento: ['black'],
 
