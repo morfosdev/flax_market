@@ -9344,11 +9344,13 @@ borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
 padding: 5,
-marginVertical: 5,
+flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`{
+placeholder: 'Choose product images',
+}`],
 
           stylesArray: [{
                 color: 'black',
