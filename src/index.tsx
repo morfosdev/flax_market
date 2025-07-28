@@ -15804,7 +15804,7 @@ justifyContent: 'center',
 
           arrStyles: [
             `{ 
-  fontSize: 32, 
+  fontSize: 24, 
   fontWeight: "700", 
   fontFamily: "Inter", 
   flexGrow: 1,
