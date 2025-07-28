@@ -15758,7 +15758,7 @@ width: '50%',
 
           arrStyles: [
             `{ 
-  fontSize: 18, 
+  fontSize: 30, 
   fontWeight: '600', 
   fontFamily: "Inter", 
 }`
@@ -15810,7 +15810,8 @@ flexDirection: 'row',
 
           arrStyles: [
             `{ 
-  fontSize: 24,  
+  fontSize: 18, 
+  fontFamily: "Inter", 
   color: '#FFF',
 }`
           ],
