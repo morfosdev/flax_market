@@ -15761,9 +15761,6 @@ width: '50%',
   fontSize: 18, 
   fontWeight: '600', 
   fontFamily: "Inter", 
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 350,
 }`
           ],
 
