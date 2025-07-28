@@ -7033,7 +7033,7 @@ paddingVertical: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-alignSelf: 'left',
+alignSelf: 'flex-end',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
