@@ -15763,6 +15763,7 @@ alignItems: 'center',
   fontSize: 30, 
   fontWeight: '600', 
   fontFamily: "Inter", 
+  marginBottom: 20,
 }`
           ],
 
