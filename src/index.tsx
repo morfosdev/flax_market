@@ -15420,7 +15420,7 @@ color: '#FFF',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
+backgroundColor: '#F6F6F6',
 padding: 20,
  }`],
 
