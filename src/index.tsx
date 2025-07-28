@@ -6991,6 +6991,7 @@ paddingHorizontal: 20,
             styles:[`{
 width: '100%',
 justifyContent: 'initial',
+alignItems: 'center',
 height: '100px',
 flexDirection: 'row',
 paddingHorizontal: '5px',
@@ -7058,6 +7059,7 @@ paddingVertical: '20px',
 
             styles:[`{
 width: '15px',
+justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
