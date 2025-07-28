@@ -15803,8 +15803,14 @@ justifyContent: 'center',
           ],
 
           arrStyles: [
-            `{
-color: '#FFF',
+            `{ 
+  fontSize: 32, 
+  fontWeight: "700", 
+  fontFamily: "Inter", 
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 350,
+  color: '#FFF',
 }`
           ],
 
