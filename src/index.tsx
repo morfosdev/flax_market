@@ -15783,7 +15783,8 @@ flex: 1,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '95%',
+width: '344px',
+height: '100px',
 padding: 10,
 backgroundColor: '#000',
 borderRadius: 5,
