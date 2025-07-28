@@ -4873,6 +4873,8 @@ alignItems: 'center',
   setMessage("Login realizado com sucesso!");
 
   tools.goTo("admDash");
+
+setMessage(" ");
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -5577,11 +5579,6 @@ async (...args) =>
 async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.adm.login.forms.password`],
-          value: [``]
-        }}), 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`$var_sc.adm.login.message`],
           value: [``]
         }}), 
         (...args) => {
