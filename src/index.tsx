@@ -5563,7 +5563,17 @@ justifyContent: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.adm.session.user`],
+          value: [``]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("admLogin");
+        }
+        ]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
