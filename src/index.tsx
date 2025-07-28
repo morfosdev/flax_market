@@ -5579,6 +5579,11 @@ async (...args) =>
           keyPath: [`sc.adm.login.forms.password`],
           value: [``]
         }}), 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`$var_sc.adm.login.message`],
+          value: [``]
+        }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
           return tools.goTo("admLogin");
