@@ -15878,7 +15878,20 @@ justifyContent: 'center',
 alignItems: 'center',
 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '600px',
+height: '600px',
+}],
+
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Fecommerce%20banner.png?alt=media&token=60380466-dd9e-4bd9-98af-bec567244b5e`],
+
+      args,
+    }}/>],
 
             args,
           }}/>
