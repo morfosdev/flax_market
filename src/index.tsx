@@ -15807,10 +15807,6 @@ flexDirection: 'row',
           arrStyles: [
             `{ 
   fontSize: 24,  
-  fontFamily: "Inter", 
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 350,
   color: '#FFF',
 }`
           ],
@@ -15845,9 +15841,9 @@ flexDirection: 'row',
 </svg>
       `,
 
-      altura: "24px",
+      altura: "30px",
 
-      largura: "24px",
+      largura: "30px",
 
       preenchimento: [`#fff`],
 
