@@ -15749,6 +15749,7 @@ alignItems: 'center',
             styles:[`{
 width: '50%',
 justifyContent: 'center',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -15778,7 +15779,9 @@ justifyContent: 'center',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 16, 
+}`
           ],
 
           children: [
@@ -15870,6 +15873,7 @@ flexDirection: 'row',
             styles:[`{
 width: '50%',
 justifyContent: 'center',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
