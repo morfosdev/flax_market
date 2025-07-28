@@ -7032,14 +7032,9 @@ paddingVertical: '20px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+alignSelf: 'left',
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
@@ -7067,9 +7062,9 @@ paddingVertical: '20px',
 </svg>
       `,
 
-      altura: "30px",
+      altura: "10px",
 
-      largura: "30px",
+      largura: "10px",
 
       preenchimento: ['black'],
 
