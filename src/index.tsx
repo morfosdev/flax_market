@@ -7028,12 +7028,24 @@ paddingVertical: '20px',
           args,
 
         }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ flex: 1, }`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
             styles:[`{
-alignSelf: 'flex-end',
+width: '15px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
@@ -7062,9 +7074,9 @@ alignSelf: 'flex-end',
 </svg>
       `,
 
-      altura: "10px",
+      altura: "15px",
 
-      largura: "10px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
