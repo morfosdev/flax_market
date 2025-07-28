@@ -5489,9 +5489,12 @@ paddingHorizontal: 20,
 
             styles:[`{
 width: '100%',
-justifyContent: 'center',
+justifyContent: 'initial',
+alignItems: 'center',
 height: '100px',
 flexDirection: 'row',
+paddingHorizontal: '5px',
+paddingVertical: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -8648,9 +8651,12 @@ paddingHorizontal: 20,
 
             styles:[`{
 width: '100%',
-justifyContent: 'center',
+justifyContent: 'initial',
+alignItems: 'center',
 height: '100px',
 flexDirection: 'row',
+paddingHorizontal: '5px',
+paddingVertical: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -9960,9 +9966,12 @@ paddingHorizontal: 20,
 
             styles:[`{
 width: '100%',
-justifyContent: 'center',
+justifyContent: 'initial',
+alignItems: 'center',
 height: '100px',
 flexDirection: 'row',
+paddingHorizontal: '5px',
+paddingVertical: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -11273,9 +11282,12 @@ paddingHorizontal: 20,
 
             styles:[`{
 width: '100%',
-justifyContent: 'center',
+justifyContent: 'initial',
+alignItems: 'center',
 height: '100px',
 flexDirection: 'row',
+paddingHorizontal: '5px',
+paddingVertical: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -12442,9 +12454,12 @@ paddingHorizontal: 20,
 
             styles:[`{
 width: '100%',
-justifyContent: 'center',
+justifyContent: 'initial',
+alignItems: 'center',
 height: '100px',
 flexDirection: 'row',
+paddingHorizontal: '5px',
+paddingVertical: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -13523,9 +13538,12 @@ paddingHorizontal: 20,
 
             styles:[`{
 width: '100%',
-justifyContent: 'center',
+justifyContent: 'initial',
+alignItems: 'center',
 height: '100px',
 flexDirection: 'row',
+paddingHorizontal: '5px',
+paddingVertical: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -14546,9 +14564,12 @@ paddingHorizontal: 20,
 
             styles:[`{
 width: '100%',
-justifyContent: 'center',
+justifyContent: 'initial',
+alignItems: 'center',
 height: '100px',
 flexDirection: 'row',
+paddingHorizontal: '5px',
+paddingVertical: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
