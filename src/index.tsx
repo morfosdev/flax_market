@@ -9348,27 +9348,6 @@ flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [`{
-placeholder: 'Choose product images',
-}`],
-
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
-
-          path: [`sc.admAddProducts.iptsChanges.image`],
-
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.image`],
-          value: [`$arg_callback`]
-        }})],
-
-          args,
-        }}/>, 
         (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
