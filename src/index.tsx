@@ -15788,8 +15788,8 @@ width: '50%',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '344px',
-height: '100px',
+width: '300px',
+height: '50px',
 padding: 10,
 backgroundColor: '#000',
 borderRadius: 5,
