@@ -15757,7 +15757,14 @@ width: '50%',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 18, 
+  fontWeight: '600', 
+  fontFamily: "Inter", 
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 350,
+}`
           ],
 
           children: [
