@@ -15747,7 +15747,7 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+width: '50%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -15824,14 +15824,9 @@ alignItems: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+width: '50%',
+}`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
