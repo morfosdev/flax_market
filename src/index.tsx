@@ -15748,6 +15748,7 @@ alignItems: 'center',
 
             styles:[`{
 width: '50%',
+justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -15792,7 +15793,7 @@ width: '50%',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '300px',
+width: '200px',
 height: '50px',
 padding: 10,
 backgroundColor: '#000',
@@ -15868,6 +15869,7 @@ flexDirection: 'row',
 
             styles:[`{
 width: '50%',
+justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
