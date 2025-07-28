@@ -15763,7 +15763,7 @@ alignItems: 'center',
   fontSize: 30, 
   fontWeight: '600', 
   fontFamily: "Inter", 
-  marginBottom: 20,
+  marginBottom: 10,
 }`
           ],
 
@@ -15782,6 +15782,7 @@ alignItems: 'center',
           arrStyles: [
             `{ 
   fontSize: 16, 
+  marginBottom: 30,
 }`
           ],
 
