@@ -4874,7 +4874,7 @@ alignItems: 'center',
 
   tools.goTo("admDash");
 
-setMessage(" ");
+setMessage("");
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
