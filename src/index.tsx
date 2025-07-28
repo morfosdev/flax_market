@@ -5504,11 +5504,32 @@ paddingVertical: '20px',
           ],
 
           arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
+          ],
+
+          children: [
+            `Admin > `
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
             { color: 'black', fontSize: 12, }
           ],
 
           children: [
-            `Admin > Dashboard`
+            `Dashboard`
           ],
 
           args,
