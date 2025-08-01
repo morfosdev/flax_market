@@ -13694,7 +13694,9 @@ flex: 1,
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 50,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -13723,7 +13725,9 @@ flex: 1,
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 70,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
