@@ -5150,10 +5150,12 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: 'white',
+borderRadius: '8px',
 }`],
 
             functions:[async (...args) =>
@@ -18043,7 +18045,7 @@ left: '5px',
             {}
           ],
 
-          pData: `sc.permissions.list.permissions`,
+          pData: `sc.admProducts.list.products`,
 
           itemElements: [
             
@@ -18468,10 +18470,10 @@ justifyContent: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`permissions`],
+   arrRefStrings: [`productsEcommerce`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.permissions.list.permissions`],
+          keyPath: [`sc.admProducts.list.products`],
           value: [`$arg_callback`]
         }})],
         }})]
