@@ -10620,11 +10620,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admEditProduct.product.label`],
+          path: [`sc.admEditProduct.product.Doc.label`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product.label`],
+          keyPath: [`sc.admEditProduct.product.Doc.label`],
           value: [`$arg_callback`]
         }})],
 
