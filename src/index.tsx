@@ -12118,8 +12118,8 @@ paddingHorizontal: '10px',
       elementsProperties:[{}],
 
       styles:[{
-width: '20px',
-height: '20px',
+width: '48px',
+height: '48px',
 }],
 
       URIvariablePath:[`$arg_image`],
@@ -12136,7 +12136,9 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
