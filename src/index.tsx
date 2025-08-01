@@ -5352,10 +5352,13 @@ color: '#717171',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: 'white',
+borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
@@ -5429,10 +5432,13 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: 'white',
+borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
@@ -5506,10 +5512,13 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: 'white',
+borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
