@@ -13405,7 +13405,7 @@ paddingHorizontal: '10px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: '30px', }`],
+            styles:[`{ width: '70px', left: '14px', }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
@@ -13451,7 +13451,9 @@ paddingHorizontal: '10px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -13538,6 +13540,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+left: '5px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
