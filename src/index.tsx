@@ -9596,7 +9596,11 @@ flexDirection: 'row',
  arrFunctions: [async (...args) =>
         functions.firebase.uploadFileTool({ args, pass:{
             fbInit: [`sc.admAddProducts.iptsChanges.image`],
-            arrFiles: [() => {}],
+            arrFiles: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [``],
+          value: [``]
+        }})],
             arrFuncs: [!#!functions return!#!],
         }})]
  , trigger: 'on press'
