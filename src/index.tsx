@@ -5201,7 +5201,21 @@ borderRadius: '8px',
       preenchimento: [`#FFF`],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -5209,6 +5223,8 @@ borderRadius: '8px',
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
@@ -6814,6 +6830,8 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
@@ -8449,6 +8467,8 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
@@ -9907,6 +9927,8 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
@@ -11335,6 +11357,8 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
@@ -12820,6 +12844,8 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
@@ -14241,6 +14267,8 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
@@ -15589,6 +15617,8 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
@@ -17057,6 +17087,8 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
