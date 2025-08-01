@@ -5225,6 +5225,7 @@ width: '10px',
 fontSize: 14,
 fontWeight: '500',
 fontFamily: 'Inter',
+color: '#717171',
 }`
           ],
 
