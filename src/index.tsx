@@ -18043,7 +18043,7 @@ left: '5px',
             {}
           ],
 
-          pData: `sc.admProducts.list.products`,
+          pData: `sc.permissions.list.permissions`,
 
           itemElements: [
             
@@ -18468,10 +18468,10 @@ justifyContent: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`productsEcommerce`],
+   arrRefStrings: [`permissions`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admProducts.list.products`],
+          keyPath: [`sc.permissions.list.permissions`],
           value: [`$arg_callback`]
         }})],
         }})]
