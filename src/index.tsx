@@ -6943,7 +6943,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("a5AdmOrders");
         }
         ]
  , trigger: 'on press'
@@ -8581,7 +8581,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("a5AdmOrders");
         }
         ]
  , trigger: 'on press'
@@ -10042,7 +10042,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("a5AdmOrders");
         }
         ]
  , trigger: 'on press'
@@ -11233,7 +11233,7 @@ color: '#FFF',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"admOrders",
+          pathScreen:"a5AdmOrders",
 
           styles:[`{ 
 width: '100%',
@@ -11473,7 +11473,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("a5AdmOrders");
         }
         ]
  , trigger: 'on press'
@@ -12961,7 +12961,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("a5AdmOrders");
         }
         ]
  , trigger: 'on press'
@@ -14385,7 +14385,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("a5AdmOrders");
         }
         ]
  , trigger: 'on press'
@@ -15736,7 +15736,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("a5AdmOrders");
         }
         ]
  , trigger: 'on press'
@@ -17207,7 +17207,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("a5AdmOrders");
         }
         ]
  , trigger: 'on press'
