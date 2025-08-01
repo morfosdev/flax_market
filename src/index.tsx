@@ -8170,7 +8170,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admEditProducts");
+          return tools.goTo("a4AdmEditProducts");
         }
         ]
  , trigger: 'on press'
@@ -9802,7 +9802,7 @@ color: '#FFF',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"admEditProducts",
+          pathScreen:"a4AdmEditProducts",
 
           styles:[`{ 
 width: '100%',
