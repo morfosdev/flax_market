@@ -13451,9 +13451,7 @@ paddingHorizontal: '10px',
             elementsProperties:['{}'],
 
             styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -13613,24 +13611,22 @@ paddingHorizontal: '10px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: '30px', }`],
+            styles:[`{ width: '70px', }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+            functions:[()=>{}],            childrenItems:[
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
 
-          children: [
-            `$arg_initials`
-          ],
+      styles:[{
+width: '48px',
+height: '48px',
+}],
 
-          args,
+      URIvariablePath:[`$arg_initials`],
 
-        }}/>],
+      args,
+    }}/>],
 
             args,
           }}/>
