@@ -7697,7 +7697,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
-left: '4px',
+left: '5px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -12106,6 +12106,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+left: '5px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
