@@ -1,5 +1,5 @@
 
-import { getCtData } from '../../project';
+import { getCtData, testVarType } from '../../project';
 import { getFirestore, collection, onSnapshot } from 'firebase/firestore';
 
 type Tprops = {
@@ -10,19 +10,26 @@ type Tprops = {
 export const getDocsTool = async (props: Tprops) => {
   // ---------- set Props
   const { args, pass } = props;
-  const { arrRefStrings, arrFuncs } = pass;
+	const { arrRefStrings, arrFuncs } = pass;
+	
+	const newArrStringRefs = arrRefStrings.map(i => {
 
-  // ---------- set Caps Inputs
+		const varValue = testVarType(i, args);
+console.log("2",{varValue});
 
-  // ---------- set Local Imports
+
+return varValue;
+	});
+
+console.log("3",{newArrStringRefs});
 
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
   const fbInit = getCtData('all.temp.fireInit');
-  console.log({ fbInit });
+
   const fireInit = getFirestore(fbInit);
-  const refColl = collection(fireInit, ...arrRefStrings);
+  const refColl = collection(fireInit, ...newArrStringRefs);
 
   const unsub = onSnapshot(refColl, success => {
     const arrDocs = [];

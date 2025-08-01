@@ -1,11 +1,6 @@
 
-// import * as firebase from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js';
-// import * as firestore from 'https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js';
-// import { initializeApp } from 'firebase/app';
-// import firebase from 'firebase/app';
+import { getCtData, testVarType } from '../../project';
 import * as firestore from 'firebase/firestore';
-// import firestore from 'firebase/firestore';
-// import { getFirestore, collection, getDocs } from 'firebase/firestore';
 
 type Tprops = {
   args: any;
@@ -17,62 +12,69 @@ type Tprops = {
   };
 };
 
-// Build failed with 1 error:
-// teste-firebase:https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js:1:126: ERROR: [plugin: Flax Web Plugin] Failed to construct 'URL': Invalid base URL
-
 export const css1 =
   'color: green; background-color: black; font-size: 11px; padding: 2px 6px; border-radius: 3px';
 export const css2 =
   'color: yellow; background-color: green; font-size: 10px; padding: 2px 6px; border-radius: 3px';
 
-export const where = async (props: Tprops) => {
+export const where = (props: Tprops) => {
   // ---------- set Props
   const { args, pass } = props;
-  const { fbInit, arrRefStrings, arrWhere, arrFuncs } = pass;
+  const { arrRefStrings, arrWhere, arrFuncs } = pass;
+  const newArrStringRefs = arrRefStrings.map(i => {
+    console.log('1', { i });
+    const varValue = testVarType(i, args);
+    console.log('2', { varValue });
+    return varValue;
+  });
+
+  console.log('3', { newArrStringRefs });
 
   // ---------- set Local Imports
-  const { getFirestore, getDocs, collection, where, query } = firestore;
-  // ---------- set Caps Inputs
+  const {
+    getFirestore,
+    collection,
+    where,
+    query,
+    onSnapshot,
+  } = firestore;
 
   // ---------- set Short Str
   const fbErrMsg1 = 'Alguma entrada where foi preenchida errado.';
-  const par1 = 'noComponent';
 
-  // -----------------------------
   // ---------- set Init Firestore
-  // -----------------------------
+  const fbInit = getCtData('all.temp.fireInit');
   if (!fbInit) return console.log(fbErrMsg1, { fbInit });
-  const fireInit: any = getFirestore(fbInit[0]);
+  const fireInit: any = getFirestore(fbInit);
 
-  const arrConds = [];
-  const newArrWh = () => {
-    const promiseArray = arrWhere.map((capsCond: any) => {
-      const resolve = capsCond();
+  const arrConds: any[] = [];
+  const refColl = collection(fireInit, ...newArrStringRefs);
 
-      arrConds.push(resolve);
+  let currQuery: any = refColl;
 
-      return getDocs(
-        query(refColl, where(resolve.field, resolve.operator, resolve.value)),
-      );
+  arrWhere.forEach((capsCond: any) => {
+    const resolve = capsCond();
+    const field = resolve.field;
+    const operator = resolve.operator;
+    const value = resolve.value;
+
+    arrConds.push({ field, operator, value });
+
+    currQuery = query(currQuery, where(field, operator, value));
+  });
+
+  // ---------- onSnapshot
+  onSnapshot(currQuery, snapshot => {
+    const arrDocs: any[] = [];
+    snapshot.forEach(doc => {
+      arrDocs.push(doc.data());
     });
 
-    return promiseArray;
-  };
+    console.log('%cWhere Cond', css1, { arrConds });
+    console.log('%cWhere Cond', css1, { newArrStringRefs });
+    console.log('%cWhere Docs Found (Real-Time)', css2, { arrDocs });
 
-  const refColl = collection(fireInit, ...arrRefStrings);
-  const resolvePromise = await Promise.all(newArrWh());
-
-  const arrDocs = [];
-  resolvePromise &&
-    resolvePromise.forEach((snaps: any) => {
-      snaps.forEach((doc: any) => {
-        arrDocs.push(doc.data());
-      });
-    });
-
-  console.log('%cWhere Cond', css1, { arrConds });
-  console.log('%cWhere Docs Found', css2, { arrDocs });
-
-  for (const currFunc of arrFuncs) currFunc(arrDocs, args);
+    for (const currFunc of arrFuncs) currFunc(arrDocs, args);
+  });
 };
 

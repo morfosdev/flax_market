@@ -1,6 +1,6 @@
 
 // ---------- import Local Tools
-import { getCtData } from '../../project';
+import { getCtData, testVarType } from '../../project';
 import {
   getFirestore,
   doc,
@@ -28,17 +28,20 @@ export const setDocTool = async (props: Tprops) => {
   const { args, pass } = props;
   const { arrRefStrings, arrPathData, arrFuncs } = pass;
 
-  // ---------- set Local Imports
-
-  // ---------- set Caps Inputs
-
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
+  const newArrStringRefs = arrRefStrings.map(i => {
+    const varValue = testVarType(i, args);
+    return varValue;
+  });
+
+  console.log('3', { newArrStringRefs });
+
   const fbInit = getCtData('all.temp.fireInit');
   const fireInit = getFirestore(fbInit);
   console.log({ fireInit });
-  const refColl = collection(fireInit, ...arrRefStrings);
+  const refColl = collection(fireInit, ...newArrStringRefs);
   const refDoc = doc(refColl);
 
   // ------ check Data
@@ -47,8 +50,11 @@ export const setDocTool = async (props: Tprops) => {
 
   // ------ read Data
   let dataToSet = {};
-  dataToSet = getCtData(arrPathData.join());
-  // console.log({ dataToSet });
+  const newPath = arrPathData.map(i => {
+    const varValue = testVarType(i, args);
+    return varValue;
+  });
+  dataToSet = getCtData(newPath.join('.'));
 
   // ------ add new id
   dataToSet.docId = refDoc.id;
@@ -62,7 +68,10 @@ export const setDocTool = async (props: Tprops) => {
   for (const currFunc of arrFuncs) await currFunc(dataToSet, args);
 
   console.log('%csetDoc ok', css1);
-  console.log('%cReferencia do Documento', css2, { arrRefStrings, dataToSet });
+  console.log('%cReferencia do Documento', css2, {
+    newArrStringRefs,
+    dataToSet,
+  });
 
   return dataToSet;
 };
