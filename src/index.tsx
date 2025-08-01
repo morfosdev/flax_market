@@ -4652,7 +4652,7 @@ width: '8px',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"admLogin",
+          pathScreen:"a0AdmLogin",
 
           styles:[`{ 
 width: '100%',
@@ -4985,7 +4985,7 @@ height: '30px',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"admDash",
+          pathScreen:"a1AdmDash",
 
           styles:[`{ 
 width: '100%',
