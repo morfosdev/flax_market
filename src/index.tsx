@@ -18503,7 +18503,7 @@ justifyContent: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`productsEcommerce`],
+   arrRefStrings: [`permissions`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.admProducts.list.products`],
