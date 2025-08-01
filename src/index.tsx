@@ -67,7 +67,7 @@
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("a0AdmLogin");
         }
         ]
  , trigger: 'on press'
@@ -5743,7 +5743,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("a0AdmLogin");
         }
         ]
  , trigger: 'on press'
@@ -7351,7 +7351,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("a0AdmLogin");
         }
         ]
  , trigger: 'on press'
@@ -8989,7 +8989,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("a0AdmLogin");
         }
         ]
  , trigger: 'on press'
@@ -10450,7 +10450,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("a0AdmLogin");
         }
         ]
  , trigger: 'on press'
@@ -11881,7 +11881,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("a0AdmLogin");
         }
         ]
  , trigger: 'on press'
@@ -13369,7 +13369,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("a0AdmLogin");
         }
         ]
  , trigger: 'on press'
@@ -14793,7 +14793,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("a0AdmLogin");
         }
         ]
  , trigger: 'on press'
@@ -16144,7 +16144,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("a0AdmLogin");
         }
         ]
  , trigger: 'on press'
@@ -17615,7 +17615,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admLogin");
+          return tools.goTo("a0AdmLogin");
         }
         ]
  , trigger: 'on press'
