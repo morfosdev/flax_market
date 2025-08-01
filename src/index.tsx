@@ -11694,9 +11694,11 @@ flex: 1,
           ],
 
           arrStyles: [
-            `{
-fontSize: 14,
-fontWeight: '700',
+            `{ 
+  fontSize: 18, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#0E1422",
 }`
           ],
 
@@ -11728,17 +11730,68 @@ fontWeight: '700',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '140px',
-justifyContent: 'center',
+width: '242px',
+height: '40px',
+justifyContent: 'initial',
+alignItems: 'center',
 borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
-padding: 5,
+paddingHorizontal: 10,
+paddingVertical: 5,
+flexDirection: 'row',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={15}
+    height={14}
+    fill="red"
+    viewBox="0 0 15 14"
+    {...props}
+  >
+    <Path
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m14.02 13.5-3.75-3.75m1.59-3.83a5.42 5.42 0 1 1-10.84 0 5.42 5.42 0 0 1 10.84 0Z"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.02 13.5L10.27 9.75M11.86 5.92C11.86 8.91338 9.43334 11.34 6.43996 11.34C3.44658 11.34 1.01996 8.91338 1.01996 5.92C1.01996 2.92662 3.44658 0.5 6.43996 0.5C9.43334 0.5 11.86 2.92662 11.86 5.92Z" stroke="#5C5F6A" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      `,
+
+      altura: "17px",
+
+      largura: "17px",
+
+      preenchimento: [`#fff`],
+
+      args,
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ width: '10px', }`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
-placeholder: 'Search orders',
+ placeholder: 'Search orders',
 }`],
 
           stylesArray: [{
