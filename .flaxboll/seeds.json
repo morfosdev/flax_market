@@ -1371,7 +1371,8 @@
               "capsIptCapsTypesToAdd": [
                 "setVar",
                 "console log",
-                "custom capsule"
+                "custom capsule",
+                "condition"
               ]
             }
           }
@@ -1444,7 +1445,8 @@
               "capsIptCapsTypesToAdd": [
                 "setVar",
                 "console log",
-                "custom capsule"
+                "custom capsule",
+                "condition"
               ]
             }
           }
@@ -1518,7 +1520,8 @@
               "capsIptCapsTypesToAdd": [
                 "setVar",
                 "console log",
-                "custom capsule"
+                "custom capsule",
+                "condition"
               ]
             }
           }
@@ -1610,7 +1613,8 @@
               "capsIptCapsTypesToAdd": [
                 "setVar",
                 "console log",
-                "custom capsule"
+                "custom capsule",
+                "condition"
               ]
             }
           }
@@ -1640,8 +1644,8 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "firestore init",
-                "en": "firestore init"
+                "pt-br": "array de arquivos",
+                "en": "array de arquivos"
               },
               "capsIptCapsDescription": {
                 "pt-br": "",
@@ -1658,24 +1662,6 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "array de arquivos",
-                "en": "array de arquivos"
-              },
-              "capsIptCapsDescription": {
-                "pt-br": "",
-                "en": ""
-              },
-              "capsIptCapsDfCode": "''",
-              "capsIptCapsTypesToAdd": ["string process"]
-            }
-          },
-          "ccc_fireUpload-3": {
-            "capsIptCodeID": "ccc_fireUpload-3",
-            "capsIptPosition": "3",
-            "capsIptRemoved": false,
-            "capsIptType": "capsules",
-            "capsIptCapsInfo": {
-              "capsIptCapsLabel": {
                 "pt-br": "functions return",
                 "en": "functions return"
               },
@@ -1684,7 +1670,12 @@
                 "en": ""
               },
               "capsIptCapsDfCode": "() => {}",
-              "capsIptCapsTypesToAdd": ["function", "customs"]
+              "capsIptCapsTypesToAdd": [
+                "setVar",
+                "console log",
+                "custom capsule",
+                "condition"
+              ]
             }
           }
         },
@@ -1770,7 +1761,7 @@
           "en": ""
         },
         "capsCodeTypes": ["customs", "function", "firestore", "where"],
-        "capsCodeText": "async (...args) =>\n        functions.firebase.where({ args, pass:{\n            fbInit: [!#!firestore init path!#!],\n            arrRefStrings: [!#!array firestore reference!#!],\n            arrWhere: [!#!where params!#!],\n            arrFuncs: [!#!functions return!#!],\n        }})",
+        "capsCodeText": "async (...args) =>\n functions.firebase.where({ args, pass:{\n\n  arrRefStrings: [!#!array firestore reference!#!],\n arrWhere: [!#!where params!#!],\n arrFuncs: [!#!functions return!#!],\n }})",
         "capsCodeInputs": {
           "ccc_fireWhere-0": {
             "capsIptCodeID": "ccc_fireWhere-0",
@@ -1779,8 +1770,8 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "firestore init path",
-                "en": "firestore init path"
+                "pt-br": "array firestore references",
+                "en": "array firestore references"
               },
               "capsIptCapsDescription": {
                 "pt-br": "",
@@ -1797,24 +1788,6 @@
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
               "capsIptCapsLabel": {
-                "pt-br": "array firestore references",
-                "en": "array firestore references"
-              },
-              "capsIptCapsDescription": {
-                "pt-br": "",
-                "en": ""
-              },
-              "capsIptCapsDfCode": "''",
-              "capsIptCapsTypesToAdd": ["string process"]
-            }
-          },
-          "ccc_fireWhere-2": {
-            "capsIptCodeID": "ccc_fireWhere-2",
-            "capsIptPosition": "2",
-            "capsIptRemoved": false,
-            "capsIptType": "capsules",
-            "capsIptCapsInfo": {
-              "capsIptCapsLabel": {
                 "pt-br": "where params",
                 "en": "where params"
               },
@@ -1826,9 +1799,9 @@
               "capsIptCapsTypesToAdd": ["where conditions"]
             }
           },
-          "ccc_fireWhere-3": {
-            "capsIptCodeID": "ccc_fireWhere-3",
-            "capsIptPosition": "3",
+          "ccc_fireWhere-2": {
+            "capsIptCodeID": "ccc_fireWhere-2",
+            "capsIptPosition": "2",
             "capsIptRemoved": false,
             "capsIptType": "capsules",
             "capsIptCapsInfo": {
@@ -1921,6 +1894,7 @@
     },
     "capsType": "code"
   },
+
 
   "ccc_fetch_B": {
     "capsCodeInfo": {
