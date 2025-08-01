@@ -7022,7 +7022,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admCustomers");
+          return tools.goTo("a6AdmCustomers");
         }
         ]
  , trigger: 'on press'
@@ -7099,7 +7099,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admReviews");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
@@ -7176,7 +7176,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admSettings");
+          return tools.goTo("a8AdmSettings");
         }
         ]
  , trigger: 'on press'
@@ -8660,7 +8660,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admCustomers");
+          return tools.goTo("a6AdmCustomers");
         }
         ]
  , trigger: 'on press'
@@ -8737,7 +8737,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admReviews");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
@@ -8814,7 +8814,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admSettings");
+          return tools.goTo("a8AdmSettings");
         }
         ]
  , trigger: 'on press'
@@ -10121,7 +10121,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admCustomers");
+          return tools.goTo("a6AdmCustomers");
         }
         ]
  , trigger: 'on press'
@@ -10198,7 +10198,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admReviews");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
@@ -10275,7 +10275,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admSettings");
+          return tools.goTo("a8AdmSettings");
         }
         ]
  , trigger: 'on press'
@@ -11552,7 +11552,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admCustomers");
+          return tools.goTo("a6AdmCustomers");
         }
         ]
  , trigger: 'on press'
@@ -11629,7 +11629,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admReviews");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
@@ -11706,7 +11706,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admSettings");
+          return tools.goTo("a8AdmSettings");
         }
         ]
  , trigger: 'on press'
@@ -12721,7 +12721,7 @@ justifyContent: 'center',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"admCustomers",
+          pathScreen:"a6AdmCustomers",
 
           styles:[`{ 
 width: '100%',
@@ -13040,7 +13040,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admCustomers");
+          return tools.goTo("a6AdmCustomers");
         }
         ]
  , trigger: 'on press'
@@ -13117,7 +13117,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admReviews");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
@@ -13194,7 +13194,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admSettings");
+          return tools.goTo("a8AdmSettings");
         }
         ]
  , trigger: 'on press'
@@ -14145,7 +14145,7 @@ justifyContent: 'center',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"admReviews",
+          pathScreen:"a7AdmReviews",
 
           styles:[`{ 
 width: '100%',
@@ -14464,7 +14464,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admCustomers");
+          return tools.goTo("a6AdmCustomers");
         }
         ]
  , trigger: 'on press'
@@ -14541,7 +14541,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admReviews");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
@@ -14618,7 +14618,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admSettings");
+          return tools.goTo("a8AdmSettings");
         }
         ]
  , trigger: 'on press'
@@ -15496,7 +15496,7 @@ justifyContent: 'center',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"admSettings",
+          pathScreen:"a8AdmSettings",
 
           styles:[`{ 
 width: '100%',
@@ -15815,7 +15815,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admCustomers");
+          return tools.goTo("a6AdmCustomers");
         }
         ]
  , trigger: 'on press'
@@ -15892,7 +15892,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admReviews");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
@@ -15969,7 +15969,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admSettings");
+          return tools.goTo("a8AdmSettings");
         }
         ]
  , trigger: 'on press'
@@ -17286,7 +17286,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admCustomers");
+          return tools.goTo("a6AdmCustomers");
         }
         ]
  , trigger: 'on press'
@@ -17363,7 +17363,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admReviews");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
@@ -17440,7 +17440,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admSettings");
+          return tools.goTo("a8AdmSettings");
         }
         ]
  , trigger: 'on press'
