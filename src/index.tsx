@@ -5056,6 +5056,7 @@ paddingHorizontal: '24',
 paddingVertical: '8',
 backgroundColor: '#F6F6F6',
 borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
@@ -5156,6 +5157,7 @@ paddingHorizontal: '24',
 paddingVertical: '8',
 backgroundColor: 'white',
 borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
