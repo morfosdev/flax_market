@@ -9620,7 +9620,7 @@ flexDirection: 'row',
 
       largura: "12px",
 
-      preenchimento: ['black'],
+      preenchimento: [`#eee`],
 
       args,
     }}/>, (...args:any) => <Elements.Text pass={{
