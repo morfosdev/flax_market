@@ -6703,7 +6703,7 @@ flex: 1,
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"admProducts",
+          pathScreen:"a2AdmProducts",
 
           styles:[`{ 
 width: '100%',
@@ -6782,7 +6782,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("a1AdmDash");
         }
         ]
  , trigger: 'on press'
@@ -8341,7 +8341,7 @@ justifyContent: 'center',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"admAddProducts",
+          pathScreen:"a3AdmAddProducts",
 
           styles:[`{ 
 width: '100%',
@@ -8420,7 +8420,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("a1AdmDash");
         }
         ]
  , trigger: 'on press'
@@ -9881,7 +9881,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("a1AdmDash");
         }
         ]
  , trigger: 'on press'
@@ -11312,7 +11312,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("a1AdmDash");
         }
         ]
  , trigger: 'on press'
@@ -12800,7 +12800,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("a1AdmDash");
         }
         ]
  , trigger: 'on press'
@@ -14224,7 +14224,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("a1AdmDash");
         }
         ]
  , trigger: 'on press'
@@ -15575,7 +15575,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("a1AdmDash");
         }
         ]
  , trigger: 'on press'
@@ -17046,7 +17046,7 @@ marginBottom: 10,
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("a1AdmDash");
         }
         ]
  , trigger: 'on press'
