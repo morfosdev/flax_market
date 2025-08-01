@@ -9591,20 +9591,7 @@ padding: 5,
 flexDirection: 'row',
 }`],
 
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.firebase.uploadFileTool({ args, pass:{
-            fbInit: [`sc.admAddProducts.iptsChanges.image`],
-            arrFiles: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [``],
-          value: [``]
-        }})],
-            arrFuncs: [!#!functions return!#!],
-        }})]
- , trigger: 'on press'
-}})],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
