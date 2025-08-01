@@ -4917,7 +4917,7 @@ alignItems: 'center',
 
   setMessage("Login realizado com sucesso!");
 
-  tools.goTo("admDash");
+  tools.goTo("a1AdmDash");
 
 setMessage("");
 }]
