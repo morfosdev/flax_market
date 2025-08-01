@@ -15173,24 +15173,122 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+flexDirection: 'row',
+alignItems: 'center',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+            functions:[()=>{}],            childrenItems:[
+        
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
 
-          children: [
-            `...`
-          ],
+            styles:[`{
+width: '30px',
+height: '30px',
+alignItems: 'center',
+justifyContent: 'center',
+}`],
 
-          args,
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={15}
+    height={14}
+    fill="red"
+    viewBox="0 0 15 14"
+    {...props}
+  >
+    <Path
+      fill="#fff"
+      d="m8.02 9-3 .54.5-3.04L11.25.79a.999.999 0 0 1 1.42 0l1.06 1.06a1 1 0 0 1 0 1.42L8.02 9Z"
+    />
+    <Path
+      fill="#fff"
+      d="M12.52 9.5v3a1 1 0 0 1-1 1h-9.5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h3"
+    />
+    <Path
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M12.52 9.5v3a1 1 0 0 1-1 1h-9.5a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h3m3 7-3 .54.5-3.04L11.25.79a.999.999 0 0 1 1.42 0l1.06 1.06a1 1 0 0 1 0 1.42L8.02 9Z"
+    />
+  </Svg>)
+      },
 
-        }}/>],
+      svgOriginal: `
+        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.01996 8.99994L5.01996 9.53994L5.51996 6.49994L11.25 0.789939C11.3429 0.696211 11.4535 0.621816 11.5754 0.571048C11.6972 0.520279 11.8279 0.494141 11.96 0.494141C12.092 0.494141 12.2227 0.520279 12.3445 0.571048C12.4664 0.621816 12.577 0.696211 12.67 0.789939L13.73 1.84994C13.8237 1.9429 13.8981 2.0535 13.9488 2.17536C13.9996 2.29722 14.0258 2.42793 14.0258 2.55994C14.0258 2.69195 13.9996 2.82266 13.9488 2.94452C13.8981 3.06637 13.8237 3.17698 13.73 3.26994L8.01996 8.99994Z" fill="white"/>
+<path d="M12.52 9.49994V12.4999C12.52 12.7652 12.4146 13.0195 12.2271 13.207C12.0395 13.3946 11.7852 13.4999 11.52 13.4999H2.01996C1.75474 13.4999 1.50039 13.3946 1.31285 13.207C1.12532 13.0195 1.01996 12.7652 1.01996 12.4999V2.99994C1.01996 2.73472 1.12532 2.48037 1.31285 2.29283C1.50039 2.1053 1.75474 1.99994 2.01996 1.99994H5.01996" fill="white"/>
+<path d="M12.52 9.49994V12.4999C12.52 12.7652 12.4146 13.0195 12.2271 13.207C12.0395 13.3946 11.7852 13.4999 11.52 13.4999H2.01996C1.75474 13.4999 1.50039 13.3946 1.31285 13.207C1.12532 13.0195 1.01996 12.7652 1.01996 12.4999V2.99994C1.01996 2.73472 1.12532 2.48037 1.31285 2.29283C1.50039 2.1053 1.75474 1.99994 2.01996 1.99994H5.01996M8.01996 8.99994L5.01996 9.53994L5.51996 6.49994L11.25 0.789939C11.3429 0.696211 11.4535 0.621816 11.5754 0.571048C11.6972 0.520279 11.8279 0.494141 11.96 0.494141C12.092 0.494141 12.2227 0.520279 12.3445 0.571048C12.4664 0.621816 12.577 0.696211 12.67 0.789939L13.73 1.84994C13.8237 1.9429 13.8981 2.0535 13.9488 2.17536C13.9996 2.29722 14.0258 2.42793 14.0258 2.55994C14.0258 2.69195 13.9996 2.82266 13.9488 2.94452C13.8981 3.06637 13.8237 3.17698 13.73 3.26994L8.01996 8.99994Z" stroke="#5C5F6A" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      `,
+
+      altura: "15px",
+
+      largura: "15px",
+
+      preenchimento: [`#fff`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '30px',
+height: '30px',
+alignItems: 'center',
+justifyContent: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={14}
+    height={14}
+    fill="red"
+    viewBox="0 0 14 14"
+    {...props}
+  >
+    <Path
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M1 3.5h12m-8.5 0V3a2.5 2.5 0 1 1 5 0v.5m-4 2V11m3-5.5V11m-6-7.5h9v9a1 1 0 0 1-1 1h-7a1 1 0 0 1-1-1v-9Z"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 3.5H13M4.5 3.5V3C4.5 2.33696 4.76339 1.70107 5.23223 1.23223C5.70107 0.763392 6.33696 0.5 7 0.5C7.66304 0.5 8.29893 0.763392 8.76777 1.23223C9.23661 1.70107 9.5 2.33696 9.5 3V3.5M5.5 5.5V11M8.5 5.5V11M2.5 3.5H11.5V12.5C11.5 12.7652 11.3946 13.0196 11.2071 13.2071C11.0196 13.3946 10.7652 13.5 10.5 13.5H3.5C3.23478 13.5 2.98043 13.3946 2.79289 13.2071C2.60536 13.0196 2.5 12.7652 2.5 12.5V3.5Z" stroke="#5C5F6A" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      `,
+
+      altura: "15px",
+
+      largura: "15px",
+
+      preenchimento: [`#fff`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
