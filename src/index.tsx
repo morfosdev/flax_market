@@ -5044,10 +5044,12 @@ height: '40px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: '#F6F6F6',
+borderRadius: '8px',
 }`],
 
             functions:[async (...args) =>
@@ -5096,7 +5098,21 @@ marginBottom: 10,
       preenchimento: [`#FFF`],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -5104,6 +5120,7 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
 }`
           ],
 
