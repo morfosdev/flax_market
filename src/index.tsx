@@ -12171,7 +12171,12 @@ height: '48px',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
           ],
 
           children: [
@@ -12200,7 +12205,12 @@ flex: 1,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
           ],
 
           children: [
@@ -12229,7 +12239,12 @@ flex: 1,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
           ],
 
           children: [
@@ -12258,7 +12273,12 @@ flex: 1,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
           ],
 
           children: [
@@ -12286,7 +12306,12 @@ flex: 1,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
           ],
 
           children: [
