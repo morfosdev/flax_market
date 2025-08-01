@@ -11112,10 +11112,10 @@ async (...args) =>
         functions.firebase.updateDocTool({ args, pass:{
    arrRefStrings: [
         `productsEcommerce`, `sc.admEditProduct.product.docId`],
-            arrPathData: [`sc.admEditProduct.product`],
+            arrPathData: [`$var_sc.admEditProduct.product`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product`],
+          keyPath: [`$var_sc.admEditProduct.product`],
           value: [``]
         }})],
         }}), 
@@ -11178,7 +11178,7 @@ alignItems: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product`],
+          keyPath: [`$var_sc.admEditProduct.product`],
           value: [``]
         }}), 
         (...args) => {
