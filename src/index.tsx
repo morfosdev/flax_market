@@ -11111,7 +11111,7 @@ alignItems: 'center',
 async (...args) =>
         functions.firebase.updateDocTool({ args, pass:{
    arrRefStrings: [
-        `productsEcommerce`, `sc.admEditProduct.product.docId`],
+        `productsEcommerce`, `$var_sc.admEditProduct.product.docId`],
             arrPathData: [`$var_sc.admEditProduct.product`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
