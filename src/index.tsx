@@ -8102,7 +8102,7 @@ flex: 1,
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
-const status = .$arg_stock';
+const status = $arg_stock;
 return (
   <span style={{ color: status === "In Stock" ? "green" : "red" }}>
     {status}
