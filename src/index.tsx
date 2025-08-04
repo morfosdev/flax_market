@@ -8073,7 +8073,12 @@ flex: 1,
 flex: 1,
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [()=>{}]
+ , trigger: 'on init'
+}})],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -8093,7 +8098,17 @@ flex: 1,
 
           args,
 
-        }}/>],
+        }}/>, 
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => const status = produto.Stock;
+return (
+  <span style={{ color: status === "In Stock" ? "green" : "red" }}>
+    {status}
+  </span>
+);] 
+}}/>
+],
 
             args,
           }}/>
