@@ -10613,7 +10613,7 @@ marginVertical: 5,
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
-placeholder: $var_sc.a4.editData.product.label,
+placeholder: '$var_sc.a4.editData.product.label',
 }`],
 
           stylesArray: [{
