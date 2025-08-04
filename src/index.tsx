@@ -7901,7 +7901,7 @@ left: '5px',
             {}
           ],
 
-          pData: `sc.admProducts.list.products`,
+          pData: `sc.a2.list`,
 
           itemElements: [
             
@@ -8329,7 +8329,7 @@ justifyContent: 'center',
    arrRefStrings: [`productsEcommerce`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admProducts.list.products`],
+          keyPath: [`sc.a2.list`],
           value: [`$arg_callback`]
         }})],
         }})]
@@ -18165,7 +18165,7 @@ left: '5px',
             {}
           ],
 
-          pData: `sc.admProducts.list.products`,
+          pData: `sc.a2.list`,
 
           itemElements: [
             
@@ -18593,7 +18593,7 @@ justifyContent: 'center',
    arrRefStrings: [`permissions`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admProducts.list.products`],
+          keyPath: [`sc.a2.list`],
           value: [`$arg_callback`]
         }})],
         }})]
