@@ -12349,7 +12349,7 @@ left: '5px',
             {}
           ],
 
-          pData: `sc.admOrders.list.orders`,
+          pData: `sc.a5.list.orders`,
 
           itemElements: [
             
@@ -12709,7 +12709,7 @@ justifyContent: 'center',
    arrRefStrings: [`ordersEcommerce`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admOrders.list.orders`],
+          keyPath: [`sc.a5.list.orders`],
           value: [`$arg_callback`]
         }})],
         }})]
