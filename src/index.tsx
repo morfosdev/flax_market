@@ -10674,11 +10674,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admEditProduct.product.price`],
+          path: [`sc.a4.editData.product.price`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product.price`],
+          keyPath: [`sc.a4.editData.product.price`],
           value: [`$arg_callback`]
         }})],
 
@@ -10728,11 +10728,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admEditProduct.product.categories`],
+          path: [`sc.a4.editData.product.categories`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product.categories`],
+          keyPath: [`sc.a4.editData.product.categories`],
           value: [`$arg_callback`]
         }})],
 
@@ -10782,11 +10782,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admEditProduct.product.slug`],
+          path: [`sc.a4.editData.product.slug`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product.slug`],
+          keyPath: [`sc.a4.editData.product.slug`],
           value: [`$arg_callback`]
         }})],
 
