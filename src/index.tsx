@@ -8101,10 +8101,10 @@ flex: 1,
         }}/>, 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => const status = produto.Stock;
+  arrItems: [() => 
 return (
-  <span style={{ color: status === "In Stock" ? "green" : "red" }}>
-    {status}
+  <span style={{ color: produto.Stock === "In Stock" ? "green" : "red" }}>
+    {produto.Stock}
   </span>
 );] 
 }}/>
