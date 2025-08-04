@@ -9681,10 +9681,10 @@ alignItems: 'center',
 async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
   arrRefStrings: [`productsEcommerce`],
-            arrPathData: [`sc.admAddProducts.iptsChanges`],
+            arrPathData: [`sc.a3.iptsChanges`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges`],
+          keyPath: [`sc.a3.iptsChanges`],
           value: [``]
         }})],
         }}), 
@@ -9747,7 +9747,7 @@ alignItems: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges`],
+          keyPath: [`sc.a3.iptsChanges`],
           value: [``]
         }}), 
         (...args) => {
