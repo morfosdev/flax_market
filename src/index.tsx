@@ -8164,7 +8164,7 @@ async (...args) =>
         `productsEcommerce`, `$arg_docId`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a4.iptsChanges`],
+          keyPath: [`sc.a4.editData.product`],
           value: [`$arg_callback`]
         }})],
         }}), 
@@ -10620,11 +10620,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admEditProduct.product.Doc.label`],
+          path: [`sc.a4.editData.product.label`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product.Doc.label`],
+          keyPath: [`sc.a4.editData.product.label`],
           value: [`$arg_callback`]
         }})],
 
