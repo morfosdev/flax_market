@@ -9159,11 +9159,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.label`],
+          path: [`sc.a3.iptsChanges.label`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.label`],
+          keyPath: [`sc.a3.iptsChanges.label`],
           value: [`$arg_callback`]
         }})],
 
