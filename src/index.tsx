@@ -4881,9 +4881,9 @@ alignItems: 'center',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const email = tools.getCtData("sc.adm.login.forms.email");
-  const password = tools.getCtData("sc.adm.login.forms.password");
-  const users = tools.getCtData("sc.adm.login.db.users") || [];
+  const email = tools.getCtData("sc.a0.login.forms.email");
+  const password = tools.getCtData("sc.a0.login.forms.password");
+  const users = tools.getCtData("sc.a0.login.db.users") || [];
 
   const setMessage = (msg) => {
     tools.functions.setVar({
@@ -4911,7 +4911,7 @@ alignItems: 'center',
     return;
   }
 
-  const sessionPath = "sc.adm.session.user";
+  const sessionPath = "sc.a0.session.user";
   const sessionData = { keyPath: [sessionPath], value: [userMatch] };
   tools.functions.setVar({ args: "", pass: sessionData });
 
