@@ -4757,11 +4757,11 @@ borderColor: '#eee',
 padding: 10,
 }`],
 
-          path: [`sc.adm.login.forms.email`],
+          path: [`sc.a0.login.forms.email`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.email`],
+          keyPath: [`sc.a0.login.forms.email`],
           value: [`$arg_callback`]
         }})],
 
@@ -4810,11 +4810,11 @@ borderColor: '#eee',
 padding: 10,
 }`],
 
-          path: [`sc.adm.login.forms.password`],
+          path: [`sc.a0.login.forms.password`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.password`],
+          keyPath: [`sc.a0.login.forms.password`],
           value: [`$arg_callback`]
         }})],
 
@@ -5733,12 +5733,12 @@ async (...args) =>
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.email`],
+          keyPath: [`sc.a0.login.forms.email`],
           value: [``]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.password`],
+          keyPath: [`sc.a0.login.forms.password`],
           value: [``]
         }}), 
         (...args) => {
@@ -7341,12 +7341,12 @@ async (...args) =>
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.email`],
+          keyPath: [`sc.a0.login.forms.email`],
           value: [``]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.password`],
+          keyPath: [`sc.a0.login.forms.password`],
           value: [``]
         }}), 
         (...args) => {
@@ -8979,12 +8979,12 @@ async (...args) =>
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.email`],
+          keyPath: [`sc.a0.login.forms.email`],
           value: [``]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.password`],
+          keyPath: [`sc.a0.login.forms.password`],
           value: [``]
         }}), 
         (...args) => {
@@ -10440,12 +10440,12 @@ async (...args) =>
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.email`],
+          keyPath: [`sc.a0.login.forms.email`],
           value: [``]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.password`],
+          keyPath: [`sc.a0.login.forms.password`],
           value: [``]
         }}), 
         (...args) => {
@@ -11871,12 +11871,12 @@ async (...args) =>
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.email`],
+          keyPath: [`sc.a0.login.forms.email`],
           value: [``]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.password`],
+          keyPath: [`sc.a0.login.forms.password`],
           value: [``]
         }}), 
         (...args) => {
@@ -13359,12 +13359,12 @@ async (...args) =>
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.email`],
+          keyPath: [`sc.a0.login.forms.email`],
           value: [``]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.password`],
+          keyPath: [`sc.a0.login.forms.password`],
           value: [``]
         }}), 
         (...args) => {
@@ -14783,12 +14783,12 @@ async (...args) =>
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.email`],
+          keyPath: [`sc.a0.login.forms.email`],
           value: [``]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.password`],
+          keyPath: [`sc.a0.login.forms.password`],
           value: [``]
         }}), 
         (...args) => {
@@ -16134,12 +16134,12 @@ async (...args) =>
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.email`],
+          keyPath: [`sc.a0.login.forms.email`],
           value: [``]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.password`],
+          keyPath: [`sc.a0.login.forms.password`],
           value: [``]
         }}), 
         (...args) => {
@@ -17609,12 +17609,12 @@ async (...args) =>
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.email`],
+          keyPath: [`sc.a0.login.forms.email`],
           value: [``]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.adm.login.forms.password`],
+          keyPath: [`sc.a0.login.forms.password`],
           value: [``]
         }}), 
         (...args) => {
