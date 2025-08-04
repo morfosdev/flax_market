@@ -10889,11 +10889,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admEditProduct.product.description`],
+          path: [`sc.a4.editData.product.description`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product.description`],
+          keyPath: [`sc.a4.editData.product.description`],
           value: [`$arg_callback`]
         }})],
 
@@ -10954,11 +10954,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admEditProduct.product.stock`],
+          path: [`sc.a4.editData.product.stock`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product.stock`],
+          keyPath: [`sc.a4.editData.product.stock`],
           value: [`$arg_callback`]
         }})],
 
@@ -11008,11 +11008,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admEditProduct.availableQuantity`],
+          path: [`sc.a4.editData.product.availableQuantity`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.availableQuantity`],
+          keyPath: [`sc.a4.editData.product.availableQuantity`],
           value: [`$arg_callback`]
         }})],
 
