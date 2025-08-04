@@ -8164,7 +8164,7 @@ async (...args) =>
         `productsEcommerce`, `$arg_docId`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product`],
+          keyPath: [`sc.a4.iptsChanges`],
           value: [`$arg_callback`]
         }})],
         }}), 
