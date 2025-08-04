@@ -13805,7 +13805,7 @@ left: '5px',
             {}
           ],
 
-          pData: `sc.admCustomers.list.customers`,
+          pData: `sc.a6.list.customers`,
 
           itemElements: [
             
@@ -14133,7 +14133,7 @@ justifyContent: 'center',
    arrRefStrings: [`customersEcommerce`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admCustomers.list.customers`],
+          keyPath: [`sc.a6.list.customers`],
           value: [`$arg_callback`]
         }})],
         }})]
@@ -15192,7 +15192,7 @@ flex: 1,
             {}
           ],
 
-          pData: `sc.admCustomers.list.customers`,
+          pData: `sc.a6.list.customers`,
 
           itemElements: [
             
@@ -15484,7 +15484,7 @@ justifyContent: 'center',
    arrRefStrings: [`customersEcommerce`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admCustomers.list.customers`],
+          keyPath: [`sc.a6.list.customers`],
           value: [`$arg_callback`]
         }})],
         }})]
