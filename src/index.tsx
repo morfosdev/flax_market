@@ -9375,11 +9375,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.sku`],
+          path: [`sc.a3.iptsChanges.sku`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.sku`],
+          keyPath: [`sc.a3.iptsChanges.sku`],
           value: [`$arg_callback`]
         }})],
 
@@ -9428,11 +9428,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admAddProducts.iptsChanges.decription`],
+          path: [`sc.a3.iptsChanges.description`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admAddProducts.iptsChanges.decription`],
+          keyPath: [`sc.a3.iptsChanges.description`],
           value: [`$arg_callback`]
         }})],
 
