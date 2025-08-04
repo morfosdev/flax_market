@@ -10836,11 +10836,11 @@ marginVertical: 5,
                 // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
               }],
 
-          path: [`sc.admEditProduct.product.sku`],
+          path: [`sc.a4.editData.product.sku`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.product.sku`],
+          keyPath: [`sc.a4.editData.product.sku`],
           value: [`$arg_callback`]
         }})],
 
@@ -11111,11 +11111,11 @@ alignItems: 'center',
 async (...args) =>
         functions.firebase.updateDocTool({ args, pass:{
    arrRefStrings: [
-        `productsEcommerce`, `$var_sc.admEditProduct.product.docId`],
-            arrPathData: [`$var_sc.admEditProduct.product`],
+        `productsEcommerce`, `$var_sc.a4.editData.product.docId`],
+            arrPathData: [`$var_sc.a4.editData.product`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`$var_sc.admEditProduct.product`],
+          keyPath: [`$var_sc.a4.editData.product`],
           value: [``]
         }})],
         }}), 
@@ -11178,7 +11178,7 @@ alignItems: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`$var_sc.admEditProduct.product`],
+          keyPath: [`$var_sc.a4.editData.product`],
           value: [``]
         }}), 
         (...args) => {
