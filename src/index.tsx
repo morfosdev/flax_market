@@ -8103,8 +8103,8 @@ flex: 1,
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
 return (
-  <span style={{ color: produto.Stock === "In Stock" ? "green" : "red" }}>
-    {produto.Stock}
+  <span style={{ color: product.Stock === "In Stock" ? "green" : "red" }}>
+    {product.Stock}
   </span>
 )
 }] 
