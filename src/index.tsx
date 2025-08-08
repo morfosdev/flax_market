@@ -7833,7 +7833,7 @@ flex: 1,
     }
   });
 
-  tools.functions.run("sortProducts"); // name of the sorting function above
+  (); 
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
