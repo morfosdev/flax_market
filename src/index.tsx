@@ -8332,10 +8332,10 @@ justifyContent: 'center',
           }}/>
         ],
 
-          functions:[
-        async (...args) =>
+          functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
    arrRefStrings: [`productsEcommerce`],
             arrFuncs: [async (...args) =>
@@ -8343,13 +8343,14 @@ justifyContent: 'center',
           keyPath: [`sc.a2.list`],
           value: [`$arg_callback`]
         }})],
-        }})]
- , trigger: 'on init'
-}}), async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
+        }}), () => {
   const list = tools.getCtData("sc.a2.list");
+
+  if (!list || !Array.isArray(list)) {
+    console.log("List not ready yet.");
+    return;
+  }
+
   tools.functions.setVar({
     args: "",
     pass: {
@@ -8357,9 +8358,8 @@ justifyContent: 'center',
       value: [list]
     }
   });
-}, () => {
-  const list = tools.getCtData("sc.a2.list");
-  console.log("List is:", list);
+
+  console.log("Original list saved.");
 }]
  , trigger: 'on init'
 }})],
