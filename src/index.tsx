@@ -7816,7 +7816,27 @@ flex: 1,
 flex: 1,
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const currentField = tools.getCtData("sc.a2.sortField");
+  const currentAsc = tools.getCtData("sc.a2.sortAsc");
+
+  const newField = "price"; // change to your field
+  const newAsc = currentField === newField ? !currentAsc : true;
+
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a2.sortField", "sc.a2.sortAsc"],
+      value: [newField, newAsc]
+    }
+  });
+
+  tools.functions.run("sortProducts"); // name of the sorting function above
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
