@@ -7832,7 +7832,6 @@ flex: 1,
       value: [newField, newAsc]
     }
   })
-  (); 
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
