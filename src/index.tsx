@@ -8343,7 +8343,11 @@ async (...args) =>
           keyPath: [`sc.a2.list`],
           value: [`$arg_callback`]
         }})],
-        }}), () => {
+        }}), 
+() => {
+  const list = tools.getCtData("sc.a2.list");
+  console.log("List is:", list);
+}, () => {
   const list = tools.getCtData("sc.a2.list");
   tools.functions.setVar({
     args: "",
