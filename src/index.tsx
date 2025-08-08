@@ -7648,13 +7648,37 @@ paddingHorizontal: '10px',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => {
+ arrFunctions: [
+() => {
   const list = tools.getCtData("sc.a2.list");
   tools.functions.setVar({
     args: "",
     pass: {
       keyPath: ["sc.a2.originalList"],
       value: [list]
+    }
+  });
+}, () => {
+  const list = tools.getCtData("sc.a2.originalList") || [];
+  const sortField = tools.getCtData("sc.a2.sortField");
+  const ascending = tools.getCtData("sc.a2.sortAsc");
+
+  if (!sortField) return;
+
+  const sortedList = [...list].sort((a, b) => {
+    const aValue = a[sortField];
+    const bValue = b[sortField];
+
+    if (aValue < bValue) return ascending ? -1 : 1;
+    if (aValue > bValue) return ascending ? 1 : -1;
+    return 0;
+  });
+
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a2.list"],
+      value: [sortedList]
     }
   });
 }]
