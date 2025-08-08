@@ -8334,7 +8334,8 @@ justifyContent: 'center',
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
    arrRefStrings: [`productsEcommerce`],
             arrFuncs: [async (...args) =>
@@ -8342,7 +8343,16 @@ justifyContent: 'center',
           keyPath: [`sc.a2.list`],
           value: [`$arg_callback`]
         }})],
-        }})]
+        }}), () => {
+  const list = tools.getCtData("sc.a2.list");
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a2.originalList"],
+      value: [list]
+    }
+  });
+}]
  , trigger: 'on init'
 }})],
 
