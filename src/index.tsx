@@ -8387,7 +8387,8 @@ justifyContent: 'center',
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
    arrRefStrings: [`productsEcommerce`],
             arrFuncs: [async (...args) =>
@@ -8395,6 +8396,10 @@ justifyContent: 'center',
           keyPath: [`sc.a2.list`],
           value: [`$arg_callback`]
         }})],
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.originalList`],
+          value: [`sc.a2.list`]
         }})]
  , trigger: 'on init'
 }})],
