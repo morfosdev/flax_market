@@ -7646,7 +7646,20 @@ paddingHorizontal: '10px',
 
             styles:[`{ width: '70px', left: '14px', }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const list = tools.getCtData("sc.a2.list");
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a2.originalList"],
+      value: [list]
+    }
+  });
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
@@ -8334,8 +8347,7 @@ justifyContent: 'center',
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
+ arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
    arrRefStrings: [`productsEcommerce`],
             arrFuncs: [async (...args) =>
@@ -8343,24 +8355,7 @@ async (...args) =>
           keyPath: [`sc.a2.list`],
           value: [`$arg_callback`]
         }})],
-        }}), () => {
-  const list = tools.getCtData("sc.a2.list");
-
-  if (!list || !Array.isArray(list)) {
-    console.log("List not ready yet.");
-    return;
-  }
-
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a2.originalList"],
-      value: [list]
-    }
-  });
-
-  console.log("Original list saved.");
-}]
+        }})]
  , trigger: 'on init'
 }})],
 
