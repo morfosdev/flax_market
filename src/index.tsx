@@ -7648,8 +7648,7 @@ paddingHorizontal: '10px',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
+ arrFunctions: [() => {
   const list = tools.getCtData("sc.a2.list");
   tools.functions.setVar({
     args: "",
@@ -7658,8 +7657,8 @@ paddingHorizontal: '10px',
       value: [list]
     }
   });
-}, () => {
-  const list = tools.getCtData("sc.a2.originalList") || [];
+
+ const list = tools.getCtData("sc.a2.originalList") || [];
   const sortField = tools.getCtData("sc.a2.sortField");
   const ascending = tools.getCtData("sc.a2.sortAsc");
 
@@ -7681,6 +7680,7 @@ paddingHorizontal: '10px',
       value: [sortedList]
     }
   });
+
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
