@@ -7822,7 +7822,7 @@ flex: 1,
   const currentField = tools.getCtData("sc.a2.sortField");
   const currentAsc = tools.getCtData("sc.a2.sortAsc");
 
-  const newField = "price"; // change to your field
+  const newField = "name"; // change to your field
   const newAsc = currentField === newField ? !currentAsc : true;
 
   tools.functions.setVar({
