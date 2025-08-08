@@ -7658,7 +7658,7 @@ paddingHorizontal: '10px',
     }
   });
 
- const list = tools.getCtData("sc.a2.originalList") || [];
+ const list2 = tools.getCtData("sc.a2.originalList") || [];
   const sortField = tools.getCtData("sc.a2.sortField");
   const ascending = tools.getCtData("sc.a2.sortAsc");
 
