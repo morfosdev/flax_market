@@ -7410,24 +7410,7 @@ paddingHorizontal: 20,
 borderRadius: 10,
 }`],
 
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-  const list = tools.getCtData("sc.a2.list");
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a2.originalList"],
-      value: [list]
-    }
-  });
-}, () => {
-  const list = tools.getCtData("sc.a2.list");
-  console.log("List is:", list);
-}]
- , trigger: 'on init'
-}})],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -8349,7 +8332,8 @@ justifyContent: 'center',
           }}/>
         ],
 
-          functions:[async (...args) =>
+          functions:[
+        async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
@@ -8360,6 +8344,23 @@ justifyContent: 'center',
           value: [`$arg_callback`]
         }})],
         }})]
+ , trigger: 'on init'
+}}), async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+() => {
+  const list = tools.getCtData("sc.a2.list");
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a2.originalList"],
+      value: [list]
+    }
+  });
+}, () => {
+  const list = tools.getCtData("sc.a2.list");
+  console.log("List is:", list);
+}]
  , trigger: 'on init'
 }})],
 
