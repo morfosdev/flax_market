@@ -7831,7 +7831,7 @@ flex: 1,
       keyPath: ["sc.a2.sortField", "sc.a2.sortAsc"],
       value: [newField, newAsc]
     }
-  });
+  })
   (); 
 }]
  , trigger: 'on press'
