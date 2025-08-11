@@ -9968,7 +9968,7 @@ padding: 5,
  arrFunctions: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a3.iptsChanges.image`],
-          value: ['no value']
+          value: [`https://pangaia.com/cdn/shop/files/DNA_Oversized_T-Shirt_-Summit_Blue-1.png?v=1707830032`]
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
@@ -10015,7 +10015,15 @@ borderColor: '#eee',
 padding: 5,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.iptsChanges.image`],
+          value: [`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqMvMuYQIvpZGdgD7O8ESBZxgZG9QyKkxnw&s`]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
@@ -10058,7 +10066,15 @@ borderColor: '#eee',
 padding: 5,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.iptsChanges.image`],
+          value: [`https://isto.pt/cdn/shop/files/HW_Navy_Flatlay.webp?v=1747408830&width=1946`]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
