@@ -8328,10 +8328,11 @@ console.log("MINHA CUSTOM -->",{args})}]
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
-//const status = $arg_stock;
+const item = tools.findFlatItem(args);
+const isAvailable =  item.stock;
 return (
-  <span style={{ color: status === "In Stock" ? "green" : "red" }}>
-    {status}
+  <span style={{ color: isAvailable === "In Stock" ? "green" : "red" }}>
+    {isAvailable}
   </span>
 )
 }] 
