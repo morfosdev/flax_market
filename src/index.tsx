@@ -8328,7 +8328,7 @@ console.log("MINHA CUSTOM -->",{args})}]
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
-const status = $args;
+//const status = $arg_stock;
 return (
   <span style={{ color: status === "In Stock" ? "green" : "red" }}>
     {status}
