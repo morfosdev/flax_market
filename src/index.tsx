@@ -8320,7 +8320,7 @@ flex: 1,
         }}/>, 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [(args) => {
+  arrItems: [() => {
 console.log("MINHA CUSTOM -->",{args})}] 
 }}/>
 ],
