@@ -5079,7 +5079,7 @@ width: '155px',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("a1AdmDash");
         }
         ]
  , trigger: 'on press'
@@ -6800,7 +6800,7 @@ alignItems: 'center',
 flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
-backgroundColor: '#F6F6F6',
+backgroundColor: 'white',
 borderRadius: '8px',
 width: '155px',
 }`],
@@ -6810,7 +6810,7 @@ width: '155px',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admDash");
+          return tools.goTo("a1AdmDash");
         }
         ]
  , trigger: 'on press'
@@ -6877,6 +6877,7 @@ width: '10px',
 fontSize: 14,
 fontWeight: '500',
 fontFamily: 'Inter',
+color: '#717171',
 }`
           ],
 
