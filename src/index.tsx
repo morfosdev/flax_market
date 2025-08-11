@@ -8320,7 +8320,16 @@ flex: 1,
         }}/>, 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => <RN.Text>Element Default</RN.Text>] 
+  arrItems: [() => {
+console.log("MINHA CUSTOM -->",{arg});
+
+const status = '$arg_stock';
+return (
+  <span style={{ color: status === "In Stock" ? "green" : "red" }}>
+    {status}
+  </span>
+)
+}] 
 }}/>
 ],
 
