@@ -15342,7 +15342,7 @@ alignItems: 'center',
 flexDirection: 'row',
 paddingHorizontal: '24',
 paddingVertical: '8',
-backgroundColor: '#F6F6F6',
+backgroundColor: 'white',
 borderRadius: '8px',
 width: '155px',
 }`],
@@ -15369,7 +15369,7 @@ width: '155px',
     {...props}
   >
     <Path
-      stroke="#0E1422"
+      stroke="#5C5F6A"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.429}
@@ -15380,105 +15380,7 @@ width: '155px',
 
       svgOriginal: `
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14.7692 11.1666C16.681 11.1666 18.2308 9.67424 18.2308 7.83331C18.2308 5.99237 16.681 4.5 14.7692 4.5M18.2308 20.5H21V19.7771C20.9889 18.7608 20.7106 17.7638 20.191 16.8792C19.6713 15.9946 18.9274 15.2513 18.0285 14.7186C17.4475 14.3743 16.8139 14.1253 16.1538 13.9793M9.23077 11.1666C11.1425 11.1666 12.6923 9.67424 12.6923 7.83331C12.6923 5.99237 11.1425 4.5 9.23077 4.5C7.31902 4.5 5.76923 5.99237 5.76923 7.83331C5.76923 9.67424 7.31902 11.1666 9.23077 11.1666ZM3 20.4999H15.4615V19.7771C15.4505 18.7608 15.1722 17.7638 14.6526 16.8792C14.1329 15.9946 13.3889 15.2512 12.4901 14.7186C11.5912 14.1859 10.5668 13.8814 9.51257 13.8333C9.41858 13.829 9.32462 13.8268 9.23077 13.8266C9.13692 13.8268 9.04296 13.829 8.94897 13.8333C7.89474 13.8814 6.87035 14.1859 5.97148 14.7186C5.07263 15.2512 4.32864 15.9946 3.80899 16.8792C3.28935 17.7638 3.01102 18.7608 3 19.7771V20.4999Z" stroke="#0E1422" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-      `,
-
-      altura: "24px",
-
-      largura: "24px",
-
-      preenchimento: [`#FFF`],
-
-      args,
-    }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '10px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-fontWeight: '500',
-fontFamily: 'Inter',
-}`
-          ],
-
-          children: [
-            `Customers`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-alignItems: 'center',
-flexDirection: 'row',
-paddingHorizontal: '24',
-paddingVertical: '8',
-backgroundColor: 'white',
-borderRadius: '8px',
-width: '155px',
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a7AdmReviews");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[
-        (...args:any) => <Elements.SvgView1 pass={{
-      componentSvg: (Svg:any, SvgObj:any) => {
-        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
-        return (props:any) => (<Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={25}
-    fill="red"
-    viewBox="0 0 24 25"
-    {...props}
-  >
-    <Path
-      stroke="#5C5F6A"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={1.4}
-      d="m12 6 2.163 4.279 4.837.69-3.5 3.329.826 4.702L12 16.779 7.674 19l.826-4.702L5 10.969l4.837-.69L12 6Z"
-    />
-  </Svg>)
-      },
-
-      svgOriginal: `
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 6L14.163 10.2787L19 10.969L15.5 14.2976L16.326 19L12 16.7787L7.674 19L8.5 14.2976L5 10.969L9.837 10.2787L12 6Z" stroke="#5C5F6A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.7692 11.1666C16.681 11.1666 18.2308 9.67424 18.2308 7.83331C18.2308 5.99237 16.681 4.5 14.7692 4.5M18.2308 20.5H21V19.7771C20.9889 18.7608 20.7106 17.7638 20.191 16.8792C19.6713 15.9946 18.9274 15.2513 18.0285 14.7186C17.4475 14.3743 16.8139 14.1253 16.1538 13.9793M9.23077 11.1666C11.1425 11.1666 12.6923 9.67424 12.6923 7.83331C12.6923 5.99237 11.1425 4.5 9.23077 4.5C7.31902 4.5 5.76923 5.99237 5.76923 7.83331C5.76923 9.67424 7.31902 11.1666 9.23077 11.1666ZM3 20.4999H15.4615V19.7771C15.4505 18.7608 15.1722 17.7638 14.6526 16.8792C14.1329 15.9946 13.3889 15.2512 12.4901 14.7186C11.5912 14.1859 10.5668 13.8814 9.51257 13.8333C9.41858 13.829 9.32462 13.8268 9.23077 13.8266C9.13692 13.8268 9.04296 13.829 8.94897 13.8333C7.89474 13.8814 6.87035 14.1859 5.97148 14.7186C5.07263 15.2512 4.32864 15.9946 3.80899 16.8792C3.28935 17.7638 3.01102 18.7608 3 19.7771V20.4999Z" stroke="#5C5F6A" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
       `,
@@ -15515,6 +15417,104 @@ fontSize: 14,
 fontWeight: '500',
 fontFamily: 'Inter',
 color: '#717171',
+}`
+          ],
+
+          children: [
+            `Customers`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+flexDirection: 'row',
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: '#F6F6F6',
+borderRadius: '8px',
+width: '155px',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a7AdmReviews");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[
+        (...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={25}
+    fill="red"
+    viewBox="0 0 24 25"
+    {...props}
+  >
+    <Path
+      stroke="#0E1422"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.4}
+      d="m12 6 2.163 4.279 4.837.69-3.5 3.329.826 4.702L12 16.779 7.674 19l.826-4.702L5 10.969l4.837-.69L12 6Z"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 6L14.163 10.2787L19 10.969L15.5 14.2976L16.326 19L12 16.7787L7.674 19L8.5 14.2976L5 10.969L9.837 10.2787L12 6Z" stroke="#0E1422" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      `,
+
+      altura: "24px",
+
+      largura: "24px",
+
+      preenchimento: [`#FFF`],
+
+      args,
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
