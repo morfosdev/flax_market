@@ -10069,7 +10069,20 @@ borderColor: '#eee',
 padding: 5,
 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '48px',
+height: '48px',
+}],
+
+      URIvariablePath:[`https://pangaia.com/cdn/shop/files/DNA_Oversized_T-Shirt_-Summit_Blue-1.png?v=1707830032`],
+
+      args,
+    }}/>],
 
             args,
           }}/>
@@ -10088,7 +10101,20 @@ borderColor: '#eee',
 padding: 5,
 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '48px',
+height: '48px',
+}],
+
+      URIvariablePath:[`https://pangaia.com/cdn/shop/files/DNA_Oversized_T-Shirt_-Summit_Blue-1.png?v=1707830032`],
+
+      args,
+    }}/>],
 
             args,
           }}/>
@@ -10106,7 +10132,20 @@ borderColor: '#eee',
 padding: 5,
 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '48px',
+height: '48px',
+}],
+
+      URIvariablePath:[`https://pangaia.com/cdn/shop/files/DNA_Oversized_T-Shirt_-Summit_Blue-1.png?v=1707830032`],
+
+      args,
+    }}/>],
 
             args,
           }}/>
