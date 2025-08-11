@@ -10004,7 +10004,19 @@ flexDirection: 'row',
       preenchimento: [`#eee`],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ width: '10px', }`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
