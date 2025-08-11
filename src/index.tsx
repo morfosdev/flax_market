@@ -5532,6 +5532,9 @@ width: '10px',
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
+color: '#717171',
 }`
           ],
 
@@ -5626,6 +5629,9 @@ width: '10px',
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
+color: '#717171',
 }`
           ],
 
