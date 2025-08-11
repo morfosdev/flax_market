@@ -10103,7 +10103,8 @@ height: '48px',
 
             styles:[`{
 width: '200px',
-	alignItems: 'center',
+alignItems: 'center',
+justifyContent: 'center,
 borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
