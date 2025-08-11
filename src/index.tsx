@@ -7816,7 +7816,8 @@ flex: 1,
 flex: 1,
 }`],
 
-            functions:[async (...args) =>
+            functions:[
+        async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
   const currentField = tools.getCtData("sc.a2.sortField");
@@ -7833,6 +7834,10 @@ flex: 1,
     }
   })
 }]
+ , trigger: 'on press'
+}}), async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [()=>{}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
