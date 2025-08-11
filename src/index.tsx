@@ -17360,7 +17360,12 @@ paddingVertical: 20,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+}`
           ],
 
           children: [
@@ -17410,7 +17415,12 @@ marginVertical: 5,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+}`
           ],
 
           children: [
@@ -17460,7 +17470,12 @@ marginVertical: 5,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+}`
           ],
 
           children: [
