@@ -9937,6 +9937,7 @@ padding: 5,
           args,
 
         }}/>, 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -10092,6 +10093,37 @@ height: '48px',
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+alignItems: 'center',
+padding: 5,
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Upload Image`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
