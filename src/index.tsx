@@ -10111,7 +10111,7 @@ width: '48px',
 height: '48px',
 }],
 
-      URIvariablePath:[`https://pangaia.com/cdn/shop/files/DNA_Oversized_T-Shirt_-Summit_Blue-1.png?v=1707830032`],
+      URIvariablePath:[`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqMvMuYQIvpZGdgD7O8ESBZxgZG9QyKkxnw&s`],
 
       args,
     }}/>],
@@ -10142,7 +10142,7 @@ width: '48px',
 height: '48px',
 }],
 
-      URIvariablePath:[`https://pangaia.com/cdn/shop/files/DNA_Oversized_T-Shirt_-Summit_Blue-1.png?v=1707830032`],
+      URIvariablePath:[`https://isto.pt/cdn/shop/files/HW_Navy_Flatlay.webp?v=1747408830&width=1946`],
 
       args,
     }}/>],
