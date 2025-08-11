@@ -17241,7 +17241,7 @@ paddingVertical: 20,
         }}/>, 
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
- placeholder: 'Search products',
+placeholder: 'Digite um Email válido',
 }`],
 
           stylesArray: [`{
@@ -17251,9 +17251,13 @@ borderColor: '#eee',
 padding: 10,
 }`],
 
-          path: [" "],
+          path: [`sc.a0.login.forms.email`],
 
-          funcsArray: [() => {}],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a0.login.forms.email`],
+          value: [`$arg_callback`]
+        }})],
 
           args,
         }}/>, 
