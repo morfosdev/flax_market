@@ -17244,7 +17244,12 @@ paddingVertical: 20,
  placeholder: 'Search products',
 }`],
 
-          stylesArray: [``],
+          stylesArray: [`{
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 10,
+}`],
 
           path: [" "],
 
