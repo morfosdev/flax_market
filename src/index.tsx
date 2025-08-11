@@ -5273,7 +5273,7 @@ width: '155px',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admOrders");
+          return tools.goTo("a5AdmOrders");
         }
         ]
  , trigger: 'on press'
@@ -5372,7 +5372,7 @@ width: '155px',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admCustomers");
+          return tools.goTo("a6AdmCustomers");
         }
         ]
  , trigger: 'on press'
@@ -5471,7 +5471,7 @@ width: '155px',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admReviews");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
@@ -5565,7 +5565,7 @@ width: '155px',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("admSettings");
+          return tools.goTo("a8AdmSettings");
         }
         ]
  , trigger: 'on press'
