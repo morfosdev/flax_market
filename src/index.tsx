@@ -16521,10 +16521,13 @@ height: '40px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: 'white',
+borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
@@ -16549,7 +16552,7 @@ marginBottom: 10,
     {...props}
   >
     <Path
-      stroke="#0E1422"
+      stroke="#5C5F6A"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.43}
@@ -16560,10 +16563,10 @@ marginBottom: 10,
 
       svgOriginal: `
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.9231 11.9231H14.3077C13.9891 11.9231 13.7308 12.1814 13.7308 12.5V19.4231C13.7308 19.7417 13.9891 20 14.3077 20H18.9231C19.2417 20 19.5 19.7417 19.5 19.4231V12.5C19.5 12.1814 19.2417 11.9231 18.9231 11.9231Z" stroke="#0E1422" stroke-width="1.43" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M18.9231 5H14.3077C13.9891 5 13.7308 5.2583 13.7308 5.57692V7.89615C13.7308 8.21478 13.9891 8.47308 14.3077 8.47308H18.9231C19.2417 8.47308 19.5 8.21478 19.5 7.89615V5.57692C19.5 5.2583 19.2417 5 18.9231 5Z" stroke="#0E1422" stroke-width="1.43" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.69231 5H5.07692C4.7583 5 4.5 5.2583 4.5 5.57692V12.5C4.5 12.8186 4.7583 13.0769 5.07692 13.0769H9.69231C10.0109 13.0769 10.2692 12.8186 10.2692 12.5V5.57692C10.2692 5.2583 10.0109 5 9.69231 5Z" stroke="#0E1422" stroke-width="1.43" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M9.69231 16.5269H5.07692C4.7583 16.5269 4.5 16.7852 4.5 17.1038V19.4231C4.5 19.7417 4.7583 20 5.07692 20H9.69231C10.0109 20 10.2692 19.7417 10.2692 19.4231V17.1038C10.2692 16.7852 10.0109 16.5269 9.69231 16.5269Z" stroke="#0E1422" stroke-width="1.43" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.9231 11.9231H14.3077C13.9891 11.9231 13.7308 12.1814 13.7308 12.5V19.4231C13.7308 19.7417 13.9891 20 14.3077 20H18.9231C19.2417 20 19.5 19.7417 19.5 19.4231V12.5C19.5 12.1814 19.2417 11.9231 18.9231 11.9231Z" stroke="#5C5F6A" stroke-width="1.43" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.9231 5H14.3077C13.9891 5 13.7308 5.2583 13.7308 5.57692V7.89615C13.7308 8.21478 13.9891 8.47308 14.3077 8.47308H18.9231C19.2417 8.47308 19.5 8.21478 19.5 7.89615V5.57692C19.5 5.2583 19.2417 5 18.9231 5Z" stroke="#5C5F6A" stroke-width="1.43" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.69231 5H5.07692C4.7583 5 4.5 5.2583 4.5 5.57692V12.5C4.5 12.8186 4.7583 13.0769 5.07692 13.0769H9.69231C10.0109 13.0769 10.2692 12.8186 10.2692 12.5V5.57692C10.2692 5.2583 10.0109 5 9.69231 5Z" stroke="#5C5F6A" stroke-width="1.43" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.69231 16.5269H5.07692C4.7583 16.5269 4.5 16.7852 4.5 17.1038V19.4231C4.5 19.7417 4.7583 20 5.07692 20H9.69231C10.0109 20 10.2692 19.7417 10.2692 19.4231V17.1038C10.2692 16.7852 10.0109 16.5269 9.69231 16.5269Z" stroke="#5C5F6A" stroke-width="1.43" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
       `,
@@ -16575,7 +16578,21 @@ marginBottom: 10,
       preenchimento: [`#FFF`],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -16583,6 +16600,9 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
+color: '#717171',
 }`
           ],
 
@@ -16603,10 +16623,13 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: 'white',
+borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
@@ -16626,6 +16649,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -16643,16 +16667,31 @@ marginBottom: 10,
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.23077 10.1667H18.7692M5.23077 10.1667V18.3333C5.23077 18.6427 5.36044 18.9395 5.59125 19.1583C5.82207 19.377 6.13511 19.5 6.46154 19.5H17.5385C17.8649 19.5 18.178 19.377 18.4087 19.1583C18.6395 18.9395 18.7692 18.6427 18.7692 18.3333V10.1667M5.23077 10.1667C4.55103 10.1667 4 9.64433 4 9V6.66667C4 6.02234 4.55103 5.5 5.23077 5.5H18.7692C19.449 5.5 20 6.02234 20 6.66667V9C20 9.64433 19.449 10.1667 18.7692 10.1667M10.1538 13.6667H13.8462" stroke="#5C5F6A" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
+
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -16662,6 +16701,7 @@ marginBottom: 10,
 fontSize: 14,
 fontWeight: '500',
 fontFamily: 'Inter',
+color: '#717171',
 }`
           ],
 
@@ -16682,10 +16722,13 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: 'white',
+borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
@@ -16733,7 +16776,21 @@ marginBottom: 10,
       preenchimento: [`#FFF`],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -16741,6 +16798,9 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
+color: '#717171',
 }`
           ],
 
@@ -16761,10 +16821,13 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: 'white',
+borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
@@ -16812,7 +16875,21 @@ marginBottom: 10,
       preenchimento: [`#FFF`],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -16820,6 +16897,9 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
+color: '#717171',
 }`
           ],
 
@@ -16840,10 +16920,13 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: '#F6F6F6',
+borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
@@ -16868,7 +16951,7 @@ marginBottom: 10,
     {...props}
   >
     <Path
-      stroke="#5C5F6A"
+      stroke="#0E1422"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.4}
@@ -16879,7 +16962,7 @@ marginBottom: 10,
 
       svgOriginal: `
         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 6L14.163 10.2787L19 10.969L15.5 14.2976L16.326 19L12 16.7787L7.674 19L8.5 14.2976L5 10.969L9.837 10.2787L12 6Z" stroke="#5C5F6A" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 6L14.163 10.2787L19 10.969L15.5 14.2976L16.326 19L12 16.7787L7.674 19L8.5 14.2976L5 10.969L9.837 10.2787L12 6Z" stroke="#0E1422" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
       `,
@@ -16891,7 +16974,21 @@ marginBottom: 10,
       preenchimento: [`#FFF`],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -16899,6 +16996,8 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
 }`
           ],
 
@@ -16918,10 +17017,13 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '120px',
 alignItems: 'center',
 flexDirection: 'row',
-marginBottom: 10,
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: 'white',
+borderRadius: '8px',
+width: '155px',
 }`],
 
             functions:[async (...args) =>
@@ -16969,7 +17071,21 @@ marginBottom: 10,
       preenchimento: [`#FFF`],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -16977,6 +17093,9 @@ marginBottom: 10,
           arrStyles: [
             `{
 fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
+color: '#717171',
 }`
           ],
 
