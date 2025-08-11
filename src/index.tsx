@@ -9522,15 +9522,7 @@ flexDirection: 'row',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -9576,15 +9568,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -9630,15 +9614,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -9684,15 +9660,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -9738,15 +9706,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -9791,15 +9751,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -9856,15 +9808,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -9910,15 +9854,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -11181,15 +11117,7 @@ flexDirection: 'row',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -11235,15 +11163,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -11289,15 +11209,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -11343,15 +11255,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -11397,15 +11301,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -11450,15 +11346,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -11515,15 +11403,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -11569,15 +11449,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -11622,15 +11494,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -17375,40 +17239,28 @@ paddingVertical: 20,
           args,
 
         }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+ placeholder: 'Search products',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
-
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
+          stylesArray: [`{
+width: '320px',
+height: '45px',
+justifyContent: 'center',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+paddingHorizontal: 15,
+paddingVertical: 10,
+}`],
 
           path: [" "],
 
           funcsArray: [() => {}],
 
           args,
-        }}/>],
-
-            args,
-          }}/>
-        , 
+        }}/>, 
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -17435,15 +17287,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
@@ -17489,15 +17333,7 @@ marginVertical: 5,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-marginVertical: 5,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
