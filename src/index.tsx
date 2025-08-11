@@ -17252,6 +17252,18 @@ paddingVertical: 20,
           args,
 
         }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[``],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
