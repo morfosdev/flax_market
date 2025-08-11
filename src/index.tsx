@@ -9880,6 +9880,7 @@ marginVertical: 5,
           args,
 
         }}/>, 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -9965,6 +9966,78 @@ color: '#eee',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+alignItems: 'center',
+padding: 5,
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '60px',
+alignItems: 'center',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 5,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '60px',
+alignItems: 'center',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 5,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '60px',
+alignItems: 'center',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 5,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
