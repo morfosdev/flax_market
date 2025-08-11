@@ -17244,16 +17244,7 @@ paddingVertical: 20,
  placeholder: 'Search products',
 }`],
 
-          stylesArray: [`{
-width: '320px',
-height: '45px',
-justifyContent: 'center',
-borderRadius: 6,
-borderWidth: 1,
-borderColor: '#E6E7E8',
-paddingHorizontal: 15,
-paddingVertical: 10,
-}`],
+          stylesArray: [``],
 
           path: [" "],
 
