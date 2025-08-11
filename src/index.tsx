@@ -8321,7 +8321,7 @@ flex: 1,
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [(args) => {
-console.log("MINHA CUSTOM -->",{args});] 
+console.log("MINHA CUSTOM -->",{args})] 
 }}/>
 ],
 
