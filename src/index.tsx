@@ -8297,34 +8297,6 @@ flex: 1,
  arrFunctions: [()=>{}]
  , trigger: 'on init'
 }})],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#5C5F6A",
-}`
-          ],
-
-          children: [
-            `$arg_stock`
-          ],
-
-          args,
-
-        }}/>, 
-        
-
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => {
-console.log("MINHA CUSTOM -->",{args})}] 
-}}/>
-, 
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
