@@ -618,6 +618,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -638,9 +639,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -2754,6 +2755,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -2774,9 +2776,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -3548,6 +3550,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -3568,9 +3571,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -5483,6 +5486,7 @@ width: '155px',
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -5503,9 +5507,9 @@ width: '155px',
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -7130,6 +7134,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -7150,9 +7155,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -8880,6 +8885,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -8900,9 +8906,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -10343,6 +10349,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -10363,9 +10370,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -11776,6 +11783,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -11796,9 +11804,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -13266,6 +13274,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -13286,9 +13295,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -14692,6 +14701,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -14712,9 +14722,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -16045,6 +16055,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -16065,9 +16076,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
@@ -17522,6 +17533,7 @@ marginBottom: 10,
     xmlns="http://www.w3.org/2000/svg"
     width={24}
     height={25}
+    fill="red"
     viewBox="0 0 24 25"
     {...props}
   >
@@ -17542,9 +17554,9 @@ marginBottom: 10,
 
       `,
 
-      altura: "20px",
+      altura: "24px",
 
-      largura: "20px",
+      largura: "24px",
 
       preenchimento: [`#FFF`],
 
