@@ -10114,7 +10114,12 @@ flexDirection: 'row',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [undefined]
+ arrFunctions: [async (...args) =>
+        functions.firebase.uploadFileTool({ args, pass:{
+            fbInit: [''],
+            arrFiles: [() => {}],
+            arrFuncs: [!#!functions return!#!],
+        }})]
  , trigger: 'on press'
 }})],            childrenItems:[
         (...args:any) => <Elements.SvgView1 pass={{
