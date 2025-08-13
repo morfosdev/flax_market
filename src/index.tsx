@@ -10161,7 +10161,8 @@ flexDirection: 'row',
 
             args,
           }}/>
-        , (...args:any) => <Elements.Text pass={{
+        , 
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -10176,7 +10177,12 @@ flexDirection: 'row',
 
           args,
 
-        }}/>],
+        }}/>, 
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => <RN.Text>Element Default</RN.Text>] 
+}}/>
+],
 
             args,
           }}/>
