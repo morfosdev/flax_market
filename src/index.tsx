@@ -10180,8 +10180,7 @@ flexDirection: 'row',
         }}/>, 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [          <ActivityIndicator size="large" />
-          <Text>Completed</Text>] 
+  arrItems: [() => <RN.Text>Element Default</RN.Text>] 
 }}/>
 ],
 
