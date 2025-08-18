@@ -17431,6 +17431,21 @@ paddingVertical: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -17451,8 +17466,7 @@ paddingVertical: 20,
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.IptTxtEdit pass={{
+        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
 placeholder: 'Digite um Email válido',
 }`],
@@ -17464,31 +17478,12 @@ borderColor: '#eee',
 padding: 10,
 }`],
 
-          path: [`sc.a0.login.forms.email`],
+          path: [" "],
 
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a0.login.forms.email`],
-          value: [`$arg_callback`]
-        }})],
+          funcsArray: [() => {}],
 
           args,
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
+        }}/>],
 
             args,
           }}/>
