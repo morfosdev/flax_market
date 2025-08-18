@@ -17479,9 +17479,11 @@ placeholder: 'Digite um Email válido',
 }`],
 
           stylesArray: [`{
-borderRadius: 5,
+width: '320px',
+height: '45px',
+borderRadius: 6,
 borderWidth: 1,
-borderColor: '#eee',
+borderColor: '#E6E7E8',
 padding: 10,
 }`],
 
