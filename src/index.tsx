@@ -13713,7 +13713,7 @@ justifyContent: 'center',
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a5.list.orders`],
-          value: [`$arg_item`]
+          value: [`$arg_callback`]
         }})],
         }})]
  , trigger: 'on init'
