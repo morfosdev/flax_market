@@ -17527,7 +17527,7 @@ padding: 10,
           ],
 
           children: [
-            `Site Name`
+            `Support Email`
           ],
 
           args,
@@ -17556,7 +17556,6 @@ padding: 10,
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -17586,7 +17585,7 @@ padding: 10,
           ],
 
           children: [
-            `Site Name`
+            `Monthly Order Goal`
           ],
 
           args,
@@ -17604,99 +17603,6 @@ borderWidth: 1,
 borderColor: '#E6E7E8',
 padding: 10,
 }`],
-
-          path: [" "],
-
-          funcsArray: [() => {}],
-
-          args,
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#474B57",
-}`
-          ],
-
-          children: [
-            `Support Email`
-          ],
-
-          args,
-
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#474B57",
-}`
-          ],
-
-          children: [
-            `Monthly Order Goal`
-          ],
-
-          args,
-
-        }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '200px',
-justifyContent: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
-
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
 
           path: [" "],
 
