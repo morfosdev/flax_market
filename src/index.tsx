@@ -13576,14 +13576,9 @@ justifyContent: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [
 async (...args) =>
-        functions.firebase.getDocTool({ args, pass:{
-  arrRefStrings: [
-        `ordersEcommerce`, `$arg_docId`],
-            arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a4.editData.product`],
+          keyPath: [`sc.a4b.editData.order`],
           value: [`$arg_item`]
-        }})],
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
