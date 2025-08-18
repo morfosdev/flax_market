@@ -116,7 +116,9 @@ const getCondValue = (typeValue, value, args) => {
 
     // ---- Para Callback Functions
     // ---- Ex. onChangeText do TextInput
+    console.log('key - 1', key);
     const condInput = key === 'callback';
+    console.log('condInput - 1', condInput);
     if (condInput) {
       updatedValue = args[0];
     }
