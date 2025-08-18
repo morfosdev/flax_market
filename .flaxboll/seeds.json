@@ -2166,7 +2166,7 @@
           "en": "Custom Capsule"
         },
         "capsDescription": { "pt-br": "", "en": "" },
-        "capsCodeTypes": ["function"],
+        "capsCodeTypes": ["function", "custom capsule"],
         "capsCodeText": "!#!custom capsule!#!",
         "capsCodeVersionID": "1",
         "capsCodeInputs": {
