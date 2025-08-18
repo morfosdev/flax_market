@@ -18,13 +18,12 @@ export const setVar = (props: Tprops_setVar) => {
   // ---------- set Caps Inputs
   const { args, pass } = props;
   let { keyPath, value } = pass;
-  console.log('llp', { value });
+  console.log({ value });
 
   // ---------- join String
   const url = keyPath.reduce((prev, curr) => prev + curr, '');
 
   const typeValue = testArgsVars(value);
-  console.log({ typeValue });
 
   // -------------------------------
   // ------------- IF is FREE VALUE
@@ -108,7 +107,6 @@ const getCondValue = (typeValue, value, args) => {
   const joinedChild = value.join();
   if (joinedChild.includes('$var_')) typeValue = 'var';
   if (joinedChild.includes('$arg_')) typeValue = 'arg';
-  console.log('Type - 1', joinedChild);
 
   // --------------------------
   // ------- Tratamento de ARGs
