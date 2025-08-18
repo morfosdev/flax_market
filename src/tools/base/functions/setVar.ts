@@ -116,9 +116,8 @@ const getCondValue = (typeValue, value, args) => {
 
     // ---- Para Callback Functions
     // ---- Ex. onChangeText do TextInput
-    console.log('key - 1', key);
     const condInput = key === 'callback';
-    console.log('condInput - 1', condInput);
+
     if (condInput) {
       updatedValue = args[0];
     }
@@ -144,7 +143,6 @@ const getCondValue = (typeValue, value, args) => {
   // ------- Tratamento de VARs
   // --------------------------
   if (typeValue === 'var') {
-    console.log({ joinedChild });
     const [condVar, varValue] = getVarValue(joinedChild, 'noComponent');
     if (condVar) updatedValue = varValue;
     if (!condVar) console.log('VAR ERROR', { updatedValue });
@@ -152,3 +150,4 @@ const getCondValue = (typeValue, value, args) => {
 
   return updatedValue;
 };
+
