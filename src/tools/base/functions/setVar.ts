@@ -107,6 +107,7 @@ const getCondValue = (typeValue, value, args) => {
   const joinedChild = value.join();
   if (joinedChild.includes('$var_')) typeValue = 'var';
   if (joinedChild.includes('$arg_')) typeValue = 'arg';
+  console.log('Type - 1', joinedChild);
 
   // --------------------------
   // ------- Tratamento de ARGs
@@ -152,3 +153,4 @@ const getCondValue = (typeValue, value, args) => {
 
   return updatedValue;
 };
+
