@@ -17475,7 +17475,125 @@ paddingVertical: 20,
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
-placeholder: 'Digite um Email válido',
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+width: '320px',
+height: '45px',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+padding: 10,
+}`],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+}`
+          ],
+
+          children: [
+            `Site Name`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+width: '320px',
+height: '45px',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+padding: 10,
+}`],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+}`
+          ],
+
+          children: [
+            `Site Name`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
 }`],
 
           stylesArray: [`{
