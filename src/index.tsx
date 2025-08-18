@@ -9484,7 +9484,10 @@ flex: 1,
             args,
           }}/>
         , 
-        
+        (...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -10395,7 +10398,9 @@ flexDirection: 'row',
 
             args,
           }}/>
-        , 
+        ],
+            args,
+        }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
