@@ -8375,11 +8375,6 @@ justifyContent: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [
 async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a4.editData.product`],
-          value: [`$arg_callback`]
-        }}), 
-async (...args) =>
         functions.firebase.getDocTool({ args, pass:{
   arrRefStrings: [
         `productsEcommerce`, `$arg_docId`],
