@@ -10251,6 +10251,8 @@ async (...args) =>
           arrStyles: [
             `{
 color: '#FFF',
+fontFamily: 'Inter',
+fontSize: '14px',
 }`
           ],
 
@@ -10316,6 +10318,8 @@ async (...args) =>
           arrStyles: [
             `{
 color: '#FFF',
+fontFamily: 'Inter',
+fontSize: '14px',
 }`
           ],
 
