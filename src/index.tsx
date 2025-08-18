@@ -17464,7 +17464,7 @@ paddingVertical: 20,
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
-  paddingVertical: '2',
+  paddingVertical: '5',
 }`
           ],
 
@@ -17524,7 +17524,7 @@ padding: 10,
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
-  paddingVertical: '2',
+  paddingVertical: '5',
 }`
           ],
 
@@ -17583,7 +17583,7 @@ padding: 10,
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
-  paddingVertical: '2',
+  paddingVertical: '5',
 }`
           ],
 
