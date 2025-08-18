@@ -24,6 +24,7 @@ export const setVar = (props: Tprops_setVar) => {
   const url = keyPath.reduce((prev, curr) => prev + curr, '');
 
   const typeValue = testArgsVars(value);
+  console.log({ typeValue });
 
   // -------------------------------
   // ------------- IF is FREE VALUE
@@ -153,4 +154,3 @@ const getCondValue = (typeValue, value, args) => {
 
   return updatedValue;
 };
-
