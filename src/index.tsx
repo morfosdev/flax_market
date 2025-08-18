@@ -17654,17 +17654,24 @@ padding: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
-padding: 5,
+width: '124px',
+height: '40px',
+paddingHorizontal: '20px',
+paddingVertical: '12px',
 backgroundColor: '#000',
-borderRadius: 5,
+borderRadius: 4,
 alignItems: 'center',
 }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
- , trigger: 'on init'
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a3AdmAddProducts");
+        }
+        ]
+ , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -17673,11 +17680,13 @@ alignItems: 'center',
           arrStyles: [
             `{
 color: '#FFF',
+fontFamily: 'Inter',
+fontSize: '14px',
 }`
           ],
 
           children: [
-            `Save Changes`
+            `Add product`
           ],
 
           args,
