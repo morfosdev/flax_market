@@ -17504,7 +17504,7 @@ padding: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-  height: '10px',
+  height: '15px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
