@@ -17674,6 +17674,8 @@ paddingVertical: '12px',
 backgroundColor: '#0E1422',
 borderRadius: 4,
 alignItems: 'center',
+justifyContent: 'center',
+alignSelf: 'flex-start',
 }`],
 
             functions:[async (...args) =>
