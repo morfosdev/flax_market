@@ -11882,7 +11882,14 @@ color: '#FFF',
           }}/>
         ],
 
-          functions:[()=>{}],
+          functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const product = tools.getCtData("sc.a4.editData.product");
+  console.log("Product data:", product);
+}]
+ , trigger: 'on init'
+}})],
 
           args,
         }}/>, 
