@@ -17433,7 +17433,6 @@ flex: 1,
 
             styles:[`{
 width: '100%',
-height: '100%',
 paddingVertical: 20,
 }`],
 
