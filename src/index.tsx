@@ -17452,6 +17452,28 @@ paddingVertical: 20,
           args,
 
         }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: 'Digite um Email válido',
+}`],
+
+          stylesArray: [`{
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 10,
+}`],
+
+          path: [`sc.a0.login.forms.email`],
+
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a0.login.forms.email`],
+          value: [`$arg_callback`]
+        }})],
+
+          args,
+        }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
