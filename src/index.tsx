@@ -17353,8 +17353,7 @@ async (...args) =>
 flex: 1,
 margin: 10,
 backgroundColor: '#FFF',
-alignItems: 'center',
-paddingHorizontal: 20,
+padding: 10,
 borderRadius: 10,
 }`],
 
@@ -17648,28 +17647,37 @@ padding: 10,
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
             styles:[`{
-width: '124px',
-height: '40px',
-paddingHorizontal: '20px',
+  height: '40px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '144px',
+height: '44px',
+paddingHorizontal: '24px',
 paddingVertical: '12px',
-backgroundColor: '#000',
+backgroundColor: '#0E1422',
 borderRadius: 4,
 alignItems: 'center',
 }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a3AdmAddProducts");
-        }
-        ]
+ arrFunctions: [()=>{}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -17685,7 +17693,7 @@ fontSize: '14px',
           ],
 
           children: [
-            `Add product`
+            `Save Changes`
           ],
 
           args,
