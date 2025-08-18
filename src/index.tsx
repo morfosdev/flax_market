@@ -8384,6 +8384,11 @@ async (...args) =>
           value: [`$arg_callback`]
         }})],
         }}), 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a4.editData.product`],
+          value: [`$arg_callback`]
+        }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
           return tools.goTo("a4AdmEditProducts");
