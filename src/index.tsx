@@ -8381,7 +8381,7 @@ async (...args) =>
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a4.editData.product`],
-          value: [`$arg_full`]
+          value: [`$arg_item`]
         }})],
         }}), 
         (...args) => {
