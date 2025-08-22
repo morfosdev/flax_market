@@ -15362,7 +15362,7 @@ paddingHorizontal: 15,
           ],
 
           children: [
-            `Price`
+            `Date`
           ],
 
           args,
@@ -15380,11 +15380,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a3.iptsChanges.price`],
+          path: [`sc.a5a.iptsChanges.date`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.price`],
+          keyPath: [`sc.a5a.iptsChanges.date`],
           value: [`$arg_callback`]
         }})],
 
