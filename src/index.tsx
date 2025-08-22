@@ -15292,17 +15292,17 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
-  arrRefStrings: [`productsEcommerce`],
-            arrPathData: [`sc.a3.iptsChanges`],
+  arrRefStrings: [`ordersEcommerce`],
+            arrPathData: [`sc.a5a.iptsChanges`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges`],
+          keyPath: [`sc.a5a.iptsChanges`],
           value: [``]
         }})],
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
+          return tools.goTo("a5aAdmAddOrders");
         }
         ]
  , trigger: 'on press'
