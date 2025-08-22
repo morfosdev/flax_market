@@ -11523,11 +11523,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a3.iptsChanges.label`],
+          path: [`sc.a4.editData.product.label`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.label`],
+          keyPath: [`sc.a4.editData.product.label`],
           value: [`$arg_callback`]
         }})],
 
