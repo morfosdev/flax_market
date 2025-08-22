@@ -10332,7 +10332,49 @@ flexDirection: 'row',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [undefined]
+ arrFunctions: [() => {
+  // 1. Create input dynamically to select file
+  const input = document.createElement("input");
+  input.type = "file";
+  input.accept = "image/*"; // change to "*" if you want any file
+
+  input.onchange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) {
+      console.log("No file selected.");
+      return;
+    }
+
+    try {
+      // 2. Firebase Storage reference
+      const storageRef = firebase.storage().ref();
+      const fileRef = storageRef.child("uploads/" + file.name);
+
+      // 3. Upload file
+      const snapshot = await fileRef.put(file);
+
+      // 4. Get download URL
+      const url = await snapshot.ref.getDownloadURL();
+
+      console.log("File uploaded successfully. URL:", url);
+
+      // Save URL into Flaxboll variable so you can use later
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a4.uploadedFileUrl"],
+          value: [url]
+        }
+      });
+
+    } catch (error) {
+      console.error("Upload error:", error);
+    }
+  };
+
+  // Trigger the file input
+  input.click();
+}]
  , trigger: 'on press'
 }})],            childrenItems:[
         (...args:any) => <Elements.SvgView1 pass={{
@@ -10379,8 +10421,7 @@ flexDirection: 'row',
 
             args,
           }}/>
-        , 
-        (...args:any) => <Elements.Text pass={{
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -10395,12 +10436,7 @@ flexDirection: 'row',
 
           args,
 
-        }}/>, 
-
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => <RN.Text>Element Default</RN.Text>] 
-}}/>
-],
+        }}/>],
 
             args,
           }}/>
