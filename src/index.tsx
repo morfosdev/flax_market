@@ -9926,7 +9926,6 @@ paddingHorizontal: 15,
           propsArray: [`{
 placeholder: 'Digite um Email válido',
 multiline: 'true',
-numberOfLines: '4',
 }`],
 
           stylesArray: [`{
