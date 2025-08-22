@@ -11412,10 +11412,8 @@ borderRadius: 10,
 width: '100%',
 justifyContent: 'center',
 alignItems: 'center',
-height: '80px',
+height: '100px',
 flexDirection: 'row',
-borderBottomWidth: 1,
-borderColor: '#eee',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -11433,9 +11431,11 @@ flex: 1,
           ],
 
           arrStyles: [
-            `{
-fontSize: 14,
-fontWeight: '700',
+            `{ 
+  fontSize: 18, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#0E1422",
 }`
           ],
 
@@ -11453,8 +11453,24 @@ fontWeight: '700',
 
             args,
           }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: 1,
+  width: '100%',
+  backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
         , (...args:any) => <Elements.ScrollBar pass={{
-            styles: [],
+            styles: [`{ flex:1, width: '100%',}`],
             arrProps: [],
             arrItems: [
         
