@@ -12194,11 +12194,14 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
-padding: 5,
-backgroundColor: '#000',
-borderRadius: 5,
+width: '138px',
+height: '44px',
+paddingHorizontal: '24px',
+paddingVertical: '12px',
+backgroundColor: '#0E1422',
+borderRadius: 4,
 alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
@@ -12262,11 +12265,14 @@ width: '10px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
-padding: 5,
-backgroundColor: '#000',
-borderRadius: 5,
+width: '138px',
+height: '44px',
+paddingHorizontal: '24px',
+paddingVertical: '12px',
+backgroundColor: '#0E1422',
+borderRadius: 4,
 alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
