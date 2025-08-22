@@ -9478,11 +9478,11 @@ flex: 1,
 
             args,
           }}/>
-        , 
-        (...args:any) => <Elements.ScrollBar pass={{
+        , (...args:any) => <Elements.ScrollBar pass={{
             styles: [`{ flex:1, width: '100%',}`],
             arrProps: [],
             arrItems: [
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -10393,9 +10393,7 @@ flexDirection: 'row',
 
             args,
           }}/>
-        ],
-            args,
-        }}/>, 
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -10536,6 +10534,8 @@ fontSize: '14px',
             args,
           }}/>
         ],
+            args,
+        }}/>],
 
             args,
           }}/>
