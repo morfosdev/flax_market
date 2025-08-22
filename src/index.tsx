@@ -4748,7 +4748,13 @@ margimBottom: 10,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
           ],
 
           children: [
@@ -4801,7 +4807,13 @@ margimBottom: 10,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
           ],
 
           children: [
