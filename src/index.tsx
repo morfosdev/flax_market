@@ -15439,7 +15439,7 @@ paddingHorizontal: 15,
           ],
 
           children: [
-            `Category`
+            `Total`
           ],
 
           args,
@@ -15457,11 +15457,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a3.iptsChanges.categories`],
+          path: [`sc.a5a.iptsChanges.total`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.categories`],
+          keyPath: [`sc.a5a.iptsChanges.total`],
           value: [`$arg_callback`]
         }})],
 
