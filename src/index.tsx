@@ -10333,34 +10333,31 @@ flexDirection: 'row',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  // 1. Create input dynamically to select file
   const input = document.createElement("input");
   input.type = "file";
-  input.accept = "image/*"; // change to "*" if you want any file
+  input.accept = "image/*"; // or "*" for any file
 
-  input.onchange = async (e) => {
+  input.onchange = (e) => {
     const file = e.target.files[0];
     if (!file) {
       console.log("No file selected.");
       return;
     }
 
-    try {
-      // Save URL into Flaxboll variable so you can use later
-      tools.functions.setVar({
-        args: "",
-        pass: {
-          keyPath: ["sc.a3.iptsChanges.image"],
-          value: [url]
-        }
-      });
+    // ✅ Save the File object in a Flaxboll variable
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.localFile"],
+        value: [file]
+      }
+    });
 
-    } catch (error) {
-      console.error("Upload error:", error);
-    }
+    // Just for debug
+    console.log("File selected:", file);
+    tools.toast("File selected: " + file.name);
   };
 
-  // Trigger the file input
   input.click();
 }]
  , trigger: 'on press'
