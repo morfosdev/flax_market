@@ -10347,7 +10347,7 @@ flexDirection: 'row',
 
     try {
       // 2. Firebase Storage reference
-      const storageRef = firebase.storage().ref();
+      const storageRef = tools.firebase.storage.ref();
       const fileRef = storageRef.child("uploads/" + file.name);
 
       // 3. Upload file
