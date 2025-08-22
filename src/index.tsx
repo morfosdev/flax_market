@@ -9923,7 +9923,10 @@ paddingHorizontal: 15,
           args,
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`{
+placeholder: 'Digite um Email válido',
+multiline,
+}`],
 
           stylesArray: [`{
 width: '320px',
