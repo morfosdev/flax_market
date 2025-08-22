@@ -11398,7 +11398,8 @@ async (...args) =>
 flex: 1,
 margin: 10,
 backgroundColor: '#FFF',
-padding: 10,
+alignItems: 'center',
+paddingHorizontal: 20,
 borderRadius: 10,
 }`],
 
