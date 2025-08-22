@@ -11895,7 +11895,10 @@ paddingHorizontal: 15,
           args,
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`{
+placeholder: 'Adicione uma descrição',
+multiline: 'true',
+}`],
 
           stylesArray: [`{
 width: '320px',
@@ -15292,17 +15295,17 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
-  arrRefStrings: [`ordersEcommerce`],
-            arrPathData: [`sc.a5a.iptsChanges`],
+  arrRefStrings: [`productsEcommerce`],
+            arrPathData: [`sc.a3.iptsChanges`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5a.iptsChanges`],
+          keyPath: [`sc.a3.iptsChanges`],
           value: [``]
         }})],
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a5aAdmAddOrders");
+          return tools.goTo("a2AdmProducts");
         }
         ]
  , trigger: 'on press'
