@@ -11795,6 +11795,176 @@ padding: 5,
             args,
           }}/>
         , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ flex: 1, }`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Stock status`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+justifyContent: 'center',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 5,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
+
+          path: [`sc.a4.editData.product.stock`],
+
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a4.editData.product.stock`],
+          value: [`$arg_callback`]
+        }})],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Available quantity`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+justifyContent: 'center',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 5,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
+
+          path: [`sc.a4.editData.product.availableQuantity`],
+
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a4.editData.product.availableQuantity`],
+          value: [`$arg_callback`]
+        }})],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Images`
+          ],
+
+          args,
+
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+justifyContent: 'center',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 5,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
+
+          path: [`sc.admEditProduct.image`],
+
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.admEditProduct.image`],
+          value: [`$arg_callback`]
+        }})],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -11928,11 +12098,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a4.editData.product.availableQuantity`],
+          path: [`sc.a3.iptsChanges.availableQuantity`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a4.editData.product.availableQuantity`],
+          keyPath: [`sc.a3.iptsChanges.availableQuantity`],
           value: [`$arg_callback`]
         }})],
 
@@ -11955,22 +12125,7 @@ paddingHorizontal: 15,
 
             args,
           }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -11991,33 +12146,7 @@ paddingHorizontal: 15,
 
           args,
 
-        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
-
-          stylesArray: [`{
-width: '320px',
-height: '45px',
-borderRadius: 6,
-borderWidth: 1,
-borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
-}`],
-
-          path: [`sc.admEditProduct.image`],
-
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.admEditProduct.image`],
-          value: [`$arg_callback`]
-        }})],
-
-          args,
         }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
@@ -13871,7 +14000,7 @@ justifyContent: 'center',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"a3AdmAddProducts",
+          pathScreen:"a5aAdmAddOrders",
 
           styles:[`{ 
 width: '100%',
@@ -14739,7 +14868,7 @@ flex: 1,
           ],
 
           children: [
-            `Add Product`
+            `Add Order`
           ],
 
           args,
