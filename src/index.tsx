@@ -10418,6 +10418,7 @@ flexDirection: 'row',
             styles:[`{
 flexDirection: 'row',
 alignSelf: 'flex-start',
+paddingBottom: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -12185,6 +12186,8 @@ paddingHorizontal: 15,
 
             styles:[`{
 flexDirection: 'row',
+alignSelf: 'flex-start',
+paddingBottom: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
