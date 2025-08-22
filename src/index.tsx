@@ -15324,10 +15324,10 @@ justifyContent: 'center',
 async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
   arrRefStrings: [`productsEcommerce`],
-            arrPathData: [`sc.a3.iptsChanges`],
+            arrPathData: [`sc.a5a.iptsChanges`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges`],
+          keyPath: [`sc.a5a.iptsChanges`],
           value: [``]
         }})],
         }}), 
