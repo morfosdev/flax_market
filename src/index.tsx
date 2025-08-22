@@ -9927,7 +9927,7 @@ paddingHorizontal: 15,
 
           stylesArray: [`{
 width: '320px',
-height: '45px',
+height: '128px',
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
@@ -10390,6 +10390,20 @@ flexDirection: 'row',
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
