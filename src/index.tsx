@@ -15326,7 +15326,7 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
-  arrRefStrings: [`productsEcommerce`],
+  arrRefStrings: ['noPath'],
             arrPathData: [`sc.a5a.iptsChanges`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
