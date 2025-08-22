@@ -11795,18 +11795,6 @@ padding: 5,
             args,
           }}/>
         , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ flex: 1, }`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
