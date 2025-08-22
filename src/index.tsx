@@ -4683,8 +4683,9 @@ backgroundColor: '#eee',
 width: '400px',
 backgroundColor: '#FFF',
 alignItems: 'center',
-padding: 10,
-borderRadius: 10,
+paddingVertical: 25,
+paddingHorizontal: 10,
+borderRadius: 8,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -4954,6 +4955,9 @@ setMessage("");
           arrStyles: [
             `{
 color: '#FFF',
+fontWeight: 500,
+fontSize: 14,
+fontFamily: 'Inter',
 }`
           ],
 
