@@ -11754,11 +11754,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a3.iptsChanges.slug`],
+          path: [`sc.a4.editData.product.slug`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.slug`],
+          keyPath: [`sc.a4.editData.product.slug`],
           value: [`$arg_callback`]
         }})],
 
@@ -11831,11 +11831,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a3.iptsChanges.sku`],
+          path: [`sc.a4.editData.product.sku`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.sku`],
+          keyPath: [`sc.a4.editData.product.sku`],
           value: [`$arg_callback`]
         }})],
 
@@ -11895,10 +11895,7 @@ paddingHorizontal: 15,
           args,
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [`{
-placeholder: 'Adicione uma descrição',
-multiline: 'true',
-}`],
+          propsArray: [{}],
 
           stylesArray: [`{
 width: '320px',
@@ -11910,11 +11907,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a3.iptsChanges.description`],
+          path: [`sc.a4.editData.product.description`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.description`],
+          keyPath: [`sc.a4.editData.product.description`],
           value: [`$arg_callback`]
         }})],
 
