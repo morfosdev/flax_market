@@ -11677,11 +11677,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a3.iptsChanges.categories`],
+          path: [`sc.a4.editData.product.categories`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.categories`],
+          keyPath: [`sc.a4.editData.product.categories`],
           value: [`$arg_callback`]
         }})],
 
