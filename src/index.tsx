@@ -9480,7 +9480,7 @@ flex: 1,
           }}/>
         , 
         (...args:any) => <Elements.ScrollBar pass={{
-            styles: [],
+            styles: [`{ flex:1, width: '100%',}`],
             arrProps: [],
             arrItems: [
 
