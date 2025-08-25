@@ -4844,26 +4844,11 @@ padding: 10,
 
           path: [`sc.a0.login.forms.password`],
 
-          funcsArray: [
-        async (...args) =>
+          funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a0.login.forms.password`],
           value: [`$arg_callback`]
-        }}), () => {
-  const currentType = tools.getCtData("sc.a0.login.forms.password") || "password";
-
-  // Toggle between password and text
-  const newType = currentType === "password" ? "text" : "password";
-
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a0.login.forms.password"],
-      value: [newType]
-    }
-  });
-}
-],
+        }})],
 
           args,
         }}/>],
