@@ -10495,17 +10495,6 @@ async (...args) =>
           value: [url]   // 👈 direct URL
         }
       });
-
-      tools.toast("Upload complete! URL saved in sc.a4.uploadResult");
-
-    } catch (error) {
-      console.error("Upload error:", error);
-      tools.toast("Upload failed: " + error.message);
-    }
-  };
-
-  // Trigger the file input
-  input.click();
 }
 ],
  }}), 
