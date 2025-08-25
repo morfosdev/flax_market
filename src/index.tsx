@@ -10481,7 +10481,33 @@ justifyContent: 'center',
 async (...args) =>
  functions.firebase.uploadFileTool({ args, pass:{
  arrFiles: [`sc.a3.localFile`],
- arrFuncs: [() => {}],
+ arrFuncs: [() => {
+      // Get download URL
+      const url = await snapshot.ref.getDownloadURL();
+
+      console.log("File uploaded successfully. URL:", url);
+
+      // Save URL into Flaxboll variable
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a4.uploadResult"],
+          value: [url]   // 👈 direct URL
+        }
+      });
+
+      tools.toast("Upload complete! URL saved in sc.a4.uploadResult");
+
+    } catch (error) {
+      console.error("Upload error:", error);
+      tools.toast("Upload failed: " + error.message);
+    }
+  };
+
+  // Trigger the file input
+  input.click();
+}
+],
  }}), 
 async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
