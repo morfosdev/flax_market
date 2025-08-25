@@ -4850,7 +4850,6 @@ placeholder: 'Digite sua senha',
 }`],
 
           stylesArray: [`{
-padding: 10,
 flex: 1,
 }`],
 
