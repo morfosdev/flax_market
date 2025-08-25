@@ -4876,7 +4876,7 @@ flex: 1,
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const currentType = tools.getCtData("sc.a0.login.forms.password") || "*********";
+  const currentType = tools.getCtData("sc.a0.login.forms.password") || " ";
 
   // Toggle between password and text
   const newType = currentType === "*********" ? "text" : "*********";
