@@ -4876,7 +4876,7 @@ flex: 1,
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const currentType = tools.getCtData("sc.a0.login.forms.password") || "password";
+  const currentType = tools.getCtData("sc.a0.login.forms.passwordType") || "password";
 
   // Toggle between password and text
   const newType = currentType === "password" ? "text" : "password";
@@ -4884,7 +4884,7 @@ flex: 1,
   tools.functions.setVar({
     args: "",
     pass: {
-      keyPath: ["sc.a0.login.forms.password"],
+      keyPath: ["sc.a0.login.forms.passwordType"],
       value: [newType]
     }
   });
