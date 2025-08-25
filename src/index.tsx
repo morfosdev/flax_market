@@ -10481,7 +10481,11 @@ justifyContent: 'center',
 async (...args) =>
         functions.firebase.uploadFileTool({ args, pass:{
             fbInit: [`sc.a3.localFile`],
-            arrFiles: [undefined],
+            arrFiles: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.localFile`],
+          value: [``]
+        }})],
             arrFuncs: [!#!functions return!#!],
         }}), 
 async (...args) =>
