@@ -10484,7 +10484,7 @@ async (...args) =>
             arrFiles: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a3.localFile`],
-          value: [``]
+          value: [`undefined`]
         }})],
             arrFuncs: [!#!functions return!#!],
         }}), 
