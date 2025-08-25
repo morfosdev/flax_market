@@ -38,12 +38,13 @@ export const uploadFile = async (props: Tprops) => {
     const varValue = testVarType(i, args);
     return varValue;
   });
-  arrData = getCtData(newPath.join('.'));
+  arrData = [...getCtData(newPath.join('.'))];
 
   console.log({ arrData });
 
   arrData &&
     arrData.forEach(async (currData: any, idx: number) => {
+      console.log('INIT LOOP UPLOAD');
       const time = Date.now().toString();
       const strRefFile = ref(storage, `images/` + time + currData.name);
       console.log({ strRefFile });
@@ -58,3 +59,4 @@ export const uploadFile = async (props: Tprops) => {
       for (const currFunc of arrFuncs) await currFunc(args, firestoreURL, idx);
     });
 };
+
