@@ -4869,7 +4869,8 @@ flex: 1,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '20px',
+	width: '20px',
+	alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
@@ -4897,9 +4898,9 @@ width: '20px',
 
       `,
 
-      altura: "10px",
+      altura: "15px",
 
-      largura: "10px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
