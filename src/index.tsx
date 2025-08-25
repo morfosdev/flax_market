@@ -4902,7 +4902,7 @@ flex: 1,
 
       largura: "15px",
 
-      preenchimento: ['black'],
+      preenchimento: [`#eee`],
 
       args,
     }}/>],
