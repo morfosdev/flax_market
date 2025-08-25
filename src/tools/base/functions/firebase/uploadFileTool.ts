@@ -43,7 +43,7 @@ export const uploadFile = async (props: Tprops) => {
   console.log({ arrData });
 
   arrData &&
-    arrData.assets.forEach(async (currData: any, idx: number) => {
+    arrData.forEach(async (currData: any, idx: number) => {
       const time = Date.now().toString();
       const strRefFile = ref(storage, `images/` + time + currData.name);
       console.log({ strRefFile });
@@ -58,4 +58,3 @@ export const uploadFile = async (props: Tprops) => {
       for (const currFunc of arrFuncs) await currFunc(args, firestoreURL, idx);
     });
 };
-
