@@ -8,7 +8,7 @@ type Tprops = {
   pass: { fbInit: any[]; arrFiles: any[]; arrFuncs: any[] };
 };
 
-export const uploadFileTool = async (props: Tprops) => {
+export const uploadFile = async (props: Tprops) => {
   console.log('UPLOAD DE ARQUIVOS');
   // ---------- set Props
   const { args, pass } = props;
@@ -42,20 +42,20 @@ export const uploadFileTool = async (props: Tprops) => {
 
   console.log({ arrData });
 
-  //   objData &&
-  //     objData.assets.forEach(async (currData: any, idx: number) => {
-  //       const time = Date.now().toString();
-  //       const strRefFile = ref(storage, `images/` + time + currData.name);
-  //       console.log({ strRefFile });
-  //       const file = objData.output[idx];
-  //       console.log({ file });
-  //       await uploadBytes(strRefFile, file);
+  arrData &&
+    arrData.assets.forEach(async (currData: any, idx: number) => {
+      const time = Date.now().toString();
+      const strRefFile = ref(storage, `images/` + time + currData.name);
+      console.log({ strRefFile });
+      const file = arrData.output[idx];
+      console.log({ file });
+      await uploadBytes(strRefFile, file);
 
-  //       // ---------- set Return Functions
-  //       const firestoreURL = await getDownloadURL(strRefFile);
-  //       console.log({ firestoreURL });
+      // ---------- set Return Functions
+      const firestoreURL = await getDownloadURL(strRefFile);
+      console.log({ firestoreURL });
 
-  //       for (const currFunc of arrFuncs) await currFunc(args, firestoreURL, idx);
-  //     });
+      for (const currFunc of arrFuncs) await currFunc(args, firestoreURL, idx);
+    });
 };
 
