@@ -4873,7 +4873,24 @@ flex: 1,
 	alignItems: 'center',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const currentType = tools.getCtData("sc.a0.login.forms.password") || "password";
+
+  // Toggle between password and text
+  const newType = currentType === "password" ? "text" : "*********";
+
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a0.login.forms.password"],
+      value: [newType]
+    }
+  });
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
