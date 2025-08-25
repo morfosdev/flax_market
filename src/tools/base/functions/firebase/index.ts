@@ -3,8 +3,8 @@
 import { fireInit } from './fireInit';
 // const fireInit = () => console.log('fireInit');
 
-// import { uploadFile } from './uploadFile';
-const uploadFile = () => console.log('uploadFile');
+import { uploadFile } from './uploadFile';
+// const uploadFile = () => console.log('uploadFile');
 
 import { updateDocTool } from './updateDoc';
 // const updateDocTool = () => console.log('updateDoc');

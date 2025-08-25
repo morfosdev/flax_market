@@ -10479,11 +10479,10 @@ justifyContent: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [
 async (...args) =>
-        functions.firebase.uploadFileTool({ args, pass:{
-            fbInit: [`sc.a3.localFile`],
-            arrFiles: [() => {}],
-            arrFuncs: [!#!functions return!#!],
-        }}), 
+ functions.firebase.uploadFileTool({ args, pass:{
+ arrFiles: [`sc.a3.localFile`],
+ arrFuncs: [() => {}],
+ }}), 
 async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
   arrRefStrings: [`productsEcommerce`],
