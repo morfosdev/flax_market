@@ -10481,22 +10481,26 @@ justifyContent: 'center',
 async (...args) =>
  functions.firebase.uploadFileTool({ args, pass:{
  arrFiles: [`sc.a3.localFile`],
- arrFuncs: [() => {
-      // Get download URL
-      const url = await snapshot.ref.getDownloadURL();
+ arrFuncs: [async () => {
+  try {
+    // Get download URL from last upload snapshot
+    const url = await snapshot.ref.getDownloadURL();
 
-      console.log("File uploaded successfully. URL:", url);
+    console.log("File uploaded successfully. URL:", url);
 
-      // Save URL into Flaxboll variable
-      tools.functions.setVar({
-        args: "",
-        pass: {
-          keyPath: ["sc.a4.uploadResult"],
-          value: [url]   // 👈 direct URL
-        }
-      });
-}
-],
+    // Save URL into Flaxboll variable
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.uploadResult"],
+        value: [url]   // 👈 direct URL
+      }
+    });
+
+  } catch (error) {
+    console.error("Error getting download URL:", error);
+  }
+}],
  }}), 
 async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
