@@ -10482,6 +10482,9 @@ async (...args) =>
  functions.firebase.uploadFileTool({ args, pass:{
  arrFiles: [`sc.a3.localFile`],
  arrFuncs: [async () => {
+
+	const snapshot = await fileRef.put(file);
+
   try {
     // Get download URL from last upload snapshot
     const url = await snapshot.ref.getDownloadURL();
