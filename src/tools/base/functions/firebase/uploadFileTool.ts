@@ -41,9 +41,13 @@ export const uploadFileTool = async (props: Tprops) => {
     const varValue = testVarType(i, args);
     return varValue;
   });
+
   console.log({ newPath });
 
-  arrData = [...getCtData(newPath.join('.'))];
+  const value = getCtData(newPath.join('.'));
+  console.log({ value });
+
+  arrData = [...value];
 
   console.log({ arrData });
 
