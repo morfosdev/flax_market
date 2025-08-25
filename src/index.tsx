@@ -4879,7 +4879,7 @@ flex: 1,
   const currentType = tools.getCtData("sc.a0.login.forms.password") || "*********";
 
   // Toggle between password and text
-  const newType = currentType === "password" ? "text" : "*********";
+  const newType = currentType === "*********" ? "text" : "*********";
 
   tools.functions.setVar({
     args: "",
