@@ -30,7 +30,7 @@ import { where } from './where';
 export const firebase = {
   fireInit,
 
-  uploadFile,
+  uploadFileTool,
 
   getDocTool,
   getDocsTool,
