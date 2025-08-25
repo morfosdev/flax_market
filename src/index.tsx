@@ -4830,17 +4830,28 @@ margimBottom: 10,
 
           args,
 
-        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [`{
-placeholder: 'Digite sua senha',
-}`],
+        }}/>, 
 
-          stylesArray: [`{
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
 padding: 10,
 }`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: 'Digite sua senha',
+}`],
+
+          stylesArray: [{
+                color: 'black',
+                fontSize: 14,
+                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
+              }],
 
           path: [`sc.a0.login.forms.password`],
 
@@ -4852,6 +4863,10 @@ padding: 10,
 
           args,
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
