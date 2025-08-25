@@ -10355,7 +10355,7 @@ flexDirection: 'row',
 
     // Just for debug
     console.log("File selected:", file);
-    tools.toast("File selected: " + file.name);
+    
   };
 
   input.click();
