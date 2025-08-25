@@ -8,7 +8,7 @@ type Tprops = {
   pass: { fbInit: any[]; arrFiles: any[]; arrFuncs: any[] };
 };
 
-export const uploadFileTool = async (props: Tprops) => {
+export const uploadFile = async (props: Tprops) => {
   console.log('UPLOAD DE ARQUIVOS');
   // ---------- set Props
   const { args, pass } = props;
@@ -34,10 +34,15 @@ export const uploadFileTool = async (props: Tprops) => {
   //   console.log({ objData });
 
   let arrData: any = [];
+  console.log({ arrData, arrFiles });
+
   const newPath = arrFiles.map(i => {
+    console.log({ i });
     const varValue = testVarType(i, args);
     return varValue;
   });
+  console.log({ newPath });
+
   arrData = [...getCtData(newPath.join('.'))];
 
   console.log({ arrData });
