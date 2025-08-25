@@ -23,16 +23,6 @@ export const uploadFileTool = async (props: Tprops) => {
   console.log({ storage });
 
   // ------ read Data
-  //   let dataToUpdate: any = {};
-  //   const newPath = arrPathData.map(i => {
-  //     const varValue = testVarType(i, args);
-  //     return varValue;
-  //   });
-  //   dataToUpdate = getCtData(newPath.join('.'));
-
-  //   const objData = arrFiles[0];
-  //   console.log({ objData });
-
   let arrData: any = [];
   console.log({ arrData, arrFiles });
 
@@ -48,17 +38,19 @@ export const uploadFileTool = async (props: Tprops) => {
   console.log({ value });
 
   const isArray = Array.isArray(value);
-  arrData = isArray ? value : value != null ? [value] : [];
+  console.log({ isArray });
+
+  arrData = isArray ? value : [value];
 
   console.log({ arrData });
 
   arrData &&
     arrData.forEach(async (currData: any, idx: number) => {
-      console.log('INIT LOOP UPLOAD');
+      console.log('INIT LOOP UPLOAD', currData, idx);
       const time = Date.now().toString();
       const strRefFile = ref(storage, `images/` + time + currData.name);
       console.log({ strRefFile });
-      const file = arrData.output[idx];
+      const file = currData;
       console.log({ file });
       await uploadBytes(strRefFile, file);
 
