@@ -4870,6 +4870,7 @@ flex: 1,
 
             styles:[`{
 	width: '20px',
+	height: '20px',
 	alignItems: 'center',
 }`],
 
