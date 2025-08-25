@@ -58,7 +58,7 @@ export const uploadFileTool = async (props: Tprops) => {
       const firestoreURL = await getDownloadURL(strRefFile);
       console.log({ firestoreURL });
 
-      for (const currFunc of arrFuncs) await currFunc(args, firestoreURL, idx);
+      for (const currFunc of arrFuncs) await currFunc( firestoreURL, idx, args);
     });
 };
 
