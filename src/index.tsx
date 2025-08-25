@@ -4849,11 +4849,10 @@ flexDirection: 'row',
 placeholder: 'Digite sua senha',
 }`],
 
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
+          stylesArray: [`{
+padding: 10,
+flex: 1,
+}`],
 
           path: [`sc.a0.login.forms.password`],
 
@@ -4869,14 +4868,9 @@ placeholder: 'Digite sua senha',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+width: '20px',
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
@@ -4903,9 +4897,9 @@ placeholder: 'Digite sua senha',
 
       `,
 
-      altura: "30px",
+      altura: "10px",
 
-      largura: "30px",
+      largura: "10px",
 
       preenchimento: ['black'],
 
