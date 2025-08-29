@@ -14898,7 +14898,7 @@ paddingVertical: '20px',
           ],
 
           children: [
-            `Add Product`
+            `Add Order`
           ],
 
           args,
