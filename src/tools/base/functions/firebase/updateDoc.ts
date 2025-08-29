@@ -55,7 +55,7 @@ export const updateDocTool = async (props: Tprops) => {
   const condString = typeof newPath === 'string';
 
   if (condString) dataToUpdate = getCtData(newPath.join('')) ?? {};
-  if (condObj) dataToUpdate = newPath.flat() ?? {};
+  if (condObj) dataToUpdate = Object.assign(newPath) ?? {};
 
   console.log({ newPath, dataToUpdate });
 
