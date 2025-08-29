@@ -51,11 +51,16 @@ export const updateDocTool = async (props: Tprops) => {
     const varValue = testVarType(i, args);
     return varValue;
   });
-  dataToUpdate = getCtData(newPath.join('.')) ?? {};
-console.log({ newPath, dataToUpdate });
+  const condObj = typeof newPath === 'object';
+  const condString = typeof newPath === 'string';
 
-const dateNow = Timestamp.now();
-console.log({ dateNow });
+  if (condString) dataToUpdate = getCtData(newPath.join('')) ?? {};
+  if (condObj) dataToUpdate = newPath ?? {};
+
+  console.log({ newPath, dataToUpdate });
+
+  const dateNow = Timestamp.now();
+  console.log({ dateNow });
   // ------ add date update
   dataToUpdate.updatedAt = Timestamp.now();
 
@@ -74,3 +79,4 @@ console.log({ dateNow });
 
   return dataToUpdate;
 };
+
