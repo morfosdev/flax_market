@@ -18479,7 +18479,11 @@ justifyContent: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [(...args) =>
+        functions.firebase.deleteDocTool({ args, pass:{
+   arrRefStrings: [''],
+   arrFuncs: [() => {}],
+        }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
