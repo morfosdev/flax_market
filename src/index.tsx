@@ -16563,11 +16563,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a5b.editData.orders.order`],
+          path: [`sc.a5b.editData.order.order`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5b.editData.orders.order`],
+          keyPath: [`sc.a5b.editData.order.order`],
           value: [`$arg_callback`]
         }})],
 
@@ -17492,7 +17492,14 @@ fontSize: '14px',
           }}/>
         ],
 
-          functions:[()=>{}],
+          functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const order = tools.getCtData("sc.a4.editData.order");
+  console.log("Order data:", order);
+}]
+ , trigger: 'on init'
+}})],
 
           args,
         }}/>, 
