@@ -4848,7 +4848,6 @@ flexDirection: 'row',
           propsArray: [`{
 	placeholder: 'Digite sua senha',
 		type: "sc.a0.login.forms.passwordType",
-
 }`],
 
           stylesArray: [`{
