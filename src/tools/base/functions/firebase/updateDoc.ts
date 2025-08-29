@@ -26,10 +26,23 @@ export const updateDocTool = async (props: Tprops) => {
   // -----------------------------
   // ---------- set Firestore Call
   // -----------------------------
-  const newArrStringRefs = arrRefStrings.map(i => {
-    const varValue = testVarType(i, args);
-    return varValue;
-  });
+  // dentro do updateDocTool, logo após montar newArrStringRefs:
+  const newArrStringRefs = arrRefStrings.map(i => testVarType(i, args));
+  console.log('3', { newArrStringRefs });
+
+  // validação dos segmentos
+  const hasBadRef =
+    !Array.isArray(newArrStringRefs) ||
+    newArrStringRefs.length === 0 ||
+    newArrStringRefs.some(s => typeof s !== 'string' || !s.length);
+
+  if (hasBadRef) {
+    console.log('updateDocTool: referência inválida para Firestore doc()', {
+      arrRefStrings,
+      newArrStringRefs,
+    });
+    return; // evita chamar doc() com undefined
+  }
 
   console.log('3', { newArrStringRefs });
 
@@ -47,52 +60,20 @@ export const updateDocTool = async (props: Tprops) => {
     );
 
   // ------ read Data
-  // ---------- Montagem do dataToUpdate (sempre objeto)
   let dataToUpdate: any = {};
+  const newPath = arrPathData.map(i => {
+    const varValue = testVarType(i, args);
+    return varValue;
+  });
+  const condObj = typeof newPath === 'object';
+  const condString = typeof newPath === 'string';
 
-  // Resolve cada item de arrPathData com testVarType.
-  // - Se o item for '$var_...' e apontar para um path completo, já vem o VALOR (objeto/array/prim).
-  // - Se for literal de caminho, permanece string (ex.: 'sc.a0.forms.iptsChanges').
-  const resolvedParts = (arrPathData || []).map(i => testVarType(i, args));
-
-  const onlyOneStringPath =
-    resolvedParts.length === 1 && typeof resolvedParts[0] === 'string';
-
-  const allStrings =
-    resolvedParts.length > 0 && resolvedParts.every(i => typeof i === 'string');
-
-  // (1) Array com caminho direto: ['sc.a0.forms.iptsChanges']
-  if (onlyOneStringPath) {
-    const obj = getCtData(resolvedParts[0] as string);
-    if (obj && typeof obj === 'object') dataToUpdate = Object.assign({}, obj);
-    else dataToUpdate = {}; // garante objeto
-  }
-  // (2) Caminho dinâmico por segmentos (tudo string): ['sc.', '$var_all.currScreen', 'a0.forms.iptsChanges']
-  else if (allStrings) {
-    const fullPath = (resolvedParts as string[]).join('');
-    const obj = getCtData(fullPath);
-    if (obj && typeof obj === 'object') dataToUpdate = Object.assign({}, obj);
-    else dataToUpdate = {}; // garante objeto
-  }
-  // (3) Achatar múltiplas fontes num único objeto
-  else {
-    // Cada parte pode ser:
-    // - objeto já resolvido (via $var_...)
-    // - string com caminho (vamos ler com getCtData)
-    for (const part of resolvedParts) {
-      if (!part) continue;
-
-      if (typeof part === 'string') {
-        const val = getCtData(part);
-        if (val && typeof val === 'object') Object.assign(dataToUpdate, val);
-      } else if (typeof part === 'object') {
-        Object.assign(dataToUpdate, part);
-      }
-      // se for primitivo, ignora para manter dataToUpdate como objeto
-    }
+  if (condString) dataToUpdate = getCtData(newPath.join('')) ?? {};
+  if (condObj) {
+    dataToUpdate = Object.assign(newPath) ?? {};
   }
 
-  console.log({ arrPathData, resolvedParts, dataToUpdate });
+  console.log({ newPath, dataToUpdate });
 
   const dateNow = Timestamp.now();
   console.log({ dateNow });

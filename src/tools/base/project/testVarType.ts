@@ -1,23 +1,28 @@
 
+// ---- testVarType.ts
 import { getCtData, findFlatItem } from './';
 
 export const testVarType = (string, args) => {
-	let varType = '';
-	let newPath = '';
-	let varValue = string;
+  // proteção: se não for string, retorna como veio
+  if (typeof string !== 'string') return string;
 
-	if (string.includes('$var_')){
-		varType = 'var';
-		newPath = string.replace('$var_', '');
-		varValue = getCtData(newPath);
-	}
+  let varType = '';
+  let newPath = '';
+  let varValue = string;
 
-	if (string.includes('$arg_')){
-		varType = 'arg';
-		newPath = string.replace('$arg_', '');
-console.log({newPath})
-varValue = findFlatItem(args)[newPath];
-	}
+  if (string.includes('$var_')) {
+    varType = 'var';
+    newPath = string.replace('$var_', '');
+    varValue = getCtData(newPath);
+  }
+
+  if (string.includes('$arg_')) {
+    varType = 'arg';
+    newPath = string.replace('$arg_', '');
+    console.log({ newPath });
+    varValue = findFlatItem(args)?.[newPath];
+  }
 
   return varValue;
 };
+
