@@ -7776,15 +7776,8 @@ fontSize: '14px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '242px',
-height: '40px',
 justifyContent: 'initial',
 alignItems: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-paddingHorizontal: 10,
-paddingVertical: 5,
 flexDirection: 'row',
 }`],
 
