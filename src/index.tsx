@@ -4846,8 +4846,7 @@ flexDirection: 'row',
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
-	placeholder: 'Digite sua senha',
-	type: "sc.a0.login.forms.passwordType",
+placeholder: 'Digite sua senha',
 }`],
 
           stylesArray: [`{
@@ -7658,6 +7657,7 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
+paddingBottom: 35,
 borderRadius: 10,
 }`],
 
@@ -9511,6 +9511,7 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
+paddingBottom: 35,
 borderRadius: 10,
 }`],
 
@@ -10542,7 +10543,6 @@ flexDirection: 'row',
             styles:[`{
 flexDirection: 'row',
 alignSelf: 'flex-start',
-paddingBottom: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -11550,6 +11550,7 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
+paddingBottom: 35,
 borderRadius: 10,
 }`],
 
@@ -12327,7 +12328,6 @@ paddingHorizontal: 15,
             styles:[`{
 flexDirection: 'row',
 alignSelf: 'flex-start',
-paddingBottom: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -13314,6 +13314,7 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
+paddingBottom: 35,
 borderRadius: 10,
 }`],
 
@@ -15002,6 +15003,7 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
+paddingBottom: 35,
 borderRadius: 10,
 }`],
 
@@ -17964,6 +17966,7 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
+paddingBottom: 35,
 borderRadius: 10,
 }`],
 
@@ -19511,6 +19514,7 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
+paddingBottom: 35,
 borderRadius: 10,
 }`],
 
@@ -20985,6 +20989,7 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
+paddingBottom: 35,
 borderRadius: 10,
 }`],
 
@@ -22562,6 +22567,7 @@ margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
+paddingBottom: 35,
 borderRadius: 10,
 }`],
 
