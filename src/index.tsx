@@ -16955,7 +16955,7 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`$var_sc.a4.editData.product`],
+          keyPath: [`sc.a5.editData.order`],
           value: [``]
         }}), 
         (...args) => {
