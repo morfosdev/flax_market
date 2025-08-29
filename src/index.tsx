@@ -7840,11 +7840,12 @@ flexDirection: 'row',
  placeholder: 'Search products',
 }`],
 
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
+          stylesArray: [`{
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 10,
+}`],
 
           path: [" "],
 
