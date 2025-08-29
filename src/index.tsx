@@ -4846,7 +4846,9 @@ flexDirection: 'row',
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
-placeholder: 'Digite sua senha',
+	placeholder: 'Digite sua senha',
+		type: "sc.a0.login.forms.passwordType",
+
 }`],
 
           stylesArray: [`{
