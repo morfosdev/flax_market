@@ -51,7 +51,7 @@ export const updateDocTool = async (props: Tprops) => {
     const varValue = testVarType(i, args);
     return varValue;
   });
-  dataToUpdate = getCtData(newPath.join('.'));
+  dataToUpdate = getCtData(newPath.join('.')) ?? {};
 console.log({ dataToUpdate });
 
 const dateNow = Timestamp.now();
