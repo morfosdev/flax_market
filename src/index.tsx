@@ -17134,11 +17134,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a5a.iptsChanges.status`],
+          path: [`sc.a5b.editData.order.status`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5a.iptsChanges.status`],
+          keyPath: [`sc.a5b.editData.order.status`],
           value: [`$arg_callback`]
         }})],
 
