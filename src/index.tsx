@@ -18481,7 +18481,7 @@ justifyContent: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [(...args) =>
         functions.firebase.deleteDocTool({ args, pass:{
-   arrRefStrings: [''],
+   arrRefStrings: [`customersEcommerce`],
    arrFuncs: [() => {}],
         }})]
  , trigger: 'on press'
