@@ -7835,25 +7835,14 @@ borderWidth: 1,
 
             args,
           }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ width: '10px', }`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
         , (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
  placeholder: 'Search products',
 }`],
 
           stylesArray: [`{
-borderRadius: 5,
+borderTopRightRadius: 5,
+borderBottomRightRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
 padding: 10,
