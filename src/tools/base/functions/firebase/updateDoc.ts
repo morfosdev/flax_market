@@ -1,42 +1,76 @@
 
-import { getFirestore, doc, updateDoc, serverTimestamp } from 'firebase/firestore';
-// ...
+// ---------- import Local Tools
+import { getFirestore, doc, updateDoc, Timestamp } from 'firebase/firestore';
+import { getCtData, testVarType } from '../../project';
+
+export const css1 =
+  'color: #ffb73b; background-color: black; font-size: 11px; padding: 2px 6px; border-radius: 3px';
+export const css2 =
+  'color: black; background-color: #ffb73b; font-size: 10px; padding: 2px 6px; border-radius: 3px';
+
+type Tprops = {
+  args: any;
+  pass: {
+    arrRefStrings: string[];
+    arrPathData: string[];
+    arrFuncs: any[];
+  };
+};
 
 export const updateDocTool = async (props: Tprops) => {
+  // ---------- set Props
   const { args, pass } = props;
   const { arrRefStrings, arrPathData, arrFuncs } = pass;
 
-  if (!Array.isArray(arrRefStrings)) {
-    console.log('arrRefStrings needs to be a string array', arrRefStrings);
-    return;
-  }
+  // -----------------------------
+  // ---------- set Firestore Call
+  // -----------------------------
+  const newArrStringRefs = arrRefStrings.map(i => {
+    const varValue = testVarType(i, args);
+    return varValue;
+  });
 
-  // Resolve refs
-  const newArrStringRefs = arrRefStrings.map(i => testVarType(i, args));
+  console.log('3', { newArrStringRefs });
+
   const fbInit = getCtData('all.temp.fireInit');
-  const fireInit = getFirestore(fbInit);
+  console.log(fbInit);
+  const fireInit: any = getFirestore(fbInit);
+  console.log({ arrRefStrings });
   const refColl = doc(fireInit, ...newArrStringRefs);
 
-  // Monta o objeto a atualizar
-  const newPath = arrPathData.map(i => testVarType(i, args));
-  const joinedPath = newPath.join('.');
-  const raw = getCtData(joinedPath);
+  // ------ check Data
+  if (!Array.isArray(arrRefStrings))
+    return console.log(
+      'arrRefStrings needs to be a string array',
+      arrRefStrings,
+    );
 
-  // Garante objeto
-  const dataToUpdate: Record<string, any> =
-    raw && typeof raw === 'object' ? { ...raw } : {};
+  // ------ read Data
+  let dataToUpdate: any = {};
+  const newPath = arrPathData.map(i => {
+    const varValue = testVarType(i, args);
+    return varValue;
+  });
+  dataToUpdate = getCtData(newPath.join('.'));
+console.log({ dataToUpdate });
 
-  // Selo de tempo do servidor
-  dataToUpdate.updatedAt = serverTimestamp();
+const dateNow = Timestamp.now();
+console.log({ dateNow });
+  // ------ add date update
+  dataToUpdate.updatedAt = Timestamp.now();
 
-  try {
-    await updateDoc(refColl, dataToUpdate);
-    for (const currFunc of arrFuncs) await currFunc(dataToUpdate, args);
+  await updateDoc(refColl, dataToUpdate).catch(err =>
+    console.log('Erro do updateDoc', { err }),
+  );
 
-    console.log('%cupdateDoc ok', css1);
-    console.log('%cReferencia do Documento', css2, { newArrStringRefs, joinedPath, dataToUpdate });
-    return dataToUpdate;
-  } catch (err) {
-    console.log('Erro do updateDoc', { err, newArrStringRefs, joinedPath, raw });
-  }
+  // ---------- set Get Value Functions
+  for (const currFunc of arrFuncs) await currFunc(dataToUpdate, args);
+
+  console.log('%cupdateDoc ok', css1);
+  console.log('%cReferencia do Documento', css2, {
+    newArrStringRefs,
+    dataToUpdate,
+  });
+
+  return dataToUpdate;
 };
