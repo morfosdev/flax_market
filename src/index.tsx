@@ -7790,7 +7790,7 @@ flexDirection: 'row',
             styles:[`{
 borderTopLeftRadius: 5,
 borderBottomLeftRadius: 5,
-padding: 10,
+padding: 11,
 alignItem: 'center',
 justifyContent: 'center',
 borderColor: '#eee',
