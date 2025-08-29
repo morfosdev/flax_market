@@ -16640,11 +16640,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a5b.editData.order.data`],
+          path: [`sc.a5b.editData.order.date`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5b.editData.order.data`],
+          keyPath: [`sc.a5b.editData.order.date`],
           value: [`$arg_callback`]
         }})],
 
