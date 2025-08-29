@@ -16883,11 +16883,11 @@ justifyContent: 'center',
 async (...args) =>
         functions.firebase.updateDocTool({ args, pass:{
    arrRefStrings: [
-        `ordersEcommerce`, `sc.a5.editData.order.docId`],
-            arrPathData: [`sc.a5.editData.order`],
+        `ordersEcommerce`, `$Var_sc.a5.editData.order.docId`],
+            arrPathData: [`$Var_sc.a5.editData.order`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.order`],
+          keyPath: [`$Var_sc.a5.editData.order`],
           value: [``]
         }})],
         }}), 
@@ -16955,7 +16955,7 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.editData.order`],
+          keyPath: [`$Var_sc.a5.editData.order`],
           value: [``]
         }}), 
         (...args) => {
