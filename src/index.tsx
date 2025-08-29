@@ -12354,7 +12354,7 @@ justifyContent: 'center',
 async (...args) =>
         functions.firebase.updateDocTool({ args, pass:{
    arrRefStrings: [
-        `productsEcommerce`, `$var_sc.a4.editData.product.docId`],
+        `productsEcommerce`, `sc.a4.editData.product.docId`],
             arrPathData: [`$var_sc.a4.editData.product`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
