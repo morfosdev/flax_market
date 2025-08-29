@@ -7779,14 +7779,25 @@ fontSize: '14px',
 justifyContent: 'initial',
 alignItems: 'center',
 flexDirection: 'row',
-borderRadius: 5,
-borderColor: '#eee',
-borderWidth: 1,
-paddingLeft: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.SvgView1 pass={{
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+borderTopLeftRadius: 5,
+borderBottomLeftRadius: 5,
+padding: 10,
+alignItem: 'center',
+justifyContent: 'center',
+borderColor: '#eee',
+borderWidth: 1,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
@@ -7820,7 +7831,11 @@ paddingLeft: 10,
       preenchimento: [`#fff`],
 
       args,
-    }}/>, 
+    }}/>],
+
+            args,
+          }}/>
+        , 
         
 
           (...args:any) => <Elements.DynView pass={{
