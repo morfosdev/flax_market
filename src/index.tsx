@@ -7779,6 +7779,10 @@ fontSize: '14px',
 justifyContent: 'initial',
 alignItems: 'center',
 flexDirection: 'row',
+borderRadius: '5',
+borderColor: '#eee',
+borderWidth: '1',
+paddingLeft: '10',
 }`],
 
             functions:[()=>{}],            childrenItems:[
