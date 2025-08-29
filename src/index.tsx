@@ -14005,8 +14005,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a5bAdmEditOrders
-");
+          return tools.goTo("a5bAdmEditOrders");
         }
         ]
  , trigger: 'on press'
