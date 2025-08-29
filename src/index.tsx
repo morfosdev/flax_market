@@ -17057,11 +17057,11 @@ paddingVertical: 10,
 paddingHorizontal: 15,
 }`],
 
-          path: [`sc.a5a.iptsChanges.total`],
+          path: [`sc.a5b.editData.order.total`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5a.iptsChanges.total`],
+          keyPath: [`sc.a5b.editData.order.total`],
           value: [`$arg_callback`]
         }})],
 
