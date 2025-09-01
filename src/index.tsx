@@ -8120,6 +8120,7 @@ const currentField = tools.getCtData("sc.a2.sortField");
     return 0;
   });
 
+  console.log("Sorted list:", sortedList);
   tools.functions.setVar({
     args: "",
     pass: {
@@ -8127,8 +8128,7 @@ const currentField = tools.getCtData("sc.a2.sortField");
       value: sortedList
     }
   });
-}
-]
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
