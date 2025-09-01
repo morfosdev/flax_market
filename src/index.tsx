@@ -7909,11 +7909,17 @@ async (...args) =>
           keyPath: [`sc.a2.list`],
           value: [`$arg_callback`]
         }})],
-        }}), async (...args) =>
+        }}), 
+async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a2.selectedLabel`],
           value: [``]
-        }})]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a2AdmProducts");
+        }
+        ]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
