@@ -7813,7 +7813,7 @@ async (...args) =>
  arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a2.list`],
-          value: [`$arg_item`]
+          value: [`$arg_callback`]
         }})],
  }}), 
         (...args) => {
