@@ -8119,6 +8119,15 @@ const currentField = tools.getCtData("sc.a2.sortField");
     if (valA > valB) return 1;
     return 0;
   });
+
+  // Atualiza a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a2.list"],
+      value: sortedList
+    }
+  });
 }
 ]
  , trigger: 'on press'
