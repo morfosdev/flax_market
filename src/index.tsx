@@ -8129,7 +8129,6 @@ const currentField = tools.getCtData("sc.a2.sortField");
 
   // Debug: veja o resultado logo depois de setar
 	console.log("✅ Sorted list set in sc.a2.list:", sortedList);
-	tools.refresh();
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
