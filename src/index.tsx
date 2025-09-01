@@ -7952,7 +7952,7 @@ async (...args) =>
 
       largura: "17px",
 
-      preenchimento: [`#fff`],
+      preenchimento: [`#ccc`],
 
       args,
     }}/>],
