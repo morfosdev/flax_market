@@ -8120,8 +8120,16 @@ const currentField = tools.getCtData("sc.a2.sortField");
     return 0;
   });
 
-  tools.setCtData("sc.a2.list", sortedList);
-}]
+  // Atualiza a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a2.list"],
+      value: sortedList
+    }
+  });
+}
+]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
