@@ -8106,7 +8106,24 @@ const currentField = tools.getCtData("sc.a2.sortField");
   flexBasis: 80,
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const list = tools.getCtData("sc.a2.list") || [];
+
+  const sortedList = [...list].sort((a, b) => {
+    const valA = (a.label || "").toString().toLowerCase();
+    const valB = (b.label || "").toString().toLowerCase();
+
+    if (valA < valB) return -1;
+    if (valA > valB) return 1;
+    return 0;
+  });
+
+  tools.setCtData("sc.a2.list", sortedList);
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
