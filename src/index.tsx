@@ -8109,25 +8109,26 @@ const currentField = tools.getCtData("sc.a2.sortField");
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
+  // Pega a lista atual
   const list = tools.getCtData("sc.a2.list") || [];
 
+  // Ordena pela propriedade 'label'
   const sortedList = [...list].sort((a, b) => {
     const valA = (a.label || "").toString().toLowerCase();
     const valB = (b.label || "").toString().toLowerCase();
-
-    if (valA < valB) return -1;
-    if (valA > valB) return 1;
-    return 0;
+    return valA.localeCompare(valB);
   });
 
-  console.log("Sorted list:", sortedList);
+  // Atualiza a variável com a lista ordenada
   tools.functions.setVar({
-    args: "",
     pass: {
       keyPath: ["sc.a2.list"],
       value: sortedList
     }
   });
+
+  // Debug: veja o resultado logo depois de setar
+  console.log("✅ Sorted list set in sc.a2.list:", sortedList);
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
