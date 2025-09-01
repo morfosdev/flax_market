@@ -7797,7 +7797,17 @@ borderColor: '#eee',
 borderWidth: 1,
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+ functions.firebase.where({ args, pass:{
+
+  arrRefStrings: [`productsEcommerce`],
+ arrWhere: [[() => ({ field: 'xx', operator: '==', value: 'xx' })]],
+ arrFuncs: [() => {}],
+ }})]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
