@@ -7803,7 +7803,12 @@ borderWidth: 1,
  functions.firebase.where({ args, pass:{
 
   arrRefStrings: [`productsEcommerce`],
- arrWhere: [[() => ({ field: 'xx', operator: '==', value: 'xx' })]],
+ arrWhere: [(...args) =>
+        functions.firebase.whereConds({ args, pass:{
+          arrStrings: [
+        `label`, 
+        `==`, `$var_sc.a2.selectedLabel`],
+        }})],
  arrFuncs: [() => {}],
  }})]
  , trigger: 'on press'
