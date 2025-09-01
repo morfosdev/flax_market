@@ -8108,8 +8108,7 @@ const currentField = tools.getCtData("sc.a2.sortField");
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
+ arrFunctions: [() => {
   // Pega a lista atual
   const list = tools.getCtData("sc.a2.list") || [];
 
@@ -8130,12 +8129,7 @@ const currentField = tools.getCtData("sc.a2.sortField");
 
   // Debug: veja o resultado logo depois de setar
 	console.log("✅ Sorted list set in sc.a2.list:", sortedList);
-}, 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
-        }
-        ]
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
