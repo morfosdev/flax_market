@@ -7863,9 +7863,13 @@ borderColor: '#eee',
 padding: 10,
 }`],
 
-          path: [" "],
+          path: [`sc.a2.selectedLabel`],
 
-          funcsArray: [() => {}],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.selectedLabel`],
+          value: [`$arg_callback`]
+        }})],
 
           args,
         }}/>],
