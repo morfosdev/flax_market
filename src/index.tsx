@@ -8120,7 +8120,6 @@ const currentField = tools.getCtData("sc.a2.sortField");
     return 0;
   });
 
-  // Atualiza a variável no Flaxboll
   tools.functions.setVar({
     args: "",
     pass: {
