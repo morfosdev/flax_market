@@ -7810,7 +7810,11 @@ async (...args) =>
         `label`, 
         `==`, `$var_sc.a2.selectedLabel`],
         }})],
- arrFuncs: [() => {}],
+ arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.list`],
+          value: [`$arg_item`]
+        }})],
  }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
