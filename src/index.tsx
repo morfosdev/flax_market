@@ -7913,7 +7913,7 @@ async (...args) =>
 async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a2.selectedLabel`],
-          value: [``]
+          value: [` `]
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
