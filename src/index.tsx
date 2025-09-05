@@ -4837,6 +4837,7 @@ margimBottom: 10,
 
             styles:[`{
 flexDirection: 'row',
+width: '106%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
