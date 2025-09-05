@@ -4851,7 +4851,7 @@ borderRadius: 5
 borderWidth: 1,
 borderColor: '#eee',
 padding: 10,
-width: '360px',
+width: '100%',
 }`],
 
           path: [`sc.a0.login.forms.password`],
