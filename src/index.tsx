@@ -22418,7 +22418,9 @@ paddingHorizontal: 15,
           args,
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`{
+multiline: 'true',
+}`],
 
           stylesArray: [`{
 width: '320px',
