@@ -10672,7 +10672,7 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges`],
+          keyPath: [`sc.a7.iptsChanges`],
           value: [``]
         }}), 
         (...args) => {
@@ -15557,7 +15557,7 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges`],
+          keyPath: [`sc.a7.iptsChanges`],
           value: [``]
         }}), 
         (...args) => {
@@ -21329,12 +21329,12 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges`],
+          keyPath: [`sc.a7.iptsChanges`],
           value: [``]
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a5AdmOrders");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
