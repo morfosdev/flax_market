@@ -22688,7 +22688,7 @@ fontSize: '14px',
           ],
 
           children: [
-            `Save Product`
+            `Save Review`
           ],
 
           args,
