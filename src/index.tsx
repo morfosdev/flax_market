@@ -10401,7 +10401,7 @@ width: '100px',
 height: '100px',
 }],
 
-      URIvariablePath:[`sc.a3.localFile`],
+      URIvariablePath:[`$var_sc.a3.localFile`],
 
       args,
     }}/>],
@@ -19466,6 +19466,66 @@ flex: 1,
             elementsProperties:['{}'],
 
             styles:[`{width: '5px',}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '124px',
+height: '40px',
+paddingHorizontal: '20px',
+paddingVertical: '12px',
+backgroundColor: '#000',
+borderRadius: 4,
+alignItems: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a5aAdmAddOrders");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+fontFamily: 'Inter',
+fontSize: '14px',
+}`
+          ],
+
+          children: [
+            `Add order`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ width: '16px', }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
