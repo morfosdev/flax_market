@@ -22785,8 +22785,8 @@ fontSize: '14px',
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const order = tools.getCtData("sc.a5b.editData.order");
-  console.log("Order data:", order);
+  const review = tools.getCtData("sc.a7b.editData.review");
+  console.log("Review data:", review);
 }]
  , trigger: 'on init'
 }})],
