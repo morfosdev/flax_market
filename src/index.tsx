@@ -10401,7 +10401,7 @@ flexDirection: 'row',
 maxWidth: "200px",
 }],
 
-      URIvariablePath:[`$sc.a3.previewUrl`],
+      URIvariablePath:[`sc.a3.previewUrl`],
 
       args,
     }}/>, 
