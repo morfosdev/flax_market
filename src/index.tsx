@@ -19881,7 +19881,7 @@ flex: 1,
             {}
           ],
 
-          pData: `sc.a6.list.customers`,
+          pData: `sc.a7.list.reviews`,
 
           itemElements: [
             
@@ -20170,10 +20170,10 @@ justifyContent: 'center',
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`customersEcommerce`],
+   arrRefStrings: [`reviewsEcommerce`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a6.list.customers`],
+          keyPath: [`sc.a7.list.reviews`],
           value: [`$arg_callback`]
         }})],
         }})]
