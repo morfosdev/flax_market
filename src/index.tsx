@@ -4836,10 +4836,6 @@ margimBottom: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 10,
 flexDirection: 'row',
 }`],
 
