@@ -4851,7 +4851,11 @@ flexDirection: 'row',
 }`],
 
           stylesArray: [`{
-flex: 1,
+borderTopRightRadius: 5,
+borderBottomRightRadius: 5,
+borderWidth: 1,
+borderColor: '#eee',
+padding: 10,
 }`],
 
           path: [`sc.a0.login.forms.password`],
