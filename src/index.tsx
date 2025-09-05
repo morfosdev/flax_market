@@ -10440,12 +10440,21 @@ flexDirection: 'row',
     // ✅ Create a temporary preview URL
     const previewUrl = URL.createObjectURL(file);
 
-    // ✅ Save to two different vars
+    // Save file object
     tools.functions.setVar({
       args: "",
       pass: {
-        keyPath: ["sc.a3.localFile", "sc.a3.previewUrl"], // array of paths
-        value: [file, previewUrl] // array of values
+        keyPath: ["sc.a3.localFile"],
+        value: [file]
+      }
+    });
+
+    // Save preview URL
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.previewUrl"],
+        value: [previewUrl]
       }
     });
 
