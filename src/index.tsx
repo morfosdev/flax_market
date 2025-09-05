@@ -19510,7 +19510,7 @@ fontSize: '14px',
           ],
 
           children: [
-            `Add order`
+            `Add review`
           ],
 
           args,
