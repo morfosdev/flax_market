@@ -4847,11 +4847,11 @@ flexDirection: 'row',
 }`],
 
           stylesArray: [`{
-borderTopRightRadius: 5,
-borderBottomRightRadius: 5,
+borderRadius: 5
 borderWidth: 1,
 borderColor: '#eee',
 padding: 10,
+width: '360px',
 }`],
 
           path: [`sc.a0.login.forms.password`],
