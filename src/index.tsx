@@ -10392,19 +10392,6 @@ flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
-        
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{
-maxWidth: "200px",
-}],
-
-      URIvariablePath:[`sc.a3.previewUrl`],
-
-      args,
-    }}/>, 
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => <RN.Image
