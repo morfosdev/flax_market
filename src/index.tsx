@@ -22571,12 +22571,12 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`$var_sc.a5.editData.order`],
+          keyPath: [`$var_sc.a7.editData.review`],
           value: [``]
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a5AdmOrders");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
