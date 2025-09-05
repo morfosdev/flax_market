@@ -10434,7 +10434,8 @@ flexDirection: 'row',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => {
+ arrFunctions: [
+() => {
   const input = document.createElement("input");
   input.type = "file";
   input.accept = "image/*";
@@ -10476,7 +10477,12 @@ flexDirection: 'row',
   };
 
   input.click();
-}]
+}, 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a3AdmAddProducts");
+        }
+        ]
  , trigger: 'on press'
 }})],            childrenItems:[
         (...args:any) => <Elements.SvgView1 pass={{
