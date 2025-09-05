@@ -21147,11 +21147,13 @@ paddingHorizontal: 15,
           args,
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`{
+multiline: 'true',
+}`],
 
           stylesArray: [`{
 width: '320px',
-height: '45px',
+height: '128px',
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
