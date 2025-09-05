@@ -10401,7 +10401,7 @@ width: '100px',
 height: '100px',
 }],
 
-      URIvariablePath:[`$var_sc.a3.localFile`],
+      URIvariablePath:[`sc.a3.localFile`],
 
       args,
     }}/>],
