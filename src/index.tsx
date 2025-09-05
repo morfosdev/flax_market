@@ -10392,6 +10392,7 @@ flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
@@ -10403,7 +10404,15 @@ maxWidth: "200px",
       URIvariablePath:[`$sc.a3.previewUrl`],
 
       args,
-    }}/>],
+    }}/>, 
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => <RN.Image
+  source={{ uri: tools.getCtData("sc.a3.previewUrl") }}
+  style={{ width: 150, height: 150, borderRadius: 8 }}
+/>] 
+}}/>
+],
 
             args,
           }}/>
