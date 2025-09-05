@@ -10463,8 +10463,7 @@ flexDirection: 'row',
   };
 
   input.click();
-}
-]
+}]
  , trigger: 'on press'
 }})],            childrenItems:[
         (...args:any) => <Elements.SvgView1 pass={{
