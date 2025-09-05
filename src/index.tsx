@@ -4847,7 +4847,7 @@ flexDirection: 'row',
 }`],
 
           stylesArray: [`{
-borderRadius: 5
+borderRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
 padding: 10,
