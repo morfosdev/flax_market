@@ -10397,11 +10397,10 @@ flexDirection: 'row',
       elementsProperties:[{}],
 
       styles:[{
-width: '100px',
-height: '100px',
+maxWidth: "200px",
 }],
 
-      URIvariablePath:[`sc.a3.localFile`],
+      URIvariablePath:[`sc.a3.previewUrl`],
 
       args,
     }}/>],
@@ -10438,22 +10437,25 @@ flexDirection: 'row',
       return;
     }
 
-    // ✅ Save the File object in a Flaxboll variable
+    // ✅ Create a temporary preview URL
+    const previewUrl = URL.createObjectURL(file);
+
+    // Save both the file (for upload) and the preview URL (for display)
     tools.functions.setVar({
       args: "",
       pass: {
-        keyPath: ["sc.a3.localFile"],
-        value: [file]
+        keyPath: ["sc.a3.localFile", "sc.a3.previewUrl"],
+        value: [file, previewUrl]
       }
     });
 
-    // Just for debug
     console.log("File selected:", file);
-    
+    console.log("Preview URL:", previewUrl);
   };
 
   input.click();
-}]
+}
+]
  , trigger: 'on press'
 }})],            childrenItems:[
         (...args:any) => <Elements.SvgView1 pass={{
