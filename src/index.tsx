@@ -22508,17 +22508,17 @@ justifyContent: 'center',
 async (...args) =>
         functions.firebase.updateDocTool({ args, pass:{
    arrRefStrings: [
-        `ordersEcommerce`, `$var_sc.a5.editData.order.docId`],
-            arrPathData: [`$var_sc.a5.editData.order`],
+        `reviewsEcommerce`, `$var_sc.a7.editData.review.docId`],
+            arrPathData: [`$var_sc.a7.editData.review`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`$var_sc.a5.editData.order`],
+          keyPath: [`$var_sc.a7.editData.review`],
           value: [``]
         }})],
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a5AdmOrders");
+          return tools.goTo("a7AdmReviews");
         }
         ]
  , trigger: 'on press'
