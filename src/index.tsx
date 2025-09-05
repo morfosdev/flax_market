@@ -4873,7 +4873,7 @@ width: '100%',
 	height: '20px',
 	alignItems: 'center',
         right: '35px',
-        top: '12px',
+        top: '13px',
 
 }`],
 
