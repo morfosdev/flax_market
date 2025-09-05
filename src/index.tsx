@@ -4872,6 +4872,9 @@ width: '100%',
 	width: '20px',
 	height: '20px',
 	alignItems: 'center',
+        right: '35px',
+        top: '12px',
+
 }`],
 
             functions:[async (...args) =>
