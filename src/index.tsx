@@ -10392,149 +10392,19 @@ flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '60px',
-alignItems: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.image`],
-          value: [`https://pangaia.com/cdn/shop/files/DNA_Oversized_T-Shirt_-Summit_Blue-1.png?v=1707830032`]
-        }})]
- , trigger: 'on press'
-}})],            childrenItems:[
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
 
       styles:[{
-width: '48px',
-height: '48px',
+width: '100px',
+height: '100px',
 }],
 
-      URIvariablePath:[`https://pangaia.com/cdn/shop/files/DNA_Oversized_T-Shirt_-Summit_Blue-1.png?v=1707830032`],
+      URIvariablePath:[`sc.a3.localFile`],
 
       args,
     }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ width: '2px', }`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '60px',
-alignItems: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.image`],
-          value: [`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqMvMuYQIvpZGdgD7O8ESBZxgZG9QyKkxnw&s`]
-        }})]
- , trigger: 'on press'
-}})],            childrenItems:[
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{
-width: '48px',
-height: '48px',
-}],
-
-      URIvariablePath:[`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzqMvMuYQIvpZGdgD7O8ESBZxgZG9QyKkxnw&s`],
-
-      args,
-    }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ width: '2px', }`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '60px',
-alignItems: 'center',
-borderRadius: 5,
-borderWidth: 1,
-borderColor: '#eee',
-padding: 5,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.image`],
-          value: [`https://isto.pt/cdn/shop/files/HW_Navy_Flatlay.webp?v=1747408830&width=1946`]
-        }})]
- , trigger: 'on press'
-}})],            childrenItems:[
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{
-width: '48px',
-height: '48px',
-}],
-
-      URIvariablePath:[`https://isto.pt/cdn/shop/files/HW_Navy_Flatlay.webp?v=1747408830&width=1946`],
-
-      args,
-    }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
