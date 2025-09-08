@@ -10586,7 +10586,8 @@ justifyContent: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
  functions.firebase.uploadFileTool({ args, pass:{
  arrFiles: [`sc.a3.localFile`],
  arrFuncs: [async (...args) =>
@@ -10594,7 +10595,16 @@ justifyContent: 'center',
           keyPath: [`sc.a3.iptsChanges.imgUrl`],
           value: [`$arg_callback`]
         }})],
- }})]
+ }}), async (...args) =>
+        functions.firebase.setDocTool({ args, pass:{
+  arrRefStrings: [`productsEcommerce`],
+            arrPathData: [`sc.a3.iptsChanges`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.iptsChanges`],
+          value: [``]
+        }})],
+        }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
