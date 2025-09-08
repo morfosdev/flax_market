@@ -10595,17 +10595,7 @@ flexDirection: 'row',
         });
       }]
  , trigger: 'on press'
-}})],            childrenItems:[
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{ width: 100, height: 100, margin: 5, borderRadius: 8 }],
-
-      URIvariablePath:[`sc.a3products.selectedImage`],
-
-      args,
-    }}/>],
+}})],            childrenItems:[() =><></>],
 
             args,
           }}/>
