@@ -10592,7 +10592,7 @@ async (...args) =>
  arrFiles: [`sc.a3.localFile`],
  arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.imgUrl`],
+          keyPath: [`sc.a3.iptsChanges.image`],
           value: [`$arg_callback`]
         }})],
  }}), async (...args) =>
