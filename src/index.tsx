@@ -10396,6 +10396,20 @@ flexDirection: 'row',
             args,
           }}/>
         , 
+        
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+	width: '200px',
+	height:'200px',
+}],
+
+      URIvariablePath:[`sc.a3.previewUrl`],
+
+      args,
+    }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
