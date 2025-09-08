@@ -10563,21 +10563,43 @@ flexDirection: 'row',
             arrProps: [],
             arrItems: [(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
-            {}
+            `numColumns={3}`
           ],
 
           pData: `sc.a3products.images`,
 
           itemElements: [
             
-              (...args) => {
-                return (
-                  <RN.Text>
-                    Adicione os campos que quer mostrar aqui.
-                  </RN.Text>
-                );
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
               }
-              
+              ],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+        tools.functions.setVar({
+          args: "",
+          pass: {
+            keyPath: ["sc.a3products.selectedImage"],
+            value: item
+          }
+        });
+      }]
+ , trigger: 'on press'
+}})],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        
           ],
 
       styles:[
