@@ -10404,6 +10404,7 @@ flexDirection: 'row',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -10529,7 +10530,34 @@ flexDirection: 'row',
 
             args,
           }}/>
-        ],
+        , 
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => <RN.FlatList
+  data={tools.getCtData("sc.a3products.images")}
+  numColumns={3}
+  renderItem={({ item }) => (
+    <RN.TouchableOpacity
+      onPress={() => {
+        tools.functions.setVar({
+          args: "",
+          pass: {
+            keyPath: ["sc.products.selectedImage"],
+            value: item
+          }
+        });
+      }}
+    >
+      <RN.Image
+        source={{ uri: item }}
+        style={{ width: 100, height: 100, margin: 5, borderRadius: 8 }}
+      />
+    </RN.TouchableOpacity>
+  )}
+  keyExtractor={(item, index) => index.toString()}
+/>] 
+}}/>
+],
 
             args,
           }}/>
