@@ -10641,7 +10641,7 @@ async (...args) =>
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a3.iptsChanges`],
-          value: [``]
+          value: [`$arg_item`]
         }})],
         }}), 
         (...args) => {

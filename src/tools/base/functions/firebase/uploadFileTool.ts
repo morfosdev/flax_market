@@ -14,7 +14,7 @@ export const uploadFileTool = async (props: Tprops) => {
   const { args, pass } = props;
   const { arrFiles, arrFuncs } = pass;
   const fbInit = getCtData('all.temp.fireInit');
-  console.log({ fbInit, arrFiles, arrFuncs });
+  console.log({ fbInit, arrFiles, arrFuncs, getStorage });
 
   // -----------------------------
   // -------- set Firestore Call 1
