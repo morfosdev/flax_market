@@ -10604,7 +10604,7 @@ async (...args) =>
             arrPathData: [`sc.a3.iptsChanges`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.A0.forms.iptsChanges.imgUrl`],
+          keyPath: [`sc.A3.forms.iptsChanges.imgUrl`],
           value: [`$arg_callback`]
         }})],
         }}), 
