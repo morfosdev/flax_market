@@ -10720,38 +10720,7 @@ fontSize: '14px',
           }}/>
         ],
 
-          functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => {
-	
-const storage = tools.functions.firebase.getStorage();
-
-const imagesRef = ref(storage, "products");
-
-listAll(imagesRef)
-  .then(async (res) => {
-    // Para cada item (arquivo), pegar a URL de download
-    const urls = await Promise.all(res.items.map((itemRef) => getDownloadURL(itemRef)));
-
-    // Aqui você já tem todas as URLs das imagens
-    console.log("Imagens:", urls);
-
-    // Salva no Flaxboll (para exibir no app)
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3products.images"],
-        value: urls
-      }
-    });
-  })
-  .catch((error) => {
-    console.error("Erro ao listar imagens:", error);
-})
-}
-]
- , trigger: 'on init'
-}})],
+          functions:[()=>{}],
 
           args,
         }}/>, 
