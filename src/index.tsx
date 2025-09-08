@@ -10572,8 +10572,7 @@ justifyContent: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
+ arrFunctions: [async (...args) =>
  functions.firebase.uploadFileTool({ args, pass:{
  arrFiles: [`sc.a3.localFile`],
  arrFuncs: [async (...args) =>
@@ -10581,12 +10580,7 @@ async (...args) =>
           keyPath: [`sc.a3.iptsChanges.imgUrl`],
           value: [`$arg_callback`]
         }})],
- }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
-        }
-        ]
+ }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
