@@ -44,21 +44,29 @@ export const uploadFileTool = async (props: Tprops) => {
 
   console.log({ arrData });
 
-  arrData &&
-    arrData.forEach(async (currData: any, idx: number) => {
-      console.log('INIT LOOP UPLOAD', currData, idx);
+  if (arrData && arrData.length) {
+    for (const idx in arrData) {
+      const currData: any = arrData[idx as any];
+
+      console.log('INIT LOOP UPLOAD', currData, Number(idx));
+
       const time = Date.now().toString();
       const strRefFile = ref(storage, `images/` + time + currData.name);
       console.log({ strRefFile });
+
       const file = currData;
       console.log({ file });
+
       await uploadBytes(strRefFile, file);
 
-      // ---------- set Return Functions
       const firestoreURL = await getDownloadURL(strRefFile);
       console.log({ firestoreURL });
 
-      for (const currFunc of arrFuncs) await currFunc( firestoreURL, idx, args);
-    });
+      for (const currFunc of arrFuncs) {
+        console.log({ currFunc });
+        await currFunc(firestoreURL, Number(idx), args);
+      }
+    }
+  }
 };
 
