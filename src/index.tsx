@@ -10536,7 +10536,7 @@ flexDirection: 'row',
           }}/>
         , (...args:any) => <Elements.Loader pass={{
             size: "small",
-            color: ' ',
+            color: `#FF4`,
             args,
         }}/>],
 
