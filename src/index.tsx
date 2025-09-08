@@ -10596,7 +10596,7 @@ fontSize: '14px',
           ],
 
           children: [
-            `Save Product222`
+            `Save Product`
           ],
 
           args,
