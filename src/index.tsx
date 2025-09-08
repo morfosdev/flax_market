@@ -10595,7 +10595,8 @@ async (...args) =>
           keyPath: [`sc.a3.iptsChanges.image`],
           value: [`$arg_callback`]
         }})],
- }}), async (...args) =>
+ }}), 
+async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
   arrRefStrings: [`productsEcommerce`],
             arrPathData: [`sc.a3.iptsChanges`],
@@ -10604,7 +10605,12 @@ async (...args) =>
           keyPath: [`sc.a3.iptsChanges`],
           value: [``]
         }})],
-        }})]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a2AdmProducts");
+        }
+        ]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
