@@ -10196,7 +10196,6 @@ paddingHorizontal: 15,
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -10534,11 +10533,7 @@ flexDirection: 'row',
 
             args,
           }}/>
-        , (...args:any) => <Elements.Loader pass={{
-            size: "small",
-            color: `#FF4`,
-            args,
-        }}/>],
+        ],
 
             args,
           }}/>
