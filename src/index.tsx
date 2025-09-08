@@ -10582,12 +10582,6 @@ async (...args) =>
           value: [`$arg_callback`]
         }})],
  }}), 
-async (...args) =>
-        functions.firebase.setDocTool({ args, pass:{
-  arrRefStrings: [`productsEcommerce`],
-            arrPathData: [`sc.a3.iptsChanges`],
-            arrFuncs: [()=>{}],
-        }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
           return tools.goTo("a2AdmProducts");
