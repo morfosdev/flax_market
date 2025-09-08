@@ -10531,6 +10531,7 @@ flexDirection: 'row',
             args,
           }}/>
         , 
+        
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => <RN.FlatList
@@ -10557,7 +10558,39 @@ flexDirection: 'row',
   keyExtractor={(item, index) => index.toString()}
 />] 
 }}/>
-],
+, (...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [(...args:any) => <Elements.FlatList2 pass={{
+          elementProperties: [
+            {}
+          ],
+
+          pData: `sc.a3products.images`,
+
+          itemElements: [
+            
+              (...args) => {
+                return (
+                  <RN.Text>
+                    Adicione os campos que quer mostrar aqui.
+                  </RN.Text>
+                );
+              }
+              
+          ],
+
+      styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],    args,
+        }}/>],
+            args,
+        }}/>],
 
             args,
           }}/>
