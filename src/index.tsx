@@ -10764,7 +10764,7 @@ fontSize: '14px',
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
 	
-const storage = tools.functions.getStorage();
+const storage = tools.functions.firebase.getStorage();
 
 const imagesRef = ref(storage, "products");
 
