@@ -10602,7 +10602,11 @@ async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
   arrRefStrings: [`productsEcommerce`],
             arrPathData: [`sc.a3.iptsChanges`],
-            arrFuncs: [()=>{}],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.A0.forms.iptsChanges.imgUrl`],
+          value: [`$arg_callback`]
+        }})],
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
