@@ -10682,6 +10682,11 @@ async (...args) =>
           keyPath: [`sc.a7.iptsChanges`],
           value: [``]
         }}), 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.localFile`],
+          value: [``]
+        }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
           return tools.goTo("a2AdmProducts");
