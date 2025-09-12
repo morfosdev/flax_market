@@ -4785,12 +4785,12 @@ padding: 10,
   // Permitir apenas letras, números, @, ponto, hífen e underscore
   newValue = newValue.replace(/[^a-zA-Z0-9@._-]/g, "");
 
-  // Atualizar a variável no Flaxboll
+  // Atualizar a variável no Flaxboll (sempre como array!)
   tools.functions.setVar({
     args: "",
     pass: {
       keyPath: ["sc.a0.login.forms.email"],
-      value: newValue
+      value: [newValue]   // 👈 precisa estar em array
     }
   });
 
