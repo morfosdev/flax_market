@@ -4795,7 +4795,7 @@ padding: 10,
 		
 
   // Regex simples para validar email
-  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(sc.a0.login.forms.email);
+  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test('sc.a0.login.forms.email');
 
   if (!isValid) {
     console.log("Email inválido!");
