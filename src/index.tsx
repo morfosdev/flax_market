@@ -7876,7 +7876,8 @@ async (...args) =>
 }`],
 
           stylesArray: [`{
-borderWidth: 1,
+borderTopWidth: 1,
+borderBottomWidth: 1,
 borderColor: '#eee',
 padding: 10,
 }`],
