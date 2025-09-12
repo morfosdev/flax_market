@@ -10615,11 +10615,16 @@ async (...args) =>
           value: [``]
         }})],
         }}), 
+
         (...args) => {
           // ---------- get Function from A_Project Scope
           return tools.goTo("a2AdmProducts");
         }
-        ]
+        , async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.previewUrl`],
+          value: [``]
+        }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
