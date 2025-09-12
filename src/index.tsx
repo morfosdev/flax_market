@@ -9900,7 +9900,6 @@ paddingHorizontal: 15,
   });
 
   console.log("Preço digitado:", newValue);
-  }
 }
 ],
 
