@@ -4778,18 +4778,23 @@ padding: 10,
 
           path: [`sc.a0.login.forms.email`],
 
-          funcsArray: [
-        (value) => {
-  // Allow only valid email characters
-  let filtered = value.replace(/[^a-zA-Z0-9@._-]/g, "");
+          funcsArray: [(value) => {
+  // Remove espaços
+  let newValue = value.replace(/s+/g, "");
 
-  // Return the filtered value so the input updates
-  return filtered;
-}, async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a0.login.forms.email`],
-          value: [`$arg_callback`]
-        }})],
+  // Permitir apenas letras, números, @, ponto, hífen e underscore
+  newValue = newValue.replace(/[^a-zA-Z0-9@._-]/g, "");
+
+  // Atualizar a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a0.login.forms.email"],
+      value: newValue
+    }
+  });
+}
+],
 
           args,
         }}/>],
