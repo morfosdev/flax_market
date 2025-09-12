@@ -4798,7 +4798,7 @@ padding: 10,
     // console.log("Email inválido!");
   // } else {
     // console.log("Email válido, continuar login:", newValue);
-  }
+  //}
 }
 ],
 
