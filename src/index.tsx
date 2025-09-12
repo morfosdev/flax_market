@@ -9883,16 +9883,16 @@ paddingHorizontal: 15,
 
           path: [`sc.a3.iptsChanges.price`],
 
-          funcsArray: [(e) => {
+          funcsArray: [(callback) => {
   // Captura o valor atual digitado
-  let value = e.target.value;
+  let value = callback.target.value;
 
   // Remove tudo que não seja número, ponto ou vírgula
   let newValue = value.replace(/[^0-9.,]/g, "");
 
   // Se o valor mudou, atualizar o campo visível imediatamente
   if (newValue !== value) {
-    e.target.value = newValue;
+    callback.target.value = newValue;
   }
 
   // Atualizar também a variável no Flaxboll
