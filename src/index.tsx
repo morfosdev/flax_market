@@ -10396,6 +10396,20 @@ paddingHorizontal: 15,
 
       args,
     }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
