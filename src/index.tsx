@@ -4791,9 +4791,7 @@ padding: 10,
     pass: {
       keyPath: ["sc.a0.login.forms.email"],
       value: newValue
-		},
-console.log("sc.a0.login.forms.email");
-
+		}
   });
 }
 ],
