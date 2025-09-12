@@ -10511,7 +10511,13 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#878A92",
+  paddingVertical: '5',
+}`
           ],
 
           children: [
