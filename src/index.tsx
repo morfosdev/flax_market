@@ -4792,12 +4792,12 @@ padding: 10,
   });
 
   // Regex simples para validar email
-  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(newValue);
+  // const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(newValue);
 
-  if (!isValid) {
-    console.log("Email inválido!");
-  } else {
-    console.log("Email válido, continuar login:", newValue);
+  // if (!isValid) {
+    // console.log("Email inválido!");
+  // } else {
+    // console.log("Email válido, continuar login:", newValue);
   }
 }
 ],
