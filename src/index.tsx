@@ -10381,23 +10381,6 @@ paddingHorizontal: 15,
         }}/>, 
         
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '200px',
-alignItems: 'center',
-padding: 5,
-flexDirection: 'row',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
 
