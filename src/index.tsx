@@ -10388,6 +10388,8 @@ paddingHorizontal: 15,
 	width: '200px',
 	height:'200px',
 	borderRadius: '6px',
+	borderWidth: '1px',
+	borderColor: '#e6e7e8',
 }],
 
       URIvariablePath:[`sc.a3.previewUrl`],
