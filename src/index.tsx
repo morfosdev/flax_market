@@ -4792,6 +4792,20 @@ padding: 10,
       keyPath: ["sc.a0.login.forms.email"],
       value: newValue
 		}
+		
+const email = tools.getCtData("sc.a0.login.forms.email") || "";
+
+  // Regex simples para validar email
+  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(email);
+
+  if (!isValid) {
+    console.log("Email inválido!");
+    return;
+  }
+
+  console.log("Email válido, continuar login:", email);
+  // ... seguir fluxo de login
+
   });
 }
 ],
