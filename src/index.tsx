@@ -10490,7 +10490,7 @@ flexDirection: 'row',
 
       largura: "20px",
 
-      preenchimento: ['black'],
+      preenchimento: [`color: 'white',`],
 
       args,
     }}/>, 
