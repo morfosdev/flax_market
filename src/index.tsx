@@ -4782,6 +4782,9 @@ padding: 10,
   // Remove espaços
   let newValue = callback.replace(/s+/g, "");
 
+  // Permitir apenas letras, números, @, ponto, hífen e underscore
+  newValue = newValue.replace(/[^a-zA-Z0-9@._-]/g, "");
+
   // Atualizar a variável no Flaxboll
   tools.functions.setVar({
     args: "",
@@ -4792,13 +4795,13 @@ padding: 10,
   });
 
   // Regex simples para validar email
-  // const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(newValue);
+  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(newValue);
 
-  // if (!isValid) {
-    // console.log("Email inválido!");
-  // } else {
-    // console.log("Email válido, continuar login:", newValue);
-  //}
+  if (!isValid) {
+    console.log("Email inválido!");
+  } else {
+    console.log("Email válido, continuar login:", newValue);
+  }
 }
 ],
 
