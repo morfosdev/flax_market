@@ -7876,8 +7876,6 @@ async (...args) =>
 }`],
 
           stylesArray: [`{
-borderTopRightRadius: 5,
-borderBottomRightRadius: 5,
 borderWidth: 1,
 borderColor: '#eee',
 padding: 10,
@@ -7898,8 +7896,8 @@ padding: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-borderTopLeftRadius: 5,
-borderBottomLeftRadius: 5,
+borderTopRightRadius: 5,
+borderBottomRightRadius: 5,
 padding: 11,
 alignItem: 'center',
 justifyContent: 'center',
