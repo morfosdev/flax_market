@@ -4782,15 +4782,12 @@ padding: 10,
   // Remove espaços
   let newValue = callback.replace(/s+/g, "");
 
-  // Permitir apenas letras, números, @, ponto, hífen e underscore
-  newValue = newValue.replace(/[^a-zA-Z0-9@._-]/g, "");
-
-  // Atualizar a variável no Flaxboll (sempre como array!)
+  // Atualizar a variável no Flaxboll
   tools.functions.setVar({
     args: "",
     pass: {
       keyPath: ["sc.a0.login.forms.email"],
-      value: [newValue]   // 👈 precisa estar em array
+      value: [newValue]
     }
   });
 
@@ -4801,7 +4798,6 @@ padding: 10,
     console.log("Email inválido!");
   } else {
     console.log("Email válido, continuar login:", newValue);
-    // ... seguir fluxo de login
   }
 }
 ],
