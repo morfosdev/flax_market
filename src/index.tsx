@@ -9884,18 +9884,13 @@ paddingHorizontal: 15,
           path: [`sc.a3.iptsChanges.price`],
 
           funcsArray: [(callback) => {
-  // Captura o valor atual digitado
-  let value = callback.target.value;
+  // Remove tudo que não seja número, ponto
+  let newValue = callback.replace(/[^0-9.,]/g, "");
 
-  // Remove tudo que não seja número, ponto ou vírgula
-  let newValue = value.replace(/[^0-9.,]/g, "");
+  // Permitir apenas números e pontos
+  newValue = newValue.replace(/[^0-9.,]/g, "");
 
-  // Se o valor mudou, atualizar o campo visível imediatamente
-  if (newValue !== value) {
-    callback.target.value = newValue;
-  }
-
-  // Atualizar também a variável no Flaxboll
+  // Atualizar a variável no Flaxboll
   tools.functions.setVar({
     args: "",
     pass: {
@@ -9905,6 +9900,7 @@ paddingHorizontal: 15,
   });
 
   console.log("Preço digitado:", newValue);
+  }
 }
 ],
 
