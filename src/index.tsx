@@ -10679,12 +10679,12 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a7.iptsChanges`],
+          keyPath: [`sc.a3.iptsChanges`],
           value: [``]
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.localFile`],
+          keyPath: [`sc.a3.previewUrl`],
           value: [``]
         }}), 
         (...args) => {
@@ -15569,7 +15569,7 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a7.iptsChanges`],
+          keyPath: [`sc.a3.iptsChanges`],
           value: [``]
         }}), 
         (...args) => {
@@ -21368,7 +21368,7 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a7.iptsChanges`],
+          keyPath: [`sc.a3.iptsChanges`],
           value: [``]
         }}), 
         (...args) => {
