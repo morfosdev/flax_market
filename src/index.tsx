@@ -4791,21 +4791,18 @@ padding: 10,
     pass: {
       keyPath: ["sc.a0.login.forms.email"],
       value: newValue
-		}
-		
+    }
+  });
 
   // Regex simples para validar email
-  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test('sc.a0.login.forms.email');
+  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(newValue);
 
   if (!isValid) {
     console.log("Email inválido!");
-    return;
+  } else {
+    console.log("Email válido, continuar login:", newValue);
+    // ... seguir fluxo de login
   }
-
-  console.log("Email válido, continuar login:", email);
-  // ... seguir fluxo de login
-
-  });
 }
 ],
 
