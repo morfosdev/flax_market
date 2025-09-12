@@ -10387,6 +10387,7 @@ paddingHorizontal: 15,
       styles:[{
 	width: '200px',
 	height:'200px',
+	borderRadius: '6',
 }],
 
       URIvariablePath:[`sc.a3.previewUrl`],
