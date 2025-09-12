@@ -4778,9 +4778,9 @@ padding: 10,
 
           path: [`sc.a0.login.forms.email`],
 
-          funcsArray: [(value) => {
+          funcsArray: [(callback) => {
   // Remove espaços
-  let newValue = value.replace(/s+/g, "");
+  let newValue = callback.replace(/s+/g, "");
 
   // Permitir apenas letras, números, @, ponto, hífen e underscore
   newValue = newValue.replace(/[^a-zA-Z0-9@._-]/g, "");
@@ -4791,7 +4791,9 @@ padding: 10,
     pass: {
       keyPath: ["sc.a0.login.forms.email"],
       value: newValue
-    }
+		}
+console.log("sc.a0.login.forms.email");
+
   });
 }
 ],
