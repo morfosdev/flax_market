@@ -21378,7 +21378,7 @@ justifyContent: 'center',
  arrFunctions: [
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges`],
+          keyPath: [`sc.a7a.iptsChanges`],
           value: [``]
         }}), 
         (...args) => {
