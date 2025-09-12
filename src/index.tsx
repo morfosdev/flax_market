@@ -4793,10 +4793,9 @@ padding: 10,
       value: newValue
 		}
 		
-const email = tools.getCtData("sc.a0.login.forms.email") || "";
 
   // Regex simples para validar email
-  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(email);
+  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(sc.a0.login.forms.email);
 
   if (!isValid) {
     console.log("Email inválido!");
