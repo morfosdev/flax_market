@@ -9883,11 +9883,22 @@ paddingHorizontal: 15,
 
           path: [`sc.a3.iptsChanges.price`],
 
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.price`],
-          value: [`$arg_callback`]
-        }})],
+          funcsArray: [(callback) => {
+  // Remove tudo que não seja número, ponto ou vírgula
+  let newValue = callback.replace(/[^0-9.,]/g, "");
+
+  // Atualizar a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.iptsChanges.price"],
+      value: [newValue]
+    }
+  });
+
+  console.log("Preço digitado:", newValue);
+}
+],
 
           args,
         }}/>],
