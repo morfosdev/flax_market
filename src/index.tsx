@@ -9782,7 +9782,7 @@ flexDirection: 'row',
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -9859,7 +9859,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -9936,7 +9936,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -10013,7 +10013,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -10090,7 +10090,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -10243,7 +10243,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -10320,7 +10320,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -11691,7 +11691,7 @@ flexDirection: 'row',
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -11768,7 +11768,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -11845,7 +11845,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -11922,7 +11922,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -11999,7 +11999,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -12152,7 +12152,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -12229,7 +12229,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -15153,7 +15153,7 @@ flexDirection: 'row',
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -15230,7 +15230,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -15317,7 +15317,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -15394,7 +15394,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -16571,7 +16571,7 @@ flexDirection: 'row',
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -16648,7 +16648,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -16735,7 +16735,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -16812,7 +16812,7 @@ paddingHorizontal: 15,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -21102,7 +21102,7 @@ flexDirection: 'row',
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -22357,7 +22357,7 @@ flexDirection: 'row',
           propsArray: [{}],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -23600,7 +23600,7 @@ placeholder: '',
 }`],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -23675,7 +23675,7 @@ placeholder: '',
 }`],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -23749,7 +23749,7 @@ placeholder: '',
 }`],
 
           stylesArray: [`{
-width: '320px',
+width: '75%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
