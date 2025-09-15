@@ -10635,7 +10635,9 @@ paddingHorizontal: 15,
           keyPath: ["sc.a3.iptsChanges.stock"],
           value: ["Out of Stock"]
         }
-      });
+			});
+console.log("Estoque salvo: Out of Stock");
+
     } else if (numericValue > 0) {
       tools.functions.setVar({
         args: "",
@@ -10643,7 +10645,8 @@ paddingHorizontal: 15,
           keyPath: ["sc.a3.iptsChanges.stock"],
           value: ["In Stock"]
         }
-      });
+			});
+console.log("Estoque salvo: In Stock");
     }
   }
 
