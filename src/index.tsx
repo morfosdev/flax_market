@@ -9897,7 +9897,30 @@ paddingHorizontal: 15,
       keyPath: ["sc.a3.iptsChanges.price"],
       value: [newValue]
     }
-  });
+	});
+	
+// Verificar se existe algum número válido
+  if (newValue === "" || !/[0-9]/.test(newValue)) {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.priceMessage"],
+        value: ["Preço inválido ou não informado."]
+      }
+    });
+  } else {
+    // Limpar mensagem caso o valor seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.priceMessage"],
+        value: [""]
+      }
+    });
+  }
+
+
 
   console.log("Preço digitado:", newValue);
 }
