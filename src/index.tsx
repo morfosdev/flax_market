@@ -9934,7 +9934,7 @@ paddingHorizontal: 15,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{ color: "red", marginTop: 8 }`
           ],
 
           children: [
