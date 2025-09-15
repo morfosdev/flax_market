@@ -10498,7 +10498,7 @@ paddingHorizontal: 15,
           args,
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`{ editable: false, }`],
 
           stylesArray: [`{
 width: '80%',
