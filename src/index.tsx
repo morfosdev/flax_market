@@ -9938,7 +9938,7 @@ paddingHorizontal: 15,
           ],
 
           children: [
-            `sc.a3.priceMessage`
+            `$var_sc.a3.priceMessage`
           ],
 
           args,

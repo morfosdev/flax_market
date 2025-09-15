@@ -1,1 +1,1 @@
-{"1757936950907":{"actionType":"saveAll","createdAt":"1757936950907","actionID":"1757936950907","userID":"#TEMP","path":"system.capsules.576e1c2c-54c1-472b-8161-14598de51d8b.capsUseCodeInfo.capsUseDescription.en","oldValue":"","newValue":"sc.a3.priceMessage"}}
+{"1757937024222":{"actionType":"saveAll","createdAt":"1757937024222","actionID":"1757937024222","userID":"#TEMP","path":"system.capsules.576e1c2c-54c1-472b-8161-14598de51d8b.capsUseCodeInfo.capsUseInputs.ccc_stringValue-0.capsIptTxtValue","oldValue":"$var+sc.a3.priceMessage","newValue":"$var_sc.a3.priceMessage"}}
