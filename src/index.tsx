@@ -10926,7 +10926,8 @@ flexDirection: 'row',
 
             args,
           }}/>
-        , (...args:any) => <Elements.ScrollBar pass={{
+        , 
+        (...args:any) => <Elements.ScrollBar pass={{
             styles: [],
             arrProps: [],
             arrItems: [(...args:any) => <Elements.FlatList2 pass={{
@@ -10965,7 +10966,83 @@ flexDirection: 'row',
               ],    args,
         }}/>],
             args,
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '138px',
+height: '44px',
+paddingHorizontal: '24px',
+paddingVertical: '12px',
+backgroundColor: '#0E1422',
+borderRadius: 4,
+alignItems: 'center',
+justifyContent: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  // Lista de variáveis a verificar
+  const requiredFields = [
+    "sc.a3.iptsChanges.label",
+    "sc.a3.iptsChanges.price",
+    "sc.a3.iptsChanges.categories",
+    "sc.a3.iptsChanges.slug",
+    "sc.a3.iptsChanges.sku",
+    "sc.a3.iptsChanges.description",
+    "sc.a3.iptsChanges.stock",
+    "sc.a3.iptsChanges.availableQuantity"
+  ];
+
+  // Função auxiliar para pegar valor do Flaxboll
+  const getVal = (path) => tools.getCtData(path);
+
+  // Verificar se todas têm valor
+  const allFilled = requiredFields.every(path => {
+    const value = getVal(path);
+    return value !== undefined && value !== null && value !== "";
+  });
+
+  // Salvar resultado em outra variável
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.allFieldsFilled"],
+      value: allFilled
+    }
+  });
+
+  console.log("Campos preenchidos?", allFilled);
+}
+]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+fontFamily: 'Inter',
+fontSize: '14px',
+}`
+          ],
+
+          children: [
+            `Teste`
+          ],
+
+          args,
+
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
