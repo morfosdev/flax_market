@@ -11074,7 +11074,11 @@ fontSize: '14px',
           }}/>
         ],
 
-          functions:[()=>{}],
+          functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [()=>{}]
+ , trigger: 'on init'
+}})],
 
           args,
         }}/>, 
