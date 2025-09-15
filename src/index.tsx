@@ -11077,35 +11077,30 @@ fontSize: '14px',
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const storage = getStorage();
+  const db = tools.functions.firebase.firestore;
+  const imagesRef = db.collection("images");
 
-  // Função async interna
-  const loadProductImages = async () => {
-    const listRef = ref(storage, "images/");
-    const res = await listAll(listRef);
+  imagesRef.get()
+    .then(querySnapshot => {
+      const urls = [];
+      querySnapshot.forEach(doc => {
+        const data = doc.data();
+        if (data && data.url) urls.push(data.url);
+      });
 
-    // Pegar os links acessíveis
-    const urls = await Promise.all(
-      res.items.map((item) => getDownloadURL(item))
-    );
+      // Salva a lista de URLs no Flaxboll
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a3.productImagesOptions"],
+          value: [urls]
+        }
+      });
 
-    console.log("Imagens:", urls);
-
-    // Salvar em uma variável do Flaxboll
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.productImagesOptions"],
-        value: urls,
-      },
-    });
-  };
-
-  // Chamar a função async
-  loadProductImages().catch((err) =>
-    console.error("Erro ao carregar imagens:", err)
-  );
-};
+      console.log("Imagens carregadas (Firestore):", urls);
+    })
+    .catch(err => console.error("Erro ao buscar imagens do Firestore:", err));
+}
 ]
  , trigger: 'on init'
 }})],
