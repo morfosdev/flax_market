@@ -11117,15 +11117,30 @@ fontSize: '14px',
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  tools.firestore.get({
-    path: "images",
-    pass: {
-      keyPath: ["sc.a3.productImagesOptions"],
-      type: "list" // ou "free", dependendo do caso
-    }
-  });
-}
-]
+  const db = tools.functions.firebase.firestore;
+  const imagesRef = db.collection("images");
+
+  imagesRef.get()
+    .then(querySnapshot => {
+      const urls = [];
+      querySnapshot.forEach(doc => {
+        const data = doc.data();
+        if (data && data.url) urls.push(data.url);
+      });
+
+      // Salva a lista de URLs no Flaxboll
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a3.productImagesOptions"],
+          value: [urls]
+        }
+      });
+
+      console.log("Imagens carregadas (Firestore):", urls);
+    })
+    .catch(err => console.error("Erro ao buscar imagens do Firestore:", err));
+}]
  , trigger: 'on init'
 }})],
 
