@@ -10997,7 +10997,7 @@ justifyContent: 'center',
     "sc.a3.iptsChanges.availableQuantity"
   ];
 
-  // Função auxiliar para pegar valor do Flaxboll
+  // Função auxiliar para pegar valor 
   const getVal = (path) => tools.getCtData(path);
 
   // Verificar se todas têm valor
@@ -11011,7 +11011,7 @@ justifyContent: 'center',
     args: "",
     pass: {
       keyPath: ["sc.a3.allFieldsFilled"],
-      value: allFilled
+      value: [allFilled]
     }
   });
 
