@@ -10508,6 +10508,7 @@ borderWidth: 1,
 borderColor: '#E6E7E8',
 paddingVertical: 10,
 paddingHorizontal: 15,
+backgroundColor: 'eee',
 }`],
 
           path: [`sc.a3.iptsChanges.stock`],
