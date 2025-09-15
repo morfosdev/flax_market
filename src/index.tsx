@@ -9868,7 +9868,8 @@ paddingHorizontal: 15,
 
           args,
 
-        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
           stylesArray: [`{
@@ -9906,7 +9907,7 @@ paddingHorizontal: 15,
       args: "",
       pass: {
         keyPath: ["sc.a3.priceMessage"],
-        value: ["Preço inválido ou não informado."]
+        value: ["Preço inválido."]
       }
     });
   } else {
@@ -9927,6 +9928,21 @@ paddingHorizontal: 15,
 ],
 
           args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `sc.a3.priceMessage`
+          ],
+
+          args,
+
         }}/>],
 
             args,
