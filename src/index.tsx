@@ -10046,7 +10046,8 @@ paddingHorizontal: 15,
 
           args,
 
-        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
           stylesArray: [`{
@@ -10061,13 +10062,60 @@ paddingHorizontal: 15,
 
           path: [`sc.a3.iptsChanges.categories`],
 
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.categories`],
-          value: [`$arg_callback`]
-        }})],
+          funcsArray: [(callback) => {
+  // Pegar o valor digitado
+  let newValue = callback.trim();
+
+  // Atualizar a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.iptsChanges.categories"],
+      value: [newValue]
+    }
+  });
+
+  // Verificar se está vazio
+  if (newValue === "") {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.categoryMessage"],
+        value: ["O campo não pode estar vazio."]
+      }
+    });
+  } else {
+    // Limpar mensagem caso seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.categoryMessage"],
+        value: [""]
+      }
+    });
+  }
+
+  console.log("Entrada digitada:", newValue);
+}
+],
 
           args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ color: "red", marginTop: 8 }`
+          ],
+
+          children: [
+            `$var_sc.a3.categoryMessage`
+          ],
+
+          args,
+
         }}/>],
 
             args,
