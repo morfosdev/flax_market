@@ -9791,7 +9791,8 @@ flexDirection: 'row',
 
           args,
 
-        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
           stylesArray: [`{
@@ -9806,13 +9807,60 @@ paddingHorizontal: 15,
 
           path: [`sc.a3.iptsChanges.label`],
 
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.label`],
-          value: [`$arg_callback`]
-        }})],
+          funcsArray: [(callback) => {
+  // Pegar o valor digitado
+  let newValue = callback.trim();
+
+  // Atualizar a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.iptsChanges.label"],
+      value: [newValue]
+    }
+  });
+
+  // Verificar se está vazio
+  if (newValue === "") {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.labelMessage"],
+        value: ["O campo Label não pode estar vazio."]
+      }
+    });
+  } else {
+    // Limpar mensagem caso seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.labelMessage"],
+        value: [""]
+      }
+    });
+  }
+
+  console.log("Label digitado:", newValue);
+}
+],
 
           args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ color: "red", marginTop: 8 }`
+          ],
+
+          children: [
+            `$var_sc.a3.labelMessage`
+          ],
+
+          args,
+
         }}/>],
 
             args,
