@@ -10574,7 +10574,8 @@ paddingHorizontal: 15,
 
           args,
 
-        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
           stylesArray: [`{
@@ -10589,13 +10590,60 @@ paddingHorizontal: 15,
 
           path: [`sc.a3.iptsChanges.availableQuantity`],
 
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.availableQuantity`],
-          value: [`$arg_callback`]
-        }})],
+          funcsArray: [(callback) => {
+  // Remove tudo que não seja número, vírgula ou ponto
+  let newValue = callback.replace(/[^0-9.,]/g, "");
+
+  // Atualizar a variável do preço
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.iptsChanges.availableQuantity"],
+      value: [newValue]
+    }
+  });
+
+  // Verificar se existe algum número válido
+  if (newValue === "" || !/[0-9]/.test(newValue)) {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.availableQuantityMessage"],
+        value: ["O campo não pode estar vazio."]
+      }
+    });
+  } else {
+    // Limpar mensagem caso o valor seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.availableQuantityMessage"],
+        value: [""]
+      }
+    });
+  }
+
+  console.log("Entrada digitada:", newValue);
+}
+],
 
           args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ color: "red", marginTop: 8 }`
+          ],
+
+          children: [
+            `$var_sc.a3.availableQuantityMessage`
+          ],
+
+          args,
+
         }}/>],
 
             args,
