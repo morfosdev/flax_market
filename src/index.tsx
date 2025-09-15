@@ -10624,7 +10624,30 @@ paddingHorizontal: 15,
     });
   }
 
-  console.log("Entrada digitada:", newValue);
+  // Converter valor para número inteiro (ignora vírgula/ponto)
+  let numericValue = parseInt(newValue.replace(/[^0-9]/g, ""), 10);
+
+  if (!isNaN(numericValue)) {
+    if (numericValue === 0) {
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a3.iptsChanges.stock"],
+          value: ["Out of Stock"]
+        }
+      });
+    } else if (numericValue > 0) {
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a3.iptsChanges.stock"],
+          value: ["In Stock"]
+        }
+      });
+    }
+  }
+
+  console.log("Entrada digitada:", newValue, " | Estoque:", numericValue);
 }
 ],
 
