@@ -11076,7 +11076,29 @@ fontSize: '14px',
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [( ) => {
+
+const storage = getStorage();
+
+async function loadProductImages() {
+  const listRef = ref(storage, "images/");
+  const res = await listAll(listRef);
+
+  // Pegar os links acessíveis
+  const urls = await Promise.all(res.items.map(item => getDownloadURL(item)));
+
+  console.log("Imagens:", urls);
+
+  // Salvar em uma variável do Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.productImagesOptions"],
+      value: urls
+    }
+  });
+}
+]
  , trigger: 'on init'
 }})],
 
