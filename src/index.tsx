@@ -11076,28 +11076,36 @@ fontSize: '14px',
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [( ) => {
+ arrFunctions: [() => {
+  const storage = getStorage();
 
-const storage = getStorage();
+  // Função async interna
+  const loadProductImages = async () => {
+    const listRef = ref(storage, "images/");
+    const res = await listAll(listRef);
 
-async function loadProductImages() {
-  const listRef = ref(storage, "images/");
-  const res = await listAll(listRef);
+    // Pegar os links acessíveis
+    const urls = await Promise.all(
+      res.items.map((item) => getDownloadURL(item))
+    );
 
-  // Pegar os links acessíveis
-  const urls = await Promise.all(res.items.map(item => getDownloadURL(item)));
+    console.log("Imagens:", urls);
 
-  console.log("Imagens:", urls);
+    // Salvar em uma variável do Flaxboll
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.productImagesOptions"],
+        value: urls,
+      },
+    });
+  };
 
-  // Salvar em uma variável do Flaxboll
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.productImagesOptions"],
-      value: urls
-    }
-  });
-}
+  // Chamar a função async
+  loadProductImages().catch((err) =>
+    console.error("Erro ao carregar imagens:", err)
+  );
+};
 ]
  , trigger: 'on init'
 }})],
