@@ -6584,7 +6584,27 @@ alignItems: 'center',
 width: '100%',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 12,
+fontFamily: 'Inter',
+color: "#5C5F6A",
+}`
+          ],
+
+          children: [
+            `266 Left`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
