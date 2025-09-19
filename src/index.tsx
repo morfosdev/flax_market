@@ -7678,6 +7678,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -9662,6 +9664,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -11113,7 +11117,7 @@ alignSelf: 'flex-start',
         
 
           (...args:any) => <Elements.DynView pass={{
-            elementsProperties:[`{ disabled = $var_sc.a3.allFieldsFilled }`],
+            elementsProperties:['{}'],
 
             styles:[`{
 width: '138px',
@@ -12172,6 +12176,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -13936,6 +13942,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -15698,6 +15706,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -17116,6 +17126,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -18528,6 +18540,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -20145,6 +20159,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -21770,6 +21786,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -23037,6 +23055,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -24286,6 +24306,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -25864,6 +25886,8 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
