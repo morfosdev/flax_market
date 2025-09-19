@@ -6252,7 +6252,11 @@ flex: 1,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 16,
+fontWeight: '600',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -6285,11 +6289,14 @@ flex: 1,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 12,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
-            `This Month`
+            `THIS MONTH`
           ],
 
           args,
