@@ -6421,6 +6421,20 @@ width: '100%',
             args,
           }}/>
         , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '20px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
