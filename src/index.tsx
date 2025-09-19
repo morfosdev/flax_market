@@ -4962,7 +4962,12 @@ width: '100%',
           ],
 
           arrStyles: [
-            `{ color: "red", marginTop: 8 }`
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: Inter
+fontSize: 14,
+}`
           ],
 
           children: [
@@ -9854,7 +9859,12 @@ paddingHorizontal: 15,
           ],
 
           arrStyles: [
-            `{ color: "red", marginTop: 8 }`
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: Inter
+fontSize: 14,
+}`
           ],
 
           children: [
@@ -9984,7 +9994,12 @@ paddingHorizontal: 15,
           ],
 
           arrStyles: [
-            `{ color: "red", marginTop: 8 }`
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: Inter
+fontSize: 14,
+}`
           ],
 
           children: [
@@ -10109,7 +10124,12 @@ paddingHorizontal: 15,
           ],
 
           arrStyles: [
-            `{ color: "red", marginTop: 8 }`
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: Inter
+fontSize: 14,
+}`
           ],
 
           children: [
@@ -10234,7 +10254,12 @@ paddingHorizontal: 15,
           ],
 
           arrStyles: [
-            `{ color: "red", marginTop: 8 }`
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: Inter
+fontSize: 14,
+}`
           ],
 
           children: [
@@ -10359,7 +10384,12 @@ paddingHorizontal: 15,
           ],
 
           arrStyles: [
-            `{ color: "red", marginTop: 8 }`
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: Inter
+fontSize: 14,
+}`
           ],
 
           children: [
@@ -10486,7 +10516,12 @@ paddingHorizontal: 15,
           ],
 
           arrStyles: [
-            `{ color: "red", marginTop: 8 }`
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: Inter
+fontSize: 14,
+}`
           ],
 
           children: [
@@ -10712,7 +10747,12 @@ console.log("Estoque salvo: In Stock");
           ],
 
           arrStyles: [
-            `{ color: "red", marginTop: 8 }`
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: Inter
+fontSize: 14,
+}`
           ],
 
           children: [
