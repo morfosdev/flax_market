@@ -11508,58 +11508,6 @@ fontSize: '14px',
           }}/>
         , 
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => {
-  // Criar input do tipo date
-  const input = document.createElement("input");
-  input.type = "date";
-
-  // Esconde fora da tela mas mantém funcional
-  input.style.position = "fixed";
-  input.style.left = "-9999px";
-
-  // Listener para salvar quando escolher a data
-  input.onchange = (e) => {
-    const selectedDate = e.target.value; // formato YYYY-MM-DD
-
-    // Salvar no Flaxboll
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.iptsChanges.date"],
-        value: [selectedDate]
-      }
-    });
-
-    console.log("📅 Data escolhida:", selectedDate);
-
-    // Remove depois de usar
-    document.body.removeChild(input);
-  };
-
-  // Adiciona no body
-  document.body.appendChild(input);
-
-  // Força clique pra abrir calendário
-  input.click();
-}
-]
- , trigger: 'on press'
-}})],            childrenItems:[
-
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
   const dateValue = tools.getCtData("sc.a3.iptsChanges.date") || "";
@@ -11587,10 +11535,6 @@ fontSize: '14px',
 ] 
 }}/>
 ],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
