@@ -6012,7 +6012,7 @@ flex: 1,
           arrStyles: [
             `{
 fontSize: 16,
-fontWeight: 600,
+fontWeight: '600',
 fontFamily: 'Inter',
 }`
           ],
