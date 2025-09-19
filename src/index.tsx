@@ -11117,7 +11117,7 @@ alignSelf: 'flex-start',
         
 
           (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
+            elementsProperties:[`{ disbaled = true, }`],
 
             styles:[`{
 width: '138px',
