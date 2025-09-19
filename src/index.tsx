@@ -4965,7 +4965,7 @@ width: '100%',
             `{ 
 color: "red", 
 marginTop: 8,
-fontFamily: Inter
+fontFamily: Inter,
 fontSize: 14,
 }`
           ],
@@ -9862,7 +9862,7 @@ paddingHorizontal: 15,
             `{ 
 color: "red", 
 marginTop: 8,
-fontFamily: Inter
+fontFamily: Inter,
 fontSize: 14,
 }`
           ],
@@ -9997,7 +9997,7 @@ paddingHorizontal: 15,
             `{ 
 color: "red", 
 marginTop: 8,
-fontFamily: Inter
+fontFamily: Inter,
 fontSize: 14,
 }`
           ],
@@ -10127,7 +10127,7 @@ paddingHorizontal: 15,
             `{ 
 color: "red", 
 marginTop: 8,
-fontFamily: Inter
+fontFamily: Inter,
 fontSize: 14,
 }`
           ],
@@ -10257,7 +10257,7 @@ paddingHorizontal: 15,
             `{ 
 color: "red", 
 marginTop: 8,
-fontFamily: Inter
+fontFamily: Inter,
 fontSize: 14,
 }`
           ],
@@ -10387,7 +10387,7 @@ paddingHorizontal: 15,
             `{ 
 color: "red", 
 marginTop: 8,
-fontFamily: Inter
+fontFamily: Inter,
 fontSize: 14,
 }`
           ],
@@ -10519,7 +10519,7 @@ paddingHorizontal: 15,
             `{ 
 color: "red", 
 marginTop: 8,
-fontFamily: Inter
+fontFamily: Inter,
 fontSize: 14,
 }`
           ],
@@ -10750,7 +10750,7 @@ console.log("Estoque salvo: In Stock");
             `{ 
 color: "red", 
 marginTop: 8,
-fontFamily: Inter
+fontFamily: Inter,
 fontSize: 14,
 }`
           ],
