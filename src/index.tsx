@@ -4686,6 +4686,8 @@ alignItems: 'center',
 paddingVertical: 25,
 paddingHorizontal: 10,
 borderRadius: 8,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
