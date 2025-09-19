@@ -11500,7 +11500,8 @@ alignSelf: 'flex-start',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:[`{ disabled: '$var_sc.a3.allFieldsFilled', }`],
 
-            styles:[`{
+            styles:[
+        `{
 width: '138px',
 height: '44px',
 paddingHorizontal: '24px',
@@ -11509,6 +11510,17 @@ backgroundColor: '#0E1422',
 borderRadius: 4,
 alignItems: 'center',
 justifyContent: 'center',
+}`, `{
+width: '138px',
+height: '44px',
+paddingHorizontal: '24px',
+paddingVertical: '12px',
+backgroundColor: '#0E1422',
+borderRadius: 4,
+alignItems: 'center',
+justifyContent: 'center',
+opacity: sc.a3.saveButtonDisabled ? 0.5 : 1,
+cursor: sc.a3.saveButtonDisabled ? "not-allowed" : "pointer",
 }`],
 
             functions:[async (...args) =>
