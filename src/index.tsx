@@ -6704,7 +6704,7 @@ flexDirection: 'row',
 
             styles:[`{
 heigth: '300px',
-width: '232px'
+width: '232px',
 margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
