@@ -11587,18 +11587,22 @@ flexDirection: 'row',
     }}/>, 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => <input type="date" value=sc.a3.iptsChanges.date onChange: (callback) => {
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.iptsChanges.date"],
-      value: [callback] // valor já vem em YYYY-MM-DD
-    }
-  });
+  arrItems: [() => (
+  <input
+    type="date"
+    value={sc.a3.iptsChanges.date}
+    onChange={(e) => {
+      const selectedDate = e.target.value;
 
-  console.log("📅 Data escolhida:", callback);
-}
->] 
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a3.iptsChanges.date"],
+          value: [selectedDate] // valor já vem no formato YYYY-MM-DD
+        }
+      });
+
+] 
 }}/>
 ],
 
