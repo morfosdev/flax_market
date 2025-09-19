@@ -6047,11 +6047,15 @@ fontFamily: 'Inter',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 12,
+fontWeight: '500',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
-            `This Month`
+            `THIS MONTH`
           ],
 
           args,
