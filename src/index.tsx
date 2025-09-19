@@ -5094,8 +5094,10 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
-backgroundColor: 'transparent',
+width: '95%',
+padding: 12,
+backgroundColor: '#0E1422',
+borderRadius: 4,
 alignItems: 'center',
 }`],
 
