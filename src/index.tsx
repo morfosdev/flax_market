@@ -11587,25 +11587,29 @@ flexDirection: 'row',
     }}/>, 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => (
-  <input
-    type="date"
-    value={sc.a3.iptsChanges.date}
-    onChange={(e) => {
-      const selectedDate = e.target.value;
+  arrItems: [() => {
+  const dateValue = tools.getCtData("sc.a3.iptsChanges.date") || "";
 
-      tools.functions.setVar({
-        args: "",
-        pass: {
-          keyPath: ["sc.a3.iptsChanges.date"],
-          value: selectedDate
-        }
-      });
+  return (
+    <input
+      type="date"
+      value={dateValue}
+      onChange={(e) => {
+        const selectedDate = e.target.value;
 
-      console.log("📅 Data escolhida:", selectedDate);
-    }}
-  />
-)
+        tools.functions.setVar({
+          args: "",
+          pass: {
+            keyPath: ["sc.a3.iptsChanges.date"],
+            value: selectedDate
+          }
+        });
+
+        console.log("📅 Data escolhida:", selectedDate);
+      }}
+    />
+  );
+}
 ] 
 }}/>
 ],
