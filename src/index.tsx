@@ -5006,6 +5006,62 @@ alignItems: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
+ arrFunctions: [()=>{}]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+fontWeight: 500,
+fontSize: 14,
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Sign Up`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '5px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '95%',
+padding: 12,
+backgroundColor: '#0E1422',
+borderRadius: 4,
+alignItems: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
   const email = tools.getCtData("sc.a0.login.forms.email");
   const password = tools.getCtData("sc.a0.login.forms.password");
