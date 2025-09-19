@@ -11523,14 +11523,15 @@ fontSize: '14px',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  // Criar um input invisível do tipo "date"
+  // Criar input do tipo date
   const input = document.createElement("input");
   input.type = "date";
-  input.style.position = "absolute";
-  input.style.opacity = "0";
-  input.style.pointerEvents = "none";
 
-  // Quando o usuário escolher a data
+  // Esconde fora da tela mas mantém funcional
+  input.style.position = "fixed";
+  input.style.left = "-9999px";
+
+  // Listener para salvar quando escolher a data
   input.onchange = (e) => {
     const selectedDate = e.target.value; // formato YYYY-MM-DD
 
@@ -11543,19 +11544,17 @@ fontSize: '14px',
       }
     });
 
-    console.log("Data escolhida:", selectedDate);
+    console.log("📅 Data escolhida:", selectedDate);
+
+    // Remove depois de usar
+    document.body.removeChild(input);
   };
 
-  // Adiciona no body só para abrir
+  // Adiciona no body
   document.body.appendChild(input);
 
-  // Força o clique para abrir o calendário
+  // Força clique pra abrir calendário
   input.click();
-
-  // Remove o input depois que fechar
-  input.addEventListener("blur", () => {
-    document.body.removeChild(input);
-  });
 }
 ]
  , trigger: 'on press'
