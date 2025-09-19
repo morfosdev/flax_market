@@ -5963,6 +5963,8 @@ backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 10,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -6178,6 +6180,8 @@ backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 10,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -6366,6 +6370,8 @@ backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 10,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -6585,6 +6591,8 @@ backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 10,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
