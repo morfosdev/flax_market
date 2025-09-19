@@ -9811,7 +9811,8 @@ paddingHorizontal: 15,
 
           path: [`sc.a3.iptsChanges.label`],
 
-          funcsArray: [(callback) => {
+          funcsArray: [
+        (callback) => {
   // Pegar o valor digitado
   let newValue = callback.trim();
 
@@ -9846,6 +9847,39 @@ paddingHorizontal: 15,
   }
 
   console.log("Label digitado:", newValue);
+}
+, () => {
+  // Lista de variáveis a verificar
+  const requiredFields = [
+    "sc.a3.iptsChanges.label",
+    "sc.a3.iptsChanges.price",
+    "sc.a3.iptsChanges.categories",
+    "sc.a3.iptsChanges.slug",
+    "sc.a3.iptsChanges.sku",
+    "sc.a3.iptsChanges.description",
+    "sc.a3.iptsChanges.stock",
+    "sc.a3.iptsChanges.availableQuantity"
+  ];
+
+  // Função auxiliar para pegar valor 
+  const getVal = (path) => tools.getCtData(path);
+
+  // Verificar se todas têm valor
+  const allFilled = requiredFields.every(path => {
+    const value = getVal(path);
+    return value !== undefined && value !== null && value !== "";
+  });
+
+  // Salvar resultado em outra variável
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.allFieldsFilled"],
+      value: [allFilled]
+    }
+  });
+
+  console.log("Campos preenchidos?", allFilled);
 }
 ],
 
