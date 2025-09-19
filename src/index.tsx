@@ -11639,7 +11639,12 @@ fontSize: '14px',
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => {
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.allFieldsFilled`],
+          value: [`false`]
+        }}), () => {
   const db = tools.functions.firebase.firestore;
   const imagesRef = db.collection("images");
 
