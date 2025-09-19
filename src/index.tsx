@@ -5088,6 +5088,86 @@ fontFamily: 'Inter',
             args,
           }}/>
         , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+backgroundColor: 'transparent',
+alignItems: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const email = tools.getCtData("sc.a0.login.forms.email");
+  const password = tools.getCtData("sc.a0.login.forms.password");
+  const users = tools.getCtData("sc.adm.login.db.users") || [];
+
+  const setMessage = (msg) => {
+    tools.functions.setVar({
+      args: '',
+      pass: { keyPath: ["sc.adm.login.message"], value: [msg] }
+    });
+  };
+
+  if (!email || email.trim() === "") {
+    setMessage("Por favor, preencha o e-mail.");
+    return;
+  }
+
+  if (!password || password.trim() === "") {
+    setMessage("Por favor, preencha a senha.");
+    return;
+  }
+
+  const userMatch = users.find(
+    (user) => user.userEmail === email && user.userPassword === password
+  );
+
+  if (!userMatch) {
+    setMessage("E-mail ou senha incorretos.");
+    return;
+  }
+
+  const sessionPath = "sc.adm.session.user";
+  const sessionData = { keyPath: [sessionPath], value: [userMatch] };
+  tools.functions.setVar({ args: "", pass: sessionData });
+
+  setMessage("Login realizado com sucesso!");
+
+  tools.goTo("a1AdmDash");
+
+setMessage("");
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+fontWeight: 500,
+fontSize: 14,
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Login`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
