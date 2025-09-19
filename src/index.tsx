@@ -4772,7 +4772,7 @@ placeholder: 'Digite um Email válido',
 }`],
 
           stylesArray: [`{
-borderRadius: 5,
+borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
 padding: 10,
@@ -4864,7 +4864,7 @@ width: '106%',
 }`],
 
           stylesArray: [`{
-borderRadius: 5,
+borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
 padding: 10,
