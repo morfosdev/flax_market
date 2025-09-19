@@ -5957,7 +5957,6 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
 margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
@@ -6199,7 +6198,6 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
 margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
@@ -6414,7 +6412,6 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
 margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
@@ -6682,7 +6679,6 @@ borderRadius: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
 margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
