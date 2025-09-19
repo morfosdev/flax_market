@@ -11508,10 +11508,77 @@ fontSize: '14px',
           }}/>
         , 
 
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => <RN.Text>Element Default</RN.Text>] 
-}}/>
-],
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  // Criar um input invisível do tipo "date"
+  const input = document.createElement("input");
+  input.type = "date";
+  input.style.position = "absolute";
+  input.style.opacity = "0";
+  input.style.pointerEvents = "none";
+
+  // Quando o usuário escolher a data
+  input.onchange = (e) => {
+    const selectedDate = e.target.value; // formato YYYY-MM-DD
+
+    // Salvar no Flaxboll
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.iptsChanges.date"],
+        value: [selectedDate]
+      }
+    });
+
+    console.log("Data escolhida:", selectedDate);
+  };
+
+  // Adiciona no body só para abrir
+  document.body.appendChild(input);
+
+  // Força o clique para abrir o calendário
+  input.click();
+
+  // Remove o input depois que fechar
+  input.addEventListener("blur", () => {
+    document.body.removeChild(input);
+  });
+}
+]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Calendário`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
