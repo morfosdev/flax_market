@@ -11510,17 +11510,14 @@ fontSize: '14px',
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
-  const [localDate, setLocalDate] = React.useState(
-    tools.getCtData("sc.a3.iptsChanges.date") || ""
-  );
+  const dateValue = tools.getCtData("sc.a3.iptsChanges.date") || "";
 
   return (
     <input
       type="date"
-      value={localDate}
+      value={dateValue}
       onChange={(e) => {
         const selectedDate = e.target.value;
-        setLocalDate(selectedDate); // Atualiza no input
 
         tools.functions.setVar({
           args: "",
@@ -11534,8 +11531,7 @@ fontSize: '14px',
       }}
     />
   );
-}
-] 
+}] 
 }}/>
 ],
 
