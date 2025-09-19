@@ -5011,7 +5011,7 @@ alignItems: 'center',
 
             styles:[`{
 width: '100%',
-backgroundColor: '#000',
+backgroundColor: 'transparent',
 alignItems: 'center',
 }`],
 
