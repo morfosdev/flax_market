@@ -5006,7 +5006,36 @@ alignItems: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [undefined]
+ arrFunctions: [(callback) => {
+  const provider = new GoogleAuthProvider();
+
+  signInWithPopup(auth, provider)
+    .then(async result => {
+      const user = result.user;
+      console.log("Login Google:", user.email);
+
+      // Salvar no Firestore (se não existir)
+      const userDoc = await db.collection("users").doc(user.uid).get();
+      if (!userDoc.exists) {
+        await db.collection("users").doc(user.uid).set({
+          email: user.email,
+          createdAt: new Date()
+        });
+      }
+
+      // Salvar no contexto
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.session.user"],
+          value: [{ email: user.email, uid: user.uid }]
+        }
+      });
+    })
+    .catch(err => {
+      console.error("Erro Google Login:", err.message);
+    });
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
