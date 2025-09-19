@@ -6198,6 +6198,20 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
+width: '20px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
