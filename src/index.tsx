@@ -6010,7 +6010,11 @@ flex: 1,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 16,
+fontWeight: 600,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
