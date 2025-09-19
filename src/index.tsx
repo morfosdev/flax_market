@@ -6347,7 +6347,7 @@ width: '100%',
 
       largura: "200px",
 
-      preenchimento: ['black'],
+      preenchimento: [`#fff`],
 
       args,
     }}/>],
