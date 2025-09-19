@@ -6467,7 +6467,11 @@ flex: 1,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 16,
+fontWeight: '600',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -6500,11 +6504,14 @@ flex: 1,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 12,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
-            `Monthly Goals`
+            `MONTHLY GOALS : 1,000`
           ],
 
           args,
@@ -6532,7 +6539,11 @@ width: '50px',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 20,
+fontWeight: '700',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
