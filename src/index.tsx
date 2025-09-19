@@ -6611,6 +6611,7 @@ color: "#5C5F6A",
     xmlns="http://www.w3.org/2000/svg"
     width={272}
     height={8}
+    fill="red"
     viewBox="0 0 272 8"
     {...props}
   >
@@ -6624,11 +6625,12 @@ color: "#5C5F6A",
 <rect width="272" height="8" rx="4" fill="#F0F1FF"/>
 <rect width="221" height="8" rx="4" fill="#4078FF"/>
 </svg>
+
       `,
 
-      altura: "46px",
+      altura: "8px",
 
-      largura: "200px",
+      largura: "272px",
 
       preenchimento: ['black'],
 
