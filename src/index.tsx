@@ -11519,8 +11519,7 @@ backgroundColor: '#0E1422',
 borderRadius: 4,
 alignItems: 'center',
 justifyContent: 'center',
-opacity: sc.a3.saveButtonDisabled ? 0.5 : 1,
-cursor: sc.a3.saveButtonDisabled ? "not-allowed" : "pointer",
+opacity: $var_sc.a3.saveButtonDisabled ? 0.5 : 1,
 }`],
 
             functions:[async (...args) =>
