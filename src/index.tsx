@@ -4978,7 +4978,7 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '30px',
+height: '15px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
