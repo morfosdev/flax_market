@@ -4993,9 +4993,9 @@ height: '30px',
 
             styles:[`{
 width: '95%',
-padding: 10,
-backgroundColor: '#000',
-borderRadius: 5,
+padding: 12,
+backgroundColor: '#0E1422',
+borderRadius: 4,
 alignItems: 'center',
 }`],
 
