@@ -6703,7 +6703,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '30%',
+heigth: '300px',
+width: '232px'
 margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
