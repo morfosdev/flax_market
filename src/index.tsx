@@ -6875,7 +6875,7 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '260px',
+width: '20%',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -8861,7 +8861,7 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '260px',
+width: '20%',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -11373,7 +11373,7 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '260px',
+width: '20%',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
