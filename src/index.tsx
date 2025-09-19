@@ -11598,10 +11598,14 @@ flexDirection: 'row',
         args: "",
         pass: {
           keyPath: ["sc.a3.iptsChanges.date"],
-          value: [selectedDate] // valor já vem no formato YYYY-MM-DD
+          value: selectedDate
         }
       });
 
+      console.log("📅 Data escolhida:", selectedDate);
+    }}
+  />
+)
 ] 
 }}/>
 ],
