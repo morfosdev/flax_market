@@ -6073,7 +6073,7 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '50px',
+width: '75px',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
