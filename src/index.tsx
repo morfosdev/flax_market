@@ -6564,7 +6564,7 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '30px',
+height: '45px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -6577,7 +6577,6 @@ height: '30px',
             elementsProperties:['{}'],
 
             styles:[`{
-alignItems: 'center',
 width: '100%',
 }`],
 
@@ -6592,6 +6591,7 @@ width: '100%',
 fontSize: 12,
 fontFamily: 'Inter',
 color: "#5C5F6A",
+paddingBottom: 3,
 }`
           ],
 
