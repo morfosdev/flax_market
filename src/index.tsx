@@ -11553,7 +11553,7 @@ fontSize: '14px',
           ],
 
           children: [
-            `sc.a3.iptsChanges.date`
+            `$var_sc.a3.iptsChanges.date`
           ],
 
           args,
