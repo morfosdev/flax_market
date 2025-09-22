@@ -11511,7 +11511,8 @@ fontSize: '14px',
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
-  const dateValue = tools.getCtData("sc.a3.iptsChanges.date") || "";
+  const storedDate = tools.getCtData("sc.a3.iptsChanges.date") || "";
+  const dateValue = Array.isArray(storedDate) ? storedDate[0] : storedDate;
 
   return (
     <input
@@ -11520,11 +11521,11 @@ fontSize: '14px',
       onChange={(e) => {
         const selectedDate = e.target.value;
 
-      tools.functions.setVar({
+        tools.functions.setVar({
           args: "",
           pass: {
             keyPath: ["sc.a3.iptsChanges.date"],
-            value: selectedDate
+            value: [selectedDate] // mantém como array para evitar erro do Flaxboll
           }
         });
 
