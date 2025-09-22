@@ -11537,7 +11537,7 @@ fontSize: '14px',
   return (
     <input
       type="date"
-      //value={dateValue}
+      value={dateValue}
       onChange={(e) => {
         const selectedDate = e.target.value;
 
