@@ -11507,6 +11507,7 @@ fontSize: '14px',
             args,
           }}/>
         , 
+        
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
@@ -11542,7 +11543,22 @@ fontSize: '14px',
 }
 ] 
 }}/>
-],
+, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `sc.a3.iptsChanges.date`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
