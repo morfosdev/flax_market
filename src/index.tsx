@@ -11808,8 +11808,7 @@ async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a3.allFieldsFilled`],
           value: [`false`]
-        }}), 
-() => {
+        }}), () => {
   const db = tools.functions.firebase.firestore;
   const imagesRef = db.collection("images");
 
@@ -11833,11 +11832,7 @@ async (...args) =>
       console.log("Imagens carregadas (Firestore):", urls);
     })
     .catch(err => console.error("Erro ao buscar imagens do Firestore:", err));
-}, async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.date`],
-          value: [`dd/mm/aaaa`]
-        }})]
+}]
  , trigger: 'on init'
 }})],
 
