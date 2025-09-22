@@ -10352,24 +10352,32 @@ paddingHorizontal: 15,
           path: [`sc.a3.iptsChanges.price`],
 
           funcsArray: [(callback) => {
-  // Remove tudo que não seja número, ponto
-  let newValue = callback.replace(/[^0-9.,]/g, "");
+  // Remove tudo que não seja número
+  let numeric = callback.replace(/D/g, "");
 
-  // Permitir apenas números e pontos
-  newValue = newValue.replace(/[^0-9.,]/g, "");
+  // Se não tiver nada, define como "0"
+  if (numeric === "") numeric = "0";
+
+  // Converte para número inteiro em centavos
+  let intValue = parseInt(numeric, 10);
+
+  // Divide por 100 e formata em reais
+  let formatted = (intValue / 100).toFixed(2).replace(".", ",");
+
+  // Adiciona o prefixo R$
+  formatted = "R$ " + formatted;
 
   // Atualizar a variável no Flaxboll
   tools.functions.setVar({
     args: "",
     pass: {
       keyPath: ["sc.a3.iptsChanges.price"],
-      value: [newValue]
+      value: [formatted]
     }
-	});
-	
-// Verificar se existe algum número válido
-  if (newValue === "" || !/[0-9]/.test(newValue)) {
-    // Salvar mensagem de aviso
+  });
+
+  // Mensagem de validação
+  if (intValue === 0) {
     tools.functions.setVar({
       args: "",
       pass: {
@@ -10378,7 +10386,6 @@ paddingHorizontal: 15,
       }
     });
   } else {
-    // Limpar mensagem caso o valor seja válido
     tools.functions.setVar({
       args: "",
       pass: {
@@ -10388,9 +10395,7 @@ paddingHorizontal: 15,
     });
   }
 
-
-
-  console.log("Preço digitado:", newValue);
+  console.log("💰 Preço digitado:", formatted);
 }
 ],
 
