@@ -11507,7 +11507,6 @@ fontSize: '14px',
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -11561,22 +11560,7 @@ fontSize: '14px',
 
             args,
           }}/>
-        , (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `$var_sc.a3.iptsChanges.date`
-          ],
-
-          args,
-
-        }}/>],
+        ],
 
             args,
           }}/>
