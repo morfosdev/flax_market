@@ -11507,12 +11507,18 @@ fontSize: '14px',
             args,
           }}/>
         , 
-        
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
-  const storedDate = tools.getCtData("sc.a3.iptsChanges.date") || "";
-  const dateValue = Array.isArray(storedDate) ? storedDate[0] : storedDate;
+  const storedDate = tools.getCtData("sc.a3.iptsChanges.date");
+
+  // Força extrair sempre uma string
+  let dateValue = "";
+  if (Array.isArray(storedDate)) {
+    dateValue = storedDate[0] || "";
+  } else if (typeof storedDate === "string") {
+    dateValue = storedDate;
+  }
 
   return (
     <input
@@ -11525,35 +11531,7 @@ fontSize: '14px',
           args: "",
           pass: {
             keyPath: ["sc.a3.iptsChanges.date"],
-            value: [selectedDate] // mantém como array para evitar erro do Flaxboll
-          }
-        });
-
-        console.log("📅 Data escolhida:", selectedDate);
-      }}
-    />
-  );
-}
-] 
-}}/>
-, 
-
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => {
-  const dateValue = tools.getCtData("sc.a3.iptsChanges.date") || "";
-
-  return (
-    <input
-      type="date"
-      value={dateValue}
-      onChange={(e) => {
-        const selectedDate = e.target.value;
-
-        tools.functions.setVar({
-          args: "",
-          pass: {
-            keyPath: ["sc.a3.iptsChanges.date"],
-            value: [selectedDate] // <-- precisa ser array!
+            value: [selectedDate]
           }
         });
 
