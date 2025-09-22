@@ -10351,53 +10351,7 @@ paddingHorizontal: 15,
 
           path: [`sc.a3.iptsChanges.price`],
 
-          funcsArray: [(callback) => {
-  // Remove tudo que não seja número
-  let numeric = callback.replace(/D/g, "");
-
-  // Se não tiver nada, define como "0"
-  if (numeric === "") numeric = "0";
-
-  // Converte para número inteiro em centavos
-  let intValue = parseInt(numeric, 10);
-
-  // Divide por 100 e formata em reais
-  let formatted = (intValue / 100).toFixed(2).replace(".", ",");
-
-  // Adiciona o prefixo R$
-  formatted = "R$ " + formatted;
-
-  // Atualizar a variável no Flaxboll
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.iptsChanges.price"],
-      value: [formatted]
-    }
-  });
-
-  // Mensagem de validação
-  if (intValue === 0) {
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.priceMessage"],
-        value: ["Preço inválido."]
-      }
-    });
-  } else {
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.priceMessage"],
-        value: [""]
-      }
-    });
-  }
-
-  console.log("💰 Preço digitado:", formatted);
-}
-],
+          funcsArray: [undefined],
 
           args,
         }}/>, (...args:any) => <Elements.Text pass={{
