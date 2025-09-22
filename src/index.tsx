@@ -11507,6 +11507,7 @@ fontSize: '14px',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -11521,7 +11522,6 @@ fontSize: '14px',
               ],
 
             functions:[()=>{}],            childrenItems:[
-        
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
@@ -11557,7 +11557,11 @@ fontSize: '14px',
 }
 ] 
 }}/>
-, (...args:any) => <Elements.Text pass={{
+],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -11573,10 +11577,6 @@ fontSize: '14px',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
