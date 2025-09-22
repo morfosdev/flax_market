@@ -11519,7 +11519,7 @@ fontSize: '14px',
       onChange={(e) => {
         const selectedDate = e.target.value;
 
-        tools.functions.setVar({
+      tools.functions.setVar({
           args: "",
           pass: {
             keyPath: ["sc.a3.iptsChanges.date"],
@@ -11531,7 +11531,8 @@ fontSize: '14px',
       }}
     />
   );
-}] 
+}
+] 
 }}/>
 ],
 
