@@ -11507,6 +11507,7 @@ fontSize: '14px',
             args,
           }}/>
         , 
+        
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
@@ -11524,6 +11525,34 @@ fontSize: '14px',
           pass: {
             keyPath: ["sc.a3.iptsChanges.date"],
             value: selectedDate
+          }
+        });
+
+        console.log("📅 Data escolhida:", selectedDate);
+      }}
+    />
+  );
+}
+] 
+}}/>
+, 
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => {
+  const dateValue = tools.getCtData("sc.a3.iptsChanges.date") || "";
+
+  return (
+    <input
+      type="date"
+      value={dateValue}
+      onChange={(e) => {
+        const selectedDate = e.target.value;
+
+        tools.functions.setVar({
+          args: "",
+          pass: {
+            keyPath: ["sc.a3.iptsChanges.date"],
+            value: [selectedDate] // <-- precisa ser array!
           }
         });
 
