@@ -8142,6 +8142,7 @@ height: '30px',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -8386,6 +8387,19 @@ alignItems: 'center',
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '30px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
