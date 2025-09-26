@@ -7221,12 +7221,10 @@ height: '100%',
 
             styles:[`{
 width: '100%',
-justifyContent: 'initial',
 alignItems: 'center',
-height: '100px',
 flexDirection: 'row',
-paddingHorizontal: '5px',
-paddingVertical: '20px',
+paddingHorizontal: '25px',
+paddingVertical: '25px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
