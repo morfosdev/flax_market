@@ -7003,8 +7003,8 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '75px',
 flexDirection: 'row',
+justifyContent: 'space-evenly',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -7022,7 +7022,7 @@ fontFamily: 'Inter',
           ],
 
           children: [
-            `!#!,400`
+            `$ 2,400`
           ],
 
           args,
@@ -7034,7 +7034,10 @@ fontFamily: 'Inter',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -7049,7 +7052,10 @@ fontFamily: 'Inter',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
