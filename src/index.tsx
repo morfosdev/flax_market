@@ -12834,37 +12834,31 @@ fontSize: '14px',
             functions:[()=>{}],            childrenItems:[
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => {
-  const storedDate = tools.getCtData("sc.a3.iptsChanges.date");
+  arrItems: [import { Calendar } from "lucide-react";
 
-  // Força extrair sempre uma string
-  let dateValue = "";
-  if (Array.isArray(storedDate)) {
-    dateValue = storedDate[0] || "";
-  } else if (typeof storedDate === "string") {
-    dateValue = storedDate;
-  }
+() => {
+  const storedDate = tools.getCtData("sc.a3.iptsChanges.date");
+  let dateValue = Array.isArray(storedDate) ? storedDate[0] || "" : storedDate || "";
 
   return (
-    <input
-      type="date"
-      //value={dateValue}
-      onChange={(e) => {
-        const selectedDate = e.target.value;
-
-        tools.functions.setVar({
-          args: "",
-          pass: {
-            keyPath: ["sc.a3.iptsChanges.date"],
-            value: [selectedDate]
-          }
-        });
-
-        console.log("📅 Data escolhida:", selectedDate);
-	}}
-    />
+    <div className="relative w-fit">
+      <input
+        type="date"
+        value={dateValue}
+        onChange={(e) => {
+          const selectedDate = e.target.value;
+          tools.functions.setVar({
+            args: "",
+            pass: { keyPath: ["sc.a3.iptsChanges.date"], value: [selectedDate] },
+          });
+          console.log("📅 Data escolhida:", selectedDate);
+        }}
+        className="pl-10 pr-3 py-2 rounded-2xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-gray-700"
+      />
+      <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
+    </div>
   );
-}
+};
 ] 
 }}/>
 ],
