@@ -7135,7 +7135,8 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-padding: 2 16,
+paddingHorizontal: 16,
+paddingVertical: 2,
 flexDirection: 'row',
 justifyContent: 'space-evenly',
 borderWidth: 1,
