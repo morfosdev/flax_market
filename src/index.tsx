@@ -7135,7 +7135,12 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-padding: 10,
+padding: 2 16,
+flexDirection: 'row',
+justifyContent: 'space-evenly',
+borderWidth: 1,
+borderRadius: 12,
+borderColor: '#E6E7E8',
 }`],
 
             functions:[()=>{}],            childrenItems:[
