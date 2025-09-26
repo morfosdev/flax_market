@@ -7014,6 +7014,7 @@ paddingHorizontal: '10px',
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -7043,6 +7044,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -7072,6 +7074,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -7100,6 +7103,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -8557,6 +8561,7 @@ const currentField = tools.getCtData("sc.a2.sortField");
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -8591,6 +8596,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[async (...args) =>
@@ -8643,6 +8649,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -8677,6 +8684,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -8851,6 +8859,7 @@ height: '48px',
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -8885,6 +8894,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -8919,6 +8929,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[async (...args) =>
@@ -8950,6 +8961,7 @@ return (
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -14999,6 +15011,7 @@ paddingHorizontal: '10px',
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -15033,6 +15046,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -15067,6 +15081,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -15241,6 +15256,7 @@ height: '48px',
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -15275,6 +15291,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -15309,6 +15326,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -19712,6 +19730,7 @@ paddingHorizontal: '10px',
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -19922,6 +19941,7 @@ height: '48px',
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -21462,6 +21482,7 @@ paddingHorizontal: '10px',
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -21531,6 +21552,7 @@ flex: 1,
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -21635,6 +21657,7 @@ height: '48px',
 
             styles:[`{
 flex: 1,
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
