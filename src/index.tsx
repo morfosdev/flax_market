@@ -7359,7 +7359,10 @@ async (...args) =>
 
             args,
           }}/>
-        , 
+        , (...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -8420,6 +8423,8 @@ alignItems: 'center',
             args,
           }}/>
         ],
+            args,
+        }}/>],
 
             args,
           }}/>
