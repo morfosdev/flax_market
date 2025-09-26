@@ -7381,13 +7381,13 @@ borderRadius: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 15,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -7622,13 +7622,13 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 15,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -7837,13 +7837,13 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 15,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -8072,13 +8072,13 @@ paddingBottom: 3,
             elementsProperties:['{}'],
 
             styles:[`{
-heigth: '300px',
-width: '232px',
-margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
-padding: 10,
+padding: 15,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -8091,13 +8091,13 @@ borderRadius: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 15,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
