@@ -7005,6 +7005,7 @@ fontFamily: 'Inter',
             styles:[`{
 flexDirection: 'row',
 justifyContent: 'space-evenly',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -7037,6 +7038,8 @@ fontFamily: 'Inter',
             `{
 fontSize: 14,
 fontFamily: 'Inter',
+color: "#5C5F6A",
+fontWeight: '500',
 }`
           ],
 
@@ -7055,6 +7058,8 @@ fontFamily: 'Inter',
             `{
 fontSize: 14,
 fontFamily: 'Inter',
+color: "#5C5F6A",
+fontWeight: '500',
 }`
           ],
 
