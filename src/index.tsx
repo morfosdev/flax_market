@@ -12793,7 +12793,6 @@ fontSize: '14px',
 
         console.log("📅 Data escolhida:", selectedDate);
 	}}
-className="px-3 py-2 rounded-2xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-gray-700"
     />
   );
 }
