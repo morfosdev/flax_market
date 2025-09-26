@@ -6899,8 +6899,7 @@ borderRadius: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-alignItems: 'left',
-flex: 1,
+backgroundColor: 'transparent',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -6988,9 +6987,37 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
+height: '20px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
   height: 1,
   width: '100%',
   backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '20px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
