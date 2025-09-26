@@ -24295,7 +24295,7 @@ flexDirection: 'row',
           propsArray: [{}],
 
           stylesArray: [`{
-width: '80%',
+width: '27%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -24374,8 +24374,8 @@ multiline: 'true',
 }`],
 
           stylesArray: [`{
-width: '80%',
-height: '128px',
+width: '27%',
+height: '45px',
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
