@@ -7622,6 +7622,20 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
+height: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 15,
@@ -7827,6 +7841,20 @@ width: '100%',
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
@@ -8072,6 +8100,20 @@ paddingBottom: 3,
             elementsProperties:['{}'],
 
             styles:[`{
+height: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 15,
@@ -8079,6 +8121,20 @@ borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
 width: '100%',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
