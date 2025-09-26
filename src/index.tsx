@@ -4671,7 +4671,8 @@ width: '100%',
 height: '100%',
 alignItems: 'center',
 justifyContent: 'center',
-backgroundColor: '#eee', 
+backgroundColor: '#eee',
+padding: 10,
  }`],
 
           screenElements:[
@@ -4680,7 +4681,8 @@ backgroundColor: '#eee',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '400px',
+maxWidth: '400px',
+width: '100%',
 backgroundColor: '#FFF',
 alignItems: 'center',
 paddingVertical: 25,
