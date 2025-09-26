@@ -6888,7 +6888,7 @@ heigth: '300px',
 width: '232px',
 margin: 5,
 backgroundColor: '#FFF',
-padding: 10,
+padding: 20,
 borderRadius: 10,
 }`],
 
