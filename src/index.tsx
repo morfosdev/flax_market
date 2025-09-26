@@ -25610,7 +25610,7 @@ placeholder: '',
 }`],
 
           stylesArray: [`{
-width: '80%',
+width: '27%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -25685,7 +25685,7 @@ placeholder: '',
 }`],
 
           stylesArray: [`{
-width: '80%',
+width: '27%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
@@ -25759,7 +25759,7 @@ placeholder: '',
 }`],
 
           stylesArray: [`{
-width: '80%',
+width: '27%',
 height: '45px',
 borderRadius: 6,
 borderWidth: 1,
