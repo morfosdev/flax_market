@@ -5223,7 +5223,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -7186,7 +7187,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -9251,7 +9253,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -11910,7 +11913,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -13746,7 +13750,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -15587,7 +15592,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -17077,7 +17083,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -18561,7 +18568,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -20253,7 +20261,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -21954,7 +21963,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -23293,7 +23303,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -24614,7 +24625,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: '20%',
+width: '100%',
+maxWidth: '260px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
