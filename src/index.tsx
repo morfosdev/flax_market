@@ -13163,7 +13163,8 @@ fontSize: '14px',
     dateValue = storedDate;
   }
 
-  return (
+	return (
+<div className="relative w-fit">
     <input
       type="date"
       //value={dateValue}
@@ -13184,7 +13185,8 @@ fontSize: '14px',
 />
 	<span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
         📅
-      </span>
+</span>
+</div>
   );
 }] 
 }}/>
