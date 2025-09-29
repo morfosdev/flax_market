@@ -13179,8 +13179,12 @@ fontSize: '14px',
         });
 
         console.log("📅 Data escolhida:", selectedDate);
-      }}
-    />
+	}}
+	className="px-4 py-2 rounded-2xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-gray-700 appearance-none bg-white"
+/>
+	<span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
+        📅
+      </span>
   );
 }] 
 }}/>
