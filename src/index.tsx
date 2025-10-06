@@ -6790,7 +6790,7 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '45px',
+height: '82px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
