@@ -6601,9 +6601,9 @@ width: '100%',
 </svg>
       `,
 
-      altura: "46px",
+      altura: "44px",
 
-      largura: "200px",
+      largura: "263px",
 
       preenchimento: [`#fff`],
 
