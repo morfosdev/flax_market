@@ -6304,7 +6304,7 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '62px',
+height: '57px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
