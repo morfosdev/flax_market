@@ -6656,6 +6656,7 @@ height: "187px",
             styles:[`{
 flexDirection: 'Row',
 width: '100%',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
