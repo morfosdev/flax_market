@@ -6901,12 +6901,14 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-heigth: '300px',
-width: '232px',
-margin: 5,
 backgroundColor: '#FFF',
+alignItems: 'center',
 padding: 20,
 borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
+width: "328px",
+height: "475px", 
 }`],
 
             functions:[()=>{}],            childrenItems:[
