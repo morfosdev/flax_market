@@ -6373,7 +6373,7 @@ width: '100%',
 
       altura: "46px",
 
-      largura: "200px",
+      largura: "274px",
 
       preenchimento: ['black'],
 
