@@ -6427,6 +6427,7 @@ height: "187px",
             styles:[`{
 flexDirection: 'Row',
 width: '100%',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -6560,7 +6561,7 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '30px',
+height: '65px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
