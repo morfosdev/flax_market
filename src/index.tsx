@@ -6138,13 +6138,14 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
-padding: 15,
+padding: 20,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
+width: "328px",
+height: "187px", 
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -6156,6 +6157,7 @@ borderColor: "#E9E9EB",
             styles:[`{
 flexDirection: 'Row',
 width: '100%',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -6204,6 +6206,20 @@ fontFamily: 'Inter',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '5px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
@@ -6288,7 +6304,7 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '30px',
+height: '62px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -6391,13 +6407,14 @@ width: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
-padding: 15,
+padding: 20,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
+width: "328px",
+height: "187px", 
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -6617,13 +6634,14 @@ width: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
-padding: 15,
+padding: 20,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
+width: "328px",
+height: "187px", 
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -7215,13 +7233,14 @@ width: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-margin: 5,
 backgroundColor: '#FFF',
 alignItems: 'center',
-padding: 15,
+padding: 20,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
+width: "328px",
+height: "187px", 
 }`],
 
             functions:[()=>{}],            childrenItems:[
