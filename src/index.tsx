@@ -12917,49 +12917,7 @@ flexDirection: 'row',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => {
-  const input = document.createElement("input");
-  input.type = "file";
-  input.accept = "image/*";
-
-  input.onchange = (e) => {
-    const file = e.target.files[0];
-    if (!file) {
-      console.log("Nenhum arquivo selecionado.");
-      return;
-    }
-
-    // Criar o FileReader para converter em Base64
-    const reader = new FileReader();
-    reader.onloadend = () => {
-      const base64 = reader.result; // DataURL (ex: "data:image/png;base64,....")
-
-      // Salva o arquivo original
-      tools.functions.setVar({
-        args: "",
-        pass: {
-          keyPath: ["sc.a3.localFile"],
-          value: [file]
-        }
-      });
-
-      // Salva o DataURL para o preview
-      tools.functions.setVar({
-        args: "",
-        pass: {
-          keyPath: ["sc.a3.previewUrl"],
-          value: [base64]
-        }
-      });
-
-      console.log("Preview pronto:", base64.substring(0, 50) + "...");
-    };
-
-    reader.readAsDataURL(file); // Converte o arquivo em Base64
-  };
-
-  input.click();
-}]
+ arrFunctions: [undefined]
  , trigger: 'on press'
 }})],            childrenItems:[
         (...args:any) => <Elements.SvgView1 pass={{
