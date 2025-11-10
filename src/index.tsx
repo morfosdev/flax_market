@@ -5962,7 +5962,10 @@ height: '100%',
 paddingHorizontal: 20,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -6120,10 +6123,7 @@ padding: 10,
 borderRadius: 10,
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.ScrollBar pass={{
-            styles: [],
-            arrProps: [],
-            arrItems: [
+            functions:[()=>{}],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -7757,12 +7757,12 @@ alignItems: 'center',
             args,
           }}/>
         ],
-            args,
-        }}/>],
 
             args,
           }}/>
         ],
+            args,
+        }}/>],
 
             args,
           }}/>
