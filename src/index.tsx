@@ -7194,7 +7194,12 @@ borderColor: '#E6E7E8',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+	color: '#5C5F6A',
+	fontSize: 12,
+	fontWeight: '500',
+	fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -7210,7 +7215,12 @@ borderColor: '#E6E7E8',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+	color: '#5C5F6A',
+	fontSize: 12,
+	fontWeight: '500',
+	fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -7225,7 +7235,12 @@ borderColor: '#E6E7E8',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+	color: '#0E1422',
+	fontSize: 12,
+	fontWeight: '500',
+	fontFamily: 'Inter',
+}`
           ],
 
           children: [
