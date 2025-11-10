@@ -7261,6 +7261,20 @@ borderColor: '#E6E7E8',
             elementsProperties:['{}'],
 
             styles:[`{
+width: 15,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 paddingHorizontal: 16,
 paddingVertical: 2,
 flexDirection: 'row',
@@ -7333,6 +7347,20 @@ borderColor: '#E6E7E8',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 15,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
