@@ -6397,7 +6397,8 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '20px',
+width: 20,
+height: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -6627,7 +6628,8 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '20px',
+width: 20,
+height: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -7497,7 +7499,8 @@ height: '20px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '20px',
+width: 20,
+height: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
