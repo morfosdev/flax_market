@@ -7173,6 +7173,170 @@ height: '20px',
               ],
 
             functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+paddingHorizontal: 16,
+paddingVertical: 2,
+flexDirection: 'row',
+justifyContent: 'space-evenly',
+borderWidth: 1,
+borderRadius: 12,
+borderColor: '#E6E7E8',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+	color: '#5C5F6A',
+	fontSize: 12,
+	fontWeight: '500',
+	fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Classic Monochrome Tees`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+	color: '#5C5F6A',
+	fontSize: 12,
+	fontWeight: '500',
+	fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `—`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+	color: '#0E1422',
+	fontSize: 12,
+	fontWeight: '500',
+	fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `$ 940 Sales`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+paddingHorizontal: 16,
+paddingVertical: 2,
+flexDirection: 'row',
+justifyContent: 'space-evenly',
+borderWidth: 1,
+borderRadius: 12,
+borderColor: '#E6E7E8',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+	color: '#5C5F6A',
+	fontSize: 12,
+	fontWeight: '500',
+	fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Monochromatic Wardrobe`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+	color: '#5C5F6A',
+	fontSize: 12,
+	fontWeight: '500',
+	fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `—`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+	color: '#0E1422',
+	fontSize: 12,
+	fontWeight: '500',
+	fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `$790 Sales`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
