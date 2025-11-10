@@ -7049,8 +7049,6 @@ height: '20px',
 
             styles:[`{
 flexDirection: 'row',
-justifyContent: 'space-evenly',
-alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
