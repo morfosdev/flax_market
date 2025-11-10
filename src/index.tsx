@@ -7078,7 +7078,7 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '20px',
+width: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -7113,7 +7113,7 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '20px',
+width: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
