@@ -6117,7 +6117,6 @@ async (...args) =>
 
             styles:[`{
 flex: 1,
-margin: 10,
 alignItems: 'center',
 padding: 10,
 borderRadius: 10,
@@ -6132,6 +6131,7 @@ borderRadius: 10,
             styles:[`{
 width: '100%',
 flexDirection: 'row',
+flexWrap: 'wrap',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -6895,6 +6895,7 @@ height: '20px',
             styles:[`{
 width: '100%',
 flexDirection: 'row',
+flexWrap: 'wrap',
 }`],
 
             functions:[()=>{}],            childrenItems:[
