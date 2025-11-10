@@ -7261,7 +7261,7 @@ borderColor: '#E6E7E8',
             elementsProperties:['{}'],
 
             styles:[`{
-width: 15,
+height: 15,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -7357,7 +7357,7 @@ borderColor: '#E6E7E8',
             elementsProperties:['{}'],
 
             styles:[`{
-width: 15,
+height: 15,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
