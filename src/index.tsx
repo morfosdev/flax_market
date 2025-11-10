@@ -6120,7 +6120,10 @@ padding: 10,
 borderRadius: 10,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -7451,6 +7454,7 @@ borderColor: '#E6E7E8',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -7463,7 +7467,25 @@ height: '20px',
 
             args,
           }}/>
-        ],
+        , 
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[
+              {
+                height: "50px",
+                width: "80px",
+                backgroundColor: "#FDFDFD",
+                borderWidth: 2,
+                borderColor: "#EEE"
+              }
+              ],
+
+      URIvariablePath:[``],
+
+      args,
+    }}/>],
 
             args,
           }}/>
@@ -7735,6 +7757,8 @@ alignItems: 'center',
             args,
           }}/>
         ],
+            args,
+        }}/>],
 
             args,
           }}/>
