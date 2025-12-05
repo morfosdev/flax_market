@@ -27945,6 +27945,7 @@ paddingHorizontal: 15,
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -28004,7 +28005,46 @@ paddingHorizontal: 15,
 
             args,
           }}/>
-        ],
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [import { Pressable, Text } from 'react-native';
+import { useState } from 'react';
+
+export default function Botao() {
+  const [hover, setHover] = useState(false);
+
+  return (
+    <Pressable
+      onHoverIn={() => setHover(true)}
+      onHoverOut={() => setHover(false)}
+      style={{
+        backgroundColor: hover ? '#333' : '#555',
+        padding: 12,
+        borderRadius: 6,
+      }}
+    >
+      <Text style={{ color: 'white' }}>Passe o mouse aqui</Text>
+    </Pressable>
+  );
+}
+] 
+}}/>
+],
 
             args,
           }}/>
