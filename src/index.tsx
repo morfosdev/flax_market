@@ -18811,11 +18811,69 @@ paddingHorizontal: 15,
 
           path: [`sc.a5a.iptsChanges.total`],
 
-          funcsArray: [async (...args) =>
+          funcsArray: [
+        async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a5a.iptsChanges.total`],
           value: [`$arg_callback`]
-        }})],
+        }}), (txt) => {
+  try {
+    if (typeof txt !== "string") txt = String(txt ?? "");
+
+    // Mantém apenas números (sem regex)
+    let clean = "";
+    for (let i = 0; i < txt.length; i++) {
+      const ch = txt[i];
+      if (ch >= "0" && ch <= "9") clean += ch;
+    }
+
+    // Remove zeros à esquerda (mas deixa pelo menos um)
+    clean = clean.replace(/^0+/, "");
+    if (clean.length === 0) clean = "0";
+
+    // Constrói centavos e separadores
+    let intPart = clean.slice(0, -2);
+    let cents = clean.slice(-2);
+
+    // Se tiver só um dígito, considera como "0X"
+    if (clean.length === 1) {
+      intPart = "0";
+      cents = "0" + clean;
+    }
+
+    // Se tiver dois dígitos, é "XX" => 0,XX
+    if (clean.length === 2) {
+      intPart = "0";
+      cents = clean;
+    }
+
+    // Formata milhares manualmente (sem regex)
+    let intFormatted = "";
+    let counter = 0;
+
+    for (let i = intPart.length - 1; i >= 0; i--) {
+      intFormatted = intPart[i] + intFormatted;
+      counter++;
+      if (counter === 3 && i > 0) {
+        intFormatted = "." + intFormatted;
+        counter = 0;
+      }
+    }
+
+    const masked = "R$ " + intFormatted + "," + cents;
+
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a5a.iptsChanges.total"],
+        value: [String(masked)],
+      },
+    });
+  } catch (e) {
+    console.error("Erro na máscara BRL:", e);
+    return txt;
+  }
+}],
 
           args,
         }}/>],
