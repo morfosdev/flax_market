@@ -28072,36 +28072,19 @@ fontSize: '14px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[``
+  width: 150px;
+  height: 60px;
+  background-color: red;
+
+  &:hover {
+    background-color: blue;
+  }
+`;`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [import { Pressable, Text } from 'react-native';
-import { useState } from 'react';
-
-export default function Botao() {
-  const [hover, setHover] = useState(false);
-
-  return (
-    <Pressable
-      onHoverIn={() => setHover(true)}
-      onHoverOut={() => setHover(false)}
-      style={{
-        backgroundColor: hover ? '#333' : '#555',
-        padding: 12,
-        borderRadius: 6,
-      }}
-    >
-    </Pressable>
-  );
-}]
+ arrFunctions: [()=>{}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
