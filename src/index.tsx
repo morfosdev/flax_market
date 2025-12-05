@@ -28006,7 +28006,6 @@ paddingHorizontal: 15,
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -28019,22 +28018,7 @@ paddingHorizontal: 15,
 
             args,
           }}/>
-        , 
-
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [import styled from 'styled-components/native';
-
-const Box = styled.View`
-  width: 150px;
-  height: 60px;
-  background-color: red;
-
-  &:hover {
-    background-color: blue;
-  }
-`;] 
-}}/>
-],
+        ],
 
             args,
           }}/>
