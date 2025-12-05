@@ -4672,7 +4672,8 @@ height: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 backgroundColor: '#eee',
-padding: 35,
+paddingVertical: 35,
+paddingHorizontal: 8,
  }`],
 
           screenElements:[
