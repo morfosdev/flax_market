@@ -28022,10 +28022,7 @@ paddingHorizontal: 15,
         , 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [import { Pressable, Text } from 'react-native';
-import { useState } from 'react';
-
-export default function Botao() {
+  arrItems: [export default function Botao() {
   const [hover, setHover] = useState(false);
 
   return (
