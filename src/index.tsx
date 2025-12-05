@@ -4862,7 +4862,7 @@ width: '106%',
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
 	placeholder: 'Digite sua senha',
-		type: "sc.a0.login.forms.passwordType",
+	secureTextEntry: "$var_sc.A0.toggles.password"
 }`],
 
           stylesArray: [`{
