@@ -5954,6 +5954,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.ScrollBar pass={{
@@ -9782,6 +9783,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -11848,6 +11850,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -14569,6 +14572,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -16464,6 +16468,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -18306,6 +18311,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -19893,6 +19899,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -21474,6 +21481,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -23167,6 +23175,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -24869,6 +24878,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -26209,6 +26219,7 @@ color: '#717171',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -27531,6 +27542,7 @@ fontFamily: 'Inter',
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -29111,6 +29123,7 @@ fontSize: 14,
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
