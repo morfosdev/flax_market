@@ -28022,24 +28022,15 @@ paddingHorizontal: 15,
         , 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [export default function Botao() {
-  const [hover, setHover] = useState(false);
-
-  return (
-    <Pressable
-      onHoverIn={() => setHover(true)}
-      onHoverOut={() => setHover(false)}
-      style={{
-        backgroundColor: hover ? '#333' : '#555',
-        padding: 12,
-        borderRadius: 6,
-      }}
-    >
-      <Text style={{ color: 'white' }}>Passe o mouse aqui</Text>
-    </Pressable>
-  );
-}
-] 
+  arrItems: [<View
+  onMouseEnter={() => setHover(true)}
+  onMouseLeave={() => setHover(false)}
+  style={{
+    backgroundColor: hover ? 'blue' : 'red',
+    width: 120,
+    height: 60,
+  }}
+/>] 
 }}/>
 ],
 
