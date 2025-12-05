@@ -10257,7 +10257,10 @@ async (...args) =>
 
             args,
           }}/>
-        , 
+        , (...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -10631,10 +10634,7 @@ alignItems: 'center',
 
             args,
           }}/>
-        , (...args:any) => <Elements.ScrollBar pass={{
-            styles: [`{ flex:1, width: '100%',}`],
-            arrProps: [],
-            arrItems: [(...args:any) => <Elements.FlatList2 pass={{
+        , (...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
             {}
           ],
