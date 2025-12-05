@@ -10740,8 +10740,9 @@ height: '48px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -10775,8 +10776,9 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -10810,8 +10812,9 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[async (...args) =>
@@ -10842,8 +10845,9 @@ return (
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
