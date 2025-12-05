@@ -12319,8 +12319,7 @@ paddingHorizontal: 15,
 
           path: [`sc.a3.iptsChanges.price`],
 
-          funcsArray: [
-        undefined, (txt) => {
+          funcsArray: [(txt) => {
   try {
     if (typeof txt !== "string") txt = String(txt ?? "");
 
