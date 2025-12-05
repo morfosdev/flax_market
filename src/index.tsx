@@ -5218,7 +5218,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -9061,7 +9061,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -11128,7 +11128,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -13850,7 +13850,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -15746,7 +15746,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -17589,7 +17589,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -19177,7 +19177,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -20759,7 +20759,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -22453,7 +22453,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -24156,7 +24156,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -25497,7 +25497,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
@@ -26820,7 +26820,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '260px',
+maxWidth: '220px',
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
