@@ -4899,18 +4899,12 @@ width: '100%',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const currentType = tools.getCtData("sc.a0.login.forms.passwordType") || "password";
-
-  // Toggle between password and text
-  const newType = currentType === "password" ? "text" : "password";
-
+  const path = "sc.A0.toggles.password";
+  const currState = tools.getCtData(path);
   tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a0.login.forms.passwordType"],
-      value: [newType]
-    }
-  });
+		args: '',
+		pass: { keyPath: [path], value: [!currState] },
+	});
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
