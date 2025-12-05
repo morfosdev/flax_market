@@ -28083,7 +28083,25 @@ fontSize: '14px',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [undefined]
+ arrFunctions: [import { Pressable, Text } from 'react-native';
+import { useState } from 'react';
+
+export default function Botao() {
+  const [hover, setHover] = useState(false);
+
+  return (
+    <Pressable
+      onHoverIn={() => setHover(true)}
+      onHoverOut={() => setHover(false)}
+      style={{
+        backgroundColor: hover ? '#333' : '#555',
+        padding: 12,
+        borderRadius: 6,
+      }}
+    >
+    </Pressable>
+  );
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
