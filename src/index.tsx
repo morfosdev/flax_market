@@ -16919,7 +16919,7 @@ borderWidth: 1,
             args,
           }}/>
         , (...args:any) => <Elements.ScrollBar pass={{
-            styles: [],
+            styles: [`{ width: "100%", }`],
             arrProps: [],
             arrItems: [
         
@@ -17024,8 +17024,9 @@ paddingHorizontal: '10px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -17059,8 +17060,9 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -17094,8 +17096,9 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -17266,8 +17269,9 @@ height: '48px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -17301,8 +17305,9 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -17336,8 +17341,9 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
