@@ -6874,20 +6874,6 @@ paddingBottom: 3,
             args,
           }}/>
         , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: '20px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -6912,6 +6898,7 @@ borderWidth: 1,
 borderColor: "#E9E9EB",
 width: "328px",
 height: "475px", 
+marginTop: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
