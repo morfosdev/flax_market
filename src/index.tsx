@@ -28022,15 +28022,17 @@ paddingHorizontal: 15,
         , 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [<View
-  onMouseEnter={() => setHover(true)}
-  onMouseLeave={() => setHover(false)}
-  style={{
-    backgroundColor: hover ? 'blue' : 'red',
-    width: 120,
-    height: 60,
-  }}
-/>] 
+  arrItems: [import styled from 'styled-components/native';
+
+const Box = styled.View`
+  width: 150px;
+  height: 60px;
+  background-color: red;
+
+  &:hover {
+    background-color: blue;
+  }
+`;] 
 }}/>
 ],
 
