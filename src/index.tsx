@@ -28072,7 +28072,7 @@ fontSize: '14px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[``
+            styles:[`{
   width: 150px;
   height: 60px;
   background-color: red;
@@ -28080,7 +28080,7 @@ fontSize: '14px',
   &:hover {
     background-color: blue;
   }
-`;`],
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
