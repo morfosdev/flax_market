@@ -10258,7 +10258,7 @@ async (...args) =>
             args,
           }}/>
         , (...args:any) => <Elements.ScrollBar pass={{
-            styles: [],
+            styles: [`{ width: "100%", }`],
             arrProps: [],
             arrItems: [
         
