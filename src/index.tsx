@@ -21947,8 +21947,9 @@ paddingHorizontal: '10px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -21984,7 +21985,7 @@ alignItems: 'center',
             styles:[`{
   flexGrow: 1,
   flexShrink: 1,
-  flexBasis: 50,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -22020,7 +22021,7 @@ alignItems: 'center',
             styles:[`{
   flexGrow: 1,
   flexShrink: 1,
-  flexBasis: 70,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -22155,8 +22156,9 @@ height: '48px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
-alignItems: 'center',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -22192,7 +22194,7 @@ alignItems: 'center',
             styles:[`{
   flexGrow: 1,
   flexShrink: 1,
-  flexBasis: 50,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -22228,7 +22230,7 @@ alignItems: 'center',
             styles:[`{
   flexGrow: 1,
   flexShrink: 1,
-  flexBasis: 70,
+  flexBasis: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
