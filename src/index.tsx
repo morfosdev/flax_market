@@ -16017,7 +16017,7 @@ alignSelf: 'flex-start',
         
 
           (...args:any) => <Elements.DynView pass={{
-            elementsProperties:[`{ disabled: '$var_sc.A4.allFieldsFilled', }`],
+            elementsProperties:['{}'],
 
             styles:[`{
 width: '138px',
@@ -16055,15 +16055,13 @@ justifyContent: 'center',
     return value !== undefined && value !== null && value !== "";
   });
 
-  // Salvar resultado em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.A4.allFieldsFilled"],
-      value: [allFilled],
-    },
-  });
+  // SE FALTAR ALGUM CAMPO, PARA O FLUXO AQUI
+  if (!allFilled) {
+    console.log("❌ Existem campos obrigatórios vazios.");
+    return; // <-- interrompe a função e nada mais é executado
+  }
 
+  // ✅ Se todos os campos estiverem preenchidos, o fluxo continua
   console.log("Campos preenchidos?", allFilled);
 }, 
 async (...args) =>
