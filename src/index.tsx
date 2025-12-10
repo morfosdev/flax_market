@@ -10088,10 +10088,15 @@ async (...args) =>
         `label`, 
         `==`, `$var_sc.a2.selectedLabel`],
         }})],
- arrFuncs: [async (...args) =>
+ arrFuncs: [
+ async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a2.filteredList`],
           value: [`$arg_callback`]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.A2.listBox`],
+          value: [false]
         }})],
  }}), 
         (...args) => {
