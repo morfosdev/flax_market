@@ -16017,7 +16017,7 @@ alignSelf: 'flex-start',
         
 
           (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
+            elementsProperties:[`{ disabled: '$var_sc.A4.allFieldsFilled', }`],
 
             styles:[`{
 width: '138px',
