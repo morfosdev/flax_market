@@ -16117,6 +16117,7 @@ width: '10px',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -16159,6 +16160,105 @@ color: '#FFF',
 
           children: [
             `Cancel`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '138px',
+height: '44px',
+paddingHorizontal: '24px',
+paddingVertical: '12px',
+backgroundColor: '#0E1422',
+borderRadius: 4,
+alignItems: 'center',
+justifyContent: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async () => {
+  // Lista de variáveis a verificar
+  const requiredFields = [
+    "sc.a4.editData.product.label",
+    "sc.a4.editData.product.price",
+    "sc.a4.editData.product.categories",
+    "sc.a4.editData.product.slug",
+    "sc.a4.editData.product.sku",
+    "sc.a4.editData.product.description",
+    "sc.a4.editData.product.stock",
+    "sc.a4.editData.product.availableQuantity",
+  ];
+
+  const getVal = (path) => tools.getCtData(path);
+
+  const allFilled = requiredFields.every((path) => {
+    const value = getVal(path);
+    return value !== undefined && value !== null && value !== "";
+  });
+
+  // ⛔ SE FALTAR ALGUM CAMPO, PARA O FLUXO AQUI
+  if (!allFilled) {
+    console.log("❌ Existem campos obrigatórios vazios.");
+    return;
+  }
+
+  console.log("✔ Todos os campos preenchidos! Atualizando produto...");
+
+  // 🔥 Import Firebase Firestore no Flaxboll
+  const { getFirestore, doc, updateDoc } = await import("firebase/firestore");
+  const db = getFirestore();
+
+  // ID do documento
+  const docId = getVal("sc.a4.editData.product.docId");
+  if (!docId) {
+    console.log("❌ Nenhum docId encontrado.");
+    return;
+  }
+
+  // Dados completos do produto
+  const productData = getVal("sc.a4.editData.product");
+
+  try {
+    // 🔄 Atualiza o documento no Firestore
+    await updateDoc(doc(db, "productsEcommerce", docId), productData);
+
+    console.log("✔ Produto atualizado com sucesso!");
+
+    // 🧹 Limpar dados depois do update
+    tools.setData({
+      path: "sc.a4.editData.product",
+      value: {},
+    });
+
+    console.log("🧹 Variáveis limpas após o update.");
+  } catch (err) {
+    console.log("🔥 Erro ao atualizar:", err);
+  }
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+}`
+          ],
+
+          children: [
+            `Save Product`
           ],
 
           args,
