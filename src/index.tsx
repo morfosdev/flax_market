@@ -16032,160 +16032,6 @@ justifyContent: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-  // Lista de variáveis a verificar
-  const requiredFields = [
-    "sc.a4.editData.product.label",
-    "sc.a4.editData.product.price",
-    "sc.a4.editData.product.categories",
-    "sc.a4.editData.product.slug",
-    "sc.a4.editData.product.sku",
-    "sc.a4.editData.product.description",
-    "sc.a4.editData.product.stock",
-    "sc.a4.editData.product.availableQuantity",
-  ];
-
-  // Função auxiliar para pegar valor
-  const getVal = (path) => tools.getCtData(path);
-
-  // Verificar se todas têm valor
-  const allFilled = requiredFields.every((path) => {
-    const value = getVal(path);
-    return value !== undefined && value !== null && value !== "";
-  });
-
-  // SE FALTAR ALGUM CAMPO, PARA O FLUXO AQUI
-  if (!allFilled) {
-    console.log("❌ Existem campos obrigatórios vazios.");
-    return; // <-- interrompe a função e nada mais é executado
-  }
-
-  // ✅ Se todos os campos estiverem preenchidos, o fluxo continua
-  console.log("Campos preenchidos?", allFilled);
-}, 
-async (...args) =>
-        functions.firebase.updateDocTool({ args, pass:{
-   arrRefStrings: [
-        `productsEcommerce`, `$var_sc.a4.editData.product.docId`],
-            arrPathData: [`$var_sc.a4.editData.product`],
-            arrFuncs: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`$var_sc.a4.editData.product`],
-          value: [``]
-        }})],
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#FFF',
-}`
-          ],
-
-          children: [
-            `Save Product`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '10px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '138px',
-height: '44px',
-paddingHorizontal: '24px',
-paddingVertical: '12px',
-backgroundColor: '#0E1422',
-borderRadius: 4,
-alignItems: 'center',
-justifyContent: 'center',
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`$var_sc.a4.editData.product`],
-          value: [``]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#FFF',
-}`
-          ],
-
-          children: [
-            `Cancel`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '138px',
-height: '44px',
-paddingHorizontal: '24px',
-paddingVertical: '12px',
-backgroundColor: '#0E1422',
-borderRadius: 4,
-alignItems: 'center',
-justifyContent: 'center',
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
  arrFunctions: [async () => {
   // Lista de variáveis a verificar
   const requiredFields = [
@@ -16278,6 +16124,71 @@ color: '#FFF',
 
           children: [
             `Save Product`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '138px',
+height: '44px',
+paddingHorizontal: '24px',
+paddingVertical: '12px',
+backgroundColor: '#0E1422',
+borderRadius: 4,
+alignItems: 'center',
+justifyContent: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`$var_sc.a4.editData.product`],
+          value: [``]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a2AdmProducts");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+}`
+          ],
+
+          children: [
+            `Cancel`
           ],
 
           args,
