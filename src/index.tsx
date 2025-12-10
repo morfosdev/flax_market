@@ -16214,9 +16214,24 @@ justifyContent: 'center',
 
   console.log("✔ Todos os campos preenchidos! Atualizando produto...");
 
-  // 🔥 Import Firebase Firestore no Flaxboll
+  // 🔥 INICIALIZAÇÃO FIREBASE (necessária!)
+  let fbInit = tools.getCtData("all.temp.fireInit");
+
+  if (!fbInit) {
+    const { initializeApp, getApps } = await import("firebase/app");
+    const cfg = tools.getCtData("all.temp.fireConfig");
+
+    fbInit = getApps().length ? getApps()[0] : initializeApp(cfg);
+
+    tools.setData({
+      path: "all.temp.fireInit",
+      value: fbInit
+    });
+  }
+
+  // Importa Firestore
   const { getFirestore, doc, updateDoc } = await import("firebase/firestore");
-  const db = getFirestore();
+  const db = getFirestore(fbInit);
 
   // ID do documento
   const docId = getVal("sc.a4.editData.product.docId");
@@ -16229,7 +16244,7 @@ justifyContent: 'center',
   const productData = getVal("sc.a4.editData.product");
 
   try {
-    // 🔄 Atualiza o documento no Firestore
+    // 🔄 Update no documento
     await updateDoc(doc(db, "productsEcommerce", docId), productData);
 
     console.log("✔ Produto atualizado com sucesso!");
@@ -16244,7 +16259,8 @@ justifyContent: 'center',
   } catch (err) {
     console.log("🔥 Erro ao atualizar:", err);
   }
-}]
+};
+]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
