@@ -10184,17 +10184,18 @@ borderWidth: 1,
  functions.funcGroup({ args, pass:{
  arrFunctions: [
 async (...args) =>
-        functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`productsEcommerce`],
-            arrFuncs: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a2.list`],
-          value: [`$arg_callback`]
-        }})],
-        }}), async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.a2.selectedLabel`],
           value: [` `]
+        }}), 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.A2.listBox`],
+          value: [true]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.filteredList`],
+          value: [``]
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
@@ -10226,7 +10227,7 @@ async (...args) =>
 
       largura: "17px",
 
-      preenchimento: [`red`],
+      preenchimento: [`#ccc`],
 
       args,
     }}/>],
