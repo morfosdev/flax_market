@@ -16033,6 +16033,39 @@ justifyContent: 'center',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
+() => {
+  // Lista de variáveis a verificar
+  const requiredFields = [
+    "sc.a4.editData.product.label",
+    "sc.a4.editData.product.price",
+    "sc.a4.editData.product.categories",
+    "sc.a4.editData.product.slug",
+    "sc.a4.editData.product.sku",
+    "sc.a4.editData.product.description",
+    "sc.a4.editData.product.stock",
+    "sc.a4.editData.product.availableQuantity",
+  ];
+
+  // Função auxiliar para pegar valor
+  const getVal = (path) => tools.getCtData(path);
+
+  // Verificar se todas têm valor
+  const allFilled = requiredFields.every((path) => {
+    const value = getVal(path);
+    return value !== undefined && value !== null && value !== "";
+  });
+
+  // Salvar resultado em outra variável
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.A4.allFieldsFilled"],
+      value: [allFilled],
+    },
+  });
+
+  console.log("Campos preenchidos?", allFilled);
+}, 
 async (...args) =>
         functions.firebase.updateDocTool({ args, pass:{
    arrRefStrings: [
