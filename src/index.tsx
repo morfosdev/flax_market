@@ -16256,6 +16256,10 @@ justifyContent: 'center',
     });
 
     console.log("🧹 Variáveis limpas após o update.");
+
+// ✅ Redirecionar para a tela a2AdmProducts
+    tools.goTo("a2AdmProducts");
+
   } catch (err) {
     console.log("🔥 Erro ao atualizar:", err);
   }
