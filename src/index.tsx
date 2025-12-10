@@ -16259,8 +16259,7 @@ justifyContent: 'center',
   } catch (err) {
     console.log("🔥 Erro ao atualizar:", err);
   }
-};
-]
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
