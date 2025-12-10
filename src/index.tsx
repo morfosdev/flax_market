@@ -11078,8 +11078,7 @@ justifyContent: 'center',
             {}
           ],
 
-          pData: 
-        `sc.a2.list`, `sc.a2.filteredList`,
+          pData: `sc.a2.filteredList`,
 
           itemElements: [
             
