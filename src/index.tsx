@@ -29937,7 +29937,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a0AdmLogin");
+          return tools.goTo("b0mobileLogin");
         }
         ]
  , trigger: 'on press'
