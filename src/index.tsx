@@ -32624,6 +32624,139 @@ async (...args) =>
             args,
           }}/>
         , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+backgroundColor: '#FFF',
+alignItems: 'center',
+padding: 20,
+borderRadius: 10,
+borderWidth: 1,
+borderColor: "#E9E9EB",
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'Row',
+width: '100%',
+alignItems: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '48px',
+height: '48px',
+}],
+
+      URIvariablePath:[`$arg_image`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '57px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+height: '24%',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={274}
+    height={46}
+    viewBox="0 0 274 46"
+    {...props}
+  >
+    <Path
+      fill="#4078FF"
+      d="M0 19h4v27H0V19ZM10 4h4v42h-4V4ZM20 9h4v37h-4V9ZM30 0h4v46h-4V0ZM40 6h4v40h-4V6ZM50 14h4v32h-4V14ZM60 32h4v14h-4V32ZM70 6h4v40h-4V6ZM80 9h4v37h-4V9ZM90 21h4v25h-4V21ZM100 32h4v14h-4V32ZM110 23h4v23h-4V23ZM120 14h4v32h-4V14ZM130 4h4v42h-4V4ZM140 0h4v46h-4V0ZM150 6h4v40h-4V6ZM160 14h4v32h-4V14ZM170 0h4v46h-4V0ZM180 14h4v32h-4V14ZM190 9h4v37h-4V9ZM200 4h4v42h-4V4ZM210 17h4v29h-4V17ZM220 6h4v40h-4V6ZM230 9h4v37h-4V9ZM240 17h4v29h-4V17ZM250 9h4v37h-4V9ZM260 26h4v20h-4V26ZM270 17h4v29h-4V17Z"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="274" height="46" viewBox="0 0 274 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 19H4V46H0V19Z" fill="#4078FF"/>
+<path d="M10 4H14V46H10V4Z" fill="#4078FF"/>
+<path d="M20 9H24V46H20V9Z" fill="#4078FF"/>
+<path d="M30 0H34V46H30V0Z" fill="#4078FF"/>
+<path d="M40 6H44V46H40V6Z" fill="#4078FF"/>
+<path d="M50 14H54V46H50V14Z" fill="#4078FF"/>
+<path d="M60 32H64V46H60V32Z" fill="#4078FF"/>
+<path d="M70 6H74V46H70V6Z" fill="#4078FF"/>
+<path d="M80 9H84V46H80V9Z" fill="#4078FF"/>
+<path d="M90 21H94V46H90V21Z" fill="#4078FF"/>
+<path d="M100 32H104V46H100V32Z" fill="#4078FF"/>
+<path d="M110 23H114V46H110V23Z" fill="#4078FF"/>
+<path d="M120 14H124V46H120V14Z" fill="#4078FF"/>
+<path d="M130 4H134V46H130V4Z" fill="#4078FF"/>
+<path d="M140 0H144V46H140V0Z" fill="#4078FF"/>
+<path d="M150 6H154V46H150V6Z" fill="#4078FF"/>
+<path d="M160 14H164V46H160V14Z" fill="#4078FF"/>
+<path d="M170 0H174V46H170V0Z" fill="#4078FF"/>
+<path d="M180 14H184V46H180V14Z" fill="#4078FF"/>
+<path d="M190 9H194V46H190V9Z" fill="#4078FF"/>
+<path d="M200 4H204V46H200V4Z" fill="#4078FF"/>
+<path d="M210 17H214V46H210V17Z" fill="#4078FF"/>
+<path d="M220 6H224V46H220V6Z" fill="#4078FF"/>
+<path d="M230 9H234V46H230V9Z" fill="#4078FF"/>
+<path d="M240 17H244V46H240V17Z" fill="#4078FF"/>
+<path d="M250 9H254V46H250V9Z" fill="#4078FF"/>
+<path d="M260 26H264V46H260V26Z" fill="#4078FF"/>
+<path d="M270 17H274V46H270V17Z" fill="#4078FF"/>
+</svg>
+      `,
+
+      altura: "46px",
+
+      largura: "274px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
