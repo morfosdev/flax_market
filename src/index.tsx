@@ -29039,7 +29039,11 @@ backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "all.toggles.sideLeft", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -29847,6 +29851,7 @@ paddingVertical: '20px',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -29914,6 +29919,47 @@ async (...args) =>
 
       args,
     }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideLeft`],
+          value: [true]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `ABRIR MENU`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
