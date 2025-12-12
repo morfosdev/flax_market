@@ -29788,12 +29788,10 @@ flex: 1,
 
             styles:[`{
 width: '100%',
-justifyContent: 'initial',
+justifyContent: 'space-between',
 alignItems: 'center',
-height: '100px',
 flexDirection: 'row',
-paddingHorizontal: '5px',
-paddingVertical: '20px',
+paddingVertical: '16px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -29802,14 +29800,7 @@ paddingVertical: '20px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[``],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -29846,9 +29837,9 @@ paddingVertical: '20px',
 
       `,
 
-      altura: "30px",
+      altura: "15px",
 
-      largura: "30px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
