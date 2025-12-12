@@ -29034,7 +29034,7 @@ flexDirection: 'row',
 
             styles:[`{ 
 width: '100%',
-maxWidth: '220px',
+maxWidth: 200,
 backgroundColor: '#FFF',
 alignItems: 'center',
 }`],
