@@ -32455,7 +32455,6 @@ width: '100%',
             styles:[`{ 
 width: '80%',
 height: '100%',
-paddingHorizontal: 20,
 flex: 1,
 }`],
 
