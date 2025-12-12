@@ -29126,7 +29126,7 @@ width: '155px',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a1AdmDash");
+          return tools.goTo("b1mobileDash");
         }
         ]
  , trigger: 'on press'
