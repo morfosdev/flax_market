@@ -29819,22 +29819,41 @@ paddingVertical: '20px',
           value: [true]
         }})]
  , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={14}
+    height={11}
+    fill="red"
+    viewBox="0 0 14 11"
+    {...props}
+  >
+    <Path
+      stroke="#0E1422"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M13.5.5H.5m13 5H.5m13 5H.5"
+    />
+  </Svg>)
+      },
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+      svgOriginal: `
+        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.5 0.5H0.5M13.5 5.5H0.5M13.5 10.5H0.5" stroke="#0E1422" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
-          children: [
-            `ABRIR MENU`
-          ],
+      `,
 
-          args,
+      altura: "30px",
 
-        }}/>],
+      largura: "30px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
 
             args,
           }}/>
