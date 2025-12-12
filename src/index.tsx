@@ -30286,9 +30286,6 @@ padding: 20,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
-width: "328px",
-height: "187px", 
-marginTop: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -30517,9 +30514,6 @@ padding: 20,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
-width: "328px",
-height: "187px", 
-marginTop: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
