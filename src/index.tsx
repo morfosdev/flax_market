@@ -30146,7 +30146,7 @@ height: '57px',
 
             styles:[`{
 alignItems: 'center',
-width: '100%',
+height: '24%',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
@@ -30722,9 +30722,6 @@ padding: 20,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
-width: "328px",
-height: "475px", 
-marginTop: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
