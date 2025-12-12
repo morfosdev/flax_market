@@ -31763,9 +31763,14 @@ width: '155px',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideLeft`],
+          value: [false]
+        }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a1AdmDash");
+          return tools.goTo("b1mobileDash");
         }
         ]
  , trigger: 'on press'
