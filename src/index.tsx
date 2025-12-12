@@ -29066,16 +29066,7 @@ alignItems: 'center',
 justifyContent: 'center',
 }`],
 
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a1AdmDashMOBILE");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
