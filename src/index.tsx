@@ -29034,6 +29034,13 @@ flexDirection: 'row',
 
             styles:[`{ 
 flexDirection: 'row',
+width: '100%',
+maxWidth: 200,
+backgroundColor: '#FFF',
+alignItems: 'center',
+position: 'absolute',
+zIndex: 1,
+height: '100%',
 }`],
 
             functions:[async (...args) =>
@@ -29051,8 +29058,6 @@ width: '100%',
 maxWidth: 200,
 backgroundColor: '#FFF',
 alignItems: 'center',
-position: 'absolute',
-zIndex: 1,
 height: '100%',
 }`],
 
