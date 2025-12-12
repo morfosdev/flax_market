@@ -28940,7 +28940,7 @@ alignItems: 'center',
 
   setMessage("Login realizado com sucesso!");
 
-  tools.goTo("a1AdmDash");
+  tools.goTo("b1mobileDash");
 
 setMessage("");
 }]
