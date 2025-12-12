@@ -29764,7 +29764,6 @@ color: '#717171',
             styles:[`{ 
 width: '80%',
 height: '100%',
-paddingHorizontal: 20,
 flex: 1,
 }`],
 
@@ -29782,8 +29781,8 @@ width: '100%',
 justifyContent: 'space-between',
 alignItems: 'center',
 flexDirection: 'row',
-paddingVertical: '16px',
-paddingHorizontal: '0px',
+paddingVertical: 20,
+paddingHorizontal: 16,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -29956,8 +29955,6 @@ borderRadius: 10,
 
             styles:[`{
 width: '100%',
-flexDirection: 'row',
-flexWrap: 'wrap',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -30711,8 +30708,6 @@ paddingBottom: 3,
 
             styles:[`{
 width: '100%',
-flexDirection: 'row',
-flexWrap: 'wrap',
 }`],
 
             functions:[()=>{}],            childrenItems:[
