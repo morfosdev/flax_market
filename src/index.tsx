@@ -28614,7 +28614,7 @@ width: '116px',
 height: '40px',
 }],
 
-      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FmobileFlax.png?alt=media&token=d6f46406-edb3-4a5c-9860-51a3483411c5`],
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FmobileFlax.png?alt=media&token=38a23343-4a8b-427e-b5e5-7c4c9d824fec`],
 
       args,
     }}/>],
