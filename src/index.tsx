@@ -29779,14 +29779,13 @@ color: '#717171',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{ 
+backgroundColor: '#0006',
+position: 'relative',
+zIndex: 1,
+height: '100%',
+width: '100%',
+}`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
