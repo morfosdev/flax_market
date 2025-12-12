@@ -32539,7 +32539,7 @@ paddingHorizontal: 16,
           ],
 
           children: [
-            `Dashboard`
+            `Products`
           ],
 
           args,
