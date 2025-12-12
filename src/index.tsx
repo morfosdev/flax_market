@@ -29792,6 +29792,7 @@ justifyContent: 'space-between',
 alignItems: 'center',
 flexDirection: 'row',
 paddingVertical: '16px',
+paddingHorizontal: '0px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -29800,7 +29801,7 @@ paddingVertical: '16px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[``],
+            styles:[`{}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
