@@ -21517,10 +21517,10 @@ justifyContent: 'center',
  arrFunctions: [async () => {
   // Lista de variáveis a verificar
   const requiredFields = [
-    "sc.a5.editData.order.order",
-    "sc.a5.editData.order.date",
-    "sc.a5.editData.order.total",
-    "sc.a5.editData.order.status",
+    "sc.a5b.editData.order.order",
+    "sc.a5b.editData.order.date",
+    "sc.a5b.editData.order.total",
+    "sc.a5b.editData.order.status",
   ];
 
   const getVal = (path) => tools.getCtData(path);
@@ -21558,14 +21558,14 @@ justifyContent: 'center',
   const db = getFirestore(fbInit);
 
   // ID do documento
-  const docId = getVal("sc.a5.editData.order.docId");
+  const docId = getVal("sc.a5b.editData.order.docId");
   if (!docId) {
     console.log("❌ Nenhum docId encontrado.");
     return;
   }
 
   // Dados completos do produto
-  const orderData = getVal("sc.a5.editData.order");
+  const orderData = getVal("sc.a5b.editData.order");
 
   try {
     // 🔄 Update no documento
@@ -21575,7 +21575,7 @@ justifyContent: 'center',
 
     // 🧹 Limpar dados depois do update
     tools.setData({
-      path: "sc.a5.editData.order",
+      path: "sc.a5b.editData.order",
       value: {},
     });
 
