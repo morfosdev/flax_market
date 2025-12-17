@@ -23407,8 +23407,7 @@ justifyContent: 'center',
             {}
           ],
 
-          pData: 
-        `sc.a6.list.customers`, `sc.a6.filteredList`,
+          pData: `sc.a6.filteredList`,
 
           itemElements: [
             
