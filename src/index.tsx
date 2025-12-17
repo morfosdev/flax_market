@@ -23050,7 +23050,8 @@ alignItems: 'center',
 
             args,
           }}/>
-        , (...args:any) => <Elements.FlatList2 pass={{
+        , 
+        (...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
             {}
           ],
@@ -23371,7 +23372,25 @@ justifyContent: 'center',
                 width: "100%",
               }
               ],    args,
-        }}/>],
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
             args,
         }}/>],
 
