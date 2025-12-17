@@ -21514,23 +21514,79 @@ justifyContent: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
-        functions.firebase.updateDocTool({ args, pass:{
-   arrRefStrings: [
-        `ordersEcommerce`, `$var_sc.a5.editData.order.docId`],
-            arrPathData: [`$var_sc.a5.editData.order`],
-            arrFuncs: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`$var_sc.a5.editData.order`],
-          value: [``]
-        }})],
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a5AdmOrders");
-        }
-        ]
+ arrFunctions: [async () => {
+  // Lista de variáveis a verificar
+  const requiredFields = [
+    "sc.a5.editData.order.order",
+    "sc.a5.editData.order.date",
+    "sc.a5.editData.order.total",
+   "sc.a5.editData.order.status",
+  ];
+
+  const getVal = (path) => tools.getCtData(path);
+
+  const allFilled = requiredFields.every((path) => {
+    const value = getVal(path);
+    return value !== undefined && value !== null && value !== "";
+  });
+
+  // ⛔ SE FALTAR ALGUM CAMPO, PARA O FLUXO AQUI
+  if (!allFilled) {
+    console.log("❌ Existem campos obrigatórios vazios.");
+    return;
+  }
+
+  console.log("✔ Todos os campos preenchidos! Atualizando produto...");
+
+  // 🔥 INICIALIZAÇÃO FIREBASE (necessária!)
+  let fbInit = tools.getCtData("all.temp.fireInit");
+
+  if (!fbInit) {
+    const { initializeApp, getApps } = await import("firebase/app");
+    const cfg = tools.getCtData("all.temp.fireConfig");
+
+    fbInit = getApps().length ? getApps()[0] : initializeApp(cfg);
+
+    tools.setData({
+      path: "all.temp.fireInit",
+      value: fbInit,
+    });
+  }
+
+  // Importa Firestore
+  const { getFirestore, doc, updateDoc } = await import("firebase/firestore");
+  const db = getFirestore(fbInit);
+
+  // ID do documento
+  const docId = getVal("sc.a5.editData.order.docId");
+  if (!docId) {
+    console.log("❌ Nenhum docId encontrado.");
+    return;
+  }
+
+  // Dados completos do produto
+  const orderData = getVal("sc.a5.editData.order");
+
+  try {
+    // 🔄 Update no documento
+    await updateDoc(doc(db, "ordersEcommerce", docId), orderData);
+
+    console.log("✔ Order atualizado com sucesso!");
+
+    // 🧹 Limpar dados depois do update
+    tools.setData({
+      path: "sc.a5.editData.order",
+      value: {},
+    });
+
+    console.log("🧹 Variáveis limpas após o update.");
+
+    // ✅ Redirecionar para a tela a5AdmOrders
+    tools.goTo("a5AdmOrders");
+  } catch (err) {
+    console.log("🔥 Erro ao atualizar:", err);
+  }
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
