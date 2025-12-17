@@ -17244,8 +17244,7 @@ borderWidth: 1,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
+ arrFunctions: [async (...args) =>
  functions.firebase.where({ args, pass:{
 
   arrRefStrings: [`ordersEcommerce`],
@@ -17265,12 +17264,7 @@ async (...args) =>
           keyPath: [`sc.A5.listBox`],
           value: [false]
         }})],
- }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
-        }
-        ]
+ }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
@@ -17349,7 +17343,21 @@ borderWidth: 1,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a5.selectedOrder`],
+          value: [` `]
+        }}), 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.A5.listBox`],
+          value: [true]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a5.filteredList`],
+          value: [``]
+        }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
