@@ -17664,7 +17664,18 @@ alignItems: 'center',
 
             args,
           }}/>
-        , (...args:any) => <Elements.FlatList2 pass={{
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ width: "100%", }`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "sc.A5.listBox", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
             {}
           ],
@@ -18043,6 +18054,10 @@ justifyContent: 'center',
               }
               ],    args,
         }}/>],
+
+            args,
+          }}/>
+        ],
             args,
         }}/>],
 
