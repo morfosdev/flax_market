@@ -21180,67 +21180,65 @@ paddingHorizontal: 15,
 
           args,
 
-        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+        }}/>, 
 
-          stylesArray: [`{
-width: '80%',
-height: '45px',
-borderRadius: 6,
-borderWidth: 1,
-borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
-}`],
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
 
-          path: [`sc.a5b.editData.order.date`],
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
-          funcsArray: [
-        async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a5b.editData.order.date`],
-          value: [`$arg_callback`]
-        }}), (txt) => {
-  try {
-    if (typeof txt !== "string") txt = String(txt ?? "");
+            functions:[()=>{}],            childrenItems:[
 
-    // Mantém apenas números (sem regex)
-    let clean = "";
-    for (let i = 0; i < txt.length; i++) {
-      const ch = txt[i];
-      if (ch >= "0" && ch <= "9") {
-        clean += ch;
-      }
-    }
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => {
+  const storedDate = tools.getCtData("sc.a5b.editData.order.date");
 
-    // Limita a 8 dígitos (ddmmyyyy)
-    if (clean.length > 8) clean = clean.slice(0, 8);
-
-    console.log({ clean });
-
-    // Monta máscara dd/mm/aaaa
-    let masked = "";
-    if (clean.length > 0) masked = clean.slice(0, 2);         // dd
-    if (clean.length >= 3) masked += "/" + clean.slice(2, 4); // dd/mm
-    if (clean.length >= 5) masked += "/" + clean.slice(4, 8); // dd/mm/aaaa
-
-    console.log({ masked });
-
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a5b.editData.order.date"],
-        value: [String(masked)],
-      },
-    });
-  } catch (e) {
-    console.error("Erro na máscara de data:", e);
-    return txt;
+  // Força extrair sempre uma string
+  let dateValue = "";
+  if (Array.isArray(storedDate)) {
+    dateValue = storedDate[0] || "";
+  } else if (typeof storedDate === "string") {
+    dateValue = storedDate;
   }
-}],
 
-          args,
-        }}/>],
+	return (
+<div className="relative w-fit">
+    <input
+      type="date"
+      //value={dateValue}
+      onChange={(e) => {
+        const selectedDate = e.target.value;
+
+        tools.functions.setVar({
+          args: "",
+          pass: {
+            keyPath: ["sc.a5b.editData.order.date"],
+            value: [selectedDate]
+          }
+        });
+
+        console.log("📅 Data escolhida:", selectedDate);
+	}}
+	className="px-4 py-2 rounded-2xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-gray-700 appearance-none bg-white"
+/>
+	<span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
+</span>
+</div>
+  );
+}] 
+}}/>
+],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
@@ -21467,7 +21465,6 @@ paddingHorizontal: 15,
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -21477,64 +21474,6 @@ paddingHorizontal: 15,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
-
-            functions:[()=>{}],            childrenItems:[
-
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => {
-  const storedDate = tools.getCtData("sc.a5b.editData.order.date");
-
-  // Força extrair sempre uma string
-  let dateValue = "";
-  if (Array.isArray(storedDate)) {
-    dateValue = storedDate[0] || "";
-  } else if (typeof storedDate === "string") {
-    dateValue = storedDate;
-  }
-
-	return (
-<div className="relative w-fit">
-    <input
-      type="date"
-      //value={dateValue}
-      onChange={(e) => {
-        const selectedDate = e.target.value;
-
-        tools.functions.setVar({
-          args: "",
-          pass: {
-            keyPath: ["sc.a5b.editData.order.date"],
-            value: [selectedDate]
-          }
-        });
-
-        console.log("📅 Data escolhida:", selectedDate);
-	}}
-	className="px-4 py-2 rounded-2xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-gray-700 appearance-none bg-white"
-/>
-	<span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
-</span>
-</div>
-  );
-}] 
-}}/>
-],
 
             args,
           }}/>
