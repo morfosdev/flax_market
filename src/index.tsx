@@ -21520,7 +21520,7 @@ justifyContent: 'center',
     "sc.a5.editData.order.order",
     "sc.a5.editData.order.date",
     "sc.a5.editData.order.total",
-   "sc.a5.editData.order.status",
+    "sc.a5.editData.order.status",
   ];
 
   const getVal = (path) => tools.getCtData(path);
