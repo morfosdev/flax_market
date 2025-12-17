@@ -17253,7 +17253,7 @@ async (...args) =>
         functions.firebase.whereConds({ args, pass:{
           arrStrings: [
         `order`, 
-        `==`, `$var_sc.a5.selectedLabel`],
+        `==`, `$var_sc.a5.selectedOrder`],
         }})],
  arrFuncs: [
  async (...args) =>
@@ -17262,7 +17262,7 @@ async (...args) =>
           value: [`$arg_callback`]
         }}), async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.A2.listBox`],
+          keyPath: [`sc.A5.listBox`],
           value: [false]
         }})],
  }}), 
