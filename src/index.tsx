@@ -22704,7 +22704,27 @@ borderWidth: 1,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [async (...args) =>
+ functions.firebase.where({ args, pass:{
+
+  arrRefStrings: [`customersEcommerce`],
+ arrWhere: [(...args) =>
+        functions.firebase.whereConds({ args, pass:{
+          arrStrings: [
+        `name`, 
+        `==`, `$var_sc.a6.selectedName`],
+        }})],
+ arrFuncs: [
+ async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a6.filteredList`],
+          value: [`$arg_callback`]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.A6.listBox`],
+          value: [false]
+        }})],
+ }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
