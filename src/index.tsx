@@ -25160,7 +25160,14 @@ alignItems: 'center',
         , (...args:any) => <Elements.ScrollBar pass={{
             styles: [`{ flex:1, width: '100%',}`],
             arrProps: [],
-            arrItems: [(...args:any) => <Elements.FlatList2 pass={{
+            arrItems: [
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ width: "100%", }`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
             {}
           ],
@@ -25467,6 +25474,10 @@ justifyContent: 'center',
               }
               ],    args,
         }}/>],
+
+            args,
+          }}/>
+        ],
             args,
         }}/>],
 
