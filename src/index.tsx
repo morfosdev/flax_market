@@ -21498,7 +21498,7 @@ paddingHorizontal: 15,
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
-  const storedDate = tools.getCtData("sc.a3.iptsChanges.date");
+  const storedDate = tools.getCtData("sc.a5b.editData.order.date");
 
   // Força extrair sempre uma string
   let dateValue = "";
@@ -21519,7 +21519,7 @@ paddingHorizontal: 15,
         tools.functions.setVar({
           args: "",
           pass: {
-            keyPath: ["sc.a3.iptsChanges.date"],
+            keyPath: ["sc.a5b.editData.order.date"],
             value: [selectedDate]
           }
         });
