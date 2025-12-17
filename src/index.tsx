@@ -17323,9 +17323,13 @@ borderColor: '#eee',
 padding: 10,
 }`],
 
-          path: [" "],
+          path: [`sc.a5.selectedOrder`],
 
-          funcsArray: [() => {}],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a5.selectedOrder`],
+          value: [`$arg_callback`]
+        }})],
 
           args,
         }}/>, 
