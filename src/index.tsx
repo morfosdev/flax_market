@@ -22757,9 +22757,13 @@ borderColor: '#eee',
 padding: 10,
 }`],
 
-          path: [" "],
+          path: [`sc.a6.selectedName`],
 
-          funcsArray: [() => {}],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a6.selectedName`],
+          value: [`$arg_callback`]
+        }})],
 
           args,
         }}/>, 
