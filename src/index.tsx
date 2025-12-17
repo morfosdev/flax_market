@@ -17244,7 +17244,33 @@ borderWidth: 1,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
+ arrFunctions: [
+async (...args) =>
+ functions.firebase.where({ args, pass:{
+
+  arrRefStrings: [`productsEcommerce`],
+ arrWhere: [(...args) =>
+        functions.firebase.whereConds({ args, pass:{
+          arrStrings: [
+        `label`, 
+        `==`, `$var_sc.a2.selectedLabel`],
+        }})],
+ arrFuncs: [
+ async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.filteredList`],
+          value: [`$arg_callback`]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.A2.listBox`],
+          value: [false]
+        }})],
+ }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a2AdmProducts");
+        }
+        ]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
