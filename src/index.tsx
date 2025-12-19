@@ -34311,6 +34311,20 @@ height: '48px',
             args,
           }}/>
         , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+justifyContent: 'center',
+alignItems: 'center',
+height: '80px',
+flexDirection: 'row',
+paddingHorizontal: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -34353,6 +34367,16 @@ height: '48px',
             elementsProperties:['{}'],
 
             styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
   flexGrow: 1,
   flexShrink: 1,
   flexBasis: 80,
@@ -34374,111 +34398,6 @@ height: '48px',
 
           children: [
             `$arg_sku`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#5C5F6A",
-}`
-          ],
-
-          children: [
-            `$arg_price`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
- , trigger: 'on init'
-}})],            childrenItems:[
-
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => {
-const item = tools.findFlatItem(args);
-const isAvailable =  item.stock;
-return (
-  <span style={{ color: isAvailable === "In Stock" ? "green" : "red" }}>
-    {isAvailable}
-  </span>
-)
-}] 
-}}/>
-],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#5C5F6A",
-}`
-          ],
-
-          children: [
-            `$arg_categories`
           ],
 
           args,
@@ -34636,6 +34555,131 @@ justifyContent: 'center',
 
       args,
     }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
+          ],
+
+          children: [
+            `$arg_price`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [()=>{}]
+ , trigger: 'on init'
+}})],            childrenItems:[
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => {
+const item = tools.findFlatItem(args);
+const isAvailable =  item.stock;
+return (
+  <span style={{ color: isAvailable === "In Stock" ? "green" : "red" }}>
+    {isAvailable}
+  </span>
+)
+}] 
+}}/>
+],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
+          ],
+
+          children: [
+            `$arg_categories`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
