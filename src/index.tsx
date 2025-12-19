@@ -34324,6 +34324,8 @@ width: 15,
 
             styles:[`{
 justifyContent: 'center',
+width: '100%',
+maxWidth: 158,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -34334,6 +34336,7 @@ justifyContent: 'center',
 
             styles:[`{
 flexDirection: 'row',
+justifyContent: 'space-between',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -34385,10 +34388,7 @@ justifyContent: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ 
-width: 30,
-alignItems: 'center',
-}`],
+            styles:[`{}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -34453,14 +34453,25 @@ async (...args) =>
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ 
-width: 30,
-alignItems: 'center',
+            styles:[`{
+width: 5,
 }`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
