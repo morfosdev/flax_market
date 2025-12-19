@@ -33858,8 +33858,6 @@ async (...args) =>
 
             styles:[`{
 flex: 1,
-margin: 10,
-backgroundColor: '#FFF',
 alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
@@ -33879,6 +33877,15 @@ width: '100%',
 justifyContent: 'center',
 alignItems: 'center',
 height: '100px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 flexDirection: 'row',
 }`],
 
@@ -33917,7 +33924,6 @@ flex: 1,
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -33961,6 +33967,10 @@ fontSize: '14px',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
