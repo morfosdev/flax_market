@@ -36258,7 +36258,7 @@ backgroundColor: 'white',
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
@@ -36277,13 +36277,13 @@ backgroundColor: 'white',
           propsArray: [{}],
 
           stylesArray: [`{
-width: '80%',
-height: '45px',
+width: '100%',
+height: 30,
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
+paddingVertical: 4,
+paddingHorizontal: 8,
 }`],
 
           path: [`sc.a3.iptsChanges.label`],
@@ -36408,7 +36408,7 @@ fontSize: 14,
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
@@ -36427,13 +36427,13 @@ fontSize: 14,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '80%',
-height: '45px',
+width: '100%',
+height: 30,
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
+paddingVertical: 4,
+paddingHorizontal: 8,
 }`],
 
           path: [`sc.a3.iptsChanges.price`],
@@ -36545,7 +36545,7 @@ fontSize: 14,
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
@@ -36564,13 +36564,13 @@ fontSize: 14,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '80%',
-height: '45px',
+width: '100%',
+height: 30,
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
+paddingVertical: 4,
+paddingHorizontal: 8,
 }`],
 
           path: [`sc.a3.iptsChanges.categories`],
@@ -36661,7 +36661,7 @@ fontSize: 14,
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
@@ -36680,13 +36680,13 @@ fontSize: 14,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '80%',
-height: '45px',
+width: '100%',
+height: 30,
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
+paddingVertical: 4,
+paddingHorizontal: 8,
 }`],
 
           path: [`sc.a3.iptsChanges.slug`],
@@ -36777,7 +36777,7 @@ fontSize: 14,
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
@@ -36796,13 +36796,13 @@ fontSize: 14,
           propsArray: [{}],
 
           stylesArray: [`{
-width: '80%',
-height: '45px',
+width: '100%',
+height: 30,
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
+paddingVertical: 4,
+paddingHorizontal: 8,
 }`],
 
           path: [`sc.a3.iptsChanges.sku`],
@@ -36893,7 +36893,7 @@ fontSize: 14,
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
@@ -36915,13 +36915,13 @@ multiline: 'true',
 }`],
 
           stylesArray: [`{
-width: '80%',
-height: '128px',
+width: '100%',
+height: 115,
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
+paddingVertical: 4,
+paddingHorizontal: 8,
 }`],
 
           path: [`sc.a3.iptsChanges.description`],
@@ -37012,7 +37012,7 @@ fontSize: 14,
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
@@ -37076,7 +37076,7 @@ backgroundColor: '#E6E7E8',
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
@@ -37095,13 +37095,13 @@ backgroundColor: '#E6E7E8',
           propsArray: [{}],
 
           stylesArray: [`{
-width: '80%',
-height: '45px',
+width: '100%',
+height: 30,
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
+paddingVertical: 4,
+paddingHorizontal: 8,
 }`],
 
           path: [`sc.a3.iptsChanges.availableQuantity`],
@@ -37203,7 +37203,7 @@ fontSize: 14,
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#474B57",
