@@ -30318,8 +30318,8 @@ justifyContent: 'center',
       elementsProperties:[{}],
 
       styles:[{
-width: '116px',
-height: '40px',
+width: 106,
+height: 30,
 }],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FmobileFlax.png?alt=media&token=09cd0e58-911b-455c-a731-0912cc58ac8e`],
