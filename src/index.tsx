@@ -34332,14 +34332,9 @@ justifyContent: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+flexDirection: 'row',
+}`],
 
             functions:[()=>{}],            childrenItems:[
         
@@ -34356,7 +34351,7 @@ justifyContent: 'center',
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#5C5F6A",
@@ -34379,7 +34374,6 @@ justifyContent: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
 flexDirection: 'row',
 alignItems: 'center',
 justifyContent: 'center',
@@ -34391,11 +34385,9 @@ justifyContent: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '30px',
-height: '30px',
+            styles:[`{ 
+width: 30,
 alignItems: 'center',
-justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
@@ -34449,9 +34441,9 @@ async (...args) =>
 
       `,
 
-      altura: "15px",
+      altura: "14px",
 
-      largura: "15px",
+      largura: "14px",
 
       preenchimento: [`#fff`],
 
@@ -34465,11 +34457,9 @@ async (...args) =>
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '30px',
-height: '30px',
+            styles:[`{ 
+width: 30,
 alignItems: 'center',
-justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
@@ -34514,9 +34504,9 @@ justifyContent: 'center',
 
       `,
 
-      altura: "15px",
+      altura: "14px",
 
-      largura: "15px",
+      largura: "14px",
 
       preenchimento: [`#fff`],
 
@@ -34539,11 +34529,14 @@ justifyContent: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
-}`],
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -34575,11 +34568,14 @@ justifyContent: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
-}`],
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
