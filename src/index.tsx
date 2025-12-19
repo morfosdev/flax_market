@@ -34256,22 +34256,6 @@ fontSize: 12,
 
           itemElements: [
             
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  height: 1,
-  width: '100%',
-  backgroundColor: '#dfdfe1',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -34282,6 +34266,10 @@ alignItems: 'center',
 flexDirection: 'row',
 paddingVertical: 18,
 paddingHorizontal: 12,
+borderRadius: 10,
+borderWidth: 1,
+borderColor: '#dee0e8',
+backgroundColor: 'white',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -34696,14 +34684,7 @@ return (
         
           ],
 
-      styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],    args,
+      styles:[`{}`],    args,
         }}/>],
 
             args,
