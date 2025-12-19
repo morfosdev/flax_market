@@ -34071,9 +34071,6 @@ async (...args) =>
 }`],
 
           stylesArray: [`{
-borderTopWidth: 1,
-borderBottomWidth: 1,
-borderColor: '#eee',
 paddingVertical: 10,
 paddingHorizontal: 0,
 }`],
