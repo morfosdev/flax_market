@@ -33875,8 +33875,6 @@ borderColor: "#E9E9EB",
             styles:[`{
 width: '100%',
 justifyContent: 'center',
-alignItems: 'center',
-height: '100px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -33916,10 +33914,8 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '124px',
-height: '40px',
-paddingHorizontal: '20px',
-paddingVertical: '12px',
+paddingHorizontal: 12,
+paddingVertical: 6,
 backgroundColor: '#000',
 borderRadius: 4,
 alignItems: 'center',
@@ -33943,7 +33939,7 @@ alignItems: 'center',
             `{
 color: '#FFF',
 fontFamily: 'Inter',
-fontSize: '14px',
+fontSize: 12,
 }`
           ],
 
