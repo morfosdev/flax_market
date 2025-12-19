@@ -34332,6 +34332,21 @@ justifyContent: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
             styles:[`{}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -34350,52 +34365,6 @@ justifyContent: 'center',
 
           children: [
             `$arg_label`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flexDirection: 'row',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#5C5F6A",
-}`
-          ],
-
-          children: [
-            `$arg_sku`
           ],
 
           args,
@@ -34571,10 +34540,36 @@ justifyContent: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-flexDirection: 'row',
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
+          ],
+
+          children: [
+            `$arg_sku`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -34616,37 +34611,11 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
+flexDirection: 'row',
 }`],
 
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
- , trigger: 'on init'
-}})],            childrenItems:[
-
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => {
-const item = tools.findFlatItem(args);
-const isAvailable =  item.stock;
-return (
-  <span style={{ color: isAvailable === "In Stock" ? "green" : "red" }}>
-    {isAvailable}
-  </span>
-)
-}] 
-}}/>
-],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
+            functions:[()=>{}],            childrenItems:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -34674,6 +34643,42 @@ return (
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [()=>{}]
+ , trigger: 'on init'
+}})],            childrenItems:[
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => {
+const item = tools.findFlatItem(args);
+const isAvailable =  item.stock;
+return (
+  <span style={{ color: isAvailable === "In Stock" ? "green" : "red" }}>
+    {isAvailable}
+  </span>
+)
+}] 
+}}/>
+],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
