@@ -34290,7 +34290,9 @@ paddingHorizontal: 12,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: '70px', }`],
+            styles:[`{
+width: 48,
+}`],
 
             functions:[()=>{}],            childrenItems:[
 
