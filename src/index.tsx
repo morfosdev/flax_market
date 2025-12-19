@@ -34338,7 +34338,7 @@ justifyContent: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[``],
+            styles:[`{}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -34657,7 +34657,7 @@ return (
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[``],
+            styles:[`{}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
