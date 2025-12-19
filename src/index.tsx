@@ -33885,6 +33885,8 @@ justifyContent: 'center',
 
             styles:[`{
 flexDirection: 'row',
+justifyContent: 'space-between',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -33895,7 +33897,7 @@ flexDirection: 'row',
 
           arrStyles: [
             `{ 
-  fontSize: 18, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#0E1422",
