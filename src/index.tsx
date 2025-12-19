@@ -34597,7 +34597,7 @@ width: 8,
   fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
-  color: "#5C5F6A",
+  color: "#149e00",
 }`
           ],
 
