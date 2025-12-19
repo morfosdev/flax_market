@@ -36221,6 +36221,1403 @@ borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+paddingVertical: 20,
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ flex: 1, }`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `Label`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [`{
+width: '80%',
+height: '45px',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+paddingVertical: 10,
+paddingHorizontal: 15,
+}`],
+
+          path: [`sc.a3.iptsChanges.label`],
+
+          funcsArray: [
+        (callback) => {
+  // Pegar o valor digitado
+  let newValue = callback.trim();
+
+  // Atualizar a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.iptsChanges.label"],
+      value: [newValue]
+    }
+  });
+
+  // Verificar se está vazio
+  if (newValue === "") {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.labelMessage"],
+        value: ["O campo Label não pode estar vazio."]
+      }
+    });
+  } else {
+    // Limpar mensagem caso seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.labelMessage"],
+        value: [""]
+      }
+    });
+  }
+
+  console.log("Label digitado:", newValue);
+}
+, () => {
+  // Lista de variáveis a verificar
+  const requiredFields = [
+    "sc.a3.iptsChanges.label",
+    "sc.a3.iptsChanges.price",
+    "sc.a3.iptsChanges.categories",
+    "sc.a3.iptsChanges.slug",
+    "sc.a3.iptsChanges.sku",
+    "sc.a3.iptsChanges.description",
+    "sc.a3.iptsChanges.stock",
+    "sc.a3.iptsChanges.availableQuantity"
+  ];
+
+  // Função auxiliar para pegar valor 
+  const getVal = (path) => tools.getCtData(path);
+
+  // Verificar se todas têm valor
+  const allFilled = requiredFields.every(path => {
+    const value = getVal(path);
+    return value !== undefined && value !== null && value !== "";
+  });
+
+  // Salvar resultado em outra variável
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.allFieldsFilled"],
+      value: [allFilled]
+    }
+  });
+
+  console.log("Campos preenchidos?", allFilled);
+}
+],
+
+          args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: "Inter",
+fontSize: 14,
+}`
+          ],
+
+          children: [
+            `$var_sc.a3.labelMessage`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `Price`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [`{
+width: '80%',
+height: '45px',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+paddingVertical: 10,
+paddingHorizontal: 15,
+}`],
+
+          path: [`sc.a3.iptsChanges.price`],
+
+          funcsArray: [(txt) => {
+  try {
+    if (typeof txt !== "string") txt = String(txt ?? "");
+
+    // Mantém apenas números (sem regex)
+    let clean = "";
+    for (let i = 0; i < txt.length; i++) {
+      const ch = txt[i];
+      if (ch >= "0" && ch <= "9") clean += ch;
+    }
+
+    // Remove zeros à esquerda (mas deixa pelo menos um)
+    clean = clean.replace(/^0+/, "");
+    if (clean.length === 0) clean = "0";
+
+    // Constrói centavos e separadores
+    let intPart = clean.slice(0, -2);
+    let cents = clean.slice(-2);
+
+    // Se tiver só um dígito, considera como "0X"
+    if (clean.length === 1) {
+      intPart = "0";
+      cents = "0" + clean;
+    }
+
+    // Se tiver dois dígitos, é "XX" => 0,XX
+    if (clean.length === 2) {
+      intPart = "0";
+      cents = clean;
+    }
+
+    // Formata milhares manualmente (sem regex)
+    let intFormatted = "";
+    let counter = 0;
+
+    for (let i = intPart.length - 1; i >= 0; i--) {
+      intFormatted = intPart[i] + intFormatted;
+      counter++;
+      if (counter === 3 && i > 0) {
+        intFormatted = "." + intFormatted;
+        counter = 0;
+      }
+    }
+
+    const masked = "R$ " + intFormatted + "," + cents;
+
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.iptsChanges.price"],
+        value: [String(masked)],
+      },
+    });
+  } catch (e) {
+    console.error("Erro na máscara BRL:", e);
+    return txt;
+  }
+}],
+
+          args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: "Inter",
+fontSize: 14,
+}`
+          ],
+
+          children: [
+            `$var_sc.a3.priceMessage`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `Category`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [`{
+width: '80%',
+height: '45px',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+paddingVertical: 10,
+paddingHorizontal: 15,
+}`],
+
+          path: [`sc.a3.iptsChanges.categories`],
+
+          funcsArray: [(callback) => {
+  // Pegar o valor digitado
+  let newValue = callback.trim();
+
+  // Atualizar a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.iptsChanges.categories"],
+      value: [newValue]
+    }
+  });
+
+  // Verificar se está vazio
+  if (newValue === "") {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.categoryMessage"],
+        value: ["O campo não pode estar vazio."]
+      }
+    });
+  } else {
+    // Limpar mensagem caso seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.categoryMessage"],
+        value: [""]
+      }
+    });
+  }
+
+  console.log("Entrada digitada:", newValue);
+}
+],
+
+          args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: "Inter",
+fontSize: 14,
+}`
+          ],
+
+          children: [
+            `$var_sc.a3.categoryMessage`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `Slug`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [`{
+width: '80%',
+height: '45px',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+paddingVertical: 10,
+paddingHorizontal: 15,
+}`],
+
+          path: [`sc.a3.iptsChanges.slug`],
+
+          funcsArray: [(callback) => {
+  // Pegar o valor digitado
+  let newValue = callback.trim();
+
+  // Atualizar a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.iptsChanges.slug"],
+      value: [newValue]
+    }
+  });
+
+  // Verificar se está vazio
+  if (newValue === "") {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.slugMessage"],
+        value: ["O campo não pode estar vazio."]
+      }
+    });
+  } else {
+    // Limpar mensagem caso seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.slugMessage"],
+        value: [""]
+      }
+    });
+  }
+
+  console.log("Entrada digitada:", newValue);
+}
+],
+
+          args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: "Inter",
+fontSize: 14,
+}`
+          ],
+
+          children: [
+            `$var_sc.a3.slugMessage`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `SKU`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [`{
+width: '80%',
+height: '45px',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+paddingVertical: 10,
+paddingHorizontal: 15,
+}`],
+
+          path: [`sc.a3.iptsChanges.sku`],
+
+          funcsArray: [(callback) => {
+  // Remove tudo que não seja alfanumérico
+  let newValue = callback.replace(/[^a-zA-Z0-9]/g, "");
+
+  // Atualizar a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.iptsChanges.sku"],
+      value: [newValue]
+    }
+  });
+
+  // Verificar se existe algum caractere válido
+  if (newValue === "" || !/[a-zA-Z0-9]/.test(newValue)) {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.skuMessage"],
+        value: ["SKU inválido."]
+      }
+    });
+  } else {
+    // Limpar mensagem caso o valor seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.skuMessage"],
+        value: [""]
+      }
+    });
+  }
+
+  console.log("SKU digitado:", newValue);
+}
+],
+
+          args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: "Inter",
+fontSize: 14,
+}`
+          ],
+
+          children: [
+            `$var_sc.a3.skuMessage`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `Description`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: 'Adicione uma descrição',
+multiline: 'true',
+}`],
+
+          stylesArray: [`{
+width: '80%',
+height: '128px',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+paddingVertical: 10,
+paddingHorizontal: 15,
+}`],
+
+          path: [`sc.a3.iptsChanges.description`],
+
+          funcsArray: [(callback) => {
+  // Pegar o valor digitado
+  let newValue = callback.trim();
+
+  // Atualizar a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.iptsChanges.description"],
+      value: [newValue]
+    }
+  });
+
+  // Verificar se está vazio
+  if (newValue === "") {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.descriptionMessage"],
+        value: ["O campo não pode estar vazio."]
+      }
+    });
+  } else {
+    // Limpar mensagem caso seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.descriptionMessage"],
+        value: [""]
+      }
+    });
+  }
+
+  console.log("Entrada digitada:", newValue);
+}
+],
+
+          args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: "Inter",
+fontSize: 14,
+}`
+          ],
+
+          children: [
+            `$var_sc.a3.descriptionMessage`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ flex: 1, }`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `Stock status`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{ editable: false, }`],
+
+          stylesArray: [`{
+width: '80%',
+height: '45px',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+paddingVertical: 10,
+paddingHorizontal: 15,
+backgroundColor: '#E6E7E8',
+}`],
+
+          path: [`sc.a3.iptsChanges.stock`],
+
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.iptsChanges.stock`],
+          value: [`$arg_callback`]
+        }})],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `Available quantity`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [{}],
+
+          stylesArray: [`{
+width: '80%',
+height: '45px',
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+paddingVertical: 10,
+paddingHorizontal: 15,
+}`],
+
+          path: [`sc.a3.iptsChanges.availableQuantity`],
+
+          funcsArray: [(callback) => {
+  // Remove tudo que não seja número, vírgula ou ponto
+  let newValue = callback.replace(/[^0-9.,]/g, "");
+
+  // Atualizar a variável do preço
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.iptsChanges.availableQuantity"],
+      value: [newValue]
+    }
+  });
+
+  // Verificar se existe algum número válido
+  if (newValue === "" || !/[0-9]/.test(newValue)) {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.availableQuantityMessage"],
+        value: ["O campo não pode estar vazio."]
+      }
+    });
+  } else {
+    // Limpar mensagem caso o valor seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a3.availableQuantityMessage"],
+        value: [""]
+      }
+    });
+  }
+
+  // Converter valor para número inteiro (ignora vírgula/ponto)
+  let numericValue = parseInt(newValue.replace(/[^0-9]/g, ""), 10);
+
+  if (!isNaN(numericValue)) {
+    if (numericValue === 0) {
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a3.iptsChanges.stock"],
+          value: ["Out of Stock"]
+        }
+			});
+console.log("Estoque salvo: Out of Stock");
+
+    } else if (numericValue > 0) {
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a3.iptsChanges.stock"],
+          value: ["In Stock"]
+        }
+			});
+console.log("Estoque salvo: In Stock");
+    }
+  }
+
+  console.log("Entrada digitada:", newValue, " | Estoque:", numericValue);
+}
+],
+
+          args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: "Inter",
+fontSize: 14,
+}`
+          ],
+
+          children: [
+            `$var_sc.a3.availableQuantityMessage`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `Images`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+	width: '200px',
+	height:'200px',
+	borderRadius: '6px',
+	borderWidth: '1px',
+	borderColor: '#e6e7e8',
+}],
+
+      URIvariablePath:[`sc.a3.previewUrl`],
+
+      args,
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '200px',
+alignItems: 'center',
+justifyContent: 'center',
+borderRadius: 5,
+borderWidth: 1,
+borderColor: '#e6e7e8',
+padding: 5,
+flexDirection: 'row',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const input = document.createElement("input");
+  input.type = "file";
+  input.accept = "image/*";
+
+  input.onchange = (e) => {
+    const file = e.target.files[0];
+    if (!file) {
+      console.log("Nenhum arquivo selecionado.");
+      return;
+    }
+
+    // Criar o FileReader para converter em Base64
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      const base64 = reader.result; // DataURL (ex: "data:image/png;base64,....")
+
+      // Salva o arquivo original
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a3.localFile"],
+          value: [file]
+        }
+      });
+
+      // Salva o DataURL para o preview
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a3.previewUrl"],
+          value: [base64]
+        }
+      });
+
+      console.log("Preview pronto:", base64.substring(0, 50) + "...");
+    };
+
+    reader.readAsDataURL(file); // Converte o arquivo em Base64
+  };
+
+  input.click();
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[
+        (...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={18}
+    height={17}
+    fill="red"
+    viewBox="0 0 18 17"
+    {...props}
+  >
+    <Path
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.429}
+      d="M4.808 16.286H2.412a1.198 1.198 0 0 1-1.198-1.198V5.506m0 0h15.572m-15.572 0 2.647-4.193A1.198 1.198 0 0 1 4.868.714h8.264a1.198 1.198 0 0 1 1.007.6l2.647 4.191m0 0v9.583a1.198 1.198 0 0 1-1.198 1.198h-2.396m-7.187-4.193L9 9.1m0 0 2.995 2.994M9 9.1v7.187M9 .714v4.791"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.80769 16.2857H2.41209C2.09441 16.2857 1.78975 16.1595 1.56511 15.9349C1.34048 15.7103 1.21429 15.4056 1.21429 15.0879V5.5055M1.21429 5.5055H16.7857M1.21429 5.5055L3.86143 1.31318C3.96387 1.13559 4.11017 0.987268 4.28634 0.882406C4.46251 0.777545 4.66264 0.719655 4.86758 0.714279H13.1324C13.3374 0.719655 13.5375 0.777545 13.7137 0.882406C13.8898 0.987268 14.0362 1.13559 14.1386 1.31318L16.7857 5.5055M16.7857 5.5055V15.0879C16.7857 15.4056 16.6595 15.7103 16.4349 15.9349C16.2103 16.1595 15.9056 16.2857 15.5879 16.2857H13.1923M6.00545 12.0934L8.99996 9.09889M8.99996 9.09889L11.9945 12.0934M8.99996 9.09889L9.00004 16.2857M9.00004 0.714279V5.50549" stroke="#5C5F6A" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      `,
+
+      altura: "20px",
+
+      largura: "20px",
+
+      preenchimento: [`#FFF`],
+
+      args,
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ width: '10px', }`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#878A92",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `Upload Image`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [(...args:any) => <Elements.FlatList2 pass={{
+          elementProperties: [
+            {}
+          ],
+
+          pData: `sc.a3.productImagesOptions`,
+
+          itemElements: [
+            (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `a`
+          ],
+
+          args,
+
+        }}/>
+          ],
+
+      styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],    args,
+        }}/>],
+            args,
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => {
+  const storedDate = tools.getCtData("sc.a3.iptsChanges.date");
+
+  // Força extrair sempre uma string
+  let dateValue = "";
+  if (Array.isArray(storedDate)) {
+    dateValue = storedDate[0] || "";
+  } else if (typeof storedDate === "string") {
+    dateValue = storedDate;
+  }
+
+	return (
+<div className="relative w-fit">
+    <input
+      type="date"
+      //value={dateValue}
+      onChange={(e) => {
+        const selectedDate = e.target.value;
+
+        tools.functions.setVar({
+          args: "",
+          pass: {
+            keyPath: ["sc.a3.iptsChanges.date"],
+            value: [selectedDate]
+          }
+        });
+
+        console.log("📅 Data escolhida:", selectedDate);
+	}}
+	className="px-4 py-2 rounded-2xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-gray-700 appearance-none bg-white"
+/>
+	<span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
+</span>
+</div>
+  );
+}] 
+}}/>
+],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
