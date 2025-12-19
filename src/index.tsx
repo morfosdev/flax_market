@@ -33862,7 +33862,7 @@ async (...args) =>
             styles:[`{
 flex: 1,
 alignItems: 'center',
-paddingHorizontal: 16,
+paddingHorizontal: 8,
 paddingBottom: 35,
 borderRadius: 10,
 borderColor: "#E9E9EB",
@@ -34325,7 +34325,7 @@ width: 15,
             styles:[`{
 justifyContent: 'center',
 width: '100%',
-maxWidth: 158,
+maxWidth: 170,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -34459,7 +34459,7 @@ async (...args) =>
             elementsProperties:['{}'],
 
             styles:[`{
-width: 5,
+width: 8,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
