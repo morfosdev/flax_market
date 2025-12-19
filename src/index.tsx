@@ -37036,14 +37036,15 @@ fontSize: 14,
           propsArray: [`{ editable: false, }`],
 
           stylesArray: [`{
-width: '80%',
-height: '45px',
+width: '100%',
+height: 30,
 borderRadius: 6,
 borderWidth: 1,
 borderColor: '#E6E7E8',
 paddingVertical: 10,
 paddingHorizontal: 15,
 backgroundColor: '#E6E7E8',
+fontSize: 12,
 }`],
 
           path: [`sc.a3.iptsChanges.stock`],
