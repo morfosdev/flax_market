@@ -33882,88 +33882,6 @@ justifyContent: 'center',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-flexDirection: 'row',
-justifyContent: 'space-between',
-alignItems: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 12, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#0E1422",
-}`
-          ],
-
-          children: [
-            `Products`
-          ],
-
-          args,
-
-        }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-paddingHorizontal: 12,
-paddingVertical: 6,
-backgroundColor: '#000',
-borderRadius: 4,
-alignItems: 'center',
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a3AdmAddProducts");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#FFF',
-fontFamily: 'Inter',
-fontSize: 12,
-}`
-          ],
-
-          children: [
-            `Add product`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
             styles:[`{ height: 16, }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -34173,12 +34091,155 @@ async (...args) =>
             elementsProperties:['{}'],
 
             styles:[`{
-  height: 1,
-  width: '100%',
-  backgroundColor: '#dfdfe1',
+flexDirection: 'row',
+justifyContent: 'space-between',
+alignItems: 'center',
 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ width: '70px', left: '14px', }`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const list = tools.getCtData("sc.a2.list");
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a2.originalList"],
+      value: [list]
+    }
+  });
+
+ const list2 = tools.getCtData("sc.a2.originalList") || [];
+  const sortField = tools.getCtData("sc.a2.sortField");
+  const ascending = tools.getCtData("sc.a2.sortAsc");
+
+  if (!sortField) return;
+
+  const sortedList = [...list].sort((a, b) => {
+    const aValue = a[sortField];
+    const bValue = b[sortField];
+
+    if (aValue < bValue) return ascending ? -1 : 1;
+    if (aValue > bValue) return ascending ? 1 : -1;
+    return 0;
+  });
+
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a2.list"],
+      value: [sortedList]
+    }
+  });
+
+const currentField = tools.getCtData("sc.a2.sortField");
+  const currentAsc = tools.getCtData("sc.a2.sortAsc");
+
+  const newField = "price"; // change to your field
+  const newAsc = currentField === newField ? !currentAsc : true;
+
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a2.sortField", "sc.a2.sortAsc"],
+      value: [newField, newAsc]
+    }
+  });
+
+  tools.functions.run("sortProducts"); // name of the sorting function above
+
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <Path
+      stroke="#474B57"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.143}
+      d="M6 8.309 8.375 6m0 0 2.377 2.307M8.375 6l.004 12M18 15.692 15.624 18m0 0-2.377-2.308M15.625 18V6"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 8.3087L8.37549 6.00035M8.37549 6.00035L10.7525 8.30726M8.37549 6.00035L8.37935 18M18 15.692L15.6238 17.9997M15.6238 17.9997L13.2475 15.692M15.6238 17.9997V6" stroke="#474B57" stroke-width="1.14286" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      `,
+
+      altura: "20px",
+
+      largura: "20px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+paddingHorizontal: 12,
+paddingVertical: 6,
+backgroundColor: '#000',
+borderRadius: 4,
+alignItems: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a3AdmAddProducts");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+fontFamily: 'Inter',
+fontSize: 12,
+}`
+          ],
+
+          children: [
+            `Add product`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
