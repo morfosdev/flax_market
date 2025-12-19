@@ -36221,6 +36221,7 @@ borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -37232,8 +37233,8 @@ fontSize: 14,
       elementsProperties:[{}],
 
       styles:[{
-	width: '200px',
-	height:'200px',
+	width: 170,
+	height: 170,
 	borderRadius: '6px',
 	borderWidth: '1px',
 	borderColor: '#e6e7e8',
@@ -37487,6 +37488,209 @@ flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+alignSelf: 'flex-start',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:[`{ disabled: '$var_sc.a3.allFieldsFilled', }`],
+
+            styles:[
+        `{
+width: '138px',
+height: '44px',
+paddingHorizontal: '24px',
+paddingVertical: '12px',
+backgroundColor: '#0E1422',
+borderRadius: 4,
+alignItems: 'center',
+justifyContent: 'center',
+}`, `{
+width: '138px',
+height: '44px',
+paddingHorizontal: '24px',
+paddingVertical: '12px',
+backgroundColor: '#0E1422',
+borderRadius: 4,
+alignItems: 'center',
+justifyContent: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+() => {
+  // Lista de variáveis a verificar
+  const requiredFields = [
+    "sc.a3.iptsChanges.label",
+    "sc.a3.iptsChanges.price",
+    "sc.a3.iptsChanges.categories",
+    "sc.a3.iptsChanges.slug",
+    "sc.a3.iptsChanges.sku",
+    "sc.a3.iptsChanges.description",
+    "sc.a3.iptsChanges.stock",
+    "sc.a3.iptsChanges.availableQuantity"
+  ];
+
+  // Função auxiliar para pegar valor 
+  const getVal = (path) => tools.getCtData(path);
+
+  // Verificar se todas têm valor
+  const allFilled = requiredFields.every(path => {
+    const value = getVal(path);
+    return value !== undefined && value !== null && value !== "";
+  });
+
+  // Salvar resultado em outra variável
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a3.allFieldsFilled"],
+      value: [allFilled]
+    }
+  });
+
+  console.log("Campos preenchidos?", allFilled);
+}
+, 
+async (...args) =>
+ functions.firebase.uploadFileTool({ args, pass:{
+ arrFiles: [`sc.a3.localFile`],
+ arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.iptsChanges.image`],
+          value: [`$arg_callback`]
+        }})],
+ }}), 
+async (...args) =>
+        functions.firebase.setDocTool({ args, pass:{
+  arrRefStrings: [`productsEcommerce`],
+            arrPathData: [`sc.a3.iptsChanges`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.iptsChanges`],
+          value: [``]
+        }})],
+        }}), 
+
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a2AdmProducts");
+        }
+        , async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.previewUrl`],
+          value: [``]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+fontFamily: 'Inter',
+fontSize: '14px',
+}`
+          ],
+
+          children: [
+            `Save Product`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '138px',
+height: '44px',
+paddingHorizontal: '24px',
+paddingVertical: '12px',
+backgroundColor: '#0E1422',
+borderRadius: 4,
+alignItems: 'center',
+justifyContent: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.iptsChanges`],
+          value: [``]
+        }}), 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a3.previewUrl`],
+          value: [``]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("a2AdmProducts");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+fontFamily: 'Inter',
+fontSize: '14px',
+}`
+          ],
+
+          children: [
+            `Cancel`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
