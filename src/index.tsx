@@ -33890,16 +33890,7 @@ flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flex: 1,
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -33919,11 +33910,7 @@ flex: 1,
 
           args,
 
-        }}/>],
-
-            args,
-          }}/>
-        , 
+        }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
