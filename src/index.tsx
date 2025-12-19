@@ -33976,9 +33976,13 @@ fontSize: 12,
             elementsProperties:['{}'],
 
             styles:[`{
-justifyContent: 'initial',
 alignItems: 'center',
 flexDirection: 'row',
+backgroundColor: 'white',
+borderWidth: 1,
+borderRadius: 10,
+borderColor: '#dee0e8',
+justifyContent: 'space-around',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -33988,13 +33992,7 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-borderTopLeftRadius: 5,
-borderBottomLeftRadius: 5,
 padding: 11,
-alignItem: 'center',
-justifyContent: 'center',
-borderColor: '#eee',
-borderWidth: 1,
 }`],
 
             functions:[async (...args) =>
@@ -34075,7 +34073,8 @@ async (...args) =>
 borderTopWidth: 1,
 borderBottomWidth: 1,
 borderColor: '#eee',
-padding: 10,
+paddingVertical: 10,
+paddingHorizontal: 0,
 }`],
 
           path: [`sc.a2.selectedLabel`],
@@ -34093,13 +34092,7 @@ padding: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-borderTopRightRadius: 5,
-borderBottomRightRadius: 5,
 padding: 11,
-alignItem: 'center',
-justifyContent: 'center',
-borderColor: '#eee',
-borderWidth: 1,
 }`],
 
             functions:[async (...args) =>
