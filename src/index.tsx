@@ -34537,16 +34537,32 @@ width: 8,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+flexDirection: 'row',
+}`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 12, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
+          ],
+
+          children: [
+            `SKU: `
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
