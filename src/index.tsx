@@ -33697,7 +33697,7 @@ width: '100%',
 justifyContent: 'space-between',
 alignItems: 'center',
 flexDirection: 'row',
-paddingVertical: 20,
+paddingVertical: 16,
 paddingHorizontal: 16,
 }`],
 
@@ -33859,36 +33859,13 @@ async (...args) =>
             styles:[`{
 flex: 1,
 alignItems: 'center',
-paddingHorizontal: 20,
+paddingHorizontal: 16,
 paddingBottom: 35,
 borderRadius: 10,
 borderColor: "#E9E9EB",
 }`],
 
             functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '100%',
-justifyContent: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ height: 16, }`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -34070,17 +34047,14 @@ async (...args) =>
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ height: 16, }`],
+            styles:[`{ height: 10, }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
@@ -34105,7 +34079,9 @@ width: '100%',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: '70px', left: '14px', }`],
+            styles:[`{
+left: 24,
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -34270,7 +34246,9 @@ paddingHorizontal: '10px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: '70px', left: '14px', }`],
+            styles:[`{
+left: 24,
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
