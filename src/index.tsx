@@ -34675,6 +34675,7 @@ return (
         color: isAvailable === "In Stock" ? "green" : "red",
         fontSize: isAvailable === "In Stock" ? 12 : 12,
         fontFamily: isAvailable === "In Stock" ? "Inter" : "Inter",
+				fontWeight: isAvailable === "In Stock" ? "600" : "600",
       }}>
     {isAvailable}
   </span>
