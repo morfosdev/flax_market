@@ -36927,6 +36927,7 @@ borderWidth: 1,
 borderColor: '#E6E7E8',
 paddingVertical: 4,
 paddingHorizontal: 8,
+fontSize: 12,
 }`],
 
           path: [`sc.a3.iptsChanges.description`],
