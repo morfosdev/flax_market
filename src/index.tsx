@@ -33879,6 +33879,7 @@ borderWidth: 1,
 borderRadius: 10,
 borderColor: '#dee0e8',
 justifyContent: 'space-around',
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -34080,7 +34081,7 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-left: 24,
+left: 14,
 }`],
 
             functions:[async (...args) =>
@@ -34247,7 +34248,7 @@ paddingHorizontal: '10px',
             elementsProperties:['{}'],
 
             styles:[`{
-left: 24,
+left: 14,
 }`],
 
             functions:[async (...args) =>
