@@ -34619,6 +34619,7 @@ width: 8,
 
             styles:[`{
 flexDirection: 'row',
+justifyContent: 'space-between',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -34658,11 +34659,14 @@ flexDirection: 'row',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
-}`],
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -34675,7 +34679,11 @@ flexDirection: 'row',
 const item = tools.findFlatItem(args);
 const isAvailable =  item.stock;
 return (
-  <span style={{ color: isAvailable === "In Stock" ? "green" : "red" }}>
+  <span style={{
+        color: isAvailable === "In Stock" ? "green" : "red",
+        fontSize: isAvailable === "In Stock" ? 12 : 12,
+        fontFamily: isAvailable === "In Stock" ? "Inter" : "Inter",
+      }}>
     {isAvailable}
   </span>
 )
