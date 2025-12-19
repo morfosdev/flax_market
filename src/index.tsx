@@ -31060,7 +31060,7 @@ width: '100%',
 justifyContent: 'space-between',
 alignItems: 'center',
 flexDirection: 'row',
-paddingVertical: 20,
+paddingVertical: 16,
 paddingHorizontal: 16,
 }`],
 
@@ -33686,7 +33686,10 @@ height: '100%',
 flex: 1,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -35137,6 +35140,8 @@ justifyContent: 'center',
             args,
           }}/>
         ],
+            args,
+        }}/>],
 
             args,
           }}/>
