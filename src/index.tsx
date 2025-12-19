@@ -34193,7 +34193,7 @@ alignItems: 'center',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a3AdmAddProducts");
+          return tools.goTo("b3mobileAddProducts");
         }
         ]
  , trigger: 'on press'
@@ -35226,7 +35226,7 @@ async (...args) =>
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"b2mobileProducts",
+          pathScreen:"b3mobileAddProducts",
 
           styles:[`{ 
 width: '100%',
@@ -36126,7 +36126,7 @@ paddingHorizontal: 16,
           ],
 
           children: [
-            `Products`
+            `Add Products`
           ],
 
           args,
