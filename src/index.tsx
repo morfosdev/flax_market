@@ -33862,7 +33862,6 @@ alignItems: 'center',
 paddingHorizontal: 20,
 paddingBottom: 35,
 borderRadius: 10,
-borderWidth: 1,
 borderColor: "#E9E9EB",
 }`],
 
