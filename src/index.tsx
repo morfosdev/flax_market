@@ -34094,6 +34094,9 @@ async (...args) =>
 flexDirection: 'row',
 justifyContent: 'space-between',
 alignItems: 'center',
+paddingHorizontal: 14,
+paddingVertical: 0,
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
