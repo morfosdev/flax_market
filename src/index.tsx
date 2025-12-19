@@ -34072,8 +34072,6 @@ async (...args) =>
 flexDirection: 'row',
 justifyContent: 'space-between',
 alignItems: 'center',
-paddingHorizontal: 14,
-paddingVertical: 0,
 width: '100%',
 }`],
 
@@ -34084,7 +34082,7 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-left: 14,
+left: 28,
 }`],
 
             functions:[async (...args) =>
