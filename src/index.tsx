@@ -34278,11 +34278,10 @@ fontSize: 12,
 
             styles:[`{
 width: '100%',
-justifyContent: 'center',
 alignItems: 'center',
-height: '80px',
 flexDirection: 'row',
-paddingHorizontal: '10px',
+paddingVertical: 18,
+paddingHorizontal: 12,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -34311,17 +34310,26 @@ height: '48px',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: 15,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 justifyContent: 'center',
-alignItems: 'center',
-height: '80px',
-flexDirection: 'row',
-paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -34330,11 +34338,7 @@ paddingHorizontal: '10px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -34653,11 +34657,7 @@ return (
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
-}`],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
