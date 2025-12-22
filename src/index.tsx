@@ -33112,9 +33112,14 @@ width: '155px',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideLeft`],
+          value: [false]
+        }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
+          return tools.goTo("b2mobileProducts");
         }
         ]
  , trigger: 'on press'
