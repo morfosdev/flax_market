@@ -37260,8 +37260,8 @@ borderColor: '#e6e7e8',
 flexDirection: 'row',
 alignSelf: 'center',
 marginTop: 10,
-paddingVertical: 20,
-paddingHorizontal: 4,
+paddingVertical: 4,
+paddingHorizontal: 20,
 }`],
 
             functions:[async (...args) =>
