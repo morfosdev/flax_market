@@ -41817,17 +41817,6 @@ flexDirection: 'row',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-flexDirection: 'row',
-justifyContent: 'space-between',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
             styles:[`{}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -41845,49 +41834,12 @@ justifyContent: 'space-between',
           ],
 
           children: [
-            `$arg_categories`
+            `$arg_status`
           ],
 
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [()=>{}]
- , trigger: 'on init'
-}})],            childrenItems:[
-
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => {
-const item = tools.findFlatItem(args);
-const isAvailable =  item.stock;
-return (
-  <span style={{
-        color: isAvailable === "In Stock" ? "green" : "red",
-        fontSize: isAvailable === "In Stock" ? 12 : 12,
-        fontFamily: isAvailable === "In Stock" ? "Inter" : "Inter",
-				fontWeight: isAvailable === "In Stock" ? "600" : "600",
-      }}>
-    {isAvailable}
-  </span>
-)
-}] 
-}}/>
-],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
