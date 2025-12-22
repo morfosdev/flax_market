@@ -39206,45 +39206,13 @@ paddingHorizontal: 8,
 fontSize: 12,
 }`],
 
-          path: [`sc.a3.iptsChanges.sku`],
+          path: [`sc.a4.editData.product.sku`],
 
-          funcsArray: [(callback) => {
-  // Remove tudo que não seja alfanumérico
-  let newValue = callback.replace(/[^a-zA-Z0-9]/g, "");
-
-  // Atualizar a variável no Flaxboll
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.iptsChanges.sku"],
-      value: [newValue]
-    }
-  });
-
-  // Verificar se existe algum caractere válido
-  if (newValue === "" || !/[a-zA-Z0-9]/.test(newValue)) {
-    // Salvar mensagem de aviso
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.skuMessage"],
-        value: ["SKU inválido."]
-      }
-    });
-  } else {
-    // Limpar mensagem caso o valor seja válido
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.skuMessage"],
-        value: [""]
-      }
-    });
-  }
-
-  console.log("SKU digitado:", newValue);
-}
-],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a4.editData.product.sku`],
+          value: [`$arg_callback`]
+        }})],
 
           args,
         }}/>, (...args:any) => <Elements.Text pass={{
