@@ -41419,7 +41419,7 @@ fontSize: 12,
           ],
 
           children: [
-            `Add product`
+            `Add order`
           ],
 
           args,
