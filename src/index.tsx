@@ -39294,45 +39294,13 @@ paddingHorizontal: 8,
 fontSize: 12,
 }`],
 
-          path: [`sc.a3.iptsChanges.description`],
+          path: [`sc.a4.editData.product.description`],
 
-          funcsArray: [(callback) => {
-  // Pegar o valor digitado
-  let newValue = callback.trim();
-
-  // Atualizar a variável no Flaxboll
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.iptsChanges.description"],
-      value: [newValue]
-    }
-  });
-
-  // Verificar se está vazio
-  if (newValue === "") {
-    // Salvar mensagem de aviso
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.descriptionMessage"],
-        value: ["O campo não pode estar vazio."]
-      }
-    });
-  } else {
-    // Limpar mensagem caso seja válido
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.descriptionMessage"],
-        value: [""]
-      }
-    });
-  }
-
-  console.log("Entrada digitada:", newValue);
-}
-],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a4.editData.product.description`],
+          value: [`$arg_callback`]
+        }})],
 
           args,
         }}/>, (...args:any) => <Elements.Text pass={{
