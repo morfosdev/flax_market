@@ -42679,6 +42679,109 @@ height: '10px',
             elementsProperties:['{}'],
 
             styles:[`{
+alignItems: 'center',
+flexDirection: 'row',
+paddingHorizontal: '24',
+paddingVertical: '8',
+backgroundColor: '#F6F6F6',
+borderRadius: '8px',
+width: '155px',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideLeft`],
+          value: [false]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("b5mobileOrders");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[
+        (...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={25}
+    fill="red"
+    viewBox="0 0 24 25"
+    {...props}
+  >
+    <Path
+      stroke="#0E1422"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.429}
+      d="M3 3.5h3.383L7.59 15.477a1.384 1.384 0 0 0 1.385 1.177h8.728a1.386 1.386 0 0 0 1.385-.942l1.843-5.538a1.383 1.383 0 0 0-.194-1.246 1.385 1.385 0 0 0-1.191-.582H6.868m4.694 2.77v2.769m4.156-2.77v2.77m1.749 7.615a.693.693 0 1 1 0-1.385.693.693 0 0 1 0 1.385Zm-9.006 0a.693.693 0 1 1 0-1.385.693.693 0 0 1 0 1.385Z"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 3.5H6.38321L7.58853 15.4769C7.63862 15.8071 7.80643 16.108 8.06102 16.3243C8.31561 16.5406 8.63984 16.6576 8.97395 16.6538H17.7021C18.0042 16.6696 18.3032 16.5861 18.5534 16.4161C18.8035 16.2461 18.9912 15.9989 19.0875 15.7123L20.9302 10.1738C20.999 9.96564 21.0173 9.74406 20.9836 9.52739C20.9498 9.31072 20.865 9.10517 20.7362 8.92769C20.6021 8.73894 20.4227 8.58681 20.2146 8.48522C20.0065 8.38362 19.7761 8.33581 19.5447 8.34615H6.8681M11.5619 11.1154V13.8846M15.7182 11.1154V13.8846M17.4666 21.5C17.2829 21.5 17.1067 21.4271 16.9768 21.2972C16.8469 21.1674 16.7739 20.9913 16.7739 20.8077C16.7739 20.6241 16.8469 20.448 16.9768 20.3182C17.1067 20.1883 17.2829 20.1154 17.4666 20.1154C17.6503 20.1154 17.8265 20.1883 17.9564 20.3182C18.0863 20.448 18.1593 20.6241 18.1593 20.8077C18.1593 20.9913 18.0863 21.1674 17.9564 21.2972C17.8265 21.4271 17.6503 21.5 17.4666 21.5ZM8.46134 21.5C8.27762 21.5 8.10143 21.4271 7.97152 21.2972C7.84161 21.1674 7.76863 20.9913 7.76863 20.8077C7.76863 20.6241 7.84161 20.448 7.97152 20.3182C8.10143 20.1883 8.27762 20.1154 8.46134 20.1154C8.64506 20.1154 8.82126 20.1883 8.95116 20.3182C9.08107 20.448 9.15406 20.6241 9.15406 20.8077C9.15406 20.9913 9.08107 21.1674 8.95116 21.2972C8.82126 21.4271 8.64506 21.5 8.46134 21.5Z" stroke="#0E1422" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      `,
+
+      altura: "24px",
+
+      largura: "24px",
+
+      preenchimento: [`#FFF`],
+
+      args,
+    }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Orders`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 height: '10px',
 }`],
 
@@ -42913,7 +43016,6 @@ height: '10px',
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -43003,108 +43105,6 @@ color: '#717171',
 
           children: [
             `Settings`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-alignItems: 'center',
-flexDirection: 'row',
-paddingHorizontal: '24',
-paddingVertical: '8',
-backgroundColor: '#F6F6F6',
-borderRadius: '8px',
-width: '155px',
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`all.toggles.sideLeft`],
-          value: [false]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("b5mobileOrders");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[
-        (...args:any) => <Elements.SvgView1 pass={{
-      componentSvg: (Svg:any, SvgObj:any) => {
-        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
-        return (props:any) => (<Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={25}
-    fill="red"
-    viewBox="0 0 24 25"
-    {...props}
-  >
-    <Path
-      stroke="#0E1422"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={1.429}
-      d="M3 3.5h3.383L7.59 15.477a1.384 1.384 0 0 0 1.385 1.177h8.728a1.386 1.386 0 0 0 1.385-.942l1.843-5.538a1.383 1.383 0 0 0-.194-1.246 1.385 1.385 0 0 0-1.191-.582H6.868m4.694 2.77v2.769m4.156-2.77v2.77m1.749 7.615a.693.693 0 1 1 0-1.385.693.693 0 0 1 0 1.385Zm-9.006 0a.693.693 0 1 1 0-1.385.693.693 0 0 1 0 1.385Z"
-    />
-  </Svg>)
-      },
-
-      svgOriginal: `
-        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 3.5H6.38321L7.58853 15.4769C7.63862 15.8071 7.80643 16.108 8.06102 16.3243C8.31561 16.5406 8.63984 16.6576 8.97395 16.6538H17.7021C18.0042 16.6696 18.3032 16.5861 18.5534 16.4161C18.8035 16.2461 18.9912 15.9989 19.0875 15.7123L20.9302 10.1738C20.999 9.96564 21.0173 9.74406 20.9836 9.52739C20.9498 9.31072 20.865 9.10517 20.7362 8.92769C20.6021 8.73894 20.4227 8.58681 20.2146 8.48522C20.0065 8.38362 19.7761 8.33581 19.5447 8.34615H6.8681M11.5619 11.1154V13.8846M15.7182 11.1154V13.8846M17.4666 21.5C17.2829 21.5 17.1067 21.4271 16.9768 21.2972C16.8469 21.1674 16.7739 20.9913 16.7739 20.8077C16.7739 20.6241 16.8469 20.448 16.9768 20.3182C17.1067 20.1883 17.2829 20.1154 17.4666 20.1154C17.6503 20.1154 17.8265 20.1883 17.9564 20.3182C18.0863 20.448 18.1593 20.6241 18.1593 20.8077C18.1593 20.9913 18.0863 21.1674 17.9564 21.2972C17.8265 21.4271 17.6503 21.5 17.4666 21.5ZM8.46134 21.5C8.27762 21.5 8.10143 21.4271 7.97152 21.2972C7.84161 21.1674 7.76863 20.9913 7.76863 20.8077C7.76863 20.6241 7.84161 20.448 7.97152 20.3182C8.10143 20.1883 8.27762 20.1154 8.46134 20.1154C8.64506 20.1154 8.82126 20.1883 8.95116 20.3182C9.08107 20.448 9.15406 20.6241 9.15406 20.8077C9.15406 20.9913 9.08107 21.1674 8.95116 21.2972C8.82126 21.4271 8.64506 21.5 8.46134 21.5Z" stroke="#0E1422" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-      `,
-
-      altura: "24px",
-
-      largura: "24px",
-
-      preenchimento: [`#FFF`],
-
-      args,
-    }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '10px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-fontWeight: '500',
-fontFamily: 'Inter',
-}`
-          ],
-
-          children: [
-            `Orders`
           ],
 
           args,
