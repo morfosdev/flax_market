@@ -40072,7 +40072,7 @@ async (...args) =>
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"b5mobileOrders",
+          pathScreen:"b5mobileOrdersFALSE",
 
           styles:[`{ 
 width: '100%',
@@ -42460,10 +42460,32 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
+flexDirection: 'row',
 width: '100%',
-maxWidth: '220px',
+maxWidth: 200,
 backgroundColor: '#FFF',
 alignItems: 'center',
+position: 'absolute',
+zIndex: 1,
+height: '100%',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "all.toggles.sideLeft", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+width: '100%',
+maxWidth: 200,
+backgroundColor: '#FFF',
+alignItems: 'center',
+height: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -42481,6 +42503,16 @@ height: '100px',
 
             functions:[()=>{}],            childrenItems:[
 
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
 
@@ -42489,10 +42521,14 @@ width: '116px',
 height: '40px',
 }],
 
-      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FAdmin.png?alt=media&token=94ebd672-5bdd-4e25-81b7-a1b36e29e6e0`],
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FmobileFlax.png?alt=media&token=09cd0e58-911b-455c-a731-0912cc58ac8e`],
 
       args,
     }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
@@ -42515,9 +42551,14 @@ width: '155px',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideLeft`],
+          value: [false]
+        }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a1AdmDash");
+          return tools.goTo("b1mobileDash");
         }
         ]
  , trigger: 'on press'
@@ -42631,9 +42672,14 @@ width: '155px',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideLeft`],
+          value: [false]
+        }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
+          return tools.goTo("b2mobileProducts");
         }
         ]
  , trigger: 'on press'
@@ -42744,9 +42790,14 @@ width: '155px',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideLeft`],
+          value: [false]
+        }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a5AdmOrders");
+          return tools.goTo("b5mobileOrders");
         }
         ]
  , trigger: 'on press'
@@ -43171,10 +43222,57 @@ color: '#717171',
             elementsProperties:['{}'],
 
             styles:[`{ 
+backgroundColor: '#0006',
+position: 'relative',
+zIndex: 1,
+height: '100%',
+width: '100%',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideLeft`],
+          value: [false]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
 width: '80%',
 height: '100%',
 paddingHorizontal: 20,
 flex: 1,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+justifyContent: 'space-between',
+alignItems: 'center',
+flexDirection: 'row',
+paddingVertical: 16,
+paddingHorizontal: 16,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -43183,38 +43281,55 @@ flex: 1,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-width: '100%',
-justifyContent: 'initial',
-alignItems: 'center',
-height: '100px',
-flexDirection: 'row',
-paddingHorizontal: '5px',
-paddingVertical: '20px',
-}`],
+            styles:[`{}`],
 
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideLeft`],
+          value: [true]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={14}
+    height={11}
+    fill="red"
+    viewBox="0 0 14 11"
+    {...props}
+  >
+    <Path
+      stroke="#0E1422"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M13.5.5H.5m13 5H.5m13 5H.5"
+    />
+  </Svg>)
+      },
 
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#5C5F6A",
-}`
-          ],
+      svgOriginal: `
+        <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.5 0.5H0.5M13.5 5.5H0.5M13.5 10.5H0.5" stroke="#0E1422" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
-          children: [
-            `Admin > `
-          ],
+      `,
 
-          args,
+      altura: "15px",
 
-        }}/>, 
+      largura: "15px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        , 
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -43230,24 +43345,12 @@ paddingVertical: '20px',
           ],
 
           children: [
-            `Orders`
+            `Orders UPDATED`
           ],
 
           args,
 
         }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ flex: 1, }`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -43277,7 +43380,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a0AdmLogin");
+          return tools.goTo("b0mobileLogin");
         }
         ]
  , trigger: 'on press'
@@ -44702,6 +44805,8 @@ justifyContent: 'center',
             args,
           }}/>
         ],
+            args,
+        }}/>],
 
             args,
           }}/>
