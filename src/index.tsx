@@ -37510,6 +37510,7 @@ height: '10px',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -37523,7 +37524,8 @@ height: '10px',
             elementsProperties:[`{ disabled: '$var_sc.a3.allFieldsFilled', }`],
 
             styles:[`{
-padding: 10,
+paddingVertical: 10,
+paddingHorizontal: 20,
 backgroundColor: '#0E1422',
 borderRadius: 4,
 alignItems: 'center',
@@ -37639,7 +37641,8 @@ height: '10px',
             elementsProperties:['{}'],
 
             styles:[`{
-padding: 10,
+paddingVertical: 10,
+paddingHorizontal: 20,
 backgroundColor: '#0E1422',
 borderRadius: 4,
 alignItems: 'center',
@@ -37688,6 +37691,19 @@ fontSize: 12,
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
