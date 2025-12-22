@@ -36383,7 +36383,7 @@ fontSize: 12,
 color: "red", 
 marginTop: 8,
 fontFamily: "Inter",
-fontSize: 14,
+fontSize: 12,
 }`
           ],
 
@@ -36521,7 +36521,7 @@ fontSize: 12,
 color: "red", 
 marginTop: 8,
 fontFamily: "Inter",
-fontSize: 14,
+fontSize: 12,
 }`
           ],
 
@@ -36638,7 +36638,7 @@ fontSize: 12,
 color: "red", 
 marginTop: 8,
 fontFamily: "Inter",
-fontSize: 14,
+fontSize: 12,
 }`
           ],
 
@@ -36755,7 +36755,7 @@ fontSize: 12,
 color: "red", 
 marginTop: 8,
 fontFamily: "Inter",
-fontSize: 14,
+fontSize: 12,
 }`
           ],
 
@@ -36872,7 +36872,7 @@ fontSize: 12,
 color: "red", 
 marginTop: 8,
 fontFamily: "Inter",
-fontSize: 14,
+fontSize: 12,
 }`
           ],
 
@@ -36992,7 +36992,7 @@ fontSize: 12,
 color: "red", 
 marginTop: 8,
 fontFamily: "Inter",
-fontSize: 14,
+fontSize: 12,
 }`
           ],
 
@@ -37200,7 +37200,7 @@ console.log("Estoque salvo: In Stock");
 color: "red", 
 marginTop: 8,
 fontFamily: "Inter",
-fontSize: 14,
+fontSize: 12,
 }`
           ],
 
