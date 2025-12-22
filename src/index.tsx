@@ -42434,7 +42434,7 @@ async (...args) =>
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"a5AdmOrders",
+          pathScreen:"b5mobileOrders",
 
           styles:[`{ 
 width: '100%',
