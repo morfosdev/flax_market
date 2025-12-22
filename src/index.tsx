@@ -38866,79 +38866,13 @@ paddingHorizontal: 8,
 fontSize: 12,
 }`],
 
-          path: [`sc.a3.iptsChanges.label`],
+          path: [`sc.a4.editData.product.label`],
 
-          funcsArray: [
-        (callback) => {
-  // Pegar o valor digitado
-  let newValue = callback.trim();
-
-  // Atualizar a variável no Flaxboll
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.iptsChanges.label"],
-      value: [newValue]
-    }
-  });
-
-  // Verificar se está vazio
-  if (newValue === "") {
-    // Salvar mensagem de aviso
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.labelMessage"],
-        value: ["O campo Label não pode estar vazio."]
-      }
-    });
-  } else {
-    // Limpar mensagem caso seja válido
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.labelMessage"],
-        value: [""]
-      }
-    });
-  }
-
-  console.log("Label digitado:", newValue);
-}
-, () => {
-  // Lista de variáveis a verificar
-  const requiredFields = [
-    "sc.a3.iptsChanges.label",
-    "sc.a3.iptsChanges.price",
-    "sc.a3.iptsChanges.categories",
-    "sc.a3.iptsChanges.slug",
-    "sc.a3.iptsChanges.sku",
-    "sc.a3.iptsChanges.description",
-    "sc.a3.iptsChanges.stock",
-    "sc.a3.iptsChanges.availableQuantity"
-  ];
-
-  // Função auxiliar para pegar valor 
-  const getVal = (path) => tools.getCtData(path);
-
-  // Verificar se todas têm valor
-  const allFilled = requiredFields.every(path => {
-    const value = getVal(path);
-    return value !== undefined && value !== null && value !== "";
-  });
-
-  // Salvar resultado em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.allFieldsFilled"],
-      value: [allFilled]
-    }
-  });
-
-  console.log("Campos preenchidos?", allFilled);
-}
-],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a4.editData.product.label`],
+          value: [`$arg_callback`]
+        }})],
 
           args,
         }}/>, (...args:any) => <Elements.Text pass={{
