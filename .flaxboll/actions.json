@@ -1,1 +1,1 @@
-{"1766412952449":{"actionType":"saveAll","createdAt":"1766412952449","actionID":"1766412952449","userID":"#TEMP","path":"system.capsules.44ce54cc-23eb-456b-99ce-590d451260ed.capsUseCodeInfo.capsUseDescription.en","oldValue":"{\n placeholder: 'Search products',\n}","newValue":"{\n placeholder: 'Search orders',\n}"}}
+{"1766413212670":{"actionType":"saveAll","createdAt":"1766413212670","actionID":"1766413212670","userID":"#TEMP","path":"system.capsules.18b68188-b04e-4205-97a5-ba11159709db.capsUseCodeInfo.capsUseDescription.en","oldValue":"$arg_label","newValue":"$arg_order"}}
