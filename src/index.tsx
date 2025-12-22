@@ -37496,6 +37496,20 @@ flexDirection: 'row',
             args,
           }}/>
         , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -37511,25 +37525,11 @@ alignSelf: 'flex-start',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:[`{ disabled: '$var_sc.a3.allFieldsFilled', }`],
 
-            styles:[
-        `{
-width: '138px',
-height: '44px',
-paddingHorizontal: '24px',
-paddingVertical: '12px',
+            styles:[`{
+padding: 10,
 backgroundColor: '#0E1422',
 borderRadius: 4,
 alignItems: 'center',
-justifyContent: 'center',
-}`, `{
-width: '138px',
-height: '44px',
-paddingHorizontal: '24px',
-paddingVertical: '12px',
-backgroundColor: '#0E1422',
-borderRadius: 4,
-alignItems: 'center',
-justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
@@ -37608,7 +37608,7 @@ async (...args) =>
             `{
 color: '#FFF',
 fontFamily: 'Inter',
-fontSize: '14px',
+fontSize: 12,
 }`
           ],
 
@@ -37629,7 +37629,7 @@ fontSize: '14px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '10px',
+height: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -37642,14 +37642,10 @@ width: '10px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '138px',
-height: '44px',
-paddingHorizontal: '24px',
-paddingVertical: '12px',
+padding: 10,
 backgroundColor: '#0E1422',
 borderRadius: 4,
 alignItems: 'center',
-justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
@@ -37680,7 +37676,7 @@ async (...args) =>
             `{
 color: '#FFF',
 fontFamily: 'Inter',
-fontSize: '14px',
+fontSize: 12,
 }`
           ],
 
