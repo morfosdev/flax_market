@@ -41803,7 +41803,7 @@ flexDirection: 'row',
           ],
 
           children: [
-            `$arg_price`
+            `$arg_total`
           ],
 
           args,
