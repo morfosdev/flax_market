@@ -37252,7 +37252,6 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
-width: '200px',
 alignItems: 'center',
 justifyContent: 'center',
 borderRadius: 5,
@@ -37260,6 +37259,10 @@ borderWidth: 1,
 borderColor: '#e6e7e8',
 padding: 5,
 flexDirection: 'row',
+alignSelf: 'center',
+marginTop: 10,
+paddingVertical: 20,
+paddingHorizontal: 4,
 }`],
 
             functions:[async (...args) =>
@@ -37337,9 +37340,9 @@ flexDirection: 'row',
 
       `,
 
-      altura: "20px",
+      altura: "15px",
 
-      largura: "20px",
+      largura: "15px",
 
       preenchimento: [`#FFF`],
 
@@ -37363,7 +37366,7 @@ flexDirection: 'row',
 
           arrStyles: [
             `{ 
-  fontSize: 14, 
+  fontSize: 12, 
   fontWeight: "500", 
   fontFamily: "Inter", 
   color: "#878A92",
