@@ -41749,8 +41749,7 @@ width: 8,
 flexDirection: 'row',
 }`],
 
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -41765,27 +41764,7 @@ flexDirection: 'row',
           ],
 
           children: [
-            `SKU: `
-          ],
-
-          args,
-
-        }}/>, (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 12, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#5C5F6A",
-}`
-          ],
-
-          children: [
-            `$arg_sku`
+            `$arg_date`
           ],
 
           args,
