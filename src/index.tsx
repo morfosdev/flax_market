@@ -41454,7 +41454,7 @@ fontSize: 12,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.A2.listBox", "==", true ]]
+ arrFunctions: [() => [ "sc.A5.listBox", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
@@ -42394,18 +42394,18 @@ async (...args) =>
    arrRefStrings: [`productsEcommerce`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a2.list`],
+          keyPath: [`sc.a5.list`],
           value: [`$arg_callback`]
         }})],
         }}), 
 async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a2.originalList`],
-          value: [`sc.a2.list`]
+          keyPath: [`sc.a5.originalList`],
+          value: [`sc.a5.list`]
         }}), () => {
-  const list = tools.getCtData("sc.a2.originalList") || [];
-  const sortField = tools.getCtData("sc.a2.sortField");
-  const ascending = tools.getCtData("sc.a2.sortAsc");
+  const list = tools.getCtData("sc.a5.originalList") || [];
+  const sortField = tools.getCtData("sc.a5.sortField");
+  const ascending = tools.getCtData("sc.a5.sortAsc");
 
   if (!sortField) return;
 
@@ -42421,7 +42421,7 @@ async (...args) =>
   tools.functions.setVar({
     args: "",
     pass: {
-      keyPath: ["sc.a2.list"],
+      keyPath: ["sc.a5.list"],
       value: [sortedList]
     }
   });
