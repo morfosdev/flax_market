@@ -39379,11 +39379,11 @@ backgroundColor: '#E6E7E8',
 fontSize: 12,
 }`],
 
-          path: [`sc.a3.iptsChanges.stock`],
+          path: [`sc.a4.editData.product.stock`],
 
           funcsArray: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.stock`],
+          keyPath: [`sc.a4.editData.product.stock`],
           value: [`$arg_callback`]
         }})],
 
