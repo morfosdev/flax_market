@@ -39444,71 +39444,13 @@ paddingHorizontal: 8,
 fontSize: 12,
 }`],
 
-          path: [`sc.a3.iptsChanges.availableQuantity`],
+          path: [`sc.a4.editData.product.availableQuantity`],
 
-          funcsArray: [(callback) => {
-  // Remove tudo que não seja número, vírgula ou ponto
-  let newValue = callback.replace(/[^0-9.,]/g, "");
-
-  // Atualizar a variável do preço
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.iptsChanges.availableQuantity"],
-      value: [newValue]
-    }
-  });
-
-  // Verificar se existe algum número válido
-  if (newValue === "" || !/[0-9]/.test(newValue)) {
-    // Salvar mensagem de aviso
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.availableQuantityMessage"],
-        value: ["O campo não pode estar vazio."]
-      }
-    });
-  } else {
-    // Limpar mensagem caso o valor seja válido
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.availableQuantityMessage"],
-        value: [""]
-      }
-    });
-  }
-
-  // Converter valor para número inteiro (ignora vírgula/ponto)
-  let numericValue = parseInt(newValue.replace(/[^0-9]/g, ""), 10);
-
-  if (!isNaN(numericValue)) {
-    if (numericValue === 0) {
-      tools.functions.setVar({
-        args: "",
-        pass: {
-          keyPath: ["sc.a3.iptsChanges.stock"],
-          value: ["Out of Stock"]
-        }
-			});
-console.log("Estoque salvo: Out of Stock");
-
-    } else if (numericValue > 0) {
-      tools.functions.setVar({
-        args: "",
-        pass: {
-          keyPath: ["sc.a3.iptsChanges.stock"],
-          value: ["In Stock"]
-        }
-			});
-console.log("Estoque salvo: In Stock");
-    }
-  }
-
-  console.log("Entrada digitada:", newValue, " | Estoque:", numericValue);
-}
-],
+          funcsArray: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a4.editData.product.availableQuantity`],
+          value: [`$arg_callback`]
+        }})],
 
           args,
         }}/>, (...args:any) => <Elements.Text pass={{
