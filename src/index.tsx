@@ -42388,44 +42388,15 @@ justifyContent: 'center',
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
+ arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`productsEcommerce`],
+   arrRefStrings: [`ordersEcommerce`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.list`],
+          keyPath: [`sc.a5.list.orders`],
           value: [`$arg_callback`]
         }})],
-        }}), 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a5.originalList`],
-          value: [`sc.a5.list`]
-        }}), () => {
-  const list = tools.getCtData("sc.a5.originalList") || [];
-  const sortField = tools.getCtData("sc.a5.sortField");
-  const ascending = tools.getCtData("sc.a5.sortAsc");
-
-  if (!sortField) return;
-
-  const sortedList = [...list].sort((a, b) => {
-    const aValue = a[sortField];
-    const bValue = b[sortField];
-
-    if (aValue < bValue) return ascending ? -1 : 1;
-    if (aValue > bValue) return ascending ? 1 : -1;
-    return 0;
-  });
-
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a5.list"],
-      value: [sortedList]
-    }
-  });
-}]
+        }})]
  , trigger: 'on init'
 }})],
 
