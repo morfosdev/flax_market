@@ -37233,11 +37233,12 @@ fontSize: 14,
       elementsProperties:[{}],
 
       styles:[{
-	width: 170,
+	width: "90%",
 	height: 170,
 	borderRadius: '6px',
 	borderWidth: '1px',
 	borderColor: '#e6e7e8',
+	marginTop: 2,
 }],
 
       URIvariablePath:[`sc.a3.previewUrl`],
