@@ -41174,7 +41174,7 @@ async (...args) =>
         , 
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
- placeholder: 'Search products',
+ placeholder: 'Search orders',
 }`],
 
           stylesArray: [`{
