@@ -37514,10 +37514,7 @@ height: '10px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-flexDirection: 'row',
-alignSelf: 'flex-start',
-}`],
+            styles:[`{}`],
 
             functions:[()=>{}],            childrenItems:[
         
