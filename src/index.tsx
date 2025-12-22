@@ -34402,7 +34402,7 @@ async (...args) =>
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a4AdmEditProducts");
+          return tools.goTo("b4mobileEditProducts");
         }
         ]
  , trigger: 'on press'
