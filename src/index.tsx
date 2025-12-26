@@ -15943,15 +15943,10 @@ paddingHorizontal: 15,
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
 
-      styles:[
-              {
-                height: "50px",
-                width: "80px",
-                backgroundColor: "#FDFDFD",
-                borderWidth: 2,
-                borderColor: "#EEE"
-              }
-              ],
+      styles:[{
+width: '48px',
+height: '48px',
+}],
 
       URIvariablePath:[`sc.a4.editData.product.image`],
 
