@@ -45063,7 +45063,7 @@ width: '100%',
 
           arrStyles: [
             `{
-color: '#000',
+color: '000',
 }`
           ],
 
