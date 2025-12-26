@@ -15973,7 +15973,7 @@ paddingHorizontal: 15,
 <div className="relative w-fit">
     <input
       type="date"
-      //value={dateValue}
+      value={dateValue}
       onChange={(e) => {
         const selectedDate = e.target.value;
 
