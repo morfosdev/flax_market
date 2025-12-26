@@ -45154,7 +45154,19 @@ backgroundColor: '000',
           }}/>
         ],
 
-          functions:[()=>{}],
+          functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.firebase.getDocsTool({ args, pass:{
+   arrRefStrings: [`productsEcommerce`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.c1.list`],
+          value: [`$arg_callback`]
+        }})],
+        }})]
+ , trigger: 'on init'
+}})],
 
           args,
         }}/>, 
