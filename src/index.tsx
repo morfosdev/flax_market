@@ -153,7 +153,7 @@
           ],
 
           children: [
-            `Login - Mobile`
+            `Client - Shop`
           ],
 
           args,
