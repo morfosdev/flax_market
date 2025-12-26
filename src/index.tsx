@@ -45090,7 +45090,7 @@ alignItems: 'center',
 width: '100%',
 height: '200px',
 flexDirection: 'row',
-backgroundColor: '#000',
+backgroundColor: '#FFF',
 }`],
 
             functions:[()=>{}],            childrenItems:[
