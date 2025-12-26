@@ -45062,8 +45062,11 @@ width: '100%',
           ],
 
           arrStyles: [
-            `{
-color: '000',
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
 }`
           ],
 
