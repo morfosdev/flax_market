@@ -13846,6 +13846,20 @@ flexDirection: 'row',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
+            styles:[`{
+  height: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
             styles:[
               {
                 backgroundColor: 'white',
@@ -13899,8 +13913,7 @@ flexDirection: 'row',
 
             args,
           }}/>
-        , 
-        (...args:any) => <Elements.ScrollBar pass={{
+        , (...args:any) => <Elements.ScrollBar pass={{
             styles: [],
             arrProps: [],
             arrItems: [(...args:any) => <Elements.FlatList2 pass={{
@@ -13939,20 +13952,7 @@ flexDirection: 'row',
               ],    args,
         }}/>],
             args,
-        }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  height: '10px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        ],
+        }}/>],
 
             args,
           }}/>
