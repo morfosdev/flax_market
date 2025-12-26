@@ -45087,7 +45087,7 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '60%',
 height: '100px',
 flexDirection: 'row',
 backgroundColor: '#FFF',
