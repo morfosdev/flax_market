@@ -45066,11 +45066,14 @@ width: '100%',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+backgroundColor: '#000066',
+width: '100%',
+}`
           ],
 
           children: [
-            "Escreva..."
+            `Get 25% off on your first order. Order Now`
           ],
 
           args,
