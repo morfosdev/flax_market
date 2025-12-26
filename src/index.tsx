@@ -15959,7 +15959,7 @@ paddingHorizontal: 15,
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
-  const storedDate = tools.getCtData("sc.a3.iptsChanges.date");
+  const storedDate = tools.getCtData("sc.a4.editData.product.date");
 
   // Força extrair sempre uma string
   let dateValue = "";
@@ -15980,7 +15980,7 @@ paddingHorizontal: 15,
         tools.functions.setVar({
           args: "",
           pass: {
-            keyPath: ["sc.a3.iptsChanges.date"],
+            keyPath: ["sc.a4.editData.product.date"],
             value: [selectedDate]
           }
         });
@@ -16061,6 +16061,7 @@ justifyContent: 'center',
     "sc.a4.editData.product.description",
     "sc.a4.editData.product.stock",
     "sc.a4.editData.product.availableQuantity",
+    "sc.a4.editData.product.date",
   ];
 
   const getVal = (path) => tools.getCtData(path);
@@ -16089,7 +16090,7 @@ justifyContent: 'center',
 
     tools.setData({
       path: "all.temp.fireInit",
-      value: fbInit
+      value: fbInit,
     });
   }
 
@@ -16121,9 +16122,8 @@ justifyContent: 'center',
 
     console.log("🧹 Variáveis limpas após o update.");
 
-// ✅ Redirecionar para a tela a2AdmProducts
+    // ✅ Redirecionar para a tela a2AdmProducts
     tools.goTo("a2AdmProducts");
-
   } catch (err) {
     console.log("🔥 Erro ao atualizar:", err);
   }
