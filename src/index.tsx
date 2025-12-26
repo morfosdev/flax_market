@@ -15948,7 +15948,7 @@ width: '48px',
 height: '48px',
 }],
 
-      URIvariablePath:[`$var_sc.a4.editData.product.date`],
+      URIvariablePath:[`$var_sc.a4.editData.product.image`],
 
       args,
     }}/>],
