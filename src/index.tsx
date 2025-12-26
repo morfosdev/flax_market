@@ -15953,7 +15953,7 @@ paddingHorizontal: 15,
               }
               ],
 
-      URIvariablePath:[`$var_sc.a4.editData.product.image`],
+      URIvariablePath:[`sc.a4.editData.product.image`],
 
       args,
     }}/>],

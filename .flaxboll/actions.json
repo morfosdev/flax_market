@@ -1,1 +1,1 @@
-{"1766770363997":{"actionType":"saveAll","createdAt":"1766770363997","actionID":"1766770363997","userID":"#TEMP","path":"system.capsules.315d10d7-88f9-471f-8e0d-f818cd7a9b7a.capsUseCodeInfo.capsUseLabel.en","oldValue":"","newValue":"$var_sc.a4.editData.product.image"}}
+{"1766770557094":{"actionType":"saveAll","createdAt":"1766770557094","actionID":"1766770557094","userID":"#TEMP","path":"system.capsules.315d10d7-88f9-471f-8e0d-f818cd7a9b7a.capsUseCodeInfo.capsUseLabel.en","oldValue":"$var_sc.a4.editData.product.image","newValue":"sc.a4.editData.product.image"}}
