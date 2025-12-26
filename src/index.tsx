@@ -15916,8 +15916,7 @@ paddingHorizontal: 15,
               }
               ],
 
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -15938,20 +15937,7 @@ paddingHorizontal: 15,
 
           args,
 
-        }}/>, 
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{
-width: '48px',
-height: '48px',
-}],
-
-      URIvariablePath:[`$var_sc.a4.editData.product.image`],
-
-      args,
-    }}/>],
+        }}/>],
 
             args,
           }}/>
