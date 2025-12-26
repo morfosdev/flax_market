@@ -45054,6 +45054,7 @@ width: '100%',
             styles:[`{
 backgroundColor: '#000066',
 width: '100%',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -45066,7 +45067,7 @@ width: '100%',
   fontSize: 14, 
   fontWeight: "500", 
   fontFamily: "Inter", 
-  color: "#5C5F6A",
+  color: "#FFF",
 }`
           ],
 
