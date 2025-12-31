@@ -45103,7 +45103,7 @@ backgroundColor: '#FFF',
 width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
-height: '150px',
+//height: '150px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
