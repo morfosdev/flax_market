@@ -45469,7 +45469,10 @@ flex: 1,
 alignItems: 'center',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
             {}
           ],
@@ -45652,6 +45655,8 @@ return (
       styles:[`{
 flexDirection: 'row',
 }`],    args,
+        }}/>],
+            args,
         }}/>],
 
             args,
