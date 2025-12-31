@@ -45489,7 +45489,6 @@ alignItems: 'center',
 width: '150px',
 justifyContent: 'center',
 alignItems: 'center',
-flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -45857,14 +45856,9 @@ justifyContent: 'center',
         
           ],
 
-      styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],    args,
+      styles:[`{
+flexDirection: 'row',
+}`],    args,
         }}/>],
 
             args,
