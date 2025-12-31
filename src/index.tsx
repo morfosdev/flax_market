@@ -10149,8 +10149,7 @@ borderWidth: 1,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
+ arrFunctions: [async (...args) =>
  functions.firebase.where({ args, pass:{
 
   arrRefStrings: [`productsEcommerce`],
@@ -10170,12 +10169,7 @@ async (...args) =>
           keyPath: [`sc.A2.listBox`],
           value: [false]
         }})],
- }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
-        }
-        ]
+ }})]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
