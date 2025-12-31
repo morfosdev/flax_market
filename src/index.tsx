@@ -45100,10 +45100,10 @@ backgroundColor: '#FFF',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
-height: '100px',
+height: '150px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
