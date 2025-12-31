@@ -10229,35 +10229,35 @@ padding: 10,
         functions.setVar({ args, pass:{
           keyPath: [`sc.a2.selectedLabel`],
           value: [`$arg_callback`]
-        }}), () =>{
-if (e.key === "Enter") {
-  const label = tools.getCtData("sc.a2.selectedLabel");
+        }}), (e) => {
+  if (e.key === "Enter") {
+    const label = tools.getCtData("sc.a2.selectedLabel");
 
-  tools.query.where(
-    "productsEcommerce",
-    "label",
-    "==",
-    label
-  ).then((result) => {
+    tools.query.where(
+      "productsEcommerce",
+      "label",
+      "==",
+      label
+    ).then((result) => {
 
-    tools.setData({
-      path: "sc.a2.filteredList",
-      value: result
+      tools.setData({
+        path: "sc.a2.filteredList",
+        value: result
+      });
+
+      tools.setData({
+        path: "sc.A2.listBox",
+        value: false
+      });
+
+      console.log("🔎 Produto filtrado:", result);
+
+    }).catch((err) => {
+      console.log("❌ Erro ao filtrar:", err);
     });
-
-    tools.setData({
-      path: "sc.A2.listBox",
-      value: false
-    });
-
-    console.log("🔎 Produto filtrado:", result);
-
-  }).catch((err) => {
-    console.log("❌ Erro ao filtrar:", err);
-  });
+  }
 }
-
-}],
+],
 
           args,
         }}/>, 
