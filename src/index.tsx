@@ -10229,7 +10229,7 @@ padding: 10,
         functions.setVar({ args, pass:{
           keyPath: [`sc.a2.selectedLabel`],
           value: [`$arg_callback`]
-        }}), () =:{}],
+        }}), () =>{}],
 
           args,
         }}/>, 
