@@ -45486,12 +45486,9 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '150px',
 justifyContent: 'center',
 alignItems: 'center',
-height: '80px',
-flexDirection: 'row',
-paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
