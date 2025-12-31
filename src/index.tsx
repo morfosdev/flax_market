@@ -13956,7 +13956,7 @@ flexDirection: 'row',
   arrItems: [() => {
   const storedDate = tools.getCtData("sc.a3.iptsChanges.date");
 
-  // Garante que sempre receba uma string
+  // Força extrair sempre uma string
   let dateValue = "";
   if (Array.isArray(storedDate)) {
     dateValue = storedDate[0] || "";
@@ -13965,10 +13965,10 @@ flexDirection: 'row',
   }
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-fit">
       <input
         type="date"
-        // value={dateValue}  ← coloque se quiser a data preenchida ao abrir
+        //value={dateValue}
         onChange={(e) => {
           const selectedDate = e.target.value;
 
@@ -13982,25 +13982,9 @@ flexDirection: 'row',
 
           console.log("📅 Data escolhida:", selectedDate);
         }}
-        className="
-          w-full
-          px-4 py-3
-          border border-gray-200
-          rounded-xl
-          shadow-sm
-          text-gray-700
-          placeholder-gray-400
-          focus:outline-none
-          focus:ring-2 focus:ring-blue-500
-          focus:border-blue-500
-          bg-white
-          appearance-none
-        "
+        className="px-4 py-2 rounded-2xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-gray-700 appearance-none bg-white"
       />
-
-      {/* Ícone (opcional) */}
-      <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
-      </span>
+      <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"></span>
     </div>
   );
 }] 
