@@ -45088,9 +45088,10 @@ alignItems: 'center',
 
             styles:[`{
 width: '100%',
-height: '60px',
+height: '40px',
 flexDirection: 'row',
 backgroundColor: '#FFF',
+paddingHorizontal: '10px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
