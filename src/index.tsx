@@ -45542,12 +45542,12 @@ async (...args) =>
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+width: '100%',
+height: '100%',
 margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
-paddingHorizontal: 20,
-paddingBottom: 35,
+padding: 20,
 borderRadius: 10,
 borderWidth: 1,
 borderColor: "#E9E9EB",
@@ -45593,36 +45593,16 @@ flexDirection: 'row',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-flex: 1,
-alignItems: 'center',
-}`],
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
-          elementProperties: [
-            {}
-          ],
-
-          pData: `sc.c1.list`,
-
-          itemElements: [
-            
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  height: 1,
-  width: '100%',
-  backgroundColor: '#dfdfe1',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -45632,22 +45612,11 @@ alignItems: 'center',
           ],
 
           children: [
-            `1`
+            `Placeholder`
           ],
 
           args,
 
-        }}/>
-          ],
-
-      styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],    args,
         }}/>],
 
             args,
