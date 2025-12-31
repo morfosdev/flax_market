@@ -45092,6 +45092,7 @@ height: '40px',
 flexDirection: 'row',
 backgroundColor: '#FFF',
 paddingHorizontal: '10px',
+justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
