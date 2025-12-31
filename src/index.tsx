@@ -45103,7 +45103,6 @@ backgroundColor: '#FFF',
 width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
-//height: '150px',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -45124,7 +45123,17 @@ height: '40px',
             args,
           }}/>
         , 
-        (...args:any) => <Elements.Text pass={{
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100px',
+alignItems: 'center',
+justifyContent: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -45134,27 +45143,16 @@ height: '40px',
           ],
 
           children: [
-            `Placeholder`
-          ],
-
-          args,
-
-        }}/>, (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `Placeholder`
+            `Home`
           ],
 
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
