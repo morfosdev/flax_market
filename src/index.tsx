@@ -30857,7 +30857,7 @@ width: '155px',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a6AdmCustomers");
+          return tools.goTo("b6mobileCustomers");
         }
         ]
  , trigger: 'on press'
