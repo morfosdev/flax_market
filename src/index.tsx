@@ -43814,7 +43814,7 @@ fontSize: 12,
           ],
 
           children: [
-            `Category`
+            `Total`
           ],
 
           args,
@@ -43834,45 +43834,71 @@ paddingHorizontal: 8,
 fontSize: 12,
 }`],
 
-          path: [`sc.a3.iptsChanges.categories`],
+          path: [`sc.a5a.iptsChanges.total`],
 
-          funcsArray: [(callback) => {
-  // Pegar o valor digitado
-  let newValue = callback.trim();
+          funcsArray: [
+        async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a5a.iptsChanges.total`],
+          value: [`$arg_callback`]
+        }}), (txt) => {
+  try {
+    if (typeof txt !== "string") txt = String(txt ?? "");
 
-  // Atualizar a variável no Flaxboll
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.iptsChanges.categories"],
-      value: [newValue]
+    // Mantém apenas números (sem regex)
+    let clean = "";
+    for (let i = 0; i < txt.length; i++) {
+      const ch = txt[i];
+      if (ch >= "0" && ch <= "9") clean += ch;
     }
-  });
 
-  // Verificar se está vazio
-  if (newValue === "") {
-    // Salvar mensagem de aviso
+    // Remove zeros à esquerda (mas deixa pelo menos um)
+    clean = clean.replace(/^0+/, "");
+    if (clean.length === 0) clean = "0";
+
+    // Constrói centavos e separadores
+    let intPart = clean.slice(0, -2);
+    let cents = clean.slice(-2);
+
+    // Se tiver só um dígito, considera como "0X"
+    if (clean.length === 1) {
+      intPart = "0";
+      cents = "0" + clean;
+    }
+
+    // Se tiver dois dígitos, é "XX" => 0,XX
+    if (clean.length === 2) {
+      intPart = "0";
+      cents = clean;
+    }
+
+    // Formata milhares manualmente (sem regex)
+    let intFormatted = "";
+    let counter = 0;
+
+    for (let i = intPart.length - 1; i >= 0; i--) {
+      intFormatted = intPart[i] + intFormatted;
+      counter++;
+      if (counter === 3 && i > 0) {
+        intFormatted = "." + intFormatted;
+        counter = 0;
+      }
+    }
+
+    const masked = "R$ " + intFormatted + "," + cents;
+
     tools.functions.setVar({
       args: "",
       pass: {
-        keyPath: ["sc.a3.categoryMessage"],
-        value: ["O campo não pode estar vazio."]
-      }
+        keyPath: ["sc.a5a.iptsChanges.total"],
+        value: [String(masked)],
+      },
     });
-  } else {
-    // Limpar mensagem caso seja válido
-    tools.functions.setVar({
-      args: "",
-      pass: {
-        keyPath: ["sc.a3.categoryMessage"],
-        value: [""]
-      }
-    });
+  } catch (e) {
+    console.error("Erro na máscara BRL:", e);
+    return txt;
   }
-
-  console.log("Entrada digitada:", newValue);
-}
-],
+}],
 
           args,
         }}/>, (...args:any) => <Elements.Text pass={{
