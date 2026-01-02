@@ -44344,67 +44344,19 @@ alignItems: 'center',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
-() => {
-  // Lista de variáveis a verificar
-  const requiredFields = [
-    "sc.a3.iptsChanges.label",
-    "sc.a3.iptsChanges.price",
-    "sc.a3.iptsChanges.categories",
-    "sc.a3.iptsChanges.slug",
-    "sc.a3.iptsChanges.sku",
-    "sc.a3.iptsChanges.description",
-    "sc.a3.iptsChanges.stock",
-    "sc.a3.iptsChanges.availableQuantity"
-  ];
-
-  // Função auxiliar para pegar valor 
-  const getVal = (path) => tools.getCtData(path);
-
-  // Verificar se todas têm valor
-  const allFilled = requiredFields.every(path => {
-    const value = getVal(path);
-    return value !== undefined && value !== null && value !== "";
-  });
-
-  // Salvar resultado em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.allFieldsFilled"],
-      value: [allFilled]
-    }
-  });
-
-  console.log("Campos preenchidos?", allFilled);
-}
-, 
-async (...args) =>
- functions.firebase.uploadFileTool({ args, pass:{
- arrFiles: [`sc.a3.localFile`],
- arrFuncs: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.image`],
-          value: [`$arg_callback`]
-        }})],
- }}), 
 async (...args) =>
         functions.firebase.setDocTool({ args, pass:{
-  arrRefStrings: [`productsEcommerce`],
-            arrPathData: [`sc.a3.iptsChanges`],
+  arrRefStrings: [`ordersEcommerce`],
+            arrPathData: [`sc.a5a.iptsChanges`],
             arrFuncs: [async (...args) =>
         functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges`],
+          keyPath: [`sc.a5a.iptsChanges`],
           value: [``]
         }})],
-        }}), 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.previewUrl`],
-          value: [``]
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("b2mobileProducts");
+          return tools.goTo("b5mobileOrders");
         }
         ]
  , trigger: 'on press'
@@ -44422,7 +44374,7 @@ fontSize: 12,
           ],
 
           children: [
-            `Save Product`
+            `Save Order`
           ],
 
           args,
