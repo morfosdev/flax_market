@@ -46050,70 +46050,79 @@ alignItems: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
+ arrFunctions: [async () => {
   // Lista de variáveis a verificar
   const requiredFields = [
-    "sc.a3.iptsChanges.label",
-    "sc.a3.iptsChanges.price",
-    "sc.a3.iptsChanges.categories",
-    "sc.a3.iptsChanges.slug",
-    "sc.a3.iptsChanges.sku",
-    "sc.a3.iptsChanges.description",
-    "sc.a3.iptsChanges.stock",
-    "sc.a3.iptsChanges.availableQuantity"
+    "sc.a5b.editData.order.order",
+    "sc.a5b.editData.order.date",
+    "sc.a5b.editData.order.total",
+    "sc.a5b.editData.order.status",
   ];
 
-  // Função auxiliar para pegar valor 
   const getVal = (path) => tools.getCtData(path);
 
-  // Verificar se todas têm valor
-  const allFilled = requiredFields.every(path => {
+  const allFilled = requiredFields.every((path) => {
     const value = getVal(path);
     return value !== undefined && value !== null && value !== "";
   });
 
-  // Salvar resultado em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a3.allFieldsFilled"],
-      value: [allFilled]
-    }
-  });
+  // ⛔ SE FALTAR ALGUM CAMPO, PARA O FLUXO AQUI
+  if (!allFilled) {
+    console.log("❌ Existem campos obrigatórios vazios.");
+    return;
+  }
 
-  console.log("Campos preenchidos?", allFilled);
-}
-, 
-async (...args) =>
- functions.firebase.uploadFileTool({ args, pass:{
- arrFiles: [`sc.a3.localFile`],
- arrFuncs: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges.image`],
-          value: [`$arg_callback`]
-        }})],
- }}), 
-async (...args) =>
-        functions.firebase.setDocTool({ args, pass:{
-  arrRefStrings: [`productsEcommerce`],
-            arrPathData: [`sc.a3.iptsChanges`],
-            arrFuncs: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.iptsChanges`],
-          value: [``]
-        }})],
-        }}), 
+  console.log("✔ Todos os campos preenchidos! Atualizando produto...");
 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
-        }
-        , async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a3.previewUrl`],
-          value: [``]
-        }})]
+  // 🔥 INICIALIZAÇÃO FIREBASE (necessária!)
+  let fbInit = tools.getCtData("all.temp.fireInit");
+
+  if (!fbInit) {
+    const { initializeApp, getApps } = await import("firebase/app");
+    const cfg = tools.getCtData("all.temp.fireConfig");
+
+    fbInit = getApps().length ? getApps()[0] : initializeApp(cfg);
+
+    tools.setData({
+      path: "all.temp.fireInit",
+      value: fbInit,
+    });
+  }
+
+  // Importa Firestore
+  const { getFirestore, doc, updateDoc } = await import("firebase/firestore");
+  const db = getFirestore(fbInit);
+
+  // ID do documento
+  const docId = getVal("sc.a5b.editData.order.docId");
+  if (!docId) {
+    console.log("❌ Nenhum docId encontrado.");
+    return;
+  }
+
+  // Dados completos do produto
+  const orderData = getVal("sc.a5b.editData.order");
+
+  try {
+    // 🔄 Update no documento
+    await updateDoc(doc(db, "ordersEcommerce", docId), orderData);
+
+    console.log("✔ Order atualizado com sucesso!");
+
+    // 🧹 Limpar dados depois do update
+    tools.setData({
+      path: "sc.a5b.editData.order",
+      value: {},
+    });
+
+    console.log("🧹 Variáveis limpas após o update.");
+
+    // ✅ Redirecionar para a tela a5AdmOrders
+    tools.goTo("b5mobileOrders");
+  } catch (err) {
+    console.log("🔥 Erro ao atualizar:", err);
+  }
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -46129,7 +46138,7 @@ fontSize: 12,
           ],
 
           children: [
-            `Save Product`
+            `Save Order`
           ],
 
           args,
