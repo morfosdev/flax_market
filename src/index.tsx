@@ -43691,7 +43691,7 @@ fontSize: 12,
           ],
 
           children: [
-            `Price`
+            `Date`
           ],
 
           args,
@@ -43711,9 +43711,14 @@ paddingHorizontal: 8,
 fontSize: 12,
 }`],
 
-          path: [`sc.a3.iptsChanges.price`],
+          path: [`sc.a5a.iptsChanges.date`],
 
-          funcsArray: [(txt) => {
+          funcsArray: [
+        async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a5a.iptsChanges.date`],
+          value: [`$arg_callback`]
+        }}), (txt) => {
   try {
     if (typeof txt !== "string") txt = String(txt ?? "");
 
@@ -43721,53 +43726,33 @@ fontSize: 12,
     let clean = "";
     for (let i = 0; i < txt.length; i++) {
       const ch = txt[i];
-      if (ch >= "0" && ch <= "9") clean += ch;
-    }
-
-    // Remove zeros à esquerda (mas deixa pelo menos um)
-    clean = clean.replace(/^0+/, "");
-    if (clean.length === 0) clean = "0";
-
-    // Constrói centavos e separadores
-    let intPart = clean.slice(0, -2);
-    let cents = clean.slice(-2);
-
-    // Se tiver só um dígito, considera como "0X"
-    if (clean.length === 1) {
-      intPart = "0";
-      cents = "0" + clean;
-    }
-
-    // Se tiver dois dígitos, é "XX" => 0,XX
-    if (clean.length === 2) {
-      intPart = "0";
-      cents = clean;
-    }
-
-    // Formata milhares manualmente (sem regex)
-    let intFormatted = "";
-    let counter = 0;
-
-    for (let i = intPart.length - 1; i >= 0; i--) {
-      intFormatted = intPart[i] + intFormatted;
-      counter++;
-      if (counter === 3 && i > 0) {
-        intFormatted = "." + intFormatted;
-        counter = 0;
+      if (ch >= "0" && ch <= "9") {
+        clean += ch;
       }
     }
 
-    const masked = "R$ " + intFormatted + "," + cents;
+    // Limita a 8 dígitos (ddmmyyyy)
+    if (clean.length > 8) clean = clean.slice(0, 8);
+
+    console.log({ clean });
+
+    // Monta máscara dd/mm/aaaa
+    let masked = "";
+    if (clean.length > 0) masked = clean.slice(0, 2);         // dd
+    if (clean.length >= 3) masked += "/" + clean.slice(2, 4); // dd/mm
+    if (clean.length >= 5) masked += "/" + clean.slice(4, 8); // dd/mm/aaaa
+
+    console.log({ masked });
 
     tools.functions.setVar({
       args: "",
       pass: {
-        keyPath: ["sc.a3.iptsChanges.price"],
+        keyPath: ["sc.a5a.iptsChanges.date"],
         value: [String(masked)],
       },
     });
   } catch (e) {
-    console.error("Erro na máscara BRL:", e);
+    console.error("Erro na máscara de data:", e);
     return txt;
   }
 }],
