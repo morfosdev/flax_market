@@ -45993,43 +45993,9 @@ height: '10px',
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
-        functions.firebase.getDocsTool({ args, pass:{
-   arrRefStrings: [`productsEcommerce`],
-            arrFuncs: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a2.list`],
-          value: [`$arg_callback`]
-        }})],
-        }}), 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a2.originalList`],
-          value: [`sc.a2.list`]
-        }}), () => {
-  const list = tools.getCtData("sc.a2.originalList") || [];
-  const sortField = tools.getCtData("sc.a2.sortField");
-  const ascending = tools.getCtData("sc.a2.sortAsc");
-
-  if (!sortField) return;
-
-  const sortedList = [...list].sort((a, b) => {
-    const aValue = a[sortField];
-    const bValue = b[sortField];
-
-    if (aValue < bValue) return ascending ? -1 : 1;
-    if (aValue > bValue) return ascending ? 1 : -1;
-    return 0;
-  });
-
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a2.list"],
-      value: [sortedList]
-    }
-  });
+ arrFunctions: [() => {
+  const order = tools.getCtData("sc.a5b.editData.order");
+  console.log("Order data:", order);
 }]
  , trigger: 'on init'
 }})],
