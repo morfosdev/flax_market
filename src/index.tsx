@@ -41837,12 +41837,12 @@ width: 8,
 (...args) =>
         functions.firebase.deleteDocTool({ args, pass:{
    arrRefStrings: [
-        `productsEcommerce`, `$arg_docId`],
+        `ordersEcommerce`, `$arg_docId`],
    arrFuncs: [() => {}],
         }}), 
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("a2AdmProducts");
+          return tools.goTo("b5mobileOrders");
         }
         ]
  , trigger: 'on press'
