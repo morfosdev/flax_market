@@ -45679,36 +45679,71 @@ fontSize: 14,
           ],
 
           children: [
-            `Price`
+            `Date`
           ],
 
           args,
 
         }}/>, 
-        (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+        
 
-          stylesArray: [`{
-width: '100%',
-height: 30,
-borderRadius: 6,
-borderWidth: 1,
-borderColor: '#E6E7E8',
-paddingVertical: 4,
-paddingHorizontal: 8,
-fontSize: 12,
-}`],
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
 
-          path: [`sc.a4.editData.product.price`],
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
 
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a4.editData.product.price`],
-          value: [`$arg_callback`]
-        }})],
+            functions:[()=>{}],            childrenItems:[
 
-          args,
-        }}/>, (...args:any) => <Elements.Text pass={{
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => {
+  const storedDate = tools.getCtData("sc.a5b.editData.order.date");
+
+  // Força extrair sempre uma string
+  let dateValue = "";
+  if (Array.isArray(storedDate)) {
+    dateValue = storedDate[0] || "";
+  } else if (typeof storedDate === "string") {
+    dateValue = storedDate;
+  }
+
+	return (
+<div className="relative w-fit">
+    <input
+      type="date"
+      //value={dateValue}
+      onChange={(e) => {
+        const selectedDate = e.target.value;
+
+        tools.functions.setVar({
+          args: "",
+          pass: {
+            keyPath: ["sc.a5b.editData.order.date"],
+            value: [selectedDate]
+          }
+        });
+
+        console.log("📅 Data escolhida:", selectedDate);
+	}}
+	className="px-4 py-2 rounded-2xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-gray-700 appearance-none bg-white"
+/>
+	<span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
+</span>
+</div>
+  );
+}] 
+}}/>
+],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
