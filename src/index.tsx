@@ -30855,11 +30855,16 @@ width: '155px',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
+
         (...args) => {
           // ---------- get Function from A_Project Scope
           return tools.goTo("b6mobileCustomers");
         }
-        ]
+        , async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.sideLeft`],
+          value: [false]
+        }})]
  , trigger: 'on press'
 }})],            childrenItems:[
         (...args:any) => <Elements.SvgView1 pass={{
