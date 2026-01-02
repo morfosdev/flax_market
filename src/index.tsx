@@ -47122,7 +47122,7 @@ async (...args) =>
         , 
         (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
- placeholder: 'Search orders',
+ placeholder: 'Search customers',
 }`],
 
           stylesArray: [`{
@@ -47349,7 +47349,7 @@ alignItems: 'center',
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("b5amobileAddOrder");
+          return tools.goTo("home");
         }
         ]
  , trigger: 'on press'
@@ -47367,7 +47367,7 @@ fontSize: 12,
           ],
 
           children: [
-            `Add order`
+            `Add customers`
           ],
 
           args,
