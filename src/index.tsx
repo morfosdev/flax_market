@@ -48858,7 +48858,7 @@ return (
           ],
 
       styles:[`{
-backgroundColor: 'black',
+backgroundColor: 'navyBlue',
 width: "100%",
 flexDirection: 'row',
 }`],    args,
