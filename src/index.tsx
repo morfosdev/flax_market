@@ -48744,7 +48744,7 @@ width: '100%',
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
             `{
-numColumns:2,
+numColumns:3,
 }`
           ],
 
