@@ -48529,7 +48529,7 @@ justifyContent: 'center',
 
             styles:[`{
 width: '100%',
-height: '100%',
+//height: '100%',
 //flexDirection: 'row',
 backgroundColor: '000',
 }`],
