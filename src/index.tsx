@@ -13965,12 +13965,11 @@ flexDirection: 'row',
   }
   
   const inputStyle = {
-    paddingLeft: "16px",
-    paddingRight: "16px",
+    paddingHorizontal: '15px',
     paddingTop: "8px",
     paddingBottom: "8px",
-    borderRadius: "12px",
-    border: "1px solid #d1d5db", // gray-300
+    borderRadius: "6px",
+    border: "1px solid #E6E7E8", // gray-300
     boxShadow: "0 1px 2px rgba(0,0,0,0.05)",
     transition: "all 0.2s",
     color: "#374151", // gray-700
