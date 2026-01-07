@@ -13965,9 +13965,9 @@ flexDirection: 'row',
   }
   
   const inputStyle = {
-    paddingVertical: 16,
-		paddingHorizontal: 16,
-    borderRadius: 6,
+    paddingVertical: '16px',
+		paddingHorizontal: '16px',
+    borderRadius: '6px',
     border: "1px solid #E6E7E8", // gray-300
     boxShadow: "0 1px 2px rgba(0,0,0,0.05)",
     transition: "all 0.2s",
