@@ -48859,6 +48859,8 @@ return (
 
       styles:[`{
 backgroundColor: 'black',
+width: "100%",
+flexDirection: 'row',
 }`],    args,
         }}/>],
 
