@@ -139,7 +139,7 @@
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("c1Shop");
+          return tools.goTo("c2SearchShop");
         }
         ]
  , trigger: 'on press'
@@ -48284,7 +48284,7 @@ justifyContent: 'center',
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"c1Shop",
+          pathScreen:"c2SearchShop",
 
           styles:[`{ 
 width: '100%',
