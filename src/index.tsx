@@ -13965,7 +13965,7 @@ flexDirection: 'row',
   }
   
   const inputStyle = {
-    addingVertical: 10,
+    paddingVertical: 10,
 		paddingHorizontal: 15,
     borderRadius: 6,
     border: "1px solid #E6E7E8", // gray-300
