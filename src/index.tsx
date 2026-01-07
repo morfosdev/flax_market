@@ -48749,7 +48749,7 @@ width: '100%',
     "justifyContent": "space-between"
   },
   "contentContainerStyle": {
-    "padding": 10
+    "padding": 2
   }
 }`
           ],
