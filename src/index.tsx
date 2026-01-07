@@ -13965,13 +13965,15 @@ flexDirection: 'row',
   }
   
   const inputStyle = {
-    paddingVertical: '16px',
-		paddingHorizontal: '16px',
+    paddingTop: "10px",
+    paddingBottom: "10px",
+    paddingLeft: "14px",
+    paddingRight: "36px",  // espaço extra para o ícone
     borderRadius: '6px',
-    border: "1px solid #E6E7E8", // gray-300
+    border: "1px solid #E6E7E8",
     boxShadow: "0 1px 2px rgba(0,0,0,0.05)",
     transition: "all 0.2s",
-    color: "#374151", // gray-700
+    color: "#374151",
     backgroundColor: "#fff",
     outline: "none",
     width: "200px",
