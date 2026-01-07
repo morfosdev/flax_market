@@ -48773,6 +48773,83 @@ height: '48px',
 
       args,
     }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
+          ],
+
+          children: [
+            `$arg_label`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
+          ],
+
+          children: [
+            `$arg_price`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => {
+const item = tools.findFlatItem(args);
+const isAvailable =  item.stock;
+return (
+  <span style={{ color: isAvailable === "In Stock" ? "green" : "red" }}>
+    {isAvailable}
+  </span>
+)
+}] 
+}}/>
+, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
+          ],
+
+          children: [
+            `$arg_categories`
+          ],
+
+          args,
+
+        }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
