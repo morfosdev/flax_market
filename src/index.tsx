@@ -13976,8 +13976,8 @@ flexDirection: 'row',
     color: "#374151",
     backgroundColor: "#fff",
     outline: "none",
-    width: "200px",
-		height: "40px",
+    width: "180px",
+		height: "30px",
   };
   
   const wrapperStyle = {
