@@ -48744,9 +48744,13 @@ width: '100%',
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
             `{
-numColumns:3,
-columnWrapperStyle={{ justifyContent: 'space-between' }} // opcional
-  contentContainerStyle={{ padding: 10 }}
+  "numColumns": 3,
+  "columnWrapperStyle": {
+    "justifyContent": "space-between"
+  },
+  "contentContainerStyle": {
+    "padding": 10
+  }
 }`
           ],
 
