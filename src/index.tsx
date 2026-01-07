@@ -48763,7 +48763,8 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '150px',
+width: '30%',
+//width: '150px',
 //justifyContent: 'center',
 alignItems: 'center',
 }`],
