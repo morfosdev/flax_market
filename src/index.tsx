@@ -48739,7 +48739,6 @@ height: '100%',
             styles:[`{
 width: '100%',
 //alignItems: 'center',
-flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
@@ -48858,9 +48857,14 @@ return (
         
           ],
 
-      styles:[`{
-flexDirection: 'row',
-}`],    args,
+      styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],    args,
         }}/>],
 
             args,
