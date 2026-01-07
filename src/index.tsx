@@ -48767,8 +48767,8 @@ alignItems: 'center',
       elementsProperties:[{}],
 
       styles:[{
-width: '48px',
-height: '48px',
+width: '150px',
+height: '150px',
 }],
 
       URIvariablePath:[`$arg_image`],
