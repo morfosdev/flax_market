@@ -13965,13 +13965,16 @@ flexDirection: 'row',
   }
   
   const inputStyle = {
-width: '80%',
-height: '45px',
-borderRadius: 6,
-borderWidth: 1,
-borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
+    addingVertical: 10,
+		paddingHorizontal: 15,
+    borderRadius: 6,
+    border: "1px solid #E6E7E8", // gray-300
+    boxShadow: "0 1px 2px rgba(0,0,0,0.05)",
+    transition: "all 0.2s",
+    color: "#374151", // gray-700
+    backgroundColor: "#fff",
+    outline: "none",
+    width: "180px"
   };
   
   const wrapperStyle = {
