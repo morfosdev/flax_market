@@ -48764,8 +48764,6 @@ width: '100%',
 
             styles:[`{
 width: '30%',
-//width: '150px',
-//justifyContent: 'center',
 alignItems: 'center',
 }`],
 
