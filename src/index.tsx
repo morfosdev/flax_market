@@ -13963,9 +13963,38 @@ flexDirection: 'row',
   } else if (typeof storedDate === "string") {
     dateValue = storedDate;
   }
+  
+  const inputStyle = {
+    paddingLeft: "16px",
+    paddingRight: "16px",
+    paddingTop: "8px",
+    paddingBottom: "8px",
+    borderRadius: "12px",
+    border: "1px solid #d1d5db", // gray-300
+    boxShadow: "0 1px 2px rgba(0,0,0,0.05)",
+    transition: "all 0.2s",
+    color: "#374151", // gray-700
+    backgroundColor: "#fff",
+    outline: "none",
+    width: "180px"
+  };
+  
+  const wrapperStyle = {
+    position: "relative",
+    width: "fit-content"
+  };
+
+  const iconStyle = {
+    position: "absolute",
+    right: "12px",
+    top: "50%",
+    transform: "translateY(-50%)",
+    color: "#9ca3af", // gray-400
+    pointerEvents: "none"
+  };
 
   return (
-    <div className="relative w-fit">
+    <div style={wrapperStyle}>
       <input
         type="date"
         //value={dateValue}
@@ -13982,9 +14011,9 @@ flexDirection: 'row',
 
           console.log("📅 Data escolhida:", selectedDate);
         }}
-        className="px-4 py-2 rounded-2xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-gray-700 appearance-none bg-white"
+        style={inputStyle}
       />
-      <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"></span>
+      <span style={iconStyle}></span>
     </div>
   );
 }] 
