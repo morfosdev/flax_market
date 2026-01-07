@@ -48729,6 +48729,7 @@ width: '10%',
         , (...args:any) => <Elements.ScrollBar pass={{
             styles: [`{
 width: '90%',
+alignItens: 'center',
 }`],
             arrProps: [],
             arrItems: [
