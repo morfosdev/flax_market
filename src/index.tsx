@@ -13965,8 +13965,8 @@ flexDirection: 'row',
   }
   
   const inputStyle = {
-    paddingTop: "10px",
-    paddingBottom: "10px",
+    paddingTop: "4px",
+    paddingBottom: "4px",
     paddingLeft: "14px",
     paddingRight: "36px",  // espaço extra para o ícone
     borderRadius: '6px',
