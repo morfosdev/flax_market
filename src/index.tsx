@@ -48745,6 +48745,7 @@ width: '100%',
           elementProperties: [
             `{
 numColumns:3,
+contentContainerStyle={{ padding: 10 }}
 }`
           ],
 
