@@ -48704,7 +48704,7 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: '10%',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
