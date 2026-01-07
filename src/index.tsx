@@ -48758,6 +48758,7 @@ width: '100%',
 width: '150px',
 //justifyContent: 'center',
 //alignItems: 'center',
+flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
