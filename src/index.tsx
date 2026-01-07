@@ -48727,7 +48727,9 @@ width: '200px',
             args,
           }}/>
         , (...args:any) => <Elements.ScrollBar pass={{
-            styles: [],
+            styles: [`{
+flex: 1,
+}`],
             arrProps: [],
             arrItems: [
 
