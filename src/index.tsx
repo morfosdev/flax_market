@@ -13965,7 +13965,7 @@ flexDirection: 'row',
   }
   
   const inputStyle = {
-    paddingHorizontal: '15px',
+    paddingHorizontal: '16px',
     paddingTop: "8px",
     paddingBottom: "8px",
     borderRadius: "6px",
