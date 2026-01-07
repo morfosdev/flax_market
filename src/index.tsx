@@ -48743,7 +48743,9 @@ width: '100%',
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
-            {}
+            `{
+numColumns:{2},
+}`
           ],
 
           pData: `sc.c1.list`,
@@ -48857,11 +48859,14 @@ return (
         
           ],
 
-      styles:[`{
-width: '100%',
-height: '100%',
-flexDirection: 'row',
-}`],    args,
+      styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],    args,
         }}/>],
 
             args,
