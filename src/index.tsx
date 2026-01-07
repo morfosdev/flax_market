@@ -48858,7 +48858,6 @@ return (
           ],
 
       styles:[`{
-backgroundColor: 'blue',
 width: '100%',
 height: '100%',
 flexDirection: 'row',
