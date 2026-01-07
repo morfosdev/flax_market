@@ -48745,7 +48745,8 @@ width: '100%',
           elementProperties: [
             `{
 numColumns:3,
-contentContainerStyle={{ padding: 10 }}
+columnWrapperStyle={{ justifyContent: 'space-between' }} // opcional
+  contentContainerStyle={{ padding: 10 }}
 }`
           ],
 
