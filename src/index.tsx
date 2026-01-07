@@ -13974,7 +13974,7 @@ flexDirection: 'row',
     color: "#374151", // gray-700
     backgroundColor: "#fff",
     outline: "none",
-    width: "180px"
+    width: "200px"
   };
   
   const wrapperStyle = {
