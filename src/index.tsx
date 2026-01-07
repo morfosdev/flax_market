@@ -48757,8 +48757,7 @@ width: '100%',
             styles:[`{
 width: '150px',
 //justifyContent: 'center',
-//alignItems: 'center',
-flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
