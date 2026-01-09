@@ -49381,8 +49381,9 @@ height: 20,
   arrItems: [() => { 
 const item = tools.findFlatItem(args); 
 const isAvailable = item.stock; return ( 
-	<span style={{ color: isAvailable === "In Stock" ? "green" : "red",
-        border: inStock ? "1px solid green" : "1px solid red" }}>
+	<span style={{ 
+		color: isAvailable === "In Stock" ? "green" : "red",
+    border: isAvailable === "In Stock" ? "1px solid green" : "1px solid red" }}>
 	{isAvailable} 
 	</span> 
 ) 
