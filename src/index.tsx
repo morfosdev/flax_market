@@ -49336,7 +49336,7 @@ height: 20,
   fontSize: 14, 
   fontWeight: "500", 
   fontFamily: "Inter", 
-  color: "#5C5F6A",
+  color: "#0E1422",
 }`
           ],
 
@@ -49357,7 +49357,7 @@ height: 20,
   fontSize: 14, 
   fontWeight: "500", 
   fontFamily: "Inter", 
-  color: "#5C5F6A",
+  color: "#474B57",
 }`
           ],
 
@@ -49370,6 +49370,20 @@ height: 20,
         }}/>, 
         
 
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
 const item = tools.findFlatItem(args);
@@ -49381,7 +49395,11 @@ return (
 )
 }] 
 }}/>
-, 
+],
+
+            args,
+          }}/>
+        , 
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
