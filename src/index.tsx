@@ -49378,7 +49378,15 @@ height: 20,
             functions:[()=>{}],            childrenItems:[
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => { const item = tools.findFlatItem(args); const isAvailable = item.stock; return ( <span style={{ color: isAvailable === "In Stock" ? "green" : "red" }}> {isAvailable} </span> ) }] 
+  arrItems: [() => { 
+const item = tools.findFlatItem(args); 
+const isAvailable = item.stock; return ( 
+	<span style={{ color: isAvailable === "In Stock" ? "green" : "red",
+        border: inStock ? "1px solid green" : "1px solid red" }}>
+	{isAvailable} 
+	</span> 
+) 
+}] 
 }}/>
 ],
 
