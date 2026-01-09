@@ -49387,6 +49387,7 @@ const isAvailable = item.stock; return (
 		display: isAvailable === "In Stock" ? "inline-flex" : "inline-flex",
 		fontFamily: isAvailable === "In Stock" ? "Inter" : "Inter",
 		fontSize: isAvailable === "In Stock" ? "14px" : "14px",
+		backgroundColor: isAvailable === "In Stock" ? "#edffed" : "#fff2f2",
  }}>
 	{isAvailable} 
 	</span> 
