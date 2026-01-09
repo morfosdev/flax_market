@@ -49353,6 +49353,20 @@ height: 20,
             elementsProperties:['{}'],
 
             styles:[`{
+	heigth: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 	flexDirection: 'row',
 }`],
 
@@ -49413,6 +49427,20 @@ const isAvailable = item.stock; return (
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+	heigth: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
