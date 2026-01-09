@@ -48429,7 +48429,7 @@ height: 40,
             elementsProperties:['{}'],
 
             styles:[`{
-width: 10,
+width: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -48567,7 +48567,7 @@ paddingHorizontal: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-width: 10,
+width: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -48795,7 +48795,7 @@ async (...args) =>
             elementsProperties:['{}'],
 
             styles:[`{
-width: 10,
+width: 12,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
