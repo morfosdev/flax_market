@@ -49306,14 +49306,11 @@ width: '100%',
 width: '150px',
 height: '150px',
 borderRadius: 6,
-shadowColor: '#000',
-  overflow: "hidden",
-  shadowOffset: { 
-     width: 0,
-     height: 2
-  },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84
+shadowColor: "#000",
+shadowOffset: { width: 0, height: 2 },
+shadowOpacity: 0.25,
+shadowRadius: 3.84,
+elevation: 4,
 }],
 
       URIvariablePath:[`$arg_image`],
