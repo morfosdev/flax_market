@@ -49373,14 +49373,7 @@ height: 20,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[``],
 
             functions:[()=>{}],            childrenItems:[
 
@@ -49389,7 +49382,13 @@ height: 20,
 const item = tools.findFlatItem(args);
 const isAvailable =  item.stock;
 return (
-  <span style={{ color: isAvailable === "In Stock" ? "green" : "red" }}>
+  <span style=
+	{{ 
+	color: isAvailable === "In Stock" ? "green" : "red",
+	border: inStock ? "1px solid green" : "1px solid red",
+	borderRadius: "30px",
+  padding: "2px 8px", 
+	}}>
     {isAvailable}
   </span>
 )
