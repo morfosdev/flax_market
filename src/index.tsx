@@ -49373,7 +49373,7 @@ height: 20,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[``],
+            styles:[`{}`],
 
             functions:[()=>{}],            childrenItems:[
 
