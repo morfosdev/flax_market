@@ -49027,7 +49027,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
           ],
 
           children: [
@@ -49043,7 +49048,7 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-width: 20,
+width: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -49051,29 +49056,48 @@ width: 20,
             args,
           }}/>
         , 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+        (...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={6}
+    height={12}
+    fill="red"
+    viewBox="0 0 6 12"
+    {...props}
+  >
+    <Path
+      fill="#71747E"
+      fillRule="evenodd"
+      d="M5.812 5.467c.249.277.251.729.004 1.009L.95 12l-.903-1.003 4.421-5.018L0 1.014.893 0l4.919 5.467Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
+      },
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+      svgOriginal: `
+        <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.81168 5.46731C6.06095 5.74435 6.06303 6.19578 5.81633 6.47571L0.948585 12L0.0460425 10.9967L4.46723 5.97935L0 1.01366L0.89321 0L5.81168 5.46731Z" fill="#71747E"/>
+</svg>
 
-          children: [
-            `>`
-          ],
+      `,
 
-          args,
+      altura: "30px",
 
-        }}/>, 
+      largura: "30px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
             styles:[`{
-width: 20,
+width: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
