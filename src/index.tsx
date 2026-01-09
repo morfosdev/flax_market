@@ -48401,7 +48401,6 @@ justifyContent: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
 }`],
@@ -48412,8 +48411,8 @@ justifyContent: 'center',
       elementsProperties:[{}],
 
       styles:[{
-width: '116px',
-height: '40px',
+width: 104,
+height: 40,
 }],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FAdmin.png?alt=media&token=94ebd672-5bdd-4e25-81b7-a1b36e29e6e0`],
@@ -48430,9 +48429,23 @@ height: '40px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
+width: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 alignItems: 'center',
 justifyContent: 'center',
+paddingHorizontal: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -48461,9 +48474,9 @@ justifyContent: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
+paddingHorizontal: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -48492,9 +48505,9 @@ justifyContent: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
+paddingHorizontal: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -48523,9 +48536,9 @@ justifyContent: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100px',
 alignItems: 'center',
 justifyContent: 'center',
+paddingHorizontal: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -48544,6 +48557,20 @@ justifyContent: 'center',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
@@ -48758,6 +48785,20 @@ async (...args) =>
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
