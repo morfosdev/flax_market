@@ -49383,7 +49383,8 @@ const item = tools.findFlatItem(args);
 const isAvailable = item.stock; return ( 
 	<span style={{ 
 		color: isAvailable === "In Stock" ? "green" : "red",
-    border: isAvailable === "In Stock" ? "1px solid green" : "1px solid red" }}>
+    border: isAvailable === "In Stock" ? "1px solid green" : "1px solid red",
+		borderRadius: isAvailable === "In Stock" ? "green" : "red", }}>
 	{isAvailable} 
 	</span> 
 ) 
