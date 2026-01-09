@@ -49347,35 +49347,17 @@ height: 20,
           args,
 
         }}/>, 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#474B57",
-}`
-          ],
-
-          children: [
-            `$arg_price`
-          ],
-
-          args,
-
-        }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{}`],
+            styles:[`{
+	flexDirection: 'row',
+}`],
 
             functions:[()=>{}],            childrenItems:[
+        
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => { 
@@ -49396,7 +49378,27 @@ const isAvailable = item.stock; return (
 ) 
 }] 
 }}/>
-],
+, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#474B57",
+}`
+          ],
+
+          children: [
+            `$arg_price`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
