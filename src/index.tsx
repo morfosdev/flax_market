@@ -49018,6 +49018,7 @@ paddingVertical: '20px',
 
             styles:[`{
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -49083,9 +49084,9 @@ width: 10,
 
       `,
 
-      altura: "30px",
+      altura: "12px",
 
-      largura: "30px",
+      largura: "6px",
 
       preenchimento: ['black'],
 
@@ -49110,7 +49111,12 @@ width: 10,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 14,
+color: '#0E1422',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
           ],
 
           children: [
