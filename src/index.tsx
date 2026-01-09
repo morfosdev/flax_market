@@ -49294,8 +49294,6 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '30%',
-alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
