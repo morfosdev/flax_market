@@ -49301,6 +49301,20 @@ alignItems: 'center',
             functions:[()=>{}],            childrenItems:[
         
 
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
 
@@ -49312,7 +49326,11 @@ height: '150px',
       URIvariablePath:[`$arg_image`],
 
       args,
-    }}/>, 
+    }}/>],
+
+            args,
+          }}/>
+        , 
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
