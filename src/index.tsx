@@ -49384,7 +49384,9 @@ const isAvailable = item.stock; return (
 	<span style={{ 
 		color: isAvailable === "In Stock" ? "green" : "red",
     border: isAvailable === "In Stock" ? "1px solid green" : "1px solid red",
-		borderRadius: isAvailable === "In Stock" ? "green" : "red", }}>
+		borderRadius: isAvailable === "In Stock" ? "30px" : "31px",
+		width: isAvailable === "In Stock" ? "80px" : "80px",
+ }}>
 	{isAvailable} 
 	</span> 
 ) 
