@@ -48395,20 +48395,6 @@ justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '100%',
-flexDirection: 'row',
-backgroundColor: '#FFF',
-paddingHorizontal: '10px',
-paddingVertical: 15,
-justifyContent: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -48443,7 +48429,7 @@ height: 40,
             elementsProperties:['{}'],
 
             styles:[`{
-width: 20,
+width: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -48601,7 +48587,7 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{
-width: 20,
+width: 80,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -48829,7 +48815,7 @@ async (...args) =>
             elementsProperties:['{}'],
 
             styles:[`{
-width: 12,
+width: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -48981,10 +48967,6 @@ flexDirection: 'row',
 
       args,
     }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
