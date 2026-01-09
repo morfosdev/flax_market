@@ -49353,7 +49353,7 @@ height: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-	height: 10,
+	height: 8,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -49368,6 +49368,7 @@ height: 20,
 
             styles:[`{
 	flexDirection: 'row',
+	alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -49437,7 +49438,7 @@ const isAvailable = item.stock; return (
             elementsProperties:['{}'],
 
             styles:[`{
-	height: 10,
+	height: 8,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
