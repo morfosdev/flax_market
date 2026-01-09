@@ -48395,6 +48395,20 @@ justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+flexDirection: 'row',
+backgroundColor: '#FFF',
+paddingHorizontal: '10px',
+paddingVertical: 15,
+justifyContent: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -48967,6 +48981,10 @@ flexDirection: 'row',
 
       args,
     }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
