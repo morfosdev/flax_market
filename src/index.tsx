@@ -48349,9 +48349,11 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
-backgroundColor: '#000066',
+backgroundColor: '#0E1422',
 width: '100%',
 alignItems: 'center',
+justifyContent: 'center',
+paddingVertical: 8,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -48385,10 +48387,10 @@ alignItems: 'center',
 
             styles:[`{
 width: '100%',
-height: '30px',
 flexDirection: 'row',
 backgroundColor: '#FFF',
 paddingHorizontal: '10px',
+paddingVertical: 15,
 justifyContent: 'center',
 }`],
 
@@ -48515,6 +48517,7 @@ justifyContent: 'center',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -48541,6 +48544,219 @@ justifyContent: 'center',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+justifyContent: 'initial',
+alignItems: 'center',
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+borderTopLeftRadius: 5,
+borderBottomLeftRadius: 5,
+padding: 11,
+alignItem: 'center',
+justifyContent: 'center',
+borderColor: '#eee',
+borderWidth: 1,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+ functions.firebase.where({ args, pass:{
+
+  arrRefStrings: [`productsEcommerce`],
+ arrWhere: [(...args) =>
+        functions.firebase.whereConds({ args, pass:{
+          arrStrings: [
+        `label`, 
+        `==`, `$var_sc.a2.selectedLabel`],
+        }})],
+ arrFuncs: [
+ async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.filteredList`],
+          value: [`$arg_callback`]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.A2.listBox`],
+          value: [false]
+        }})],
+ }})]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={15}
+    height={14}
+    fill="red"
+    viewBox="0 0 15 14"
+    {...props}
+  >
+    <Path
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m14.02 13.5-3.75-3.75m1.59-3.83a5.42 5.42 0 1 1-10.84 0 5.42 5.42 0 0 1 10.84 0Z"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.02 13.5L10.27 9.75M11.86 5.92C11.86 8.91338 9.43334 11.34 6.43996 11.34C3.44658 11.34 1.01996 8.91338 1.01996 5.92C1.01996 2.92662 3.44658 0.5 6.43996 0.5C9.43334 0.5 11.86 2.92662 11.86 5.92Z" stroke="#5C5F6A" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      `,
+
+      altura: "17px",
+
+      largura: "17px",
+
+      preenchimento: [`#fff`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+ placeholder: 'Search products',
+}`],
+
+          stylesArray: [`{
+borderTopWidth: 1,
+borderBottomWidth: 1,
+borderColor: '#eee',
+padding: 10,
+}`],
+
+          path: [`sc.a2.selectedLabel`],
+
+          funcsArray: [
+        async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.selectedLabel`],
+          value: [`$arg_callback`]
+        }}), (e) => {
+  if (e.key === "Enter") {
+    const label = tools.getCtData("sc.a2.selectedLabel");
+
+    tools.query.where(
+      "productsEcommerce",
+      "label",
+      "==",
+      label
+    ).then((result) => {
+
+      tools.setData({
+        path: "sc.a2.filteredList",
+        value: result
+      });
+
+      tools.setData({
+        path: "sc.A2.listBox",
+        value: false
+      });
+
+      console.log("🔎 Produto filtrado:", result);
+
+    }).catch((err) => {
+      console.log("❌ Erro ao filtrar:", err);
+    });
+  }
+}
+],
+
+          args,
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+borderTopRightRadius: 5,
+borderBottomRightRadius: 5,
+padding: 11,
+alignItem: 'center',
+justifyContent: 'center',
+borderColor: '#eee',
+borderWidth: 1,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.selectedLabel`],
+          value: [` `]
+        }}), 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.A2.listBox`],
+          value: [true]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.filteredList`],
+          value: [``]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <Path
+      fillRule="evenodd"
+      d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
+</svg>
+
+      `,
+
+      altura: "17px",
+
+      largura: "17px",
+
+      preenchimento: [`#ccc`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
