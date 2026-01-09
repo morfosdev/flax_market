@@ -49384,15 +49384,11 @@ const isAvailable =  item.stock;
 return (
   <span style=
 	{{ 
-	color: isAvailable === "In Stock" ? "green" : "red",
-	border: inStock ? "1px solid green" : "1px solid red",
-	borderRadius: "30px",
-  padding: "2px 8px", 
+	color: isAvailable === "In Stock" ? "green" : "red"
 	}}>
     {isAvailable}
   </span>
-)
-}] 
+)] 
 }}/>
 ],
 
