@@ -49002,11 +49002,9 @@ backgroundColor: '000',
 
             styles:[`{
 width: '100%',
-justifyContent: 'initial',
 alignItems: 'center',
-height: '100px',
 flexDirection: 'row',
-paddingHorizontal: '5px',
+paddingHorizontal: '40px',
 paddingVertical: '20px',
 }`],
 
@@ -49224,13 +49222,9 @@ async (...args) =>
             styles:[`{
 width: '100%',
 height: '100%',
-margin: 10,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 20,
-borderRadius: 10,
-borderWidth: 1,
-borderColor: "#E9E9EB",
 flexDirection: 'row',
 }`],
 
