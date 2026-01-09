@@ -48766,14 +48766,9 @@ async (...args) =>
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+flexDirection: 'row',
+}`],
 
             functions:[()=>{}],            childrenItems:[
         
@@ -48837,11 +48832,11 @@ async (...args) =>
 
       `,
 
-      altura: "30px",
+      altura: "20px",
 
-      largura: "30px",
+      largura: "20px",
 
-      preenchimento: ['black'],
+      preenchimento: [`transparent`],
 
       args,
     }}/>],
@@ -48903,9 +48898,9 @@ async (...args) =>
 
       `,
 
-      altura: "30px",
+      altura: "20px",
 
-      largura: "30px",
+      largura: "20px",
 
       preenchimento: ['black'],
 
