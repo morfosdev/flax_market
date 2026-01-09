@@ -48836,7 +48836,7 @@ flexDirection: 'row',
 
       largura: "20px",
 
-      preenchimento: [`transparent`],
+      preenchimento: [`white`],
 
       args,
     }}/>],
