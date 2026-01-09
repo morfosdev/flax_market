@@ -49382,10 +49382,7 @@ height: 20,
 const item = tools.findFlatItem(args);
 const isAvailable =  item.stock;
 return (
-  <span style=
-	{{ 
-	color: isAvailable === "In Stock" ? "green" : "red"
-	}}>
+  <span style={{ color: isAvailable === "In Stock" ? "green" : "red" }}>
     {isAvailable}
   </span>
 )] 
