@@ -49387,6 +49387,7 @@ const isAvailable = item.stock; return (
 		borderRadius: isAvailable === "In Stock" ? "30px" : "31px",
 		width: isAvailable === "In Stock" ? "80px" : "95px",
 		justifyContent: isAvailable === "In Stock" ? "center" : "center",
+		display: isAvailable === "In Stock" ? "inline-flex" : "inline-flex",
  }}>
 	{isAvailable} 
 	</span> 
