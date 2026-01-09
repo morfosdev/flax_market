@@ -49353,7 +49353,7 @@ height: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-	heigth: 10,
+	height: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -49437,7 +49437,7 @@ const isAvailable = item.stock; return (
             elementsProperties:['{}'],
 
             styles:[`{
-	heigth: 10,
+	height: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
