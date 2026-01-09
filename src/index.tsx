@@ -49388,6 +49388,8 @@ const isAvailable = item.stock; return (
 		width: isAvailable === "In Stock" ? "80px" : "95px",
 		justifyContent: isAvailable === "In Stock" ? "center" : "center",
 		display: isAvailable === "In Stock" ? "inline-flex" : "inline-flex",
+		fontFamily: isAvailable === "In Stock" ? "Inter" : "Inter",
+		fontSize: isAvailable === "In Stock" ? "14px" : "14px",
  }}>
 	{isAvailable} 
 	</span> 
