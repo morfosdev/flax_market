@@ -48997,15 +48997,6 @@ padding: 20,
       styles:[{
 width: '150px',
 height: '150px',
-borderRadius: 6,
-shadowColor: '#000',
-  overflow: "hidden",
-  shadowOffset: { 
-     width: 0,
-     height: 2
-  },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
 }],
 
       URIvariablePath:[`https://m.media-amazon.com/images/I/514n0rnHIgL._AC_SY300_SX300_QL70_ML2_.jpg`],
