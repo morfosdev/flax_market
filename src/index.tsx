@@ -48964,6 +48964,7 @@ padding: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -48974,6 +48975,116 @@ padding: 20,
   justifyContent: "space-between",
   width: "100%",
   flexDirection: 'row',
+}
+`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "30%",
+  backgroundColor: '#FFF',
+  padding: 20,
+  alignItems: 'center',
+  justifyContent: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '100px',
+height: '100px',
+}],
+
+      URIvariablePath:[`https://m.media-amazon.com/images/I/514n0rnHIgL._AC_SY300_SX300_QL70_ML2_.jpg`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "30%",
+  backgroundColor: '#FFF',
+  padding: 20,
+  alignItems: 'center',
+  justifyContent: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '100px',
+height: '100px',
+}],
+
+      URIvariablePath:[`https://images.tcdn.com.br/img/img_prod/311840/tenis_adidas_runfalcon_5_feminino_preto_e_branco_137089_1_1779264aa08965405d0909b6fb43ec8a.jpg`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "30%",
+  backgroundColor: '#FFF',
+  padding: 20,
+  alignItems: 'center',
+  justifyContent: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '150px',
+height: '150px',
+}],
+
+      URIvariablePath:[`https://cdn.awsli.com.br/954/954868/produto/68626025/5d150286dc.jpg`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "100%",
+  backgroundColor: '#FFF',
+  padding: 20,
+  alignItems: 'center',
+  justifyContent: 'center',
 }
 `],
 
