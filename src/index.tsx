@@ -48341,7 +48341,7 @@ height: '100%',
             styles:[`{
 width: '100%',
 flexDirection: 'row',
-backgroundColor: '#FFF',
+backgroundColor: '#000',
 paddingHorizontal: '10px',
 paddingVertical: 15,
 justifyContent: 'center',
@@ -48409,7 +48409,7 @@ paddingHorizontal: 10,
           arrStyles: [
             `{
 fontSize: 14,
-color: '#5C5F6A',
+color: '#FFF',
 fontFamily: 'Inter',
 fontWeight: '500',
 }`
@@ -48445,7 +48445,7 @@ paddingHorizontal: 10,
           arrStyles: [
             `{
 fontSize: 14,
-color: '#5C5F6A',
+color: '#FFF',
 fontFamily: 'Inter',
 fontWeight: '500',
 }`
@@ -48481,7 +48481,7 @@ paddingHorizontal: 10,
           arrStyles: [
             `{
 fontSize: 14,
-color: '#5C5F6A',
+color: '#FFF',
 fontFamily: 'Inter',
 fontWeight: '500',
 }`
@@ -48517,7 +48517,7 @@ paddingHorizontal: 10,
           arrStyles: [
             `{
 fontSize: 14,
-color: '#5C5F6A',
+color: '#FFF',
 fontFamily: 'Inter',
 fontWeight: '500',
 }`
@@ -49413,7 +49413,7 @@ paddingHorizontal: 10,
           arrStyles: [
             `{
 fontSize: 14,
-color: '#5C5F6A',
+color: '#FFF',
 fontFamily: 'Inter',
 fontWeight: '500',
 }`
@@ -49449,7 +49449,7 @@ paddingHorizontal: 10,
           arrStyles: [
             `{
 fontSize: 14,
-color: '#5C5F6A',
+color: '#FFF',
 fontFamily: 'Inter',
 fontWeight: '500',
 }`
@@ -49485,7 +49485,7 @@ paddingHorizontal: 10,
           arrStyles: [
             `{
 fontSize: 14,
-color: '#5C5F6A',
+color: '#FFF',
 fontFamily: 'Inter',
 fontWeight: '500',
 }`
@@ -49521,7 +49521,7 @@ paddingHorizontal: 10,
           arrStyles: [
             `{
 fontSize: 14,
-color: '#5C5F6A',
+color: '#FFF',
 fontFamily: 'Inter',
 fontWeight: '500',
 }`
@@ -49985,7 +49985,7 @@ alignItems: 'center',
           arrStyles: [
             `{
 fontSize: 14,
-color: '#5C5F6A',
+color: '#FFF',
 fontFamily: 'Inter',
 fontWeight: '500',
 }`
