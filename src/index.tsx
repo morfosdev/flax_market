@@ -48974,7 +48974,6 @@ padding: 20,
   justifyContent: "space-between",
   width: "100%",
   flexDirection: 'row',
-  backgroundColor: '#FFF',
 }
 `],
 
@@ -48986,6 +48985,8 @@ padding: 20,
 
             styles:[`{
   width: "30%",
+  backgroundColor: '#FFF',
+  padding: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -49015,6 +49016,8 @@ padding: 20,
 
             styles:[`{
   width: "30%",
+  backgroundColor: '#FFF',
+  padding: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -49043,6 +49046,8 @@ padding: 20,
 
             styles:[`{
   width: "30%",
+  backgroundColor: '#FFF',
+  padding: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
