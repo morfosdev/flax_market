@@ -49022,22 +49022,20 @@ height: '100px',
   justifyContent: 'center',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+            functions:[()=>{}],            childrenItems:[
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
 
-          children: [
-            `BBBBBB`
-          ],
+      styles:[{
+width: '100px',
+height: '100px',
+}],
 
-          args,
+      URIvariablePath:[`https://images.tcdn.com.br/img/img_prod/311840/tenis_adidas_runfalcon_5_feminino_preto_e_branco_137089_1_1779264aa08965405d0909b6fb43ec8a.jpg`],
 
-        }}/>],
+      args,
+    }}/>],
 
             args,
           }}/>
