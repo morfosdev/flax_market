@@ -48968,11 +48968,10 @@ padding: 20,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-  display: "flex",
-  flexWrap: "wrap",
-  justifyContent: "space-between"
-}
+            styles:[`display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 16px;
 `],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
