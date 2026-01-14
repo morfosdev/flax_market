@@ -139,7 +139,7 @@
  arrFunctions: [
         (...args) => {
           // ---------- get Function from A_Project Scope
-          return tools.goTo("c2SearchShop");
+          return tools.goTo("c1shop");
         }
         ]
  , trigger: 'on press'
