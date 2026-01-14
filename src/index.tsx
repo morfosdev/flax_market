@@ -48972,7 +48972,8 @@ padding: 20,
   display: "flex",
   flexWrap: "wrap",
   justifyContent: "space-between",
-  width: "100%"
+  width: "100%",
+	flexDirection: 'row',
 }
 `],
 
