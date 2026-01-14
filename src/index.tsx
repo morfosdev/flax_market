@@ -49260,7 +49260,7 @@ height: 10,
           }}/>
         , (...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
-            `()=>{
+            `{
 horizontal=true,
 }`
           ],
