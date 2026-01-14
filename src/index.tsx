@@ -49406,14 +49406,14 @@ height: '100px',
         
           ],
 
-      styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],    args,
+      styles:[`{
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "space-between",
+  width: "100%",
+  flexDirection: 'row',
+}
+`],    args,
         }}/>],
 
             args,
