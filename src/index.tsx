@@ -49012,12 +49012,8 @@ padding: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-  display: "flex",
-  flexWrap: "wrap",
-  justifyContent: "space-between",
-  width: "100%"
-}
-`],
+  width: "30%",
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -49044,12 +49040,8 @@ padding: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-  display: "flex",
-  flexWrap: "wrap",
-  justifyContent: "space-between",
-  width: "100%"
-}
-`],
+  width: "30%",
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
