@@ -49075,6 +49075,20 @@ height: '150px',
             args,
           }}/>
         , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -49095,9 +49109,52 @@ height: '150px',
             elementsProperties:['{}'],
 
             styles:[`{
+  width: "100%",
+}
+`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Promoção até 70% OFF`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "space-between",
+  width: "100%",
+  flexDirection: 'row',
+}
+`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
   width: "30%",
-  backgroundColor: '#FFF',
-  padding: 20,
+  padding: 10,
   alignItems: 'center',
   justifyContent: 'center',
 }`],
@@ -49112,7 +49169,7 @@ width: '100px',
 height: '100px',
 }],
 
-      URIvariablePath:[`https://m.media-amazon.com/images/I/514n0rnHIgL._AC_SY300_SX300_QL70_ML2_.jpg`],
+      URIvariablePath:[`https://images-na.ssl-images-amazon.com/images/G/32/Campanhas/BTS2026/Gateway/17357_BTS24_bubbleshoveler_10offem10200x200._CB777711558_.jpg`],
 
       args,
     }}/>],
@@ -49127,8 +49184,7 @@ height: '100px',
 
             styles:[`{
   width: "30%",
-  backgroundColor: '#FFF',
-  padding: 20,
+  padding: 10,
   alignItems: 'center',
   justifyContent: 'center',
 }`],
@@ -49143,7 +49199,7 @@ width: '100px',
 height: '100px',
 }],
 
-      URIvariablePath:[`https://images.tcdn.com.br/img/img_prod/311840/tenis_adidas_runfalcon_5_feminino_preto_e_branco_137089_1_1779264aa08965405d0909b6fb43ec8a.jpg`],
+      URIvariablePath:[`https://images-na.ssl-images-amazon.com/images/G/32/Campanhas/BTS2026/Gateway/17357_BTS24_bubbleshoveler_10offem10200x200._CB777711558_.jpg`],
 
       args,
     }}/>],
@@ -49157,8 +49213,7 @@ height: '100px',
 
             styles:[`{
   width: "30%",
-  backgroundColor: '#FFF',
-  padding: 20,
+  padding: 10,
   alignItems: 'center',
   justifyContent: 'center',
 }`],
@@ -49169,14 +49224,18 @@ height: '100px',
       elementsProperties:[{}],
 
       styles:[{
-width: '150px',
-height: '150px',
+width: '100px',
+height: '100px',
 }],
 
-      URIvariablePath:[`https://cdn.awsli.com.br/954/954868/produto/68626025/5d150286dc.jpg`],
+      URIvariablePath:[`https://images-na.ssl-images-amazon.com/images/G/32/Campanhas/BTS2026/Gateway/17357_BTS24_bubbleshoveler_10offem10200x200._CB777711558_.jpg`],
 
       args,
     }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
