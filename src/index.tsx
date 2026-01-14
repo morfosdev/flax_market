@@ -49400,7 +49400,7 @@ width: '100px',
 height: '100px',
 }],
 
-      URIvariablePath:[`https://m.media-amazon.com/images/I/514n0rnHIgL._AC_SY300_SX300_QL70_ML2_.jpg`],
+      URIvariablePath:[`$arg_image`],
 
       args,
     }}/>],
