@@ -49335,6 +49335,7 @@ height: '100px',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -49364,7 +49365,56 @@ height: '150px',
 
             args,
           }}/>
-        ],
+        , (...args:any) => <Elements.FlatList2 pass={{
+          elementProperties: [
+            {}
+          ],
+
+          pData: `sc.c1.list`,
+
+          itemElements: [
+            
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  width: "30%",
+  backgroundColor: '#FFF',
+  padding: 20,
+  alignItems: 'center',
+  justifyContent: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '100px',
+height: '100px',
+}],
+
+      URIvariablePath:[`https://m.media-amazon.com/images/I/514n0rnHIgL._AC_SY300_SX300_QL70_ML2_.jpg`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        
+          ],
+
+      styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],    args,
+        }}/>],
 
             args,
           }}/>
