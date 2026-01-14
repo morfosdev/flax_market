@@ -48928,6 +48928,167 @@ backgroundColor: 'transparent',
             args,
           }}/>
         , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+backgroundColor: '#0E1422',
+width: '100%',
+alignItems: 'center',
+justifyContent: 'center',
+paddingVertical: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#FFF',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Home`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#FFF',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Categories`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#FFF',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `About`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#FFF',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Contact`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
