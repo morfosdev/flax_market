@@ -48939,6 +48939,7 @@ width: '100%',
 alignItems: 'center',
 justifyContent: 'center',
 paddingVertical: 8,
+flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
