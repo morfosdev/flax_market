@@ -48973,7 +48973,8 @@ padding: 20,
   flexWrap: "wrap",
   justifyContent: "space-between",
   width: "100%",
-	flexDirection: 'row',
+  flexDirection: 'row',
+  backgroundColor: '#FFF',
 }
 `],
 
