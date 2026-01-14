@@ -49258,18 +49258,11 @@ height: 10,
 
             args,
           }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flexDirection: 'row',
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
+        , (...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
-            {}
+            `()=>{
+horizontal={true}
+}`
           ],
 
           pData: `sc.c1.list`,
@@ -49317,10 +49310,6 @@ height: '100px',
 }
 `],    args,
         }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
