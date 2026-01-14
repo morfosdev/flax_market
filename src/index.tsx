@@ -48969,11 +48969,12 @@ padding: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-    display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",
-    gap: "16px",
-    width: "100%",
-  }`],
+  "display": "grid",
+  "gridTemplateColumns": "repeat(3, 1fr)",
+  "gap": "16px",
+  "width": "100%"
+}
+`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
