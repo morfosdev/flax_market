@@ -49052,22 +49052,20 @@ height: '100px',
   justifyContent: 'center',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+            functions:[()=>{}],            childrenItems:[
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
 
-          children: [
-            `CCCCCC`
-          ],
+      styles:[{
+width: '100px',
+height: '100px',
+}],
 
-          args,
+      URIvariablePath:[`https://cdn.awsli.com.br/954/954868/produto/68626025/5d150286dc.jpg`],
 
-        }}/>],
+      args,
+    }}/>],
 
             args,
           }}/>
