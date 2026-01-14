@@ -49058,8 +49058,8 @@ height: '100px',
       elementsProperties:[{}],
 
       styles:[{
-width: '100px',
-height: '100px',
+width: '150px',
+height: '150px',
 }],
 
       URIvariablePath:[`https://cdn.awsli.com.br/954/954868/produto/68626025/5d150286dc.jpg`],
