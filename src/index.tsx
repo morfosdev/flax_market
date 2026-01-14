@@ -48987,6 +48987,8 @@ padding: 20,
   width: "30%",
   backgroundColor: '#FFF',
   padding: 20,
+  alignItems: 'center',
+  justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -48995,8 +48997,8 @@ padding: 20,
       elementsProperties:[{}],
 
       styles:[{
-width: '150px',
-height: '150px',
+width: '100px',
+height: '100px',
 }],
 
       URIvariablePath:[`https://m.media-amazon.com/images/I/514n0rnHIgL._AC_SY300_SX300_QL70_ML2_.jpg`],
@@ -49016,6 +49018,8 @@ height: '150px',
   width: "30%",
   backgroundColor: '#FFF',
   padding: 20,
+  alignItems: 'center',
+  justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -49046,6 +49050,8 @@ height: '150px',
   width: "30%",
   backgroundColor: '#FFF',
   padding: 20,
+  alignItems: 'center',
+  justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
