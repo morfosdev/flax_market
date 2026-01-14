@@ -48969,10 +48969,9 @@ padding: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-  "display": "grid",
-  "gridTemplateColumns": "repeat(3, 1fr)",
-  "gap": "16px",
-  "width": "100%"
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "space-between"
 }
 `],
 
