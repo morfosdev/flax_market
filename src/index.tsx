@@ -50350,7 +50350,15 @@ height: 20,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: 20, height: 20, alignItems: "center", justifyContent: "center", backgroundColor: "$var_all.colors.secondary", borderRadius: 4, marginRight: 10}`],
+            styles:[`{ 
+width: 20, 
+height: 20, 
+alignItems: "center", 
+justifyContent: "center", 
+backgroundColor: "#0e1422", 
+borderRadius: 4, 
+marginRight: 10
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
