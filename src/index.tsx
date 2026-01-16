@@ -51470,6 +51470,7 @@ marginRight: 10
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -51546,6 +51547,92 @@ marginRight: 10
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => [ "all.toggles.yellow", "==", false ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ width: '100%', padding: 5, backgroundColor: "#FFF", flexDirection: "row", alignItems: "center"}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const path = "all.toggles.green";
+  const currState = tools.getCtData(path);
+  tools.functions.setVar({
+		args: '',
+		pass: { keyPath: [path], value: [!currState] },
+	});
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+width: 20, 
+height: 20, 
+backgroundColor: "#FFD58A", 
+borderRadius: 10, 
+marginRight: 10 
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "all.toggles.green", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+width: 20, 
+height: 20, 
+backgroundColor: "transparent",
+borderRadius: 15,
+borderWidth: 1,
+padding: 13, 
+marginRight: 10,
+right: 4,
+bottom: 4,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+width: 20, 
+height: 20, 
+backgroundColor: "#FFD58A", 
+borderRadius: 10, 
+marginRight: 10 
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "all.toggles.green", "==", false ]]
  , trigger: 'on listen'
 }})],            childrenItems:[() =><></>],
 
