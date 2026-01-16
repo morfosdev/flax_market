@@ -52048,6 +52048,7 @@ fontWeight: '500',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -52148,6 +52149,119 @@ fontWeight: '500',
 
           children: [
             `XL`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ padding: 5, backgroundColor: "#FFF", flexDirection: "row", alignItems: "center"}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const path = "all.toggles.xxlarge";
+  const currState = tools.getCtData(path);
+  tools.functions.setVar({
+		args: '',
+		pass: { keyPath: [path], value: [!currState] },
+	});
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+marginRight: 10,
+padding: 15,
+borderWidth: 1,
+borderRadius: 4,
+borderColor: '#0E1422',
+alignItems: 'center',
+justifyContent: 'center',
+width: 20,
+height: 20,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "all.toggles.xxlarge", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+fontSize: 14,
+fontFamily: 'Inter',
+color: '#0E1422',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `XXL`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+marginRight: 10,
+padding: 15,
+borderWidth: 1,
+borderRadius: 4,
+borderColor: '#E6E7E8',
+alignItems: 'center',
+justifyContent: 'center',
+width: 20,
+height: 20,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "all.toggles.xxlarge", "==", false ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+fontSize: 14,
+fontFamily: 'Inter',
+color: '#5C5F6A',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `XXL`
           ],
 
           args,
@@ -54639,7 +54753,8 @@ justifyContent: 'center',
 'green': false, 
 'small': false, 
 'medium': false, 
-'large': false, 'xlarge': false } 
+'large': false, 
+'xlarge': false, 'xxlarge': false } 
 , 'firebaseConfig': {
   apiKey: "AIzaSyDjAfyEUADq7EaRyFWlGFjP1Eoox9LJHgI",
   authDomain: "devs-tests-95208.firebaseapp.com",
