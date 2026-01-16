@@ -51457,12 +51457,17 @@ xmlns="http://www.w3.org/2000/svg"
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: 20, height: 20, backgroundColor: "#FFF", borderRadius: 4, borderWidth: 2, borderColor: "#CCC", marginRight: 10 }`],
+            styles:[`{ 
+width: 20, 
+height: 20, 
+backgroundColor: "#A3BEF8", 
+borderRadius: 10, 
+marginRight: 10 
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -51472,27 +51477,7 @@ xmlns="http://www.w3.org/2000/svg"
 
             args,
           }}/>
-        , (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-fontFamily: 'Inter',
-fontWeight: '500',
-color: '#474B57',
-}`
-          ],
-
-          children: [
-            `Perfume`
-          ],
-
-          args,
-
-        }}/>],
+        ],
 
             args,
           }}/>
