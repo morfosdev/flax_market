@@ -51393,7 +51393,7 @@ flexDirection: 'row',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const path = "all.toggles.perfume";
+  const path = "all.toggles.blue";
   const currState = tools.getCtData(path);
   tools.functions.setVar({
 		args: '',
@@ -51417,7 +51417,7 @@ marginRight: 10
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.perfume", "==", true ]]
+ arrFunctions: [() => [ "all.toggles.blue", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
 
@@ -51459,7 +51459,7 @@ marginRight: 10
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.perfume", "==", false ]]
+ arrFunctions: [() => [ "all.toggles.blue", "==", false ]]
  , trigger: 'on listen'
 }})],            childrenItems:[() =><></>],
 
@@ -54468,7 +54468,8 @@ justifyContent: 'center',
 'trousers': false, 
 'shoe': false, 
 'handbag': false, 
-'hat': false, 'thermos': false } 
+'hat': false, 
+'thermos': false, 'blue': false } 
 , 'firebaseConfig': {
   apiKey: "AIzaSyDjAfyEUADq7EaRyFWlGFjP1Eoox9LJHgI",
   authDomain: "devs-tests-95208.firebaseapp.com",
