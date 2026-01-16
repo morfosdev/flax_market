@@ -51427,11 +51427,13 @@ marginRight: 10
             styles:[`{ 
 width: 20, 
 height: 20, 
-backgroundColor: "white",
+backgroundColor: "transparent",
 borderRadius: 15,
 borderWidth: 1,
 padding: 13, 
 marginRight: 10,
+right: 4,
+bottom: 4,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
