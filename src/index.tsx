@@ -51738,6 +51738,8 @@ borderRadius: 4,
 borderColor: '#0E1422',
 alignItems: 'center',
 justifyContent: 'center',
+width: 20,
+height: 20,
 }`],
 
             functions:[async (...args) =>
@@ -51781,6 +51783,8 @@ borderRadius: 4,
 borderColor: '#E6E7E8',
 alignItems: 'center',
 justifyContent: 'center',
+width: 20,
+height: 20,
 }`],
 
             functions:[async (...args) =>
