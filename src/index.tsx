@@ -50512,7 +50512,7 @@ height: 10,
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const path = "all.toggles.checkbox1";
+  const path = "all.toggles.trousers";
   const currState = tools.getCtData(path);
   tools.functions.setVar({
 		args: '',
@@ -50538,7 +50538,7 @@ marginRight: 10
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.checkbox1", "==", true ]]
+ arrFunctions: [() => [ "all.toggles.trousers", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
@@ -50585,7 +50585,7 @@ xmlns="http://www.w3.org/2000/svg"
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.checkbox1", "==", false ]]
+ arrFunctions: [() => [ "all.toggles.trousers", "==", false ]]
  , trigger: 'on listen'
 }})],            childrenItems:[() =><></>],
 
@@ -50606,7 +50606,7 @@ color: '#474B57',
           ],
 
           children: [
-            `Perfume`
+            `Trousers`
           ],
 
           args,
