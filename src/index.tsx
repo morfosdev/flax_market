@@ -50269,6 +50269,12 @@ flexDirection: 'row',
 
             styles:[`{
 width: '20%',
+borderWidth: 1,
+height: '100%',
+paddingVertical: 20,
+paddingHorizontal: 10,
+borderColor: '#E6E7E8',
+borderRadius: 6,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
