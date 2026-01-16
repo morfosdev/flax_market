@@ -51716,7 +51716,7 @@ flexDirection: 'row',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const path = "all.toggles.blue";
+  const path = "all.toggles.small";
   const currState = tools.getCtData(path);
   tools.functions.setVar({
 		args: '',
@@ -51731,39 +51731,40 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: 20, 
-height: 20, 
-backgroundColor: "#A3BEF8", 
-borderRadius: 10, 
-marginRight: 10 
+marginRight: 10,
+padding: 15,
+borderWidth: 1,
+borderRadius: 4,
+borderColor: '#0E1422',
+alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.blue", "==", true ]]
+ arrFunctions: [() => [ "all.toggles.small", "==", true ]]
  , trigger: 'on listen'
-}})],            childrenItems:[
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
+          arrStyles: [
+            `{ 
+fontSize: 14,
+fontFamily: 'Inter',
+color: '#0E1422',
+fontWeight: '500',
+}`
+          ],
 
-            styles:[`{ 
-width: 20, 
-height: 20, 
-backgroundColor: "transparent",
-borderRadius: 15,
-borderWidth: 1,
-padding: 13, 
-marginRight: 10,
-right: 4,
-bottom: 4,
-}`],
+          children: [
+            `S`
+          ],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+          args,
 
-            args,
-          }}/>
-        ],
+        }}/>],
 
             args,
           }}/>
@@ -51773,18 +51774,40 @@ bottom: 4,
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: 20, 
-height: 20, 
-backgroundColor: "#A3BEF8", 
-borderRadius: 10, 
-marginRight: 10 
+marginRight: 10,
+padding: 15,
+borderWidth: 1,
+borderRadius: 4,
+borderColor: '#E6E7E8',
+alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.blue", "==", false ]]
+ arrFunctions: [() => [ "all.toggles.small", "==", false ]]
  , trigger: 'on listen'
-}})],            childrenItems:[() =><></>],
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+fontSize: 14,
+fontFamily: 'Inter',
+color: '#5C5F6A',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `S`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
@@ -54440,7 +54463,8 @@ justifyContent: 'center',
 'hat': false, 
 'thermos': false, 
 'blue': false, 
-'yellow': false, 'green': false } 
+'yellow': false, 
+'green': false, 'small': false } 
 , 'firebaseConfig': {
   apiKey: "AIzaSyDjAfyEUADq7EaRyFWlGFjP1Eoox9LJHgI",
   authDomain: "devs-tests-95208.firebaseapp.com",
