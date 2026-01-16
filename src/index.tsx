@@ -51345,7 +51345,12 @@ height: 20,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 14,
+fontFamily: 'Inter',
+fontWeight: '500',
+color: '#0E1422',
+}`
           ],
 
           children: [
