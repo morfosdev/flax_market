@@ -51410,13 +51410,9 @@ flexDirection: 'row',
             styles:[`{ 
 width: 20, 
 height: 20, 
-backgroundColor: "white",
-borderRadius: 15,
-borderWidth: 1,
-padding: 13, 
-marginRight: 10,
-alignItems: 'center',
-justifyContent: 'center',
+backgroundColor: "#A3BEF8", 
+borderRadius: 10, 
+marginRight: 10 
 }`],
 
             functions:[async (...args) =>
@@ -51431,9 +51427,11 @@ justifyContent: 'center',
             styles:[`{ 
 width: 20, 
 height: 20, 
-backgroundColor: "#A3BEF8", 
-borderRadius: 10, 
-marginRight: 10 
+backgroundColor: "white",
+borderRadius: 15,
+borderWidth: 1,
+padding: 13, 
+marginRight: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
