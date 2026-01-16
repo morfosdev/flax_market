@@ -51731,7 +51731,7 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{ 
-padding: 15,
+padding: 18,
 borderWidth: 1,
 borderRadius: 4,
 borderColor: '#0E1422',
@@ -51782,6 +51782,7 @@ alignItems: 'center',
 justifyContent: 'center',
 width: 20,
 height: 20,
+padding: 18,
 }`],
 
             functions:[async (...args) =>
@@ -51842,7 +51843,7 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{ 
-padding: 15,
+padding: 18,
 borderWidth: 1,
 borderRadius: 4,
 borderColor: '#0E1422',
@@ -51886,7 +51887,7 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{ 
-padding: 15,
+padding: 18,
 borderWidth: 1,
 borderRadius: 4,
 borderColor: '#E6E7E8',
@@ -51954,7 +51955,7 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{ 
-padding: 15,
+padding: 18,
 borderWidth: 1,
 borderRadius: 4,
 borderColor: '#0E1422',
@@ -51998,7 +51999,7 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{ 
-padding: 15,
+padding: 18,
 borderWidth: 1,
 borderRadius: 4,
 borderColor: '#E6E7E8',
@@ -52066,8 +52067,7 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{ 
-marginRight: 10,
-padding: 15,
+padding: 18,
 borderWidth: 1,
 borderRadius: 4,
 borderColor: '#0E1422',
@@ -52111,8 +52111,7 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{ 
-marginRight: 10,
-padding: 15,
+padding: 18,
 borderWidth: 1,
 borderRadius: 4,
 borderColor: '#E6E7E8',
@@ -52179,7 +52178,7 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{ 
-padding: 15,
+padding: 18,
 borderWidth: 1,
 borderRadius: 4,
 borderColor: '#0E1422',
@@ -52223,7 +52222,7 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{ 
-padding: 15,
+padding: 18,
 borderWidth: 1,
 borderRadius: 4,
 borderColor: '#E6E7E8',
