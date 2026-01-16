@@ -53143,7 +53143,9 @@ justifyContent: 'center',
 'lst2': [{name: "Tarefa 1", date: "21/03/25"},{name: "Tarefa 2", date: "21/03/25"},{name: "Tarefa 3", date: "24/03/25"}], 'lst3': [{name: "Task 1", check: false},{name: "Task 2", check: false}] } 
 , 
 'toggles': { 
-'box1': true, 'checkbox1': false } 
+'box1': true, 
+'checkbox1': false, 
+'perfume': false, 'trousers': false } 
 , 'firebaseConfig': {
   apiKey: "AIzaSyDjAfyEUADq7EaRyFWlGFjP1Eoox9LJHgI",
   authDomain: "devs-tests-95208.firebaseapp.com",
