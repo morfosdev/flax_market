@@ -50277,7 +50277,8 @@ borderColor: '#E6E7E8',
 borderRadius: 6,
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -50292,7 +50293,64 @@ borderRadius: 6,
 
           args,
 
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => <RN.Text>Element Default</RN.Text>] 
+}}/>
+, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Perfume`
+          ],
+
+          args,
+
         }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
