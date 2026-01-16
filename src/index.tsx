@@ -50287,7 +50287,7 @@ borderRadius: 6,
           ],
 
           children: [
-            `Placeholder`
+            `Categories`
           ],
 
           args,
