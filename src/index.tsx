@@ -51820,7 +51820,6 @@ fontWeight: '500',
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -51830,7 +51829,7 @@ fontWeight: '500',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const path = "all.toggles.yellow";
+  const path = "all.toggles.medium";
   const currState = tools.getCtData(path);
   tools.functions.setVar({
 		args: '',
@@ -51845,125 +51844,42 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: 20, 
-height: 20, 
-backgroundColor: "#FFD58A", 
-borderRadius: 10, 
-marginRight: 10 
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.yellow", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-width: 20, 
-height: 20, 
-backgroundColor: "transparent",
-borderRadius: 15,
-borderWidth: 1,
-padding: 13, 
 marginRight: 10,
-right: 4,
-bottom: 4,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-width: 20, 
-height: 20, 
-backgroundColor: "#FFD58A", 
-borderRadius: 10, 
-marginRight: 10 
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.yellow", "==", false ]]
- , trigger: 'on listen'
-}})],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ padding: 5, backgroundColor: "#FFF", flexDirection: "row", alignItems: "center"}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => {
-  const path = "all.toggles.green";
-  const currState = tools.getCtData(path);
-  tools.functions.setVar({
-		args: '',
-		pass: { keyPath: [path], value: [!currState] },
-	});
-}]
- , trigger: 'on press'
-}})],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-width: 20, 
-height: 20, 
-backgroundColor: "#83B18B", 
-borderRadius: 10, 
-marginRight: 10 
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.green", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-width: 20, 
-height: 20, 
-backgroundColor: "transparent",
-borderRadius: 15,
+padding: 15,
 borderWidth: 1,
-padding: 13, 
-marginRight: 10,
-right: 4,
-bottom: 4,
+borderRadius: 4,
+borderColor: '#0E1422',
+alignItems: 'center',
+justifyContent: 'center',
+width: 20,
+height: 20,
 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "all.toggles.medium", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
 
-            args,
-          }}/>
-        ],
+          arrStyles: [
+            `{ 
+fontSize: 14,
+fontFamily: 'Inter',
+color: '#0E1422',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `M`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
@@ -51973,18 +51889,42 @@ bottom: 4,
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: 20, 
-height: 20, 
-backgroundColor: "#83B18B", 
-borderRadius: 10, 
-marginRight: 10 
+marginRight: 10,
+padding: 15,
+borderWidth: 1,
+borderRadius: 4,
+borderColor: '#E6E7E8',
+alignItems: 'center',
+justifyContent: 'center',
+width: 20,
+height: 20,
 }`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.green", "==", false ]]
+ arrFunctions: [() => [ "all.toggles.medium", "==", false ]]
  , trigger: 'on listen'
-}})],            childrenItems:[() =><></>],
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+fontSize: 14,
+fontFamily: 'Inter',
+color: '#5C5F6A',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `M`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
@@ -54468,7 +54408,8 @@ justifyContent: 'center',
 'thermos': false, 
 'blue': false, 
 'yellow': false, 
-'green': false, 'small': false } 
+'green': false, 
+'small': false, 'medium': false } 
 , 'firebaseConfig': {
   apiKey: "AIzaSyDjAfyEUADq7EaRyFWlGFjP1Eoox9LJHgI",
   authDomain: "devs-tests-95208.firebaseapp.com",
