@@ -51433,8 +51433,7 @@ width: 20,
 height: 20, 
 backgroundColor: "#A3BEF8", 
 borderRadius: 10, 
-marginRight: 10,
-left: 5
+marginRight: 10 
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
