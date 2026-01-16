@@ -50688,7 +50688,7 @@ height: 10,
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const path = "all.toggles.trousers";
+  const path = "all.toggles.shoe";
   const currState = tools.getCtData(path);
   tools.functions.setVar({
 		args: '',
