@@ -50268,7 +50268,7 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '20%',
+width: '25%',
 borderWidth: 1,
 height: '100%',
 paddingVertical: 20,
@@ -50436,6 +50436,20 @@ color: '#474B57',
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 20,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
