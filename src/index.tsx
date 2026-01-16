@@ -51134,7 +51134,7 @@ color: '#474B57',
           ],
 
           children: [
-            `Handbag`
+            `Hat`
           ],
 
           args,
