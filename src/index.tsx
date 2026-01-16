@@ -50477,8 +50477,8 @@ height: 10,
 
             styles:[`{ 
 width: '100%',
-borderColor: '#E6E7E8',
-borderWidth: 1,
+height: 1,
+backgroundColor: '#E6E7E8',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
