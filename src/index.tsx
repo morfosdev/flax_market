@@ -51703,6 +51703,7 @@ height: 20,
 
             styles:[`{ 
 flexDirection: 'row',
+flexWrap: 'wrap',
 }`],
 
             functions:[()=>{}],            childrenItems:[
