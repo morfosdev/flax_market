@@ -50284,7 +50284,12 @@ borderRadius: 6,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 14,
+fontFamily: 'Inter',
+fontWeight: '500',
+color: '#0E1422',
+}`
           ],
 
           children: [
@@ -50394,7 +50399,12 @@ xmlns="http://www.w3.org/2000/svg"
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 14,
+fontFamily: 'Inter',
+fontWeight: '500',
+color: '#474B57',
+}`
           ],
 
           children: [
