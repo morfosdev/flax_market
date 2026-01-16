@@ -51561,7 +51561,7 @@ marginRight: 10
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: '100%', padding: 5, backgroundColor: "#FFF", flexDirection: "row", alignItems: "center"}`],
+            styles:[`{ padding: 5, backgroundColor: "#FFF", flexDirection: "row", alignItems: "center"}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -51583,7 +51583,7 @@ marginRight: 10
             styles:[`{ 
 width: 20, 
 height: 20, 
-backgroundColor: "#FFD58A", 
+backgroundColor: "#83B18B", 
 borderRadius: 10, 
 marginRight: 10 
 }`],
@@ -51625,7 +51625,7 @@ bottom: 4,
             styles:[`{ 
 width: 20, 
 height: 20, 
-backgroundColor: "#FFD58A", 
+backgroundColor: "#83B18B", 
 borderRadius: 10, 
 marginRight: 10 
 }`],
@@ -54115,7 +54115,9 @@ justifyContent: 'center',
 'shoe': false, 
 'handbag': false, 
 'hat': false, 
-'thermos': false, 'blue': false } 
+'thermos': false, 
+'blue': false, 
+'yellow': false, 'green': false } 
 , 'firebaseConfig': {
   apiKey: "AIzaSyDjAfyEUADq7EaRyFWlGFjP1Eoox9LJHgI",
   authDomain: "devs-tests-95208.firebaseapp.com",
