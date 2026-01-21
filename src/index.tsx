@@ -50541,10 +50541,20 @@ marginRight: 10
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const fullList = sc.c1.list || [];
+  // 1. Pega a lista completa
+  const fullList = tools.getCtData("sc.c1.list") || [];
+
+  // 2. Filtra pela categoria desejada
   const filtered = fullList.filter(item => item.categories === "Trousers");
 
-  sc.c1.filteredList = filtered;
+  // 3. Salva a lista filtrada em outra variável
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.c1.filteredList"],
+      value: filtered,
+    },
+  });
 
   console.log("Itens filtrados:", filtered);
 }]
