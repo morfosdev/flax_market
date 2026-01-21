@@ -50362,7 +50362,38 @@ borderRadius: 4,
 marginRight: 10
 }`],
 
-            functions:[async (...args) =>
+            functions:[
+        async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  // 1. Pega a lista completa
+  const fullList = tools.getCtData("sc.c1.list") || [];
+
+  // 2. Filtra pela categoria desejada
+  const filtered = fullList.filter(item => item.categories === "Shirts");
+
+  // 3. Salva a lista filtrada em outra variável (sempre dentro de [])
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.c1.filteredList"],
+      value: [filtered],
+    },
+  });
+
+  console.log("Itens filtrados:", filtered);
+
+  // 4. Exibe o container da lista filtrada
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C2.toggles.filteredList"],
+      value: [true],
+   },
+  });
+}]
+ , trigger: 'on press'
+}}), async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => [ "all.toggles.shirts", "==", true ]]
  , trigger: 'on listen'
