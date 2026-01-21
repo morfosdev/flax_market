@@ -50364,7 +50364,7 @@ marginRight: 10
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.perfume", "==", true ]]
+ arrFunctions: [() => [ "all.toggles.shirts", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
@@ -50432,7 +50432,7 @@ color: '#474B57',
           ],
 
           children: [
-            `Perfume`
+            `Shirts`
           ],
 
           args,
