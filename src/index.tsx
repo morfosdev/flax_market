@@ -50538,8 +50538,7 @@ borderRadius: 4,
 marginRight: 10
 }`],
 
-            functions:[
-        async (...args) =>
+            functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
   const fullList = sc.c1.list || [];
@@ -50550,10 +50549,6 @@ marginRight: 10
   console.log("Itens filtrados:", filtered);
 }]
  , trigger: 'on press'
-}}), async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.trousers", "==", true ]]
- , trigger: 'on listen'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
