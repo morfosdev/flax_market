@@ -52361,7 +52361,7 @@ fontWeight: '500',
       args: "",
       pass: {
         keyPath: ["sc.c1.filteredList"],
-        value: filtered   // <-- AGORA É ARRAY PURO
+        value: filtered 
       }
     });
 
@@ -52394,7 +52394,7 @@ fontWeight: '500',
             args: "",
             pass: {
               keyPath: ["sc.C2.filters.maxPrice"],
-              value: value     // <-- CORREÇÃO
+             	value: [value]
             }
           });
         }}
