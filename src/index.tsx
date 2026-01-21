@@ -52336,13 +52336,10 @@ fontWeight: '500',
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
-  // Valor atual do slider vindo do state
-  const maxPrice = tools.getCtData("sc.C2.filters.maxPrice")?.[0] || 0;
+  const maxPrice = tools.getCtData("sc.C2.filters.maxPrice") ?? 0;
 
-  // Função interna para converter "R$ 0,00" => 0.00
   const parsePrice = (priceStr) => {
     if (!priceStr) return 0;
-
     return Number(
       priceStr
         .replace("R$", "")
@@ -52352,7 +52349,6 @@ fontWeight: '500',
     );
   };
 
-  // Função chamada ao clicar no botão FILTRAR
   const applyPriceFilter = () => {
     const fullList = tools.getCtData("sc.c1.list") || [];
 
@@ -52361,49 +52357,30 @@ fontWeight: '500',
       return productPrice <= maxPrice;
     });
 
-    // Salva lista filtrada
     tools.functions.setVar({
       args: "",
       pass: {
         keyPath: ["sc.c1.filteredList"],
-        value: [filtered]
+        value: filtered   // <-- AGORA É ARRAY PURO
       }
     });
 
-    // Ativa o container da lista filtrada
     tools.functions.setVar({
       args: "",
       pass: {
         keyPath: ["sc.C2.toggles.filteredList"],
-        value: [true]
+        value: true
       }
     });
-
-    console.log("🔍 Lista filtrada:", filtered);
-  };
-
-  // Estilos simples
-  const container = { width: "100%", padding: "16px" };
-  const label = { marginBottom: "8px", fontSize: "16px", fontWeight: "600" };
-  const sliderValue = { marginTop: "8px", fontSize: "14px", color: "#444" };
-  const button = {
-    marginTop: "16px",
-    padding: "10px 16px",
-    borderRadius: "8px",
-    background: "#2563eb",
-    color: "white",
-    textAlign: "center",
-    fontWeight: "600",
-    cursor: "pointer",
   };
 
   return (
-    <div style={container}>
+    <div style={{ width: "100%", padding: 16 }}>
 
-      {/* Label do slider */}
-      <div style={label}>Filtrar por preço máximo:</div>
+      <div style={{ marginBottom: 8, fontSize: 16, fontWeight: 600 }}>
+        Filtrar por preço máximo:
+      </div>
 
-      {/* Slider controlado pelo setVar */}
       <input
         type="range"
         min="0"
@@ -52417,19 +52394,28 @@ fontWeight: '500',
             args: "",
             pass: {
               keyPath: ["sc.C2.filters.maxPrice"],
-              value: [value]
+              value: value     // <-- CORREÇÃO
             }
           });
         }}
         style={{ width: "100%" }}
       />
 
-      {/* Exibe R$ atualizado */}
-      <div style={sliderValue}>R$ {maxPrice}</div>
+      <div style={{ marginTop: 8, fontSize: 14, color: "#444" }}>
+        R$ {maxPrice}
+      </div>
 
-      {/* Botão para aplicar o filtro */}
       <div
-        style={button}
+        style={{
+          marginTop: 16,
+          padding: "10px 16px",
+          borderRadius: 8,
+          background: "#2563eb",
+          color: "white",
+          textAlign: "center",
+          fontWeight: 600,
+          cursor: "pointer",
+        }}
         onClick={applyPriceFilter}
       >
         Aplicar filtro
