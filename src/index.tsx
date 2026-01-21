@@ -52581,6 +52581,7 @@ height: 20,
             styles:[`{
 width: '100%',
 //alignItems: 'center',
+backgroundColor: 'red',
 }`],
 
             functions:[async (...args) =>
