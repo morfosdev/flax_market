@@ -52336,9 +52336,9 @@ fontWeight: '500',
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
-  // Pegamos o número para o slider
+  // pegamos o array e transformamos em número para o slider
   const maxPriceArr = tools.getCtData("sc.C2.filters.maxPrice") ?? [0];
-  const maxPrice = maxPriceArr[0]; // número puro
+  const maxPrice = maxPriceArr[0];
 
   const parsePrice = (priceStr) => {
     if (!priceStr) return 0;
@@ -52387,18 +52387,24 @@ fontWeight: '500',
         min="0"
         max="1000"
         step="1"
-        value={maxPrice} // <-- número puro para slider funcionar
+        value={maxPrice} 
         onChange={(e) => {
           const value = Number(e.target.value);
 
+          // salvamos como array no Flaxboll
           tools.functions.setVar({
             args: "",
             pass: {
               keyPath: ["sc.C2.filters.maxPrice"],
-              value: [value] // <-- salvamos como array no Flaxboll
+              value: [value]
             }
           });
+
+          // força re-render do componente
+          tools.functions.forceUpdate();
         }}
+
+
         style={{ width: "100%" }}
       />
 
@@ -52423,8 +52429,7 @@ fontWeight: '500',
       </div>
     </div>
   );
-}
-] 
+}] 
 }}/>
 ],
 
