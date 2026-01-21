@@ -50560,13 +50560,13 @@ marginRight: 10
   console.log("Itens filtrados:", filtered);
 
   // 4. Exibe o container da lista filtrada
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filteredList"],
-      value: true,
-    },
-  });
+  //tools.functions.setVar({
+    //args: "",
+    //pass: {
+      //keyPath: ["sc.C2.toggles.filteredList"],
+      //value: true,
+   //},
+  //});
 }]
  , trigger: 'on press'
 }}), async (...args) =>
