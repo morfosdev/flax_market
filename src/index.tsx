@@ -50558,6 +50558,15 @@ marginRight: 10
   });
 
   console.log("Itens filtrados:", filtered);
+
+// 4. Desativa a box com a lista de produtos original e ativa a com a lista de produtos filtrados
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C2.toggles.filteredList"],
+      value: true,
+    },
+  });
 }]
  , trigger: 'on press'
 }}), async (...args) =>
