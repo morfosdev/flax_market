@@ -50548,18 +50548,18 @@ marginRight: 10
   // 2. Filtra pela categoria desejada
   const filtered = fullList.filter(item => item.categories === "Trousers");
 
-  // 3. Salva a lista filtrada em outra variável
+  // 3. Salva a lista filtrada em outra variável (sempre dentro de [])
   tools.functions.setVar({
     args: "",
     pass: {
       keyPath: ["sc.c1.filteredList"],
-      value: filtered,
+      value: [filtered],
     },
   });
 
   console.log("Itens filtrados:", filtered);
 
-// 4. Desativa a box com a lista de produtos original e ativa a com a lista de produtos filtrados
+  // 4. Exibe o container da lista filtrada
   tools.functions.setVar({
     args: "",
     pass: {
