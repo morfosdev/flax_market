@@ -52586,7 +52586,7 @@ backgroundColor: 'red',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.c2.toggles.filteredList", "==", true ]]
+ arrFunctions: [() => [ "sc.C2.toggles.filteredList", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
