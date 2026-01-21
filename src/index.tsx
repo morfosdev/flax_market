@@ -50540,7 +50540,15 @@ marginRight: 10
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.trousers", "==", true ]]
+ arrFunctions: [
+() => [ "all.toggles.trousers", "==", true ], () => {
+  const fullList = sc.c1.list || [];
+  const filtered = fullList.filter(item => item.categories === "Trousers");
+
+  sc.c1.filteredList = filtered;
+
+  console.log("Itens filtrados:", filtered);
+}]
  , trigger: 'on listen'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
