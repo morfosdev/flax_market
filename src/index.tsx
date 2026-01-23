@@ -52205,11 +52205,10 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
 height: '100%',
 backgroundColor: '#eee',
-alignItems: 'center',
-padding: 20,
+paddingLeft: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
