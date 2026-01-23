@@ -50099,7 +50099,16 @@ justifyContent: 'center',
 paddingHorizontal: 10,
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("c1shop");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
