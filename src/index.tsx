@@ -49153,14 +49153,14 @@ height: 10,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+width: 120,
+backgroundColor: '#e92d28',
+padding: 6,
+alignItems: 'center',
+justifyContent: 'center',
+borderRadius: 8,
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -49172,7 +49172,11 @@ height: 10,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: 'white',
+fontSize: 16,
+fontWeight: '500',
+}`
           ],
 
           children: [
