@@ -49352,7 +49352,10 @@ height: '100%',
 backgroundColor: '#eee', 
  }`],
 
-          screenElements:[
+          screenElements:[(...args:any) => <Elements.ScrollBar pass={{
+            styles: [],
+            arrProps: [],
+            arrItems: [
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -52924,6 +52927,8 @@ height: 20,
             args,
           }}/>
         ],
+            args,
+        }}/>],
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
