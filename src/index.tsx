@@ -49008,29 +49008,6 @@ flexDirection: 'row',
             args,
           }}/>
         , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '100%',
-//height: '100%',
-//flexDirection: 'row',
-backgroundColor: '000',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '90%%',
-alignItems: 'center',
-padding: 20,
-}`],
-
-            functions:[()=>{}],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -49080,6 +49057,29 @@ height: '100px',
             args,
           }}/>
         , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+//height: '100%',
+//flexDirection: 'row',
+backgroundColor: '000',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '90%%',
+alignItems: 'center',
+padding: 20,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
