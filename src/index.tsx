@@ -52221,8 +52221,7 @@ flex: 1,
 width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
-paddingHorizontal: '40px',
-paddingVertical: '20px',
+paddingBottom: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
