@@ -52472,6 +52472,9 @@ width: '100%',
             elementsProperties:['{}'],
 
             styles:[`{
+backgroundColor: 'white',
+padding: 20,
+borderRadius: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
