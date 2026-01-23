@@ -50028,6 +50028,8 @@ flexDirection: 'row',
 width: '100%',
 flexDirection: 'row',
 padding: 20,
+marginLeft: 9,
+marginRight: 26,
 }`],
 
             functions:[()=>{}],            childrenItems:[
