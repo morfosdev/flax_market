@@ -50022,9 +50022,8 @@ flexDirection: 'row',
 
             styles:[`{
 width: '100%',
-//height: '100%',
 flexDirection: 'row',
-backgroundColor: '000',
+padding: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
