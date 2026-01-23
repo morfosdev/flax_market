@@ -49053,23 +49053,45 @@ flexDirection: 'row',
 
           arrStyles: [
             `{
+color: 'white',
+fontFamily: 'Inter',
+fontSize: 40,
+fontWeight: 'bold',
 }`
           ],
 
           children: [
-            `LAPTOP Utra HD`
+            `Laptop Utra HD`
           ],
 
           args,
 
         }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#e6e6e6',
+fontFamily: 'Inter',
+fontSize: 16,
+}`
           ],
 
           children: [
@@ -49079,13 +49101,31 @@ flexDirection: 'row',
           args,
 
         }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#fdf851',
+fontFamily: 'Inter',
+fontSize: 16,
+}`
           ],
 
           children: [
@@ -49095,6 +49135,20 @@ flexDirection: 'row',
           args,
 
         }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
