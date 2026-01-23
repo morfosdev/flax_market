@@ -50034,6 +50034,7 @@ padding: 20,
 
             styles:[`{
 width: '25%',
+maxWidth: 330,
 borderWidth: 1,
 height: '100%',
 paddingVertical: 20,
