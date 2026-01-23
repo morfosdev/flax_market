@@ -49196,7 +49196,7 @@ height: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-width: 40,
+width: 75,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
