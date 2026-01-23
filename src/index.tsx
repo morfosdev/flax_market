@@ -49029,7 +49029,7 @@ flexDirection: 'row',
 
             styles:[`{
   width: "100%",
-  backgroundColor: '#FFF',
+  backgroundColor: '#0e1422',
   padding: 20,
   alignItems: 'center',
   justifyContent: 'center',
@@ -49041,8 +49041,8 @@ flexDirection: 'row',
       elementsProperties:[{}],
 
       styles:[{
-width: '100px',
-height: '100px',
+width: 165,
+height: 145,
 }],
 
       URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Fnotebook-samsung-np550-intel-celeron-4gb-w11-tela-antirreflexiva-156-cinza_7270-removebg-preview.png?alt=media&token=868e9b8f-cffc-495d-88eb-d693ac988d0b`],
