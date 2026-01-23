@@ -52558,8 +52558,8 @@ height: 20,
 const item = tools.findFlatItem(args); 
 const isAvailable = item.stock; return ( 
 	<span style={{ 
-		color: isAvailable === "In Stock" ? "green" : "red",
-    border: isAvailable === "In Stock" ? "1px solid green" : "1px solid red",
+		color: isAvailable === "In Stock" ? "#00800059" : "#ff000099",
+    border: isAvailable === "In Stock" ? "1px solid #00800059" : "1px solid #ff000099",
 		borderRadius: isAvailable === "In Stock" ? "30px" : "31px",
 		width: isAvailable === "In Stock" ? "80px" : "95px",
 		justifyContent: isAvailable === "In Stock" ? "center" : "center",
@@ -52785,8 +52785,8 @@ height: 20,
 const item = tools.findFlatItem(args); 
 const isAvailable = item.stock; return ( 
 	<span style={{ 
-		color: isAvailable === "In Stock" ? "green" : "red",
-    border: isAvailable === "In Stock" ? "1px solid green" : "1px solid red",
+		color: isAvailable === "In Stock" ? "#00800059" : "#ff000099",
+    border: isAvailable === "In Stock" ? "1px solid #00800059" : "1px solid #ff000099",
 		borderRadius: isAvailable === "In Stock" ? "30px" : "31px",
 		width: isAvailable === "In Stock" ? "80px" : "95px",
 		justifyContent: isAvailable === "In Stock" ? "center" : "center",
