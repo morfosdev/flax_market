@@ -49058,7 +49058,8 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+}`
           ],
 
           children: [
