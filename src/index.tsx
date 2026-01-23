@@ -49190,6 +49190,20 @@ height: 10,
             args,
           }}/>
         , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 40,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
