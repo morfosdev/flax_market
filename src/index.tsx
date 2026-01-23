@@ -49045,7 +49045,7 @@ width: '100px',
 height: '100px',
 }],
 
-      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Fnotebook.png?alt=media&token=0229fed3-4263-4498-a0f0-c25d7e70fa56`],
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2Fnotebook-samsung-np550-intel-celeron-4gb-w11-tela-antirreflexiva-156-cinza_7270-removebg-preview.png?alt=media&token=868e9b8f-cffc-495d-88eb-d693ac988d0b`],
 
       args,
     }}/>],
