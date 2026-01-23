@@ -50024,7 +50024,7 @@ flexDirection: 'row',
 width: '100%',
 //height: '100%',
 flexDirection: 'row',
-padding: 20,
+backgroundColor: '000',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -52206,10 +52206,11 @@ fontWeight: '500',
             elementsProperties:['{}'],
 
             styles:[`{
+width: '100%',
 height: '100%',
 backgroundColor: '#eee',
+alignItems: 'center',
 padding: 20,
-flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
