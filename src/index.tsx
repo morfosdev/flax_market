@@ -52467,6 +52467,7 @@ width: '100%',
 
           itemElements: [
             
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -52552,17 +52553,6 @@ height: 20,
         , 
         
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-	flexDirection: 'row',
-	alignItems: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => { 
 const item = tools.findFlatItem(args); 
@@ -52590,14 +52580,15 @@ const isAvailable = item.stock; return (
             elementsProperties:['{}'],
 
             styles:[`{
-	width: 10,
+	height: 8,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
-        , (...args:any) => <Elements.Text pass={{
+        , 
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -52617,11 +52608,7 @@ const isAvailable = item.stock; return (
 
           args,
 
-        }}/>],
-
-            args,
-          }}/>
-        , 
+        }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -52635,8 +52622,7 @@ const isAvailable = item.stock; return (
 
             args,
           }}/>
-        , 
-        (...args:any) => <Elements.Text pass={{
+        , (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -52656,7 +52642,11 @@ const isAvailable = item.stock; return (
 
           args,
 
-        }}/>, 
+        }}/>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -52666,10 +52656,6 @@ height: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
