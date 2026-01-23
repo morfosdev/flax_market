@@ -50255,7 +50255,7 @@ async (...args) =>
             styles:[`{
 width: '100%',
 height: '100%',
-backgroundColor: '#FFF',
+backgroundColor: '#eee',
 alignItems: 'center',
 padding: 20,
 flexDirection: 'row',
@@ -50275,6 +50275,7 @@ paddingVertical: 20,
 paddingHorizontal: 10,
 borderColor: '#E6E7E8',
 borderRadius: 6,
+backgroundColor: 'white',
 }`],
 
             functions:[()=>{}],            childrenItems:[
