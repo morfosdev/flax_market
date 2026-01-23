@@ -52676,14 +52676,8 @@ height: 20,
         
           ],
 
-      styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],    args,
+      styles:[`{
+}`],    args,
         }}/>],
 
             args,
