@@ -52455,7 +52455,8 @@ width: '100%',
             `{
   "numColumns": 3,
   "columnWrapperStyle": {
-    "justifyContent": "space-between"
+    "justifyContent": "space-between",
+		"paddingBottom": "20px"
   },
   "contentContainerStyle": {
     "padding": 2
@@ -52467,7 +52468,6 @@ width: '100%',
 
           itemElements: [
             
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -52643,19 +52643,6 @@ const isAvailable = item.stock; return (
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: 20,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
