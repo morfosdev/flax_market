@@ -49028,7 +49028,7 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-  width: "30%",
+  width: "100%",
   backgroundColor: '#FFF',
   padding: 20,
   alignItems: 'center',
