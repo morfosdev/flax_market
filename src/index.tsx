@@ -48509,7 +48509,8 @@ paddingHorizontal: 10,
         }
         ]
  , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+}})],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -48529,7 +48530,84 @@ fontWeight: '500',
 
           args,
 
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Shirts`
+          ],
+
+          args,
+
         }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Trousers`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
@@ -49824,7 +49902,8 @@ paddingHorizontal: 10,
         }
         ]
  , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+}})],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -49844,7 +49923,84 @@ fontWeight: '500',
 
           args,
 
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Shirts`
+          ],
+
+          args,
+
         }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Trousers`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
