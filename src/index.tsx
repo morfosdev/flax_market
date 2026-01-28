@@ -50417,7 +50417,7 @@ height: 20,
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const path = "sc.C2.filter";
+  const path = "sc.C2.toggles.filter";
   const currState = tools.getCtData(path);
   tools.functions.setVar({
 		args: '',
@@ -50474,7 +50474,7 @@ marginRight: 10
  , trigger: 'on press'
 }}), async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.filter", "==", "shirt" ]]
+ arrFunctions: [() => [ "sc.C2.toggles.filter", "==", "shirt" ]]
  , trigger: 'on listen'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
@@ -50521,7 +50521,7 @@ xmlns="http://www.w3.org/2000/svg"
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.filter", "==", false ]]
+ arrFunctions: [() => [ "sc.C2.toggles.filter", "==", false ]]
  , trigger: 'on listen'
 }})],            childrenItems:[() =><></>],
 
@@ -55445,7 +55445,8 @@ justifyContent: 'center',
 'A6': { 'listBox': true } 
 , 
 'A7': { 'listBox': true } 
-, 'C2': { 'toggles': { 'filteredList': false } 
+, 'C2': { 'toggles': { 
+'filteredList': false, 'filter': false } 
  } 
  } 
  
