@@ -50417,7 +50417,7 @@ height: 20,
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const path = "all.toggles.shirts";
+  const path = "sc.C2.filter";
   const currState = tools.getCtData(path);
   tools.functions.setVar({
 		args: '',
@@ -50451,7 +50451,7 @@ marginRight: 10
   // 2. Filtra pela categoria desejada
   const filtered = fullList.filter(item => item.categories === "Shirts");
 
-  // 3. Salva a lista filtrada em outra variável (sempre dentro de [])
+  // 3. Salva a lista filtrada em outra variável
   tools.functions.setVar({
     args: "",
     pass: {
@@ -50474,7 +50474,7 @@ marginRight: 10
  , trigger: 'on press'
 }}), async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.shirts", "==", true ]]
+ arrFunctions: [() => [ "sc.C2.filter", "==", "shirt" ]]
  , trigger: 'on listen'
 }})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
@@ -50521,7 +50521,7 @@ xmlns="http://www.w3.org/2000/svg"
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "all.toggles.shirts", "==", false ]]
+ arrFunctions: [() => [ "sc.C2.filter", "==", false ]]
  , trigger: 'on listen'
 }})],            childrenItems:[() =><></>],
 
