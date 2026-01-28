@@ -51942,6 +51942,24 @@ height: 20,
             args,
           }}/>
         , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "sc.C2.hiddenBox", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -52874,7 +52892,6 @@ fontWeight: '500',
             args,
           }}/>
         , 
-        
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
@@ -52971,21 +52988,7 @@ fontWeight: '500',
 }
 ] 
 }}/>
-, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
+],
 
             args,
           }}/>
