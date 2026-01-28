@@ -50574,7 +50574,7 @@ color: '#474B57',
           ],
 
           children: [
-            `AAAA`
+            `Shirts`
           ],
 
           args,
@@ -50656,12 +50656,12 @@ height: 10,
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const path = "all.toggles.trousers";
+  /* const path = "all.toggles.trousers";
   const currState = tools.getCtData(path);
   tools.functions.setVar({
 		args: '',
 		pass: { keyPath: [path], value: [!currState] },
-	});
+	}); */
 }]
  , trigger: 'on press'
 }})],            childrenItems:[
@@ -50684,30 +50684,22 @@ marginRight: 10
         async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  // 1. Pega a lista completa
-  const fullList = tools.getCtData("sc.c1.list") || [];
-
-  // 2. Filtra pela categoria desejada
-  const filtered = fullList.filter(item => item.categories === "Trousers");
-
-  // 3. Salva a lista filtrada em outra variável (sempre dentro de [])
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.c1.filteredList"],
-      value: [filtered],
-    },
-  });
-
-  console.log("Itens filtrados:", filtered);
-
-  // 4. Exibe o container da lista filtrada
+  // 1. Exibe o container da lista completa
   tools.functions.setVar({
     args: "",
     pass: {
       keyPath: ["sc.C2.toggles.filteredList"],
-      value: [true],
+      value: [false],
    },
+  });
+
+// 5. Toggle Checkbox
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C2.toggles.filter"],
+      value: [false],
+    },
   });
 }]
  , trigger: 'on press'
@@ -50758,7 +50750,47 @@ xmlns="http://www.w3.org/2000/svg"
 
             styles:[`{ width: 20, height: 20, backgroundColor: "#FFF", borderRadius: 4, borderWidth: 2, borderColor: "#CCC", marginRight: 10 }`],
 
-            functions:[async (...args) =>
+            functions:[
+        async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  // 1. Pega a lista completa
+  const fullList = tools.getCtData("sc.c1.list") || [];
+
+  // 2. Filtra pela categoria desejada
+  const filtered = fullList.filter(item => item.categories === "Trousers");
+
+  // 3. Salva a lista filtrada em outra variável
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.c1.filteredList"],
+      value: [filtered],
+    },
+  });
+
+  console.log("Itens filtrados:", filtered);
+
+  // 4. Exibe o container da lista filtrada
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C2.toggles.filteredList"],
+      value: [true],
+   },
+  });
+
+// 5. Toogl Checkbox
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C2.toggles.filter"],
+      value: ["shirt"],
+    },
+  });
+}]
+ , trigger: 'on press'
+}}), async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => [ "all.toggles.trousers", "==", false ]]
  , trigger: 'on listen'
