@@ -53275,7 +53275,15 @@ padding: 20,
 borderRadius: 10,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.C2.forms.iptsChanges`],
+          value: [`$arg_item`]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[
         
 
     (...args:any) => <Elements.ImageBox pass={{
