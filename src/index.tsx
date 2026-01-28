@@ -53787,7 +53787,7 @@ width: '200px',
 height: '200px',
 }],
 
-      URIvariablePath:[`$arg_image`],
+      URIvariablePath:[`sc.C2.forms.iptsChanges.image`],
 
       args,
     }}/>],
