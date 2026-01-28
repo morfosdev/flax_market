@@ -52874,6 +52874,7 @@ fontWeight: '500',
             args,
           }}/>
         , 
+        
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => {
@@ -52970,7 +52971,25 @@ fontWeight: '500',
 }
 ] 
 }}/>
-],
+, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
