@@ -53277,11 +53277,17 @@ borderRadius: 10,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.C2.forms.iptsChanges`],
           value: [`$arg_item`]
-        }})]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("c3ProductProfile");
+        }
+        ]
  , trigger: 'on press'
 }})],            childrenItems:[
         
@@ -53751,15 +53757,11 @@ height: 20,
         (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"c3ProductProfile",
 
-          styles:[
-              {
-                backgroundColor: '#101',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: '100%',
-                width: '100%',
-              }
-              ],
+          styles:[`{ 
+width: '100%',
+height: '100%',
+backgroundColor: '#eee', 
+ }`],
 
           screenElements:[() => {
                   const textStyle = {
