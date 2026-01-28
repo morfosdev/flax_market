@@ -53777,20 +53777,20 @@ height: '100%',
 backgroundColor: '#eee', 
  }`],
 
-          screenElements:[() => {
-                  const textStyle = {
-                    fontSize: 20,
-                    color: '#fff2',
-                    textAlign:'center',
-                    maxWidth: 200,
-                    // maxWidth: '200px'<= #ATTENTION: Native ERROR! No string!
-                  };
+          screenElements:[
 
-                  return (
-                    <RN.Text style={textStyle}>
-                      {'Adicione Elementos nessa tela!'}
-                    </RN.Text>);
-                }],
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '200px',
+height: '200px',
+}],
+
+      URIvariablePath:[`$arg_image`],
+
+      args,
+    }}/>],
 
           functions:[()=>{}],
 
