@@ -56423,180 +56423,15 @@ async (...args) =>
 
           args,
 
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-padding: 20,
-flexDirection: 'row',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{
-width: '150px',
-height: '150px',
-borderRadius: 6,
-shadowColor: '#000',
-  overflow: "hidden",
-  shadowOffset: { 
-     width: 0,
-     height: 2
-  },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-}],
-
-      URIvariablePath:[`sc.C2.forms.iptsChanges.image`],
-
-      args,
-    }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
- alignItems: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
+        }}/>, (...args:any) => <Elements.FlatList2 pass={{
+          elementProperties: [
+            {}
           ],
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+          pData: `sc.C4.forms.iptsChanges.products`,
 
-          children: [
-            `$var_sc.C2.forms.iptsChanges.label`
-          ],
-
-          args,
-
-        }}/>, 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `$var_sc.C2.forms.iptsChanges.price`
-          ],
-
-          args,
-
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: 20,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => {
-  // 1. Pega o produto
-  const product = tools.getCtData("sc.C2.forms.iptsChanges");
-  if (!product) {
-    console.log("Nenhum produto encontrado em sc.C2.forms.iptsChanges");
-    return;
-  }
-
-  // 2. Pega a lista atual do carrinho (array)
-  const currentCart = tools.getCtData("sc.C4.forms.iptsChanges.products") || [];
-
-  // 3. Cria uma nova lista com o item adicionado
-  const updatedCart = [...currentCart, product];
-
-  // 4. Salva no state do carrinho
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C4.forms.iptsChanges.products"],
-      value: updatedCart,
-    },
-  });
-
-  console.log("🛒 Produto adicionado ao carrinho:", product);
-  console.log("📦 Carrinho atualizado:", updatedCart);
-
-  // 5. Navega para a tela do carrinho
-  tools.goTo("c4cart");
-}]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `Add to Cart`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-padding: 20,
-flexDirection: 'row',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
+          itemElements: [
+            
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -56620,7 +56455,7 @@ flexDirection: 'row',
           ],
 
           children: [
-            `...Details`
+            `$arg_label`
           ],
 
           args,
@@ -56629,60 +56464,18 @@ flexDirection: 'row',
 
             args,
           }}/>
-        , 
+        
+          ],
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[
+      styles:[
               {
                 backgroundColor: 'white',
                 justifyContent: 'center',
                 minHeight: 22,
                 width: "100%",
               }
-              ],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `Detail`
-          ],
-
-          args,
-
-        }}/>, (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `$var_sc.C2.forms.iptsChanges.description`
-          ],
-
-          args,
-
+              ],    args,
         }}/>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
