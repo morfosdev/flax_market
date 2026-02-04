@@ -53778,7 +53778,6 @@ backgroundColor: '#eee',
  }`],
 
           screenElements:[
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -54807,7 +54806,7 @@ fontWeight: '500',
           ],
 
           children: [
-            `Search`
+            `sc.C2.forms.iptsChanges.label`
           ],
 
           args,
@@ -55408,20 +55407,7 @@ height: 20,
 
             args,
           }}/>
-        , 
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{
-width: '200px',
-height: '200px',
-}],
-
-      URIvariablePath:[`sc.C2.forms.iptsChanges.image`],
-
-      args,
-    }}/>],
+        ],
 
           functions:[()=>{}],
 
