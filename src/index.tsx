@@ -53778,6 +53778,888 @@ backgroundColor: '#eee',
  }`],
 
           screenElements:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+width: '100%',
+height: '100%',
+alignItems: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+backgroundColor: '#0E1422',
+width: '100%',
+alignItems: 'center',
+justifyContent: 'center',
+paddingVertical: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#FFF",
+}`
+          ],
+
+          children: [
+            `Get 25% off on your first order. Order Now`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+flexDirection: 'row',
+backgroundColor: '#FFF',
+paddingHorizontal: '10px',
+paddingVertical: 15,
+justifyContent: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: 104,
+height: 40,
+}],
+
+      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FAdmin.png?alt=media&token=94ebd672-5bdd-4e25-81b7-a1b36e29e6e0`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 80,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("c1shop");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Home`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.C2.toggles.categories`],
+          value: [true]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Categories`
+          ],
+
+          args,
+
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+() => {
+  // 1. Pega a lista completa
+  const fullList = tools.getCtData("sc.c1.list") || [];
+
+  // 2. Filtra pela categoria desejada
+  const filtered = fullList.filter(item => item.categories === "Shirts");
+
+  // 3. Salva a lista filtrada em outra variável
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.c1.filteredList"],
+      value: [filtered],
+    },
+  });
+
+  console.log("Itens filtrados:", filtered);
+
+  // 4. Exibe o container da lista filtrada
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C2.toggles.filteredList"],
+      value: [true],
+   },
+  });
+
+// 5. Toogl Checkbox
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C2.toggles.filter"],
+      value: ["shirt"],
+    },
+  });
+}, 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.C2.toggles.categories`],
+          value: [false]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("c2SearchShop");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Shirts`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+() => {
+  // 1. Pega a lista completa
+  const fullList = tools.getCtData("sc.c1.list") || [];
+
+  // 2. Filtra pela categoria desejada
+  const filtered = fullList.filter(item => item.categories === "Trousers");
+
+  // 3. Salva a lista filtrada em outra variável
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.c1.filteredList"],
+      value: [filtered],
+    },
+  });
+
+  console.log("Itens filtrados:", filtered);
+
+  // 4. Exibe o container da lista filtrada
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C2.toggles.filteredList"],
+      value: [true],
+   },
+  });
+
+// 5. Toogl Checkbox
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C2.toggles.filter"],
+      value: ["shirt"],
+    },
+  });
+}, 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.C2.toggles.categories`],
+          value: [false]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("c2SearchShop");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Trousers`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `About`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Contact`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 80,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+justifyContent: 'initial',
+alignItems: 'center',
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+borderTopLeftRadius: 5,
+borderBottomLeftRadius: 5,
+padding: 11,
+alignItem: 'center',
+justifyContent: 'center',
+borderColor: '#eee',
+borderWidth: 1,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+ functions.firebase.where({ args, pass:{
+
+  arrRefStrings: [`productsEcommerce`],
+ arrWhere: [(...args) =>
+        functions.firebase.whereConds({ args, pass:{
+          arrStrings: [
+        `label`, 
+        `==`, `$var_sc.a2.selectedLabel`],
+        }})],
+ arrFuncs: [
+ async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.filteredList`],
+          value: [`$arg_callback`]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.A2.listBox`],
+          value: [false]
+        }})],
+ }})]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={15}
+    height={14}
+    fill="red"
+    viewBox="0 0 15 14"
+    {...props}
+  >
+    <Path
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m14.02 13.5-3.75-3.75m1.59-3.83a5.42 5.42 0 1 1-10.84 0 5.42 5.42 0 0 1 10.84 0Z"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.02 13.5L10.27 9.75M11.86 5.92C11.86 8.91338 9.43334 11.34 6.43996 11.34C3.44658 11.34 1.01996 8.91338 1.01996 5.92C1.01996 2.92662 3.44658 0.5 6.43996 0.5C9.43334 0.5 11.86 2.92662 11.86 5.92Z" stroke="#5C5F6A" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      `,
+
+      altura: "17px",
+
+      largura: "17px",
+
+      preenchimento: [`#fff`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+ placeholder: 'Search products',
+}`],
+
+          stylesArray: [`{
+borderTopWidth: 1,
+borderBottomWidth: 1,
+borderColor: '#eee',
+padding: 10,
+}`],
+
+          path: [`sc.a2.selectedLabel`],
+
+          funcsArray: [
+        async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.selectedLabel`],
+          value: [`$arg_callback`]
+        }}), (e) => {
+  if (e.key === "Enter") {
+    const label = tools.getCtData("sc.a2.selectedLabel");
+
+    tools.query.where(
+      "productsEcommerce",
+      "label",
+      "==",
+      label
+    ).then((result) => {
+
+      tools.setData({
+        path: "sc.a2.filteredList",
+        value: result
+      });
+
+      tools.setData({
+        path: "sc.A2.listBox",
+        value: false
+      });
+
+      console.log("🔎 Produto filtrado:", result);
+
+    }).catch((err) => {
+      console.log("❌ Erro ao filtrar:", err);
+    });
+  }
+}
+],
+
+          args,
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+borderTopRightRadius: 5,
+borderBottomRightRadius: 5,
+padding: 11,
+alignItem: 'center',
+justifyContent: 'center',
+borderColor: '#eee',
+borderWidth: 1,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.selectedLabel`],
+          value: [` `]
+        }}), 
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.A2.listBox`],
+          value: [true]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a2.filteredList`],
+          value: [``]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    {...props}
+  >
+    <Path
+      fillRule="evenodd"
+      d="M5.293 5.293a1 1 0 0 1 1.414 0L12 10.586l5.293-5.293a1 1 0 1 1 1.414 1.414L13.414 12l5.293 5.293a1 1 0 0 1-1.414 1.414L12 13.414l-5.293 5.293a1 1 0 0 1-1.414-1.414L10.586 12 5.293 6.707a1 1 0 0 1 0-1.414Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
+</svg>
+
+      `,
+
+      altura: "17px",
+
+      largura: "17px",
+
+      preenchimento: [`#ccc`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 20,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={20}
+    height={20}
+    fill="red"
+    viewBox="0 0 20 20"
+    {...props}
+  >
+    <Path
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.429}
+      d="M.714.714h3.383l1.206 11.977a1.384 1.384 0 0 0 1.385 1.177h8.728a1.386 1.386 0 0 0 1.386-.941l1.842-5.539a1.383 1.383 0 0 0-.194-1.246 1.385 1.385 0 0 0-1.191-.582H4.582"
+    />
+    <Path
+      fill="#5C5F6A"
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.429}
+      d="M15.18 18.714a.693.693 0 1 1 0-1.385.693.693 0 0 1 0 1.385ZM6.176 18.714a.693.693 0 1 1 0-1.385.693.693 0 0 1 0 1.385Z"
+    />
+    <Path
+      stroke="#5C5F6A"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={1.429}
+      d="M9.276 8.33v2.769M13.432 8.33v2.769"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.714233 0.714287H4.09744L5.30276 12.6912C5.35286 13.0214 5.52066 13.3223 5.77525 13.5386C6.02985 13.7549 6.35407 13.8719 6.68818 13.8681H15.4164C15.7185 13.8839 16.0174 13.8004 16.2676 13.6304C16.5178 13.4604 16.7054 13.2132 16.8018 12.9266L18.6444 7.38813C18.7132 7.17992 18.7315 6.95835 18.6978 6.74168C18.6641 6.52501 18.5793 6.31946 18.4504 6.14198C18.3163 5.95323 18.137 5.8011 17.9288 5.6995C17.7207 5.59791 17.4904 5.5501 17.259 5.56044H4.58234" stroke="#5C5F6A" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.1809 18.7143C14.9972 18.7143 14.821 18.6414 14.6911 18.5115C14.5611 18.3817 14.4882 18.2056 14.4882 18.022C14.4882 17.8384 14.5611 17.6623 14.6911 17.5324C14.821 17.4026 14.9972 17.3297 15.1809 17.3297C15.3646 17.3297 15.5408 17.4026 15.6707 17.5324C15.8006 17.6623 15.8736 17.8384 15.8736 18.022C15.8736 18.2056 15.8006 18.3817 15.6707 18.5115C15.5408 18.6414 15.3646 18.7143 15.1809 18.7143Z" fill="#5C5F6A" stroke="#5C5F6A" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.17562 18.7143C5.9919 18.7143 5.81571 18.6414 5.6858 18.5115C5.55589 18.3817 5.48291 18.2056 5.48291 18.022C5.48291 17.8384 5.55589 17.6623 5.6858 17.5324C5.81571 17.4026 5.9919 17.3297 6.17562 17.3297C6.35934 17.3297 6.53554 17.4026 6.66544 17.5324C6.79535 17.6623 6.86833 17.8384 6.86833 18.022C6.86833 18.2056 6.79535 18.3817 6.66544 18.5115C6.53554 18.6414 6.35934 18.7143 6.17562 18.7143Z" fill="#5C5F6A" stroke="#5C5F6A" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.27612 8.32967V11.0989" stroke="#5C5F6A" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.4324 8.32967V11.0989" stroke="#5C5F6A" stroke-width="1.42857" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+      `,
+
+      altura: "20px",
+
+      largura: "20px",
+
+      preenchimento: [`white`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={19}
+    height={19}
+    fill="red"
+    viewBox="0 0 19 19"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.616 4.583a4.079 4.079 0 1 1 5.768 5.768 4.079 4.079 0 0 1-5.768-5.768Zm2.884.186a2.698 2.698 0 1 0 0 5.396 2.698 2.698 0 0 0 0-5.396Z"
+      clipRule="evenodd"
+    />
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M9.5 13.58a6.087 6.087 0 0 0-5.198 2.92.69.69 0 0 1-1.179-.718 7.467 7.467 0 0 1 12.754 0 .69.69 0 1 1-1.179.718A6.088 6.088 0 0 0 9.5 13.58Z"
+      clipRule="evenodd"
+    />
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M2.782 2.782a9.5 9.5 0 1 1 13.435 13.435A9.5 9.5 0 0 1 2.782 2.782ZM9.5 1.38a8.12 8.12 0 1 0 0 16.24 8.12 8.12 0 0 0 0-16.24Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.61604 4.58299C7.38092 3.81812 8.41831 3.38842 9.5 3.38842C10.5817 3.38842 11.6191 3.81812 12.384 4.58299C13.1488 5.34787 13.5785 6.38525 13.5785 7.46695C13.5785 8.54864 13.1488 9.58603 12.384 10.3509C11.6191 11.1158 10.5817 11.5455 9.5 11.5455C8.41831 11.5455 7.38092 11.1158 6.61604 10.3509C5.85117 9.58603 5.42147 8.54864 5.42147 7.46695C5.42147 6.38525 5.85117 5.34787 6.61604 4.58299ZM9.5 4.76864C8.78436 4.76864 8.09804 5.05292 7.59201 5.55895C7.08597 6.06498 6.80169 6.75131 6.80169 7.46695C6.80169 8.18258 7.08597 8.86891 7.59201 9.37494C8.09804 9.88097 8.78436 10.1653 9.5 10.1653C10.2156 10.1653 10.902 9.88097 11.408 9.37494C11.914 8.86891 12.1983 8.18258 12.1983 7.46695C12.1983 6.75131 11.914 6.06498 11.408 5.55895C10.902 5.05292 10.2156 4.76864 9.5 4.76864Z" fill="#5C5F6A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 13.5804C8.45587 13.5804 7.4293 13.849 6.51897 14.3603C5.60864 14.8717 4.84516 15.6087 4.30193 16.5003C4.10364 16.8258 3.67902 16.9289 3.35353 16.7307C3.02804 16.5324 2.92493 16.1077 3.12323 15.7823C3.78964 14.6884 4.72624 13.7843 5.843 13.157C6.95975 12.5297 8.21911 12.2002 9.5 12.2002C10.7809 12.2002 12.0402 12.5297 13.157 13.157C14.2738 13.7843 15.2104 14.6884 15.8768 15.7823C16.0751 16.1077 15.972 16.5324 15.6465 16.7307C15.321 16.9289 14.8964 16.8258 14.6981 16.5003C14.1548 15.6087 13.3914 14.8717 12.481 14.3603C11.5707 13.849 10.5441 13.5804 9.5 13.5804Z" fill="#5C5F6A"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.78249 2.78249C4.56408 1.00089 6.98044 0 9.5 0C12.0196 0 14.4359 1.00089 16.2175 2.78249C17.9991 4.56408 19 6.98044 19 9.5C19 12.0196 17.9991 14.4359 16.2175 16.2175C14.4359 17.9991 12.0196 19 9.5 19C6.98044 19 4.56408 17.9991 2.78249 16.2175C1.00089 14.4359 0 12.0196 0 9.5C0 6.98044 1.00089 4.56408 2.78249 2.78249ZM9.5 1.38022C7.3465 1.38022 5.2812 2.23569 3.75845 3.75845C2.23569 5.2812 1.38022 7.3465 1.38022 9.5C1.38022 11.6535 2.23569 13.7188 3.75845 15.2416C5.2812 16.7643 7.3465 17.6198 9.5 17.6198C11.6535 17.6198 13.7188 16.7643 15.2416 15.2416C16.7643 13.7188 17.6198 11.6535 17.6198 9.5C17.6198 7.3465 16.7643 5.2812 15.2416 3.75845C13.7188 2.23569 11.6535 1.38022 9.5 1.38022Z" fill="#5C5F6A"/>
+</svg>
+
+      `,
+
+      altura: "20px",
+
+      largura: "20px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
