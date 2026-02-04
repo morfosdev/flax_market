@@ -54975,7 +54975,8 @@ shadowColor: '#000',
  alignItems: 'center',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -54986,6 +54987,21 @@ shadowColor: '#000',
 
           children: [
             `$var_sc.C2.forms.iptsChanges.label`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `$var_sc.C2.forms.iptsChanges.price`
           ],
 
           args,
