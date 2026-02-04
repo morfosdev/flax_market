@@ -56437,9 +56437,8 @@ async (...args) =>
             elementsProperties:['{}'],
 
             styles:[`{
-backgroundColor: 'white',
-padding: 20,
-borderRadius: 10,
+width: '100%',
+flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
