@@ -54980,27 +54980,6 @@ height: 20,
             args,
           }}/>
         , 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#0E1422",
-}`
-          ],
-
-          children: [
-            `$arg_label`
-          ],
-
-          args,
-
-        }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -55017,29 +54996,6 @@ height: 20,
         , 
         
 
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => { 
-const item = tools.findFlatItem(args); 
-const isAvailable = item.stock; return ( 
-	<span style={{ 
-		color: isAvailable === "In Stock" ? "#00800059" : "#ff000099",
-    border: isAvailable === "In Stock" ? "1px solid #00800059" : "1px solid #ff000099",
-		borderRadius: isAvailable === "In Stock" ? "30px" : "31px",
-		width: isAvailable === "In Stock" ? "80px" : "95px",
-		justifyContent: isAvailable === "In Stock" ? "center" : "center",
-		display: isAvailable === "In Stock" ? "inline-flex" : "inline-flex",
-		fontFamily: isAvailable === "In Stock" ? "Inter" : "Inter",
-		fontSize: isAvailable === "In Stock" ? "14px" : "14px",
-		backgroundColor: isAvailable === "In Stock" ? "#edffed" : "#fff2f2",
- }}>
-	{isAvailable} 
-	</span> 
-) 
-}] 
-}}/>
-, 
-        
-
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
@@ -55052,28 +55008,6 @@ const isAvailable = item.stock; return (
             args,
           }}/>
         , 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#474B57",
-}`
-          ],
-
-          children: [
-            `$arg_price`
-          ],
-
-          args,
-
-        }}/>, 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -55086,27 +55020,7 @@ const isAvailable = item.stock; return (
 
             args,
           }}/>
-        , (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#5C5F6A",
-}`
-          ],
-
-          children: [
-            `$arg_categories`
-          ],
-
-          args,
-
-        }}/>],
+        ],
 
             args,
           }}/>
