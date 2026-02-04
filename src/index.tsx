@@ -54926,7 +54926,6 @@ width: '100%',
 backgroundColor: 'white',
 padding: 20,
 borderRadius: 10,
-flexDirection: 'row',
 }`],
 
             functions:[async (...args) =>
@@ -54944,6 +54943,16 @@ async (...args) =>
         ]
  , trigger: 'on press'
 }})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+padding: 20,
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         
 
     (...args:any) => <Elements.ImageBox pass={{
@@ -55007,6 +55016,10 @@ shadowColor: '#000',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
