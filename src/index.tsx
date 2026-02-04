@@ -54806,7 +54806,7 @@ fontWeight: '500',
           ],
 
           children: [
-            `sc.C2.forms.iptsChanges.label`
+            `$var_sc.C2.forms.iptsChanges.label`
           ],
 
           args,
