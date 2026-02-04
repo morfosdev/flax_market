@@ -54908,7 +54908,6 @@ height: '100%',
 }`],
             arrProps: [],
             arrItems: [
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -54918,28 +54917,7 @@ width: '100%',
 //alignItems: 'center',
 }`],
 
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.filteredList", "==", false ]]
- , trigger: 'on listen'
-}})],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
-          elementProperties: [
-            `{
-  "numColumns": 3,
-  "columnWrapperStyle": {
-    "justifyContent": "space-between",
-		"paddingBottom": "20px"
-  },
-  "contentContainerStyle": {
-    "padding": 2
-  }
-}`
-          ],
-
-          pData: `sc.c1.list`,
-
-          itemElements: [
-            
+            functions:[()=>{}],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -54984,7 +54962,7 @@ shadowColor: '#000',
     shadowRadius: 3.84,
 }],
 
-      URIvariablePath:[`$arg_image`],
+      URIvariablePath:[`sc.C2.forms.iptsChanges.image`],
 
       args,
     }}/>, 
@@ -55129,265 +55107,10 @@ const isAvailable = item.stock; return (
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        
-          ],
-
-      styles:[`{
-}`],    args,
-        }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '100%',
-//alignItems: 'center',
-backgroundColor: 'red',
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.filteredList", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
-          elementProperties: [
-            `{
-  "numColumns": 3,
-  "columnWrapperStyle": {
-    "justifyContent": "space-between"
-  },
-  "contentContainerStyle": {
-    "padding": 2
-  }
-}`
-          ],
-
-          pData: `sc.c1.filteredList`,
-
-          itemElements: [
-            
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{
-width: '150px',
-height: '150px',
-borderRadius: 6,
-shadowColor: '#000',
-  overflow: "hidden",
-  shadowOffset: { 
-     width: 0,
-     height: 2
-  },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-}],
-
-      URIvariablePath:[`$arg_image`],
-
-      args,
-    }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: 20,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#0E1422",
-}`
-          ],
-
-          children: [
-            `$arg_label`
-          ],
-
-          args,
-
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-	height: 8,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-	flexDirection: 'row',
-	alignItems: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [() => { 
-const item = tools.findFlatItem(args); 
-const isAvailable = item.stock; return ( 
-	<span style={{ 
-		color: isAvailable === "In Stock" ? "#00800059" : "#ff000099",
-    border: isAvailable === "In Stock" ? "1px solid #00800059" : "1px solid #ff000099",
-		borderRadius: isAvailable === "In Stock" ? "30px" : "31px",
-		width: isAvailable === "In Stock" ? "80px" : "95px",
-		justifyContent: isAvailable === "In Stock" ? "center" : "center",
-		display: isAvailable === "In Stock" ? "inline-flex" : "inline-flex",
-		fontFamily: isAvailable === "In Stock" ? "Inter" : "Inter",
-		fontSize: isAvailable === "In Stock" ? "14px" : "14px",
-		backgroundColor: isAvailable === "In Stock" ? "#edffed" : "#fff2f2",
- }}>
-	{isAvailable} 
-	</span> 
-) 
-}] 
-}}/>
-, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-	width: 10,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#474B57",
-}`
-          ],
-
-          children: [
-            `$arg_price`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-	height: 8,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#5C5F6A",
-}`
-          ],
-
-          children: [
-            `$arg_categories`
-          ],
-
-          args,
-
-        }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: 20,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
         ],
-
-            args,
-          }}/>
-        
-          ],
-
-      styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],    args,
-        }}/>],
 
             args,
           }}/>
