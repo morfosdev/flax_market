@@ -55047,12 +55047,35 @@ height: 20,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("home");
-        }
-        ]
+ arrFunctions: [() => {
+  // 1. Pega o produto
+  const product = tools.getCtData("sc.C2.forms.iptsChanges");
+  if (!product) {
+    console.log("Nenhum produto encontrado em sc.C2.forms.iptsChanges");
+    return;
+  }
+
+  // 2. Pega a lista atual do carrinho (array)
+  const currentCart = tools.getCtData("sc.C4.forms.iptsChanges.products") || [];
+
+  // 3. Cria uma nova lista com o item adicionado
+  const updatedCart = [...currentCart, product];
+
+  // 4. Salva no state do carrinho
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C4.forms.iptsChanges.products"],
+      value: updatedCart,
+    },
+  });
+
+  console.log("🛒 Produto adicionado ao carrinho:", product);
+  console.log("📦 Carrinho atualizado:", updatedCart);
+
+  // 5. Navega para a tela do carrinho
+  tools.goTo("c4cart");
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
