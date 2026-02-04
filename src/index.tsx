@@ -53799,6 +53799,44 @@ width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+backgroundColor: '#0E1422',
+width: '100%',
+alignItems: 'center',
+justifyContent: 'center',
+paddingVertical: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#FFF",
+}`
+          ],
+
+          children: [
+            `Get 25% off on your first order. Order Now`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
