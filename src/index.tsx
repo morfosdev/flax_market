@@ -54926,6 +54926,7 @@ width: '100%',
 backgroundColor: 'white',
 padding: 20,
 borderRadius: 10,
+flexDirection: 'row',
 }`],
 
             functions:[async (...args) =>
@@ -54966,57 +54967,30 @@ shadowColor: '#000',
 
       args,
     }}/>, 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
             styles:[`{
-height: 20,
+ alignItems: 'center',
 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
 
-            args,
-          }}/>
-        , 
-        
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
+          children: [
+            `$var_sc.C2.forms.iptsChanges.label`
+          ],
 
-            styles:[`{
-	height: 8,
-}`],
+          args,
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-	height: 8,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-	height: 8,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
+        }}/>],
 
             args,
           }}/>
