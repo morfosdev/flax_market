@@ -50194,7 +50194,7 @@ async (...args) =>
 
       styles:[{
 width: 130,
-height: 130',
+height: 130,
 borderTopRightRadius: 10,
 borderTopLeftRadius: 10,
 }],
