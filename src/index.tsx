@@ -49472,11 +49472,11 @@ flexDirection: 'row',
       elementsProperties:[{}],
 
       styles:[{
-width: '100px',
-height: '100px',
+width: 120,
+height: 140,
 }],
 
-      URIvariablePath:[`https://m.media-amazon.com/images/I/514n0rnHIgL._AC_SY300_SX300_QL70_ML2_.jpg`],
+      URIvariablePath:[`https://ibb.co/LXvwxNm7`],
 
       args,
     }}/>, 
