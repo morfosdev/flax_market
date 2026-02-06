@@ -49206,6 +49206,9 @@ flexDirection: 'row',
   justifyContent: "space-between",
   width: "100%",
   flexDirection: 'row',
+	backgroundColor: 'white',
+	padding: 20,
+	borderRadius: 10,
 }
 `],
 
@@ -50163,11 +50166,11 @@ horizontal:true,
             elementsProperties:['{}'],
 
             styles:[`{
-  width: "30%",
-  backgroundColor: '#FFF',
-  padding: 20,
-  alignItems: 'center',
-  justifyContent: 'center',
+borderWidth: 1,
+backgroundColor: '#fff',
+borderRadius: 10,
+borderColor: '#ededed',
+height: 140,
 }`],
 
             functions:[async (...args) =>
@@ -50193,18 +50196,34 @@ async (...args) =>
       styles:[{
 width: '100px',
 height: '100px',
+borderTopRightRadius: 10,
+borderTopLeftRadius: 10,
 }],
 
       URIvariablePath:[`$arg_image`],
 
       args,
-    }}/>, (...args:any) => <Elements.Text pass={{
+    }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+padding: 20,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: 'black',
+fontSize: 14,
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
           ],
 
           children: [
@@ -50217,6 +50236,10 @@ height: '100px',
 
             args,
           }}/>
+        ],
+
+            args,
+          }}/>
         
           ],
 
@@ -50226,6 +50249,9 @@ height: '100px',
   justifyContent: "space-between",
   width: "100%",
   flexDirection: 'row',
+	backgroundColor: 'white',
+	padding: 20,
+	borderRadius: 10,
 }
 `],    args,
         }}/>],
