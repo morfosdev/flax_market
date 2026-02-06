@@ -49460,7 +49460,7 @@ borderRadius: 10,
           arrStyles: [
             `{
 fontFamily: 'Inter',
-fontSize: 24,
+fontSize: 20,
 fontWeight: 'bold',
 }`
           ],
@@ -50209,6 +50209,26 @@ horizontal:true,
 
           itemElements: [
             
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontFamily: 'Inter',
+fontSize: 20,
+fontWeight: 'bold',
+}`
+          ],
+
+          children: [
+            `Destaques`
+          ],
+
+          args,
+
+        }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
