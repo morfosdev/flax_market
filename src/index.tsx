@@ -48557,48 +48557,6 @@ zIndex: 1,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }})]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Categories`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
  arrFunctions: [
 () => {
   // 1. Pega a lista completa
@@ -50104,48 +50062,6 @@ zIndex: 1,
  arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }})]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Categories`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -54066,48 +53982,6 @@ zIndex: 1,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }})]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Categories`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
  arrFunctions: [
 () => {
   // 1. Pega a lista completa
@@ -55550,48 +55424,6 @@ zIndex: 1,
  arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }})]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Categories`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
         
 
           (...args:any) => <Elements.DynView pass={{
