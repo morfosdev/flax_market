@@ -49463,6 +49463,7 @@ padding: 15,
 borderWidth: 1,
 borderRadius: 8,
 borderColor: "#ededed",
+width: 220,
 }`],
 
             functions:[()=>{}],            childrenItems:[
