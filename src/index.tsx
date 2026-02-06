@@ -49818,7 +49818,7 @@ height: 140,
 alignSelf: 'center',
 }],
 
-      URIvariablePath:[`https://cdn.awsli.com.br/954/954868/produto/68626025/5d150286dc.jpg`],
+      URIvariablePath:[`https://blog.espacotenis.com.br/wp-content/uploads/2022/09/tenis-adidas-swift-run-22-black-white-grefiv.webp`],
 
       args,
     }}/>, 
