@@ -50170,7 +50170,6 @@ borderWidth: 1,
 backgroundColor: '#fff',
 borderRadius: 10,
 borderColor: '#ededed',
-height: 140,
 }`],
 
             functions:[async (...args) =>
@@ -50194,8 +50193,8 @@ async (...args) =>
       elementsProperties:[{}],
 
       styles:[{
-width: '100px',
-height: '100px',
+width: 130,
+height: 130',
 borderTopRightRadius: 10,
 borderTopLeftRadius: 10,
 }],
@@ -50209,7 +50208,8 @@ borderTopLeftRadius: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-padding: 20,
+padding: 10,
+height: 37,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
