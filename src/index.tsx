@@ -49901,7 +49901,7 @@ fontFamily: 'Inter',
             styles:[`{
 height: 1,
 backgroundColor: '#606060',
-width: 57,
+width: 70,
 bottom: 8,
 }`],
 
