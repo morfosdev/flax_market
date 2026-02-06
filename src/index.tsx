@@ -49813,7 +49813,7 @@ width: 220,
       elementsProperties:[{}],
 
       styles:[{
-width: 190,
+width: 140,
 height: 140,
 alignSelf: 'center',
 }],
