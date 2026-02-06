@@ -49514,7 +49514,12 @@ height: 15,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: 'black',
+fontSize: 14,
+fontWeight: 'bold',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -49530,7 +49535,12 @@ height: 15,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#606060',
+fontSize: 12,
+fontWeight: '400',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -49546,8 +49556,9 @@ height: 15,
 
             styles:[`{
 height: 1,
-backgroundColor: 'black',
-width: 20,
+backgroundColor: '#606060',
+width: 57,
+bottom: 8,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
