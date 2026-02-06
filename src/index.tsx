@@ -49422,9 +49422,7 @@ height: 145,
 
             styles:[`{
 width: '100%',
-//height: '100%',
-//flexDirection: 'row',
-backgroundColor: '000',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -49433,7 +49431,6 @@ backgroundColor: '000',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '90%%',
 alignItems: 'center',
 padding: 20,
 }`],
