@@ -49649,7 +49649,7 @@ height: 140,
 alignSelf: 'center',
 }],
 
-      URIvariablePath:[`https://images.tcdn.com.br/img/img_prod/311840/tenis_adidas_runfalcon_5_feminino_preto_e_branco_137089_1_1779264aa08965405d0909b6fb43ec8a.jpg`],
+      URIvariablePath:[`https://blog.espacotenis.com.br/wp-content/uploads/2022/09/tenis-adidas-swift-run-22-black-white-grefiv.webp`],
 
       args,
     }}/>, 
@@ -49818,7 +49818,7 @@ height: 140,
 alignSelf: 'center',
 }],
 
-      URIvariablePath:[`https://blog.espacotenis.com.br/wp-content/uploads/2022/09/tenis-adidas-swift-run-22-black-white-grefiv.webp`],
+      URIvariablePath:[`https://cdn.awsli.com.br/954/954868/produto/68626025/5d150286dc.jpg`],
 
       args,
     }}/>, 
