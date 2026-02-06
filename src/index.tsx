@@ -49448,8 +49448,38 @@ padding: 20,
 backgroundColor: 'white',
 width: '100%',
 padding: 20,
-flexDirection: 'row',
 borderRadius: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontFamily: 'Inter',
+fontSize: 24,
+fontWeight: 'bold',
+}`
+          ],
+
+          children: [
+            `Promoções`
+          ],
+
+          args,
+
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+backgroundColor: 'white',
+width: '100%',
+flexDirection: 'row',
 justifyContent: 'space-around',
 }`],
 
@@ -49951,6 +49981,10 @@ fontWeight: '500',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
