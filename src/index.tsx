@@ -49474,6 +49474,7 @@ borderColor: "#ededed",
       styles:[{
 width: 120,
 height: 140,
+alignSelf: 'center',
 }],
 
       URIvariablePath:[`https://m.media-amazon.com/images/I/514n0rnHIgL._AC_SY300_SX300_QL70_ML2_.jpg`],
@@ -49500,6 +49501,7 @@ height: 15,
 
             styles:[`{
 flexDirection: 'row',
+justifyContent: 'space-between',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -49508,14 +49510,8 @@ flexDirection: 'row',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+}`],
 
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
@@ -49584,14 +49580,14 @@ bottom: 8,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+backgroundColor: '#f13d44',
+justifyContent: 'center',
+alignItems: 'center',
+borderRadius: 6,
+height: 22,
+width: 60,
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -49599,7 +49595,12 @@ bottom: 8,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: 'white',
+fontSize: 12,
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
           ],
 
           children: [
