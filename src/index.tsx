@@ -49869,7 +49869,7 @@ fontFamily: 'Inter',
           ],
 
           children: [
-            `R$ 199,99`
+            `R$ 2.699,99`
           ],
 
           args,
@@ -49890,7 +49890,7 @@ fontFamily: 'Inter',
           ],
 
           children: [
-            `R$ 219,99`
+            `R$ 2.999,99`
           ],
 
           args,
