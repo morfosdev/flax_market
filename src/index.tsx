@@ -49449,6 +49449,7 @@ backgroundColor: 'white',
 width: '100%',
 padding: 20,
 flexDirection: 'row',
+borderRadius: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -49458,11 +49459,10 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-  width: "30%",
-  backgroundColor: '#FFF',
-  padding: 20,
-  alignItems: 'center',
-  justifyContent: 'center',
+padding: 15,
+borderWidth: 1,
+borderRadius: 8,
+borderColor: "#ededed",
 }`],
 
             functions:[()=>{}],            childrenItems:[
