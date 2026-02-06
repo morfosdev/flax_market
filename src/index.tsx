@@ -50198,17 +50198,23 @@ height: 10,
 
             args,
           }}/>
-        , (...args:any) => <Elements.FlatList2 pass={{
-          elementProperties: [
-            `{
-horizontal:true,
-}`
-          ],
+        , 
 
-          pData: `sc.c1.list`,
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
 
-          itemElements: [
-            
+            styles:[`{
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "space-between",
+  width: "100%",
+	backgroundColor: 'white',
+	padding: 20,
+	borderRadius: 10,
+}
+`],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -50228,7 +50234,17 @@ fontWeight: 'bold',
 
           args,
 
-        }}/>, 
+        }}/>, (...args:any) => <Elements.FlatList2 pass={{
+          elementProperties: [
+            `{
+horizontal:true,
+}`
+          ],
+
+          pData: `sc.c1.list`,
+
+          itemElements: [
+            
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -50337,6 +50353,10 @@ width: 20,
 }
 `],    args,
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
