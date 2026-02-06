@@ -49450,6 +49450,7 @@ width: '100%',
 padding: 20,
 flexDirection: 'row',
 borderRadius: 10,
+justifyContent: 'space-between',
 }`],
 
             functions:[()=>{}],            childrenItems:[
