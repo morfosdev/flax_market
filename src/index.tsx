@@ -49793,33 +49793,44 @@ fontWeight: '500',
             args,
           }}/>
         , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+padding: 15,
+borderWidth: 1,
+borderRadius: 8,
+borderColor: "#ededed",
+width: 220,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: 120,
+height: 140,
+alignSelf: 'center',
+}],
+
+      URIvariablePath:[`https://cdn.awsli.com.br/954/954868/produto/68626025/5d150286dc.jpg`],
+
+      args,
+    }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
             styles:[`{
-  width: "30%",
-  backgroundColor: '#FFF',
-  padding: 20,
-  alignItems: 'center',
-  justifyContent: 'center',
+height: 15,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{
-width: '100px',
-height: '100px',
-}],
-
-      URIvariablePath:[`https://images.tcdn.com.br/img/img_prod/311840/tenis_adidas_runfalcon_5_feminino_preto_e_branco_137089_1_1779264aa08965405d0909b6fb43ec8a.jpg`],
-
-      args,
-    }}/>],
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
@@ -49829,27 +49840,124 @@ height: '100px',
             elementsProperties:['{}'],
 
             styles:[`{
-  width: "30%",
-  backgroundColor: '#FFF',
-  padding: 20,
-  alignItems: 'center',
-  justifyContent: 'center',
+flexDirection: 'row',
+justifyContent: 'space-between',
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
 
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
 
-      styles:[{
-width: '150px',
-height: '150px',
-}],
+            styles:[`{
+}`],
 
-      URIvariablePath:[`https://cdn.awsli.com.br/954/954868/produto/68626025/5d150286dc.jpg`],
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
 
-      args,
-    }}/>],
+          arrStyles: [
+            `{
+color: 'black',
+fontSize: 14,
+fontWeight: 'bold',
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `R$ 199,99`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#606060',
+fontSize: 12,
+fontWeight: '400',
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `R$ 219,99`
+          ],
+
+          args,
+
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: 1,
+backgroundColor: '#606060',
+width: 57,
+bottom: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+backgroundColor: '#f13d44',
+justifyContent: 'center',
+alignItems: 'center',
+borderRadius: 6,
+height: 22,
+width: 60,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: 'white',
+fontSize: 12,
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `10% OFF`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
