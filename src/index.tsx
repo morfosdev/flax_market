@@ -49445,13 +49445,11 @@ padding: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-  display: "flex",
-  flexWrap: "wrap",
-  justifyContent: "space-between",
-  width: "100%",
-  flexDirection: 'row',
-}
-`],
+backgroundColor: 'white',
+width: '100%',
+padding: 20,
+flexDirection: 'row',
+}`],
 
             functions:[()=>{}],            childrenItems:[
         
@@ -49468,6 +49466,7 @@ padding: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
@@ -49480,7 +49479,72 @@ height: '100px',
       URIvariablePath:[`https://m.media-amazon.com/images/I/514n0rnHIgL._AC_SY300_SX300_QL70_ML2_.jpg`],
 
       args,
-    }}/>],
+    }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `R$ 199,99`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `R$ 219,99`
+          ],
+
+          args,
+
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: 1,
+backgroundColor: 'black',
+width: 20,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
