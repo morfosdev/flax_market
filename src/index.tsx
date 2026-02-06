@@ -49644,7 +49644,7 @@ width: 220,
       elementsProperties:[{}],
 
       styles:[{
-width: 120,
+width: 140,
 height: 140,
 alignSelf: 'center',
 }],
