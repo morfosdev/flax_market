@@ -48538,6 +48538,7 @@ fontWeight: '500',
 position: 'absolute',
 top: 30,
 left: 11,
+zIndex: 1,
 }`],
 
             functions:[async (...args) =>
@@ -48550,14 +48551,9 @@ left: 11,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -48638,14 +48634,9 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -50063,6 +50054,7 @@ fontWeight: '500',
 position: 'absolute',
 top: 30,
 left: 11,
+zIndex: 1,
 }`],
 
             functions:[async (...args) =>
@@ -50075,14 +50067,9 @@ left: 11,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -50163,14 +50150,9 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -53981,6 +53963,7 @@ fontWeight: '500',
 position: 'absolute',
 top: 30,
 left: 11,
+zIndex: 1,
 }`],
 
             functions:[async (...args) =>
@@ -53993,14 +53976,9 @@ left: 11,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -54081,14 +54059,9 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -55443,6 +55416,7 @@ fontWeight: '500',
 position: 'absolute',
 top: 30,
 left: 11,
+zIndex: 1,
 }`],
 
             functions:[async (...args) =>
@@ -55455,14 +55429,9 @@ left: 11,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -55543,14 +55512,9 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
