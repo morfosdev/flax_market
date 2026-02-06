@@ -50185,6 +50185,7 @@ async (...args) =>
         ]
  , trigger: 'on press'
 }})],            childrenItems:[
+        
 
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
@@ -50197,7 +50198,22 @@ height: '100px',
       URIvariablePath:[`$arg_image`],
 
       args,
-    }}/>],
+    }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `$arg_price`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
