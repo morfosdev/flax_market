@@ -56657,9 +56657,8 @@ marginRight: 26,
             styles:[`{
 height: '100%',
 backgroundColor: '#eee',
-//paddingLeft: 20,
-//flex: 1,
-width: '100%',
+paddingLeft: 20,
+flex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
