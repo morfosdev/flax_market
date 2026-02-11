@@ -57105,6 +57105,31 @@ height: '48px',
 flex: 1,
 }`],
 
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `Order Summary`
+          ],
+
+          args,
+
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -57115,12 +57140,16 @@ flex: 1,
           ],
 
           children: [
-            `AAA`
+            `Subtotal:`
           ],
 
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
