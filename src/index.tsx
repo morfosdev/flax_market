@@ -56976,7 +56976,21 @@ borderRadius: 10,
           pData: `[1]`,
 
           itemElements: [
-            (...args:any) => <Elements.Text pass={{
+            
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -56986,22 +57000,19 @@ borderRadius: 10,
           ],
 
           children: [
-            `AAA`
+            `A`
           ],
 
           args,
 
-        }}/>
+        }}/>],
+
+            args,
+          }}/>
+        
           ],
 
-      styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],    args,
+      styles:[``],    args,
         }}/>],
 
             args,
