@@ -57246,15 +57246,12 @@ flexDirection: 'row',
       return 0;
     }
 
-    // Limpa a string do preço
     const cleaned = p
-      .replace("R$", "")
-		// remove pontos (milhar)
-		.replace(/./g, "")
-        // remove "R$"
-      .replace(/s+/g, "")      // remove espaços
-      .replace(",", ".")        // transforma vírgula em ponto
-      .trim();
+    .replace("R$", "")
+    .replace(/./g, "")             // remove pontos de milhar
+    .replace(/[s ]+/g, "")   // remove espaços normais e não quebráveis
+    .replace(",", ".")             // vírgula → ponto
+    .trim();
 
 
 
