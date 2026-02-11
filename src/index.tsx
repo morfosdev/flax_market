@@ -57248,10 +57248,15 @@ flexDirection: 'row',
 
     // Limpa a string do preço
     const cleaned = p
-      .replace("R$", "")        // remove "R$"
+      .replace("R$", "")
+		// remove pontos (milhar)
+		.replace(/./g, "")
+        // remove "R$"
       .replace(/s+/g, "")      // remove espaços
       .replace(",", ".")        // transforma vírgula em ponto
       .trim();
+
+
 
     const num = Number(cleaned);
 
