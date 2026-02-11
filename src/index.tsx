@@ -57221,7 +57221,40 @@ flexDirection: 'row',
 flexDirection: 'row',
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const cart = tools.getCtData("sc.C4.forms.iptsChanges.products") || [];
+
+  const parsePrice = (p) => {
+    if (!p) return 0;
+
+    return Number(
+      p.replace("R$", "").replace(/./g, "").replace(",", ".").trim()
+    );
+  };
+
+  const total = cart.reduce((sum, item) => sum + parsePrice(item.price), 0);
+
+  const formatted = total.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C4.forms.iptsChanges.totalPrice"],
+      value: formatted,
+    },
+  });
+
+  console.log("💰 Total salvo (formatado):", formatted);
+
+  return formatted;
+}]
+ , trigger: 'on init'
+}})],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
