@@ -29972,7 +29972,7 @@ fontSize: '14px',
             {}
           ],
 
-          pData: `[0, 1, 2]`,
+          pData: `sc.C4.forms.iptsChanges.products`,
 
           itemElements: [
             
@@ -56973,7 +56973,7 @@ borderRadius: 10,
             {}
           ],
 
-          pData: '',
+          pData: `sc.C4.forms.iptsChanges.products`,
 
           itemElements: [
             
