@@ -57224,32 +57224,60 @@ flexDirection: 'row',
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  const cart = tools.getCtData("sc.C4.forms.iptsChanges.products") || [];
+  const cart = tools.getCtData("sc.C4.forms.iptsChanges.products");
 
-  function parsePrice(p) {
-    if (!p || typeof p !== "string") return 0;
+  console.log("🛒 Carrinho recebido:", cart);
+
+  if (!Array.isArray(cart)) {
+    console.log("ERRO: cart não é array");
+    return "ERROR";
+  }
+
+  if (cart.length === 0) {
+    console.log("Carrinho vazio");
+    return "R$ 0,00";
+  }
+
+  const parsePrice = (p) => {
+    console.log("Lendo price bruto:", p);
+
+    if (!p || typeof p !== "string") {
+      console.log("price inválido:", p);
+      return 0;
+    }
+
     const cleaned = p
       .replace("R$", "")
       .replace(/s+/g, "")
       .replace(/./g, "")
       .replace(",", ".")
       .trim();
+
     const num = Number(cleaned);
+
+    console.log("price limpo: " + cleaned + " | Número: " + num);
+
     return isNaN(num) ? 0 : num;
-  }
+  };
 
   let total = 0;
 
-  for (let i = 0; i < cart.length; i++) {
-    const item = cart[i];
+  cart.forEach((item, index) => {
+    console.log("Item " + index + ": ", item);
+
     const price = parsePrice(item.price);
+
+    console.log("Preço convertido do item " + index + ": " + price);
+
     total += price;
-  }
+  });
 
   const formatted = total.toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
   });
+
+  console.log("TOTAL CALCULADO: " + total + " | Formatado: " + formatted);
 
   tools.functions.setVar({
     args: "",
@@ -57260,7 +57288,8 @@ flexDirection: 'row',
   });
 
   return formatted;
-}]
+}
+]
  , trigger: 'on init'
 }})],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
