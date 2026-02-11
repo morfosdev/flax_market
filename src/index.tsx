@@ -57069,14 +57069,9 @@ height: '48px',
         
           ],
 
-      styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],    args,
+      styles:[`{
+width: '30%',
+}`],    args,
         }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
