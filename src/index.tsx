@@ -57255,7 +57255,7 @@ flexDirection: 'row',
     args: "",
     pass: {
       keyPath: ["sc.C4.forms.iptsChanges.totalPrice"],
-      value: formatted,
+      value: [formatted],
     },
   });
 
