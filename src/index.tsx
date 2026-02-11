@@ -57316,7 +57316,7 @@ flexDirection: 'row',
           ],
 
           children: [
-            ` $ 93.00`
+            `$var_sc.C4.forms.iptsChanges.totalPrice`
           ],
 
           args,
