@@ -56973,7 +56973,7 @@ borderRadius: 10,
             {}
           ],
 
-          pData: `[1]`,
+          pData: `sc.C4.forms.iptsChanges.products`,
 
           itemElements: [
             
