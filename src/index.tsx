@@ -56938,7 +56938,16 @@ flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.FlatList2 pass={{
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '40%',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
             {}
           ],
@@ -57075,10 +57084,19 @@ height: '48px',
         
           ],
 
-      styles:[`{
-width: '30%',
-}`],    args,
-        }}/>, 
+      styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],    args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
