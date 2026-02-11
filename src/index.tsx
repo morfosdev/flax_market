@@ -57246,14 +57246,12 @@ flexDirection: 'row',
       return 0;
     }
 
+    // Limpa a string do preço
     const cleaned = p
-    .replace("R$", "")
-    .replace(/./g, "")             // remove pontos de milhar
-    .replace(/[s ]+/g, "")   // remove espaços normais e não quebráveis
-    .replace(",", ".")             // vírgula → ponto
-    .trim();
-
-
+      .replace("R$", "")        // remove "R$"
+      .replace(/s+/g, "")      // remove espaços
+      .replace(",", ".")        // transforma vírgula em ponto
+      .trim();
 
     const num = Number(cleaned);
 
@@ -57290,7 +57288,8 @@ flexDirection: 'row',
   });
 
   return formatted;
-}]
+}
+]
  , trigger: 'on init'
 }})],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
