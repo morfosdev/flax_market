@@ -287,8 +287,8 @@
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -2425,8 +2425,8 @@ fontSize: 14,
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -3221,8 +3221,8 @@ fontSize: 14,
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -5269,8 +5269,8 @@ height: '30px',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -7847,8 +7847,8 @@ alignItems: 'center',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -9112,8 +9112,8 @@ height: '30px',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -11652,8 +11652,8 @@ async (...args) =>
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -14348,8 +14348,8 @@ async (...args) =>
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -16378,8 +16378,8 @@ color: '#FFF',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -18674,8 +18674,8 @@ justifyContent: 'center',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -20262,8 +20262,8 @@ fontSize: '14px',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -21898,8 +21898,8 @@ fontSize: '14px',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -23984,8 +23984,8 @@ justifyContent: 'center',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -26026,8 +26026,8 @@ justifyContent: 'center',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -27367,8 +27367,8 @@ fontSize: '14px',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -28690,8 +28690,8 @@ fontSize: '14px',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -30423,8 +30423,8 @@ height: '30px',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -33072,8 +33072,8 @@ alignItems: 'center',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -35439,8 +35439,8 @@ async (...args) =>
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -38007,8 +38007,8 @@ async (...args) =>
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -40270,8 +40270,8 @@ async (...args) =>
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -42539,8 +42539,8 @@ justifyContent: 'center',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -44320,8 +44320,8 @@ async (...args) =>
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -46055,8 +46055,8 @@ height: '10px',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -48319,8 +48319,8 @@ justifyContent: 'center',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -50396,8 +50396,8 @@ width: 20,
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[(...args:any) => <Elements.ScrollBar pass={{
             styles: [],
@@ -54308,8 +54308,8 @@ height: 20,
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -55764,8 +55764,8 @@ flexDirection: 'row',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
@@ -56634,7 +56634,10 @@ flexDirection: 'row',
             args,
           }}/>
         , (...args:any) => <Elements.ScrollBar pass={{
-            styles: [],
+            styles: [`{ 
+width: '100%',
+height: '100%',
+}`],
             arrProps: [],
             arrItems: [
 
@@ -57644,8 +57647,8 @@ height: '652px',
           styles:[`{ 
 width: '100%',
 height: '100%',
-backgroundColor: '#eee', 
- }`],
+backgroundColor: '#eee',
+}`],
 
           screenElements:[
 
