@@ -28694,6 +28694,7 @@ backgroundColor: '#eee',
  }`],
 
           screenElements:[
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -29966,7 +29967,55 @@ fontSize: '14px',
 
             args,
           }}/>
-        ],
+        , (...args:any) => <Elements.FlatList2 pass={{
+          elementProperties: [
+            {}
+          ],
+
+          pData: `[0, 1, 2]`,
+
+          itemElements: [
+            
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `AAAAAAA`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        
+          ],
+
+      styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],    args,
+        }}/>],
 
           functions:[()=>{}],
 
@@ -56903,8 +56952,7 @@ padding: 20,
 borderRadius: 10,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -56919,54 +56967,6 @@ borderRadius: 10,
 
           args,
 
-        }}/>, (...args:any) => <Elements.FlatList2 pass={{
-          elementProperties: [
-            {}
-          ],
-
-          pData: `[0, 1, 2]`,
-
-          itemElements: [
-            
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: '100%',
-flexDirection: 'row',
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `AAAAAAA`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        
-          ],
-
-      styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],    args,
         }}/>],
 
             args,
