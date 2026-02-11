@@ -55427,6 +55427,7 @@ async (...args) =>
         , (...args:any) => <Elements.ScrollBar pass={{
             styles: [`{
 height: '100%',
+width: '100%',
 }`],
             arrProps: [],
             arrItems: [
@@ -56882,6 +56883,7 @@ async (...args) =>
         , (...args:any) => <Elements.ScrollBar pass={{
             styles: [`{
 height: '100%',
+width: '100%',
 }`],
             arrProps: [],
             arrItems: [
