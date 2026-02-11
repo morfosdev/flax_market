@@ -57226,15 +57226,25 @@ flexDirection: 'row',
  arrFunctions: [() => {
   const cart = tools.getCtData("sc.C4.forms.iptsChanges.products") || [];
 
-  const parsePrice = (p) => {
-    if (!p) return 0;
+  function parsePrice(p) {
+    if (!p || typeof p !== "string") return 0;
+    const cleaned = p
+      .replace("R$", "")
+      .replace(/s+/g, "")
+      .replace(/./g, "")
+      .replace(",", ".")
+      .trim();
+    const num = Number(cleaned);
+    return isNaN(num) ? 0 : num;
+  }
 
-    return Number(
-      p.replace("R$", "").replace(/./g, "").replace(",", ".").trim()
-    );
-  };
+  let total = 0;
 
-  const total = cart.reduce((sum, item) => sum + parsePrice(item.price), 0);
+  for (let i = 0; i < cart.length; i++) {
+    const item = cart[i];
+    const price = parsePrice(item.price);
+    total += price;
+  }
 
   const formatted = total.toLocaleString("pt-BR", {
     style: "currency",
@@ -57245,11 +57255,9 @@ flexDirection: 'row',
     args: "",
     pass: {
       keyPath: ["sc.C4.forms.iptsChanges.totalPrice"],
-      value: [formatted],
+      value: formatted,
     },
   });
-
-  console.log("💰 Total salvo (formatado):", formatted);
 
   return formatted;
 }]
