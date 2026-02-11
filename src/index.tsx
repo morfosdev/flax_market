@@ -56897,7 +56897,6 @@ width: '100%',
             styles:[`{
 width: '100%',
 alignItems: 'center',
-backgroundColor: 'red',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -56909,6 +56908,7 @@ backgroundColor: 'red',
 backgroundColor: 'white',
 padding: 20,
 borderRadius: 10,
+width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
