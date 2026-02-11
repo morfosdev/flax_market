@@ -56893,7 +56893,7 @@ width: '100%',
 
             styles:[`{
 //width: '100%',
-flex: '1',
+flex: '1px',
 alignItems: 'center',
 }`],
 
