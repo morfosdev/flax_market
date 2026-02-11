@@ -57288,8 +57288,7 @@ flexDirection: 'row',
   });
 
   return formatted;
-}
-]
+}]
  , trigger: 'on init'
 }})],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
