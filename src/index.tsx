@@ -55619,20 +55619,25 @@ height: 20,
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  // 1. Pega o produto
+  // Pega o produto atual
   const product = tools.getCtData("sc.C2.forms.iptsChanges");
   if (!product) {
-    console.log("Nenhum produto encontrado em sc.C2.forms.iptsChanges");
+    console.log("Nenhum produto encontrado");
     return;
   }
 
-  // 2. Pega a lista atual do carrinho (array)
-  const currentCart = tools.getCtData("sc.C4.forms.iptsChanges.products") || [];
+  // Pega o valor atual do carrinho
+  let currentCart = tools.getCtData("sc.C4.forms.iptsChanges.products") || [];
 
-  // 3. Cria uma nova lista com o item adicionado
+  // Garantir que SEMPRE seja array
+  if (!Array.isArray(currentCart)) {
+    currentCart = [currentCart];
+  }
+
+  // Novo carrinho
   const updatedCart = [...currentCart, product];
 
-  // 4. Salva no state do carrinho
+  // Salvar no state
   tools.functions.setVar({
     args: "",
     pass: {
@@ -55644,9 +55649,10 @@ height: 20,
   console.log("🛒 Produto adicionado ao carrinho:", product);
   console.log("📦 Carrinho atualizado:", updatedCart);
 
-  // 5. Navega para a tela do carrinho
+  // Navegar
   tools.goTo("c4cart");
-}]
+}
+]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
