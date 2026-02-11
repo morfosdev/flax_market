@@ -57212,6 +57212,7 @@ flexDirection: 'row',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -57247,6 +57248,32 @@ flexDirection: 'row',
 
           children: [
             ` $ 93.00`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{backgroundColor: 'black',}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{color: 'white',}`
+          ],
+
+          children: [
+            `Checkout`
           ],
 
           args,
