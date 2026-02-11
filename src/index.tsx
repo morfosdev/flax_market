@@ -55570,40 +55570,36 @@ height: 20,
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
-  // Pega o produto atual
+  // 1. Pega o produto
   const product = tools.getCtData("sc.C2.forms.iptsChanges");
-  if (!product) {
-    console.log("Nenhum produto encontrado");
-    return;
-  }
+  if (!product) return;
 
-  // Pega o valor atual do carrinho
+  // 2. Pega o carrinho atual
   let currentCart = tools.getCtData("sc.C4.forms.iptsChanges.products") || [];
 
-  // Garantir que SEMPRE seja array
+  // Se for objeto ao invés de array, corrigir
   if (!Array.isArray(currentCart)) {
     currentCart = [currentCart];
   }
 
-  // Novo carrinho
+  // 3. Atualiza o carrinho
   const updatedCart = [...currentCart, product];
 
-  // Salvar no state
+  // 4. Salva como ARRAY dentro de ARRAY (FlaxBoll exige isso)
   tools.functions.setVar({
     args: "",
     pass: {
       keyPath: ["sc.C4.forms.iptsChanges.products"],
-      value: updatedCart,
+      value: [updatedCart],  // <- formato 100% compatível com listas
     },
   });
 
   console.log("🛒 Produto adicionado ao carrinho:", product);
   console.log("📦 Carrinho atualizado:", updatedCart);
 
-  // Navegar
+  // 5. Navega para o carrinho
   tools.goTo("c4cart");
-}
-]
+}]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
