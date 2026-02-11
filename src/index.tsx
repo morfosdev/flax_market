@@ -56976,15 +56976,22 @@ borderRadius: 10,
           pData: `sc.C4.forms.iptsChanges.products`,
 
           itemElements: [
-            
-              (...args) => {
-                return (
-                  <RN.Text>
-                    Adicione os campos que quer mostrar aqui.
-                  </RN.Text>
-                );
-              }
-              
+            (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `AAA`
+          ],
+
+          args,
+
+        }}/>
           ],
 
       styles:[
