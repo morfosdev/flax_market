@@ -56930,6 +56930,22 @@ borderRadius: 10,
 
           itemElements: [
             
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  height: 1,
+  width: '100%',
+  backgroundColor: '#dfdfe1',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -56939,22 +56955,31 @@ width: '100%',
 flexDirection: 'row',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+            functions:[()=>{}],            childrenItems:[
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
 
-          children: [
-            `AAAAAAA`
-          ],
+            styles:[`{ width: '70px', }`],
 
-          args,
+            functions:[()=>{}],            childrenItems:[
 
-        }}/>],
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '48px',
+height: '48px',
+}],
+
+      URIvariablePath:[`$arg_image`],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
