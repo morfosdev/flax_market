@@ -56584,6 +56584,8 @@ backgroundColor: '#0E1422',
 borderRadius: 4,
 paddingHorizontal: 24,
 paddingVertical: 12,
+alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
