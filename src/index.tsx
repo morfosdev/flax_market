@@ -58267,7 +58267,7 @@ height: '48px',
 borderWidth: 1,
 borderColor: '#E6E7E8',
 borderRadius: 4,
-paddingVertical: 40,
+paddingVertical: 22,
 paddingHorizontal: 20,
 }`],
 
