@@ -55200,7 +55200,7 @@ marginRight: 26,
 
             styles:[`{
 height: '100%',
-backgroundColor: '#eee',
+backgroundColor: '#fff',
 paddingLeft: 20,
 flex: 1,
 }`],
