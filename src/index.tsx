@@ -58314,6 +58314,7 @@ height: 20,
 
             styles:[`{
 flexDirection: 'row',
+justifyContent: 'space-between',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58383,6 +58384,7 @@ height: '10px',
 
             styles:[`{
 flexDirection: 'row',
+justifyContent: 'space-between',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58482,6 +58484,7 @@ height: 20,
 
             styles:[`{
 flexDirection: 'row',
+justifyContent: 'space-between',
 }`],
 
             functions:[async (...args) =>
