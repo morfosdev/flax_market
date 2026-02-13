@@ -55580,6 +55580,27 @@ fontFamily: 'Inter',
               ],
 
             functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#5C5F6A',
+fontWeight: '500',
+fontSize: 12,
+fontFamily: 'Inter,
+}`
+          ],
+
+          children: [
+            `Available Colors`
+          ],
+
+          args,
+
+        }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
