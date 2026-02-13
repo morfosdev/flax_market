@@ -55431,6 +55431,7 @@ width: '100%',
 }`],
             arrProps: [],
             arrItems: [
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -56753,6 +56754,110 @@ flexDirection: 'row',
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#0E1422',
+fontWeight: 'bold',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Detail`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#5C5F6A',
+fontWeight: '400',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Elevate your everyday style with our Men's Black T-Shirts, the ultimate wardrobe essential for modern men. Crafted with meticulous attention to detail and designed for comfort, these versatile black tees are a must-have addition to your collection.`
+          ],
+
+          args,
+
+        }}/>, 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#5C5F6A',
+fontWeight: '400',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `The classic black color never goes out of style. Whether you're dressing up for a special occasion or keeping it casual, these black t-shirts are the perfect choice, effortlessly complementing any outfit.`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#5C5F6A',
+fontWeight: '400',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `• Premium Quality
+• Versatile Wardrobe Staple
+• Available in Various Sizes
+• Tailored Fit`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
