@@ -55448,8 +55448,9 @@ flexDirection: 'row',
 
             styles:[`{
 backgroundColor: '#f6f6f6',
-padding: 40,
+padding: 80,
 borderRadius: 4,
+justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -55458,8 +55459,8 @@ borderRadius: 4,
       elementsProperties:[{}],
 
       styles:[{
-width: '150px',
-height: '150px',
+width: 200,
+height: 200,
 borderRadius: 6,
 shadowColor: '#000',
   overflow: "hidden",
