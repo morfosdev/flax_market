@@ -55590,7 +55590,7 @@ fontFamily: 'Inter',
 color: '#5C5F6A',
 fontWeight: '500',
 fontSize: 12,
-fontFamily: 'Inter,
+fontFamily: 'Inter',
 }`
           ],
 
