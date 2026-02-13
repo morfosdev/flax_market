@@ -55444,6 +55444,20 @@ flexDirection: 'row',
             functions:[()=>{}],            childrenItems:[
         
 
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
+
     (...args:any) => <Elements.ImageBox pass={{
       elementsProperties:[{}],
 
@@ -55464,7 +55478,11 @@ shadowColor: '#000',
       URIvariablePath:[`sc.C2.forms.iptsChanges.image`],
 
       args,
-    }}/>, 
+    }}/>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -55491,16 +55509,6 @@ async (...args) =>
  , trigger: 'on press'
 }})],            childrenItems:[
         
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-padding: 20,
-flexDirection: 'row',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -55623,10 +55631,6 @@ height: 20,
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
