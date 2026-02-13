@@ -1,1 +1,1 @@
-{"1770985718050":{"actionType":"saveAll","createdAt":"1770985718050","actionID":"1770985718050","userID":"#TEMP","path":"system.capsules.6d8ccf1b-2f9d-4312-8d15-13fe6459b907.capsUseCodeInfo.capsUseDescription.en","oldValue":"","newValue":"{\n\n}"}}
+{"1770986197319":{"actionType":"saveAll","createdAt":"1770986197319","actionID":"1770986197319","userID":"#TEMP","path":"system.capsules.6d8ccf1b-2f9d-4312-8d15-13fe6459b907.capsUseCodeInfo.capsUseDescription.en","oldValue":"{\n\n}","newValue":"{\nbackgroundColor: '#f6f6f6',\npadding: 40,\nborderRadius: 4,\n}"}}

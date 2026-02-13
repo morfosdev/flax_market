@@ -55448,7 +55448,9 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-
+backgroundColor: '#f6f6f6',
+padding: 40,
+borderRadius: 4,
 }`],
 
             functions:[()=>{}],            childrenItems:[
