@@ -58621,7 +58621,12 @@ height: 20,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{backgroundColor: 'black',}`],
+            styles:[`{
+backgroundColor: '#0E1422',
+paddingHorizontal: 75,
+paddingVertical: 8,
+borderRadius: 5,
+}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
@@ -58629,7 +58634,12 @@ height: 20,
           ],
 
           arrStyles: [
-            `{color: 'white',}`
+            `{
+color: 'white',
+fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
