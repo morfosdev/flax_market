@@ -55441,6 +55441,29 @@ alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: '150px',
+height: '150px',
+borderRadius: 6,
+shadowColor: '#000',
+  overflow: "hidden",
+  shadowOffset: { 
+     width: 0,
+     height: 2
+  },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+}],
+
+      URIvariablePath:[`sc.C2.forms.iptsChanges.image`],
+
+      args,
+    }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
