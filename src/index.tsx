@@ -55216,6 +55216,7 @@ width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
 paddingBottom: 20,
+paddingHorizontal: 75,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -55439,6 +55440,7 @@ width: '100%',
             styles:[`{
 width: '100%',
 flexDirection: 'row',
+paddingHorizontal: 75,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -56762,14 +56764,10 @@ flexDirection: 'row',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+width: '100%',
+paddingHorizontal: 75,
+}`],
 
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
@@ -57830,6 +57828,7 @@ width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
 paddingBottom: 20,
+paddingHorizontal: 75,
 }`],
 
             functions:[()=>{}],            childrenItems:[
