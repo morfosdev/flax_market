@@ -58695,7 +58695,14 @@ height: 20,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#0E1422',
+fontSize: 12,
+alignSelf: 'center',
+fontWeight: '500',
+fontFamily: 'Inter',
+textDecorationLine: 'underline',
+}`
           ],
 
           children: [
