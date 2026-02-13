@@ -58080,7 +58080,12 @@ width: '100%',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#0E1422',
+fontWeight: 'bold',
+fontSize: 16,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
