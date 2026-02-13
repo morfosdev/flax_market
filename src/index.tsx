@@ -55438,6 +55438,7 @@ width: '100%',
             styles:[`{
 width: '100%',
 alignItems: 'center',
+flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
