@@ -55448,7 +55448,7 @@ flexDirection: 'row',
 
             styles:[`{
 backgroundColor: '#f6f6f6',
-padding: 80,
+padding: 60,
 borderRadius: 4,
 justifyContent: 'center',
 }`],
