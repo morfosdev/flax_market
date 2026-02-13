@@ -56626,7 +56626,12 @@ paddingVertical: 12,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#fff',
+fontWeight: '500',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
