@@ -58264,7 +58264,11 @@ height: '48px',
             elementsProperties:['{}'],
 
             styles:[`{
-flex: 1,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+borderRadius: 4,
+paddingVertical: 40,
+paddingHorizontal: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58274,7 +58278,12 @@ flex: 1,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#0E1422',
+fontWeight: 'bold',
+fontSize: 16,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -58300,7 +58309,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#5C5F6A',
+fontWeight: '500',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -58315,7 +58329,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#0E1422',
+fontWeight: '500',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -58345,7 +58364,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#5C5F6A',
+fontWeight: '500',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -58360,7 +58384,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#0E1422',
+fontWeight: '500',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -58459,7 +58488,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#0E1422',
+fontWeight: '500',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -58474,7 +58508,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#0E1422',
+fontWeight: '500',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
