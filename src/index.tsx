@@ -55437,7 +55437,6 @@ width: '100%',
 
             styles:[`{
 width: '100%',
-alignItems: 'center',
 flexDirection: 'row',
 }`],
 
@@ -55486,8 +55485,6 @@ shadowColor: '#000',
 
             styles:[`{
 backgroundColor: 'white',
-padding: 20,
-borderRadius: 10,
 }`],
 
             functions:[async (...args) =>
