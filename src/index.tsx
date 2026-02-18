@@ -55505,21 +55505,7 @@ width: 50,
 backgroundColor: 'white',
 }`],
 
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.forms.iptsChanges`],
-          value: [`$arg_item`]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("c3ProductProfile");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[
+            functions:[()=>{}],            childrenItems:[
         
 
           (...args:any) => <Elements.DynView pass={{
