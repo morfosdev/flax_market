@@ -58686,28 +58686,34 @@ textDecorationLine: 'underline',
     return "R$ 0,00";
   }
 
-  const parsePrice = (p) => {
-    console.log("Lendo price bruto:", p);
+//========
 
-    if (!p || typeof p !== "string") {
-      console.log("price inválido:", p);
-      return 0;
-    }
+const parsePrice = (p) => { console.log("Lendo price bruto:", p); 
 
-    // Remove pontos e converte vírgula para ponto
-    const cleaned = p
-      .replace("R$", "")        // remove prefixo
-      .replace(/s+/g, "")      // remove espaços
-      .replace(/./g, "")       // remove todos os pontos (milhares)
-      .replace(",", ".")        // troca vírgula por ponto
-      .trim();
+if (!p || typeof p !== "string") { console.log("price inválido:", p); 
 
-    const num = Number(cleaned);
+return 0; } 
+let cleaned = p.replace("R$", "").replace(/s+/g, "").trim(); 
 
-    console.log("price limpo: " + cleaned + " | Número: " + num);
+// Detecta se o formato é brasileiro (tem vírgula como decimal) 
+if (cleaned.includes(",")) { 
+// Formato brasileiro 
+cleaned = cleaned.replace(/./g, ""); // remove pontos de milhar
+cleaned = cleaned.replace(",", "."); // vírgula vira ponto decimal
+ } else { 
+// Formato americano 
+cleaned = cleaned.replace(/,/g, ""); // remove vírgulas de milhar
+// ponto já é decimal, não mexe
+} 
 
-    return isNaN(num) ? 0 : num;
-  };
+const num = Number(cleaned); 
+
+console.log("price limpo: " + cleaned + " | Número: " + num); 
+
+return isNaN(num) ? 0 : num; 
+};
+
+//========
 
   let total = 0;
 
