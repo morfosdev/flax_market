@@ -58701,6 +58701,7 @@ const debugChars = (str) => {
 const parsePrice = (p) => {
   console.log("=== Iniciando parsePrice ===");
   console.log("Valor bruto recebido (raw):", JSON.stringify(p));
+
 debugChars(p);
 
 
@@ -58709,22 +58710,22 @@ debugChars(p);
     return 0;
   }
 
-  // Normaliza caracteres unicode (fullwidth, superscript, math digits, etc.)
+  // Normalização unicode é boa de manter
   p = p.normalize("NFKC");
   console.log("Após normalização NFKC:", JSON.stringify(p));
 
-  // Remove tudo que não for número, vírgula ou ponto
-  let cleaned = p.replace(/[^d.,]/g, "");
+  // Remove tudo que NÃO for número, vírgula ou ponto
+  let cleaned = p.replace(/[^0-9.,]/g, "");
   console.log("Após limpeza extrema:", cleaned);
 
-  if (!cleaned) {
+  if (!cleaned || cleaned === "." || cleaned === "," ) {
     console.log("❌ Nada limpou, retornando 0");
     return 0;
   }
 
-  // Formatos BR vs US
+  // BR ou US
   if (cleaned.includes(",")) {
-    cleaned = cleaned.replace(/./g, "");
+    cleaned = cleaned.replace(/./g, ""); 
     cleaned = cleaned.replace(",", ".");
   } else {
     cleaned = cleaned.replace(/,/g, "");
@@ -58736,7 +58737,6 @@ debugChars(p);
   console.log("Número convertido:", num);
   return isNaN(num) ? 0 : num;
 };
-
 
 
 //========
