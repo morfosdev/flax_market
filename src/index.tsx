@@ -58690,25 +58690,31 @@ textDecorationLine: 'underline',
 
 const parsePrice = (p) => {
   console.log("=== Iniciando parsePrice ===");
-  console.log("Valor bruto recebido:", JSON.stringify(p));
+  console.log("Valor bruto recebido (raw):", JSON.stringify(p));
 
   if (!p || typeof p !== "string") {
     console.log("❌ price inválido:", p);
     return 0;
   }
 
-  // Remove tudo que NÃO for número, vírgula ou ponto
-  let cleaned = p.replace(/[^d.,]/g, "");
+  // Normaliza caracteres unicode (fullwidth, superscript, math digits, etc.)
+  p = p.normalize("NFKC");
+  console.log("Após normalização NFKC:", JSON.stringify(p));
 
-  console.log("Após limpeza extrema (somente números, vírgula, ponto):", cleaned);
+  // Remove tudo que não for número, vírgula ou ponto
+  let cleaned = p.replace(/[^d.,]/g, "");
+  console.log("Após limpeza extrema:", cleaned);
+
+  if (!cleaned) {
+    console.log("❌ Nada limpou, retornando 0");
+    return 0;
+  }
 
   // Formatos BR vs US
   if (cleaned.includes(",")) {
-    console.log("Detectado formato brasileiro");
     cleaned = cleaned.replace(/./g, "");
     cleaned = cleaned.replace(",", ".");
   } else {
-    console.log("Detectado formato americano");
     cleaned = cleaned.replace(/,/g, "");
   }
 
@@ -58718,6 +58724,7 @@ const parsePrice = (p) => {
   console.log("Número convertido:", num);
   return isNaN(num) ? 0 : num;
 };
+
 
 
 //========
