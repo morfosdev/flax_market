@@ -58697,41 +58697,30 @@ const parsePrice = (p) => {
     return 0;
   }
 
-  // Remove R$ e espaços extras
-  let cleaned = p.replace(/R$s*/g, "").trim();
+  // Remove R$ corretamente
+  let cleaned = p.replace(/R$s*/gi, "").trim();
   console.log("Após remover R$ e espaços:", cleaned);
 
-  // Mantém apenas dígitos, vírgula e ponto
+  // Remove tudo exceto dígitos, vírgula e ponto
   cleaned = cleaned.replace(/[^d.,]/g, "");
   console.log("Após remover caracteres não numéricos:", cleaned);
 
+  // Detecta formato e limpa milhar/decimal
   if (cleaned.includes(",")) {
-    console.log("Detectado formato brasileiro (vírgula como decimal)");
+    console.log("Detectado formato brasileiro");
     cleaned = cleaned.replace(/./g, ""); // remove pontos de milhar
-    cleaned = cleaned.replace(",", ".");  // vírgula vira ponto decimal
+    cleaned = cleaned.replace(",", ".");  // vírgula vira decimal
   } else {
-    console.log("Detectado formato americano (ponto como decimal)");
+    console.log("Detectado formato americano");
     cleaned = cleaned.replace(/,/g, "");  // remove vírgulas de milhar
   }
 
   console.log("String final antes da conversão:", cleaned);
 
   const num = Number(cleaned);
+  console.log("Número convertido:", num);
 
-  if (isNaN(num)) {
-    console.log("❌ Falha na conversão. Resultado NaN.");
-    return 0;
-  }
-
-  console.log("✅ Conversão bem-sucedida. Número:", num);
-  console.log("=== Fim parsePrice ===")
-console.log(parsePrice("R$ 5.00"));      // 5
-console.log(parsePrice("R$ 1.234,56"));  // 1234.56
-console.log(parsePrice("R$ 12.345,67")); // 12345.67
-console.log(parsePrice("R$ 1,234.56"));  // 1234.56;
-
-
-  return num;
+  return isNaN(num) ? 0 : num;
 };
 
 
