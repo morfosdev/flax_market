@@ -58688,30 +58688,36 @@ textDecorationLine: 'underline',
 
 //========
 
-const parsePrice = (p) => { console.log("Lendo price bruto:", p); 
+const parsePrice = (p) => {
+  console.log("Lendo price bruto:", p);
 
-if (!p || typeof p !== "string") { console.log("price inválido:", p); 
+  if (!p || typeof p !== "string") {
+    console.log("price inválido:", p);
+    return 0;
+  }
 
-return 0; } 
-let cleaned = p.replace("R$", "").replace(/s+/g, "").trim(); 
+  // Remove R$, espaços e caracteres estranhos
+  let cleaned = p.replace("R$", "").replace(/s+/g, "").trim();
 
-// Detecta se o formato é brasileiro (tem vírgula como decimal) 
-if (cleaned.includes(",")) { 
-// Formato brasileiro 
-cleaned = cleaned.replace(/./g, ""); // remove pontos de milhar
-cleaned = cleaned.replace(",", "."); // vírgula vira ponto decimal
- } else { 
-// Formato americano 
-cleaned = cleaned.replace(/,/g, ""); // remove vírgulas de milhar
-// ponto já é decimal, não mexe
-} 
+  // Mantém apenas dígitos, vírgula e ponto
+  cleaned = cleaned.replace(/[^d.,]/g, "");
 
-const num = Number(cleaned); 
+  // Caso brasileiro (tem vírgula como decimal)
+  if (cleaned.includes(",")) {
+    cleaned = cleaned.replace(/./g, ""); // remove pontos de milhar
+    cleaned = cleaned.replace(",", ".");  // vírgula vira ponto decimal
+  } else {
+    // Caso americano (tem ponto como decimal)
+    cleaned = cleaned.replace(/,/g, "");  // remove vírgulas de milhar
+  }
 
-console.log("price limpo: " + cleaned + " | Número: " + num); 
+  const num = Number(cleaned);
 
-return isNaN(num) ? 0 : num; 
+  console.log("price limpo: " + cleaned + " | Número: " + num);
+
+  return isNaN(num) ? 0 : num;
 };
+
 
 //========
 
