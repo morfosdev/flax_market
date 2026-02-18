@@ -58671,7 +58671,95 @@ textDecorationLine: 'underline',
 
           functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [undefined]
+ arrFunctions: [() => {
+  const cart = tools.getCtData("sc.C4.forms.iptsChanges.products");
+
+  console.log("🛒 Carrinho recebido:", cart);
+
+  if (!Array.isArray(cart)) {
+    console.log("ERRO: cart não é array");
+    return "ERROR";
+  }
+
+  if (cart.length === 0) {
+    console.log("Carrinho vazio");
+    return "R$ 0,00";
+  }
+
+//========
+
+const parsePrice = (p) => {
+  console.log("=== Iniciando parsePrice ===");
+  console.log("Valor bruto recebido:", JSON.stringify(p));
+
+  if (!p || typeof p !== "string") {
+    console.log("❌ price inválido:", p);
+    return 0;
+  }
+
+  // Remove "R$" e QUALQUER tipo de whitespace unicode
+let cleaned = p
+  .replace(/R$/gi, "")
+  .replace(/[  -​  　]/g, "") // NBSP e variações
+  .replace(/s+/g, "") // espaços normais
+  .trim();
+
+console.log("Após remover R$ e espaços unicode:", cleaned);
+
+
+  // Remove tudo exceto números, vírgula e ponto
+  cleaned = cleaned.replace(/[^d.,]/g, "");
+  console.log("Após remover caracteres não numéricos:", cleaned);
+
+  // Formatos BR vs US
+  if (cleaned.includes(",")) {
+    console.log("Detectado formato brasileiro");
+    cleaned = cleaned.replace(/./g, "");
+    cleaned = cleaned.replace(",", ".");
+  } else {
+    console.log("Detectado formato americano");
+    cleaned = cleaned.replace(/,/g, "");
+  }
+
+  console.log("String final antes da conversão:", cleaned);
+  const num = Number(cleaned);
+
+  console.log("Número convertido:", num);
+  return isNaN(num) ? 0 : num;
+};
+
+
+//========
+
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    console.log("Item " + index + ": ", item);
+
+    const price = parsePrice(item.price);
+
+    console.log("Preço convertido do item " + index + ": " + price);
+
+    total += price;
+  });
+
+  const formatted = total.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+  });
+
+  console.log("TOTAL CALCULADO: " + total + " | Formatado: " + formatted);
+
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.C4.forms.iptsChanges.totalPrice"],
+      value: [formatted],
+    },
+  });
+
+  return formatted;
+}]
  , trigger: 'on init'
 }})],
 
