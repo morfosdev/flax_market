@@ -58697,8 +58697,8 @@ const parsePrice = (p) => {
     return 0;
   }
 
-  // Remove R$, espaços e caracteres estranhos
-  let cleaned = p.replace("R$", "").replace(/s+/g, "").trim();
+  // Remove R$ e espaços
+  let cleaned = p.replace(/R$/g, "").trim();
   console.log("Após remover R$ e espaços:", cleaned);
 
   // Mantém apenas dígitos, vírgula e ponto
@@ -58729,7 +58729,6 @@ const parsePrice = (p) => {
 
   return num;
 };
-
 
 
 //========
