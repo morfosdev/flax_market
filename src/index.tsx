@@ -58701,34 +58701,38 @@ const debugChars = (str) => {
 const parsePrice = (p) => {
   console.log("=== Iniciando parsePrice ===");
   console.log("Valor bruto recebido (raw):", JSON.stringify(p));
-
-debugChars(p);
-
+  debugChars(p);
 
   if (!p || typeof p !== "string") {
     console.log("❌ price inválido:", p);
     return 0;
   }
 
-  // Normalização unicode é boa de manter
+  // Normaliza unicode
   p = p.normalize("NFKC");
   console.log("Após normalização NFKC:", JSON.stringify(p));
 
-  // Remove tudo que NÃO for número, vírgula ou ponto
-  let cleaned = p.replace(/[^0-9.,]/g, "");
-  console.log("Após limpeza extrema:", cleaned);
+  // Remove "R$" e espaços
+  let cleaned = p.replace(/R$s*/gi, "").trim();
+  console.log("Após remover R$ e espaços:", cleaned);
 
-  if (!cleaned || cleaned === "." || cleaned === "," ) {
+  // Agora só remove caracteres estranhos (mantém dígitos, vírgula, ponto)
+  cleaned = cleaned.replace(/[^d.,]/g, "");
+  console.log("Após remover caracteres não numéricos:", cleaned);
+
+  if (!cleaned || cleaned === "." || cleaned === ",") {
     console.log("❌ Nada limpou, retornando 0");
     return 0;
   }
 
-  // BR ou US
+  // Detecta formato
   if (cleaned.includes(",")) {
-    cleaned = cleaned.replace(/./g, ""); 
-    cleaned = cleaned.replace(",", ".");
+    console.log("Detectado formato brasileiro");
+    cleaned = cleaned.replace(/./g, ""); // remove pontos de milhar
+    cleaned = cleaned.replace(",", ".");  // vírgula vira ponto decimal
   } else {
-    cleaned = cleaned.replace(/,/g, "");
+    console.log("Detectado formato americano");
+    cleaned = cleaned.replace(/,/g, "");  // remove vírgulas de milhar
   }
 
   console.log("String final antes da conversão:", cleaned);
