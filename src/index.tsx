@@ -58697,19 +58697,10 @@ const parsePrice = (p) => {
     return 0;
   }
 
-  // Remove "R$" e QUALQUER tipo de whitespace unicode
-let cleaned = p
-  .replace(/R$/gi, "")
-  .replace(/[  -​  　]/g, "") // NBSP e variações
-  .replace(/s+/g, "") // espaços normais
-  .trim();
+  // Remove tudo que NÃO for número, vírgula ou ponto
+  let cleaned = p.replace(/[^d.,]/g, "");
 
-console.log("Após remover R$ e espaços unicode:", cleaned);
-
-
-  // Remove tudo exceto números, vírgula e ponto
-  cleaned = cleaned.replace(/[^d.,]/g, "");
-  console.log("Após remover caracteres não numéricos:", cleaned);
+  console.log("Após limpeza extrema (somente números, vírgula, ponto):", cleaned);
 
   // Formatos BR vs US
   if (cleaned.includes(",")) {
