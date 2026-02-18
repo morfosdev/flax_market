@@ -58690,36 +58690,39 @@ textDecorationLine: 'underline',
 
 const parsePrice = (p) => {
   console.log("=== Iniciando parsePrice ===");
-  console.log("Valor bruto recebido:", p);
+  console.log("Valor bruto recebido:", JSON.stringify(p));
 
   if (!p || typeof p !== "string") {
     console.log("❌ price inválido:", p);
     return 0;
   }
 
-  // Remove R$ corretamente
-  let cleaned = p.replace(/R$s*/gi, "").trim();
-  console.log("Após remover R$ e espaços:", cleaned);
+  // Remove "R$" e QUALQUER tipo de whitespace unicode
+  let cleaned = p
+    .replace(/R$/gi, "")
+    .replace(/p{White_Space}/gu, "") // remove NBSP, NO-BREAK SPACE, etc.
+    .trim();
 
-  // Remove tudo exceto dígitos, vírgula e ponto
+  console.log("Após remover R$ e espaços unicode:", cleaned);
+
+  // Remove tudo exceto números, vírgula e ponto
   cleaned = cleaned.replace(/[^d.,]/g, "");
   console.log("Após remover caracteres não numéricos:", cleaned);
 
-  // Detecta formato e limpa milhar/decimal
+  // Formatos BR vs US
   if (cleaned.includes(",")) {
     console.log("Detectado formato brasileiro");
-    cleaned = cleaned.replace(/./g, ""); // remove pontos de milhar
-    cleaned = cleaned.replace(",", ".");  // vírgula vira decimal
+    cleaned = cleaned.replace(/./g, "");
+    cleaned = cleaned.replace(",", ".");
   } else {
     console.log("Detectado formato americano");
-    cleaned = cleaned.replace(/,/g, "");  // remove vírgulas de milhar
+    cleaned = cleaned.replace(/,/g, "");
   }
 
   console.log("String final antes da conversão:", cleaned);
-
   const num = Number(cleaned);
-  console.log("Número convertido:", num);
 
+  console.log("Número convertido:", num);
   return isNaN(num) ? 0 : num;
 };
 
