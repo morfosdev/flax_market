@@ -58688,9 +58688,21 @@ textDecorationLine: 'underline',
 
 //========
 
+const debugChars = (str) => {
+  const chars = [...str].map(c => ({
+    char: c,
+    code: c.charCodeAt(0),
+    hex: "U+" + c.charCodeAt(0).toString(16).toUpperCase()
+  }));
+  console.log("DEBUG CHAR MAP:", chars);
+};
+
+
 const parsePrice = (p) => {
   console.log("=== Iniciando parsePrice ===");
   console.log("Valor bruto recebido (raw):", JSON.stringify(p));
+debugChars(p);
+
 
   if (!p || typeof p !== "string") {
     console.log("❌ price inválido:", p);
