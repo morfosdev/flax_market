@@ -58697,8 +58697,8 @@ const parsePrice = (p) => {
     return 0;
   }
 
-  // Remove R$ e espaços
-  let cleaned = p.replace(/R$/g, "").trim();
+  // Remove R$ e espaços extras
+  let cleaned = p.replace(/R$s*/g, "").trim();
   console.log("Após remover R$ e espaços:", cleaned);
 
   // Mantém apenas dígitos, vírgula e ponto
@@ -58712,7 +58712,6 @@ const parsePrice = (p) => {
   } else {
     console.log("Detectado formato americano (ponto como decimal)");
     cleaned = cleaned.replace(/,/g, "");  // remove vírgulas de milhar
-    // ponto já é decimal
   }
 
   console.log("String final antes da conversão:", cleaned);
