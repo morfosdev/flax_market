@@ -58694,11 +58694,12 @@ textDecorationLine: 'underline',
       return 0;
     }
 
-    // Limpa a string do preço
+    // Remove pontos e converte vírgula para ponto
     const cleaned = p
-      .replace("R$", "")        // remove "R$"
+      .replace("R$", "")        // remove prefixo
       .replace(/s+/g, "")      // remove espaços
-      .replace(",", ".")        // transforma vírgula em ponto
+      .replace(/./g, "")       // remove todos os pontos (milhares)
+      .replace(",", ".")        // troca vírgula por ponto
       .trim();
 
     const num = Number(cleaned);
