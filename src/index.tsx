@@ -58724,12 +58724,11 @@ const parsePrice = (p) => {
   }
 
   console.log("✅ Conversão bem-sucedida. Número:", num);
-  console.log("=== Fim parsePrice ===");
-
+  console.log("=== Fim parsePrice ===")
 console.log(parsePrice("R$ 5.00"));      // 5
 console.log(parsePrice("R$ 1.234,56"));  // 1234.56
 console.log(parsePrice("R$ 12.345,67")); // 12345.67
-console.log(parsePrice("R$ 1,234.56"));  // 1234.56
+console.log(parsePrice("R$ 1,234.56"));  // 1234.56;
 
 
   return num;
