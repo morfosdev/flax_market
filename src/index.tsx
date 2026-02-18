@@ -56609,7 +56609,7 @@ justifyContent: 'center',
   console.log("📦 Carrinho atualizado:", updatedCart);
 
   // 5. Navega para o carrinho
-  tools.goTo("c4cart");
+  //tools.goTo("c4cart");
 }]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
