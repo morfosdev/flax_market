@@ -58833,7 +58833,6 @@ width: 25,
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -58867,61 +58866,7 @@ borderRadius: 4,
 
             args,
           }}/>
-        , 
-
- (...args:any) => <Elements.Custom pass={{
-  arrItems: [import React, { useState } from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
-
-export default function CapsuleCounter() {
-  const [count, setCount] = useState(0);
-
-  const increment = () => setCount(prev => prev + 1);
-  const decrement = () => setCount(prev => Math.max(0, prev - 1));
-
-  return (
-    <View style={styles.capsule}>
-      <TouchableOpacity onPress={decrement} style={styles.button}>
-        <Text style={styles.buttonText}>−</Text>
-      </TouchableOpacity>
-
-      <Text style={styles.count}>{count}</Text>
-
-      <TouchableOpacity onPress={increment} style={styles.button}>
-        <Text style={styles.buttonText}>+</Text>
-      </TouchableOpacity>
-    </View>
-  );
-}
-
-const styles = StyleSheet.create({
-  capsule: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#f2f2f2",
-    borderRadius: 999, // formato cápsula
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    alignSelf: "flex-start",
-  },
-  button: {
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-  },
-  buttonText: {
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-  count: {
-    fontSize: 16,
-    fontWeight: "600",
-    marginHorizontal: 10,
-    minWidth: 20,
-    textAlign: "center",
-  },
-});] 
-}}/>
-],
+        ],
 
             args,
           }}/>
