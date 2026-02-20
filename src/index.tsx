@@ -58870,7 +58870,10 @@ borderRadius: 4,
         , 
 
  (...args:any) => <Elements.Custom pass={{
-  arrItems: [export default function CapsuleCounter() {
+  arrItems: [import React, { useState } from "react";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+
+export default function CapsuleCounter() {
   const [count, setCount] = useState(0);
 
   const increment = () => setCount(prev => prev + 1);
