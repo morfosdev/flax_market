@@ -58410,6 +58410,10 @@ flexDirection: 'row',
 borderWidth: 1,
 borderColor: '#E6E7E8',
 borderRadius: 4,
+width: 90,
+height: 30,
+alignItems: 'center',
+justifyContent: 'space-around',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58433,11 +58437,15 @@ borderRadius: 4,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#5C5F6A',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
-            `+`
+            `-`
           ],
 
           args,
@@ -58453,7 +58461,11 @@ borderRadius: 4,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#202533',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -58482,11 +58494,15 @@ borderRadius: 4,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#5C5F6A',
+fontSize: 14,
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
-            `-`
+            `+`
           ],
 
           args,
