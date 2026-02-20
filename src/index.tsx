@@ -58532,10 +58532,10 @@ padding: 30,
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
     xmlns="http://www.w3.org/2000/svg"
-    width={12}
-    height={12}
+    width={20}
+    height={20}
     fill="red"
-    viewBox="0 0 12 12"
+    viewBox="0 0 20 20"
     {...props}
   >
     <Path
@@ -58543,14 +58543,15 @@ padding: 30,
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.7}
-      d="m.85.85 10 10"
+      d="M15 5 5 15M5 5l10 10"
     />
   </Svg>)
       },
 
       svgOriginal: `
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0.850098 0.850098L10.8501 10.8501" stroke="#5C5F6A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 5L5 15" stroke="#5C5F6A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5 5L15 15" stroke="#5C5F6A" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
       `,
