@@ -58560,6 +58560,8 @@ backgroundColor: '#0E1422',
 paddingHorizontal: 75,
 paddingVertical: 8,
 borderRadius: 5,
+alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
