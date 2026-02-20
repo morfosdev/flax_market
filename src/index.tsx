@@ -58234,6 +58234,7 @@ color: '#5C5F6A',
 fontSize: 12,
 fontWeight: '500',
 fontFamily: 'Inter',
+paddingRight: 2,
 }`
           ],
 
@@ -58249,8 +58250,8 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{ 
-width: 20, 
-height: 20, 
+width: 15, 
+height: 15, 
 backgroundColor: "#83B18B", 
 borderRadius: 10, 
 marginRight: 10 
@@ -58276,6 +58277,7 @@ color: '#5C5F6A',
 fontSize: 12,
 fontWeight: '500',
 fontFamily: 'Inter',
+paddingHorizontal: 6,
 }`
           ],
 
@@ -58306,6 +58308,7 @@ color: '#5C5F6A',
 fontSize: 12,
 fontWeight: '500',
 fontFamily: 'Inter',
+paddingRight: 2,
 }`
           ],
 
@@ -58326,6 +58329,7 @@ color: '#5C5F6A',
 fontSize: 12,
 fontWeight: '500',
 fontFamily: 'Inter',
+paddingRight: 2,
 }`
           ],
 
