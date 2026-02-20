@@ -58073,6 +58073,7 @@ color: '#0E1422',
 fontWeight: 'bold',
 fontSize: 16,
 fontFamily: 'Inter',
+paddingBottom: 15,
 }`
           ],
 
@@ -58104,6 +58105,7 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
+paddingTop: 15,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
@@ -58299,6 +58301,7 @@ color: '#0E1422',
 fontWeight: 'bold',
 fontSize: 16,
 fontFamily: 'Inter',
+paddingBottom: 15,
 }`
           ],
 
