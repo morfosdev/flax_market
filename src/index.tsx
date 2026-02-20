@@ -58105,7 +58105,7 @@ paddingBottom: 15,
             elementsProperties:['{}'],
 
             styles:[`{
-paddingTop: 15,
+paddingTop: 35,
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
@@ -58124,6 +58124,7 @@ paddingTop: 15,
             styles:[`{
 width: '100%',
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58132,7 +58133,11 @@ flexDirection: 'row',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{ width: '70px', }`],
+            styles:[`{
+bacckgroundColor: '#F6F6F6',
+alignItems: 'center',
+padding: 10,
+}`],
 
             functions:[()=>{}],            childrenItems:[
 
