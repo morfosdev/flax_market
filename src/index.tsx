@@ -58163,6 +58163,20 @@ height: '48px',
             elementsProperties:['{}'],
 
             styles:[`{
+width: 20,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
   flexGrow: 1,
   flexShrink: 1,
   flexBasis: 80,
