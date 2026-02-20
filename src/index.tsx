@@ -57813,7 +57813,6 @@ flexDirection: 'row',
             styles:[`{
 height: '100%',
 backgroundColor: '#eee',
-paddingLeft: 20,
 flex: 1,
 }`],
 
@@ -58045,6 +58044,9 @@ async (...args) =>
             styles:[`{
 width: '100%',
 flexDirection: 'row',
+backgroundColor: 'white',
+paddingHorizontal: 75,
+paddingVertical: 30,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58055,7 +58057,6 @@ flexDirection: 'row',
 
             styles:[`{
 backgroundColor: 'white',
-padding: 20,
 borderRadius: 10,
 width: '50%',
 }`],
