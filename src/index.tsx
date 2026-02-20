@@ -51308,7 +51308,8 @@ flexDirection: 'row',
 width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
-paddingBottom: 20,
+paddingVertical: 20,
+paddingHorizontal: 75,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -51421,7 +51422,7 @@ fontWeight: '500',
           ],
 
           children: [
-            `Search`
+            `Cart`
           ],
 
           args,
