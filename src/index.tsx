@@ -58423,6 +58423,7 @@ width: 50,
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -58817,7 +58818,107 @@ textDecorationLine: 'underline',
 
             args,
           }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 25,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+borderWidth: 1,
+borderColor: '#E6E7E8',
+borderRadius: 4,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
         ],
+
+            args,
+          }}/>
+        , 
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [export default function CapsuleCounter() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => setCount(prev => prev + 1);
+  const decrement = () => setCount(prev => Math.max(0, prev - 1));
+
+  return (
+    <View style={styles.capsule}>
+      <TouchableOpacity onPress={decrement} style={styles.button}>
+        <Text style={styles.buttonText}>−</Text>
+      </TouchableOpacity>
+
+      <Text style={styles.count}>{count}</Text>
+
+      <TouchableOpacity onPress={increment} style={styles.button}>
+        <Text style={styles.buttonText}>+</Text>
+      </TouchableOpacity>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  capsule: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#f2f2f2",
+    borderRadius: 999, // formato cápsula
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    alignSelf: "flex-start",
+  },
+  button: {
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+  },
+  buttonText: {
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  count: {
+    fontSize: 16,
+    fontWeight: "600",
+    marginHorizontal: 10,
+    minWidth: 20,
+    textAlign: "center",
+  },
+});] 
+}}/>
+],
 
             args,
           }}/>
