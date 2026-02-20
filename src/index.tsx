@@ -51310,8 +51310,8 @@ width: '100%',
 width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
-paddingVertical: 20,
-paddingHorizontal: 75,
+padding: 20,
+backgroundColor: '#F6F6F6',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -51529,8 +51529,6 @@ async (...args) =>
 width: '100%',
 flexDirection: 'row',
 padding: 20,
-marginLeft: 9,
-marginRight: 26,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -55221,8 +55219,6 @@ flexDirection: 'row',
 width: '100%',
 flexDirection: 'row',
 padding: 20,
-marginLeft: 9,
-marginRight: 26,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -55247,8 +55243,8 @@ flex: 1,
 width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
-paddingVertical: 20,
-paddingHorizontal: 75,
+padding: 20,
+backgroundColor: '#F6F6F6',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -57860,8 +57856,8 @@ flex: 1,
 width: '100%',
 alignItems: 'center',
 flexDirection: 'row',
-paddingVertical: 20,
-paddingHorizontal: 75,
+padding: 20,
+backgroundColor: '#F6F6F6',
 }`],
 
             functions:[()=>{}],            childrenItems:[
