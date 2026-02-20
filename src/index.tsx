@@ -58058,7 +58058,7 @@ paddingVertical: 30,
             styles:[`{
 backgroundColor: 'white',
 borderRadius: 10,
-width: '50%',
+width: '65%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58433,7 +58433,7 @@ borderColor: '#E6E7E8',
 borderRadius: 4,
 paddingVertical: 22,
 paddingHorizontal: 20,
-width: '50%',
+width: '35%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
