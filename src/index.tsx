@@ -55463,7 +55463,7 @@ width: '100%',
             styles:[`{
 width: '100%',
 flexDirection: 'row',
-paddingHorizontal: 75,
+padding: 30,
 }`],
 
             functions:[()=>{}],            childrenItems:[
