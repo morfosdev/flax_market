@@ -58044,7 +58044,7 @@ async (...args) =>
 
             styles:[`{
 width: '100%',
-alignItems: 'center',
+flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58057,7 +58057,7 @@ alignItems: 'center',
 backgroundColor: 'white',
 padding: 20,
 borderRadius: 10,
-width: '100%',
+width: '50%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58103,7 +58103,6 @@ fontFamily: 'Inter',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '40%',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.FlatList2 pass={{
@@ -58270,6 +58269,7 @@ borderColor: '#E6E7E8',
 borderRadius: 4,
 paddingVertical: 22,
 paddingHorizontal: 20,
+width: '50%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
