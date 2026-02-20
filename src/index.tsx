@@ -58228,7 +58228,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#5C5F6A',
+fontSize: 12,
+fontWeight: '500',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -58248,7 +58253,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#5C5F6A',
+fontSize: 12,
+fontWeight: '500',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -58273,7 +58283,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#5C5F6A',
+fontSize: 12,
+fontWeight: '500',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
@@ -58288,7 +58303,12 @@ flexDirection: 'row',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#5C5F6A',
+fontSize: 12,
+fontWeight: '500',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
