@@ -288,6 +288,7 @@
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -2426,6 +2427,7 @@ fontSize: 14,
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -3222,6 +3224,7 @@ fontSize: 14,
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -5270,6 +5273,7 @@ height: '30px',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -7848,6 +7852,7 @@ alignItems: 'center',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -9113,6 +9118,7 @@ height: '30px',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -11653,6 +11659,7 @@ async (...args) =>
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -14349,6 +14356,7 @@ async (...args) =>
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -16379,6 +16387,7 @@ color: '#FFF',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -18675,6 +18684,7 @@ justifyContent: 'center',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -20263,6 +20273,7 @@ fontSize: '14px',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -21899,6 +21910,7 @@ fontSize: '14px',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -23985,6 +23997,7 @@ justifyContent: 'center',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -26027,6 +26040,7 @@ justifyContent: 'center',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -27368,6 +27382,7 @@ fontSize: '14px',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -28691,6 +28706,7 @@ fontSize: '14px',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -30424,6 +30440,7 @@ height: '30px',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -33073,6 +33090,7 @@ alignItems: 'center',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -35440,6 +35458,7 @@ async (...args) =>
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -38008,6 +38027,7 @@ async (...args) =>
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -40271,6 +40291,7 @@ async (...args) =>
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -42540,6 +42561,7 @@ justifyContent: 'center',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -44321,6 +44343,7 @@ async (...args) =>
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -46056,6 +46079,7 @@ height: '10px',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -48320,6 +48344,7 @@ justifyContent: 'center',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -50397,6 +50422,7 @@ width: 20,
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[(...args:any) => <Elements.ScrollBar pass={{
@@ -50411,6 +50437,7 @@ backgroundColor: '#fff',
 width: '100%',
 height: '100%',
 alignItems: 'center',
+maxWidth: 1200,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -54309,6 +54336,7 @@ height: 20,
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -54320,6 +54348,7 @@ backgroundColor: '#fff',
 width: '100%',
 height: '100%',
 alignItems: 'center',
+maxWidth: 1200,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -56918,6 +56947,7 @@ fontFamily: 'Inter',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
@@ -56929,6 +56959,7 @@ backgroundColor: '#fff',
 width: '100%',
 height: '100%',
 alignItems: 'center',
+maxWidth: 1200,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -59623,6 +59654,7 @@ height: '652px',
 width: '100%',
 height: '100%',
 backgroundColor: '#fff',
+alignItems: 'center',
 }`],
 
           screenElements:[
