@@ -58252,7 +58252,7 @@ paddingRight: 2,
             styles:[`{ 
 width: 15, 
 height: 15, 
-backgroundColor: "#83B18B", 
+backgroundColor: "#A3BEF8", 
 borderRadius: 10, 
 }`],
 
