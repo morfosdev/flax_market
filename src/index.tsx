@@ -58605,7 +58605,7 @@ padding: 10,
             elementsProperties:['{}'],
 
             styles:[`{
-height: 50,
+height: 30,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
