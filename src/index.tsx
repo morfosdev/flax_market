@@ -58134,7 +58134,7 @@ alignItems: 'center',
             elementsProperties:['{}'],
 
             styles:[`{
-bacckgroundColor: '#F6F6F6',
+backgroundColor: '#F6F6F6',
 alignItems: 'center',
 padding: 10,
 }`],
