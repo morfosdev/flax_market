@@ -58254,7 +58254,6 @@ width: 15,
 height: 15, 
 backgroundColor: "#83B18B", 
 borderRadius: 10, 
-marginRight: 10 
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
