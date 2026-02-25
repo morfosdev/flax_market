@@ -58461,7 +58461,7 @@ justifyContent: 'space-around',
       var updated = [];
 
 for (var i = 0; i < cart.length; i++) { if (i === 0) {
-var oldQty = Number(cart[i].quantity || 1); var newQty = Math.max(oldQty - 1, 0);
+var oldQty = Number(cart[i].quantity || 1); var newQty = Math.max(oldQty - 1, 1);
 console.log("🔽 Diminuindo quantidade de " + cart[i].label + ": " + oldQty + " → " + newQty); updated.push({ ...cart[i], quantity: newQty }); } else { updated.push(cart[i]); } }
 
 
