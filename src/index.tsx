@@ -16204,9 +16204,14 @@ border: 1,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [async (...args) =>
+ arrFunctions: [
+async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`all.toggles.specialOffer`],
+          value: [true]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a4.editData.product.specialOffer`],
           value: [true]
         }})]
  , trigger: 'on press'
