@@ -58509,8 +58509,15 @@ fontFamily: 'Inter',
       return;
     }
 
-    const cart = tools.getCtData("sc.C4.forms.iptsChanges.products");
-    console.log("🛒 Carrinho atual no CT:", JSON.stringify(cart));
+    // Pega o carrinho bruto
+    let cartRaw = tools.getCtData("sc.C4.forms.iptsChanges.products");
+    console.log("🛒 Carrinho bruto no CT:", JSON.stringify(cartRaw));
+
+    // Descompacta se for array dentro de array
+    let cart = cartRaw;
+    if (Array.isArray(cartRaw) && Array.isArray(cartRaw[0])) {
+      cart = cartRaw[0];
+    }
 
     if (!Array.isArray(cart)) {
       console.log("❌ Cart não é array");
@@ -58545,10 +58552,11 @@ fontFamily: 'Inter',
 
     console.log("🆕 Carrinho atualizado:", JSON.stringify(updated));
 
+    // Salva novamente no formato exigido (array dentro de array)
     tools.functions.setVar({
       pass: {
         keyPath: ["sc.C4.forms.iptsChanges.products"],
-        value: updated,
+        value: [updated],
       },
     });
 
@@ -58556,7 +58564,8 @@ fontFamily: 'Inter',
   } catch (err) {
     console.log("❌ ERRO no botão +:", err);
   }
-}]
+}
+]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
