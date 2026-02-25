@@ -58501,7 +58501,7 @@ fontFamily: 'Inter',
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
   try {
-    const docId = item.docId;
+    const docId = $arg_docId;
 
     if (!docId) {
       console.log("❌ Nenhum docId disponível no item da lista");
