@@ -58635,8 +58635,7 @@ fontFamily: 'Inter',
   }}>
     <RN.Text>+</RN.Text>
   </RN.Pressable>
-)
-] 
+)] 
 }}/>
 ],
 
