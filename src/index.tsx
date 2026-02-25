@@ -58595,10 +58595,62 @@ fontFamily: 'Inter',
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => (
-  <RN.Pressable onPress={() => console.log("Botão + pressionado")}>
+  <RN.Pressable onPress={() => {
+    try {
+      const args = tools.functions.getArgs ? tools.functions.getArgs() : {};
+      const docId = args.docId;
+
+      var cartRaw = tools.getCtData("sc.C4.forms.iptsChanges.products");
+      var cart = cartRaw;
+      var updated = [];
+      var oldQty, newQty;
+
+      if (!docId) {
+        console.log("❌ Nenhum docId disponível");
+        return;
+      }
+
+      console.log("🛒 Carrinho bruto no CT:", JSON.stringify(cartRaw));
+
+      // Descompacta se for array dentro de array
+      if (Array.isArray(cartRaw) && Array.isArray(cartRaw[0])) {
+        cart = cartRaw[0];
+      }
+
+      if (!Array.isArray(cart)) {
+        console.log("❌ Cart não é array");
+        return;
+      }
+
+      for (var i = 0; i < cart.length; i++) {
+        if (cart[i].docId === docId) {
+          oldQty = Number(cart[i].quantity || 1);
+          newQty = oldQty + 1;
+          console.log("🔼 Aumentando quantidade de " + cart[i].label + ": " + oldQty + " → " + newQty);
+          updated.push({ ...cart[i], quantity: newQty });
+        } else {
+          updated.push(cart[i]);
+        }
+      }
+
+      console.log("🆕 Carrinho atualizado:", JSON.stringify(updated));
+
+      tools.functions.setVar({
+        pass: {
+          keyPath: ["sc.C4.forms.iptsChanges.products"],
+          value: [updated],
+        },
+      });
+
+      console.log("✅ Quantidade atualizada e salva no CT!");
+    } catch (err) {
+      console.log("❌ ERRO no botão +:", err);
+    }
+  }}>
     <RN.Text>+</RN.Text>
   </RN.Pressable>
-)] 
+)
+] 
 }}/>
 ],
 
