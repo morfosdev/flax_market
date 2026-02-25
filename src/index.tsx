@@ -58477,7 +58477,7 @@ console.log("🔽 Diminuindo quantidade de " + cart[i].label + ": " + oldQty + "
       console.log("❌ ERRO no botão +:", err);
     }
   }}>
-    <RN.Text>+</RN.Text>
+    <RN.Text>-</RN.Text>
   </RN.Pressable>
 )] 
 }}/>
