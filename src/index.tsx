@@ -58491,6 +58491,7 @@ fontFamily: 'Inter',
           args,
 
         }}/>, 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -58597,7 +58598,16 @@ fontFamily: 'Inter',
 
             args,
           }}/>
-        ],
+        , 
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => (
+  <RN.Pressable onPress={() => console.log("Botão + pressionado")}>
+    <RN.Text>+</RN.Text>
+  </RN.Pressable>
+)] 
+}}/>
+],
 
             args,
           }}/>
