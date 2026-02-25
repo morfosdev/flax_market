@@ -58497,7 +58497,70 @@ fontFamily: 'Inter',
 
             styles:[`{}`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  try {
+    const docId = item.docId;
+
+    if (!docId) {
+      console.log("❌ Nenhum docId disponível no item da lista");
+      return;
+    }
+
+    const cart = tools.getCtData("sc.C4.forms.iptsChanges.products");
+
+    console.log("🛒 Carrinho atual no CT:", JSON.stringify(cart));
+
+    if (!Array.isArray(cart)) {
+      console.log("❌ Cart não é array");
+      return;
+    }
+
+    // ========= REESCREVENDO O MAP() =========
+
+    const updated = [];
+    for (let i = 0; i < cart.length; i++) {
+      const prod = cart[i];
+
+      if (prod.docId === docId) {
+        const oldQty = Number(prod.quantity || 1);
+        const newQty = oldQty + 1;
+
+        console.log(
+          "🔼 Aumentando quantidade de " +
+            prod.label +
+            ": " +
+            oldQty +
+            " → " +
+            newQty
+        );
+
+        updated.push({
+          ...prod,
+          quantity: newQty,
+        });
+      } else {
+        updated.push(prod);
+      }
+    }
+
+    console.log("🆕 Carrinho atualizado:", JSON.stringify(updated));
+
+    tools.functions.setVar({
+      pass: {
+        keyPath: ["sc.C4.forms.iptsChanges.products"],
+        value: updated,
+      },
+    });
+
+    console.log("✅ Quantidade atualizada e salva no CT!");
+  } catch (err) {
+    console.log("❌ ERRO no botão +:", err);
+  }
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
