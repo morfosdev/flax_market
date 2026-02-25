@@ -58501,28 +58501,24 @@ fontFamily: 'Inter',
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
   try {
-    const args = tools.getFunctionArgs();
-
-    console.log("📦 Args recebidos no botão +:", JSON.stringify(args));
-
-    const docId = args?.docId || args?.arg_docId || args?.$arg_docId;
+    const docId = item.docId; // 
 
     if (!docId) {
-      console.log("❌ Nenhum docId recebido no botão +");
+      console.log("❌ Nenhum docId disponível no item da lista");
       return;
     }
 
     const cart = tools.getCtData("sc.C4.forms.iptsChanges.products");
 
-    console.log("🛒 Carrinho atual:", JSON.stringify(cart));
+    console.log("🛒 Carrinho atual no CT:", JSON.stringify(cart));
 
     if (!Array.isArray(cart)) {
       console.log("❌ Cart não é array");
       return;
     }
 
-    const updated = [];
 
+    const updated = [];
     for (let i = 0; i < cart.length; i++) {
       const prod = cart[i];
 
@@ -58557,8 +58553,7 @@ fontFamily: 'Inter',
       },
     });
 
-    console.log("✅ Quantidade atualizada com sucesso!");
-
+    console.log("✅ Quantidade atualizada e salva no CT!");
   } catch (err) {
     console.log("❌ ERRO no botão +:", err);
   }
