@@ -56608,7 +56608,10 @@ justifyContent: 'center',
   const product = tools.getCtData("sc.C2.forms.iptsChanges");
   if (!product) return;
 
-  // 2. Pega o carrinho atual
+  // 2. Garante que o produto tenha quantity = 1
+  const productWithQty = { ...product, quantity: 1 };
+
+  // 3. Pega o carrinho atual
   let currentCart = tools.getCtData("sc.C4.forms.iptsChanges.products") || [];
 
   // Se for objeto ao invés de array, corrigir
@@ -56616,24 +56619,25 @@ justifyContent: 'center',
     currentCart = [currentCart];
   }
 
-  // 3. Atualiza o carrinho
-  const updatedCart = [...currentCart, product];
+  // 4. Atualiza o carrinho
+  const updatedCart = [...currentCart, productWithQty];
 
-  // 4. Salva como ARRAY dentro de ARRAY (FlaxBoll exige isso)
+  // 5. Salva como ARRAY dentro de ARRAY (FlaxBoll exige isso)
   tools.functions.setVar({
     args: "",
     pass: {
       keyPath: ["sc.C4.forms.iptsChanges.products"],
-      value: [updatedCart],  // <- formato 100% compatível com listas
+      value: [updatedCart],  // formato compatível com listas
     },
   });
 
-  console.log("🛒 Produto adicionado ao carrinho:", product);
+  console.log("🛒 Produto adicionado ao carrinho:", productWithQty);
   console.log("📦 Carrinho atualizado:", updatedCart);
 
-  // 5. Navega para o carrinho
+  // 6. Navega para o carrinho
   tools.goTo("c4cart");
-}]
+}
+]
  , trigger: 'on press'
 }})],            childrenItems:[(...args:any) => <Elements.Text pass={{
           arrProps: [
