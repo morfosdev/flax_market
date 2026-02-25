@@ -58501,31 +58501,28 @@ fontFamily: 'Inter',
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
   try {
-    //const docId = $arg_docId;
-
-const args = tools.getFunctionArgs();
+    const args = tools.getFunctionArgs();
 
     console.log("📦 Args recebidos no botão +:", JSON.stringify(args));
 
     const docId = args?.docId || args?.arg_docId || args?.$arg_docId;
 
     if (!docId) {
-      console.log("❌ Nenhum docId disponível no item da lista");
+      console.log("❌ Nenhum docId recebido no botão +");
       return;
     }
 
     const cart = tools.getCtData("sc.C4.forms.iptsChanges.products");
 
-    console.log("🛒 Carrinho atual no CT:", JSON.stringify(cart));
+    console.log("🛒 Carrinho atual:", JSON.stringify(cart));
 
     if (!Array.isArray(cart)) {
       console.log("❌ Cart não é array");
       return;
     }
 
-    // ========= REESCREVENDO O MAP() =========
-
     const updated = [];
+
     for (let i = 0; i < cart.length; i++) {
       const prod = cart[i];
 
@@ -58560,7 +58557,8 @@ const args = tools.getFunctionArgs();
       },
     });
 
-    console.log("✅ Quantidade atualizada e salva no CT!");
+    console.log("✅ Quantidade atualizada com sucesso!");
+
   } catch (err) {
     console.log("❌ ERRO no botão +:", err);
   }
