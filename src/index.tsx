@@ -58501,7 +58501,13 @@ fontFamily: 'Inter',
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
   try {
-    const docId = $arg_docId;
+    //const docId = $arg_docId;
+
+const args = tools.getFunctionArgs();
+
+    console.log("📦 Args recebidos no botão +:", JSON.stringify(args));
+
+    const docId = args?.docId || args?.arg_docId || args?.$arg_docId;
 
     if (!docId) {
       console.log("❌ Nenhum docId disponível no item da lista");
