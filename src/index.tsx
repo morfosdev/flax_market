@@ -58500,14 +58500,7 @@ fontFamily: 'Inter',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-    "args": {
-      "docId": "$arg_docId"
-    }
-  }
-}
-, () => {
+ arrFunctions: [() => {
   try {
     const args = tools.functions.getArgs ? tools.functions.getArgs() : {};
     const docId = args.docId;
