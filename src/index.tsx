@@ -58382,186 +58382,6 @@ paddingRight: 2,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{
-  flexGrow: 1,
-  flexShrink: 1,
-  flexBasis: 80,
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#5C5F6A",
-}`
-          ],
-
-          children: [
-            `$arg_docId`
-          ],
-
-          args,
-
-        }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flexDirection: 'row',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flexDirection: 'row',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#5C5F6A',
-fontSize: 12,
-fontWeight: '500',
-fontFamily: 'Inter',
-paddingRight: 2,
-}`
-          ],
-
-          children: [
-            `Color: `
-          ],
-
-          args,
-
-        }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{ 
-width: 15, 
-height: 15, 
-backgroundColor: "#A3BEF8", 
-borderRadius: 10, 
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#5C5F6A',
-fontSize: 12,
-fontWeight: '500',
-fontFamily: 'Inter',
-paddingHorizontal: 6,
-}`
-          ],
-
-          children: [
-            `—`
-          ],
-
-          args,
-
-        }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flexDirection: 'row',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#5C5F6A',
-fontSize: 12,
-fontWeight: '500',
-fontFamily: 'Inter',
-paddingRight: 2,
-}`
-          ],
-
-          children: [
-            `Size: `
-          ],
-
-          args,
-
-        }}/>, (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#5C5F6A',
-fontSize: 12,
-fontWeight: '500',
-fontFamily: 'Inter',
-paddingRight: 2,
-}`
-          ],
-
-          children: [
-            `M`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
             styles:[`{}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
@@ -58777,22 +58597,9 @@ fontFamily: 'Inter',
   arrItems: [() => (
   <RN.Pressable onPress={() => {
     try {
-      const args = tools.functions.getArgs ? tools.functions.getArgs() : {};
-      const docId = args.docId;
-
       var cartRaw = tools.getCtData("sc.C4.forms.iptsChanges.products");
       var cart = cartRaw;
-      var updated = [];
-      var oldQty, newQty;
 
-      if (!docId) {
-        console.log("❌ Nenhum docId disponível");
-        return;
-      }
-
-      console.log("🛒 Carrinho bruto no CT:", JSON.stringify(cartRaw));
-
-      // Descompacta se for array dentro de array
       if (Array.isArray(cartRaw) && Array.isArray(cartRaw[0])) {
         cart = cartRaw[0];
       }
@@ -58802,18 +58609,17 @@ fontFamily: 'Inter',
         return;
       }
 
+      var updated = [];
       for (var i = 0; i < cart.length; i++) {
-        if (cart[i].docId === docId) {
-          oldQty = Number(cart[i].quantity || 1);
-          newQty = oldQty + 1;
+        if (i === 0) { // exemplo: incrementa sempre o primeiro item
+          var oldQty = Number(cart[i].quantity || 1);
+          var newQty = oldQty + 1;
           console.log("🔼 Aumentando quantidade de " + cart[i].label + ": " + oldQty + " → " + newQty);
           updated.push({ ...cart[i], quantity: newQty });
         } else {
           updated.push(cart[i]);
         }
       }
-
-      console.log("🆕 Carrinho atualizado:", JSON.stringify(updated));
 
       tools.functions.setVar({
         pass: {
