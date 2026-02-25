@@ -16137,14 +16137,9 @@ height: '48px',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{
+flexDirection: 'row',
+}`],
 
             functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
@@ -16168,29 +16163,6 @@ height: '48px',
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
-
-          stylesArray: [`{
-width: '80%',
-height: '45px',
-borderRadius: 6,
-borderWidth: 1,
-borderColor: '#E6E7E8',
-paddingVertical: 10,
-paddingHorizontal: 15,
-}`],
-
-          path: [`sc.a4.editData.product.availableQuantity`],
-
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a4.editData.product.availableQuantity`],
-          value: [`$arg_callback`]
-        }})],
-
-          args,
         }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
