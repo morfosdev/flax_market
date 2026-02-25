@@ -58501,22 +58501,21 @@ fontFamily: 'Inter',
  functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
   try {
-    const docId = item.docId; // 
+    const args = tools.functions.getArgs ? tools.functions.getArgs() : {};
+    const docId = args.docId;
 
     if (!docId) {
-      console.log("❌ Nenhum docId disponível no item da lista");
+      console.log("❌ Nenhum docId disponível");
       return;
     }
 
     const cart = tools.getCtData("sc.C4.forms.iptsChanges.products");
-
     console.log("🛒 Carrinho atual no CT:", JSON.stringify(cart));
 
     if (!Array.isArray(cart)) {
       console.log("❌ Cart não é array");
       return;
     }
-
 
     const updated = [];
     for (let i = 0; i < cart.length; i++) {
