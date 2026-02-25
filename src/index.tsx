@@ -58382,6 +58382,186 @@ paddingRight: 2,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
+            styles:[`{
+  flexGrow: 1,
+  flexShrink: 1,
+  flexBasis: 80,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#5C5F6A",
+}`
+          ],
+
+          children: [
+            `$arg_docId`
+          ],
+
+          args,
+
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#5C5F6A',
+fontSize: 12,
+fontWeight: '500',
+fontFamily: 'Inter',
+paddingRight: 2,
+}`
+          ],
+
+          children: [
+            `Color: `
+          ],
+
+          args,
+
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{ 
+width: 15, 
+height: 15, 
+backgroundColor: "#A3BEF8", 
+borderRadius: 10, 
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#5C5F6A',
+fontSize: 12,
+fontWeight: '500',
+fontFamily: 'Inter',
+paddingHorizontal: 6,
+}`
+          ],
+
+          children: [
+            `—`
+          ],
+
+          args,
+
+        }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#5C5F6A',
+fontSize: 12,
+fontWeight: '500',
+fontFamily: 'Inter',
+paddingRight: 2,
+}`
+          ],
+
+          children: [
+            `Size: `
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#5C5F6A',
+fontSize: 12,
+fontWeight: '500',
+fontFamily: 'Inter',
+paddingRight: 2,
+}`
+          ],
+
+          children: [
+            `M`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
             styles:[`{}`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
