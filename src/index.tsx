@@ -16197,12 +16197,20 @@ paddingHorizontal: 15,
             elementsProperties:['{}'],
 
             styles:[`{
-width: 10,
-height: 10,
+width: 30,
+height: 30,
 border: 1,
 }`],
 
-            functions:[()=>{}],            childrenItems:[() =><></>],
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.specialOffer`],
+          value: [true]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[() =><></>],
 
             args,
           }}/>
@@ -61443,7 +61451,8 @@ justifyContent: 'center',
 'small': false, 
 'medium': false, 
 'large': false, 
-'xlarge': false, 'xxlarge': false } 
+'xlarge': false, 
+'xxlarge': false, 'specialOffer': false } 
 , 'firebaseConfig': {
   apiKey: "AIzaSyDjAfyEUADq7EaRyFWlGFjP1Eoox9LJHgI",
   authDomain: "devs-tests-95208.firebaseapp.com",
