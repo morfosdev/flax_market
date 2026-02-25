@@ -58442,35 +58442,46 @@ justifyContent: 'space-around',
             functions:[()=>{}],            childrenItems:[
         
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => (
+  <RN.Pressable onPress={() => {
+    try {
+      var cartRaw = tools.getCtData("sc.C4.forms.iptsChanges.products");
+      var cart = cartRaw;
 
-            styles:[`{}`],
+      if (Array.isArray(cartRaw) && Array.isArray(cartRaw[0])) {
+        cart = cartRaw[0];
+      }
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+      if (!Array.isArray(cart)) {
+        console.log("❌ Cart não é array");
+        return;
+      }
 
-          arrStyles: [
-            `{
-color: '#5C5F6A',
-fontSize: 14,
-fontFamily: 'Inter',
-}`
-          ],
+      var updated = [];
 
-          children: [
-            `-`
-          ],
+for (var i = 0; i < cart.length; i++) { if (i === 0) {
+var oldQty = Number(cart[i].quantity || 1); var newQty = Math.max(oldQty - 1, 0);
+console.log("🔽 Diminuindo quantidade de " + cart[i].label + ": " + oldQty + " → " + newQty); updated.push({ ...cart[i], quantity: newQty }); } else { updated.push(cart[i]); } }
 
-          args,
 
-        }}/>],
+      tools.functions.setVar({
+        pass: {
+          keyPath: ["sc.C4.forms.iptsChanges.products"],
+          value: [updated],
+        },
+      });
 
-            args,
-          }}/>
-        , 
+      console.log("✅ Quantidade atualizada e salva no CT!");
+    } catch (err) {
+      console.log("❌ ERRO no botão +:", err);
+    }
+  }}>
+    <RN.Text>+</RN.Text>
+  </RN.Pressable>
+)] 
+}}/>
+, 
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -58491,107 +58502,6 @@ fontFamily: 'Inter',
           args,
 
         }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => {
-  try {
-    const args = tools.functions.getArgs ? tools.functions.getArgs() : {};
-    const docId = args.docId;
-
-    if (!docId) {
-      console.log("❌ Nenhum docId disponível");
-      return;
-    }
-
-    // Pega o carrinho bruto
-    let cartRaw = tools.getCtData("sc.C4.forms.iptsChanges.products");
-    console.log("🛒 Carrinho bruto no CT:", JSON.stringify(cartRaw));
-
-    // Descompacta se for array dentro de array
-    let cart = cartRaw;
-    if (Array.isArray(cartRaw) && Array.isArray(cartRaw[0])) {
-      cart = cartRaw[0];
-    }
-
-    if (!Array.isArray(cart)) {
-      console.log("❌ Cart não é array");
-      return;
-    }
-
-    const updated = [];
-    for (let i = 0; i < cart.length; i++) {
-      const prod = cart[i];
-
-      if (prod.docId === docId) {
-        const oldQty = Number(prod.quantity || 1);
-        const newQty = oldQty + 1;
-
-        console.log(
-          "🔼 Aumentando quantidade de " +
-            prod.label +
-            ": " +
-            oldQty +
-            " → " +
-            newQty
-        );
-
-        updated.push({
-          ...prod,
-          quantity: newQty,
-        });
-      } else {
-        updated.push(prod);
-      }
-    }
-
-    console.log("🆕 Carrinho atualizado:", JSON.stringify(updated));
-
-    // Salva novamente no formato exigido (array dentro de array)
-    tools.functions.setVar({
-      pass: {
-        keyPath: ["sc.C4.forms.iptsChanges.products"],
-        value: [updated],
-      },
-    });
-
-    console.log("✅ Quantidade atualizada e salva no CT!");
-  } catch (err) {
-    console.log("❌ ERRO no botão +:", err);
-  }
-}
-]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#5C5F6A',
-fontSize: 14,
-fontFamily: 'Inter',
-}`
-          ],
-
-          children: [
-            `+`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
 
  (...args:any) => <Elements.Custom pass={{
   arrItems: [() => (
