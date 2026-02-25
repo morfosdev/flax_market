@@ -58485,7 +58485,7 @@ fontFamily: 'Inter',
           ],
 
           children: [
-            `1`
+            `$arg_quantity`
           ],
 
           args,
