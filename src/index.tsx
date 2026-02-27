@@ -48604,6 +48604,7 @@ paddingHorizontal: 10,
 
             styles:[`{
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -48668,9 +48669,9 @@ width: 8,
 
       `,
 
-      altura: "15px",
+      altura: "12px",
 
-      largura: "15px",
+      largura: "12px",
 
       preenchimento: ['black'],
 
@@ -48711,6 +48712,7 @@ paddingHorizontal: 10,
 
             styles:[`{
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -48775,9 +48777,9 @@ width: 8,
 
       `,
 
-      altura: "15px",
+      altura: "12px",
 
-      largura: "15px",
+      largura: "12px",
 
       preenchimento: ['black'],
 
@@ -50825,6 +50827,7 @@ paddingHorizontal: 10,
 
             styles:[`{
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -50889,9 +50892,9 @@ width: 8,
 
       `,
 
-      altura: "15px",
+      altura: "12px",
 
-      largura: "15px",
+      largura: "12px",
 
       preenchimento: ['black'],
 
@@ -50932,6 +50935,7 @@ paddingHorizontal: 10,
 
             styles:[`{
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -50996,9 +51000,9 @@ width: 8,
 
       `,
 
-      altura: "15px",
+      altura: "12px",
 
-      largura: "15px",
+      largura: "12px",
 
       preenchimento: ['black'],
 
@@ -54883,6 +54887,7 @@ paddingHorizontal: 10,
 
             styles:[`{
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -54947,9 +54952,9 @@ width: 8,
 
       `,
 
-      altura: "15px",
+      altura: "12px",
 
-      largura: "15px",
+      largura: "12px",
 
       preenchimento: ['black'],
 
@@ -54990,6 +54995,7 @@ paddingHorizontal: 10,
 
             styles:[`{
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -55054,9 +55060,9 @@ width: 8,
 
       `,
 
-      altura: "15px",
+      altura: "12px",
 
-      largura: "15px",
+      largura: "12px",
 
       preenchimento: ['black'],
 
@@ -57644,6 +57650,7 @@ paddingHorizontal: 10,
 
             styles:[`{
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -57708,9 +57715,9 @@ width: 8,
 
       `,
 
-      altura: "15px",
+      altura: "12px",
 
-      largura: "15px",
+      largura: "12px",
 
       preenchimento: ['black'],
 
@@ -57751,6 +57758,7 @@ paddingHorizontal: 10,
 
             styles:[`{
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -57815,9 +57823,9 @@ width: 8,
 
       `,
 
-      altura: "15px",
+      altura: "12px",
 
-      largura: "15px",
+      largura: "12px",
 
       preenchimento: ['black'],
 
