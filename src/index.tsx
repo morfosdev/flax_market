@@ -48627,7 +48627,21 @@ fontWeight: '500',
 
           args,
 
-        }}/>, (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
@@ -48654,9 +48668,9 @@ fontWeight: '500',
 
       `,
 
-      altura: "30px",
+      altura: "15px",
 
-      largura: "30px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
@@ -48720,7 +48734,21 @@ fontWeight: '500',
 
           args,
 
-        }}/>, (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
@@ -48747,9 +48775,9 @@ fontWeight: '500',
 
       `,
 
-      altura: "30px",
+      altura: "15px",
 
-      largura: "30px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
@@ -50820,7 +50848,21 @@ fontWeight: '500',
 
           args,
 
-        }}/>, (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
@@ -50847,9 +50889,9 @@ fontWeight: '500',
 
       `,
 
-      altura: "30px",
+      altura: "15px",
 
-      largura: "30px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
@@ -50913,7 +50955,21 @@ fontWeight: '500',
 
           args,
 
-        }}/>, (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
@@ -50940,9 +50996,9 @@ fontWeight: '500',
 
       `,
 
-      altura: "30px",
+      altura: "15px",
 
-      largura: "30px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
@@ -54850,7 +54906,21 @@ fontWeight: '500',
 
           args,
 
-        }}/>, (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
@@ -54877,9 +54947,9 @@ fontWeight: '500',
 
       `,
 
-      altura: "30px",
+      altura: "15px",
 
-      largura: "30px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
@@ -54943,7 +55013,21 @@ fontWeight: '500',
 
           args,
 
-        }}/>, (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
@@ -54970,9 +55054,9 @@ fontWeight: '500',
 
       `,
 
-      altura: "30px",
+      altura: "15px",
 
-      largura: "30px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
@@ -57583,7 +57667,21 @@ fontWeight: '500',
 
           args,
 
-        }}/>, (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
@@ -57610,9 +57708,9 @@ fontWeight: '500',
 
       `,
 
-      altura: "30px",
+      altura: "15px",
 
-      largura: "30px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
@@ -57676,7 +57774,21 @@ fontWeight: '500',
 
           args,
 
-        }}/>, (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
@@ -57703,9 +57815,9 @@ fontWeight: '500',
 
       `,
 
-      altura: "30px",
+      altura: "15px",
 
-      largura: "30px",
+      largura: "15px",
 
       preenchimento: ['black'],
 
