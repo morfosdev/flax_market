@@ -48701,7 +48701,7 @@ paddingHorizontal: 10,
  arrFunctions: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.C2.toggles.categories`],
-          value: [true]
+          value: [false]
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
@@ -50924,7 +50924,7 @@ paddingHorizontal: 10,
  arrFunctions: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.C2.toggles.categories`],
-          value: [true]
+          value: [false]
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
@@ -54984,7 +54984,7 @@ paddingHorizontal: 10,
  arrFunctions: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.C2.toggles.categories`],
-          value: [true]
+          value: [false]
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
@@ -57747,7 +57747,7 @@ paddingHorizontal: 10,
  arrFunctions: [async (...args) =>
         functions.setVar({ args, pass:{
           keyPath: [`sc.C2.toggles.categories`],
-          value: [true]
+          value: [false]
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
