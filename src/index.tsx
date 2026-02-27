@@ -48596,7 +48596,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [true]
         }})]
- , trigger: 'on event'
+ , trigger: 'on press'
 }})],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
@@ -48703,7 +48703,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on event'
+ , trigger: 'on press'
 }})],            childrenItems:[
         
 
@@ -50819,7 +50819,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [true]
         }})]
- , trigger: 'on event'
+ , trigger: 'on press'
 }})],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
@@ -50926,7 +50926,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on event'
+ , trigger: 'on press'
 }})],            childrenItems:[
         
 
@@ -54879,7 +54879,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [true]
         }})]
- , trigger: 'on event'
+ , trigger: 'on press'
 }})],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
@@ -54986,7 +54986,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on event'
+ , trigger: 'on press'
 }})],            childrenItems:[
         
 
@@ -57642,7 +57642,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [true]
         }})]
- , trigger: 'on event'
+ , trigger: 'on press'
 }})],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
@@ -57749,7 +57749,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on event'
+ , trigger: 'on press'
 }})],            childrenItems:[
         
 
