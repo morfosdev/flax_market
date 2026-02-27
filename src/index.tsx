@@ -50611,7 +50611,8 @@ width: 20,
           }}/>
         ],
 
-          functions:[async (...args) =>
+          functions:[
+        async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [async (...args) =>
         functions.firebase.getDocsTool({ args, pass:{
@@ -50621,6 +50622,14 @@ width: 20,
           keyPath: [`sc.c1.list`],
           value: [`$arg_callback`]
         }})],
+        }})]
+ , trigger: 'on init'
+}}), async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.C2.toggles.categories`],
+          value: [false]
         }})]
  , trigger: 'on init'
 }})],
