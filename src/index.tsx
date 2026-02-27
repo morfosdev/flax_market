@@ -49773,7 +49773,7 @@ borderTopLeftRadius: 10,
 
             styles:[`{
 padding: 10,
-height: 65,
+height: 67,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -49818,6 +49818,7 @@ height: 10,
 
             styles:[`{
 flexDirection: 'row',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -49850,7 +49851,7 @@ const isAvailable = item.stock; return (
             elementsProperties:['{}'],
 
             styles:[`{
-width: 8,
+width: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
