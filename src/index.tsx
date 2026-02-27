@@ -49773,7 +49773,7 @@ borderTopLeftRadius: 10,
 
             styles:[`{
 padding: 10,
-height: 37,
+height: 65,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -49783,7 +49783,12 @@ height: 37,
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+color: '#0E1422',
+fontSize: 14,
+fontWeight: '500',
+fontFamily: 'Inter',
+}`
           ],
 
           children: [
