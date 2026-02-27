@@ -49757,8 +49757,8 @@ async (...args) =>
       elementsProperties:[{}],
 
       styles:[{
-width: 130,
-height: 130,
+width: 200,
+height: 200,
 borderTopRightRadius: 10,
 borderTopLeftRadius: 10,
 }],
