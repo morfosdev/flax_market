@@ -49733,6 +49733,7 @@ borderWidth: 1,
 backgroundColor: '#fff',
 borderRadius: 10,
 borderColor: '#ededed',
+marginBottom: 25,
 }`],
 
             functions:[async (...args) =>
