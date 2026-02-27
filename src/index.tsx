@@ -49802,22 +49802,30 @@ flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
+
+ (...args:any) => <Elements.Custom pass={{
+  arrItems: [() => { 
+const item = tools.findFlatItem(args); 
+const isAvailable = item.stock; return ( 
+	<span style={{ 
+		color: isAvailable === "In Stock" ? "#00800059" : "#ff000099",
+    border: isAvailable === "In Stock" ? "1px solid #00800059" : "1px solid #ff000099",
+		borderRadius: isAvailable === "In Stock" ? "30px" : "31px",
+		width: isAvailable === "In Stock" ? "80px" : "95px",
+		justifyContent: isAvailable === "In Stock" ? "center" : "center",
+		display: isAvailable === "In Stock" ? "inline-flex" : "inline-flex",
+		fontFamily: isAvailable === "In Stock" ? "Inter" : "Inter",
+		fontSize: isAvailable === "In Stock" ? "14px" : "14px",
+		backgroundColor: isAvailable === "In Stock" ? "#edffed" : "#fff2f2",
+ }}>
+	{isAvailable} 
+	</span> 
+) 
+}] 
+}}/>
+, 
         (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
-
-          children: [
-            `$arg_stock`
-          ],
-
-          args,
-
-        }}/>, (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
           ],
@@ -49833,6 +49841,21 @@ fontWeight: '500',
 
           children: [
             `$arg_price`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `$arg_stock`
           ],
 
           args,
