@@ -48598,6 +48598,15 @@ paddingHorizontal: 10,
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -48618,28 +48627,31 @@ fontWeight: '500',
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={20}
-              height={14}
-              viewBox="0 0 20 14"
-              {...props}
-              >
-              <Path
-              fillRule="evenodd"
-              d="M7.707.293a1 1 0 0 1 0 1.414L3.414 6H19a1 1 0 1 1 0 2H3.414l4.293 4.293a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0Z"
-              clipRule="evenodd"
-              {...props}
-              />
-              </Svg>)
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
       },
 
       svgOriginal: `
-        <svg></svg>
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
       `,
 
       altura: "30px",
@@ -48649,190 +48661,7 @@ fontWeight: '500',
       preenchimento: ['black'],
 
       args,
-    }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-position: 'absolute',
-top: 30,
-left: 11,
-zIndex: 1,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-  // 1. Pega a lista completa
-  const fullList = tools.getCtData("sc.c1.list") || [];
-
-  // 2. Filtra pela categoria desejada
-  const filtered = fullList.filter(item => item.categories === "Shirts");
-
-  // 3. Salva a lista filtrada em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.c1.filteredList"],
-      value: [filtered],
-    },
-  });
-
-  console.log("Itens filtrados:", filtered);
-
-  // 4. Exibe o container da lista filtrada
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filteredList"],
-      value: [true],
-   },
-  });
-
-// 5. Toogl Checkbox
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filter"],
-      value: ["shirt"],
-    },
-  });
-}, 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("c2SearchShop");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Shirts`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-  // 1. Pega a lista completa
-  const fullList = tools.getCtData("sc.c1.list") || [];
-
-  // 2. Filtra pela categoria desejada
-  const filtered = fullList.filter(item => item.categories === "Trousers");
-
-  // 3. Salva a lista filtrada em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.c1.filteredList"],
-      value: [filtered],
-    },
-  });
-
-  console.log("Itens filtrados:", filtered);
-
-  // 4. Exibe o container da lista filtrada
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filteredList"],
-      value: [true],
-   },
-  });
-
-// 5. Toogl Checkbox
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filter"],
-      value: ["shirt"],
-    },
-  });
-}, 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("c2SearchShop");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Trousers`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        ],
+    }}/>],
 
             args,
           }}/>
@@ -48861,6 +48690,16 @@ paddingHorizontal: 10,
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -48881,28 +48720,31 @@ fontWeight: '500',
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={20}
-              height={14}
-              viewBox="0 0 20 14"
-              {...props}
-              >
-              <Path
-              fillRule="evenodd"
-              d="M7.707.293a1 1 0 0 1 0 1.414L3.414 6H19a1 1 0 1 1 0 2H3.414l4.293 4.293a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0Z"
-              clipRule="evenodd"
-              {...props}
-              />
-              </Svg>)
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
       },
 
       svgOriginal: `
-        <svg></svg>
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
       `,
 
       altura: "30px",
@@ -48912,23 +48754,11 @@ fontWeight: '500',
       preenchimento: ['black'],
 
       args,
-    }}/>, 
+    }}/>],
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-position: 'absolute',
-top: 30,
-left: 11,
-zIndex: 1,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
+            args,
+          }}/>
+        , 
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -49092,10 +48922,6 @@ fontWeight: '500',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
@@ -50965,6 +50791,15 @@ paddingHorizontal: 10,
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -50985,28 +50820,31 @@ fontWeight: '500',
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={20}
-              height={14}
-              viewBox="0 0 20 14"
-              {...props}
-              >
-              <Path
-              fillRule="evenodd"
-              d="M7.707.293a1 1 0 0 1 0 1.414L3.414 6H19a1 1 0 1 1 0 2H3.414l4.293 4.293a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0Z"
-              clipRule="evenodd"
-              {...props}
-              />
-              </Svg>)
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
       },
 
       svgOriginal: `
-        <svg></svg>
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
       `,
 
       altura: "30px",
@@ -51016,190 +50854,7 @@ fontWeight: '500',
       preenchimento: ['black'],
 
       args,
-    }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-position: 'absolute',
-top: 30,
-left: 11,
-zIndex: 1,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-  // 1. Pega a lista completa
-  const fullList = tools.getCtData("sc.c1.list") || [];
-
-  // 2. Filtra pela categoria desejada
-  const filtered = fullList.filter(item => item.categories === "Shirts");
-
-  // 3. Salva a lista filtrada em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.c1.filteredList"],
-      value: [filtered],
-    },
-  });
-
-  console.log("Itens filtrados:", filtered);
-
-  // 4. Exibe o container da lista filtrada
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filteredList"],
-      value: [true],
-   },
-  });
-
-// 5. Toogl Checkbox
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filter"],
-      value: ["shirt"],
-    },
-  });
-}, 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("c2SearchShop");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Shirts`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-  // 1. Pega a lista completa
-  const fullList = tools.getCtData("sc.c1.list") || [];
-
-  // 2. Filtra pela categoria desejada
-  const filtered = fullList.filter(item => item.categories === "Trousers");
-
-  // 3. Salva a lista filtrada em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.c1.filteredList"],
-      value: [filtered],
-    },
-  });
-
-  console.log("Itens filtrados:", filtered);
-
-  // 4. Exibe o container da lista filtrada
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filteredList"],
-      value: [true],
-   },
-  });
-
-// 5. Toogl Checkbox
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filter"],
-      value: ["shirt"],
-    },
-  });
-}, 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("c2SearchShop");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Trousers`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        ],
+    }}/>],
 
             args,
           }}/>
@@ -51228,6 +50883,16 @@ paddingHorizontal: 10,
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -51248,28 +50913,31 @@ fontWeight: '500',
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={20}
-              height={14}
-              viewBox="0 0 20 14"
-              {...props}
-              >
-              <Path
-              fillRule="evenodd"
-              d="M7.707.293a1 1 0 0 1 0 1.414L3.414 6H19a1 1 0 1 1 0 2H3.414l4.293 4.293a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0Z"
-              clipRule="evenodd"
-              {...props}
-              />
-              </Svg>)
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
       },
 
       svgOriginal: `
-        <svg></svg>
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
       `,
 
       altura: "30px",
@@ -51279,23 +50947,11 @@ fontWeight: '500',
       preenchimento: ['black'],
 
       args,
-    }}/>, 
+    }}/>],
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-position: 'absolute',
-top: 30,
-left: 11,
-zIndex: 1,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
+            args,
+          }}/>
+        , 
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -51459,10 +51115,6 @@ fontWeight: '500',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
@@ -55169,6 +54821,15 @@ paddingHorizontal: 10,
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -55189,28 +54850,31 @@ fontWeight: '500',
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={20}
-              height={14}
-              viewBox="0 0 20 14"
-              {...props}
-              >
-              <Path
-              fillRule="evenodd"
-              d="M7.707.293a1 1 0 0 1 0 1.414L3.414 6H19a1 1 0 1 1 0 2H3.414l4.293 4.293a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0Z"
-              clipRule="evenodd"
-              {...props}
-              />
-              </Svg>)
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
       },
 
       svgOriginal: `
-        <svg></svg>
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
       `,
 
       altura: "30px",
@@ -55220,190 +54884,7 @@ fontWeight: '500',
       preenchimento: ['black'],
 
       args,
-    }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-position: 'absolute',
-top: 30,
-left: 11,
-zIndex: 1,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-  // 1. Pega a lista completa
-  const fullList = tools.getCtData("sc.c1.list") || [];
-
-  // 2. Filtra pela categoria desejada
-  const filtered = fullList.filter(item => item.categories === "Shirts");
-
-  // 3. Salva a lista filtrada em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.c1.filteredList"],
-      value: [filtered],
-    },
-  });
-
-  console.log("Itens filtrados:", filtered);
-
-  // 4. Exibe o container da lista filtrada
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filteredList"],
-      value: [true],
-   },
-  });
-
-// 5. Toogl Checkbox
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filter"],
-      value: ["shirt"],
-    },
-  });
-}, 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("c2SearchShop");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Shirts`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-  // 1. Pega a lista completa
-  const fullList = tools.getCtData("sc.c1.list") || [];
-
-  // 2. Filtra pela categoria desejada
-  const filtered = fullList.filter(item => item.categories === "Trousers");
-
-  // 3. Salva a lista filtrada em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.c1.filteredList"],
-      value: [filtered],
-    },
-  });
-
-  console.log("Itens filtrados:", filtered);
-
-  // 4. Exibe o container da lista filtrada
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filteredList"],
-      value: [true],
-   },
-  });
-
-// 5. Toogl Checkbox
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filter"],
-      value: ["shirt"],
-    },
-  });
-}, 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("c2SearchShop");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Trousers`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        ],
+    }}/>],
 
             args,
           }}/>
@@ -55432,6 +54913,16 @@ paddingHorizontal: 10,
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -55452,28 +54943,31 @@ fontWeight: '500',
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={20}
-              height={14}
-              viewBox="0 0 20 14"
-              {...props}
-              >
-              <Path
-              fillRule="evenodd"
-              d="M7.707.293a1 1 0 0 1 0 1.414L3.414 6H19a1 1 0 1 1 0 2H3.414l4.293 4.293a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0Z"
-              clipRule="evenodd"
-              {...props}
-              />
-              </Svg>)
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
       },
 
       svgOriginal: `
-        <svg></svg>
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
       `,
 
       altura: "30px",
@@ -55483,23 +54977,11 @@ fontWeight: '500',
       preenchimento: ['black'],
 
       args,
-    }}/>, 
+    }}/>],
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-position: 'absolute',
-top: 30,
-left: 11,
-zIndex: 1,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
+            args,
+          }}/>
+        , 
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -55663,10 +55145,6 @@ fontWeight: '500',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
@@ -58076,6 +57554,15 @@ paddingHorizontal: 10,
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -58096,28 +57583,31 @@ fontWeight: '500',
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={20}
-              height={14}
-              viewBox="0 0 20 14"
-              {...props}
-              >
-              <Path
-              fillRule="evenodd"
-              d="M7.707.293a1 1 0 0 1 0 1.414L3.414 6H19a1 1 0 1 1 0 2H3.414l4.293 4.293a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0Z"
-              clipRule="evenodd"
-              {...props}
-              />
-              </Svg>)
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
       },
 
       svgOriginal: `
-        <svg></svg>
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
       `,
 
       altura: "30px",
@@ -58127,190 +57617,7 @@ fontWeight: '500',
       preenchimento: ['black'],
 
       args,
-    }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-position: 'absolute',
-top: 30,
-left: 11,
-zIndex: 1,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-  // 1. Pega a lista completa
-  const fullList = tools.getCtData("sc.c1.list") || [];
-
-  // 2. Filtra pela categoria desejada
-  const filtered = fullList.filter(item => item.categories === "Shirts");
-
-  // 3. Salva a lista filtrada em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.c1.filteredList"],
-      value: [filtered],
-    },
-  });
-
-  console.log("Itens filtrados:", filtered);
-
-  // 4. Exibe o container da lista filtrada
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filteredList"],
-      value: [true],
-   },
-  });
-
-// 5. Toogl Checkbox
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filter"],
-      value: ["shirt"],
-    },
-  });
-}, 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("c2SearchShop");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Shirts`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-() => {
-  // 1. Pega a lista completa
-  const fullList = tools.getCtData("sc.c1.list") || [];
-
-  // 2. Filtra pela categoria desejada
-  const filtered = fullList.filter(item => item.categories === "Trousers");
-
-  // 3. Salva a lista filtrada em outra variável
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.c1.filteredList"],
-      value: [filtered],
-    },
-  });
-
-  console.log("Itens filtrados:", filtered);
-
-  // 4. Exibe o container da lista filtrada
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filteredList"],
-      value: [true],
-   },
-  });
-
-// 5. Toogl Checkbox
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.C2.toggles.filter"],
-      value: ["shirt"],
-    },
-  });
-}, 
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.toggles.categories`],
-          value: [false]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("c2SearchShop");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Trousers`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        ],
+    }}/>],
 
             args,
           }}/>
@@ -58339,6 +57646,16 @@ paddingHorizontal: 10,
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -58359,28 +57676,31 @@ fontWeight: '500',
 
           args,
 
-        }}/>, 
-        (...args:any) => <Elements.SvgView1 pass={{
+        }}/>, (...args:any) => <Elements.SvgView1 pass={{
       componentSvg: (Svg:any, SvgObj:any) => {
         const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
         return (props:any) => (<Svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={20}
-              height={14}
-              viewBox="0 0 20 14"
-              {...props}
-              >
-              <Path
-              fillRule="evenodd"
-              d="M7.707.293a1 1 0 0 1 0 1.414L3.414 6H19a1 1 0 1 1 0 2H3.414l4.293 4.293a1 1 0 1 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 0Z"
-              clipRule="evenodd"
-              {...props}
-              />
-              </Svg>)
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
       },
 
       svgOriginal: `
-        <svg></svg>
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
       `,
 
       altura: "30px",
@@ -58390,23 +57710,11 @@ fontWeight: '500',
       preenchimento: ['black'],
 
       args,
-    }}/>, 
+    }}/>],
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-position: 'absolute',
-top: 30,
-left: 11,
-zIndex: 1,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
+            args,
+          }}/>
+        , 
         
 
           (...args:any) => <Elements.DynView pass={{
@@ -58570,10 +57878,6 @@ fontWeight: '500',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
 
             args,
           }}/>
