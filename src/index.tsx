@@ -49684,179 +49684,6 @@ padding: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-  display: "flex",
-  flexWrap: "wrap",
-  justifyContent: "space-between",
-  width: "100%",
-	backgroundColor: 'white',
-	padding: 20,
-	borderRadius: 10,
-}
-`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontFamily: 'Inter',
-fontSize: 20,
-fontWeight: 'bold',
-}`
-          ],
-
-          children: [
-            `Destaques`
-          ],
-
-          args,
-
-        }}/>, (...args:any) => <Elements.FlatList2 pass={{
-          elementProperties: [
-            `{
-horizontal:true,
-}`
-          ],
-
-          pData: `sc.c1.list`,
-
-          itemElements: [
-            
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-borderWidth: 1,
-backgroundColor: '#fff',
-borderRadius: 10,
-borderColor: '#ededed',
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [
-async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.C2.forms.iptsChanges`],
-          value: [`$arg_item`]
-        }}), 
-        (...args) => {
-          // ---------- get Function from A_Project Scope
-          return tools.goTo("c3ProductProfile");
-        }
-        ]
- , trigger: 'on press'
-}})],            childrenItems:[
-        
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{
-width: 130,
-height: 130,
-borderTopRightRadius: 10,
-borderTopLeftRadius: 10,
-}],
-
-      URIvariablePath:[`$arg_image`],
-
-      args,
-    }}/>, 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-padding: 10,
-height: 37,
-}`],
-
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: 'black',
-fontSize: 14,
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `$arg_price`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: 20,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        
-          ],
-
-      styles:[`{
-  display: "flex",
-  flexWrap: "wrap",
-  justifyContent: "space-between",
-  width: "100%",
-  flexDirection: 'row',
-	backgroundColor: 'white',
-	padding: 20,
-	borderRadius: 10,
-}
-`],    args,
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: 10,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
 backgroundColor: 'white',
 width: '100%',
 padding: 20,
@@ -50441,6 +50268,7 @@ height: 10,
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -50592,6 +50420,178 @@ height: '100px',
             args,
           }}/>
         ],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: 10,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "space-between",
+  width: "100%",
+	backgroundColor: 'white',
+	padding: 20,
+	borderRadius: 10,
+}
+`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontFamily: 'Inter',
+fontSize: 20,
+fontWeight: 'bold',
+}`
+          ],
+
+          children: [
+            `Destaques`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.FlatList2 pass={{
+          elementProperties: [
+            `{
+horizontal:true,
+}`
+          ],
+
+          pData: `sc.c1.list`,
+
+          itemElements: [
+            
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+borderWidth: 1,
+backgroundColor: '#fff',
+borderRadius: 10,
+borderColor: '#ededed',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.C2.forms.iptsChanges`],
+          value: [`$arg_item`]
+        }}), 
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("c3ProductProfile");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[
+        
+
+    (...args:any) => <Elements.ImageBox pass={{
+      elementsProperties:[{}],
+
+      styles:[{
+width: 130,
+height: 130,
+borderTopRightRadius: 10,
+borderTopLeftRadius: 10,
+}],
+
+      URIvariablePath:[`$arg_image`],
+
+      args,
+    }}/>, 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+padding: 10,
+height: 37,
+}`],
+
+            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: 'black',
+fontSize: 14,
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `$arg_price`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 20,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        
+          ],
+
+      styles:[`{
+  display: "flex",
+  flexWrap: "wrap",
+  justifyContent: "space-between",
+  width: "100%",
+  flexDirection: 'row',
+	backgroundColor: 'white',
+	padding: 20,
+	borderRadius: 10,
+}
+`],    args,
+        }}/>],
 
             args,
           }}/>
