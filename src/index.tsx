@@ -49773,7 +49773,7 @@ borderTopLeftRadius: 10,
 
             styles:[`{
 padding: 10,
-height: 67,
+height: 113,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -49905,7 +49905,7 @@ height: 10,
             styles:[`{
 backgroundColor: '#0E1422',
 borderRadius: 4,
-padding: 8,
+padding: 10,
 alignItems: 'center',
 justifyContent: 'center',
 alignSelf: 'center',
