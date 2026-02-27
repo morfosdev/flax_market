@@ -49714,10 +49714,7 @@ fontWeight: 'bold',
 
         }}/>, (...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
-            `{
-flexDirection: 'row',
-flexWrap: 'wrap',
-}`
+            `horizontal={true}`
           ],
 
           pData: `sc.c1.list`,
