@@ -49905,10 +49905,11 @@ height: 10,
             styles:[`{
 backgroundColor: '#0E1422',
 borderRadius: 4,
-paddingHorizontal: 24,
-paddingVertical: 12,
+padding: 8,
 alignItems: 'center',
 justifyContent: 'center',
+alignSelf: 'center',
+width: '80%',
 }`],
 
             functions:[async (...args) =>
@@ -49964,7 +49965,7 @@ fontFamily: 'Inter',
           ],
 
           children: [
-            `Add to Cart`
+            `Buy`
           ],
 
           args,
