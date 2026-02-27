@@ -49684,8 +49684,6 @@ padding: 20,
             elementsProperties:['{}'],
 
             styles:[`{
-  display: "flex",
-  flexWrap: "wrap",
   justifyContent: "space-between",
   width: "100%",
 	backgroundColor: 'white',
@@ -49822,8 +49820,6 @@ width: 20,
           ],
 
       styles:[`{
-  display: "flex",
-  flexWrap: "wrap",
   justifyContent: "space-between",
   width: "100%",
   flexDirection: 'row',
