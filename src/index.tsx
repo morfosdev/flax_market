@@ -49687,7 +49687,7 @@ padding: 20,
   justifyContent: "space-between",
   width: "100%",
 	backgroundColor: 'white',
-	padding: 20,
+	padding: 40,
 	borderRadius: 10,
 }
 `],
@@ -49714,9 +49714,7 @@ fontWeight: 'bold',
 
         }}/>, (...args:any) => <Elements.FlatList2 pass={{
           elementProperties: [
-            `{
-horizontal:true,
-}`
+            {}
           ],
 
           pData: `sc.c1.list`,
@@ -49822,9 +49820,8 @@ width: 20,
       styles:[`{
   justifyContent: "space-between",
   width: "100%",
-  flexDirection: 'row',
 	backgroundColor: 'white',
-	padding: 20,
+	padding: 80,
 	borderRadius: 10,
 }
 `],    args,
