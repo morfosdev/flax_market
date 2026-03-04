@@ -16056,7 +16056,7 @@ paddingHorizontal: 15,
   }
 
   console.log("Entrada digitada:", newValue, " | Estoque:", numericValue);
-};],
+}],
 
           args,
         }}/>, (...args:any) => <Elements.Text pass={{
