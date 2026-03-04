@@ -62329,12 +62329,9 @@ justifyContent: 'center',
 'A6': { 'listBox': true } 
 , 
 'A7': { 'listBox': true } 
-, 
-'C2': { 'toggles': { 
+, 'C2': { 'toggles': { 
 'filteredList': false, 
 'filter': false, 'categories': true } 
- } 
-, 'A4': { 'toggles': { 'specialOffer': false } 
  } 
  } 
  
