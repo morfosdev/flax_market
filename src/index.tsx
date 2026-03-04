@@ -16202,6 +16202,17 @@ height: 30,
 border: 1,
 }`],
 
+            functions:[()=>{}],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 30,
+height: 30,
+border: 1,
+}`],
+
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
  arrFunctions: [
@@ -16216,6 +16227,10 @@ async (...args) =>
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
