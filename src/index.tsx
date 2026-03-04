@@ -16204,7 +16204,7 @@ border: 1,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.A4.toggles.specialOffer", "==", false ]]
+ arrFunctions: [() => [ "sc.a4.editData.product.specialOffer", "==", false ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
 
