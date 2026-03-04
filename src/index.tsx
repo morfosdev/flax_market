@@ -15980,7 +15980,8 @@ backgroundColor: '#E6E7E8',
 
           args,
 
-        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
           stylesArray: [`{
@@ -15995,13 +15996,89 @@ paddingHorizontal: 15,
 
           path: [`sc.a4.editData.product.availableQuantity`],
 
-          funcsArray: [async (...args) =>
-        functions.setVar({ args, pass:{
-          keyPath: [`sc.a4.editData.product.availableQuantity`],
-          value: [`$arg_callback`]
-        }})],
+          funcsArray: [(callback) => {
+  // Remove tudo que não seja número, vírgula ou ponto
+  let newValue = callback.replace(/[^0-9.,]/g, "");
+
+  // Atualizar a variável do preço
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a4.editData.product.availableQuantity"],
+      value: [newValue],
+    },
+  });
+
+  // Verificar se existe algum número válido
+  if (newValue === "" || !/[0-9]/.test(newValue)) {
+    // Salvar mensagem de aviso
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a4.availableQuantityMessage"],
+        value: ["O campo não pode estar vazio."],
+      },
+    });
+  } else {
+    // Limpar mensagem caso o valor seja válido
+    tools.functions.setVar({
+      args: "",
+      pass: {
+        keyPath: ["sc.a4.availableQuantityMessage"],
+        value: [""],
+      },
+    });
+  }
+
+  // Converter valor para número inteiro (ignora vírgula/ponto)
+  let numericValue = parseInt(newValue.replace(/[^0-9]/g, ""), 10);
+
+  if (!isNaN(numericValue)) {
+    if (numericValue === 0) {
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a4.editData.product.stock"],
+          value: ["Out of Stock"],
+        },
+      });
+      console.log("Estoque salvo: Out of Stock");
+    } else if (numericValue > 0) {
+      tools.functions.setVar({
+        args: "",
+        pass: {
+          keyPath: ["sc.a4.editData.product.stock"],
+          value: ["In Stock"],
+        },
+      });
+      console.log("Estoque salvo: In Stock");
+    }
+  }
+
+  console.log("Entrada digitada:", newValue, " | Estoque:", numericValue);
+};],
 
           args,
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+color: "red", 
+marginTop: 8,
+fontFamily: "Inter",
+fontSize: 14,
+}`
+          ],
+
+          children: [
+            `$var_sc.a3.availableQuantityMessage`
+          ],
+
+          args,
+
         }}/>],
 
             args,
