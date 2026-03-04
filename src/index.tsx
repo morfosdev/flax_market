@@ -15903,7 +15903,7 @@ paddingHorizontal: 15,
           args,
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+          propsArray: [`{ editable: false, }`],
 
           stylesArray: [`{
 width: '80%',
@@ -15913,6 +15913,7 @@ borderWidth: 1,
 borderColor: '#E6E7E8',
 paddingVertical: 10,
 paddingHorizontal: 15,
+backgroundColor: '#E6E7E8',
 }`],
 
           path: [`sc.a4.editData.product.stock`],
