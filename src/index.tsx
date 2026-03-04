@@ -16202,7 +16202,11 @@ height: 30,
 border: 1,
 }`],
 
-            functions:[()=>{}],            childrenItems:[
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "sc.A4.toggles.specialOffer", "==", false ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -16210,7 +16214,7 @@ border: 1,
             styles:[`{
 width: 30,
 height: 30,
-border: 1,
+alignItems: 'center',
 }`],
 
             functions:[async (...args) =>
@@ -62262,9 +62266,12 @@ justifyContent: 'center',
 'A6': { 'listBox': true } 
 , 
 'A7': { 'listBox': true } 
-, 'C2': { 'toggles': { 
+, 
+'C2': { 'toggles': { 
 'filteredList': false, 
 'filter': false, 'categories': true } 
+ } 
+, 'A4': { 'toggles': { 'specialOffer': false } 
  } 
  } 
  
