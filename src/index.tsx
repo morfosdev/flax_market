@@ -16192,6 +16192,7 @@ flexDirection: 'row',
           args,
 
         }}/>, 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -16231,6 +16232,68 @@ async (...args) =>
         }})]
  , trigger: 'on press'
 }})],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 30,
+height: 30,
+border: 1,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "sc.a4.editData.product.specialOffer", "==", true ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 30,
+height: 30,
+alignItems: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`all.toggles.specialOffer`],
+          value: [false]
+        }}), async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.a4.editData.product.specialOffer`],
+          value: [false]
+        }})]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            { color: 'black', fontSize: 12, }
+          ],
+
+          children: [
+            `X`
+          ],
+
+          args,
+
+        }}/>],
 
             args,
           }}/>
