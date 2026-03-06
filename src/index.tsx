@@ -7519,7 +7519,6 @@ borderColor: '#E6E7E8',
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -7532,25 +7531,7 @@ height: '20px',
 
             args,
           }}/>
-        , 
-
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[
-              {
-                height: "50px",
-                width: "80px",
-                backgroundColor: "#FDFDFD",
-                borderWidth: 2,
-                borderColor: "#EEE"
-              }
-              ],
-
-      URIvariablePath:[`https://files.fm/u/atct2fr58e`],
-
-      args,
-    }}/>],
+        ],
 
             args,
           }}/>
@@ -7617,6 +7598,7 @@ width: 'auto',
             `{
 fontSize: 14,
 fontWeight: '700',
+fontFamily: "Inter",
 }`
           ],
 
@@ -8874,6 +8856,7 @@ width: 'auto',
             `{
 fontSize: 14,
 fontWeight: '700',
+fontFamily: "Inter",
 }`
           ],
 
@@ -33335,6 +33318,7 @@ width: 'auto',
             `{
 fontSize: 14,
 fontWeight: '700',
+fontFamily: "Inter",
 }`
           ],
 
