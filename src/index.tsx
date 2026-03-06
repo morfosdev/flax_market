@@ -16445,6 +16445,20 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
+width: 15,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 borderWidth: 1,
 borderColor: '#e6e7e8',
 borderRadius: 5,
