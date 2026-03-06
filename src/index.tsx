@@ -48929,7 +48929,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [true]
         }})]
- , trigger: 'on press'
+ , trigger: 'on listen'
 }})],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
@@ -49036,7 +49036,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on press'
+ , trigger: 'on listen'
 }})],            childrenItems:[
         
 
@@ -51325,7 +51325,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [true]
         }})]
- , trigger: 'on press'
+ , trigger: 'on listen'
 }})],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
@@ -51432,7 +51432,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on press'
+ , trigger: 'on listen'
 }})],            childrenItems:[
         
 
@@ -55385,7 +55385,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [true]
         }})]
- , trigger: 'on press'
+ , trigger: 'on listen'
 }})],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
@@ -55492,7 +55492,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on press'
+ , trigger: 'on listen'
 }})],            childrenItems:[
         
 
@@ -58148,7 +58148,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [true]
         }})]
- , trigger: 'on press'
+ , trigger: 'on listen'
 }})],            childrenItems:[
 
           (...args:any) => <Elements.DynView pass={{
@@ -58255,7 +58255,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on press'
+ , trigger: 'on listen'
 }})],            childrenItems:[
         
 
@@ -62554,7 +62554,7 @@ justifyContent: 'center',
 'A7': { 'listBox': true } 
 , 'C2': { 'toggles': { 
 'filteredList': false, 
-'filter': false, 'categories': true } 
+'filter': false, 'categories': false } 
  } 
  } 
  
