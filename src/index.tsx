@@ -16525,22 +16525,42 @@ async (...args) =>
           value: [false]
         }})]
  , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
+}})],            childrenItems:[(...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={15}
+    height={15}
+    fill="red"
+    viewBox="0 0 15 15"
+    {...props}
+  >
+    <Path
+      stroke="#000"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M14 1 7.5 7.5m0 0L1 14m6.5-6.5L1 1m6.5 6.5L14 14"
+    />
+  </Svg>)
+      },
 
-          arrStyles: [
-            { color: 'black', fontSize: 12, }
-          ],
+      svgOriginal: `
+        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 1L7.5 7.5M7.5 7.5L1 14M7.5 7.5L1 1M7.5 7.5L14 14" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
 
-          children: [
-            `X`
-          ],
+      `,
 
-          args,
+      altura: "15px",
 
-        }}/>],
+      largura: "15px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
 
             args,
           }}/>
