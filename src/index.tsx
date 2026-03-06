@@ -7688,12 +7688,15 @@ fontFamily: "Inter",
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
+width: '114%',
 justifyContent: 'center',
 alignItems: 'center',
-height: '80px',
 flexDirection: 'row',
-paddingHorizontal: '10px',
+paddingHorizontal: 10,
+paddingVertical: 10,
+borderTopWidth: 1,
+borderBottomWidth: 1,
+borderColor: '#e9e9eb',
 }`],
 
             functions:[()=>{}],            childrenItems:[
