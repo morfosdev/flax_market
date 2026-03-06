@@ -16447,7 +16447,9 @@ flexDirection: 'row',
             styles:[`{
 width: 30,
 height: 30,
-border: 1,
+borderWidth: 1,
+borderColor: '#e6e7e8',
+borderRadius: 10,
 }`],
 
             functions:[async (...args) =>
@@ -16494,7 +16496,9 @@ async (...args) =>
             styles:[`{
 width: 30,
 height: 30,
-border: 1,
+borderWidth: 1,
+borderColor: '#e6e7e8',
+borderRadius: 10,
 }`],
 
             functions:[async (...args) =>
@@ -16531,31 +16535,31 @@ async (...args) =>
         return (props:any) => (<Svg
     xmlns="http://www.w3.org/2000/svg"
     width={15}
-    height={15}
+    height={13}
     fill="red"
-    viewBox="0 0 15 15"
+    viewBox="0 0 15 13"
     {...props}
   >
     <Path
-      stroke="#000"
+      stroke="#B3B3B3"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}
-      d="M14 1 7.5 7.5m0 0L1 14m6.5-6.5L1 1m6.5 6.5L14 14"
+      d="m1 8 2.73 3.51a1 1 0 0 0 1.56.03L14 1"
     />
   </Svg>)
       },
 
       svgOriginal: `
-        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 1L7.5 7.5M7.5 7.5L1 14M7.5 7.5L1 1M7.5 7.5L14 14" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.00006 8L3.73006 11.51C3.82218 11.6297 3.94022 11.727 4.07531 11.7945C4.2104 11.8621 4.35904 11.8981 4.51006 11.9C4.65865 11.9017 4.80576 11.8703 4.94069 11.808C5.07561 11.7458 5.19496 11.6542 5.29006 11.54L14.0001 1" stroke="#B3B3B3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 
       `,
 
-      altura: "15px",
+      altura: "10px",
 
-      largura: "15px",
+      largura: "10px",
 
       preenchimento: ['black'],
 
