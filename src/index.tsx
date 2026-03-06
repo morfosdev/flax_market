@@ -48769,7 +48769,7 @@ height: '100%',
 
             styles:[`{
 width: '100%',
-zIndex: 0,
+zIndex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -51184,7 +51184,7 @@ maxWidth: 1200,
 
             styles:[`{
 width: '100%',
-zIndex: 0,
+zIndex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -55262,7 +55262,7 @@ maxWidth: 1200,
 
             styles:[`{
 width: '100%',
-zIndex: 0,
+zIndex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58043,7 +58043,7 @@ maxWidth: 1200,
 
             styles:[`{
 width: '100%',
-zIndex: 0,
+zIndex: 1,
 }`],
 
             functions:[()=>{}],            childrenItems:[
