@@ -16445,11 +16445,9 @@ flexDirection: 'row',
             elementsProperties:['{}'],
 
             styles:[`{
-width: 30,
-height: 30,
 borderWidth: 1,
 borderColor: '#e6e7e8',
-borderRadius: 10,
+borderRadius: 5,
 }`],
 
             functions:[async (...args) =>
@@ -16465,6 +16463,7 @@ borderRadius: 10,
 width: 30,
 height: 30,
 alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
@@ -16494,11 +16493,9 @@ async (...args) =>
             elementsProperties:['{}'],
 
             styles:[`{
-width: 30,
-height: 30,
 borderWidth: 1,
 borderColor: '#e6e7e8',
-borderRadius: 10,
+borderRadius: 5,
 }`],
 
             functions:[async (...args) =>
@@ -16514,6 +16511,7 @@ borderRadius: 10,
 width: 30,
 height: 30,
 alignItems: 'center',
+justifyContent: 'center',
 }`],
 
             functions:[async (...args) =>
@@ -16557,11 +16555,11 @@ async (...args) =>
 
       `,
 
-      altura: "10px",
+      altura: "15px",
 
-      largura: "10px",
+      largura: "15px",
 
-      preenchimento: ['black'],
+      preenchimento: [`white`],
 
       args,
     }}/>],
