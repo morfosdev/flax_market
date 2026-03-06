@@ -16140,8 +16140,11 @@ fontSize: 14,
       elementsProperties:[{}],
 
       styles:[{
-width: '48px',
-height: '48px',
+	width: '200px',
+	height:'200px',
+	borderRadius: '6px',
+	borderWidth: '1px',
+	borderColor: '#e6e7e8',
 }],
 
       URIvariablePath:[`sc.a4.editData.product.image`],
@@ -16330,29 +16333,58 @@ flexDirection: 'row',
     dateValue = storedDate;
   }
 
-	return (
-<div className="relative w-fit">
-    <input
-      type="date"
-      value={dateValue}
-      onChange={(e) => {
-        const selectedDate = e.target.value;
+  const inputStyle = {
+    paddingTop: "4px",
+    paddingBottom: "4px",
+    paddingLeft: "14px",
+    paddingRight: "36px",
+    borderRadius: "6px",
+    border: "1px solid #E6E7E8",
+    boxShadow: "0 1px 2px rgba(0,0,0,0.05)",
+    transition: "all 0.2s",
+    color: "#374151",
+    backgroundColor: "#fff",
+    outline: "none",
+    width: "150px",
+    height: "32px"
+  };
 
-        tools.functions.setVar({
-          args: "",
-          pass: {
-            keyPath: ["sc.a4.editData.product.date"],
-            value: [selectedDate]
-          }
-        });
+  const wrapperStyle = {
+    position: "relative",
+    width: "fit-content"
+  };
 
-        console.log("📅 Data escolhida:", selectedDate);
-	}}
-	className="px-4 py-2 rounded-2xl border border-gray-300 shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-gray-700 appearance-none bg-white"
-/>
-	<span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none">
-</span>
-</div>
+  const iconStyle = {
+    position: "absolute",
+    right: "12px",
+    top: "50%",
+    transform: "translateY(-50%)",
+    color: "#9ca3af",
+    pointerEvents: "none"
+  };
+
+  return (
+    <div style={wrapperStyle}>
+      <input
+        type="date"
+        value={dateValue}
+        onChange={(e) => {
+          const selectedDate = e.target.value;
+
+          tools.functions.setVar({
+            args: "",
+            pass: {
+              keyPath: ["sc.a4.editData.product.date"],
+              value: [selectedDate]
+            }
+          });
+
+          console.log("📅 Data escolhida:", selectedDate);
+        }}
+        style={inputStyle}
+      />
+      <span style={iconStyle}></span>
+    </div>
   );
 }] 
 }}/>
