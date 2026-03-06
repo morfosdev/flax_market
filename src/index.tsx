@@ -16161,6 +16161,20 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
+  height: '10px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
 width: '200px',
 alignItems: 'center',
 justifyContent: 'center',
@@ -16407,7 +16421,6 @@ flexDirection: 'row',
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -16586,33 +16599,6 @@ async (...args) =>
             args,
           }}/>
         ],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  height: '10px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-  height: '10px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
