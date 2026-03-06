@@ -62683,7 +62683,7 @@ justifyContent: 'center',
 'A7': { 'listBox': true } 
 , 'C2': { 'toggles': { 
 'filteredList': false, 
-'filter': false, 'categories': false } 
+'filter': false, 'categories': true } 
  } 
  } 
  
