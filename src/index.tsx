@@ -49043,7 +49043,7 @@ width: 8,
             styles:[`{
 justifyContent: 'center',
 paddingHorizontal: 10,
-top: 17,
+top: 25,
 }`],
 
             functions:[async (...args) =>
@@ -49140,9 +49140,9 @@ width: 8,
             elementsProperties:['{}'],
 
             styles:[`{
-padding: 10,
-borderRadius: 8,
-backgroundColor: "#fafafa"
+padding: 8,
+borderRadius: 6,
+backgroundColor: "#eee",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -51472,7 +51472,7 @@ width: 8,
             styles:[`{
 justifyContent: 'center',
 paddingHorizontal: 10,
-top: 17,
+top: 25,
 }`],
 
             functions:[async (...args) =>
@@ -51569,9 +51569,9 @@ width: 8,
             elementsProperties:['{}'],
 
             styles:[`{
-padding: 10,
-borderRadius: 8,
-backgroundColor: "#fafafa"
+padding: 8,
+borderRadius: 6,
+backgroundColor: "#eee",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -55564,7 +55564,7 @@ width: 8,
             styles:[`{
 justifyContent: 'center',
 paddingHorizontal: 10,
-top: 17,
+top: 25,
 }`],
 
             functions:[async (...args) =>
@@ -55661,9 +55661,9 @@ width: 8,
             elementsProperties:['{}'],
 
             styles:[`{
-padding: 10,
-borderRadius: 8,
-backgroundColor: "#fafafa"
+padding: 8,
+borderRadius: 6,
+backgroundColor: "#eee",
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58359,7 +58359,7 @@ width: 8,
             styles:[`{
 justifyContent: 'center',
 paddingHorizontal: 10,
-top: 17,
+top: 25,
 }`],
 
             functions:[async (...args) =>
@@ -58456,9 +58456,9 @@ width: 8,
             elementsProperties:['{}'],
 
             styles:[`{
-padding: 10,
-borderRadius: 8,
-backgroundColor: "#fafafa"
+padding: 8,
+borderRadius: 6,
+backgroundColor: "#eee",
 }`],
 
             functions:[()=>{}],            childrenItems:[
