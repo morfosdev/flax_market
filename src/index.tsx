@@ -48916,7 +48916,9 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{}`],
+            styles:[`{
+alignSelf: 'center',
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -51327,7 +51329,9 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{}`],
+            styles:[`{
+alignSelf: 'center',
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -55402,7 +55406,9 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{}`],
+            styles:[`{
+alignSelf: 'center',
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -58180,7 +58186,9 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[`{}`],
+            styles:[`{
+alignSelf: 'center',
+}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
