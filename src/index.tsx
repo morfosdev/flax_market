@@ -7643,7 +7643,10 @@ backgroundColor: '#eee',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 12,
+fontFamily: "Inter",
+}`
           ],
 
           children: [
@@ -7691,7 +7694,10 @@ alignItems: 'center',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 12,
+fontFamily: "Inter",
+}`
           ],
 
           children: [
@@ -7721,7 +7727,10 @@ alignItems: 'center',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 12,
+fontFamily: "Inter",
+}`
           ],
 
           children: [
@@ -7751,7 +7760,10 @@ alignItems: 'center',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 12,
+fontFamily: "Inter",
+}`
           ],
 
           children: [
@@ -7780,7 +7792,10 @@ alignItems: 'center',
           ],
 
           arrStyles: [
-            { color: 'black', fontSize: 12, }
+            `{
+fontSize: 12,
+fontFamily: "Inter",
+}`
           ],
 
           children: [
