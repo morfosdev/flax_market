@@ -7547,7 +7547,7 @@ height: '20px',
               }
               ],
 
-      URIvariablePath:[`https://www.figma.com/design/Kbmy9LauwAqtRkbA3blZlo/Ecommerce-Web-UI-Kit--Community-?node-id=1707-136&t=ubOEvX3JFVp66XNd-4`],
+      URIvariablePath:[`https://files.fm/u/atct2fr58e`],
 
       args,
     }}/>],
