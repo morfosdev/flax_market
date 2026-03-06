@@ -48943,6 +48943,109 @@ paddingHorizontal: 10,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "sc.C2.toggles.categories", "==", false ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+alignItems: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Categories`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
+      `,
+
+      altura: "12px",
+
+      largura: "12px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+top: 17,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
  arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
@@ -49193,108 +49296,6 @@ fontWeight: '500',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-alignItems: 'center',
-justifyContent: 'center',
-paddingHorizontal: 10,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", false ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flexDirection: 'row',
-alignItems: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Categories`
-          ],
-
-          args,
-
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: 8,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.SvgView1 pass={{
-      componentSvg: (Svg:any, SvgObj:any) => {
-        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
-        return (props:any) => (<Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={12}
-    height={6}
-    fill="red"
-    viewBox="0 0 12 6"
-    {...props}
-  >
-    <Path
-      fill="#5C5F6A"
-      fillRule="evenodd"
-      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
-      clipRule="evenodd"
-    />
-  </Svg>)
-      },
-
-      svgOriginal: `
-        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
-</svg>
-
-      `,
-
-      altura: "12px",
-
-      largura: "12px",
-
-      preenchimento: ['black'],
-
-      args,
-    }}/>],
 
             args,
           }}/>
@@ -51353,6 +51354,109 @@ paddingHorizontal: 10,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "sc.C2.toggles.categories", "==", false ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+alignItems: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Categories`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
+      `,
+
+      altura: "12px",
+
+      largura: "12px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+top: 17,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
  arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
@@ -51603,108 +51707,6 @@ fontWeight: '500',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-alignItems: 'center',
-justifyContent: 'center',
-paddingHorizontal: 10,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", false ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flexDirection: 'row',
-alignItems: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Categories`
-          ],
-
-          args,
-
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: 8,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.SvgView1 pass={{
-      componentSvg: (Svg:any, SvgObj:any) => {
-        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
-        return (props:any) => (<Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={12}
-    height={6}
-    fill="red"
-    viewBox="0 0 12 6"
-    {...props}
-  >
-    <Path
-      fill="#5C5F6A"
-      fillRule="evenodd"
-      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
-      clipRule="evenodd"
-    />
-  </Svg>)
-      },
-
-      svgOriginal: `
-        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
-</svg>
-
-      `,
-
-      altura: "12px",
-
-      largura: "12px",
-
-      preenchimento: ['black'],
-
-      args,
-    }}/>],
 
             args,
           }}/>
@@ -55427,6 +55429,109 @@ paddingHorizontal: 10,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "sc.C2.toggles.categories", "==", false ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+alignItems: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Categories`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
+      `,
+
+      altura: "12px",
+
+      largura: "12px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+top: 17,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
  arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
@@ -55677,108 +55782,6 @@ fontWeight: '500',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-alignItems: 'center',
-justifyContent: 'center',
-paddingHorizontal: 10,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", false ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flexDirection: 'row',
-alignItems: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Categories`
-          ],
-
-          args,
-
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: 8,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.SvgView1 pass={{
-      componentSvg: (Svg:any, SvgObj:any) => {
-        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
-        return (props:any) => (<Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={12}
-    height={6}
-    fill="red"
-    viewBox="0 0 12 6"
-    {...props}
-  >
-    <Path
-      fill="#5C5F6A"
-      fillRule="evenodd"
-      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
-      clipRule="evenodd"
-    />
-  </Svg>)
-      },
-
-      svgOriginal: `
-        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
-</svg>
-
-      `,
-
-      altura: "12px",
-
-      largura: "12px",
-
-      preenchimento: ['black'],
-
-      args,
-    }}/>],
 
             args,
           }}/>
@@ -58204,6 +58207,109 @@ paddingHorizontal: 10,
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
+ arrFunctions: [() => [ "sc.C2.toggles.categories", "==", false ]]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+alignItems: 'center',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+fontSize: 14,
+color: '#5C5F6A',
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Categories`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: 8,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , (...args:any) => <Elements.SvgView1 pass={{
+      componentSvg: (Svg:any, SvgObj:any) => {
+        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
+        return (props:any) => (<Svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={12}
+    height={6}
+    fill="red"
+    viewBox="0 0 12 6"
+    {...props}
+  >
+    <Path
+      fill="#5C5F6A"
+      fillRule="evenodd"
+      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
+      clipRule="evenodd"
+    />
+  </Svg>)
+      },
+
+      svgOriginal: `
+        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
+</svg>
+
+      `,
+
+      altura: "12px",
+
+      largura: "12px",
+
+      preenchimento: ['black'],
+
+      args,
+    }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+alignItems: 'center',
+justifyContent: 'center',
+paddingHorizontal: 10,
+top: 17,
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
  arrFunctions: [() => [ "sc.C2.toggles.categories", "==", true ]]
  , trigger: 'on listen'
 }})],            childrenItems:[
@@ -58454,108 +58560,6 @@ fontWeight: '500',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        ],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-alignItems: 'center',
-justifyContent: 'center',
-paddingHorizontal: 10,
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [() => [ "sc.C2.toggles.categories", "==", false ]]
- , trigger: 'on listen'
-}})],            childrenItems:[
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-flexDirection: 'row',
-alignItems: 'center',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-fontSize: 14,
-color: '#5C5F6A',
-fontFamily: 'Inter',
-fontWeight: '500',
-}`
-          ],
-
-          children: [
-            `Categories`
-          ],
-
-          args,
-
-        }}/>, 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-width: 8,
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , (...args:any) => <Elements.SvgView1 pass={{
-      componentSvg: (Svg:any, SvgObj:any) => {
-        const { Defs, Stop, Path, LinearGradient, G, Circle, Rect, Mask } = SvgObj;
-        return (props:any) => (<Svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={12}
-    height={6}
-    fill="red"
-    viewBox="0 0 12 6"
-    {...props}
-  >
-    <Path
-      fill="#5C5F6A"
-      fillRule="evenodd"
-      d="M6.533 5.812a.777.777 0 0 1-1.009.004L0 .95 1.003.046l5.018 4.421L10.986 0 12 .893 6.533 5.812Z"
-      clipRule="evenodd"
-    />
-  </Svg>)
-      },
-
-      svgOriginal: `
-        <svg width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M6.53269 5.81172C6.25566 6.06096 5.80422 6.063 5.52429 5.81634L0 0.948588L1.00331 0.0460426L6.02066 4.46724L10.9863 0L12 0.893212L6.53269 5.81172Z" fill="#5C5F6A"/>
-</svg>
-
-      `,
-
-      altura: "12px",
-
-      largura: "12px",
-
-      preenchimento: ['black'],
-
-      args,
-    }}/>],
 
             args,
           }}/>
