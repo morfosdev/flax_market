@@ -48916,14 +48916,7 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -49049,6 +49042,21 @@ width: 8,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
+            styles:[`{}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.C2.toggles.categories`],
+          value: [false]
+        }})]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
             styles:[`{
 alignItems: 'center',
 justifyContent: 'center',
@@ -49062,7 +49070,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on listen'
+ , trigger: 'on press'
 }})],            childrenItems:[
         
 
@@ -49311,6 +49319,10 @@ fontWeight: '500',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
@@ -51338,14 +51350,7 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -51471,6 +51476,21 @@ width: 8,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
+            styles:[`{}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.C2.toggles.categories`],
+          value: [false]
+        }})]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
             styles:[`{
 alignItems: 'center',
 justifyContent: 'center',
@@ -51484,7 +51504,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on listen'
+ , trigger: 'on press'
 }})],            childrenItems:[
         
 
@@ -51733,6 +51753,10 @@ fontWeight: '500',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
@@ -55424,14 +55448,7 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -55557,6 +55574,21 @@ width: 8,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
+            styles:[`{}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.C2.toggles.categories`],
+          value: [false]
+        }})]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
             styles:[`{
 alignItems: 'center',
 justifyContent: 'center',
@@ -55570,7 +55602,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on listen'
+ , trigger: 'on press'
 }})],            childrenItems:[
         
 
@@ -55819,6 +55851,10 @@ fontWeight: '500',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
@@ -58213,14 +58249,7 @@ fontWeight: '500',
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
-            styles:[
-              {
-                backgroundColor: 'white',
-                justifyContent: 'center',
-                minHeight: 22,
-                width: "100%",
-              }
-              ],
+            styles:[`{}`],
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
@@ -58346,6 +58375,21 @@ width: 8,
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
 
+            styles:[`{}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.C2.toggles.categories`],
+          value: [false]
+        }})]
+ , trigger: 'on listen'
+}})],            childrenItems:[
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
             styles:[`{
 alignItems: 'center',
 justifyContent: 'center',
@@ -58359,7 +58403,7 @@ paddingHorizontal: 10,
           keyPath: [`sc.C2.toggles.categories`],
           value: [false]
         }})]
- , trigger: 'on listen'
+ , trigger: 'on press'
 }})],            childrenItems:[
         
 
@@ -58608,6 +58652,10 @@ fontWeight: '500',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        ],
 
             args,
           }}/>
