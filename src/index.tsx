@@ -49043,7 +49043,6 @@ width: 8,
             styles:[`{
 justifyContent: 'center',
 paddingHorizontal: 10,
-top: 25,
 }`],
 
             functions:[async (...args) =>
@@ -49143,6 +49142,8 @@ width: 8,
 padding: 8,
 borderRadius: 6,
 backgroundColor: "#eee",
+position: 'absolute',
+top: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -51472,7 +51473,6 @@ width: 8,
             styles:[`{
 justifyContent: 'center',
 paddingHorizontal: 10,
-top: 25,
 }`],
 
             functions:[async (...args) =>
@@ -51572,6 +51572,8 @@ width: 8,
 padding: 8,
 borderRadius: 6,
 backgroundColor: "#eee",
+position: 'absolute',
+top: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -55564,7 +55566,6 @@ width: 8,
             styles:[`{
 justifyContent: 'center',
 paddingHorizontal: 10,
-top: 25,
 }`],
 
             functions:[async (...args) =>
@@ -55664,6 +55665,8 @@ width: 8,
 padding: 8,
 borderRadius: 6,
 backgroundColor: "#eee",
+position: 'absolute',
+top: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -58359,7 +58362,6 @@ width: 8,
             styles:[`{
 justifyContent: 'center',
 paddingHorizontal: 10,
-top: 25,
 }`],
 
             functions:[async (...args) =>
@@ -58459,6 +58461,8 @@ width: 8,
 padding: 8,
 borderRadius: 6,
 backgroundColor: "#eee",
+position: 'absolute',
+top: 20,
 }`],
 
             functions:[()=>{}],            childrenItems:[
