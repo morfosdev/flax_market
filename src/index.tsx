@@ -394,34 +394,28 @@ shadowColor: "#2A3435",
 }`],
 
             functions:[()=>{}],            childrenItems:[
-        
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
 
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
+          arrStyles: [
+            `{
+color: '#2A3435',
+fontFamily: 'Inter',
+fontSize: 30,
+fontWeight: 'bold',
+textAlign: 'left'
+}`
+          ],
 
-            styles:[`{
-width: '100%',
-alignItems: 'center',
-}`],
+          children: [
+            `Login`
+          ],
 
-            functions:[()=>{}],            childrenItems:[
+          args,
 
-    (...args:any) => <Elements.ImageBox pass={{
-      elementsProperties:[{}],
-
-      styles:[{
-width: '116px',
-height: '40px',
-}],
-
-      URIvariablePath:[`https://firebasestorage.googleapis.com/v0/b/devs-tests-95208.appspot.com/o/images%2FAdmin.png?alt=media&token=94ebd672-5bdd-4e25-81b7-a1b36e29e6e0`],
-
-      args,
-    }}/>],
-
-            args,
-          }}/>
-        , 
+        }}/>, 
         
 
           (...args:any) => <Elements.DynView pass={{
