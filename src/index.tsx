@@ -332,12 +332,33 @@ width: '100%',
 height: '100%',
 alignItems: 'center',
 justifyContent: 'center',
-backgroundColor: '#eee',
+backgroundColor: '#F8FAFA',
 paddingVertical: 35,
 paddingHorizontal: 8,
  }`],
 
           screenElements:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#2D3249',
+fontFamily: 'Inter',
+fontSize: 20,
+fontWeight: 'bold',
+}`
+          ],
+
+          children: [
+            `Morfos`
+          ],
+
+          args,
+
+        }}/>, 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
