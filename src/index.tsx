@@ -386,6 +386,13 @@ padding: 25,
 borderRadius: 12,
 borderWidth: 1,
 borderColor: "#e3e7e8",
+shadowColor: "#2A3435",
+  shadowOffset: {
+    width: 0,
+    height: 20,
+    },
+    shadowOpacity: 0.06,
+    shadowRadius: 40,
 }`],
 
             functions:[()=>{}],            childrenItems:[
