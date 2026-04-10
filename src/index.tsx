@@ -384,8 +384,6 @@ backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 25,
 borderRadius: 12,
-borderWidth: 1,
-borderColor: "#e3e7e8",
 shadowColor: "#2A3435",
   shadowOffset: {
     width: 0,
