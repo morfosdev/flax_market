@@ -487,7 +487,7 @@ width: '100%',
   fontSize: 14, 
   fontWeight: "500", 
   fontFamily: "Inter", 
-  color: "#474B57",
+  color: "#566162",
   paddingVertical: '5',
 }`
           ],
@@ -576,6 +576,8 @@ width: '100%',
 
             styles:[`{
 flexDirection: 'row',
+justifyContent: 'space-between',
+alignItems: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -589,7 +591,7 @@ flexDirection: 'row',
   fontSize: 14, 
   fontWeight: "500", 
   fontFamily: "Inter", 
-  color: "#474B57",
+  color: "#566162",
   paddingVertical: '5',
 }`
           ],
