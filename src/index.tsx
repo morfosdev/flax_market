@@ -437,8 +437,6 @@ height: '30px',
 
             styles:[`{
 width: '100%',
-padding: 10,
-margimBottom: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -517,8 +515,6 @@ padding: 10,
 
             styles:[`{
 width: '100%',
-padding: 10,
-margimBottom: 10,
 }`],
 
             functions:[()=>{}],            childrenItems:[
@@ -688,77 +684,6 @@ height: '15px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '95%',
-padding: 12,
-backgroundColor: '#0E1422',
-borderRadius: 4,
-alignItems: 'center',
-}`],
-
-            functions:[async (...args) =>
- functions.funcGroup({ args, pass:{
- arrFunctions: [(callback) => {
-  const provider = new GoogleAuthProvider();
-
-  signInWithPopup(auth, provider)
-    .then(async result => {
-      const user = result.user;
-      console.log("Login Google:", user.email);
-
-      // Salvar no Firestore (se não existir)
-      const userDoc = await db.collection("users").doc(user.uid).get();
-      if (!userDoc.exists) {
-        await db.collection("users").doc(user.uid).set({
-          email: user.email,
-          createdAt: new Date()
-        });
-      }
-
-      // Salvar no contexto
-      tools.functions.setVar({
-        args: "",
-        pass: {
-          keyPath: ["sc.session.user"],
-          value: [{ email: user.email, uid: user.uid }]
-        }
-      });
-    })
-    .catch(err => {
-      console.error("Erro Google Login:", err.message);
-    });
-}]
- , trigger: 'on press'
-}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{
-color: '#FFF',
-fontWeight: 500,
-fontSize: 14,
-fontFamily: 'Inter',
-}`
-          ],
-
-          children: [
-            `Sign Up`
-          ],
-
-          args,
-
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
 height: '5px',
 }`],
 
@@ -773,7 +698,7 @@ height: '5px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '95%',
+width: '100%',
 padding: 12,
 backgroundColor: '#0E1422',
 borderRadius: 4,
