@@ -378,8 +378,9 @@ height: 80,
             elementsProperties:['{}'],
 
             styles:[`{
-maxWidth: '400px',
+maxWidth: 400,
 width: '100%',
+height: 460,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 25,
