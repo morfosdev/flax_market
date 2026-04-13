@@ -380,7 +380,7 @@ height: 80,
             styles:[`{
 maxWidth: 400,
 width: '100%',
-height: 460,
+height: 400,
 backgroundColor: '#FFF',
 alignItems: 'center',
 padding: 30,
