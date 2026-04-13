@@ -1241,6 +1241,7 @@ fontFamily: 'Inter',
             args,
           }}/>
         , 
+        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -1248,7 +1249,6 @@ fontFamily: 'Inter',
             styles:[`{
 width: '100%',
 padding: 12,
-backgroundColor: '#2D3249',
 borderRadius: 4,
 alignItems: 'center',
 }`],
@@ -1269,7 +1269,7 @@ alignItems: 'center',
 
           arrStyles: [
             `{
-color: '#FFF',
+color: '#2D3249',
 fontWeight: 500,
 fontSize: 14,
 fontFamily: 'Inter',
@@ -1283,6 +1283,19 @@ fontFamily: 'Inter',
           args,
 
         }}/>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '30px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
