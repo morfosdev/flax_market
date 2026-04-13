@@ -493,7 +493,7 @@ width: '100%',
           ],
 
           children: [
-            `E-mail`
+            `E-MAIL`
           ],
 
           args,
