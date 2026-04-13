@@ -569,6 +569,21 @@ width: '100%',
 }`],
 
             functions:[()=>{}],            childrenItems:[
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[
+              {
+                backgroundColor: 'white',
+                justifyContent: 'center',
+                minHeight: 22,
+                width: "100%",
+              }
+              ],
+
+            functions:[()=>{}],            childrenItems:[
         (...args:any) => <Elements.Text pass={{
           arrProps: [
             '{}'
@@ -585,12 +600,36 @@ width: '100%',
           ],
 
           children: [
-            `Password`
+            `SENHA`
           ],
 
           args,
 
-        }}/>, 
+        }}/>, (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#2D3249',
+fontSize: 12,
+fontFamily: 'Inter',
+fontWeight: '500',
+}`
+          ],
+
+          children: [
+            `Esqueceu sua senha?`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
