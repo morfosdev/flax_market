@@ -836,7 +836,7 @@ fontFamily: 'Inter',
           ],
 
           children: [
-            `Login`
+            `LOGIN`
           ],
 
           args,
