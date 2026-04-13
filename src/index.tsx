@@ -423,7 +423,7 @@ alignSelf: 'baseline',
             elementsProperties:['{}'],
 
             styles:[`{
-height: '30px',
+height: '15px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
@@ -541,6 +541,20 @@ padding: 10,
 
           args,
         }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
@@ -707,21 +721,7 @@ fontSize: 14,
             elementsProperties:['{}'],
 
             styles:[`{
-height: '15px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: '5px',
+height: '30px',
 }`],
 
             functions:[()=>{}],            childrenItems:[() =><></>],
