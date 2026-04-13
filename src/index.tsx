@@ -772,7 +772,7 @@ height: '30px',
             styles:[`{
 width: '100%',
 padding: 12,
-backgroundColor: '#0E1422',
+backgroundColor: '#2D3249',
 borderRadius: 4,
 alignItems: 'center',
 }`],
