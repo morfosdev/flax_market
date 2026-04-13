@@ -405,7 +405,7 @@ color: '#2A3435',
 fontFamily: 'Inter',
 fontSize: 30,
 fontWeight: 'bold',
-textAlign: 'left'
+alignSelf: 'baseline',
 }`
           ],
 
