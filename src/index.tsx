@@ -383,7 +383,7 @@ width: '100%',
 height: 460,
 backgroundColor: '#FFF',
 alignItems: 'center',
-padding: 25,
+padding: 30,
 borderRadius: 12,
 shadowColor: "#2A3435",
   shadowOffset: {
@@ -412,6 +412,42 @@ alignSelf: 'baseline',
 
           children: [
             `Login`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '30px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#2A3435',
+fontFamily: 'Inter',
+fontSize: 30,
+fontWeight: 'bold',
+alignSelf: 'baseline',
+}`
+          ],
+
+          children: [
+            `Acesse sua conta`
           ],
 
           args,
@@ -693,7 +729,6 @@ height: '5px',
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -771,19 +806,6 @@ fontFamily: 'Inter',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: '30px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
