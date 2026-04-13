@@ -325,7 +325,7 @@ fontSize: 12
         
 
         (...args: any) => <Elements.Screen3 pass={{
-          pathScreen:"E1Login",
+          pathScreen:"ESLogin",
 
           styles:[`{ 
 width: '100%',
