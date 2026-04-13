@@ -438,10 +438,10 @@ height: '30px',
 
           arrStyles: [
             `{
-color: '#2A3435',
+color: '#566162',
 fontFamily: 'Inter',
-fontSize: 30,
-fontWeight: 'bold',
+fontSize: 16,
+fontWeight: '500',
 alignSelf: 'baseline',
 }`
           ],
