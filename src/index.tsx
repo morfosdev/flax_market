@@ -1440,8 +1440,105 @@ height: '30px',
 flexDirection: 'row',
 }`],
 
-            functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [{}],
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+}`],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+}`],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+}`],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+}`],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+}`],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
 
           stylesArray: [`{
 height: 50,
