@@ -1323,6 +1323,439 @@ fontFamily: 'Inter',
         
 
         (...args: any) => <Elements.Screen3 pass={{
+          pathScreen:"EScode",
+
+          styles:[`{ 
+width: '100%',
+height: '100%',
+alignItems: 'center',
+justifyContent: 'center',
+backgroundColor: '#F8FAFA',
+paddingVertical: 35,
+paddingHorizontal: 8,
+ }`],
+
+          screenElements:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#2D3249',
+fontFamily: 'Inter',
+fontSize: 20,
+fontWeight: 'bold',
+}`
+          ],
+
+          children: [
+            `Morfos`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: 80,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+maxWidth: 400,
+width: '100%',
+height: 400,
+backgroundColor: '#FFF',
+alignItems: 'center',
+padding: 30,
+borderRadius: 12,
+shadowColor: "#2A3435",
+  shadowOffset: {
+    width: 0,
+    height: 20,
+    },
+    shadowOpacity: 0.06,
+    shadowRadius: 40,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#2A3435',
+fontFamily: 'Inter',
+fontSize: 30,
+fontWeight: 'bold',
+alignSelf: 'baseline',
+}`
+          ],
+
+          children: [
+            `Recuperação de Senha`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#566162',
+fontFamily: 'Inter',
+fontSize: 16,
+alignSelf: 'baseline',
+}`
+          ],
+
+          children: [
+            `Digite seu endereço de e-mail e enviaremos um código seguro para redefinir seu acesso.`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '30px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+  fontSize: 14, 
+  fontWeight: "500", 
+  fontFamily: "Inter", 
+  color: "#566162",
+  paddingVertical: '5',
+}`
+          ],
+
+          children: [
+            `ENDEREÇO DE E-MAIL`
+          ],
+
+          args,
+
+        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: 'exemplo@email.com',
+}`],
+
+          stylesArray: [`{
+borderRadius: 6,
+borderWidth: 1,
+borderColor: '#E6E7E8',
+padding: 10,
+}`],
+
+          path: [`sc.a0.login.forms.email`],
+
+          funcsArray: [(callback) => {
+  // Remove espaços
+  let newValue = callback.replace(/s+/g, "");
+
+  // Permitir apenas letras, números, @, ponto, hífen e underscore
+  newValue = newValue.replace(/[^a-zA-Z0-9@._-]/g, "");
+
+  // Atualizar a variável no Flaxboll
+  tools.functions.setVar({
+    args: "",
+    pass: {
+      keyPath: ["sc.a0.login.forms.email"],
+      value: [newValue]
+    }
+  });
+
+  // Regex simples para validar email
+  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(newValue);
+
+  if (!isValid) {
+    console.log("Email inválido!");
+  } else {
+    console.log("Email válido, continuar login:", newValue);
+  }
+}
+],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{ 
+color: "red", 
+fontFamily: "Inter",
+fontSize: 14,
+alignSelf: 'baseline',
+}`
+          ],
+
+          children: [
+            `Endereço inválido`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '30px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+padding: 12,
+backgroundColor: '#2D3249',
+borderRadius: 4,
+alignItems: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [() => {
+  const email = tools.getCtData("sc.a0.login.forms.email");
+  const password = tools.getCtData("sc.a0.login.forms.password");
+  const users = tools.getCtData("sc.adm.login.db.users") || [];
+
+  const setMessage = (msg) => {
+    tools.functions.setVar({
+      args: '',
+      pass: { keyPath: ["sc.adm.login.message"], value: [msg] }
+    });
+  };
+
+  if (!email || email.trim() === "") {
+    setMessage("Por favor, preencha o e-mail.");
+    return;
+  }
+
+  if (!password || password.trim() === "") {
+    setMessage("Por favor, preencha a senha.");
+    return;
+  }
+
+  const userMatch = users.find(
+    (user) => user.userEmail === email && user.userPassword === password
+  );
+
+  if (!userMatch) {
+    setMessage("E-mail ou senha incorretos.");
+    return;
+  }
+
+  const sessionPath = "sc.adm.session.user";
+  const sessionData = { keyPath: [sessionPath], value: [userMatch] };
+  tools.functions.setVar({ args: "", pass: sessionData });
+
+  setMessage("Login realizado com sucesso!");
+
+  tools.goTo("a1AdmDash");
+
+setMessage("");
+}]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+fontWeight: 500,
+fontSize: 14,
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Enviar código ➔`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '30px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+padding: 12,
+borderRadius: 4,
+alignItems: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("ESLogin");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#2D3249',
+fontWeight: 500,
+fontSize: 14,
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `← Voltar para o Login`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
+
+          functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.firebase.getDocsTool({ args, pass:{
+   arrRefStrings: [`users`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.adm.login.db.users`],
+          value: [`$arg_callback`]
+        }})],
+        }})]
+ , trigger: 'on init'
+}})],
+
+          args,
+        }}/>, 
+        
+
+        (...args: any) => <Elements.Screen3 pass={{
           pathScreen:"dsTypo",
 
           styles:[`{ 
