@@ -1438,7 +1438,7 @@ height: '30px',
 
             styles:[`{
 flexDirection: 'row',
-alignSelf: 'center',
+alignSelf: 'baseline',
 }`],
 
             functions:[()=>{}],            childrenItems:[
