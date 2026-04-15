@@ -1064,7 +1064,7 @@ width: '100%',
 
         }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [`{
-placeholder: 'Digite um Email válido',
+placeholder: 'exemplo@email.com',
 }`],
 
           stylesArray: [`{
@@ -1374,7 +1374,7 @@ alignSelf: 'baseline',
           ],
 
           children: [
-            `Recuperação de Senha`
+            `Verificação de identidade`
           ],
 
           args,
@@ -1409,7 +1409,9 @@ alignSelf: 'baseline',
           ],
 
           children: [
-            `Digite seu endereço de e-mail e enviaremos um código seguro para redefinir seu acesso.`
+            `Um código de verificação único de 6 dígitos foi enviado para o seu dispositivo cadastrado.
+
+Insira o código abaixo para continuar.`
           ],
 
           args,
