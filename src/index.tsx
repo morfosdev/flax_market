@@ -1437,109 +1437,19 @@ height: '30px',
             elementsProperties:['{}'],
 
             styles:[`{
-width: '100%',
-}`],
-
-            functions:[()=>{}],            childrenItems:[
-        (...args:any) => <Elements.Text pass={{
-          arrProps: [
-            '{}'
-          ],
-
-          arrStyles: [
-            `{ 
-  fontSize: 14, 
-  fontWeight: "500", 
-  fontFamily: "Inter", 
-  color: "#566162",
-  paddingVertical: '5',
-}`
-          ],
-
-          children: [
-            `ENDEREÇO DE E-MAIL`
-          ],
-
-          args,
-
-        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
-          propsArray: [`{
-placeholder: 'exemplo@email.com',
-}`],
-
-          stylesArray: [`{
-borderRadius: 6,
-borderWidth: 1,
-borderColor: '#E6E7E8',
-padding: 10,
-}`],
-
-          path: [`sc.a0.login.forms.email`],
-
-          funcsArray: [(callback) => {
-  // Remove espaços
-  let newValue = callback.replace(/s+/g, "");
-
-  // Permitir apenas letras, números, @, ponto, hífen e underscore
-  newValue = newValue.replace(/[^a-zA-Z0-9@._-]/g, "");
-
-  // Atualizar a variável no Flaxboll
-  tools.functions.setVar({
-    args: "",
-    pass: {
-      keyPath: ["sc.a0.login.forms.email"],
-      value: [newValue]
-    }
-  });
-
-  // Regex simples para validar email
-  const isValid = /^[^s@]+@[^s@]+.[^s@]+$/.test(newValue);
-
-  if (!isValid) {
-    console.log("Email inválido!");
-  } else {
-    console.log("Email válido, continuar login:", newValue);
-  }
-}
-],
-
-          args,
-        }}/>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: '15px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
-
-            args,
-          }}/>
-        , 
-        
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
 flexDirection: 'row',
 }`],
 
             functions:[()=>{}],            childrenItems:[(...args:any) => <Elements.IptTxtEdit pass={{
           propsArray: [{}],
 
-          stylesArray: [{
-                color: 'black',
-                fontSize: 14,
-                // fontSize: '20px',<= #ATTENTION: Native ERROR! No string!
-              }],
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+}`],
 
           path: [" "],
 
@@ -1547,6 +1457,20 @@ flexDirection: 'row',
 
           args,
         }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '30px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
@@ -1647,7 +1571,6 @@ height: '30px',
             args,
           }}/>
         , 
-        
 
           (...args:any) => <Elements.DynView pass={{
             elementsProperties:['{}'],
@@ -1689,19 +1612,6 @@ fontFamily: 'Inter',
           args,
 
         }}/>],
-
-            args,
-          }}/>
-        , 
-
-          (...args:any) => <Elements.DynView pass={{
-            elementsProperties:['{}'],
-
-            styles:[`{
-height: '30px',
-}`],
-
-            functions:[()=>{}],            childrenItems:[() =><></>],
 
             args,
           }}/>
