@@ -1006,7 +1006,6 @@ height: '15px',
 color: '#566162',
 fontFamily: 'Inter',
 fontSize: 16,
-fontWeight: '500',
 alignSelf: 'baseline',
 }`
           ],
@@ -1132,14 +1131,14 @@ height: '15px',
           arrStyles: [
             `{ 
 color: "red", 
-marginTop: 8,
 fontFamily: "Inter",
 fontSize: 14,
+alignSelf: 'baseline',
 }`
           ],
 
           children: [
-            `$var_sc.adm.login.message`
+            `Endereço inválido`
           ],
 
           args,
