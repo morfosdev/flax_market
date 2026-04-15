@@ -1438,6 +1438,7 @@ height: '30px',
 
             styles:[`{
 flexDirection: 'row',
+alignSelf: 'center',
 }`],
 
             functions:[()=>{}],            childrenItems:[
