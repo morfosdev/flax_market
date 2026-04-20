@@ -1795,7 +1795,7 @@ alignSelf: 'baseline',
           ],
 
           children: [
-            `Verificação de identidade`
+            `Redefinir Senha`
           ],
 
           args,
@@ -1830,9 +1830,7 @@ alignSelf: 'baseline',
           ],
 
           children: [
-            `Um código de verificação único de 6 dígitos foi enviado para o seu dispositivo cadastrado.
-
-Insira o código abaixo para continuar.`
+            `Sua nova senha deve ser diferente das senhas utilizadas anteriormente para garantir a máxima segurança.`
           ],
 
           args,
