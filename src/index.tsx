@@ -1474,7 +1474,7 @@ borderColor: '#A9B4B5',
 backgroundColor: '#F0F4F5',
 }`],
 
-          path: [" "],
+          path: [`{path.2}`],
 
           funcsArray: [() => {}],
 
