@@ -1493,7 +1493,7 @@ borderColor: '#A9B4B5',
 backgroundColor: '#F0F4F5',
 }`],
 
-          path: [" "],
+          path: [`{path.3}`],
 
           funcsArray: [() => {}],
 
@@ -1512,7 +1512,7 @@ borderColor: '#A9B4B5',
 backgroundColor: '#F0F4F5',
 }`],
 
-          path: [" "],
+          path: [`{path.4}`],
 
           funcsArray: [() => {}],
 
@@ -1531,7 +1531,7 @@ borderColor: '#A9B4B5',
 backgroundColor: '#F0F4F5',
 }`],
 
-          path: [" "],
+          path: [`{path.5}`],
 
           funcsArray: [() => {}],
 
@@ -1549,7 +1549,7 @@ borderColor: '#A9B4B5',
 backgroundColor: '#F0F4F5',
 }`],
 
-          path: [" "],
+          path: [`{path.6}`],
 
           funcsArray: [() => {}],
 
