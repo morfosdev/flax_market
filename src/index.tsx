@@ -1594,6 +1594,427 @@ alignItems: 'center',
 
             functions:[async (...args) =>
  functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("ESRedSenha");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#FFF',
+fontWeight: 500,
+fontSize: 14,
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `Enviar código ➔`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '30px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+padding: 12,
+borderRadius: 4,
+alignItems: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [
+        (...args) => {
+          // ---------- get Function from A_Project Scope
+          return tools.goTo("ESLogin");
+        }
+        ]
+ , trigger: 'on press'
+}})],            childrenItems:[(...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#2D3249',
+fontWeight: 500,
+fontSize: 14,
+fontFamily: 'Inter',
+}`
+          ],
+
+          children: [
+            `← Voltar para o Login`
+          ],
+
+          args,
+
+        }}/>],
+
+            args,
+          }}/>
+        ],
+
+            args,
+          }}/>
+        ],
+
+          functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
+ arrFunctions: [async (...args) =>
+        functions.firebase.getDocsTool({ args, pass:{
+   arrRefStrings: [`users`],
+            arrFuncs: [async (...args) =>
+        functions.setVar({ args, pass:{
+          keyPath: [`sc.adm.login.db.users`],
+          value: [`$arg_callback`]
+        }})],
+        }})]
+ , trigger: 'on init'
+}})],
+
+          args,
+        }}/>, 
+        
+
+        (...args: any) => <Elements.Screen3 pass={{
+          pathScreen:"ESRedSenha",
+
+          styles:[`{ 
+width: '100%',
+height: '100%',
+alignItems: 'center',
+justifyContent: 'center',
+backgroundColor: '#F8FAFA',
+paddingVertical: 35,
+paddingHorizontal: 8,
+ }`],
+
+          screenElements:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#2D3249',
+fontFamily: 'Inter',
+fontSize: 20,
+fontWeight: 'bold',
+}`
+          ],
+
+          children: [
+            `Morfos`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: 80,
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+maxWidth: 400,
+width: '100%',
+height: 400,
+backgroundColor: '#FFF',
+alignItems: 'center',
+padding: 30,
+borderRadius: 12,
+shadowColor: "#2A3435",
+  shadowOffset: {
+    width: 0,
+    height: 20,
+    },
+    shadowOpacity: 0.06,
+    shadowRadius: 40,
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#2A3435',
+fontFamily: 'Inter',
+fontSize: 30,
+fontWeight: 'bold',
+alignSelf: 'baseline',
+}`
+          ],
+
+          children: [
+            `Verificação de identidade`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '15px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        (...args:any) => <Elements.Text pass={{
+          arrProps: [
+            '{}'
+          ],
+
+          arrStyles: [
+            `{
+color: '#566162',
+fontFamily: 'Inter',
+fontSize: 16,
+alignSelf: 'baseline',
+}`
+          ],
+
+          children: [
+            `Um código de verificação único de 6 dígitos foi enviado para o seu dispositivo cadastrado.
+
+Insira o código abaixo para continuar.`
+          ],
+
+          args,
+
+        }}/>, 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '30px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+flexDirection: 'row',
+alignSelf: 'baseline',
+}`],
+
+            functions:[()=>{}],            childrenItems:[
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+textAlign: "center",
+}`],
+
+          path: [" "],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+textAlign: "center",
+}`],
+
+          path: [`{path.2}`],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+textAlign: "center",
+}`],
+
+          path: [`{path.3}`],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+textAlign: "center",
+}`],
+
+          path: [`{path.4}`],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>, 
+        (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+textAlign: "center",
+}`],
+
+          path: [`{path.5}`],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>, (...args:any) => <Elements.IptTxtEdit pass={{
+          propsArray: [`{
+placeholder: '',
+}`],
+
+          stylesArray: [`{
+height: 50,
+width: 50,
+borderWidth: 1,
+borderColor: '#A9B4B5',
+backgroundColor: '#F0F4F5',
+textAlign: "center",
+}`],
+
+          path: [`{path.6}`],
+
+          funcsArray: [() => {}],
+
+          args,
+        }}/>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+height: '30px',
+}`],
+
+            functions:[()=>{}],            childrenItems:[() =><></>],
+
+            args,
+          }}/>
+        , 
+        
+
+          (...args:any) => <Elements.DynView pass={{
+            elementsProperties:['{}'],
+
+            styles:[`{
+width: '100%',
+padding: 12,
+backgroundColor: '#2D3249',
+borderRadius: 4,
+alignItems: 'center',
+}`],
+
+            functions:[async (...args) =>
+ functions.funcGroup({ args, pass:{
  arrFunctions: [() => {
   const email = tools.getCtData("sc.a0.login.forms.email");
   const password = tools.getCtData("sc.a0.login.forms.password");
